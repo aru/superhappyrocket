@@ -28,7 +28,7 @@ struct STARTUPOPTIONS {
 ///////////////////////////////////////////////////////////////////////////////
 // Module globals
 static HINSTANCE ghInstance = NULL;             // Module Instance Handle
-static LPCTSTR lpszAppName = "SHR";   // Name of App
+static LPCTSTR lpszAppName = "SHR";				// Name of App
 static GLint nFontList;                         // Base display list for font
 static struct STARTUPOPTIONS startupOptions;    // Startup options info
 static LARGE_INTEGER CounterFrequency;
@@ -36,8 +36,8 @@ static LARGE_INTEGER FPSCount;
 static LARGE_INTEGER CameraTimer;
 
 #define NUM_SPHERES      30         // Number of Spheres
-GLFrame    spheres[NUM_SPHERES];   // Location of spheres
-GLFrame    frameCamera;            // Location and orientation of camera
+GLFrame    spheres[NUM_SPHERES];	// Location of spheres
+GLFrame    frameCamera;				// Location and orientation of camera
 
 // Light and material Data
 GLfloat fLightPos[4]   = { -100.0f, 100.0f, 50.0f, 1.0f };  // Point source
