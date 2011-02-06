@@ -3,6 +3,7 @@
 // Program by Richard S. Wright Jr.
 // This program demonstrates a full featured robust Win32
 // OpenGL framework
+// Katzider change, git learning
 
 ///////////////////////////////////////////////////////////////////////////////
 // Include Files
