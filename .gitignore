@@ -19,6 +19,7 @@ Thumbs.db
 *.bak
 *.cache
 *.ilk
+*.user
 *.log
 [Bb]in
 [Dd]ebug*/
@@ -27,3 +28,5 @@ obj/
 [Rr]elease*/
 _ReSharper*/
 [Tt]est[Rr]esult*
+#Ignore files that Steve Jobs likes
+.DS_Store
