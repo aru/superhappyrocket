@@ -1,6 +1,7 @@
 
-#ignore thumbnails created by windows
+#OS junk files
 Thumbs.db
+.DS_Store
 #Ignore files build by Visual Studio
 *.obj
 *.exe
@@ -25,8 +26,9 @@ Thumbs.db
 [Dd]ebug*/
 *.sbr
 obj/
+ipch/
+*.[Oo]bj
 [Rr]elease*/
 _ReSharper*/
 [Tt]est[Rr]esult*
-#Ignore files that Steve Jobs likes
-.DS_Store
+Ankh.NoLoad
