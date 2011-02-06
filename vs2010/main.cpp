@@ -3,7 +3,7 @@
 // Program by Richard S. Wright Jr.
 // This program demonstrates a full featured robust Win32
 // OpenGL framework
-
+//
 ///////////////////////////////////////////////////////////////////////////////
 // Include Files
 #include <windows.h>                // Win32 Framework (No MFC)
