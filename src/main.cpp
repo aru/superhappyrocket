@@ -11,7 +11,7 @@
 #endif
 #include "SDL.h"
 
-/* A general OpenGL initialization function.  Sets all of the initial parameters. */
+/* A  general OpenGL initialization function.  Sets all of the initial parameters. */
 void InitGL(int Width, int Height)	        // We call this right after our OpenGL window is created.
 {
 	// General suggested outline
