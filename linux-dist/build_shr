@@ -1,0 +1,23 @@
+#!/bin/bash
+#Super Happy Rocket Linux compile script
+#Katzider
+#Tested in Linux 2.6.35-22-generic #33-Ubuntu i686 GNU/Linux
+
+
+OPENGL_INC="-I/usr/include/GL"
+OPENGL_LIB="-L/usr/lib -lGL -lGLU"
+SDL_INC=$(sdl-config --cflags)
+SDL_LIB=$(sdl-config --libs)
+rm -rf ./build/*
+cd ../src
+CPP_FILES=$(ls | grep cpp)
+g++ -Wall -fPIC -pipe -c $CPP_FILES $SDL_INC $OPENGL_INC
+mv *.o ../linux-dist/build
+cd ../linux-dist/build
+OBJ_FILES=$(ls)
+echo $OBJ_FILES
+g++ $OBJ_FILES -o shr $OPENGL_LIB $SDL_LIB
+cd ..
+
+
+
