@@ -10,16 +10,11 @@
 		002F39FA09D0881F00EBEB88 /* SDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002F39F909D0881F00EBEB88 /* SDL.framework */; };
 		002F3A0009D0884600EBEB88 /* SDL.framework in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 002F39F909D0881F00EBEB88 /* SDL.framework */; };
 		002F3A2E09D0888800EBEB88 /* SDLMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F3A2C09D0888800EBEB88 /* SDLMain.m */; };
-		002F3A3F09D088BA00EBEB88 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 002F3A3E09D088BA00EBEB88 /* main.c */; };
-		002F3BFA09D0938900EBEB88 /* atlantis.c in Sources */ = {isa = PBXBuildFile; fileRef = 002F3BF409D0938900EBEB88 /* atlantis.c */; };
-		002F3BFC09D0938900EBEB88 /* dolphin.c in Sources */ = {isa = PBXBuildFile; fileRef = 002F3BF609D0938900EBEB88 /* dolphin.c */; };
-		002F3BFD09D0938900EBEB88 /* shark.c in Sources */ = {isa = PBXBuildFile; fileRef = 002F3BF709D0938900EBEB88 /* shark.c */; };
-		002F3BFE09D0938900EBEB88 /* swim.c in Sources */ = {isa = PBXBuildFile; fileRef = 002F3BF809D0938900EBEB88 /* swim.c */; };
-		002F3BFF09D0938900EBEB88 /* whale.c in Sources */ = {isa = PBXBuildFile; fileRef = 002F3BF909D0938900EBEB88 /* whale.c */; };
 		002F3C0109D093BD00EBEB88 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002F3C0009D093BD00EBEB88 /* OpenGL.framework */; };
-		002F3C6109D0951E00EBEB88 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002F3C6009D0951E00EBEB88 /* GLUT.framework */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		A03A6A1813C3E80A00878865 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A03A6A1513C3E80A00878865 /* main.cpp */; };
+		A03A6A1913C3E80A00878865 /* Simple3DEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A03A6A1613C3E80A00878865 /* Simple3DEngine.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,22 +35,18 @@
 		002F39F909D0881F00EBEB88 /* SDL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL.framework; path = /Library/Frameworks/SDL.framework; sourceTree = "<absolute>"; };
 		002F3A2B09D0888800EBEB88 /* SDLMain.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SDLMain.h; sourceTree = SOURCE_ROOT; };
 		002F3A2C09D0888800EBEB88 /* SDLMain.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SDLMain.m; sourceTree = SOURCE_ROOT; };
-		002F3A3E09D088BA00EBEB88 /* main.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = SOURCE_ROOT; };
-		002F3BF409D0938900EBEB88 /* atlantis.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = atlantis.c; path = atlantis/atlantis.c; sourceTree = SOURCE_ROOT; };
-		002F3BF509D0938900EBEB88 /* atlantis.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = atlantis.h; path = atlantis/atlantis.h; sourceTree = SOURCE_ROOT; };
-		002F3BF609D0938900EBEB88 /* dolphin.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = dolphin.c; path = atlantis/dolphin.c; sourceTree = SOURCE_ROOT; };
-		002F3BF709D0938900EBEB88 /* shark.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = shark.c; path = atlantis/shark.c; sourceTree = SOURCE_ROOT; };
-		002F3BF809D0938900EBEB88 /* swim.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = swim.c; path = atlantis/swim.c; sourceTree = SOURCE_ROOT; };
-		002F3BF909D0938900EBEB88 /* whale.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = whale.c; path = atlantis/whale.c; sourceTree = SOURCE_ROOT; };
 		002F3C0009D093BD00EBEB88 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
-		002F3C6009D0951E00EBEB88 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../../../../../../../../System/Library/Frameworks/GLUT.framework; sourceTree = SOURCE_ROOT; };
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		32CA4F630368D1EE00C91783 /* ___PROJECTNAME____Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "___PROJECTNAME____Prefix.pch"; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* SHR_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHR_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		8D1107320486CEB800E47090 /* ___PROJECTNAME___.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "___PROJECTNAME___.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D1107320486CEB800E47090 /* SHR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SHR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A03A6A1413C3E80A00878865 /* Geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Geometry.h; path = ../../src/Geometry.h; sourceTree = SOURCE_ROOT; };
+		A03A6A1513C3E80A00878865 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../src/main.cpp; sourceTree = SOURCE_ROOT; };
+		A03A6A1613C3E80A00878865 /* Simple3DEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Simple3DEngine.cpp; path = ../../src/Simple3DEngine.cpp; sourceTree = SOURCE_ROOT; };
+		A03A6A1713C3E80A00878865 /* Simple3DEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Simple3DEngine.h; path = ../../src/Simple3DEngine.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +55,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				002F39FA09D0881F00EBEB88 /* SDL.framework in Frameworks */,
-				002F3C6109D0951E00EBEB88 /* GLUT.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				002F3C0109D093BD00EBEB88 /* OpenGL.framework in Frameworks */,
 			);
@@ -73,19 +63,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		002F3BF309D0937800EBEB88 /* atlantis */ = {
-			isa = PBXGroup;
-			children = (
-				002F3BF409D0938900EBEB88 /* atlantis.c */,
-				002F3BF509D0938900EBEB88 /* atlantis.h */,
-				002F3BF609D0938900EBEB88 /* dolphin.c */,
-				002F3BF709D0938900EBEB88 /* shark.c */,
-				002F3BF809D0938900EBEB88 /* swim.c */,
-				002F3BF909D0938900EBEB88 /* whale.c */,
-			);
-			name = atlantis;
-			sourceTree = "<group>";
-		};
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,7 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				002F39F909D0881F00EBEB88 /* SDL.framework */,
-				002F3C6009D0951E00EBEB88 /* GLUT.framework */,
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 				002F3C0009D093BD00EBEB88 /* OpenGL.framework */,
 			);
@@ -118,12 +94,12 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D1107320486CEB800E47090 /* ___PROJECTNAME___.app */,
+				8D1107320486CEB800E47090 /* SHR.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		29B97314FDCFA39411CA2CEA /* ___PROJECTNAMEASXML___ */ = {
+		29B97314FDCFA39411CA2CEA /* SHR */ = {
 			isa = PBXGroup;
 			children = (
 				080E96DDFE201D6D7F000001 /* Classes */,
@@ -132,15 +108,17 @@
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
-			name = "___PROJECTNAMEASXML___";
+			name = SHR;
 			sourceTree = "<group>";
 		};
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				002F3BF309D0937800EBEB88 /* atlantis */,
-				32CA4F630368D1EE00C91783 /* ___PROJECTNAME____Prefix.pch */,
-				002F3A3E09D088BA00EBEB88 /* main.c */,
+				32CA4F630368D1EE00C91783 /* SHR_Prefix.pch */,
+				A03A6A1413C3E80A00878865 /* Geometry.h */,
+				A03A6A1513C3E80A00878865 /* main.cpp */,
+				A03A6A1613C3E80A00878865 /* Simple3DEngine.cpp */,
+				A03A6A1713C3E80A00878865 /* Simple3DEngine.h */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -166,9 +144,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8D1107260486CEB800E47090 /* ___PROJECTNAME___ */ = {
+		8D1107260486CEB800E47090 /* SHR */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "___PROJECTNAME___" */;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "SHR" */;
 			buildPhases = (
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
@@ -179,10 +157,10 @@
 			);
 			dependencies = (
 			);
-			name = "___PROJECTNAME___";
+			name = SHR;
 			productInstallPath = "$(HOME)/Applications";
-			productName = "___PROJECTNAME___";
-			productReference = 8D1107320486CEB800E47090 /* ___PROJECTNAME___.app */;
+			productName = SHR;
+			productReference = 8D1107320486CEB800E47090 /* SHR.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -190,14 +168,14 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "___PROJECTNAME___" */;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "SHR" */;
 			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 1;
-			mainGroup = 29B97314FDCFA39411CA2CEA /* ___PROJECTNAMEASXML___ */;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* SHR */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8D1107260486CEB800E47090 /* ___PROJECTNAME___ */,
+				8D1107260486CEB800E47090 /* SHR */,
 			);
 		};
 /* End PBXProject section */
@@ -219,12 +197,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				002F3A2E09D0888800EBEB88 /* SDLMain.m in Sources */,
-				002F3A3F09D088BA00EBEB88 /* main.c in Sources */,
-				002F3BFA09D0938900EBEB88 /* atlantis.c in Sources */,
-				002F3BFC09D0938900EBEB88 /* dolphin.c in Sources */,
-				002F3BFD09D0938900EBEB88 /* shark.c in Sources */,
-				002F3BFE09D0938900EBEB88 /* swim.c in Sources */,
-				002F3BFF09D0938900EBEB88 /* whale.c in Sources */,
+				A03A6A1813C3E80A00878865 /* main.cpp in Sources */,
+				A03A6A1913C3E80A00878865 /* Simple3DEngine.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,10 +225,10 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "___PROJECTNAMEASIDENTIFIER____Prefix.pch";
+				GCC_PREFIX_HEADER = SHR_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
-				PRODUCT_NAME = "___PROJECTNAME___";
+				PRODUCT_NAME = SHR;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -269,10 +243,10 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "___PROJECTNAMEASIDENTIFIER____Prefix.pch";
+				GCC_PREFIX_HEADER = SHR_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
-				PRODUCT_NAME = "___PROJECTNAME___";
+				PRODUCT_NAME = SHR;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -328,7 +302,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "___PROJECTNAME___" */ = {
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "SHR" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4B08A954540054247B /* Debug */,
@@ -337,7 +311,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "___PROJECTNAME___" */ = {
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "SHR" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,

@@ -1,0 +1,83 @@
+// !$*UTF8*$!
+{
+	002F3A2B09D0888800EBEB88 /* SDLMain.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {542, 195}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 267}";
+		};
+	};
+	002F3A2C09D0888800EBEB88 /* SDLMain.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {542, 5057}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 264}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = A03A69F113C3E79500878865 /* SHR */;
+		activeTarget = 8D1107260486CEB800E47090 /* SHR */;
+		addToTargets = (
+			8D1107260486CEB800E47090 /* SHR */,
+		);
+		codeSenseManager = A03A6A1313C3E7B200878865 /* Code sense */;
+		executables = (
+			A03A69F113C3E79500878865 /* SHR */,
+		);
+		perUserDictionary = {
+			PBXPerProjectTemplateStateSaveDate = 331605909;
+			PBXWorkspaceStateSaveDate = 331605909;
+		};
+		sourceControlManager = A03A6A1213C3E7B200878865 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	8D1107260486CEB800E47090 /* SHR */ = {
+		activeExec = 0;
+		executables = (
+			A03A69F113C3E79500878865 /* SHR */,
+		);
+	};
+	A03A69F113C3E79500878865 /* SHR */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = SHR;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	A03A6A1213C3E7B200878865 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	A03A6A1313C3E7B200878865 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+}
