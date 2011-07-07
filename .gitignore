@@ -37,10 +37,11 @@ Ankh.NoLoad
 build
 *.o
 *.swp
+*~.nib
 *.perspectivev3
+*.perspective
 *.pbxuser
-eduardo.perspectivev3
-eduardo.pbxuser
-Xcode/SHR/SHR.xcodeproj/eduardo.perspectivev3
+*.tm_build_errors
+xcuserdata
 
-Xcode/SHR/SHR.xcodeproj/eduardo.pbxuser
+

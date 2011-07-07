@@ -333,12 +333,12 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>A094131513C5A0A400172A44</string>
+										<string>A094131D13C5A13A00172A44</string>
 										<key>history</key>
 										<array>
 											<string>A03A6A2913C450E500878865</string>
 											<string>A03A6A2A13C450E500878865</string>
-											<string>A094131413C5A05200172A44</string>
+											<string>A094131513C5A0A400172A44</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -352,18 +352,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {888, 561}}</string>
+								<string>{{0, 0}, {888, 559}}</string>
 								<key>RubberWindowFrame</key>
 								<string>135 112 1095 666 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>561pt</string>
+							<string>559pt</string>
 						</dict>
 						<dict>
 							<key>Proportion</key>
-							<string>59pt</string>
+							<string>61pt</string>
 							<key>Tabs</key>
 							<array>
 								<dict>
@@ -377,7 +377,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {888, 32}}</string>
+										<string>{{10, 27}, {888, 34}}</string>
 										<key>RubberWindowFrame</key>
 										<string>135 112 1095 666 0 0 1280 778 </string>
 									</dict>
@@ -461,11 +461,11 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>A094130913C5A04900172A44</string>
+				<string>A094131E13C5A13A00172A44</string>
 				<string>1CA23ED40692098700951B8B</string>
-				<string>A094130A13C5A04900172A44</string>
+				<string>A094131F13C5A13A00172A44</string>
 				<string>A03A6A2713C450E500878865</string>
-				<string>A094130B13C5A04900172A44</string>
+				<string>A094132013C5A13A00172A44</string>
 				<string>1CA23EDF0692099D00951B8B</string>
 				<string>1CA23EE00692099D00951B8B</string>
 				<string>1CA23EE10692099D00951B8B</string>
@@ -655,8 +655,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>A094131213C5A04900172A44</string>
-		<string>A094131313C5A04900172A44</string>
 		<string>/Users/eduardo/Develop/SDL/Super-Happy-Rocket/Xcode/SHR/SHR.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
