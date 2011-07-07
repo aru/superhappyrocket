@@ -33,4 +33,15 @@ ipch/
 _ReSharper*/
 [Tt]est[Rr]esult*
 Ankh.NoLoad
+#Ignore files of Xcode and Linux builds
 build
+*.o
+*.swp
+*~.nib
+*.perspectivev3
+*.perspective
+*.pbxuser
+*.tm_build_errors
+xcuserdata
+
+
