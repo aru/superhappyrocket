@@ -103,6 +103,24 @@ void DisplayState(SDL_KeyboardEvent *key)
 	
 }
 
+/*Event catcher skeleton*/
+int CatchSignal()
+{ SDL_Event event;
+	while ( SDL_PollEvent(&event) ) {
+		switch (event.type) {
+			case SDL_KEYDOWN:
+			case SDL_KEYUP:
+				DisplayState(&event.key);
+				DisplayModifiers(&event.key);
+				DisplayKey(&event.key);
+				break;
+			case SDL_QUIT:
+				return 1;
+		}
+	}
+	return 0;
+}
+
 int main(int argc, char **argv) 
 {  
 	int done;
@@ -128,25 +146,8 @@ int main(int argc, char **argv)
 	done = 0;
 	while ( ! done ) {
 		DrawGLScene();
+		done = CatchSignal();
 		
-		{ SDL_Event event;
-			while ( SDL_PollEvent(&event) ) {
-
-				/*Suppa basic event catcher*/
-				switch (event.type) {
-					case SDL_KEYDOWN:
-					case SDL_KEYUP:
-						DisplayState(&event.key);
-						DisplayModifiers(&event.key);
-						DisplayKey(&event.key);
-						break;
-					case SDL_QUIT:
-						done = 1;
-				}
-				
-				
-			}
-		}
 	}
 	SDL_Quit();
 	return 1;
