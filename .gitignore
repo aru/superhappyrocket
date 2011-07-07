@@ -43,5 +43,6 @@ build
 *.pbxuser
 *.tm_build_errors
 xcuserdata
+eduardo.*
 
 
