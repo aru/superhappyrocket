@@ -333,12 +333,12 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>A019D8EC13C59D1200FD93D9</string>
+										<string>A094131513C5A0A400172A44</string>
 										<key>history</key>
 										<array>
 											<string>A03A6A2913C450E500878865</string>
 											<string>A03A6A2A13C450E500878865</string>
-											<string>A019D8EB13C59D0A00FD93D9</string>
+											<string>A094131413C5A05200172A44</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -352,18 +352,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {888, 563}}</string>
+								<string>{{0, 0}, {888, 561}}</string>
 								<key>RubberWindowFrame</key>
 								<string>135 112 1095 666 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>563pt</string>
+							<string>561pt</string>
 						</dict>
 						<dict>
 							<key>Proportion</key>
-							<string>57pt</string>
+							<string>59pt</string>
 							<key>Tabs</key>
 							<array>
 								<dict>
@@ -377,7 +377,9 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {716, 116}}</string>
+										<string>{{10, 27}, {888, 32}}</string>
+										<key>RubberWindowFrame</key>
+										<string>135 112 1095 666 0 0 1280 778 </string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -432,8 +434,6 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {888, 30}}</string>
-										<key>RubberWindowFrame</key>
-										<string>135 112 1095 666 0 0 1280 778 </string>
 									</dict>
 									<key>Module</key>
 									<string>PBXBuildResultsModule</string>
@@ -461,11 +461,11 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>A019D8D913C59C3A00FD93D9</string>
+				<string>A094130913C5A04900172A44</string>
 				<string>1CA23ED40692098700951B8B</string>
-				<string>A019D8DA13C59C3A00FD93D9</string>
+				<string>A094130A13C5A04900172A44</string>
 				<string>A03A6A2713C450E500878865</string>
-				<string>A019D8DB13C59C3A00FD93D9</string>
+				<string>A094130B13C5A04900172A44</string>
 				<string>1CA23EDF0692099D00951B8B</string>
 				<string>1CA23EE00692099D00951B8B</string>
 				<string>1CA23EE10692099D00951B8B</string>
@@ -614,13 +614,13 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>A019D8DC13C59C3A00FD93D9</string>
+				<string>A094130C13C5A04900172A44</string>
 				<string>1CCC7628064C1048000F2A68</string>
 				<string>1CCC7629064C1048000F2A68</string>
-				<string>A019D8DD13C59C3A00FD93D9</string>
-				<string>A019D8DE13C59C3A00FD93D9</string>
-				<string>A019D8DF13C59C3A00FD93D9</string>
-				<string>A019D8E013C59C3A00FD93D9</string>
+				<string>A094130D13C5A04900172A44</string>
+				<string>A094130E13C5A04900172A44</string>
+				<string>A094130F13C5A04900172A44</string>
+				<string>A094131013C5A04900172A44</string>
 				<string>A03A6A2713C450E500878865</string>
 			</array>
 			<key>ToolbarConfigUserDefaultsMinorVersion</key>
@@ -655,8 +655,8 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>A019D8E213C59C3A00FD93D9</string>
-		<string>A019D8E313C59C3A00FD93D9</string>
+		<string>A094131213C5A04900172A44</string>
+		<string>A094131313C5A04900172A44</string>
 		<string>/Users/eduardo/Develop/SDL/Super-Happy-Rocket/Xcode/SHR/SHR.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
