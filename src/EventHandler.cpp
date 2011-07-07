@@ -34,6 +34,28 @@ void EventHandler::DisplayState(SDL_KeyboardEvent *key)
 	
 }
 
+
+void EventHandler::MouseMotion(int x1, int y1, int x2, int y2)
+{
+	xPrev = x1;
+	yPrev = y1;
+	xPost = x2;
+	yPost = y2;
+	//Display
+	std::cout << "x1[ " << x1 << "] y1[" << y1 << "]\tx2[" << x2 << "] y2[" << y2 << "]\n";
+}
+
+
+void EventHandler::MouseClicked(int button_, int x, int y)
+{
+	button = button_;
+	xPressed = x;
+	yPressed = y;
+	//Display
+	std::cout << "Button[" << button << "] x[" << x << "] y[" << y << "]\n";
+}
+
+
 /*Event catcher skeleton*/
 int EventHandler::Catch()
 { SDL_Event event;
@@ -41,9 +63,17 @@ int EventHandler::Catch()
 		switch (event.type) {
 			case SDL_KEYDOWN:
 			case SDL_KEYUP:
+				if(strcmp(SDL_GetKeyName(event.key.keysym.sym),"escape")==0)
+					return 1;
 				DisplayState(&event.key);
 				DisplayModifiers(&event.key);
 				DisplayKey(&event.key);
+				break;
+			case SDL_MOUSEMOTION:
+				MouseMotion(event.motion.xrel,event.motion.yrel,event.motion.x,event.motion.y);
+				break;
+			case SDL_MOUSEBUTTONDOWN:
+				MouseClicked(event.button.button,event.button.x,event.button.y);
 				break;
 			case SDL_QUIT:
 				return 1;
