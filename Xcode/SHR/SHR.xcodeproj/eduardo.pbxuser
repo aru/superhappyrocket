@@ -33,7 +33,7 @@
 					20,
 					477,
 					20,
-					48.16259765625,
+					48,
 					43,
 					43,
 					20,
@@ -48,16 +48,15 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 331605909;
-			PBXWorkspaceStateSaveDate = 331605909;
+			PBXPerProjectTemplateStateSaveDate = 331633215;
+			PBXWorkspaceStateSaveDate = 331633215;
 		};
 		perUserProjectItems = {
 			A03A6A1C13C3E83300878865 /* PBXBookmark */ = A03A6A1C13C3E83300878865 /* PBXBookmark */;
 			A03A6A2913C450E500878865 /* PBXTextBookmark */ = A03A6A2913C450E500878865 /* PBXTextBookmark */;
 			A03A6A2A13C450E500878865 /* PBXTextBookmark */ = A03A6A2A13C450E500878865 /* PBXTextBookmark */;
-			A03A6A2B13C450E500878865 /* PBXBookmark */ = A03A6A2B13C450E500878865 /* PBXBookmark */;
 			A03A6A2C13C450E500878865 /* PBXTextBookmark */ = A03A6A2C13C450E500878865 /* PBXTextBookmark */;
-			A03A6A3913C450E500878865 /* PBXTextBookmark */ = A03A6A3913C450E500878865 /* PBXTextBookmark */;
+			A03A6A5A13C4525600878865 /* PBXTextBookmark */ = A03A6A5A13C4525600878865 /* PBXTextBookmark */;
 		};
 		sourceControlManager = A03A6A1213C3E7B200878865 /* Source Control */;
 		userBuildSettings = {
@@ -115,9 +114,9 @@
 	};
 	A03A6A1513C3E80A00878865 /* main.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {719, 1391}}";
+			sepNavIntBoundsRect = "{{0, 0}, {719, 1404}}";
 			sepNavSelRange = "{382, 0}";
-			sepNavVisRange = "{0, 1192}";
+			sepNavVisRange = "{0, 1131}";
 			sepNavWindowFrame = "{{15, 4}, {784, 774}}";
 		};
 	};
@@ -145,10 +144,6 @@
 		vrLen = 267;
 		vrLoc = 0;
 	};
-	A03A6A2B13C450E500878865 /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = A03A6A1513C3E80A00878865 /* main.cpp */;
-	};
 	A03A6A2C13C450E500878865 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = A03A6A1513C3E80A00878865 /* main.cpp */;
@@ -159,14 +154,14 @@
 		vrLen = 1192;
 		vrLoc = 0;
 	};
-	A03A6A3913C450E500878865 /* PBXTextBookmark */ = {
+	A03A6A5A13C4525600878865 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = A03A6A1513C3E80A00878865 /* main.cpp */;
-		name = "main.cpp: 10";
+		name = "main.cpp: 12";
 		rLen = 0;
-		rLoc = 336;
+		rLoc = 382;
 		rType = 0;
-		vrLen = 1700;
+		vrLen = 1131;
 		vrLoc = 0;
 	};
 }

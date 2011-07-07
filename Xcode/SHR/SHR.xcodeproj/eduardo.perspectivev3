@@ -213,10 +213,6 @@
 						<string>A03A6A3813C450E500878865</string>
 						<key>PBXProjectModuleLabel</key>
 						<string>main.cpp</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>A03A6A3913C450E500878865</string>
 						<key>history</key>
 						<array>
 							<string>A03A6A1C13C3E83300878865</string>
@@ -367,12 +363,12 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>A03A6A2C13C450E500878865</string>
+										<string>A03A6A5A13C4525600878865</string>
 										<key>history</key>
 										<array>
 											<string>A03A6A2913C450E500878865</string>
 											<string>A03A6A2A13C450E500878865</string>
-											<string>A03A6A2B13C450E500878865</string>
+											<string>A03A6A2C13C450E500878865</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -386,18 +382,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {716, 449}}</string>
+								<string>{{0, 0}, {716, 444}}</string>
 								<key>RubberWindowFrame</key>
 								<string>6 121 923 628 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>449pt</string>
+							<string>444pt</string>
 						</dict>
 						<dict>
 							<key>Proportion</key>
-							<string>133pt</string>
+							<string>138pt</string>
 							<key>Tabs</key>
 							<array>
 								<dict>
@@ -411,7 +407,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {716, 106}}</string>
+										<string>{{10, 27}, {716, 111}}</string>
 										<key>RubberWindowFrame</key>
 										<string>6 121 923 628 0 0 1280 778 </string>
 									</dict>
@@ -495,11 +491,11 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>A03A6A2D13C450E500878865</string>
+				<string>A03A6A4E13C4524900878865</string>
 				<string>1CA23ED40692098700951B8B</string>
-				<string>A03A6A2E13C450E500878865</string>
+				<string>A03A6A4F13C4524900878865</string>
 				<string>A03A6A2713C450E500878865</string>
-				<string>A03A6A2F13C450E500878865</string>
+				<string>A03A6A5013C4524900878865</string>
 				<string>1CA23EDF0692099D00951B8B</string>
 				<string>1CA23EE00692099D00951B8B</string>
 				<string>1CA23EE10692099D00951B8B</string>
@@ -648,14 +644,14 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>A03A6A3013C450E500878865</string>
+				<string>A03A6A5113C4524900878865</string>
 				<string>1CCC7628064C1048000F2A68</string>
 				<string>1CCC7629064C1048000F2A68</string>
-				<string>A03A6A3113C450E500878865</string>
-				<string>A03A6A3213C450E500878865</string>
-				<string>A03A6A3313C450E500878865</string>
-				<string>A03A6A3413C450E500878865</string>
-				<string>A03A6A3513C450E500878865</string>
+				<string>A03A6A5213C4524900878865</string>
+				<string>A03A6A5313C4524900878865</string>
+				<string>A03A6A5413C4524900878865</string>
+				<string>A03A6A5513C4524900878865</string>
+				<string>A03A6A5613C4524900878865</string>
 			</array>
 			<key>ToolbarConfigUserDefaultsMinorVersion</key>
 			<string>2</string>
@@ -689,8 +685,8 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>A03A6A3A13C450E500878865</string>
-		<string>A03A6A3B13C450E500878865</string>
+		<string>A03A6A5813C4524900878865</string>
+		<string>A03A6A5913C4524900878865</string>
 		<string>/Users/eduardo/Develop/SDL/Super-Happy-Rocket/Xcode/SHR/SHR.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
