@@ -9,6 +9,7 @@
 #include <GL/gl.h>	// Header File For The OpenGL32 Library
 #include <GL/glu.h>	// Header File For The GLu32 Library
 #endif
+#include <iostream>
 #include "SDL.h"
 
 /* A  general OpenGL initialization function.  Sets all of the initial parameters. */
@@ -69,6 +70,39 @@ void DrawGLScene()
 	SDL_GL_SwapBuffers();
 }
 
+/*Getting modifier keys*/
+void DisplayModifiers(SDL_KeyboardEvent *key)
+{
+	SDLMod modifier = key->keysym.mod;
+	if( modifier & KMOD_NUM ) std::cout << "NUMLOCK" << std::endl;
+	if( modifier & KMOD_CAPS ) std::cout << "CAPSLOCK" << std::endl;
+	if( modifier & KMOD_MODE ) std::cout << "MODE" << std::endl;
+	if( modifier & KMOD_LCTRL ) std::cout << "LCTRLn" << std::endl;
+	if( modifier & KMOD_RCTRL ) std::cout << "RCTRL" << std::endl;
+	if( modifier & KMOD_LSHIFT ) std::cout << "LSHIFT" << std::endl;
+	if( modifier & KMOD_RSHIFT ) std::cout << "RSHIFT" << std::endl;
+	if( modifier & KMOD_LALT ) std::cout << "LALT" << std::endl;
+	if( modifier & KMOD_RALT ) std::cout << "RALT" << std::endl;
+	if( modifier & KMOD_LMETA ) std::cout << "LMETA" << std::endl;
+	if( modifier & KMOD_RMETA ) std::cout << "RMETA" << std::endl;
+}
+
+/* Just displaying the key name*/
+void DisplayKey(SDL_KeyboardEvent *key)
+{
+	std::cout << SDL_GetKeyName(key->keysym.sym) << std::endl;
+}
+
+/*Keyboard key state*/
+void DisplayState(SDL_KeyboardEvent *key)
+{
+	if (key->type == SDL_KEYUP)
+		std::cout << "RELEASED: " << std::endl;
+	else
+		std::cout << "PRESSED: " << std::endl;
+	
+}
+
 int main(int argc, char **argv) 
 {  
 	int done;
@@ -95,20 +129,26 @@ int main(int argc, char **argv)
 	while ( ! done ) {
 		DrawGLScene();
 		
-		/* This could go in a separate function */
 		{ SDL_Event event;
 			while ( SDL_PollEvent(&event) ) {
-				if ( event.type == SDL_QUIT ) {
-					done = 1;
-				}
-				if ( event.type == SDL_KEYDOWN ) {
-					if ( event.key.keysym.sym == SDLK_ESCAPE ) {
+
+				/*Suppa basic event catcher*/
+				switch (event.type) {
+					case SDL_KEYDOWN:
+					case SDL_KEYUP:
+						DisplayState(&event.key);
+						DisplayModifiers(&event.key);
+						DisplayKey(&event.key);
+						break;
+					case SDL_QUIT:
 						done = 1;
-					}
 				}
+				
+				
 			}
 		}
 	}
 	SDL_Quit();
 	return 1;
 }
+

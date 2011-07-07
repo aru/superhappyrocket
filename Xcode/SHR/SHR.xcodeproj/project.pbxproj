@@ -14,7 +14,6 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		A03A6A1813C3E80A00878865 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A03A6A1513C3E80A00878865 /* main.cpp */; };
-		A03A6A1913C3E80A00878865 /* Simple3DEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A03A6A1613C3E80A00878865 /* Simple3DEngine.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,10 +42,9 @@
 		32CA4F630368D1EE00C91783 /* SHR_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHR_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* SHR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SHR.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A03A6A1413C3E80A00878865 /* Geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Geometry.h; path = ../../src/Geometry.h; sourceTree = SOURCE_ROOT; };
+		A019D8C713C598B500FD93D9 /* Renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Renderer.h; path = ../../src/Renderer.h; sourceTree = SOURCE_ROOT; };
+		A019D8C813C598B500FD93D9 /* Visual.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Visual.h; path = ../../src/Visual.h; sourceTree = SOURCE_ROOT; };
 		A03A6A1513C3E80A00878865 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../src/main.cpp; sourceTree = SOURCE_ROOT; };
-		A03A6A1613C3E80A00878865 /* Simple3DEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Simple3DEngine.cpp; path = ../../src/Simple3DEngine.cpp; sourceTree = SOURCE_ROOT; };
-		A03A6A1713C3E80A00878865 /* Simple3DEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Simple3DEngine.h; path = ../../src/Simple3DEngine.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +113,9 @@
 			isa = PBXGroup;
 			children = (
 				32CA4F630368D1EE00C91783 /* SHR_Prefix.pch */,
-				A03A6A1413C3E80A00878865 /* Geometry.h */,
+				A019D8C713C598B500FD93D9 /* Renderer.h */,
+				A019D8C813C598B500FD93D9 /* Visual.h */,
 				A03A6A1513C3E80A00878865 /* main.cpp */,
-				A03A6A1613C3E80A00878865 /* Simple3DEngine.cpp */,
-				A03A6A1713C3E80A00878865 /* Simple3DEngine.h */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -198,7 +195,6 @@
 			files = (
 				002F3A2E09D0888800EBEB88 /* SDLMain.m in Sources */,
 				A03A6A1813C3E80A00878865 /* main.cpp in Sources */,
-				A03A6A1913C3E80A00878865 /* Simple3DEngine.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
