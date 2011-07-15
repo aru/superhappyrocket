@@ -1,17 +1,28 @@
-#ifdef WIN32
-#define WIN32_LEAN_AND_MEAN
-#include <windows.h>
-#endif
-#if defined(__APPLE__) && defined(__MACH__)
-#include <OpenGL/gl.h>	// Header File For The OpenGL32 Library
-#include <OpenGL/glu.h>	// Header File For The GLu32 Library
-#else
-#include <GL/gl.h>	// Header File For The OpenGL32 Library
-#include <GL/glu.h>	// Header File For The GLu32 Library
-#endif
+#include "GlExtensions.h"
 #include <iostream>
-#include "SDL.h"
 #include "EventHandler.h"
+
+// Array containing the six vertices of the cube
+	static GLfloat corners[] = { -25.0f, 25.0f, 25.0f, // 0 // Front of cube
+								  25.0f, 25.0f, 25.0f, // 1
+								  25.0f, -25.0f, 25.0f,// 2
+								 -25.0f, -25.0f, 25.0f,// 3
+								 -25.0f, 25.0f, -25.0f,// 4  // Back of cube
+								  25.0f, 25.0f, -25.0f,// 5
+								  25.0f, -25.0f, -25.0f,// 6
+								 -25.0f, -25.0f, -25.0f };// 7
+
+	// Array of indexes to create the cube
+	static GLubyte indexes[] = { 0, 1, 2, 3,     // Front Face
+								 4, 5, 1, 0,     // Top Face
+								 3, 2, 6, 7,     // Bottom Face
+								 5, 4, 7, 6,     // Back Face
+								 1, 5, 6, 2,     // Right Face
+								 4, 0, 3, 7 };   // Left Face
+
+	// Rotation amounts
+	static GLfloat xRot = 0.0f;
+	static GLfloat yRot = 0.0f;
 
 /* A  general OpenGL initialization function.  Sets all of the initial parameters. */
 void InitGL(int Width, int Height)	        // We call this right after our OpenGL window is created.
@@ -26,46 +37,53 @@ void InitGL(int Width, int Height)	        // We call this right after our OpenG
 	// Initial update of objects
 	// scene->update();
 	// Initial culling of scene.
-	
+
 	glViewport(0, 0, Width, Height);
-	glClearColor(0.0f, 0.0f, 0.0f, 0.0f);	// This Will Clear The Background Color To Black
-	glClearDepth(1.0);						// Enables Clearing Of The Depth Buffer
-	glDepthFunc(GL_LESS);					// The Type Of Depth Test To Do
-	glEnable(GL_DEPTH_TEST);				// Enables Depth Testing
-	glShadeModel(GL_SMOOTH);				// Enables Smooth Color Shading
+	glClearColor(1.0f, 1.0f, 1.0f, 1.0f);	// This Will Clear The Background Color To Black
+	//glClearDepth(1.0);						// Enables Clearing Of The Depth Buffer
+	//glDepthFunc(GL_LESS);					// The Type Of Depth Test To Do
+	//glEnable(GL_DEPTH_TEST);				// Enables Depth Testing
+	//glShadeModel(GL_SMOOTH);				// Enables Smooth Color Shading
 	
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();						// Reset The Projection Matrix
 	
-	gluPerspective(45.0f,(GLfloat)Width/(GLfloat)Height,0.1f,100.0f);	// Calculate The Aspect Ratio Of The Window
+	gluPerspective(35.0f,(GLfloat)Width/(GLfloat)Height,0.1f,1000.0f);	// Calculate The Aspect Ratio Of The Window
 	
 	glMatrixMode(GL_MODELVIEW);
+
+	glColor3ub(0,0,0);
 }
 
 /* The main drawing function. */
 void DrawGLScene()
 {
-	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);		// Clear The Screen And The Depth Buffer
-	glLoadIdentity();				// Reset The View
-	
-	glTranslatef(-1.5f,0.0f,-6.0f);		// Move Left 1.5 Units And Into The Screen 6.0
-	
-	// draw a triangle
-	glBegin(GL_POLYGON);				// start drawing a polygon
-	glVertex3f( 0.0f, 1.0f, 0.0f);		// Top
-	glVertex3f( 1.0f,-1.0f, 0.0f);		// Bottom Right
-	glVertex3f(-1.0f,-1.0f, 0.0f);		// Bottom Left	
-	glEnd();					// we're done with the polygon
-	
-	glTranslatef(3.0f,0.0f,0.0f);		        // Move Right 3 Units
-	
-	// draw a square (quadrilateral)
-	glBegin(GL_QUADS);				// start drawing a polygon (4 sided)
-	glVertex3f(-1.0f, 1.0f, 0.0f);		// Top Left
-	glVertex3f( 1.0f, 1.0f, 0.0f);		// Top Right
-	glVertex3f( 1.0f,-1.0f, 0.0f);		// Bottom Right
-	glVertex3f(-1.0f,-1.0f, 0.0f);		// Bottom Left	
-	glEnd();					// done with the polygon
+    // Clear the window with current clearing color
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT );
+
+    // Make the cube wireframe
+    glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+
+    // Save the matrix state
+    glMatrixMode(GL_MODELVIEW);
+    glPushMatrix();
+    glTranslatef(0.0f, 0.0f, -200.0f);
+
+    // Rotate about x and y axes
+    //glRotatef(xRot, 1.0f, 0.0f, 0.0f);
+    //glRotatef(yRot, 0.0f, 0.0f, 1.0f);
+
+    // Enable and specify the vertex array
+    glEnableClientState(GL_VERTEX_ARRAY);
+    glVertexPointer(3, GL_FLOAT, 0, corners);
+
+    // Using Drawelements
+    glDrawElements(GL_QUADS, 24, GL_UNSIGNED_BYTE, indexes);
+
+	// Disable vertex array
+	glDisableClientState(GL_VERTEX_ARRAY);
+
+    glPopMatrix();
 	
 	// swap buffers to display, since we're double buffered.
 	SDL_GL_SwapBuffers();
@@ -74,7 +92,7 @@ void DrawGLScene()
 int main(int argc, char **argv) 
 {  
 	int done;
-	EventHandler myHandler;
+	EventHandler myHandler;	// Event Handler
 	
 	/* Initialize SDL for video output */
 	if ( SDL_Init(SDL_INIT_VIDEO) < 0 ) {
@@ -82,8 +100,8 @@ int main(int argc, char **argv)
 		exit(1);
 	}
 	
-	/* Create a 640x480 OpenGL screen */
-	if ( SDL_SetVideoMode(640, 480, 0, SDL_OPENGL) == NULL ) {
+	/* Create a 800x600 OpenGL screen */
+	if ( SDL_SetVideoMode(800, 600, 0, SDL_OPENGL) == NULL ) {
 		fprintf(stderr, "Unable to create OpenGL screen: %s\n", SDL_GetError());
 		SDL_Quit();
 		exit(2);
@@ -93,13 +111,14 @@ int main(int argc, char **argv)
 	SDL_WM_SetCaption("Jeff Molofee's GL Code Tutorial ... NeHe '99", NULL);
 	
 	/* Loop, drawing and checking events */
-	InitGL(640, 480);
+	InitGL(800, 600);
 	done = 0;
 	while ( ! done ) {
-		DrawGLScene();
+		// Event catching goes first to prioritize input over drawing as in God of War :3
 		done = myHandler.Catch();
 		/*Use done to your desired KB behaviour*/
-		/*Use internat EventHandler attributes to get mouse stuff*/
+		/*Use internal EventHandler attributes to get mouse stuff*/
+		DrawGLScene();
 	}
 	SDL_Quit();
 	return 1;
