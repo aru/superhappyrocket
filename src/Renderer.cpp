@@ -24,7 +24,8 @@ void Renderer::SetViewport (int xPosition, int yPosition, int width,
 void Renderer::GetViewport (int& xPosition, int& yPosition,
     int& width, int& height) const
 {
-    int param[4];
+	//int param[4]; Invalid conversion error on g++ MacOSX
+    GLint param[4];
     glGetIntegerv(GL_VIEWPORT, param);
 
     xPosition = param[0];
@@ -52,7 +53,8 @@ void Renderer::Resize (int width, int height)
     mWidth = width;
     mHeight = height;
 
-    int param[4];
+    //int param[4]; Invalid conversion error on g++ MacOSX
+	GLint param[4];
     glGetIntegerv(GL_VIEWPORT, param);
     glViewport(param[0], param[1], width, height);
 }

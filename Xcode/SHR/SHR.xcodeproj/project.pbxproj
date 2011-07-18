@@ -14,6 +14,9 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		A03A6A1813C3E80A00878865 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A03A6A1513C3E80A00878865 /* main.cpp */; };
+		A06BE16413D3F18500FD8615 /* Renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A06BE16013D3F18500FD8615 /* Renderer.cpp */; };
+		A06BE16513D3F18500FD8615 /* Rtti.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A06BE16113D3F18500FD8615 /* Rtti.cpp */; };
+		A06BE16613D3F18500FD8615 /* Rtti.inl in Resources */ = {isa = PBXBuildFile; fileRef = A06BE16313D3F18500FD8615 /* Rtti.inl */; };
 		A094132713C63B7900172A44 /* EventHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A094132513C63B7900172A44 /* EventHandler.cpp */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +49,15 @@
 		A019D8C713C598B500FD93D9 /* Renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Renderer.h; path = ../../src/Renderer.h; sourceTree = SOURCE_ROOT; };
 		A019D8C813C598B500FD93D9 /* Visual.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Visual.h; path = ../../src/Visual.h; sourceTree = SOURCE_ROOT; };
 		A03A6A1513C3E80A00878865 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../src/main.cpp; sourceTree = SOURCE_ROOT; };
+		A06BE15B13D3F18500FD8615 /* Core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Core.h; path = ../../src/Core.h; sourceTree = SOURCE_ROOT; };
+		A06BE15C13D3F18500FD8615 /* CoreLIB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreLIB.h; path = ../../src/CoreLIB.h; sourceTree = SOURCE_ROOT; };
+		A06BE15D13D3F18500FD8615 /* GlExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GlExtensions.h; path = ../../src/GlExtensions.h; sourceTree = SOURCE_ROOT; };
+		A06BE15E13D3F18500FD8615 /* GraphicsLIB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GraphicsLIB.h; path = ../../src/GraphicsLIB.h; sourceTree = SOURCE_ROOT; };
+		A06BE15F13D3F18500FD8615 /* Object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Object.h; path = ../../src/Object.h; sourceTree = SOURCE_ROOT; };
+		A06BE16013D3F18500FD8615 /* Renderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Renderer.cpp; path = ../../src/Renderer.cpp; sourceTree = SOURCE_ROOT; };
+		A06BE16113D3F18500FD8615 /* Rtti.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Rtti.cpp; path = ../../src/Rtti.cpp; sourceTree = SOURCE_ROOT; };
+		A06BE16213D3F18500FD8615 /* Rtti.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Rtti.h; path = ../../src/Rtti.h; sourceTree = SOURCE_ROOT; };
+		A06BE16313D3F18500FD8615 /* Rtti.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Rtti.inl; path = ../../src/Rtti.inl; sourceTree = SOURCE_ROOT; };
 		A094132513C63B7900172A44 /* EventHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EventHandler.cpp; path = ../../src/EventHandler.cpp; sourceTree = SOURCE_ROOT; };
 		A094132613C63B7900172A44 /* EventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventHandler.h; path = ../../src/EventHandler.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -118,6 +130,15 @@
 				32CA4F630368D1EE00C91783 /* SHR_Prefix.pch */,
 				A019D8C713C598B500FD93D9 /* Renderer.h */,
 				A094132513C63B7900172A44 /* EventHandler.cpp */,
+				A06BE15B13D3F18500FD8615 /* Core.h */,
+				A06BE15C13D3F18500FD8615 /* CoreLIB.h */,
+				A06BE15D13D3F18500FD8615 /* GlExtensions.h */,
+				A06BE15E13D3F18500FD8615 /* GraphicsLIB.h */,
+				A06BE15F13D3F18500FD8615 /* Object.h */,
+				A06BE16013D3F18500FD8615 /* Renderer.cpp */,
+				A06BE16113D3F18500FD8615 /* Rtti.cpp */,
+				A06BE16213D3F18500FD8615 /* Rtti.h */,
+				A06BE16313D3F18500FD8615 /* Rtti.inl */,
 				A094132613C63B7900172A44 /* EventHandler.h */,
 				A019D8C813C598B500FD93D9 /* Visual.h */,
 				A03A6A1513C3E80A00878865 /* main.cpp */,
@@ -188,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				A06BE16613D3F18500FD8615 /* Rtti.inl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +223,8 @@
 				002F3A2E09D0888800EBEB88 /* SDLMain.m in Sources */,
 				A03A6A1813C3E80A00878865 /* main.cpp in Sources */,
 				A094132713C63B7900172A44 /* EventHandler.cpp in Sources */,
+				A06BE16413D3F18500FD8615 /* Renderer.cpp in Sources */,
+				A06BE16513D3F18500FD8615 /* Rtti.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
