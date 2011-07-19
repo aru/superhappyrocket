@@ -118,7 +118,7 @@ int main(int argc, char **argv)
 	while ( done != 1 ) {
 		// Event catching goes first to prioritize input over drawing as in God of War :3
 		done = myEventHandler.Catch();
-		if(done > 0){
+		if(done > 1){
 			/*Replace OTHER_SOUND with any clasification from the enum in SoundHandler.h
 			 see diagram of keys, in order to test this stuff.
 			 1 | 2 | 3 | 4 | 5		--> Play sound 
