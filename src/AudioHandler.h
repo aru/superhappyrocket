@@ -26,8 +26,9 @@ enum {
 #if defined(__APPLE__)
 #define PATH_AUDIO "../../../../Sounds/" 
 #include "SDL_mixer/SDL_mixer.h"
-#elif defined(__LINUX__)
+#elif defined(__linux)
 #define PATH_AUDIO "../../Sounds/"
+#include "SDL_mixer.h"
 #elif defined(WIN32)
 #define PATH_AUDIO "../Sounds/"
 #include "SDL_mixer.h" //SDL_mixer
