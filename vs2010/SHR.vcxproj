@@ -39,8 +39,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>../include/SDL/include;$(IncludePath)</IncludePath>
-    <LibraryPath>../include/SDL/lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>../include/;../include/SDL_mixer/include;../include/SDL/include;$(IncludePath)</IncludePath>
+    <LibraryPath>../include/SDL/lib;../include/SDL_mixer/lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -62,7 +62,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>openGL32.lib;glu32.lib;SDLd.lib;SDLmaind.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>openGL32.lib;glu32.lib;SDLd.lib;SDLmaind.lib;SDL_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreAllDefaultLibraries>
       </IgnoreAllDefaultLibraries>
       <EntryPointSymbol>
@@ -88,6 +88,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\src\AudioHandler.cpp" />
     <ClCompile Include="..\src\EventHandler.cpp" />
     <ClCompile Include="..\src\main.cpp" />
     <ClCompile Include="..\src\Renderer.cpp" />
@@ -101,6 +102,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\src\AudioHandler.h" />
     <ClInclude Include="..\src\Core.h" />
     <ClInclude Include="..\src\CoreLIB.h" />
     <ClInclude Include="..\src\EventHandler.h" />

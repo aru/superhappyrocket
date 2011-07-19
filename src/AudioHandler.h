@@ -27,9 +27,10 @@ enum {
 #define PATH_AUDIO "../../../../Sounds/" 
 #include "SDL_mixer/SDL_mixer.h"
 #elif defined(__LINUX__)
-#define PATH_AUDIO "../../Sounds"
-#elif defined(__WIN32__)
-#define PATH_AUDIO "../../Sounds"
+#define PATH_AUDIO "../../Sounds/"
+#elif defined(WIN32)
+#define PATH_AUDIO "../Sounds/"
+#include "SDL_mixer.h" //SDL_mixer
 #endif 
 
 /*This is IMPORTANT, this is the way the sound
@@ -50,6 +51,7 @@ enum {
 #define DEFAULT_EXTENSION ".wav"
 
 #include <stdlib.h>
+
 
 class AudioHandler
 {

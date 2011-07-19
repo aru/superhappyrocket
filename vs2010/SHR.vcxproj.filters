@@ -30,8 +30,11 @@
     <ClCompile Include="..\src\Rtti.cpp">
       <Filter>Header Files\LibCore\ObjectSystems</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\AudioHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="..\src\Renderer.cpp">
-      <Filter>Header Files</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -60,6 +63,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\src\GlExtensions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\AudioHandler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -13,8 +13,9 @@
 #include <GL/gl.h>	// Header File For The OpenGL32 Library
 #include <GL/glu.h>	// Header File For The GLu32 Library
 #endif
-
+#if defined(WIN32)
+#include "SDL_mixer.h" //SDL_mixer
+#endif
 // more to come
 #include "SDL.h"
-
 #endif
