@@ -62,9 +62,51 @@ int EventHandler::Catch()
 	while ( SDL_PollEvent(&event) ) {
 		switch (event.type) {
 			case SDL_KEYDOWN:
-			case SDL_KEYUP:
+			case SDL_PRESSED:
+				//Just to test audio stuff
 				if(strcmp(SDL_GetKeyName(event.key.keysym.sym),"escape")==0)
 					return 1;
+				if(strcmp(SDL_GetKeyName(event.key.keysym.sym),"1")==0)
+					return 2;
+				if(strcmp(SDL_GetKeyName(event.key.keysym.sym),"2")==0)
+					return 3;
+				if(strcmp(SDL_GetKeyName(event.key.keysym.sym),"3")==0)
+					return 4;
+				if(strcmp(SDL_GetKeyName(event.key.keysym.sym),"4")==0)
+					return 5;
+				if(strcmp(SDL_GetKeyName(event.key.keysym.sym),"5")==0)
+					return 6;
+				if(strcmp(SDL_GetKeyName(event.key.keysym.sym),"q")==0)
+					return 10;
+				if(strcmp(SDL_GetKeyName(event.key.keysym.sym),"w")==0)
+					return 11;
+				if(strcmp(SDL_GetKeyName(event.key.keysym.sym),"e")==0)
+					return 12;
+				if(strcmp(SDL_GetKeyName(event.key.keysym.sym),"r")==0)
+					return 13;
+				if(strcmp(SDL_GetKeyName(event.key.keysym.sym),"t")==0)
+					return 14;
+				if(strcmp(SDL_GetKeyName(event.key.keysym.sym),"a")==0)
+					return 20;
+				if(strcmp(SDL_GetKeyName(event.key.keysym.sym),"s")==0)
+					return 21;
+				if(strcmp(SDL_GetKeyName(event.key.keysym.sym),"d")==0)
+					return 22;
+				if(strcmp(SDL_GetKeyName(event.key.keysym.sym),"f")==0)
+					return 23;
+				if(strcmp(SDL_GetKeyName(event.key.keysym.sym),"g")==0)
+					return 24;
+				if(strcmp(SDL_GetKeyName(event.key.keysym.sym),"z")==0)
+					return 30;
+				if(strcmp(SDL_GetKeyName(event.key.keysym.sym),"x")==0)
+					return 31;
+				if(strcmp(SDL_GetKeyName(event.key.keysym.sym),"c")==0)
+					return 32;
+				if(strcmp(SDL_GetKeyName(event.key.keysym.sym),"v")==0)
+					return 33;
+				if(strcmp(SDL_GetKeyName(event.key.keysym.sym),"b")==0)
+					return 34;
+				
 				DisplayState(&event.key);
 				DisplayModifiers(&event.key);
 				DisplayKey(&event.key);
@@ -81,3 +123,4 @@ int EventHandler::Catch()
 	}
 	return 0;
 }
+

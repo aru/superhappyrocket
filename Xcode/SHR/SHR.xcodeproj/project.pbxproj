@@ -17,6 +17,8 @@
 		A06BE16413D3F18500FD8615 /* Renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A06BE16013D3F18500FD8615 /* Renderer.cpp */; };
 		A06BE16513D3F18500FD8615 /* Rtti.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A06BE16113D3F18500FD8615 /* Rtti.cpp */; };
 		A06BE16613D3F18500FD8615 /* Rtti.inl in Resources */ = {isa = PBXBuildFile; fileRef = A06BE16313D3F18500FD8615 /* Rtti.inl */; };
+		A06BE4AE13D5AD7400FD8615 /* AudioHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A06BE4AC13D5AD7400FD8615 /* AudioHandler.cpp */; };
+		A06BE4BD13D5ADB500FD8615 /* SDL_mixer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A06BE4BC13D5ADB500FD8615 /* SDL_mixer.framework */; };
 		A094132713C63B7900172A44 /* EventHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A094132513C63B7900172A44 /* EventHandler.cpp */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +60,9 @@
 		A06BE16113D3F18500FD8615 /* Rtti.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Rtti.cpp; path = ../../src/Rtti.cpp; sourceTree = SOURCE_ROOT; };
 		A06BE16213D3F18500FD8615 /* Rtti.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Rtti.h; path = ../../src/Rtti.h; sourceTree = SOURCE_ROOT; };
 		A06BE16313D3F18500FD8615 /* Rtti.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Rtti.inl; path = ../../src/Rtti.inl; sourceTree = SOURCE_ROOT; };
+		A06BE4AC13D5AD7400FD8615 /* AudioHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AudioHandler.cpp; path = ../../src/AudioHandler.cpp; sourceTree = SOURCE_ROOT; };
+		A06BE4AD13D5AD7400FD8615 /* AudioHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioHandler.h; path = ../../src/AudioHandler.h; sourceTree = SOURCE_ROOT; };
+		A06BE4BC13D5ADB500FD8615 /* SDL_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_mixer.framework; path = Library/Frameworks/SDL_mixer.framework; sourceTree = SDKROOT; };
 		A094132513C63B7900172A44 /* EventHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EventHandler.cpp; path = ../../src/EventHandler.cpp; sourceTree = SOURCE_ROOT; };
 		A094132613C63B7900172A44 /* EventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventHandler.h; path = ../../src/EventHandler.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -70,6 +75,7 @@
 				002F39FA09D0881F00EBEB88 /* SDL.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				002F3C0109D093BD00EBEB88 /* OpenGL.framework in Frameworks */,
+				A06BE4BD13D5ADB500FD8615 /* SDL_mixer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +97,7 @@
 				002F39F909D0881F00EBEB88 /* SDL.framework */,
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 				002F3C0009D093BD00EBEB88 /* OpenGL.framework */,
+				A06BE4BC13D5ADB500FD8615 /* SDL_mixer.framework */,
 			);
 			name = "Linked Frameworks";
 			sourceTree = "<group>";
@@ -128,6 +135,8 @@
 			isa = PBXGroup;
 			children = (
 				32CA4F630368D1EE00C91783 /* SHR_Prefix.pch */,
+				A06BE4AC13D5AD7400FD8615 /* AudioHandler.cpp */,
+				A06BE4AD13D5AD7400FD8615 /* AudioHandler.h */,
 				A019D8C713C598B500FD93D9 /* Renderer.h */,
 				A094132513C63B7900172A44 /* EventHandler.cpp */,
 				A06BE15B13D3F18500FD8615 /* Core.h */,
@@ -225,6 +234,7 @@
 				A094132713C63B7900172A44 /* EventHandler.cpp in Sources */,
 				A06BE16413D3F18500FD8615 /* Renderer.cpp in Sources */,
 				A06BE16513D3F18500FD8615 /* Rtti.cpp in Sources */,
+				A06BE4AE13D5AD7400FD8615 /* AudioHandler.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

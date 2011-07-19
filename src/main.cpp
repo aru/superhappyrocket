@@ -1,6 +1,7 @@
 #include "GlExtensions.h"
 #include <iostream>
 #include "EventHandler.h"
+#include "AudioHandler.h"
 
 // Array containing the six vertices of the cube
 	static GLfloat corners[] = { -25.0f, 25.0f, 25.0f, // 0 // Front of cube
@@ -92,7 +93,8 @@ void DrawGLScene()
 int main(int argc, char **argv) 
 {  
 	int done;
-	EventHandler myHandler;	// Event Handler
+	EventHandler myEventHandler;	// Event Handler
+	AudioHandler myAudioHandler;
 	
 	/* Initialize SDL for video output */
 	if ( SDL_Init(SDL_INIT_VIDEO) < 0 ) {
@@ -113,13 +115,31 @@ int main(int argc, char **argv)
 	/* Loop, drawing and checking events */
 	InitGL(800, 600);
 	done = 0;
-	while ( ! done ) {
+	while ( done != 1 ) {
 		// Event catching goes first to prioritize input over drawing as in God of War :3
-		done = myHandler.Catch();
+		done = myEventHandler.Catch();
+		if(done > 0){
+			/*Replace OTHER_SOUND with any clasification from the enum in SoundHandler.h
+			 see diagram of keys, in order to test this stuff.
+			 1 | 2 | 3 | 4 | 5		--> Play sound 
+			 Q | W | E | R | T		--> Stop Sound
+			 A | S | D | F | G		--> Pause Sound
+			 Z | X | C | V | B		--> Resume Sound
+			 */
+			if(done >= 10 && done <20)
+				myAudioHandler.stopSound(done - 10,MUSIC_GAMEPLAY_SOUND);
+			else if(done >= 20 && done < 30)
+				myAudioHandler.pauseSound(done-20,MUSIC_GAMEPLAY_SOUND);
+			else if(done >= 30)
+				myAudioHandler.resumeSound(done-30,MUSIC_GAMEPLAY_SOUND);
+			else
+				myAudioHandler.playSound(done - 2,MUSIC_GAMEPLAY_SOUND);
+		}
 		/*Use done to your desired KB behaviour*/
 		/*Use internal EventHandler attributes to get mouse stuff*/
 		DrawGLScene();
 	}
+	myAudioHandler.closeAudio();
 	SDL_Quit();
 	return 1;
 }
