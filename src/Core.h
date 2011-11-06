@@ -2,10 +2,18 @@
 #define CORE_H
 
 // Assert
+#include <assert.h>
 
 // DataTypes
+#include <string>
+#include <vector>
 
 // InputOutput
+#include <iostream>
+#include <fstream>
+
+// Math
+#include <math.h>
 
 // Memory
 

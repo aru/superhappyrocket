@@ -89,10 +89,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\src\AudioHandler.cpp" />
+    <ClCompile Include="..\src\Buffer.cpp" />
     <ClCompile Include="..\src\EventHandler.cpp" />
+    <ClCompile Include="..\src\GeoLoader.cpp" />
+    <ClCompile Include="..\src\IndexArray.cpp" />
     <ClCompile Include="..\src\main.cpp" />
+    <ClCompile Include="..\src\Object.cpp" />
     <ClCompile Include="..\src\Renderer.cpp" />
-    <ClCompile Include="..\src\Rtti.cpp" />
+    <ClCompile Include="..\src\VertexArray.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -103,18 +107,18 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\AudioHandler.h" />
+    <ClInclude Include="..\src\Buffer.h" />
     <ClInclude Include="..\src\Core.h" />
     <ClInclude Include="..\src\CoreLIB.h" />
     <ClInclude Include="..\src\EventHandler.h" />
+    <ClInclude Include="..\src\GeoLoader.h" />
     <ClInclude Include="..\src\GlExtensions.h" />
     <ClInclude Include="..\src\GraphicsLIB.h" />
+    <ClInclude Include="..\src\IndexArray.h" />
     <ClInclude Include="..\src\Object.h" />
     <ClInclude Include="..\src\Renderer.h" />
-    <ClInclude Include="..\src\Rtti.h" />
+    <ClInclude Include="..\src\VertexArray.h" />
     <ClInclude Include="..\src\Visual.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="..\src\Rtti.inl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

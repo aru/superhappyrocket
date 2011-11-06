@@ -1,29 +1,19 @@
 #ifndef PRIM_H
 #define PRIM_H
 
+#include "IndexArray.h"
+#include "VertexArray.h"
+
 class Visual
 {
 
 	/* Things everyone should know */
 
 public:
-	enum PrimitiveType
-    {
-        PT_NONE,  // default constructor
-        PT_POLYPOINT,
-        PT_POLYSEGMENTS_DISJOINT,
-        PT_POLYSEGMENTS_CONTIGUOUS,
-        PT_TRIANGLES,  // abstract
-        PT_TRIMESH,
-        PT_TRISTRIP,
-        PT_TRIFAN,
-		// other primitive types go here
-        PT_MAX_QUANTITY
-    };
+	
 
 protected: 
-	Visual( PrimitiveType type = PT_NONE); // default value
-	//Visual( PrimitiveType type ); // more to add as time goes by
+	Visual(); // default constructor
 
 public: 
 	/* we use a virtual destructor to prevent undefined problems by the C++ standard

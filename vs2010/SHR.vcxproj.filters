@@ -19,6 +19,15 @@
     <Filter Include="Header Files\LibCore\ObjectSystems">
       <UniqueIdentifier>{48f428dd-e340-4e35-bd30-34efd297ba50}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Graphics">
+      <UniqueIdentifier>{4c21bdc7-62d9-4f5d-a2b0-8c650209bc25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Graphics\GraphicsLoaders">
+      <UniqueIdentifier>{79af56ed-47b2-4e2e-83c9-073bbe695ab9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Renderers">
+      <UniqueIdentifier>{c97c0e97-bfbb-4a17-92c1-573430c53f03}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\main.cpp">
@@ -27,31 +36,34 @@
     <ClCompile Include="..\src\EventHandler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\Rtti.cpp">
-      <Filter>Header Files\LibCore\ObjectSystems</Filter>
-    </ClCompile>
     <ClCompile Include="..\src\AudioHandler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\src\Renderer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\VertexArray.cpp">
+      <Filter>Header Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\IndexArray.cpp">
+      <Filter>Header Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Buffer.cpp">
+      <Filter>Header Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Object.cpp">
+      <Filter>Header Files\LibCore\ObjectSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\GeoLoader.cpp">
+      <Filter>Header Files\Graphics\GraphicsLoaders</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\src\Visual.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\src\Renderer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\src\EventHandler.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\src\Object.h">
-      <Filter>Header Files\LibCore\ObjectSystems</Filter>
-    </ClInclude>
-    <ClInclude Include="..\src\Rtti.h">
-      <Filter>Header Files\LibCore\ObjectSystems</Filter>
     </ClInclude>
     <ClInclude Include="..\src\Core.h">
       <Filter>Header Files\LibCore</Filter>
@@ -62,16 +74,29 @@
     <ClInclude Include="..\src\GraphicsLIB.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\GlExtensions.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\src\AudioHandler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="..\src\Rtti.inl">
+    <ClInclude Include="..\src\IndexArray.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\VertexArray.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Visual.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\GeoLoader.h">
+      <Filter>Header Files\Graphics\GraphicsLoaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Buffer.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Object.h">
       <Filter>Header Files\LibCore\ObjectSystems</Filter>
-    </None>
+    </ClInclude>
+    <ClInclude Include="..\src\GlExtensions.h">
+      <Filter>Header Files\Renderers</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

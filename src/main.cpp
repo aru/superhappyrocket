@@ -1,5 +1,8 @@
-#include "GlExtensions.h"
+// C++ stuff
 #include <iostream>
+
+// our stuff
+#include "GlExtensions.h"
 #include "EventHandler.h"
 #include "AudioHandler.h"
 
@@ -78,7 +81,7 @@ void DrawGLScene()
     glEnableClientState(GL_VERTEX_ARRAY);
     glVertexPointer(3, GL_FLOAT, 0, corners);
 
-    // Using Drawelements
+    // Using DrawElements
     glDrawElements(GL_QUADS, 24, GL_UNSIGNED_BYTE, indexes);
 
 	// Disable vertex array
@@ -116,8 +119,10 @@ int main(int argc, char **argv)
 	InitGL(800, 600);
 	done = 0;
 	while ( done != 1 ) {
+
 		// Event catching goes first to prioritize input over drawing as in God of War :3
 		done = myEventHandler.Catch();
+
 		if(done > 1){
 			/*Replace OTHER_SOUND with any clasification from the enum in SoundHandler.h
 			 see diagram of keys, in order to test this stuff.
@@ -135,6 +140,7 @@ int main(int argc, char **argv)
 			else
 				myAudioHandler.playSound(done - 2,MUSIC_GAMEPLAY_SOUND);
 		}
+
 		/*Use done to your desired KB behaviour*/
 		/*Use internal EventHandler attributes to get mouse stuff*/
 		DrawGLScene();
