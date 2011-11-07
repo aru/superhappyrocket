@@ -6,7 +6,7 @@
 class VertexBuffer : public Object
 {
 	VertexBuffer();
-	~VertexBuffer();
+	virtual ~VertexBuffer();
 protected:
 	GLfloat* vbuffer;
 };

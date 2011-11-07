@@ -7,10 +7,12 @@
 
 class Object
 {
+public:
+
 	Object();
 	virtual ~Object();
-// Names for objects.
-public:
+
+	// Names for objects.
     void SetName (const std::string& name);
     const std::string& GetName () const;
     virtual Object* GetObjectByName (const std::string& name);
@@ -18,7 +20,7 @@ public:
     virtual void GetAllObjectsByName (const std::string& name,
         std::vector<Object*>& objects);
 
-private:
+protected:
 	std::string mName;
 };
 

@@ -5,6 +5,11 @@
 
 class IndexBuffer
 {
+public:
+	IndexBuffer();
+	virtual ~IndexBuffer();
+protected:
+	GLubyte* ibuffer;
 };
 
 #endif

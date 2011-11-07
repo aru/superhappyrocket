@@ -7,7 +7,14 @@ class Buffer : public Object
 {
 public:
 	Buffer();
-	~Buffer();
+	Buffer( int numElements, int elementSize );
+	virtual ~Buffer();
+
+protected:
+	int mNumElements;
+    int mElementSize;
+    int mNumBytes;
+	char* mData;
 };
 
 #endif
