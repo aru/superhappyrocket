@@ -19,13 +19,13 @@ public:
 	virtual ~Visual();
 	Visual(); // default constructor
 
-	/* Esoteric stuff */
+	/* Load Buffers from a File */
+	void LoadVertexBuffer( std::fstream file );
+	void LoadIndexBuffer( std::fstream file );
 
-
-public: 
-	
-
-
+protected:
+	IndexBuffer* ibuffer;
+	VertexBuffer* vbuffer;
 };
 
 #endif

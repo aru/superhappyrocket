@@ -1,6 +1,7 @@
 #ifndef OBJECT_H
 #define OBJECT_H
 
+#include "Core.h"
 #include "CoreLIB.h"
 #include "GlExtensions.h"
 

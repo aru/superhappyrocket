@@ -96,11 +96,6 @@
     <ClCompile Include="..\src\Object.cpp" />
     <ClCompile Include="..\src\Renderer.cpp" />
     <ClCompile Include="..\src\VertexBuffer.cpp" />
-    <ClCompile Include="Memory.inl">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-      </PrecompiledHeaderFile>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -118,11 +113,14 @@
     <ClInclude Include="..\src\GlExtensions.h" />
     <ClInclude Include="..\src\GraphicsLIB.h" />
     <ClInclude Include="..\src\IndexBuffer.h" />
+    <ClInclude Include="..\src\Memory.h" />
     <ClInclude Include="..\src\Object.h" />
     <ClInclude Include="..\src\Renderer.h" />
     <ClInclude Include="..\src\VertexBuffer.h" />
     <ClInclude Include="..\src\Visual.h" />
-    <ClInclude Include="Memory.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\Memory.inl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

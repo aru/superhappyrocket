@@ -54,9 +54,6 @@
     <ClCompile Include="..\src\VertexBuffer.cpp">
       <Filter>Header Files\Graphics</Filter>
     </ClCompile>
-    <ClCompile Include="Memory.inl">
-      <Filter>Header Files\Templates</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\Renderer.h">
@@ -95,8 +92,13 @@
     <ClInclude Include="..\src\VertexBuffer.h">
       <Filter>Header Files\Graphics</Filter>
     </ClInclude>
-    <ClInclude Include="Memory.h">
+    <ClInclude Include="..\src\Memory.h">
       <Filter>Header Files\Templates</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\Memory.inl">
+      <Filter>Header Files\Templates</Filter>
+    </None>
   </ItemGroup>
 </Project>
