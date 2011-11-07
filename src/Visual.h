@@ -16,8 +16,8 @@ public:
 			Base* base = new Derived();
 			delete base;
 	*/
-	virtual ~Visual();
 	Visual(); // default constructor
+	virtual ~Visual();
 
 	/* Load Buffers from a File */
 	void LoadVertexBuffer( std::fstream file );
