@@ -1,5 +1,5 @@
-#ifndef VERTEXARRAY_H
-#define VERTEXARRAY_H
+#ifndef VERTEXBUFFER_H
+#define VERTEXBUFFER_H
 
 #include "Object.h"
 

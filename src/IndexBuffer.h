@@ -1,9 +1,9 @@
-#ifndef INDEXARRAY_H
-#define INDEXARRAY_H
+#ifndef INDEXBUFFER_H
+#define INDEXBUFFER_H
 
 #include "Object.h"
 
-class IndexArray
+class IndexBuffer
 {
 };
 
