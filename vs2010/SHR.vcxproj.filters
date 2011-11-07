@@ -22,11 +22,11 @@
     <Filter Include="Header Files\Graphics">
       <UniqueIdentifier>{4c21bdc7-62d9-4f5d-a2b0-8c650209bc25}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Graphics\GraphicsLoaders">
-      <UniqueIdentifier>{79af56ed-47b2-4e2e-83c9-073bbe695ab9}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\Renderers">
       <UniqueIdentifier>{c97c0e97-bfbb-4a17-92c1-573430c53f03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Templates">
+      <UniqueIdentifier>{a9f6046c-255d-4c3a-8d5d-d82704c137a7}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -42,20 +42,20 @@
     <ClCompile Include="..\src\Renderer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\VertexArray.cpp">
-      <Filter>Header Files\Graphics</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\IndexArray.cpp">
-      <Filter>Header Files\Graphics</Filter>
-    </ClCompile>
     <ClCompile Include="..\src\Buffer.cpp">
       <Filter>Header Files\Graphics</Filter>
     </ClCompile>
     <ClCompile Include="..\src\Object.cpp">
       <Filter>Header Files\LibCore\ObjectSystems</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\GeoLoader.cpp">
-      <Filter>Header Files\Graphics\GraphicsLoaders</Filter>
+    <ClCompile Include="..\src\IndexBuffer.cpp">
+      <Filter>Header Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\VertexBuffer.cpp">
+      <Filter>Header Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory.inl">
+      <Filter>Header Files\Templates</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -77,17 +77,8 @@
     <ClInclude Include="..\src\AudioHandler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\IndexArray.h">
-      <Filter>Header Files\Graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\src\VertexArray.h">
-      <Filter>Header Files\Graphics</Filter>
-    </ClInclude>
     <ClInclude Include="..\src\Visual.h">
       <Filter>Header Files\Graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\src\GeoLoader.h">
-      <Filter>Header Files\Graphics\GraphicsLoaders</Filter>
     </ClInclude>
     <ClInclude Include="..\src\Buffer.h">
       <Filter>Header Files\Graphics</Filter>
@@ -97,6 +88,15 @@
     </ClInclude>
     <ClInclude Include="..\src\GlExtensions.h">
       <Filter>Header Files\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\IndexBuffer.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\VertexBuffer.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory.h">
+      <Filter>Header Files\Templates</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
