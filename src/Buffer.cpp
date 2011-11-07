@@ -24,4 +24,5 @@ Buffer::Buffer(int numElements, int elementSize)
 
 Buffer::~Buffer()
 {
+	delete1(mData);
 }
