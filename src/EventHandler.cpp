@@ -1,4 +1,5 @@
 #include "EventHandler.h"
+#include "Log.h"
 
 
 /*Getting modifier keys*/
@@ -35,14 +36,18 @@ void EventHandler::DisplayState(SDL_KeyboardEvent *key)
 }
 
 
+
 void EventHandler::MouseMotion(int x1, int y1, int x2, int y2)
 {
+	int myflag = 2;
 	xPrev = x1;
 	yPrev = y1;
 	xPost = x2;
 	yPost = y2;
 	//Display
-	std::cout << "x1[ " << x1 << "] y1[" << y1 << "]\tx2[" << x2 << "] y2[" << y2 << "]\n";
+	//std::cout << "x1[ " << x1 << "] y1[" << y1 << "]\tx2[" << x2 << "] y2[" << y2 << "]\n";
+	Log::logPrint(Log::EVENT, 4, x1, y1, x2, y2);
+
 }
 
 
