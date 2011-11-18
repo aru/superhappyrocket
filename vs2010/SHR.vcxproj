@@ -93,6 +93,7 @@
     <ClCompile Include="..\src\EventHandler.cpp" />
     <ClCompile Include="..\src\GeoLoader.cpp" />
     <ClCompile Include="..\src\IndexArray.cpp" />
+    <ClCompile Include="..\src\Log.cpp" />
     <ClCompile Include="..\src\main.cpp" />
     <ClCompile Include="..\src\Object.cpp" />
     <ClCompile Include="..\src\Renderer.cpp" />
@@ -115,6 +116,7 @@
     <ClInclude Include="..\src\GlExtensions.h" />
     <ClInclude Include="..\src\GraphicsLIB.h" />
     <ClInclude Include="..\src\IndexArray.h" />
+    <ClInclude Include="..\src\Log.h" />
     <ClInclude Include="..\src\Object.h" />
     <ClInclude Include="..\src\Renderer.h" />
     <ClInclude Include="..\src\VertexArray.h" />
