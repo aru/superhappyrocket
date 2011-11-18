@@ -91,13 +91,12 @@
     <ClCompile Include="..\src\AudioHandler.cpp" />
     <ClCompile Include="..\src\Buffer.cpp" />
     <ClCompile Include="..\src\EventHandler.cpp" />
-    <ClCompile Include="..\src\GeoLoader.cpp" />
-    <ClCompile Include="..\src\IndexArray.cpp" />
+    <ClCompile Include="..\src\IndexBuffer.cpp" />
     <ClCompile Include="..\src\Log.cpp" />
     <ClCompile Include="..\src\main.cpp" />
     <ClCompile Include="..\src\Object.cpp" />
     <ClCompile Include="..\src\Renderer.cpp" />
-    <ClCompile Include="..\src\VertexArray.cpp" />
+    <ClCompile Include="..\src\VertexBuffer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -112,15 +111,17 @@
     <ClInclude Include="..\src\Core.h" />
     <ClInclude Include="..\src\CoreLIB.h" />
     <ClInclude Include="..\src\EventHandler.h" />
-    <ClInclude Include="..\src\GeoLoader.h" />
     <ClInclude Include="..\src\GlExtensions.h" />
     <ClInclude Include="..\src\GraphicsLIB.h" />
-    <ClInclude Include="..\src\IndexArray.h" />
-    <ClInclude Include="..\src\Log.h" />
+    <ClInclude Include="..\src\IndexBuffer.h" />
+    <ClInclude Include="..\src\Memory.h" />
     <ClInclude Include="..\src\Object.h" />
     <ClInclude Include="..\src\Renderer.h" />
-    <ClInclude Include="..\src\VertexArray.h" />
+    <ClInclude Include="..\src\VertexBuffer.h" />
     <ClInclude Include="..\src\Visual.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\Memory.inl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

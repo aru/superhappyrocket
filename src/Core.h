@@ -16,6 +16,7 @@
 #include <math.h>
 
 // Memory
+#include "Memory.h"
 
 // Objectsystems
 
