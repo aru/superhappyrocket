@@ -89,11 +89,9 @@
     <ClInclude Include="..\src\GlExtensions.h">
       <Filter>Header Files\Renderers</Filter>
     </ClInclude>
-<<<<<<< HEAD
     <ClInclude Include="..\src\Log.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-=======
     <ClInclude Include="..\src\IndexBuffer.h">
       <Filter>Header Files\Graphics</Filter>
     </ClInclude>
@@ -108,6 +106,5 @@
     <None Include="..\src\Memory.inl">
       <Filter>Header Files\Templates</Filter>
     </None>
->>>>>>> be069a21e9fe837a3246c28003059ce44811a7ca
   </ItemGroup>
 </Project>
