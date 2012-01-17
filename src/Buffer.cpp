@@ -26,3 +26,8 @@ Buffer::~Buffer()
 {
 	delete1(mData);
 }
+
+int Buffer::GetNumElements () const
+{
+    return mNumElements;
+}

@@ -17,6 +17,7 @@ public:
 	Buffer();
 	Buffer( int numElements, int elementSize );
 	virtual ~Buffer();
+	int GetNumElements () const;
 
 protected:
 	int mNumElements;

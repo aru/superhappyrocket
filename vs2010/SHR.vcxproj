@@ -39,8 +39,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>../include/GL;../include/;../include/SDL_mixer/include;../include/SDL/include;$(IncludePath)</IncludePath>
-    <LibraryPath>../lib;../include/SDL/lib;../include/SDL_mixer/lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>../include/GLEW/W32;../include/;../include/SDL_mixer/include;../include/SDL/include;$(IncludePath)</IncludePath>
+    <LibraryPath>../include/GLEW/W32/lib;../include/SDL/lib;../include/SDL_mixer/lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
