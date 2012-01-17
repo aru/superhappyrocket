@@ -3,6 +3,7 @@
 
 #include "IndexBuffer.h"
 #include "VertexBuffer.h"
+#include "GlExtensions.h"
 
 class Visual : public Object
 {
@@ -23,9 +24,12 @@ public:
 	void LoadVertexBuffer( std::fstream file );
 	void LoadIndexBuffer( std::fstream file );
 
+	void Draw(); // here for demo purposes, will be moved later, am I right?
+
 protected:
-	IndexBuffer* ibuffer;
-	VertexBuffer* vbuffer;
+	IndexBuffer* ibuf;
+	VertexBuffer* vbuf;
+	GLuint bufferObjects[2]; // super mega haxy
 };
 
 #endif

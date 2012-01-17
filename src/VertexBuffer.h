@@ -1,9 +1,9 @@
 #ifndef VERTEXBUFFER_H
 #define VERTEXBUFFER_H
 
-#include "Object.h"
+#include "Buffer.h"
 
-class VertexBuffer : public Object
+class VertexBuffer : public Buffer
 {
 	VertexBuffer();
 	virtual ~VertexBuffer();

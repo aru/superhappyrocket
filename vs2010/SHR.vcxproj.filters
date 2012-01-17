@@ -57,6 +57,9 @@
     <ClCompile Include="..\src\Log.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\Visual.cpp">
+      <Filter>Header Files\Graphics</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\Renderer.h">
@@ -88,9 +91,6 @@
     </ClInclude>
     <ClInclude Include="..\src\GlExtensions.h">
       <Filter>Header Files\Renderers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\src\Log.h">
-      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\src\IndexBuffer.h">
       <Filter>Header Files\Graphics</Filter>

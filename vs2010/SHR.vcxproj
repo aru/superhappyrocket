@@ -39,8 +39,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>../include/;../include/SDL_mixer/include;../include/SDL/include;$(IncludePath)</IncludePath>
-    <LibraryPath>../include/SDL/lib;../include/SDL_mixer/lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>../include/GL;../include/;../include/SDL_mixer/include;../include/SDL/include;$(IncludePath)</IncludePath>
+    <LibraryPath>../lib;../include/SDL/lib;../include/SDL_mixer/lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -62,7 +62,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>openGL32.lib;glu32.lib;SDLd.lib;SDLmaind.lib;SDL_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>openGL32.lib;glu32.lib;SDLd.lib;SDLmaind.lib;SDL_mixer.lib;glew32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreAllDefaultLibraries>
       </IgnoreAllDefaultLibraries>
       <EntryPointSymbol>
@@ -97,6 +97,7 @@
     <ClCompile Include="..\src\Object.cpp" />
     <ClCompile Include="..\src\Renderer.cpp" />
     <ClCompile Include="..\src\VertexBuffer.cpp" />
+    <ClCompile Include="..\src\Visual.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

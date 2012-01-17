@@ -7,7 +7,7 @@
 #include "AudioHandler.h"
 
 // Array containing the six vertices of the cube
-	static GLfloat corners[] = { -25.0f, 25.0f, 25.0f, // 0 // Front of cube
+	static GLfloat vertexes[] = { -25.0f, 25.0f, 25.0f, // 0 // Front of cube
 								  25.0f, 25.0f, 25.0f, // 1
 								  25.0f, -25.0f, 25.0f,// 2
 								 -25.0f, -25.0f, 25.0f,// 3
@@ -79,7 +79,7 @@ void DrawGLScene()
 
     // Enable and specify the vertex array
     glEnableClientState(GL_VERTEX_ARRAY);
-    glVertexPointer(3, GL_FLOAT, 0, corners);
+    glVertexPointer(3, GL_FLOAT, 0, vertexes);
 
     // Using DrawElements
     glDrawElements(GL_QUADS, 24, GL_UNSIGNED_BYTE, indexes);

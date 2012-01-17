@@ -1,9 +1,10 @@
 #ifndef INDEXBUFFER_H
 #define INDEXBUFFER_H
 
+#include "Buffer.h"
 #include "Object.h"
 
-class IndexBuffer
+class IndexBuffer : public Buffer
 {
 public:
 	IndexBuffer();
