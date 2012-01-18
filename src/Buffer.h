@@ -18,6 +18,10 @@ public:
 	Buffer( int numElements, int elementSize );
 	virtual ~Buffer();
 	int GetNumElements () const;
+	int GetNumBytes() const;
+
+	// just gonna throw this in here and refactor later
+	GLuint mBuffer; // the place where we will keep it
 
 protected:
 	int mNumElements;

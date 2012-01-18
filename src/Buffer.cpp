@@ -31,3 +31,8 @@ int Buffer::GetNumElements () const
 {
     return mNumElements;
 }
+
+int Buffer::GetNumBytes() const
+{
+	return mNumBytes;
+}

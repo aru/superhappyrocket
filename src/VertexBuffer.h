@@ -7,8 +7,11 @@ class VertexBuffer : public Buffer
 {
 	VertexBuffer();
 	virtual ~VertexBuffer();
+
+	void LoadFromFile();
 protected:
-	GLfloat* vbuffer;
+	//GLunit    mBuffer; // the place where we will keep it
+	GLfloat* vBuffer; // actual data to copy to gpu buffer
 };
 
 #endif

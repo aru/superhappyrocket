@@ -2,15 +2,17 @@
 #define INDEXBUFFER_H
 
 #include "Buffer.h"
-#include "Object.h"
 
 class IndexBuffer : public Buffer
 {
 public:
 	IndexBuffer();
 	virtual ~IndexBuffer();
+	void LoadFromFile();
+
 protected:
-	GLubyte* ibuffer;
+	// GLuint   mBuffer; // the place where this buffer will be bound to
+	GLubyte* iBuffer; // the actual data to copy to the buffer
 };
 
 #endif

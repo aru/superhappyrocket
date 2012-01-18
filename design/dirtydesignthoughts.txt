@@ -1,0 +1,45 @@
+SHR design notes
+
+Felix: thanks for your effort, I appreciate it. Regarding your design documents, what follows are my comments, sorry for the lack of formality, I will do a better document in the future.
+
+For now I'll just refer to your images and use your imagination, I have some drawings I need to show you guys too.
+
+HUD Elements 2D General Screen
+
+I like the Buttons: simple, futuristic. Reminds me a bit of Meteos' title screen or something F-Zero like. This I would like to stay. However, one thing I always loved about title screens, is how you can lose mindless time playing with them. The best example that comes to mind is: http://youtu.be/stK4h115y70
+
+I would like this feeling to be on SHR, I want players to do something at the title screen, so perhaps some kind of mini-game would be fitting, we have to think about this.
+
+Screen 1, the gameplay
+
+I pretty much agree with everything here, perhaps we don't need a mood indicator, was thinking of something like this:
+
+http://youtu.be/PZcxdSoyq8I
+
+Everything changes depending on how well you're playing, which I think is amusing.
+
+Screen 3
+
+I am not really a fan of 'Lose' or Game Over screens, unless they have a twist to them. I think we should discuss these when we have more of the game, and see how gameplay shapes up.
+
+For the intro:
+
+I want to do something retro, and dynamic, intro screens have lately become kinda lame. But I like this one:
+
+http://youtu.be/CKZAh43I3Qk
+
+I think I already showed it to you guys. We want to settle the player in at the intro screen. I want every logo/picture to mean something, I want it to be endearing and stuff. We should discuss this too.
+
+Pause Menus:
+
+In fact, I would like every menu to be unique, but understandable, I leave these ideas to you guys, I want people to remember: "Oh that pause screen was pretty cool, they made it with love"
+
+lol.
+
+Global Happiness
+
+I am all-in with this shit, except, I wouldn't like to see my character way too sad, just a bit, like how Kirby looks when he's low on health, he looks hungry, and flashes red, but it doesn't give a sad face, he's just tired. Kinda like that.
+
+http://youtu.be/elW5Hw2ONTg?t=8m50s
+
+These are some of my thoughts.
