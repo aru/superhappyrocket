@@ -21,7 +21,7 @@ Thumbs.db
 *.bak
 *.cache
 *.ilk
-*.user
+#*.user TESTING THIS VALUE
 *.log
 [Bb]in
 [Dd]ebug*/
