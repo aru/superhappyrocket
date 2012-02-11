@@ -1,12 +1,12 @@
-
 #OS junk files
 Thumbs.db
 .DS_Store
+
 #Ignore files build by Visual Studio
 *.obj
 *.exe
 *.pdb
-*.user
+# *.user
 *.aps
 *.pch
 *.vspscc
@@ -21,7 +21,6 @@ Thumbs.db
 *.bak
 *.cache
 *.ilk
-#*.user TESTING THIS VALUE
 *.log
 [Bb]in
 [Dd]ebug*/
