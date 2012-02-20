@@ -60,6 +60,10 @@ void InitGL(int Width, int Height)	        // We call this right after our OpenG
 	glMatrixMode(GL_MODELVIEW);
 
 	glColor3ub(0,0,0);
+
+	/* Test object loading goes here, as we are not changing these arrays yet */
+	rendererTest.LoadVertexBuffer( vertexes, 24 );
+	rendererTest.LoadIndexBuffer( indexes, 24 );
 }
 
 /* The main drawing function. */
@@ -83,16 +87,8 @@ void DrawGLScene()
     // Enable and specify the vertex array
     glEnableClientState(GL_VERTEX_ARRAY);
 
-	/* Will be commenting out this to test our renderer */
-
-	//// Set our vertexes for the thing to draw
- //   glVertexPointer(3, GL_FLOAT, 0, vertexes);
-
- //   // Using DrawElements
- //   glDrawElements(GL_QUADS, 24, GL_UNSIGNED_BYTE, indexes);
-
-	rendererTest.LoadVertexBuffer( vertexes, 24 );
-	rendererTest.LoadIndexBuffer( indexes, 24 );
+	/*rendererTest.LoadVertexBuffer( vertexes, 24 );
+	rendererTest.LoadIndexBuffer( indexes, 24 );*/
 
 	rendererTest.Draw();
 
