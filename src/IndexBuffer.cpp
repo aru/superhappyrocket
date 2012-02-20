@@ -3,6 +3,8 @@
 IndexBuffer::IndexBuffer()
 {
 	// something something
+
+	// this is a test for branching in git
 }
 IndexBuffer::IndexBuffer( GLubyte* vData, int numElements )
 	: Buffer( numElements, sizeof(GLubyte) )
