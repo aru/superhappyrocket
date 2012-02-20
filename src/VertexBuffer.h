@@ -5,9 +5,11 @@
 
 class VertexBuffer : public Buffer
 {
+public:
 	VertexBuffer();
+	// To load with associated data
+	VertexBuffer( GLfloat* vData, int numElements );
 	virtual ~VertexBuffer();
-
 	void LoadFromFile();
 protected:
 	//GLunit    mBuffer; // the place where we will keep it

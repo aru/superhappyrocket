@@ -7,6 +7,8 @@ class IndexBuffer : public Buffer
 {
 public:
 	IndexBuffer();
+	// To create with associated data
+	IndexBuffer( GLubyte* vData, int numElements );
 	virtual ~IndexBuffer();
 	void LoadFromFile();
 

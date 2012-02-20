@@ -28,6 +28,9 @@
     <Filter Include="Header Files\Templates">
       <UniqueIdentifier>{a9f6046c-255d-4c3a-8d5d-d82704c137a7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Extensions">
+      <UniqueIdentifier>{6b715a59-e32d-4280-a5df-88a9320d86f2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\main.cpp">

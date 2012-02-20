@@ -14,8 +14,8 @@
 #include "SDL_mixer/SDL_mixer.h" //SDL_mixer
 #else
 // this is good:
-#include <GL/GL.h>	// Header File For The OpenGL32 Library
-#include <GL/glu.h>	// Header File For The GLu32 Library --> included in glew.h
+// #include <GL/GL.h>	// Header File For The OpenGL32 Library
+// #include <GL/glu.h>	// Header File For The GLu32 Library --> included in glew.h
 #endif
 #if defined(__linux)
 #include "SDL_mixer.h"

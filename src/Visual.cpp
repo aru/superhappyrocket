@@ -14,6 +14,16 @@ Visual::~Visual()
 {
 }
 
+void Visual::LoadIndexBuffer( GLubyte* data, int size )
+{
+	ibuf = new IndexBuffer( data, size );
+}
+
+void Visual::LoadVertexBuffer( GLfloat* data, int size )
+{
+	vbuf = new VertexBuffer( data, size );
+}
+
 void Visual::Draw()
 {
 	// Vertexes
@@ -22,5 +32,5 @@ void Visual::Draw()
 
     // Indexes
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ibuf->mBuffer);
-	glDrawElements(GL_TRIANGLES, ibuf->GetNumElements(), GL_UNSIGNED_SHORT, 0);
+	glDrawElements(GL_QUADS, ibuf->GetNumElements(), GL_UNSIGNED_BYTE, 0);
 }

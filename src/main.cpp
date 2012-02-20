@@ -5,6 +5,7 @@
 #include "GlExtensions.h"
 #include "EventHandler.h"
 #include "AudioHandler.h"
+#include "Visual.h"
 
 // Array containing the six vertices of the cube
 	static GLfloat vertexes[] = { -25.0f, 25.0f, 25.0f, // 0 // Front of cube
@@ -27,6 +28,8 @@
 	// Rotation amounts
 	static GLfloat xRot = 0.0f;
 	static GLfloat yRot = 0.0f;
+
+	Visual rendererTest;
 
 /* A  general OpenGL initialization function.  Sets all of the initial parameters. */
 void InitGL(int Width, int Height)	        // We call this right after our OpenGL window is created.
@@ -51,7 +54,7 @@ void InitGL(int Width, int Height)	        // We call this right after our OpenG
 	
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();						// Reset The Projection Matrix
-	
+
 	gluPerspective(35.0f,(GLfloat)Width/(GLfloat)Height,0.1f,1000.0f);	// Calculate The Aspect Ratio Of The Window
 	
 	glMatrixMode(GL_MODELVIEW);
@@ -79,10 +82,19 @@ void DrawGLScene()
 
     // Enable and specify the vertex array
     glEnableClientState(GL_VERTEX_ARRAY);
-    glVertexPointer(3, GL_FLOAT, 0, vertexes);
 
-    // Using DrawElements
-    glDrawElements(GL_QUADS, 24, GL_UNSIGNED_BYTE, indexes);
+	/* Will be commenting out this to test our renderer */
+
+	//// Set our vertexes for the thing to draw
+ //   glVertexPointer(3, GL_FLOAT, 0, vertexes);
+
+ //   // Using DrawElements
+ //   glDrawElements(GL_QUADS, 24, GL_UNSIGNED_BYTE, indexes);
+
+	rendererTest.LoadVertexBuffer( vertexes, 24 );
+	rendererTest.LoadIndexBuffer( indexes, 24 );
+
+	rendererTest.Draw();
 
 	// Disable vertex array
 	glDisableClientState(GL_VERTEX_ARRAY);
@@ -113,8 +125,18 @@ int main(int argc, char **argv)
 	}
 	
 	/* Set the title bar in environments that support it */
-	SDL_WM_SetCaption("Jeff Molofee's GL Code Tutorial ... NeHe '99", NULL);
-	
+	SDL_WM_SetCaption("Thesis! ppl", NULL);
+
+	/* Initialize GLEW */
+
+	GLenum err = glewInit();
+	if (GLEW_OK != err)
+	{
+		/* Problem: glewInit failed, something is seriously wrong. */
+	  fprintf(stderr, "Error: %s\n", glewGetErrorString(err));
+	}
+	fprintf(stdout, "Status: Using GLEW %s\n", glewGetString(GLEW_VERSION));
+
 	/* Loop, drawing and checking events */
 	InitGL(800, 600);
 	done = 0;

@@ -20,6 +20,9 @@ public:
 	Visual(); // default constructor
 	virtual ~Visual();
 
+	void LoadVertexBuffer( GLfloat* data, int size );
+	void LoadIndexBuffer( GLubyte* data, int size );
+
 	/* Load Buffers from a File */
 	void LoadVertexBuffer( std::fstream file );
 	void LoadIndexBuffer( std::fstream file );
