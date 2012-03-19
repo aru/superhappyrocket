@@ -25,11 +25,14 @@
     <Filter Include="Header Files\Renderers">
       <UniqueIdentifier>{c97c0e97-bfbb-4a17-92c1-573430c53f03}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Templates">
-      <UniqueIdentifier>{a9f6046c-255d-4c3a-8d5d-d82704c137a7}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Extensions">
       <UniqueIdentifier>{6b715a59-e32d-4280-a5df-88a9320d86f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Memory">
+      <UniqueIdentifier>{a9f6046c-255d-4c3a-8d5d-d82704c137a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Math">
+      <UniqueIdentifier>{a94f5fb4-63f4-4c09-b4fc-407fcff9af24}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -62,6 +65,9 @@
     </ClCompile>
     <ClCompile Include="..\src\Visual.cpp">
       <Filter>Header Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Vector.cpp">
+      <Filter>Header Files\Math</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -102,12 +108,21 @@
       <Filter>Header Files\Graphics</Filter>
     </ClInclude>
     <ClInclude Include="..\src\Memory.h">
-      <Filter>Header Files\Templates</Filter>
+      <Filter>Header Files\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Spatial.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Vector.h">
+      <Filter>Header Files\Math</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\src\Memory.inl">
-      <Filter>Header Files\Templates</Filter>
+      <Filter>Header Files\Memory</Filter>
+    </None>
+    <None Include="..\src\Vector.inl">
+      <Filter>Header Files\Math</Filter>
     </None>
   </ItemGroup>
 </Project>

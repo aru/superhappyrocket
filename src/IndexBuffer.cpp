@@ -3,7 +3,6 @@
 IndexBuffer::IndexBuffer()
 {
 	// something something
-
 	// this is a test for branching in git
 }
 IndexBuffer::IndexBuffer( GLubyte* vData, int numElements )
@@ -14,7 +13,6 @@ IndexBuffer::IndexBuffer( GLubyte* vData, int numElements )
 
 	// Dynamic draw is temporal I swear
 	glBufferData(GL_ELEMENT_ARRAY_BUFFER, GetNumBytes(), vData, GL_DYNAMIC_DRAW);
-
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
 }
 
