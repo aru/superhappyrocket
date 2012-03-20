@@ -118,10 +118,14 @@
     <ClInclude Include="..\src\GlExtensions.h" />
     <ClInclude Include="..\src\GraphicsLIB.h" />
     <ClInclude Include="..\src\IndexBuffer.h" />
+    <ClInclude Include="..\src\Matrix.h" />
     <ClInclude Include="..\src\Memory.h" />
+    <ClInclude Include="..\src\Node.h" />
     <ClInclude Include="..\src\Object.h" />
     <ClInclude Include="..\src\Renderer.h" />
     <ClInclude Include="..\src\Spatial.h" />
+    <ClInclude Include="..\src\Table.h" />
+    <ClInclude Include="..\src\Tuple.h" />
     <ClInclude Include="..\src\Vector.h" />
     <ClInclude Include="..\src\VertexBuffer.h" />
     <ClInclude Include="..\src\Visual.h" />

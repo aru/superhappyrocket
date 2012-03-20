@@ -4,6 +4,8 @@
 #include "GlExtensions.h"
 #include "Core.h"
 #include "CoreLIB.h"
+#include "Tuple.h"
+
 
 class Vector
 {

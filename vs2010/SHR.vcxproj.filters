@@ -37,6 +37,9 @@
     <Filter Include="Header Files\Graphics\SceneGraph">
       <UniqueIdentifier>{0b7324a7-c421-4521-b396-dbee03f02c7c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\DataTypes">
+      <UniqueIdentifier>{9e473d7d-6221-4fde-bfca-857e07f5553f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\main.cpp">
@@ -118,6 +121,18 @@
     </ClInclude>
     <ClInclude Include="..\src\Spatial.h">
       <Filter>Header Files\Graphics\SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Node.h">
+      <Filter>Header Files\Graphics\SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Matrix.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Tuple.h">
+      <Filter>Header Files\DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Table.h">
+      <Filter>Header Files\DataTypes</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
