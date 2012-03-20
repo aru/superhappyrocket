@@ -42,6 +42,14 @@ public:
     inline float Dot (const Vector& vec) const;
     inline float Normalize ( const float epsilon = FLT_MIN );
 
+	// The cross products are computed using the right-handed rule. 
+	// I don't know if openGL uses the left-handed rule.  
+	// If we have to compute a cross product with these functions and send the result to the API
+    // that expects left-handed, we will need to change sign on the vector
+    // (replace each component value c by -c).
+    Vector Cross (const Vector& vec) const;
+    Vector UnitCross (const Vector& vec) const;
+
 	// Special vectors
 	static const Vector ZERO;    // (0,0,0)
     static const Vector UNIT_X;  // (1,0,0)

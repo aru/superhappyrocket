@@ -143,3 +143,25 @@ inline float Vector::Normalize ( const float epsilon )
 
     return length;
 }
+
+Vector Vector::Cross (const Vector& vec) const
+{
+    return Vector
+    (
+        mTuple[1]*vec.mTuple[2] - mTuple[2]*vec.mTuple[1],
+        mTuple[2]*vec.mTuple[0] - mTuple[0]*vec.mTuple[2],
+        mTuple[0]*vec.mTuple[1] - mTuple[1]*vec.mTuple[0]
+    );
+}
+
+Vector Vector::UnitCross (const Vector& vec) const
+{
+    Vector cross
+    (
+        mTuple[1]*vec.mTuple[2] - mTuple[2]*vec.mTuple[1],
+        mTuple[2]*vec.mTuple[0] - mTuple[0]*vec.mTuple[2],
+        mTuple[0]*vec.mTuple[1] - mTuple[1]*vec.mTuple[0]
+    );
+    cross.Normalize();
+    return cross;
+}

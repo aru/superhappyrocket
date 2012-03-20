@@ -3,7 +3,12 @@
 Vector::Vector()
 {
 }
-
+Vector::Vector (const Vector& vec)
+{
+    mTuple[0] = vec.mTuple[0];
+    mTuple[1] = vec.mTuple[1];
+    mTuple[2] = vec.mTuple[2];
+}
 Vector::Vector( float x, float y, float z )
 {
 	mTuple[0] = x;

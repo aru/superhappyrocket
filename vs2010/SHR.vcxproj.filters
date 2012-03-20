@@ -34,6 +34,9 @@
     <Filter Include="Header Files\Math">
       <UniqueIdentifier>{a94f5fb4-63f4-4c09-b4fc-407fcff9af24}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Graphics\SceneGraph">
+      <UniqueIdentifier>{0b7324a7-c421-4521-b396-dbee03f02c7c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\main.cpp">
@@ -110,11 +113,11 @@
     <ClInclude Include="..\src\Memory.h">
       <Filter>Header Files\Memory</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\Spatial.h">
-      <Filter>Header Files\Graphics</Filter>
-    </ClInclude>
     <ClInclude Include="..\src\Vector.h">
       <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Spatial.h">
+      <Filter>Header Files\Graphics\SceneGraph</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
