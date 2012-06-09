@@ -33,4 +33,6 @@ protected:
     TYPE mTuple[DIMENSION];
 };
 
+#include "Tuple.inl"
+
 #endif

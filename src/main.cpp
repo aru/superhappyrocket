@@ -101,12 +101,11 @@ void DrawGLScene()
 	SDL_GL_SwapBuffers();
 }
 
-int main(int argc, char **argv) 
-{  
-	int done;
-	EventHandler myEventHandler;	// Event Handler
-	AudioHandler myAudioHandler;
-	
+/* Initialize a window, set the title of the window,
+ * initial resolution and stuff
+*/
+void setupSDL()
+{
 	/* Initialize SDL for video output */
 	if ( SDL_Init(SDL_INIT_VIDEO) < 0 ) {
 		fprintf(stderr, "Unable to initialize SDL: %s\n", SDL_GetError());
@@ -135,6 +134,16 @@ int main(int argc, char **argv)
 
 	/* Loop, drawing and checking events */
 	InitGL(800, 600);
+}
+
+int main(int argc, char **argv) 
+{  
+	int done;
+	EventHandler myEventHandler;	// Event Handler
+	AudioHandler myAudioHandler;
+	
+	setupSDL();
+	
 	done = 0;
 	while ( done != 1 ) {
 
@@ -163,6 +172,7 @@ int main(int argc, char **argv)
 		/*Use internal EventHandler attributes to get mouse stuff*/
 		DrawGLScene();
 	}
+
 	myAudioHandler.closeAudio();
 	SDL_Quit();
 	return 1;

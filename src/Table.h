@@ -43,4 +43,6 @@ protected:
 
 };
 
+#include "Table.inl"
+
 #endif

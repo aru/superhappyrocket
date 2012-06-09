@@ -142,5 +142,11 @@
     <None Include="..\src\Vector.inl">
       <Filter>Header Files\Math</Filter>
     </None>
+    <None Include="..\src\Tuple.inl">
+      <Filter>Header Files\DataTypes</Filter>
+    </None>
+    <None Include="..\src\Table.inl">
+      <Filter>Header Files\DataTypes</Filter>
+    </None>
   </ItemGroup>
 </Project>
