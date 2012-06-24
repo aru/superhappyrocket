@@ -82,6 +82,8 @@ void VectorTest()
 
 }
 
+
+
 void MatrixTest()
 {
 	cout << "Testing Matrix and operations" << endl;
@@ -107,77 +109,16 @@ void MatrixTest()
 	matE.MakeZero();  //Make matE a Zero Matrix
 
 	matF = matA * matE; //testing overloaded Operations
+	matG = matA + matB; //testing overloaded Operations
 
-
-	for (int i = 0; i < 3; i++)   //matA (direct input)
-	{
-		for (int j = 0; j < 3; j++)
-		{
-			cout << matA(i,j) << " ";
-		}
-		cout << endl;
-	}
-	cout << endl;
-
-
-	for (int i = 0; i < 3; i++)	//matB (created from 3 vectors)
-	{
-		for (int j = 0; j < 3; j++)
-		{
-			cout << matB(i,j) << " ";
-		}
-		cout << endl;
-	}
-	cout << endl;
-
-
-	for (int i = 0; i < 3; i++)	//matC  (created as a diagonal  matrix)
-	{
-		for (int j = 0; j < 3; j++)
-		{
-			cout << matC(i,j) << " ";
-		}
-		cout << endl;
-	}
-	cout << endl;
-
+	cout << matA; //matA (direct input)
+	cout << matB; //matB (created from 3 vectors)
+	cout << matC; //matC  (created as a diagonal  matrix)
+	cout << matD; //matD  (testing assigment operator)
+	cout << matE; //matE (zero matrix)
+	cout << matF; //matF (testing overloaded operators)
+	cout << matG; //matG (testing overloaded operators)
 	
-	for (int i = 0; i < 3; i++)  //mat D  (testing assigment operator)
-	{
-		for (int j = 0; j < 3; j++)
-		{
-			cout << matD(i,j) << " ";
-		}
-		cout << endl;
-	}
-	cout << endl;
-
-
-	for (int i = 0; i < 3; i++) //matE (zero matrix)
-	{
-		for (int j = 0; j < 3; j++)
-		{
-			cout << matE(i,j) << " ";
-		}
-		cout << endl;
-	}
-	cout << endl;
-
-
-	for (int i = 0; i < 3; i++) // matF (testing overloaded operators)
-	{
-		for (int j = 0; j < 3; j++)
-		{
-			cout << matF(i,j) << " ";
-		}
-		cout << endl;
-	}
-	cout << endl;
-
-
-
-	
-
 }
 
 int main( int argc, char **argv )

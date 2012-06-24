@@ -62,6 +62,22 @@ public:
     Matrix3& operator*= (Real scalar);
     Matrix3& operator/= (Real scalar);
 
+	//Insertion operator
+	friend std::ostream& operator<<(std::ostream& os, const Matrix3& mat)
+	{
+		for (int i = 0; i < 3; i++)  
+		{
+			for (int j = 0; j < 3; j++)
+			{
+				os << mat(i,j) << " ";
+			}
+			os << std::endl;
+		}
+		os << std::endl;
+		return os;
+	}
+
+
     // M*vec
     Vector3<Real> operator* (const Vector3<Real>& vec) const;
 
