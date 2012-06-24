@@ -10,6 +10,7 @@
 /* Libraries to be tested */
 #include "Tuple.h"
 #include "Table.h"
+#include "Vector3.h"
 
 using namespace std;
 
@@ -50,6 +51,39 @@ void TableTest()
 	}
 
 }
+void VectorTest()
+{
+	cout << "Testing vectors and operations" << endl;
+	 Vector3<float> A;
+	 Vector3<float> B;
+	 Vector3<float> C;
+	 Vector3<float> D;
+	 Vector3<float> E;
+
+	 A[0] = 1.0f;
+	 A[1] = 2.0f;
+	 A[2] = 3.0f;
+
+	 B[0] = 4.0f;
+	 B[1] = 5.0f;
+	 B[2] = 6.0f;
+
+	 C = A + B;
+
+	 D = B - A;
+
+	 E = A * 5.0f;
+
+	 
+
+	 cout << "A = " << A << endl;
+	 cout << "B = " << B << endl;
+	 cout << "C = A + B = " << C << endl;
+	 cout << "D = B - A = " << D << endl;
+	 cout << "E = A * 5 = " << E << endl;
+
+
+}
 
 int main( int argc, char **argv )
 {
@@ -57,6 +91,7 @@ int main( int argc, char **argv )
 
 	TupleTest();
 	TableTest();
+	VectorTest();
 
 	return 0;
 }
