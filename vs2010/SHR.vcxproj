@@ -118,7 +118,7 @@
     <ClInclude Include="..\src\GlExtensions.h" />
     <ClInclude Include="..\src\GraphicsLIB.h" />
     <ClInclude Include="..\src\IndexBuffer.h" />
-    <ClInclude Include="..\src\Matrix.h" />
+    <ClInclude Include="..\src\Matrix3.h" />
     <ClInclude Include="..\src\Memory.h" />
     <ClInclude Include="..\src\Node.h" />
     <ClInclude Include="..\src\Object.h" />
@@ -127,6 +127,7 @@
     <ClInclude Include="..\src\Table.h" />
     <ClInclude Include="..\src\Tuple.h" />
     <ClInclude Include="..\src\Vector.h" />
+    <ClInclude Include="..\src\Vector3.h" />
     <ClInclude Include="..\src\VertexBuffer.h" />
     <ClInclude Include="..\src\Visual.h" />
   </ItemGroup>
@@ -135,6 +136,7 @@
     <None Include="..\src\Table.inl" />
     <None Include="..\src\Tuple.inl" />
     <None Include="..\src\Vector.inl" />
+    <None Include="..\src\Vector3.inl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

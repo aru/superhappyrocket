@@ -125,14 +125,17 @@
     <ClInclude Include="..\src\Node.h">
       <Filter>Header Files\Graphics\SceneGraph</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\Matrix.h">
-      <Filter>Header Files\Math</Filter>
-    </ClInclude>
     <ClInclude Include="..\src\Tuple.h">
       <Filter>Header Files\DataTypes</Filter>
     </ClInclude>
     <ClInclude Include="..\src\Table.h">
       <Filter>Header Files\DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Matrix3.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Vector3.h">
+      <Filter>Header Files\Math</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -147,6 +150,9 @@
     </None>
     <None Include="..\src\Table.inl">
       <Filter>Header Files\DataTypes</Filter>
+    </None>
+    <None Include="..\src\Vector3.inl">
+      <Filter>Header Files\Math</Filter>
     </None>
   </ItemGroup>
 </Project>
