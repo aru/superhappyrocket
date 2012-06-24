@@ -96,6 +96,7 @@
     <ClCompile Include="..\src\IndexBuffer.cpp" />
     <ClCompile Include="..\src\Log.cpp" />
     <ClCompile Include="..\src\main.cpp" />
+    <ClCompile Include="..\src\Matrix3.cpp" />
     <ClCompile Include="..\src\Object.cpp" />
     <ClCompile Include="..\src\Renderer.cpp" />
     <ClCompile Include="..\src\Vector.cpp" />
@@ -133,6 +134,7 @@
     <ClInclude Include="..\src\Visual.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\src\Matrix3.inl" />
     <None Include="..\src\Memory.inl" />
     <None Include="..\src\Table.inl" />
     <None Include="..\src\Tuple.inl" />

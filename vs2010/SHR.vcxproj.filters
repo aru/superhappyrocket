@@ -78,6 +78,9 @@
     <ClCompile Include="..\src\Vector3.cpp">
       <Filter>Header Files\Math</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\Matrix3.cpp">
+      <Filter>Header Files\Math</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\Renderer.h">
@@ -155,6 +158,9 @@
       <Filter>Header Files\DataTypes</Filter>
     </None>
     <None Include="..\src\Vector3.inl">
+      <Filter>Header Files\Math</Filter>
+    </None>
+    <None Include="..\src\Matrix3.inl">
       <Filter>Header Files\Math</Filter>
     </None>
   </ItemGroup>
