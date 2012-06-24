@@ -11,8 +11,10 @@
 #include "Tuple.h"
 #include "Table.h"
 #include "Vector3.h"
+#include "Matrix3.h"
 
 using namespace std;
+
 
 void TupleTest()
 {
@@ -27,7 +29,7 @@ void TupleTest()
 	cout << test[0] << endl << test[1] << endl << test[2] << endl;
 
 	if( test[0] < test[1] )
-		cout << "wow" << endl;
+		cout << "wow" << endl << endl;
 }
 
 void TableTest()
@@ -47,41 +49,134 @@ void TableTest()
 		{
 			cout << test[i][j] << " ";
 		}
-		cout << endl;
+		cout << endl << endl;
 	}
 
 }
 void VectorTest()
 {
 	cout << "Testing vectors and operations" << endl;
+
 	 Vector3<float> A;
-	 Vector3<float> B;
+	 Vector3<float> B(4.0f,5.0f,6.0f); //direct input for Vector B
 	 Vector3<float> C;
 	 Vector3<float> D;
 	 Vector3<float> E;
-
+	 //Vector3<float> F;
+	
 	 A[0] = 1.0f;
 	 A[1] = 2.0f;
 	 A[2] = 3.0f;
-
-	 B[0] = 4.0f;
-	 B[1] = 5.0f;
-	 B[2] = 6.0f;
-
 	 C = A + B;
-
 	 D = B - A;
-
 	 E = A * 5.0f;
-
-	 
+	 //F = Vector3f::ZERO;
 
 	 cout << "A = " << A << endl;
 	 cout << "B = " << B << endl;
 	 cout << "C = A + B = " << C << endl;
 	 cout << "D = B - A = " << D << endl;
-	 cout << "E = A * 5 = " << E << endl;
+	 cout << "E = A * 5 = " << E << endl << endl;
+	 //cout << "F = ZERO = " << F << endl;
 
+
+}
+
+void MatrixTest()
+{
+	cout << "Testing Matrix and operations" << endl;
+
+	Matrix3<float> matA(1.0f,1.0f,1.0f,1.0f,1.0f,1.0f,1.0f,1.0f,1.0f);  // Direct input for the matrix
+	Vector3<float> A;
+	Vector3<float> B;
+	Vector3<float> C;
+		
+	A[0] = 1.0f;
+	A[1] = 2.0f;
+	A[2] = 3.0f;
+	B = A * 2;
+	C = A + B;
+	
+	Matrix3<float> matB(A,B,C,3);  // Matrix created from 3 vectors
+	Matrix3<float> matC(1.0f,2.0f,3.0f);  // Create a diagonal Matrix
+	Matrix3<float> matD = matB;  // Assignment operator
+	Matrix3<float> matE;
+	Matrix3<float> matF;
+	Matrix3<float> matG;
+
+	matE.MakeZero();  //Make matE a Zero Matrix
+
+	matF = matA * matE; //testing overloaded Operations
+
+
+	for (int i = 0; i < 3; i++)   //matA (direct input)
+	{
+		for (int j = 0; j < 3; j++)
+		{
+			cout << matA(i,j) << " ";
+		}
+		cout << endl;
+	}
+	cout << endl;
+
+
+	for (int i = 0; i < 3; i++)	//matB (created from 3 vectors)
+	{
+		for (int j = 0; j < 3; j++)
+		{
+			cout << matB(i,j) << " ";
+		}
+		cout << endl;
+	}
+	cout << endl;
+
+
+	for (int i = 0; i < 3; i++)	//matC  (created as a diagonal  matrix)
+	{
+		for (int j = 0; j < 3; j++)
+		{
+			cout << matC(i,j) << " ";
+		}
+		cout << endl;
+	}
+	cout << endl;
+
+	
+	for (int i = 0; i < 3; i++)  //mat D  (testing assigment operator)
+	{
+		for (int j = 0; j < 3; j++)
+		{
+			cout << matD(i,j) << " ";
+		}
+		cout << endl;
+	}
+	cout << endl;
+
+
+	for (int i = 0; i < 3; i++) //matE (zero matrix)
+	{
+		for (int j = 0; j < 3; j++)
+		{
+			cout << matE(i,j) << " ";
+		}
+		cout << endl;
+	}
+	cout << endl;
+
+
+	for (int i = 0; i < 3; i++) // matF (testing overloaded operators)
+	{
+		for (int j = 0; j < 3; j++)
+		{
+			cout << matF(i,j) << " ";
+		}
+		cout << endl;
+	}
+	cout << endl;
+
+
+
+	
 
 }
 
@@ -92,6 +187,7 @@ int main( int argc, char **argv )
 	TupleTest();
 	TableTest();
 	VectorTest();
+	MatrixTest();
 
 	return 0;
 }

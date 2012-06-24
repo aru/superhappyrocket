@@ -7,6 +7,7 @@
 template <typename Real>
 class Matrix3 : public Table<3,3,Real>
 {
+public:
 	// If makeZero is true we create the zero matrix, else
 	// we make the identity matrix
 	Matrix3 (bool makeZero = true);
