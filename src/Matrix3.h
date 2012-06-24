@@ -39,8 +39,6 @@ class Matrix3 : public Table<3,3,Real>
     // angle must be in radians, not degrees.
     Matrix3 (const Vector3<Real>& axis, Real angle);
 
-	~Matrix3 ();
-
 	// Assignment.
     Matrix3& operator= (const Matrix3& mat);
 
