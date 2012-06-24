@@ -75,6 +75,9 @@
     <ClCompile Include="..\src\Vector.cpp">
       <Filter>Header Files\Math</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\Vector3.cpp">
+      <Filter>Header Files\Math</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\Renderer.h">

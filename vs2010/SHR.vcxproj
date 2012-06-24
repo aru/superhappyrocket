@@ -99,6 +99,7 @@
     <ClCompile Include="..\src\Object.cpp" />
     <ClCompile Include="..\src\Renderer.cpp" />
     <ClCompile Include="..\src\Vector.cpp" />
+    <ClCompile Include="..\src\Vector3.cpp" />
     <ClCompile Include="..\src\VertexBuffer.cpp" />
     <ClCompile Include="..\src\Visual.cpp" />
   </ItemGroup>
