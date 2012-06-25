@@ -103,7 +103,7 @@ void MatrixTest()
 	B = A * 2;
 	C = A + B;
 	
-	Matrix3<float> matB(A,B,C,3);  // Matrix created from 3 vectors
+	Matrix3<float> matB(A,B,C,1);  // Matrix created from 3 vectors
 	Matrix3<float> matC(1.0f,2.0f,3.0f);  // Create a diagonal Matrix
 	Matrix3<float> matD = matB;  // Assignment operator
 	Matrix3<float> matE;
