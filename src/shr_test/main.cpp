@@ -11,6 +11,8 @@
 #include "Tuple.h"
 #include "Table.h"
 #include "Vector3.h"
+//#include "Vector3.cpp"
+
 
 using namespace std;
 
@@ -53,6 +55,7 @@ void TableTest()
 }
 void VectorTest()
 {
+
 	cout << "Testing vectors and operations" << endl;
 	 Vector3<float> A;
 	 Vector3<float> B;
@@ -74,14 +77,15 @@ void VectorTest()
 
 	 E = A * 5.0f;
 
-	 
-
 	 cout << "A = " << A << endl;
 	 cout << "B = " << B << endl;
 	 cout << "C = A + B = " << C << endl;
 	 cout << "D = B - A = " << D << endl;
 	 cout << "E = A * 5 = " << E << endl;
 
+	 A = Vector3f::ZERO;
+	 cout << "A = " << A << endl;
+	 
 
 }
 
