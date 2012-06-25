@@ -128,4 +128,10 @@ inline Vector3<Real> operator* (const Vector3<Real>& vec,
 typedef Matrix3<float> Matrix3f;
 typedef Matrix3<double> Matrix3d;
 
+template<> const Matrix3<float> Matrix3<float>::ZERO(true);
+template<> const Matrix3<float> Matrix3<float>::IDENTITY(false);
+
+template<> const Matrix3<double> Matrix3<double>::ZERO(true);
+template<> const Matrix3<double> Matrix3<double>::IDENTITY(false);
+
 #endif

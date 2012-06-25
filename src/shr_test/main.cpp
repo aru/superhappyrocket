@@ -64,7 +64,7 @@ void VectorTest()
 	 Vector3<float> C;
 	 Vector3<float> D;
 	 Vector3<float> E;
-	 //Vector3<float> F;
+	 Vector3<float> F;
 	
 	 A[0] = 1.0f;
 	 A[1] = 2.0f;
@@ -72,18 +72,15 @@ void VectorTest()
 	 C = A + B;
 	 D = B - A;
 	 E = A * 5.0f;
-	 //F = Vector3f::ZERO;
+	 F = Vector3f::ZERO;
 	 cout << "A = " << A << endl;
 	 cout << "B = " << B << endl;
 	 cout << "C = A + B = " << C << endl;
 	 cout << "D = B - A = " << D << endl;
-	 cout << "E = A * 5 = " << E << endl << endl;
-	 //cout << "F = ZERO = " << F << endl;
+	 cout << "E = A * 5 = " << E << endl;
+	 cout << "F = ZERO = " << F << endl << endl;
 
-	 A = Vector3f::ZERO;
-	 cout << "A = " << A << endl;
-	 
-
+	
 }
 
 
@@ -103,7 +100,7 @@ void MatrixTest()
 	B = A * 2;
 	C = A + B;
 	
-	Matrix3<float> matB(A,B,C,3);  // Matrix created from 3 vectors
+	Matrix3<float> matB(A,B,C,1);  // Matrix created from 3 vectors
 	Matrix3<float> matC(1.0f,2.0f,3.0f);  // Create a diagonal Matrix
 	Matrix3<float> matD = matB;  // Assignment operator
 	Matrix3<float> matE;
