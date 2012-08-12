@@ -81,6 +81,18 @@
     <ClCompile Include="..\src\Matrix3.cpp">
       <Filter>Header Files\Math</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\AVector.cpp">
+      <Filter>Header Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\HMatrix.cpp">
+      <Filter>Header Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\HPoint.cpp">
+      <Filter>Header Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\APoint.cpp">
+      <Filter>Header Files\Math</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\Renderer.h">
@@ -143,6 +155,24 @@
     <ClInclude Include="..\src\Vector3.h">
       <Filter>Header Files\Math</Filter>
     </ClInclude>
+    <ClInclude Include="..\src\Transform.h">
+      <Filter>Header Files\Graphics\SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\HMatrix.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\APoint.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\AVector.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\HPoint.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Float3.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\src\Memory.inl">
@@ -162,6 +192,21 @@
     </None>
     <None Include="..\src\Matrix3.inl">
       <Filter>Header Files\Math</Filter>
+    </None>
+    <None Include="..\src\HPoint.inl">
+      <Filter>Header Files\Math</Filter>
+    </None>
+    <None Include="..\src\AVector.inl">
+      <Filter>Header Files\Math</Filter>
+    </None>
+    <None Include="..\src\APoint.inl">
+      <Filter>Header Files\Math</Filter>
+    </None>
+    <None Include="..\src\HMatrix.inl">
+      <Filter>Header Files\Math</Filter>
+    </None>
+    <None Include="..\src\Transform.inl">
+      <Filter>Header Files\Graphics\SceneGraph</Filter>
     </None>
   </ItemGroup>
 </Project>
