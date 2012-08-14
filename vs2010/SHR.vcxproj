@@ -49,8 +49,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -59,6 +58,8 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -73,13 +74,14 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -90,9 +92,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\src\APoint.cpp" />
     <ClCompile Include="..\src\AudioHandler.cpp" />
+    <ClCompile Include="..\src\AVector.cpp" />
     <ClCompile Include="..\src\Buffer.cpp" />
     <ClCompile Include="..\src\EventHandler.cpp" />
+    <ClCompile Include="..\src\HMatrix.cpp" />
+    <ClCompile Include="..\src\HPoint.cpp" />
     <ClCompile Include="..\src\IndexBuffer.cpp" />
     <ClCompile Include="..\src\Log.cpp" />
     <ClCompile Include="..\src\main.cpp" />
@@ -112,13 +118,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\src\APoint.h" />
     <ClInclude Include="..\src\AudioHandler.h" />
+    <ClInclude Include="..\src\AVector.h" />
     <ClInclude Include="..\src\Buffer.h" />
     <ClInclude Include="..\src\Core.h" />
     <ClInclude Include="..\src\CoreLIB.h" />
     <ClInclude Include="..\src\EventHandler.h" />
+    <ClInclude Include="..\src\Float3.h" />
     <ClInclude Include="..\src\GlExtensions.h" />
     <ClInclude Include="..\src\GraphicsLIB.h" />
+    <ClInclude Include="..\src\HMatrix.h" />
+    <ClInclude Include="..\src\HPoint.h" />
     <ClInclude Include="..\src\IndexBuffer.h" />
     <ClInclude Include="..\src\Matrix3.h" />
     <ClInclude Include="..\src\Memory.h" />
@@ -127,6 +138,7 @@
     <ClInclude Include="..\src\Renderer.h" />
     <ClInclude Include="..\src\Spatial.h" />
     <ClInclude Include="..\src\Table.h" />
+    <ClInclude Include="..\src\Transform.h" />
     <ClInclude Include="..\src\Tuple.h" />
     <ClInclude Include="..\src\Vector.h" />
     <ClInclude Include="..\src\Vector3.h" />
@@ -134,9 +146,14 @@
     <ClInclude Include="..\src\Visual.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\src\APoint.inl" />
+    <None Include="..\src\AVector.inl" />
+    <None Include="..\src\HMatrix.inl" />
+    <None Include="..\src\HPoint.inl" />
     <None Include="..\src\Matrix3.inl" />
     <None Include="..\src\Memory.inl" />
     <None Include="..\src\Table.inl" />
+    <None Include="..\src\Transform.inl" />
     <None Include="..\src\Tuple.inl" />
     <None Include="..\src\Vector.inl" />
     <None Include="..\src\Vector3.inl" />
