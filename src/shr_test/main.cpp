@@ -12,6 +12,17 @@
 #include "Table.h"
 #include "Vector3.h"
 #include "Matrix3.h"
+#include "HPoint.h"
+#include "HPoint.cpp"
+#include "HMatrix.h"
+#include "HMatrix.cpp"
+#include "AVector.h"
+#include "AVector.cpp"
+#include "APoint.h"
+#include "APoint.cpp"
+#include "Float3.h"
+//#include "Transform.h"
+//#include "Transform.inl"
 
 
 using namespace std;
@@ -122,6 +133,57 @@ void MatrixTest()
 	
 }
 
+void HpointTest()
+{
+	cout << "Testing homogeneus points" << endl;
+
+	HPoint hp1(2.0f, 1.0f, 6.0f, 1.0f);	//initializing with 4 floats
+	HPoint hp2(1.0f, 2.0f, 3.0f, 1.0f);	//initializing with 4 floats
+	HPoint hp3(hp2);					//initializing with an Hpoint
+	HPoint hp4;							//unitialized
+	hp4=hp3;							//assignment operator
+
+	cout << "hp2 = " << hp2.X() << " " << hp2.Y() << " " << hp2.Z() << " " << hp2.W() << endl;
+	cout << "hp3 = " << hp3.X() << " " << hp3.Y() << " " << hp3.Z() << " " << hp3.W() << endl;
+
+	if((hp2 == hp3) &&(hp3 == hp4))
+		cout << "True" << endl;
+
+	if(hp1 != hp3)
+		cout << "True" << endl;
+
+	if(hp2 >= hp1)
+		cout << "True" << endl << endl;
+}
+
+void HmatrixTest()
+{
+	cout << "Testing HMatrix" << endl;
+
+	Matrix3<float> matA(1.0f,1.0f,1.0f,1.0f,1.0f,1.0f,1.0f,1.0f,1.0f);  //matrix3
+	HMatrix hm1(matA);													//initializing from matrix3
+	HMatrix hm2();														//uninitialized
+	HMatrix hm3(hm1);													//Initializing from another HMatrix
+	HMatrix hm4(1.0f, 2.0f, 3.0f);										//Initializing with 3 floats (diagonal)
+	HMatrix hm5(1.0f, 2.0f, 3.0f, 4.0f,									//Initializing with 16 floats
+				5.0f, 6.0f, 7.0f, 8.0f,
+				9.0f, 10.f, 11.0f, 12.0f,
+				13.0f, 14.0f, 15.0f, 16.0f);		
+	
+	if(hm1 == hm3)
+		cout << "True" << endl;					
+
+	if(hm1 != hm4)
+		cout << "True" << endl;
+
+	hm1 = hm1 + hm3;													//assignment operator and mathemathic operators
+
+	if(hm1 == ((hm1*2)- hm1))
+		cout << "True" << endl << endl;
+
+
+}
+
 int main( int argc, char **argv )
 {
 	cout << "SHR Test Framework 0.1" << endl;
@@ -130,6 +192,8 @@ int main( int argc, char **argv )
 	TableTest();
 	VectorTest();
 	MatrixTest();
+	HpointTest();
+	HmatrixTest();
 
 	return 0;
 }
