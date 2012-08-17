@@ -143,6 +143,7 @@ void HpointTest()
 	HPoint hp4;							//unitialized
 	hp4=hp3;							//assignment operator
 
+
 	cout << "hp2 = " << hp2.X() << " " << hp2.Y() << " " << hp2.Z() << " " << hp2.W() << endl;
 	cout << "hp3 = " << hp3.X() << " " << hp3.Y() << " " << hp3.Z() << " " << hp3.W() << endl;
 
@@ -181,7 +182,42 @@ void HmatrixTest()
 	if(hm1 == ((hm1*2)- hm1))
 		cout << "True" << endl << endl;
 
+}
 
+void AvectApoint()
+{
+	cout << "Testing AVectors and APoints" << endl;
+
+	Tuple<3,float> test;
+	test[0] = 2.2f;
+	test[1] = 3.3f;
+	test[2] = 4.4f;
+	
+	Vector3f A(2.0f, 2.0f, 2.0f);
+
+	APoint ap1(1.0f, 3.0f, 5.0f);		//initialized with 3 floats
+	APoint ap2(1.0f, 1.0f, 1.0f);		
+	APoint ap3(ap1);					//initialized from an APoint
+	APoint ap4(test);					//initialized from a Tuple
+	APoint ap5(A);						//initialized from a vector3f
+
+	AVector av1(1.0f, 2.0f, 3.0);		//initialized with 3 floats
+	AVector av2(test);					//initialized from a Tuple
+	AVector av3(A);						//initialized from a vector3f
+
+	ap2 = ap1;							//assignment operator
+
+	ap3 = ap2 - av2;					//poit - vector = point
+	av1 = ap1 - ap2;					//point - point = vector
+
+	ap4 = ap2 * 3;						//point by scalar
+	ap5 += ap1;							// += operator
+
+	av1 = av3.Cross(av2);				//assignment and cross operator
+
+	cout << av2.Length() << endl;		//length
+	cout << "av1 = "<< av1.X() << " " << av1.Y() << " " << av1.Z() << endl<< endl;
+		
 }
 
 int main( int argc, char **argv )
@@ -194,6 +230,7 @@ int main( int argc, char **argv )
 	MatrixTest();
 	HpointTest();
 	HmatrixTest();
+	AvectApoint();
 
 	return 0;
 }
