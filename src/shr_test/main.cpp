@@ -21,7 +21,7 @@
 #include "APoint.h"
 #include "APoint.cpp"
 #include "Float3.h"
-//#include "Transform.h"
+#include "Transform.h"
 //#include "Transform.inl"
 
 
