@@ -159,7 +159,7 @@ void HpointTest()
 
 void HmatrixTest()
 {
-	cout << "Testing HMatrix" << endl;
+	cout << "Testing HMatrix and Transform" << endl;
 
 	Matrix3<float> matA(1.0f,1.0f,1.0f,1.0f,1.0f,1.0f,1.0f,1.0f,1.0f);  //matrix3
 	HMatrix hm1(matA);													//initializing from matrix3
@@ -182,6 +182,24 @@ void HmatrixTest()
 	if(hm1 == ((hm1*2)- hm1))
 		cout << "True" << endl << endl;
 
+	//Testing Transfrom
+
+	Transform trans();
+	
+	//trans().SetMatrix(hm1);											//Set the Matrix to transfrom
+
+	//HMatrix hm6 = trans().GetMatrix();
+
+	for (int i = 0; i < 3; i++)  
+	{
+		for (int j = 0; j < 3; j++)
+		{
+			cout << matA(i,j) << " ";
+		}
+		cout << std::endl;
+	}
+
+	cout << std::endl;
 }
 
 void AvectApoint()
