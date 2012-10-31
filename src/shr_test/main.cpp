@@ -22,7 +22,13 @@
 #include "APoint.cpp"
 #include "Float3.h"
 #include "Transform.h"
+#include "Transform.cpp"
 //#include "Transform.inl"
+#include "HPlane.h"
+#include "HPlane.cpp"
+#include "Bound.h"
+#include "Bound.cpp"
+
 
 
 using namespace std;
@@ -161,9 +167,11 @@ void HmatrixTest()
 {
 	cout << "Testing HMatrix and Transform" << endl;
 
+	AVector av1(1.0f, 2.0f, 3.0);
+
 	Matrix3<float> matA(1.0f,1.0f,1.0f,1.0f,1.0f,1.0f,1.0f,1.0f,1.0f);  //matrix3
 	HMatrix hm1(matA);													//initializing from matrix3
-	HMatrix hm2();														//uninitialized
+	HMatrix hm2(av1, 90);												//Initializing  a MakeRotation(axis, angle);
 	HMatrix hm3(hm1);													//Initializing from another HMatrix
 	HMatrix hm4(1.0f, 2.0f, 3.0f);										//Initializing with 3 floats (diagonal)
 	HMatrix hm5(1.0f, 2.0f, 3.0f, 4.0f,									//Initializing with 16 floats
@@ -182,14 +190,6 @@ void HmatrixTest()
 	if(hm1 == ((hm1*2)- hm1))
 		cout << "True" << endl << endl;
 
-	//Testing Transfrom
-
-	Transform trans();
-	
-	//trans().SetMatrix(hm1);											//Set the Matrix to transfrom
-
-	//HMatrix hm6 = trans().GetMatrix();
-
 	for (int i = 0; i < 3; i++)  
 	{
 		for (int j = 0; j < 3; j++)
@@ -200,6 +200,13 @@ void HmatrixTest()
 	}
 
 	cout << std::endl;
+
+	//Testing Transform
+
+	Transform *trans1;
+	
+	trans1 = new Transform();
+	trans1->SetMatrix(hm3);
 }
 
 void AvectApoint()
@@ -219,7 +226,7 @@ void AvectApoint()
 	APoint ap4(test);					//initialized from a Tuple
 	APoint ap5(A);						//initialized from a vector3f
 
-	AVector av1(1.0f, 2.0f, 3.0);		//initialized with 3 floats
+	AVector av1(1.0f, 2.0f, 3.0f);		//initialized with 3 floats
 	AVector av2(test);					//initialized from a Tuple
 	AVector av3(A);						//initialized from a vector3f
 
@@ -238,6 +245,43 @@ void AvectApoint()
 		
 }
 
+void HplaneTest()
+{
+	cout << "Testing homogeneus planes" << endl;
+	HPlane plane1(1.0f, 1.0f, 1.0f, 3.0f);	//Specify N and c directly	
+	AVector av1(1.0f, 1.0f, 1.0f);		//initialized with 3 floats
+	HPlane plane2(av1, 2.0f);
+	APoint ap1(1.0f, 3.0f, 5.0f);		//initialized with 3 floats
+	HPlane plane3(av1, ap1);
+	HPlane plane4 = plane3;				//assignment operator
+	cout << "Plane1 " << "( " << plane1[0] << ", " << plane1[1] << 
+		", " << plane1[2] << " ) " << plane1[3] <<endl;
+	cout << "Plane2 " << "( " << plane2[0] << ", " << plane2[1] << 
+		", " << plane2[2] << " ) " << plane2[3] <<endl;
+	cout << "Plane3 " << "( " << plane3[0] << ", " << plane3[1] << 
+		", " << plane3[2] << " ) " << plane3[3] <<endl;
+	plane3.Normalize();					//Normalize 
+	cout << "Normalized Plane3 " << "( " << plane3[0] << ", " << plane3[1] << 
+		", " << plane3[2] << " ) " << plane3[3] <<endl;
+	cout << "Distance from plane 2 to AP1: " << plane2.DistanceTo(ap1) << endl << endl;	//Distance to a point	
+}
+
+void BoundTest()
+{
+	cout << "Testing Bounds" << endl;
+	Bound bound1;
+	APoint center(1.0f, 1.0f, 1.0f);
+	bound1.SetCenter(center);
+	bound1.SetRadius(2.0f);
+	Bound bound2 = bound1;
+	HPlane plane1(1.0f, 1.0f, 1.0f, 3.0f);
+	cout << bound1.WhichSide(plane1) << endl;
+	//test for intersection
+	cout << bound1.TestIntersection(bound2) << endl;
+	AVector av1(1.0f, 2.0f, 3.0f);
+	cout << bound2.TestIntersection(center, av1, 1.0f, 2.0f) << endl ;
+}
+
 int main( int argc, char **argv )
 {
 	cout << "SHR Test Framework 0.1" << endl;
@@ -249,6 +293,8 @@ int main( int argc, char **argv )
 	HpointTest();
 	HmatrixTest();
 	AvectApoint();
+	HplaneTest();
+	BoundTest();
 
 	return 0;
 }

@@ -1,5 +1,5 @@
-#ifndef WM5AVECTOR_H
-#define WM5AVECTOR_H
+#ifndef AVECTOR_H
+#define AVECTOR_H
 
 #include "HPoint.h"
 #include "Float3.h"

@@ -1,5 +1,5 @@
-#ifndef WM5HPOINT_H
-#define WM5HPOINT_H
+#ifndef HPOINT_H
+#define HPOINT_H
 
 #include "CoreLIB.h"
 

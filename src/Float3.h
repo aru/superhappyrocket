@@ -1,5 +1,5 @@
-#ifndef WM5FLOAT3_H
-#define WM5FLOAT3_H
+#ifndef FLOAT3_H
+#define FLOAT3_H
 
 #include "Tuple.h"
 

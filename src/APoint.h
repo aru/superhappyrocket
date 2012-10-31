@@ -1,5 +1,5 @@
-#ifndef WM5APOINT_H
-#define WM5APOINT_H
+#ifndef APOINT_H
+#define APOINT_H
 
 #include "AVector.h"
 

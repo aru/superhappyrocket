@@ -93,6 +93,15 @@
     <ClCompile Include="..\src\APoint.cpp">
       <Filter>Header Files\Math</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\Transform.cpp">
+      <Filter>Header Files\Graphics\SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\HPlane.cpp">
+      <Filter>Header Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Bound.cpp">
+      <Filter>Header Files\Graphics</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\Renderer.h">
@@ -173,6 +182,12 @@
     <ClInclude Include="..\src\Float3.h">
       <Filter>Header Files\Math</Filter>
     </ClInclude>
+    <ClInclude Include="..\src\HPlane.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Bound.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\src\Memory.inl">
@@ -207,6 +222,12 @@
     </None>
     <None Include="..\src\Transform.inl">
       <Filter>Header Files\Graphics\SceneGraph</Filter>
+    </None>
+    <None Include="..\src\HPlane.inl">
+      <Filter>Header Files\Math</Filter>
+    </None>
+    <None Include="..\src\Bound.inl">
+      <Filter>Header Files\Graphics</Filter>
     </None>
   </ItemGroup>
 </Project>

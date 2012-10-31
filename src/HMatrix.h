@@ -1,5 +1,5 @@
-#ifndef WM5HMATRIX_H
-#define WM5HMATRIX_H
+#ifndef HMATRIX_H
+#define HMATRIX_H
 
 #include "APoint.h"
 #include "Matrix3.h"
