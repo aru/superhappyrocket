@@ -9,6 +9,7 @@
  * delete with delete0,1,2,3, too.
  */
 
+#include "GraphicsLIB.h"
 #include "Object.h"
 
 class Buffer : public Object

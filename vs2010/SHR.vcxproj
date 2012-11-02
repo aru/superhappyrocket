@@ -55,7 +55,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>
       </AdditionalIncludeDirectories>
-      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <PrecompiledHeaderFile>
@@ -69,6 +69,7 @@
       </IgnoreAllDefaultLibraries>
       <EntryPointSymbol>
       </EntryPointSymbol>
+      <IgnoreSpecificDefaultLibraries>libc.lib;libcmt.lib;msvcrt.lib;libcd.lib;libcmtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -93,20 +94,28 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\src\APoint.cpp" />
+    <ClCompile Include="..\src\Assert.cpp" />
     <ClCompile Include="..\src\AudioHandler.cpp" />
     <ClCompile Include="..\src\AVector.cpp" />
     <ClCompile Include="..\src\Bound.cpp" />
     <ClCompile Include="..\src\Buffer.cpp" />
+    <ClCompile Include="..\src\BufferIO.cpp" />
+    <ClCompile Include="..\src\Endian.cpp" />
     <ClCompile Include="..\src\EventHandler.cpp" />
     <ClCompile Include="..\src\HMatrix.cpp" />
     <ClCompile Include="..\src\HPlane.cpp" />
     <ClCompile Include="..\src\HPoint.cpp" />
     <ClCompile Include="..\src\IndexBuffer.cpp" />
+    <ClCompile Include="..\src\InitTerm.cpp" />
     <ClCompile Include="..\src\Log.cpp" />
     <ClCompile Include="..\src\main.cpp" />
     <ClCompile Include="..\src\Matrix3.cpp" />
+    <ClCompile Include="..\src\Memory.cpp" />
+    <ClCompile Include="..\src\Mutex.cpp" />
     <ClCompile Include="..\src\Object.cpp" />
     <ClCompile Include="..\src\Renderer.cpp" />
+    <ClCompile Include="..\src\SmartPointer.cpp" />
+    <ClCompile Include="..\src\Stream.cpp" />
     <ClCompile Include="..\src\Transform.cpp" />
     <ClCompile Include="..\src\Vector.cpp" />
     <ClCompile Include="..\src\Vector3.cpp" />
@@ -122,12 +131,15 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\APoint.h" />
+    <ClInclude Include="..\src\Assert.h" />
     <ClInclude Include="..\src\AudioHandler.h" />
     <ClInclude Include="..\src\AVector.h" />
     <ClInclude Include="..\src\Bound.h" />
     <ClInclude Include="..\src\Buffer.h" />
+    <ClInclude Include="..\src\BufferIO.h" />
     <ClInclude Include="..\src\Core.h" />
     <ClInclude Include="..\src\CoreLIB.h" />
+    <ClInclude Include="..\src\Endian.h" />
     <ClInclude Include="..\src\EventHandler.h" />
     <ClInclude Include="..\src\Float3.h" />
     <ClInclude Include="..\src\GlExtensions.h" />
@@ -136,12 +148,20 @@
     <ClInclude Include="..\src\HPlane.h" />
     <ClInclude Include="..\src\HPoint.h" />
     <ClInclude Include="..\src\IndexBuffer.h" />
+    <ClInclude Include="..\src\InitTerm.h" />
+    <ClInclude Include="..\src\Log.h" />
+    <ClInclude Include="..\src\Math.h" />
     <ClInclude Include="..\src\Matrix3.h" />
     <ClInclude Include="..\src\Memory.h" />
+    <ClInclude Include="..\src\Mutex.h" />
+    <ClInclude Include="..\src\MutexType.h" />
     <ClInclude Include="..\src\Node.h" />
     <ClInclude Include="..\src\Object.h" />
     <ClInclude Include="..\src\Renderer.h" />
+    <ClInclude Include="..\src\SDL_mixer.h" />
+    <ClInclude Include="..\src\SmartPointer.h" />
     <ClInclude Include="..\src\Spatial.h" />
+    <ClInclude Include="..\src\Stream.h" />
     <ClInclude Include="..\src\Table.h" />
     <ClInclude Include="..\src\Transform.h" />
     <ClInclude Include="..\src\Tuple.h" />
@@ -154,11 +174,14 @@
     <None Include="..\src\APoint.inl" />
     <None Include="..\src\AVector.inl" />
     <None Include="..\src\Bound.inl" />
+    <None Include="..\src\BufferIO.inl" />
     <None Include="..\src\HMatrix.inl" />
     <None Include="..\src\HPlane.inl" />
     <None Include="..\src\HPoint.inl" />
     <None Include="..\src\Matrix3.inl" />
     <None Include="..\src\Memory.inl" />
+    <None Include="..\src\Node.inl" />
+    <None Include="..\src\SmartPointer.inl" />
     <None Include="..\src\Table.inl" />
     <None Include="..\src\Transform.inl" />
     <None Include="..\src\Tuple.inl" />

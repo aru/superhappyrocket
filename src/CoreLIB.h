@@ -24,9 +24,9 @@
 #if _MSC_VER < 1400
 #error MSVC 8.0 or later is required
 #elif _MSC_VER < 1500
-#define WM5_USING_VC80
+#define USING_VC80
 #else
-#define WM5_USING_VC90
+#define USING_VC90
 #endif
 
 // Disable the Microsoft warnings about not using the secure functions.
@@ -90,6 +90,63 @@
 #define public_internal public
 #define protected_internal protected
 #define private_internal private
+
+// Avoid warnings about unused variables.  This is designed for variables
+// that are exposed in debug configurations but are hidden in release
+// configurations.
+#define UNUSED(variable) (void)variable
+
+// Begin Microsoft Windows DLL support.
+#if defined(CORE_DLL_EXPORT)
+    // For the DLL library.
+    #define CORE_ITEM __declspec(dllexport)
+#elif defined(CORE_DLL_IMPORT)
+    // For a client of the DLL library.
+    #define CORE_ITEM __declspec(dllimport)
+#else
+    // For the static library and for Apple/Linux.
+    #define CORE_ITEM
+#endif
+
+// Macros to enable or disable various Assert subsystems.  TODO:  Currently,
+// the extended assert system is implemented only for Microsoft Visual Studio.
+#ifdef _DEBUG
+    #if defined(WIN32) && defined(_MSC_VER)
+        #define USE_ASSERT
+        #ifdef USE_ASSERT
+            #define USE_ASSERT_WRITE_TO_OUTPUT_WINDOW
+            #define USE_ASSERT_WRITE_TO_MESSAGE_BOX
+        #endif
+    #endif
+    //#define USE_ASSERT_LOG_TO_FILE
+#endif
+
+// Macros for memory management.  To report memory leaks and related
+// file-line information, you must enable USE_MEMORY.  This in
+// turn requires Memory::Initialize and Memory::Terminate to be called
+// in your application.  This is handled automatically if you use the
+// Wild Magic application layer.  If you do not, see the 'main' function
+// in the file
+//   WildMagic5/LibApplication/Application.cpp
+// for an example.  Also read the general documentation about start-up
+// and shut-down
+//   WildMagic5/Documentation/InitTerm.pdf
+//
+#define USE_MEMORY2
+#ifdef USE_MEMORY
+    // Enable an assertion when a allocation occurs before
+    // Memory::Initialize was called or when a deallocation occurs after
+    // Memory::Terminate was called.
+    #define USE_MEMORY_ASSERT_ON_PREINIT_POSTTERM_OPERATIONS
+
+    // When USE_MEMORY is enabled, the Memory functions delete0,
+    // delete1, delete2, and delete3 will fail when the incoming pointer
+    // was not allocated by the Wild Magic memory manager.  Enabling the
+    // following flag tells Wild Magic's memory manager to attempt
+    // 'delete' or 'delete[]' under the assumption that the memory was
+    // allocated by 'new' or 'new[]'.
+    #define USE_MEMORY_ALLOW_DELETE_ON_FAILED_MAP_LOOKUP
+#endif
 
 #endif
 

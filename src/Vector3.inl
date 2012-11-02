@@ -1,11 +1,3 @@
-// Geometric Tools, LLC
-// Copyright (c) 1998-2011
-// Distributed under the Boost Software License, Version 1.0.
-// http://www.boost.org/LICENSE_1_0.txt
-// http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
-//
-// File Version: 5.0.1 (2010/09/19)
-
 //----------------------------------------------------------------------------
 template <typename Real>
 Vector3<Real>::Vector3 ()
@@ -284,8 +276,7 @@ template <typename Real>
 void Vector3<Real>::ComputeExtremes (int numVectors, const Vector3* vectors,
     Vector3& vmin, Vector3& vmax)
 {
-    assertion(numVectors > 0 && vectors,
-        "Invalid inputs to ComputeExtremes\n");
+    assert(numVectors > 0 && vectors); /* Invalid inputs to ComputeExtremes*/
 
     vmin = vectors[0];
     vmax = vmin;
@@ -407,8 +398,8 @@ bool Vector3<Real>::GetBarycentrics (const Vector3& v0, const Vector3& v1,
         bary[i] = (Real)0;
     }
 
-#ifdef WM5_ASSERT_ON_BARYCENTRIC3_DEGENERATE
-    assertion(false, "Input tetrahedron is degenerate.\n");
+#ifdef ASSERT_ON_BARYCENTRIC3_DEGENERATE
+    assert(false); /* Input tetrahedron is degenerate. */
 #endif
     return false;
 }
@@ -417,8 +408,7 @@ template <typename Real>
 void Vector3<Real>::GetInformation (int numPoints, const Vector3* points,
     Real epsilon, Information& info)
 {
-    assertion(numPoints > 0 && points && epsilon >= (Real)0,
-        "Invalid inputs to GetInformation\n");
+    assert(numPoints > 0 && points && epsilon >= (Real)0); /* Invalid inputs to GetInformation */
 
     info.mExtremeCCW = false;
 

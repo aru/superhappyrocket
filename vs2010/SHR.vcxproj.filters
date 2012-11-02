@@ -40,6 +40,18 @@
     <Filter Include="Header Files\DataTypes">
       <UniqueIdentifier>{9e473d7d-6221-4fde-bfca-857e07f5553f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Assert">
+      <UniqueIdentifier>{2bcdc0f7-f5c3-4978-bf72-8a3192e536bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\InputOutput">
+      <UniqueIdentifier>{0ec92cd6-b50b-46d3-b882-0d1eaa41d9de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ObjectSystems">
+      <UniqueIdentifier>{27cdd67a-27b8-4b1f-b780-86e6c124dc51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Threading">
+      <UniqueIdentifier>{d125d50d-1098-455f-b1ec-c128b9ba2181}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\main.cpp">
@@ -101,6 +113,30 @@
     </ClCompile>
     <ClCompile Include="..\src\Bound.cpp">
       <Filter>Header Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Assert.cpp">
+      <Filter>Header Files\Assert</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\BufferIO.cpp">
+      <Filter>Header Files\InputOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Endian.cpp">
+      <Filter>Header Files\InputOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Mutex.cpp">
+      <Filter>Header Files\Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Stream.cpp">
+      <Filter>Header Files\LibCore\ObjectSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\InitTerm.cpp">
+      <Filter>Header Files\LibCore\ObjectSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SmartPointer.cpp">
+      <Filter>Header Files\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Memory.cpp">
+      <Filter>Header Files\Memory</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -188,6 +224,39 @@
     <ClInclude Include="..\src\Bound.h">
       <Filter>Header Files\Graphics</Filter>
     </ClInclude>
+    <ClInclude Include="..\src\Assert.h">
+      <Filter>Header Files\Assert</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\BufferIO.h">
+      <Filter>Header Files\InputOutput</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Endian.h">
+      <Filter>Header Files\InputOutput</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Mutex.h">
+      <Filter>Header Files\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\MutexType.h">
+      <Filter>Header Files\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Math.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SDL_mixer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Stream.h">
+      <Filter>Header Files\LibCore\ObjectSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\InitTerm.h">
+      <Filter>Header Files\LibCore\ObjectSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SmartPointer.h">
+      <Filter>Header Files\Memory</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\src\Memory.inl">
@@ -228,6 +297,15 @@
     </None>
     <None Include="..\src\Bound.inl">
       <Filter>Header Files\Graphics</Filter>
+    </None>
+    <None Include="..\src\BufferIO.inl">
+      <Filter>Header Files\InputOutput</Filter>
+    </None>
+    <None Include="..\src\Node.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\src\SmartPointer.inl">
+      <Filter>Header Files\Memory</Filter>
     </None>
   </ItemGroup>
 </Project>

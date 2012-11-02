@@ -5,11 +5,11 @@
 
 // Expose this define to allow resetting of render state and other state in
 // the Renderer::Draw (const Visual*, const VisualEffectInstance*) call.
-//#define WM5_RESET_STATE_AFTER_DRAW
+//#define RESET_STATE_AFTER_DRAW
 
 // Enable this to allow counting the number of pixels drawn in
 // Renderer::DrawPrimitive.
-//#define WM5_QUERY_PIXEL_COUNT
+//#define QUERY_PIXEL_COUNT
 
 // Enable this to draw text using display lists in OpenGL; otherwise, text is
 // drawn manually using bitmapped fonts.  Currently, the GLX renderer does not
