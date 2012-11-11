@@ -3,6 +3,9 @@
 
 #include "CoreLIB.h"
 
+namespace shr
+{
+
 #ifdef USE_ASSERT
 //----------------------------------------------------------------------------
 // Use asserts with file/line tracking.
@@ -27,6 +30,8 @@ private:
     static const char* msMessageBoxTitle;
 #endif
 };
+
+}
 
 #define assertion(condition, format, ...) \
     Assert(condition, __FILE__, __LINE__, format, __VA_ARGS__)

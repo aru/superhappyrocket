@@ -1,4 +1,4 @@
-#include "Core.h"
+#include "CorePCH.h"
 #include "Assert.h"
 
 #ifdef USE_ASSERT
@@ -10,6 +10,8 @@
 #ifdef USE_ASSERT_WRITE_TO_MESSAGE_BOX
 #include <intrin.h>
 #endif
+
+using namespace shr;
 
 const char* Assert::msDebugPrompt = "Do you want to debug?";
 const size_t Assert::msDebugPromptLength = strlen(Assert::msDebugPrompt);
@@ -53,14 +55,14 @@ Assert::Assert (bool condition, const char* file, int line,
 
 #ifdef USE_ASSERT_WRITE_TO_OUTPUT_WINDOW
     // Write the message to the output debug window.
-    OutputDebugStringA(message);
+    OutputDebugString(message);
 #endif
 
 #ifdef USE_ASSERT_WRITE_TO_MESSAGE_BOX
     // Give the user a chance to break-and-debug, to continue, or to
     // terminate execution.
     strcat(message, msDebugPrompt);
-    int selection = ::MessageBoxA(0, message, msMessageBoxTitle,
+    int selection = ::MessageBox(0, message, msMessageBoxTitle,
         MB_ICONERROR | MB_YESNOCANCEL | MB_APPLMODAL | MB_TOPMOST);
 
     switch (selection)

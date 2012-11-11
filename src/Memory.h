@@ -8,6 +8,9 @@
 #ifdef USE_MEMORY
 // Wild Magic memory tracking for debugging.
 
+namespace shr
+{
+
 class CORE_ITEM Memory
 {
 public:
@@ -16,7 +19,7 @@ public:
     typedef void (*Deallocator)(void* memblock, const char* file, int line);
 
     // The initialization and termination functions are called in 'main'
-    // in the file Application.cpp.  To specify your own allocator and
+    // in the file Wm5Application.cpp.  To specify your own allocator and
     // deallocator, modify the Memory::Initialize call in 'main'.
     static void Initialize (
         Allocator allocator = &DefaultAllocator,
@@ -117,10 +120,12 @@ private_internal:
     static Deallocator msDeallocator;
 };
 
-#include "Memory.inl"
+#include "Wm5Memory.inl"
+
+}
 
 //----------------------------------------------------------------------------
-inline void* operator new (size_t numBytes, const Memory& memory)
+inline void* operator new (size_t numBytes, const Wm5::Memory& memory)
 {
     if (memory.HasMap())
     {
@@ -136,22 +141,22 @@ inline void* operator new (size_t numBytes, const Memory& memory)
     }
 }
 //----------------------------------------------------------------------------
-inline void operator delete (void*, const Memory&)
+inline void operator delete (void*, const Wm5::Memory&)
 {
     // Only called during exception handling.
 }
 //----------------------------------------------------------------------------
 
-#define new0 new(Memory(__FILE__,__LINE__))
-#define new1 Memory(__FILE__,__LINE__).New1
-#define new2 Memory(__FILE__,__LINE__).New2
-#define new3 Memory(__FILE__,__LINE__).New3
-#define new4 Memory(__FILE__,__LINE__).New4
-#define delete0 Memory(__FILE__,__LINE__).Delete0
-#define delete1 Memory(__FILE__,__LINE__).Delete1
-#define delete2 Memory(__FILE__,__LINE__).Delete2
-#define delete3 Memory(__FILE__,__LINE__).Delete3
-#define delete4 Memory(__FILE__,__LINE__).Delete4
+#define new0 new(Wm5::Memory(__FILE__,__LINE__))
+#define new1 Wm5::Memory(__FILE__,__LINE__).New1
+#define new2 Wm5::Memory(__FILE__,__LINE__).New2
+#define new3 Wm5::Memory(__FILE__,__LINE__).New3
+#define new4 Wm5::Memory(__FILE__,__LINE__).New4
+#define delete0 Wm5::Memory(__FILE__,__LINE__).Delete0
+#define delete1 Wm5::Memory(__FILE__,__LINE__).Delete1
+#define delete2 Wm5::Memory(__FILE__,__LINE__).Delete2
+#define delete3 Wm5::Memory(__FILE__,__LINE__).Delete3
+#define delete4 Wm5::Memory(__FILE__,__LINE__).Delete4
 
 #else
 
@@ -195,7 +200,7 @@ void delete3 (T***& data);
 template <typename T>
 void delete4 (T****& data);
 
-#include "Memory.inl"
+#include "Wm5Memory.inl"
 
 #endif
 #endif
