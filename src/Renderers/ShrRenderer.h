@@ -2,17 +2,17 @@
 #define SHRRENDERER_H
 
 #include "ShrGraphicsLIB.h"
-//#include "ShrAlphaState.h"
+#include "ShrAlphaState.h"
 //#include "ShrCamera.h"
-//#include "ShrCullState.h"
-//#include "ShrDepthState.h"
+#include "ShrCullState.h"
+#include "ShrDepthState.h"
 #include "ShrFloat4.h"
 #include "ShrHMatrix.h"
 #include "ShrIndexBuffer.h"
 #include "ShrMutex.h"
-//#include "ShrOffsetState.h"
-//#include "ShrPixelShader.h"
-//#include "ShrRenderTarget.h"
+#include "ShrOffsetState.h"
+#include "ShrPixelShader.h"
+#include "ShrRenderTarget.h"
 //#include "ShrStencilState.h"
 #include "ShrTexture1D.h"
 #include "ShrTexture2D.h"
@@ -20,10 +20,10 @@
 #include "ShrTextureCube.h"
 #include "ShrVertexBuffer.h"
 #include "ShrVertexFormat.h"
-//#include "ShrVertexShader.h"
+#include "ShrVertexShader.h"
 //#include "ShrVisibleSet.h"
 //#include "ShrVisual.h"
-//#include "ShrWireState.h"
+#include "ShrWireState.h"
 
 // The Renderer class is an abstract interface that is implemented by each
 // platform of interest (Direct3D, OpenGL, software, embedded devices, etc.).

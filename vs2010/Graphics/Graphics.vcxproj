@@ -38,7 +38,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>$(SolutionDir)lib\</OutDir>
-    <IncludePath>../../src;../../lib;../../include/SDL_mixer/include;../../include;../../include/SDL/include;../;$(IncludePath)</IncludePath>
+    <IncludePath>../../src;../../lib;../../include/SDL_mixer/include;../../include;../../include/SDL/include;../;../../src/Renderers;$(IncludePath)</IncludePath>
     <LibraryPath>../../src;../../lib;../../include/SDL_mixer/include;../../include;../../include/SDL/include;../;$(IncludePath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -87,15 +87,24 @@
     <ClInclude Include="..\..\src\Renderers\WglRenderer\ShrWglExtensions.h" />
     <ClInclude Include="..\..\src\Renderers\WglRenderer\ShrWglRendererData.h" />
     <ClInclude Include="..\..\src\Renderers\WglRenderer\ShrWglRendererInput.h" />
+    <ClInclude Include="..\..\src\ShrAlphaState.h" />
     <ClInclude Include="..\..\src\ShrBound.h" />
     <ClInclude Include="..\..\src\ShrBuffer.h" />
     <ClInclude Include="..\..\src\ShrColor.h" />
+    <ClInclude Include="..\..\src\ShrCullState.h" />
+    <ClInclude Include="..\..\src\ShrDepthState.h" />
+    <ClInclude Include="..\..\src\ShrGlobalEffect.h" />
     <ClInclude Include="..\..\src\ShrGraphics.h" />
     <ClInclude Include="..\..\src\ShrGraphicsLIB.h" />
     <ClInclude Include="..\..\src\ShrGraphicsPCH.h" />
     <ClInclude Include="..\..\src\ShrHalfFloat.h" />
     <ClInclude Include="..\..\src\ShrIndexBuffer.h" />
+    <ClInclude Include="..\..\src\ShrOffsetState.h" />
+    <ClInclude Include="..\..\src\ShrPixelShader.h" />
     <ClInclude Include="..\..\src\ShrRenderTarget.h" />
+    <ClInclude Include="..\..\src\ShrShader.h" />
+    <ClInclude Include="..\..\src\ShrShaderFloat.h" />
+    <ClInclude Include="..\..\src\ShrShaderParameters.h" />
     <ClInclude Include="..\..\src\ShrTexture.h" />
     <ClInclude Include="..\..\src\ShrTexture1D.h" />
     <ClInclude Include="..\..\src\ShrTexture2D.h" />
@@ -105,6 +114,8 @@
     <ClInclude Include="..\..\src\ShrVertexBuffer.h" />
     <ClInclude Include="..\..\src\ShrVertexBufferAccessor.h" />
     <ClInclude Include="..\..\src\ShrVertexFormat.h" />
+    <ClInclude Include="..\..\src\ShrVertexShader.h" />
+    <ClInclude Include="..\..\src\ShrWireState.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\Renderers\OpenGLRenderer\ShrGlExtensions.cpp" />
@@ -127,13 +138,22 @@
     <ClCompile Include="..\..\src\Renderers\ShrRenderer.cpp" />
     <ClCompile Include="..\..\src\Renderers\WglRenderer\ShrWglExtensions.cpp" />
     <ClCompile Include="..\..\src\Renderers\WglRenderer\ShrWglRenderer.cpp" />
+    <ClCompile Include="..\..\src\ShrAlphaState.cpp" />
     <ClCompile Include="..\..\src\ShrBound.cpp" />
     <ClCompile Include="..\..\src\ShrBuffer.cpp" />
     <ClCompile Include="..\..\src\ShrColor.cpp" />
+    <ClCompile Include="..\..\src\ShrCullState.cpp" />
+    <ClCompile Include="..\..\src\ShrDepthState.cpp" />
+    <ClCompile Include="..\..\src\ShrGlobalEffect.cpp" />
     <ClCompile Include="..\..\src\ShrGraphicsPCH.cpp" />
     <ClCompile Include="..\..\src\ShrHalfFloat.cpp" />
     <ClCompile Include="..\..\src\ShrIndexBuffer.cpp" />
+    <ClCompile Include="..\..\src\ShrOffsetState.cpp" />
+    <ClCompile Include="..\..\src\ShrPixelShader.cpp" />
     <ClCompile Include="..\..\src\ShrRenderTarget.cpp" />
+    <ClCompile Include="..\..\src\ShrShader.cpp" />
+    <ClCompile Include="..\..\src\ShrShaderFloat.cpp" />
+    <ClCompile Include="..\..\src\ShrShaderParameters.cpp" />
     <ClCompile Include="..\..\src\ShrTexture.cpp" />
     <ClCompile Include="..\..\src\ShrTexture1D.cpp" />
     <ClCompile Include="..\..\src\ShrTexture2D.cpp" />
@@ -143,6 +163,8 @@
     <ClCompile Include="..\..\src\ShrVertexBuffer.cpp" />
     <ClCompile Include="..\..\src\ShrVertexBufferAccessor.cpp" />
     <ClCompile Include="..\..\src\ShrVertexFormat.cpp" />
+    <ClCompile Include="..\..\src\ShrVertexShader.cpp" />
+    <ClCompile Include="..\..\src\ShrWireState.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\src\Renderers\ShrRenderer.inl" />
@@ -151,6 +173,9 @@
     <None Include="..\..\src\ShrColor.inl" />
     <None Include="..\..\src\ShrIndexBuffer.inl" />
     <None Include="..\..\src\ShrRenderTarget.inl" />
+    <None Include="..\..\src\ShrShader.inl" />
+    <None Include="..\..\src\ShrShaderFloat.inl" />
+    <None Include="..\..\src\ShrShaderParameters.inl" />
     <None Include="..\..\src\ShrTexture.inl" />
     <None Include="..\..\src\ShrTexture1D.inl" />
     <None Include="..\..\src\ShrTexture2D.inl" />

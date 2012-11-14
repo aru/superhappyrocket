@@ -46,7 +46,7 @@
 //#include "ShrSwitchNode.h"
 
 // GlobalEffects
-//#include "ShrGlobalEffect.h"
+#include "ShrGlobalEffect.h"
 //#include "ShrPlanarReflectionEffect.h"
 //#include "ShrPlanarShadowEffect.h"
 
@@ -98,16 +98,16 @@
 
 // Resources
 #include "ShrBuffer.h"
-//#include "ShrIndexBuffer.h"
-//#include "ShrRenderTarget.h"
+#include "ShrIndexBuffer.h"
+#include "ShrRenderTarget.h"
 #include "ShrTexture.h"
 #include "ShrTexture1D.h"
 #include "ShrTexture2D.h"
 #include "ShrTexture3D.h"
 #include "ShrTextureCube.h"
-//#include "ShrVertexBuffer.h"
-//#include "ShrVertexBufferAccessor.h"
-//#include "ShrVertexFormat.h"
+#include "ShrVertexBuffer.h"
+#include "ShrVertexBufferAccessor.h"
+#include "ShrVertexFormat.h"
 
 // SceneGraph
 //#include "ShrCamera.h"
@@ -134,20 +134,20 @@
 //#include "ShrVisual.h"
 
 // Shaders
-//#include "ShrAlphaState.h"
-//#include "ShrCullState.h"
-//#include "ShrDepthState.h"
-//#include "ShrOffsetState.h"
-//#include "ShrPixelShader.h"
-//#include "ShrShader.h"
-//#include "ShrShaderParameters.h"
+#include "ShrAlphaState.h"
+#include "ShrCullState.h"
+#include "ShrDepthState.h"
+#include "ShrOffsetState.h"
+#include "ShrPixelShader.h"
+#include "ShrShader.h"
+#include "ShrShaderParameters.h"
 //#include "ShrStencilState.h"
-//#include "ShrVertexShader.h"
+#include "ShrVertexShader.h"
 //#include "ShrVisualEffect.h"
 //#include "ShrVisualEffectInstance.h"
 //#include "ShrVisualPass.h"
 //#include "ShrVisualTechnique.h"
-//#include "ShrWireState.h"
+#include "ShrWireState.h"
 
 // ShaderFloats
 //#include "ShrCameraModelDVectorConstant.h"
