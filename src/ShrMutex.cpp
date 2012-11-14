@@ -45,7 +45,7 @@ Mutex::~Mutex ()
 #else
     BOOL closed = CloseHandle((HANDLE)mMutex);
     assertion(closed == TRUE, "Failed to destroy mutex\n");
-    UNUSED(closed);
+    SHR_UNUSED(closed);
 #endif
 }
 //----------------------------------------------------------------------------
@@ -55,7 +55,7 @@ void Mutex::Enter ()
     EnterCriticalSection((CRITICAL_SECTION*)mMutex);
 #else
     DWORD result = WaitForSingleObject((HANDLE)mMutex, INFINITE);
-    UNUSED(result);
+    SHR_UNUSED(result);
     // result:
     //   WAIT_ABANDONED (0x00000080)
     //   WAIT_OBJECT_0  (0x00000000), signaled
@@ -70,7 +70,7 @@ void Mutex::Leave ()
     LeaveCriticalSection((CRITICAL_SECTION*)mMutex);
 #else
     BOOL released = ReleaseMutex((HANDLE)mMutex);
-    UNUSED(released);
+    SHR_UNUSED(released);
 #endif
 }
 //----------------------------------------------------------------------------
@@ -79,7 +79,7 @@ void Mutex::Leave ()
 Mutex::Mutex ()
 {
     int result;
-    UNUSED(result);
+    SHR_UNUSED(result);
     
     result = pthread_mutexattr_init(&mMutex.Attribute);
     // successful = 0
@@ -97,7 +97,7 @@ Mutex::Mutex ()
 Mutex::~Mutex ()
 {
     int result;
-    WM5_UNUSED(result);
+    SHR_UNUSED(result);
 
     result = pthread_mutex_destroy(&mMutex.Mutex);
     // successful = 0

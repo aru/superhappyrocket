@@ -1,191 +1,72 @@
-#ifndef SHRGRAPHICS_H
-#define SHRGRAPHICS_H
+#ifndef SHRGRAPHICSLIB_H
+#define SHRGRAPHICSLIB_H
 
-// Controllers
-//#include "ShrBlendTransformController.h"
-//#include "ShrControlledObject.h"
-//#include "ShrController.h"
-//#include "ShrIKController.h"
-//#include "ShrIKGoal.h"
-//#include "ShrIKJoint.h"
-//#include "ShrKeyframeController.h"
-//#include "ShrMorphController.h"
-//#include "ShrParticleController.h"
-//#include "ShrPointController.h"
-//#include "ShrSkinController.h"
-//#include "ShrTransformController.h"
+#include "ShrMathematicsLIB.h"
 
-// CurvesSurfaces
-//#include "ShrBoxSurface.h"
-//#include "ShrBSplineSurfacePatch.h"
-//#include "ShrCurveMesh.h"
-//#include "ShrCurveSegment.h"
-//#include "ShrFloatArray.h"
-//#include "ShrFloat2Array.h"
-//#include "ShrRectangleSurface.h"
-//#include "ShrRevolutionSurface.h"
-//#include "ShrSurfacePatch.h"
-//#include "ShrSurfaceMesh.h"
-//#include "ShrTubeSurface.h"
+// Begin Microsoft Windows DLL support.
+#if defined(SHR_GRAPHICS_DLL_EXPORT)
+    // For the DLL library.
+    #define SHR_GRAPHICS_ITEM __declspec(dllexport)
+#elif defined(SHR_GRAPHICS_DLL_IMPORT)
+    // For a client of the DLL library.
+    #define SHR_GRAPHICS_ITEM __declspec(dllimport)
+#else
+    // For the static library and for Apple/Linux.
+    #define SHR_GRAPHICS_ITEM
+#endif
+// End Microsoft Windows DLL support.
 
-// DataTypes
-//#include "ShrBound.h"
-//#include "ShrColor.h"
-//#include "ShrHalfFloat.h"
-//#include "ShrSpecializedIO.h"
-//#include "ShrTransform.h"
-//#include "ShrUtility.h"
-
-// Detail
-//#include "ShrBillboardNode.h"
-//#include "ShrClodMesh.h"
-//#include "ShrCollapseRecord.h"
-//#include "ShrCollapseRecordArray.h"
-//#include "ShrCreateClodMesh.h"
-//#include "ShrDlodNode.h"
-//#include "ShrSwitchNode.h"
-
-// GlobalEffects
-//#include "ShrGlobalEffect.h"
-//#include "ShrPlanarReflectionEffect.h"
-//#include "ShrPlanarShadowEffect.h"
-
-// Image Processing
-//#include "ShrImageProcessing.h"
-//#include "ShrImageProcessing2.h"
-//#include "ShrImageProcessing3.h"
-
-// LocalEffects
-//#include "ShrDefaultEffect.h"
-//#include "ShrLightAmbEffect.h"
-//#include "ShrLightDirPerPixEffect.h"
-//#include "ShrLightDirPerVerEffect.h"
-//#include "ShrLightPntPerPixEffect.h"
-//#include "ShrLightPntPerVerEffect.h"
-//#include "ShrLightSptPerPixEffect.h"
-//#include "ShrLightSptPerVerEffect.h"
-//#include "ShrMaterialEffect.h"
-//#include "ShrMaterialTextureEffect.h"
-//#include "ShrTexture1DEffect.h"
-//#include "ShrTexture2AddEffect.h"
-//#include "ShrTexture2ColorBlendEffect.h"
-//#include "ShrTexture2DEffect.h"
-//#include "ShrTexture2MulEffect.h"
-//#include "ShrTexture3DEffect.h"
-//#include "ShrVertexColor3Effect.h"
-//#include "ShrVertexColor4Effect.h"
-//#include "ShrVertexColor4TextureEffect.h"
-
-// Renderers
-//#include "ShrRenderer.h"
-
-#ifdef SHR_USE_OPENGL
-#include "ShrOpenGLBitmapFont.h"
-#include "ShrOpenGLIndexBuffer.h"
-#include "ShrOpenGLMapping.h"
-#include "ShrOpenGLPixelShader.h"
-#include "ShrOpenGLRendererData.h"
-#include "ShrOpenGLRenderTarget.h"
-#include "ShrOpenGLShader.h"
-#include "ShrOpenGLTexture1D.h"
-#include "ShrOpenGLTexture2D.h"
-#include "ShrOpenGLTexture3D.h"
-#include "ShrOpenGLTextureCube.h"
-#include "ShrOpenGLVertexBuffer.h"
-#include "ShrOpenGLVertexFormat.h"
-#include "ShrOpenGLVertexShader.h"
+// Enable this define to verify that the camera axis directions form a
+// right-handed orthonormal set.  The test is done only once, because
+// numerical round-off errors during rotations of the frame over time
+// may require a renormalization of the frame.
+#ifdef _DEBUG
+    #define SHR_VALIDATE_CAMERA_FRAME_ONCE
 #endif
 
-// Resources
-//#include "ShrBuffer.h"
-//#include "ShrIndexBuffer.h"
-//#include "ShrRenderTarget.h"
-//#include "ShrTexture.h"
-//#include "ShrTexture1D.h"
-//#include "ShrTexture2D.h"
-//#include "ShrTexture3D.h"
-//#include "ShrTextureCube.h"
-//#include "ShrVertexBuffer.h"
-//#include "ShrVertexBufferAccessor.h"
-//#include "ShrVertexFormat.h"
+// Enable this define to test whether Shader::MAX_PROFILES has changed
+// and affects the streamed files.
+#ifdef _DEBUG
+    #define SHR_ASSERT_ON_CHANGED_MAX_PROFILES
+#endif
 
-// SceneGraph
-//#include "ShrCamera.h"
-//#include "ShrCameraNode.h"
-//#include "ShrCuller.h"
-//#include "ShrLight.h"
-//#include "ShrLightNode.h"
-//#include "ShrMaterial.h"
-//#include "ShrNode.h"
-//#include "ShrParticles.h"
-//#include "ShrPicker.h"
-//#include "ShrPickRecord.h"
-//#include "ShrPolypoint.h"
-//#include "ShrPolysegment.h"
-//#include "ShrProjector.h"
-//#include "ShrScreenTarget.h"
-//#include "ShrSpatial.h"
-//#include "ShrStandardMesh.h"
-//#include "ShrTriangles.h"
-//#include "ShrTriFan.h"
-//#include "ShrTriMesh.h"
-//#include "ShrTriStrip.h"
-//#include "ShrVisibleSet.h"
-//#include "ShrVisual.h"
+// Expose this define to allow resetting of render state and other state in
+// the Renderer::Draw (const Visual*, const VisualEffectInstance*) call.
+//#define SHR_RESET_STATE_AFTER_DRAW
 
-// Shaders
-//#include "ShrAlphaState.h"
-//#include "ShrCullState.h"
-//#include "ShrDepthState.h"
-//#include "ShrOffsetState.h"
-//#include "ShrPixelShader.h"
-//#include "ShrShader.h"
-//#include "ShrShaderParameters.h"
-//#include "ShrStencilState.h"
-//#include "ShrVertexShader.h"
-//#include "ShrVisualEffect.h"
-//#include "ShrVisualEffectInstance.h"
-//#include "ShrVisualPass.h"
-//#include "ShrVisualTechnique.h"
-//#include "ShrWireState.h"
+// Enable this to allow counting the number of pixels drawn in
+// Renderer::DrawPrimitive.
+//#define SHR_QUERY_PIXEL_COUNT
 
-// ShaderFloats
-//#include "ShrCameraModelDVectorConstant.h"
-//#include "ShrCameraModelPositionConstant.h"
-//#include "ShrCameraWorldDVectorConstant.h"
-//#include "ShrCameraWorldPositionConstant.h"
-//#include "ShrLightAmbientConstant.h"
-//#include "ShrLightAttenuationConstant.h"
-//#include "ShrLightDiffuseConstant.h"
-//#include "ShrLightModelDVectorConstant.h"
-//#include "ShrLightModelPositionConstant.h"
-//#include "ShrLightSpecularConstant.h"
-//#include "ShrLightSpotConstant.h"
-//#include "ShrLightWorldDVectorConstant.h"
-//#include "ShrLightWorldPositionConstant.h"
-//#include "ShrMaterialAmbientConstant.h"
-//#include "ShrMaterialDiffuseConstant.h"
-//#include "ShrMaterialEmissiveConstant.h"
-//#include "ShrMaterialSpecularConstant.h"
-//#include "ShrPMatrixConstant.h"
-//#include "ShrPVMatrixConstant.h"
-//#include "ShrPVWMatrixConstant.h"
-//#include "ShrProjectorMatrixConstant.h"
-//#include "ShrProjectorWorldPositionConstant.h"
-//#include "ShrShaderFloat.h"
-//#include "ShrVMatrixConstant.h"
-//#include "ShrVWMatrixConstant.h"
-//#include "ShrWMatrixConstant.h"
+// Enable this to draw text using display lists in OpenGL; otherwise, text is
+// drawn manually using bitmapped fonts.
+#ifdef SHR_USE_OPENGL
+    #if defined(WIN32) && !defined(SHR_USE_GLUT)
+        #define SHR_USE_TEXT_DISPLAY_LIST
+    #endif
 
-// Sorting
-//#include "ShrBspNode.h"
-//#include "ShrConvexRegion.h"
-//#include "ShrConvexRegionManager.h"
-//#include "ShrCRMCuller.h"
-//#include "ShrPortal.h"
+    // Some OpenGL 2.x drivers are not handling normal attributes correctly.
+    // This is a problem should you want to use the normal vector to pass a
+    // 4-tuple of information to the shader.  The OpenGL 1.x glNormalPointer
+    // assumes the normals are 3-tuples.  If you know that your target
+    // machines correctly support OpenGL 2.x normal attributes, expose the
+    // following #define.  Otherwise, the renderer will use the OpenGL 1.x
+    // glNormalPointer.
+    //
+    // On the Macintosh, whether PowerPC or Intel, with NVIDIA graphics cards,
+    // the generic attributes for normals does not work.  This happens because
+    // we are using OpenGL 1.x extensions for shader programming.  We need to
+    // update to OpenGL 2.x and later.
+    #ifndef __APPLE__
+        #define SHR_USE_OPENGL2_NORMAL_ATTRIBUTES
+    #endif
+#endif
 
-// Terrain
-//#include "ShrTerrainPage.h"
-//#include "ShrTerrain.h"
+// Enables checking of various data in the DX9 renderer.
+#ifdef SHR_USE_DX9
+    #ifdef _DEBUG
+        #define SHR_PDR_DEBUG
+    #endif
+#endif
 
 #endif

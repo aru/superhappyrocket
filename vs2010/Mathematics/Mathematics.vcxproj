@@ -81,6 +81,7 @@
     <ClInclude Include="..\..\src\ShrApprGaussPointsFit2.h" />
     <ClInclude Include="..\..\src\ShrApprGaussPointsFit3.h" />
     <ClInclude Include="..\..\src\ShrAVector.h" />
+    <ClInclude Include="..\..\src\ShrBitHacks.h" />
     <ClInclude Include="..\..\src\ShrBox2.h" />
     <ClInclude Include="..\..\src\ShrBox3.h" />
     <ClInclude Include="..\..\src\ShrContBox2.h" />
@@ -89,6 +90,7 @@
     <ClInclude Include="..\..\src\ShrEigenDecomposition.h" />
     <ClInclude Include="..\..\src\ShrFloat2.h" />
     <ClInclude Include="..\..\src\ShrFloat3.h" />
+    <ClInclude Include="..\..\src\ShrFloat4.h" />
     <ClInclude Include="..\..\src\ShrGMatrix.h" />
     <ClInclude Include="..\..\src\ShrHMatrix.h" />
     <ClInclude Include="..\..\src\ShrHPlane.h" />
@@ -109,10 +111,12 @@
   <ItemGroup>
     <None Include="..\..\src\ShrAPoint.inl" />
     <None Include="..\..\src\ShrAVector.inl" />
+    <None Include="..\..\src\ShrBitHacks.inl" />
     <None Include="..\..\src\ShrBox2.inl" />
     <None Include="..\..\src\ShrBox3.inl" />
     <None Include="..\..\src\ShrFloat2.inl" />
     <None Include="..\..\src\ShrFloat3.inl" />
+    <None Include="..\..\src\ShrFloat4.inl" />
     <None Include="..\..\src\ShrGMatrix.inl" />
     <None Include="..\..\src\ShrHMatrix.inl" />
     <None Include="..\..\src\ShrHPlane.inl" />
@@ -132,6 +136,7 @@
     <ClCompile Include="..\..\src\ShrApprGaussPointsFit2.cpp" />
     <ClCompile Include="..\..\src\ShrApprGaussPointsFit3.cpp" />
     <ClCompile Include="..\..\src\ShrAVector.cpp" />
+    <ClCompile Include="..\..\src\ShrBitHacks.cpp" />
     <ClCompile Include="..\..\src\ShrContBox2.cpp" />
     <ClCompile Include="..\..\src\ShrContBox3.cpp" />
     <ClCompile Include="..\..\src\ShrDistance.cpp" />

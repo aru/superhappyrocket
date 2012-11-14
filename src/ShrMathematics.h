@@ -26,7 +26,9 @@
 // Base
 #include "ShrFloat2.h"
 #include "ShrFloat3.h"
+#include "ShrFloat4.h"
 #include "ShrMath.h"
+#include "ShrBitHacks.h"
 
 //Containment 2D
 #include "ShrContBox2.h"

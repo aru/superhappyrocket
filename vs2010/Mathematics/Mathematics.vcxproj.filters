@@ -125,6 +125,12 @@
     <ClInclude Include="..\..\src\ShrBox3.h">
       <Filter>Objects3D</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\src\ShrFloat4.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ShrBitHacks.h">
+      <Filter>Base</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\src\ShrAPoint.inl">
@@ -183,6 +189,12 @@
     </None>
     <None Include="..\..\src\ShrBox3.inl">
       <Filter>Objects3D</Filter>
+    </None>
+    <None Include="..\..\src\ShrFloat4.inl">
+      <Filter>Base</Filter>
+    </None>
+    <None Include="..\..\src\ShrBitHacks.inl">
+      <Filter>Base</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -245,6 +257,9 @@
     </ClCompile>
     <ClCompile Include="..\..\src\ShrEigenDecomposition.cpp">
       <Filter>Numerical Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ShrBitHacks.cpp">
+      <Filter>Base</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

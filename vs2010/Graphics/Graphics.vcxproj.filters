@@ -3,5 +3,299 @@
   <ItemGroup>
     <ClInclude Include="..\..\src\ShrGraphics.h" />
     <ClInclude Include="..\..\src\ShrGraphicsLIB.h" />
+    <ClInclude Include="..\..\src\ShrGraphicsPCH.h">
+      <Filter>Precompiled Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ShrTransform.h">
+      <Filter>DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ShrBound.h">
+      <Filter>DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Renderers\ShrRenderer.h">
+      <Filter>Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Renderers\ShrRenderers.h">
+      <Filter>Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Renderers\WglRenderer\ShrWglExtensions.h">
+      <Filter>Renderers\WglRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Renderers\WglRenderer\ShrWglRendererData.h">
+      <Filter>Renderers\WglRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Renderers\WglRenderer\ShrWglRendererInput.h">
+      <Filter>Renderers\WglRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Renderers\OpenGLRenderer\ShrGlExtensions.h">
+      <Filter>Renderers\OpenGLRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Renderers\OpenGLRenderer\ShrGlPlugin.h">
+      <Filter>Renderers\OpenGLRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Renderers\OpenGLRenderer\ShrGlUtility.h">
+      <Filter>Renderers\OpenGLRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Renderers\OpenGLRenderer\ShrOpenGLBitmapFont.h">
+      <Filter>Renderers\OpenGLRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Renderers\OpenGLRenderer\ShrOpenGLIndexBuffer.h">
+      <Filter>Renderers\OpenGLRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Renderers\OpenGLRenderer\ShrOpenGLMapping.h">
+      <Filter>Renderers\OpenGLRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Renderers\OpenGLRenderer\ShrOpenGLPixelShader.h">
+      <Filter>Renderers\OpenGLRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Renderers\OpenGLRenderer\ShrOpenGLRendererData.h">
+      <Filter>Renderers\OpenGLRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Renderers\OpenGLRenderer\ShrOpenGLRendererLIB.h">
+      <Filter>Renderers\OpenGLRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Renderers\OpenGLRenderer\ShrOpenGLRenderTarget.h">
+      <Filter>Renderers\OpenGLRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Renderers\OpenGLRenderer\ShrOpenGLShader.h">
+      <Filter>Renderers\OpenGLRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Renderers\OpenGLRenderer\ShrOpenGLTexture1D.h">
+      <Filter>Renderers\OpenGLRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Renderers\OpenGLRenderer\ShrOpenGLTexture2D.h">
+      <Filter>Renderers\OpenGLRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Renderers\OpenGLRenderer\ShrOpenGLTexture3D.h">
+      <Filter>Renderers\OpenGLRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Renderers\OpenGLRenderer\ShrOpenGLTextureCube.h">
+      <Filter>Renderers\OpenGLRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Renderers\OpenGLRenderer\ShrOpenGLVertexBuffer.h">
+      <Filter>Renderers\OpenGLRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Renderers\OpenGLRenderer\ShrOpenGLVertexFormat.h">
+      <Filter>Renderers\OpenGLRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Renderers\OpenGLRenderer\ShrOpenGLVertexShader.h">
+      <Filter>Renderers\OpenGLRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ShrTexture.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ShrBuffer.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ShrColor.h">
+      <Filter>DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ShrHalfFloat.h">
+      <Filter>DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ShrTexture1D.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ShrTexture2D.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ShrTexture3D.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ShrTextureCube.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ShrIndexBuffer.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ShrRenderTarget.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ShrVertexBuffer.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ShrVertexBufferAccessor.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ShrVertexFormat.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Precompiled Headers">
+      <UniqueIdentifier>{80bfffec-8ce4-4d05-a19a-cddaa3c4c4f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderers">
+      <UniqueIdentifier>{5c7e5f6d-7c4c-4b8a-96c3-c20a140ba2c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataTypes">
+      <UniqueIdentifier>{ff5f9228-1d55-43c7-bdc8-e05452c5aa56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderers\OpenGLRenderer">
+      <UniqueIdentifier>{66f60ba8-7a26-44d6-b8c4-c1faea6390be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderers\WglRenderer">
+      <UniqueIdentifier>{82714773-db67-4a22-924f-8c123cb98d2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{cdeaf247-aa79-4581-b32b-c3436027a123}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\ShrGraphicsPCH.cpp">
+      <Filter>Precompiled Headers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ShrTransform.cpp">
+      <Filter>DataTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ShrBound.cpp">
+      <Filter>DataTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Renderers\ShrRenderer.cpp">
+      <Filter>Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Renderers\WglRenderer\ShrWglExtensions.cpp">
+      <Filter>Renderers\WglRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Renderers\WglRenderer\ShrWglRenderer.cpp">
+      <Filter>Renderers\WglRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Renderers\OpenGLRenderer\ShrGlExtensions.cpp">
+      <Filter>Renderers\OpenGLRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Renderers\OpenGLRenderer\ShrGlPlugin.cpp">
+      <Filter>Renderers\OpenGLRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Renderers\OpenGLRenderer\ShrOpenGLIndexBuffer.cpp">
+      <Filter>Renderers\OpenGLRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Renderers\OpenGLRenderer\ShrOpenGLMapping.cpp">
+      <Filter>Renderers\OpenGLRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Renderers\OpenGLRenderer\ShrOpenGLPixelShader.cpp">
+      <Filter>Renderers\OpenGLRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Renderers\OpenGLRenderer\ShrOpenGLRenderer.cpp">
+      <Filter>Renderers\OpenGLRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Renderers\OpenGLRenderer\ShrOpenGLRendererData.cpp">
+      <Filter>Renderers\OpenGLRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Renderers\OpenGLRenderer\ShrOpenGLRenderTarget.cpp">
+      <Filter>Renderers\OpenGLRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Renderers\OpenGLRenderer\ShrOpenGLShader.cpp">
+      <Filter>Renderers\OpenGLRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Renderers\OpenGLRenderer\ShrOpenGLTexture1D.cpp">
+      <Filter>Renderers\OpenGLRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Renderers\OpenGLRenderer\ShrOpenGLTexture2D.cpp">
+      <Filter>Renderers\OpenGLRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Renderers\OpenGLRenderer\ShrOpenGLTexture3D.cpp">
+      <Filter>Renderers\OpenGLRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Renderers\OpenGLRenderer\ShrOpenGLTextureCube.cpp">
+      <Filter>Renderers\OpenGLRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Renderers\OpenGLRenderer\ShrOpenGLVerdanaS16B0I0.cpp">
+      <Filter>Renderers\OpenGLRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Renderers\OpenGLRenderer\ShrOpenGLVertexBuffer.cpp">
+      <Filter>Renderers\OpenGLRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Renderers\OpenGLRenderer\ShrOpenGLVertexFormat.cpp">
+      <Filter>Renderers\OpenGLRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Renderers\OpenGLRenderer\ShrOpenGLVertexShader.cpp">
+      <Filter>Renderers\OpenGLRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ShrTexture.cpp">
+      <Filter>Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ShrBuffer.cpp">
+      <Filter>Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ShrColor.cpp">
+      <Filter>DataTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ShrHalfFloat.cpp">
+      <Filter>DataTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ShrTexture1D.cpp">
+      <Filter>Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ShrTexture2D.cpp">
+      <Filter>Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ShrTexture3D.cpp">
+      <Filter>Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ShrTextureCube.cpp">
+      <Filter>Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ShrIndexBuffer.cpp">
+      <Filter>Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ShrRenderTarget.cpp">
+      <Filter>Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ShrVertexBuffer.cpp">
+      <Filter>Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ShrVertexBufferAccessor.cpp">
+      <Filter>Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ShrVertexFormat.cpp">
+      <Filter>Resources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\src\ShrTransform.inl">
+      <Filter>DataTypes</Filter>
+    </None>
+    <None Include="..\..\src\ShrBound.inl">
+      <Filter>DataTypes</Filter>
+    </None>
+    <None Include="..\..\src\Renderers\ShrRenderer.inl">
+      <Filter>Renderers</Filter>
+    </None>
+    <None Include="..\..\src\ShrTexture.inl">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="..\..\src\ShrBuffer.inl">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="..\..\src\ShrColor.inl">
+      <Filter>DataTypes</Filter>
+    </None>
+    <None Include="..\..\src\ShrTexture1D.inl">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="..\..\src\ShrTexture2D.inl">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="..\..\src\ShrTexture3D.inl">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="..\..\src\ShrTextureCube.inl">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="..\..\src\ShrIndexBuffer.inl">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="..\..\src\ShrRenderTarget.inl">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="..\..\src\ShrVertexBuffer.inl">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="..\..\src\ShrVertexBufferAccessor.inl">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="..\..\src\ShrVertexFormat.inl">
+      <Filter>Resources</Filter>
+    </None>
   </ItemGroup>
 </Project>
