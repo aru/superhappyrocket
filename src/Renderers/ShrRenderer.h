@@ -3,7 +3,7 @@
 
 #include "ShrGraphicsLIB.h"
 #include "ShrAlphaState.h"
-//#include "ShrCamera.h"
+#include "ShrCamera.h"
 #include "ShrCullState.h"
 #include "ShrDepthState.h"
 #include "ShrFloat4.h"
@@ -21,7 +21,7 @@
 #include "ShrVertexBuffer.h"
 #include "ShrVertexFormat.h"
 #include "ShrVertexShader.h"
-//#include "ShrVisibleSet.h"
+#include "ShrVisibleSet.h"
 //#include "ShrVisual.h"
 #include "ShrWireState.h"
 

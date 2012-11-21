@@ -3,8 +3,8 @@
 
 // Controllers
 //#include "ShrBlendTransformController.h"
-//#include "ShrControlledObject.h"
-//#include "ShrController.h"
+#include "ShrControlledObject.h"
+#include "ShrController.h"
 //#include "ShrIKController.h"
 //#include "ShrIKGoal.h"
 //#include "ShrIKJoint.h"
@@ -110,9 +110,9 @@
 #include "ShrVertexFormat.h"
 
 // SceneGraph
-//#include "ShrCamera.h"
+#include "ShrCamera.h"
 //#include "ShrCameraNode.h"
-//#include "ShrCuller.h"
+#include "ShrCuller.h"
 //#include "ShrLight.h"
 //#include "ShrLightNode.h"
 //#include "ShrMaterial.h"
@@ -124,13 +124,13 @@
 //#include "ShrPolysegment.h"
 //#include "ShrProjector.h"
 //#include "ShrScreenTarget.h"
-//#include "ShrSpatial.h"
+#include "ShrSpatial.h"
 //#include "ShrStandardMesh.h"
 //#include "ShrTriangles.h"
 //#include "ShrTriFan.h"
 //#include "ShrTriMesh.h"
 //#include "ShrTriStrip.h"
-//#include "ShrVisibleSet.h"
+#include "ShrVisibleSet.h"
 //#include "ShrVisual.h"
 
 // Shaders
