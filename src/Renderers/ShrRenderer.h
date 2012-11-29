@@ -22,7 +22,7 @@
 #include "ShrVertexFormat.h"
 #include "ShrVertexShader.h"
 #include "ShrVisibleSet.h"
-//#include "ShrVisual.h"
+#include "ShrVisual.h"
 #include "ShrWireState.h"
 
 // The Renderer class is an abstract interface that is implemented by each

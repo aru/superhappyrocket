@@ -131,7 +131,7 @@
 //#include "ShrTriMesh.h"
 //#include "ShrTriStrip.h"
 #include "ShrVisibleSet.h"
-//#include "ShrVisual.h"
+#include "ShrVisual.h"
 
 // Shaders
 #include "ShrAlphaState.h"
@@ -143,8 +143,8 @@
 #include "ShrShaderParameters.h"
 //#include "ShrStencilState.h"
 #include "ShrVertexShader.h"
-//#include "ShrVisualEffect.h"
-//#include "ShrVisualEffectInstance.h"
+#include "ShrVisualEffect.h"
+#include "ShrVisualEffectInstance.h"
 //#include "ShrVisualPass.h"
 //#include "ShrVisualTechnique.h"
 #include "ShrWireState.h"
