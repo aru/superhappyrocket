@@ -13,7 +13,7 @@
 #include "ShrOffsetState.h"
 #include "ShrPixelShader.h"
 #include "ShrRenderTarget.h"
-//#include "ShrStencilState.h"
+#include "ShrStencilState.h"
 #include "ShrTexture1D.h"
 #include "ShrTexture2D.h"
 #include "ShrTexture3D.h"

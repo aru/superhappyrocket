@@ -141,12 +141,12 @@
 #include "ShrPixelShader.h"
 #include "ShrShader.h"
 #include "ShrShaderParameters.h"
-//#include "ShrStencilState.h"
+#include "ShrStencilState.h"
 #include "ShrVertexShader.h"
 #include "ShrVisualEffect.h"
 #include "ShrVisualEffectInstance.h"
-//#include "ShrVisualPass.h"
-//#include "ShrVisualTechnique.h"
+#include "ShrVisualPass.h"
+#include "ShrVisualTechnique.h"
 #include "ShrWireState.h"
 
 // ShaderFloats
