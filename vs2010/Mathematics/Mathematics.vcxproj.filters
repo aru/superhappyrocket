@@ -196,6 +196,7 @@
     <None Include="..\..\src\ShrBitHacks.inl">
       <Filter>Base</Filter>
     </None>
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\ShrMathematicsPCH.cpp">

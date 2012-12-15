@@ -35,11 +35,9 @@
     <ClInclude Include="..\..\src\ShrApplication.h">
       <Filter>Platform Independent</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\src\">
-      <Filter>Platform Independent</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\src\ShrCommand.h">
       <Filter>Platform Independent</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\src\ShrWindowApplication.h" />
   </ItemGroup>
 </Project>
