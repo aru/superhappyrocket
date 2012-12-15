@@ -153,6 +153,21 @@
     <ClInclude Include="..\..\src\ShrOffsetState.h">
       <Filter>Shaders</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\src\ShrPolypoint.h">
+      <Filter>SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ShrPolysegment.h">
+      <Filter>SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ShrTriFan.h">
+      <Filter>SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ShrTriStrip.h">
+      <Filter>SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ShrTriangles.h">
+      <Filter>SceneGraph</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Precompiled Headers">
@@ -181,6 +196,9 @@
     </Filter>
     <Filter Include="ShaderFloats">
       <UniqueIdentifier>{fd8a707f-8022-470b-997a-1fa3bc54bdf7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SceneGraph">
+      <UniqueIdentifier>{bf662c86-1d72-4204-a6ab-639f79b52e3b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -325,6 +343,21 @@
     <ClCompile Include="..\..\src\ShrOffsetState.cpp">
       <Filter>Shaders</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\src\ShrPolypoint.cpp">
+      <Filter>SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ShrPolysegment.cpp">
+      <Filter>SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ShrTriFan.cpp">
+      <Filter>SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ShrTriStrip.cpp">
+      <Filter>SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ShrTriangles.cpp">
+      <Filter>SceneGraph</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\src\ShrTransform.inl">
@@ -380,6 +413,15 @@
     </None>
     <None Include="..\..\src\ShrShaderParameters.inl">
       <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\src\ShrPolypoint.inl">
+      <Filter>SceneGraph</Filter>
+    </None>
+    <None Include="..\..\src\ShrPolysegment.inl">
+      <Filter>SceneGraph</Filter>
+    </None>
+    <None Include="..\..\src\ShrTriangles.inl">
+      <Filter>SceneGraph</Filter>
     </None>
   </ItemGroup>
 </Project>

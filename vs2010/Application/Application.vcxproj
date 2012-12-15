@@ -50,7 +50,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>../../src;../../lib;../../include/SDL_mixer/include;../../include;../../include/SDL/include;../;$(IncludePath)</IncludePath>
+    <IncludePath>../../src;../../lib;../../src/Renderers;../../include/SDL_mixer/include;../../include;../../include/SDL/include;../;$(IncludePath)</IncludePath>
     <LibraryPath>../../src;../../lib;../../include/SDL_mixer/include;../../include;../../include/SDL/include;../;$(IncludePath)</LibraryPath>
     <OutDir>$(SolutionDir)lib\</OutDir>
   </PropertyGroup>
