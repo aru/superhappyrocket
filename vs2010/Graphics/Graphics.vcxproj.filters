@@ -168,6 +168,15 @@
     <ClInclude Include="..\..\src\ShrTriangles.h">
       <Filter>SceneGraph</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\src\Renderers\SDLRenderer\ShrSDLRendererData.h">
+      <Filter>Renderers\SDLRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Renderers\SDLRenderer\ShrSDLRendererInput.h">
+      <Filter>Renderers\SDLRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Renderers\SDLRenderer\ShrSDLExtensions.h">
+      <Filter>Renderers\SDLRenderer</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Precompiled Headers">
@@ -199,6 +208,9 @@
     </Filter>
     <Filter Include="SceneGraph">
       <UniqueIdentifier>{bf662c86-1d72-4204-a6ab-639f79b52e3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderers\SDLRenderer">
+      <UniqueIdentifier>{321b6bf2-cdf7-43d4-96b9-5f83f79fcc18}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -357,6 +369,9 @@
     </ClCompile>
     <ClCompile Include="..\..\src\ShrTriangles.cpp">
       <Filter>SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Renderers\SDLRenderer\ShrSDLRenderer.cpp">
+      <Filter>Renderers\SDLRenderer</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

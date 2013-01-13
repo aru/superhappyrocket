@@ -7,8 +7,8 @@
 using namespace shr;
 
 #ifdef SHR_USE_OPENGL
-#include "WglRendererInput.h"
-#include "WglRendererData.h"
+#include "ShrSDLRendererInput.h"
+#include "ShrSDLRendererData.h"
 #endif
 
 const int WindowApplication::KEY_ESCAPE = SDLK_ESCAPE;
