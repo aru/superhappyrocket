@@ -70,12 +70,16 @@
     <ClInclude Include="..\..\src\ShrEndian.h" />
     <ClInclude Include="..\..\src\ShrFileIO.h" />
     <ClInclude Include="..\..\src\ShrInStream.h" />
+    <ClInclude Include="..\..\src\ShrMinHeap.h" />
     <ClInclude Include="..\..\src\ShrNames.h" />
     <ClInclude Include="..\..\src\ShrObject.h" />
     <ClInclude Include="..\..\src\ShrOutStream.h" />
     <ClInclude Include="..\..\src\ShrRtti.h" />
+    <ClInclude Include="..\..\src\ShrScopedCS.h" />
     <ClInclude Include="..\..\src\ShrStream.h" />
     <ClInclude Include="..\..\src\ShrTable.h" />
+    <ClInclude Include="..\..\src\ShrThread.h" />
+    <ClInclude Include="..\..\src\ShrThreadType.h" />
     <ClInclude Include="..\..\src\ShrTime.h" />
     <ClInclude Include="..\..\src\ShrTuple.h" />
     <ClInclude Include="..\..\src\ShrAssert.h" />
@@ -97,7 +101,9 @@
     <ClCompile Include="..\..\src\ShrObject.cpp" />
     <ClCompile Include="..\..\src\ShrOutStream.cpp" />
     <ClCompile Include="..\..\src\ShrRtti.cpp" />
+    <ClCompile Include="..\..\src\ShrScopedCS.cpp" />
     <ClCompile Include="..\..\src\ShrStream.cpp" />
+    <ClCompile Include="..\..\src\ShrThread.cpp" />
     <ClCompile Include="..\..\src\ShrTime.cpp" />
     <ClCompile Include="..\..\src\ShrAssert.cpp" />
     <ClCompile Include="..\..\src\ShrCorePCH.cpp" />
@@ -111,6 +117,7 @@
     <None Include="..\..\src\ShrBufferIO.inl" />
     <None Include="..\..\src\ShrFileIO.inl" />
     <None Include="..\..\src\ShrInStream.inl" />
+    <None Include="..\..\src\ShrMinHeap.inl" />
     <None Include="..\..\src\ShrObject.inl" />
     <None Include="..\..\src\ShrOutStream.inl" />
     <None Include="..\..\src\ShrRtti.inl" />

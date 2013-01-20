@@ -131,6 +131,15 @@
     <ClInclude Include="..\..\src\ShrBitHacks.h">
       <Filter>Base</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\src\ShrBandedMatrix.h">
+      <Filter>Algebra</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ShrHQuaternion.h">
+      <Filter>Algebra</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ShrPolynomial1.h">
+      <Filter>Algebra</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\src\ShrAPoint.inl">
@@ -196,7 +205,15 @@
     <None Include="..\..\src\ShrBitHacks.inl">
       <Filter>Base</Filter>
     </None>
-    <None Include="ClassDiagram1.cd" />
+    <None Include="..\..\src\ShrBandedMatrix.inl">
+      <Filter>Algebra</Filter>
+    </None>
+    <None Include="..\..\src\ShrHQuaternion.inl">
+      <Filter>Algebra</Filter>
+    </None>
+    <None Include="..\..\src\ShrPolynomial1.inl">
+      <Filter>Algebra</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\ShrMathematicsPCH.cpp">
@@ -261,6 +278,9 @@
     </ClCompile>
     <ClCompile Include="..\..\src\ShrBitHacks.cpp">
       <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ShrHQuaternion.cpp">
+      <Filter>Algebra</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

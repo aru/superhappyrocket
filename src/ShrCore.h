@@ -5,7 +5,7 @@
 #include "ShrAssert.h"
 
 //// DataTypes
-//#include "MinHeap.h"
+#include "ShrMinHeap.h"
 #include "ShrTuple.h"
 //
 //// InputOutput
@@ -30,10 +30,10 @@
 //// Threading
 #include "ShrMutex.h"
 #include "ShrMutexType.h"
-//#include "ScopedCS.h"
-//#include Thread.h"
-//#include ThreadType.h"
-//
+#include "ShrScopedCS.h"
+#include "ShrThread.h"
+#include "ShrThreadType.h"
+
 //// Time
 #include "ShrTime.h"
 
