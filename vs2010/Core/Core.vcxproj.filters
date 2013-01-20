@@ -89,6 +89,18 @@
     <ClInclude Include="..\..\src\ShrTime.h">
       <Filter>Time</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\src\ShrMinHeap.h">
+      <Filter>DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ShrThread.h">
+      <Filter>Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ShrThreadType.h">
+      <Filter>Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ShrScopedCS.h">
+      <Filter>Threading</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\ShrCorePCH.cpp">
@@ -139,6 +151,12 @@
     <ClCompile Include="..\..\src\ShrTime.cpp">
       <Filter>Time</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\src\ShrThread.cpp">
+      <Filter>Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ShrScopedCS.cpp">
+      <Filter>Threading</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\src\ShrTable.inl">
@@ -170,6 +188,9 @@
     </None>
     <None Include="..\..\src\ShrRtti.inl">
       <Filter>ObjectSystems</Filter>
+    </None>
+    <None Include="..\..\src\ShrMinHeap.inl">
+      <Filter>DataTypes</Filter>
     </None>
   </ItemGroup>
 </Project>

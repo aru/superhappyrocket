@@ -38,13 +38,14 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>$(SolutionDir)lib\</OutDir>
-    <IncludePath>../../src;../../lib;../../include/SDL_mixer/include;../../include;../../include/SDL/include;../;../../src/Renderers;$(IncludePath)</IncludePath>
+    <IncludePath>../../src;../../lib;../../include/SDL_mixer/include;../../include;../../include/SDL/include;../;../../src/Renderers;../../src/Renderers/OpenGLRenderer;$(IncludePath)</IncludePath>
     <LibraryPath>../../src;../../lib;../../include/SDL_mixer/include;../../include;../../include/SDL/include;../;$(IncludePath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>SHR_USE_PRECOMPILED_HEADERS;SHR_USE_OPENGL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -101,6 +102,8 @@
     <ClInclude Include="..\..\src\ShrIndexBuffer.h" />
     <ClInclude Include="..\..\src\ShrOffsetState.h" />
     <ClInclude Include="..\..\src\ShrPixelShader.h" />
+    <ClInclude Include="..\..\src\ShrPolypoint.h" />
+    <ClInclude Include="..\..\src\ShrPolysegment.h" />
     <ClInclude Include="..\..\src\ShrRenderTarget.h" />
     <ClInclude Include="..\..\src\ShrShader.h" />
     <ClInclude Include="..\..\src\ShrShaderFloat.h" />
@@ -111,6 +114,9 @@
     <ClInclude Include="..\..\src\ShrTexture3D.h" />
     <ClInclude Include="..\..\src\ShrTextureCube.h" />
     <ClInclude Include="..\..\src\ShrTransform.h" />
+    <ClInclude Include="..\..\src\ShrTriangles.h" />
+    <ClInclude Include="..\..\src\ShrTriFan.h" />
+    <ClInclude Include="..\..\src\ShrTriStrip.h" />
     <ClInclude Include="..\..\src\ShrVertexBuffer.h" />
     <ClInclude Include="..\..\src\ShrVertexBufferAccessor.h" />
     <ClInclude Include="..\..\src\ShrVertexFormat.h" />
@@ -150,6 +156,8 @@
     <ClCompile Include="..\..\src\ShrIndexBuffer.cpp" />
     <ClCompile Include="..\..\src\ShrOffsetState.cpp" />
     <ClCompile Include="..\..\src\ShrPixelShader.cpp" />
+    <ClCompile Include="..\..\src\ShrPolypoint.cpp" />
+    <ClCompile Include="..\..\src\ShrPolysegment.cpp" />
     <ClCompile Include="..\..\src\ShrRenderTarget.cpp" />
     <ClCompile Include="..\..\src\ShrShader.cpp" />
     <ClCompile Include="..\..\src\ShrShaderFloat.cpp" />
@@ -160,6 +168,9 @@
     <ClCompile Include="..\..\src\ShrTexture3D.cpp" />
     <ClCompile Include="..\..\src\ShrTextureCube.cpp" />
     <ClCompile Include="..\..\src\ShrTransform.cpp" />
+    <ClCompile Include="..\..\src\ShrTriangles.cpp" />
+    <ClCompile Include="..\..\src\ShrTriFan.cpp" />
+    <ClCompile Include="..\..\src\ShrTriStrip.cpp" />
     <ClCompile Include="..\..\src\ShrVertexBuffer.cpp" />
     <ClCompile Include="..\..\src\ShrVertexBufferAccessor.cpp" />
     <ClCompile Include="..\..\src\ShrVertexFormat.cpp" />
@@ -172,6 +183,8 @@
     <None Include="..\..\src\ShrBuffer.inl" />
     <None Include="..\..\src\ShrColor.inl" />
     <None Include="..\..\src\ShrIndexBuffer.inl" />
+    <None Include="..\..\src\ShrPolypoint.inl" />
+    <None Include="..\..\src\ShrPolysegment.inl" />
     <None Include="..\..\src\ShrRenderTarget.inl" />
     <None Include="..\..\src\ShrShader.inl" />
     <None Include="..\..\src\ShrShaderFloat.inl" />
@@ -182,6 +195,7 @@
     <None Include="..\..\src\ShrTexture3D.inl" />
     <None Include="..\..\src\ShrTextureCube.inl" />
     <None Include="..\..\src\ShrTransform.inl" />
+    <None Include="..\..\src\ShrTriangles.inl" />
     <None Include="..\..\src\ShrVertexBuffer.inl" />
     <None Include="..\..\src\ShrVertexBufferAccessor.inl" />
     <None Include="..\..\src\ShrVertexFormat.inl" />

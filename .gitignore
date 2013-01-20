@@ -25,6 +25,7 @@ Thumbs.db
 [Bb]in
 [Dd]ebug*/
 *.sbr
+lib/
 obj/
 ipch/
 *.[Oo]bj
@@ -43,5 +44,4 @@ build
 *.tm_build_errors
 xcuserdata
 eduardo.*
-
-
+vs2010/lib/

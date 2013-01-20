@@ -6,7 +6,7 @@
 
 #include "ShrMathematicsLIB.h"
 
-namespace Shr
+namespace shr
 {
 
 SHR_MATHEMATICS_ITEM bool IsPowerOfTwo (unsigned int value);
