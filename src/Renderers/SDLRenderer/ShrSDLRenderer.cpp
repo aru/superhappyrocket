@@ -12,13 +12,16 @@ Renderer::Renderer (RendererInput& input, int width, int height,
     Initialize(width, height, colorFormat, depthStencilFormat,
         numMultisamples);
 
+	SDL_version version;
+
     SDLRendererData* data = new0 SDLRendererData();
-	SDL_VERSION(&data.version); //Set SDL version
-	if(SDL_GetWMInfo(&data) <= 0) {
-		printf("%s : %d\n", SDL_GetError(), data.window);
+	SDL_VERSION(&data->version);
+	SDL_VERSION(&version); //Set SDL version
+	if(SDL_GetWMInfo(&data->window) <= 0) {
+		printf("%s : %d\n", SDL_GetError(), data->window);
 	}
     mData = data;
-    data->SysInfo = input.SysInfo;
+	data->window = input.SysInfo;
 
     // Load the function pointers for the OpenGL extensions.  This only
     // needs to occur once.  If you want a file to be created that stores

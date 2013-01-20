@@ -1,7 +1,7 @@
 #ifndef SHRSDLRENDERERINPUT_H
 #define SHRSDLRENDERERINPUT_H
 
-#include "ShrOpenGLRendererLIB.h"
+#include "Renderers/OpenGLRenderer/ShrOpenGLRendererLIB.h"
 #include "ShrSDLExtensions.h"
 
 #ifdef __APPLE__

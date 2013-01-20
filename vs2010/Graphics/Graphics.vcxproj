@@ -38,8 +38,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>$(SolutionDir)lib\</OutDir>
-    <IncludePath>../../src;../../lib;../../include/SDL_mixer/include;../../include;../../include/SDL/include;../;../../src/Renderers;../../src/Renderers/OpenGLRenderer;$(IncludePath)</IncludePath>
-    <LibraryPath>../../src;../../lib;../../include/SDL_mixer/include;../../include;../../include/SDL/include;../;$(IncludePath);../../src/Renderers/OpenGLRenderer;../../src/Renderers</LibraryPath>
+    <IncludePath>../../src;../../lib;../../include/SDL_mixer/include;../../include;../../include/SDL/include;../;..\..\src\Renderers;..\..\src\Renderers\OpenGLRenderer;../../include/GLEW;$(IncludePath)</IncludePath>
+    <LibraryPath>../../src;../../lib;../../include/SDL_mixer/include;../../include;../../include/SDL/include;../;$(IncludePath);../../src/Renderers/OpenGLRenderer;../../src/Renderers;../../include/GLEW</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -47,6 +47,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>SHR_USE_PRECOMPILED_HEADERS;SHR_USE_OPENGL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <AdditionalIncludeDirectories>./;Renderers;Renderers/OpenGLRenderer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>

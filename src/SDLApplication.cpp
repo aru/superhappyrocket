@@ -7,8 +7,8 @@
 using namespace shr;
 
 #ifdef SHR_USE_OPENGL
-#include "ShrSDLRendererInput.h"
-#include "ShrSDLRendererData.h"
+#include "Renderers/SDLRenderer/ShrSDLRendererInput.h"
+#include "Renderers/SDLRenderer/ShrSDLRendererData.h"
 #endif
 
 const int WindowApplication::KEY_ESCAPE = SDLK_ESCAPE;
@@ -169,9 +169,9 @@ int WindowApplication::Main (int, char**)
     // create a second window that supports multisampling.  The device context
     // rendererDC is set by the renderer during the process.
     RendererInput input;
-    input.mWindowHandle = handle;
-    input.mPixelFormat = 0;
-    input.mRendererDC = 0;
+    //input.mWindowHandle = handle;
+    //input.mPixelFormat = 0;
+    //input.mRendererDC = 0;
     input.mDisableVerticalSync = true;
     mRenderer = new0 Renderer(input, theApp->GetWidth(), theApp->GetHeight(),
         mColorFormat, mDepthStencilFormat, mNumMultisamples);
@@ -181,63 +181,63 @@ int WindowApplication::Main (int, char**)
     // multisampling extensions.  If it is, a new window must be created
     // because the renderer creation involves SetPixelFormat(...) that can
     // be called only once for a window.
-    int numMultisamples = mRenderer->GetNumMultisamples();
-    if (numMultisamples > 0)
-    {
-        int attributes[256], pos = 0;
-        attributes[pos++] = WGL_SUPPORT_OPENGL_ARB;
-        attributes[pos++] = 1;
-        attributes[pos++] = WGL_DRAW_TO_WINDOW_ARB;
-        attributes[pos++] = 1;
-        attributes[pos++] = WGL_ACCELERATION_ARB;
-        attributes[pos++] = WGL_FULL_ACCELERATION_ARB;
-        attributes[pos++] = WGL_PIXEL_TYPE_ARB;
-        attributes[pos++] = WGL_TYPE_RGBA_ARB;
-        attributes[pos++] = WGL_RED_BITS_ARB;
-        attributes[pos++] = 8;
-        attributes[pos++] = WGL_GREEN_BITS_ARB;
-        attributes[pos++] = 8;
-        attributes[pos++] = WGL_BLUE_BITS_ARB;
-        attributes[pos++] = 8;
-        attributes[pos++] = WGL_ALPHA_BITS_ARB;
-        attributes[pos++] = 8;
-        attributes[pos++] = WGL_DEPTH_BITS_ARB;
-        attributes[pos++] = 24;
-        attributes[pos++] = WGL_STENCIL_BITS_ARB;
-        attributes[pos++] = 8;
-        attributes[pos++] = WGL_DOUBLE_BUFFER_ARB;
-        attributes[pos++] = 1;
-        attributes[pos++] = WGL_SAMPLE_BUFFERS_ARB;
-        attributes[pos++] = 1;
-        attributes[pos++] = WGL_SAMPLES_ARB;
-        attributes[pos++] = numMultisamples;
-        attributes[pos++] = 0; // list is zero-terminated
+    //int numMultisamples = mRenderer->GetNumMultisamples();
+    //if (numMultisamples > 0)
+    //{
+    //    int attributes[256], pos = 0;
+    //    attributes[pos++] = WGL_SUPPORT_OPENGL_ARB;
+    //    attributes[pos++] = 1;
+    //    attributes[pos++] = WGL_DRAW_TO_WINDOW_ARB;
+    //    attributes[pos++] = 1;
+    //    attributes[pos++] = WGL_ACCELERATION_ARB;
+    //    attributes[pos++] = WGL_FULL_ACCELERATION_ARB;
+    //    attributes[pos++] = WGL_PIXEL_TYPE_ARB;
+    //    attributes[pos++] = WGL_TYPE_RGBA_ARB;
+    //    attributes[pos++] = WGL_RED_BITS_ARB;
+    //    attributes[pos++] = 8;
+    //    attributes[pos++] = WGL_GREEN_BITS_ARB;
+    //    attributes[pos++] = 8;
+    //    attributes[pos++] = WGL_BLUE_BITS_ARB;
+    //    attributes[pos++] = 8;
+    //    attributes[pos++] = WGL_ALPHA_BITS_ARB;
+    //    attributes[pos++] = 8;
+    //    attributes[pos++] = WGL_DEPTH_BITS_ARB;
+    //    attributes[pos++] = 24;
+    //    attributes[pos++] = WGL_STENCIL_BITS_ARB;
+    //    attributes[pos++] = 8;
+    //    attributes[pos++] = WGL_DOUBLE_BUFFER_ARB;
+    //    attributes[pos++] = 1;
+    //    attributes[pos++] = WGL_SAMPLE_BUFFERS_ARB;
+    //    attributes[pos++] = 1;
+    //    attributes[pos++] = WGL_SAMPLES_ARB;
+    //    attributes[pos++] = numMultisamples;
+    //    attributes[pos++] = 0; // list is zero-terminated
 
-        unsigned int numFormats = 0;
-        BOOL successful = wglChoosePixelFormatARB(input.mRendererDC,
-            attributes, 0, 1, &input.mPixelFormat, &numFormats);
-        if (successful && numFormats > 0)
-        {
-            // The card supports multisampling with the requested number of
-            // samples.  Recreate the window and renderer.
-            delete0(mRenderer);
+    //    unsigned int numFormats = 0;
+    //    BOOL successful = wglChoosePixelFormatARB(input.mRendererDC,
+    //        attributes, 0, 1, &input.mPixelFormat, &numFormats);
+    //    if (successful && numFormats > 0)
+    //    {
+    //        // The card supports multisampling with the requested number of
+    //        // samples.  Recreate the window and renderer.
+    //        delete0(mRenderer);
 
-            gsIgnoreWindowDestroy = true;
-            DestroyWindow(handle);
+    //        gsIgnoreWindowDestroy = true;
+    //        DestroyWindow(handle);
 
-            handle = CreateWindow(sWindowClass, theApp->GetWindowTitle(),
-                WS_OVERLAPPEDWINDOW, theApp->GetXPosition(),
-                theApp->GetYPosition(), rect.right - rect.left + 1,
-                rect.bottom - rect.top + 1, 0, 0, 0, 0);
+    //        handle = CreateWindow(sWindowClass, theApp->GetWindowTitle(),
+    //            WS_OVERLAPPEDWINDOW, theApp->GetXPosition(),
+    //            theApp->GetYPosition(), rect.right - rect.left + 1,
+    //            rect.bottom - rect.top + 1, 0, 0, 0, 0);
 
-            theApp->SetWindowID(PtrToInt(handle));
+    //        theApp->SetWindowID(PtrToInt(handle));
 
-            input.mWindowHandle = handle;
-            mRenderer = new0 Renderer(input, theApp->GetWidth(),
-                theApp->GetHeight(), mColorFormat, mDepthStencilFormat,
-                mNumMultisamples);
-        }
-    }
+    //        input.mWindowHandle = handle;
+    //        mRenderer = new0 Renderer(input, theApp->GetWidth(),
+    //            theApp->GetHeight(), mColorFormat, mDepthStencilFormat,
+    //            mNumMultisamples);
+    //    }
+    //}
 #endif
 
     if (theApp->OnInitialize())

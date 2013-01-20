@@ -24,19 +24,19 @@
 #endif
 
 #ifdef SHR_USE_OPENGL
-#include "ShrOpenGLBitmapFont.h"
-#include "ShrOpenGLIndexBuffer.h"
-#include "ShrOpenGLMapping.h"
-#include "ShrOpenGLPixelShader.h"
-#include "ShrOpenGLRenderTarget.h"
-#include "ShrOpenGLShader.h"
-#include "ShrOpenGLTexture1D.h"
-#include "ShrOpenGLTexture2D.h"
-#include "ShrOpenGLTexture3D.h"
-#include "ShrOpenGLTextureCube.h"
-#include "ShrOpenGLVertexBuffer.h"
-#include "ShrOpenGLVertexFormat.h"
-#include "ShrOpenGLVertexShader.h"
+#include "Renderers/OpenGLRenderer/ShrOpenGLBitmapFont.h"
+#include "Renderers/OpenGLRenderer/ShrOpenGLIndexBuffer.h"
+#include "Renderers/OpenGLRenderer/ShrOpenGLMapping.h"
+#include "Renderers/OpenGLRenderer/ShrOpenGLPixelShader.h"
+#include "Renderers/OpenGLRenderer/ShrOpenGLRenderTarget.h"
+#include "Renderers/OpenGLRenderer/ShrOpenGLShader.h"
+#include "Renderers/OpenGLRenderer/ShrOpenGLTexture1D.h"
+#include "Renderers/OpenGLRenderer/ShrOpenGLTexture2D.h"
+#include "Renderers/OpenGLRenderer/ShrOpenGLTexture3D.h"
+#include "Renderers/OpenGLRenderer/ShrOpenGLTextureCube.h"
+#include "Renderers/OpenGLRenderer/ShrOpenGLVertexBuffer.h"
+#include "Renderers/OpenGLRenderer/ShrOpenGLVertexFormat.h"
+#include "Renderers/OpenGLRenderer/ShrOpenGLVertexShader.h"
 #endif
 
 #endif
