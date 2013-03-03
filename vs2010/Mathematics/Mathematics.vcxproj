@@ -81,6 +81,7 @@
     <ClInclude Include="..\..\src\ShrApprGaussPointsFit2.h" />
     <ClInclude Include="..\..\src\ShrApprGaussPointsFit3.h" />
     <ClInclude Include="..\..\src\ShrAVector.h" />
+    <ClInclude Include="..\..\src\ShrBandedMatrix.h" />
     <ClInclude Include="..\..\src\ShrBitHacks.h" />
     <ClInclude Include="..\..\src\ShrBox2.h" />
     <ClInclude Include="..\..\src\ShrBox3.h" />
@@ -95,6 +96,7 @@
     <ClInclude Include="..\..\src\ShrHMatrix.h" />
     <ClInclude Include="..\..\src\ShrHPlane.h" />
     <ClInclude Include="..\..\src\ShrHPoint.h" />
+    <ClInclude Include="..\..\src\ShrHQuaternion.h" />
     <ClInclude Include="..\..\src\ShrMath.h" />
     <ClInclude Include="..\..\src\ShrMathematics.h" />
     <ClInclude Include="..\..\src\ShrMathematicsPCH.h" />
@@ -102,6 +104,7 @@
     <ClInclude Include="..\..\src\ShrMatrix2.h" />
     <ClInclude Include="..\..\src\ShrMatrix3.h" />
     <ClInclude Include="..\..\src\ShrMatrix4.h" />
+    <ClInclude Include="..\..\src\ShrPolynomial1.h" />
     <ClInclude Include="..\..\src\ShrQuaternion.h" />
     <ClInclude Include="..\..\src\ShrGVector.h" />
     <ClInclude Include="..\..\src\ShrVector2.h" />
@@ -111,6 +114,7 @@
   <ItemGroup>
     <None Include="..\..\src\ShrAPoint.inl" />
     <None Include="..\..\src\ShrAVector.inl" />
+    <None Include="..\..\src\ShrBandedMatrix.inl" />
     <None Include="..\..\src\ShrBitHacks.inl" />
     <None Include="..\..\src\ShrBox2.inl" />
     <None Include="..\..\src\ShrBox3.inl" />
@@ -121,10 +125,12 @@
     <None Include="..\..\src\ShrHMatrix.inl" />
     <None Include="..\..\src\ShrHPlane.inl" />
     <None Include="..\..\src\ShrHPoint.inl" />
+    <None Include="..\..\src\ShrHQuaternion.inl" />
     <None Include="..\..\src\ShrMath.inl" />
     <None Include="..\..\src\ShrMatrix2.inl" />
     <None Include="..\..\src\ShrMatrix3.inl" />
     <None Include="..\..\src\ShrMatrix4.inl" />
+    <None Include="..\..\src\ShrPolynomial1.inl" />
     <None Include="..\..\src\ShrQuaternion.inl" />
     <None Include="..\..\src\ShrGVector.inl" />
     <None Include="..\..\src\ShrVector2.inl" />
@@ -144,6 +150,7 @@
     <ClCompile Include="..\..\src\ShrHMatrix.cpp" />
     <ClCompile Include="..\..\src\ShrHPlane.cpp" />
     <ClCompile Include="..\..\src\ShrHPoint.cpp" />
+    <ClCompile Include="..\..\src\ShrHQuaternion.cpp" />
     <ClCompile Include="..\..\src\ShrMath.cpp" />
     <ClCompile Include="..\..\src\ShrMathematicsPCH.cpp" />
     <ClCompile Include="..\..\src\ShrMatrix2.cpp" />
