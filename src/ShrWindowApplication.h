@@ -143,10 +143,10 @@ protected:
     // handle.
     int mWindowID;
 
-    //Texture::Format mColorFormat;
-    //Texture::Format mDepthStencilFormat;
+    Texture::Format mColorFormat;
+    Texture::Format mDepthStencilFormat;
     int mNumMultisamples;
-    //Renderer* mRenderer;
+    Renderer* mRenderer;
 
     // Performance measurements.
     void ResetTime ();

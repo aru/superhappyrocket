@@ -27,7 +27,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\src\ShrCore.h" />
     <ClInclude Include="..\..\src\ShrCoreLIB.h" />
     <ClInclude Include="..\..\src\ShrCorePCH.h">
       <Filter>_PrecompiledHeaders</Filter>
@@ -101,6 +100,7 @@
     <ClInclude Include="..\..\src\ShrScopedCS.h">
       <Filter>Threading</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\src\ShrCore.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\ShrCorePCH.cpp">

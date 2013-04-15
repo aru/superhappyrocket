@@ -13,8 +13,8 @@
 #include "ShrMathematics.h"
 //#include "ShrImagics.h"
 //#include "ShrPhysics.h"
-//#include "ShrGraphics.h"
-//#include "ShrRenderers.h"
+#include "ShrGraphics.h"
+#include "ShrRenderers.h"
 #include "ShrCommand.h"
 
 namespace shr
