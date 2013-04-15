@@ -8,6 +8,9 @@
 #include <stdio.h>
 #include <string>
 
+#define SHR_SUCCESS 0
+#define SHR_FAIL 1
+
 // Things that need to go into a struct for the SDL app:
 // app->member
 const int width = 640;
