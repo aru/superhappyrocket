@@ -37,10 +37,10 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>D:\Git\Super-Happy-Rocket\include\SDL\include;D:\Git\Super-Happy-Rocket\include\SDL_image\include;D:\Git\Super-Happy-Rocket\include\SDL_ttf\include;D:\Git\Super-Happy-Rocket\include\SDL_net\include;D:\Git\Super-Happy-Rocket\include\SDL_mixer\include;D:\Git\Super-Happy-Rocket\src;D:\Git\Super-Happy-Rocket\src\Renderers;$(IncludePath)</IncludePath>
+    <IncludePath>.\..\..\include\SDL_mixer\include;.\..\..\include\SDL_net\include;.\..\..\include\SDL_ttf\include;.\..\..\include\SDL\include;.\..\..\include\SDL_image\include;.\..\..\src;.\..\..\src\Renderers;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <LibraryPath>D:\Git\Super-Happy-Rocket\include\SDL\lib\x86;D:\Git\Super-Happy-Rocket\include\SDL_image\lib\x86;D:\Git\Super-Happy-Rocket\include\SDL_ttf\lib\x86;D:\Git\Super-Happy-Rocket\include\SDL_net\lib\x86;D:\Git\Super-Happy-Rocket\include\SDL_mixer\lib;D:\Git\Super-Happy-Rocket\vs2010\lib;$(LibraryPath)</LibraryPath>
+    <LibraryPath>.\..\..\include\SDL\lib\x86;.\..\..\include\SDL_image\lib\x86;.\..\..\include\SDL_ttf\lib\x86;.\..\..\include\SDL_net\lib\x86;.\..\..\include\SDL_mixer\lib;.\..\..\vs2010\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
