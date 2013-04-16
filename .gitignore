@@ -25,7 +25,6 @@ Thumbs.db
 [Bb]in
 [Dd]ebug*/
 *.sbr
-lib/
 obj/
 ipch/
 *.[Oo]bj
