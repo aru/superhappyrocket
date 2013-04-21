@@ -4,7 +4,7 @@
 int main( int argc, char* args[] )
 {
 	// Load the context
-	Context* context = new Context("D:\\Git\\Super-Happy-Rocket\\vs2010\\Debug\\Context.txt");
+	Context* context = new Context(".\\..\\..\\vs2010\\Context.txt");
 	// Start SDL_app
 	SDL_app* game = new SDL_app(context);
 
