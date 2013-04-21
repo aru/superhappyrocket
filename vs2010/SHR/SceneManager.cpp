@@ -1,7 +1,7 @@
 #include "SceneManager.h"
 
-SceneManager::SceneManager( Context* context, Renderer* render, InputManager* in, AudioManager* aud )
-	:ctxt(context), renderer(render), input( in ), audio( aud )
+SceneManager::SceneManager( Context* context )
+	:ctxt(context)
 {
 }
 
@@ -11,30 +11,43 @@ SceneManager::~SceneManager()
 
 int SceneManager::Load()
 {
-	// Load up a triangle
-	GLfloat vVerts[] = { -1.0f, 0.0f, 0.0f,
-						  1.0f, 0.0f, 0.0f,
-						  1.0f, 0.5f, 0.0f };
+	//// Load up a triangle
+	//GLfloat vVerts[] = { -1.0f, 0.0f, 0.0f,
+	//					  1.0f, 0.0f, 0.0f,
+	//					  1.0f, 0.5f, 0.0f };
 
 
-	float vArr[8] = {     -0.5f, -0.5f, 
-						   0.5f, -0.5f,
-						   0.5f, 0.5f,
-						   -0.5f, 0.5f };
-	int vArrSize = 8;
-	float iArr = 0;
-	int iArrSize = 0;
+	//float vArr[8] = {     -0.5f, -0.5f, 
+	//					   0.5f, -0.5f,
+	//					   0.5f, 0.5f,
+	//					   -0.5f, 0.5f };
+	//int vArrSize = 8;
+	//float iArr = 0;
+	//int iArrSize = 0;
+
+	Level lvl;
+	unsigned int batC;
+	unsigned int objC;
+	unsigned int musC;
 
 	switch( ctxt->level )
 	{
 	case 1:
-		object = new SimpleObject( 7, vArr, vArrSize, &iArr, iArrSize );
-		renderer->addObject( object );
-		batch = new GLBatch();
-		batch->Begin(GL_TRIANGLES, 3);
-		batch->CopyVertexData3f(vVerts);
-		batch->End();
-		renderer->addBatch(batch);
+		// Add music to the audio manager
+		for( musC = 0; musC < lvl.songs.size(); musC++ )
+		{
+			ctxt->audio->loadMusic( lvl.songs.at(musC) );
+		}
+		// Add the objects to the renderer
+		for( objC = 0; objC < lvl.objects.size(); objC++ )
+		{
+			ctxt->renderer->addObject(lvl.objects.at(objC));
+		}
+		// Add the batches to the renderer
+		for( batC = 0; batC < lvl.batches.size(); batC++ )
+		{
+			ctxt->renderer->addBatch(lvl.batches.at(batC));
+		}
 		break;
 	default:
 
@@ -65,7 +78,7 @@ int SceneManager::Update()
 	switch( ctxt->level )
 	{
 	case 1:
-		key = input->handleKeys();
+		key = ctxt->input->handleKeys();
 		if( key == 'q' )
 		{
 			object->renderMe = !object->renderMe;

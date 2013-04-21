@@ -77,6 +77,7 @@
     <ClCompile Include="AudioManager.cpp" />
     <ClCompile Include="Context.cpp" />
     <ClCompile Include="InputManager.cpp" />
+    <ClCompile Include="Level.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="OpenGLRenderer.cpp" />
     <ClCompile Include="SceneManager.cpp" />
@@ -87,6 +88,7 @@
     <ClInclude Include="AudioManager.h" />
     <ClInclude Include="Context.h" />
     <ClInclude Include="InputManager.h" />
+    <ClInclude Include="Level.h" />
     <ClInclude Include="OpenGLRenderer.h" />
     <ClInclude Include="SceneManager.h" />
     <ClInclude Include="SDL_app.h" />

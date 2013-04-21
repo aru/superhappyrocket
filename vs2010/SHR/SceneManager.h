@@ -6,11 +6,11 @@
 #include "AudioManager.h"
 #include "InputManager.h"
 #include "OpenGLRenderer.h"
+#include "Level.h"
 
 class SceneManager {
 public:
-	SceneManager( Context* context, Renderer* render, 
-				  InputManager* in, AudioManager* aud );
+	SceneManager( Context* context );
 	~SceneManager();
 
 	int Load();
@@ -18,11 +18,9 @@ public:
 	int Unload();
 
 	Context* ctxt;
-	Renderer* renderer;
-	InputManager* input;
-	AudioManager* audio;
 	SimpleObject* object;
 	GLBatch* batch;
+	vector<Level> levels;
 
 };
 

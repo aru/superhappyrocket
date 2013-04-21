@@ -14,7 +14,10 @@ Context::Context(char* file)
 
 Context::~Context()
 {
-
+	delete renderer;
+	delete audio;
+	delete input;
+	delete scene;
 }
 
 int Context::LoadContext(char* file)

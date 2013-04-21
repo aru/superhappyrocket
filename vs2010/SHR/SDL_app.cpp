@@ -19,8 +19,8 @@ SDL_app::SDL_app( Context* context )
 
 SDL_app::~SDL_app(){
 	Shutdown();
-	delete renderer;
-	delete audio;
+	//delete renderer;
+	//delete audio;
 }
 
 int SDL_app::Startup()
@@ -79,8 +79,13 @@ int SDL_app::Startup()
     SDL_EnableUNICODE( SDL_TRUE );
 
 	//Initialize OpenGL
-	renderer = new Renderer();
-	if( renderer->Init() != 0 )
+	ctxt->renderer = new Renderer();
+
+	// Was this properly initialized? If not -> abort
+	if( !ctxt->renderer )
+		return 1;
+
+	if( ctxt->renderer->Init() != 0 )
 	{
 		printf("OpenGL Failed somehow\n");
 	}
@@ -95,15 +100,14 @@ int SDL_app::Startup()
 	window = SDL_GetVideoSurface();
 
 	// Start the audio
-	audio = new AudioManager();
-	audio->loadMusic( "../../content/sounds/shr_gp_music_0.wav" );
+	ctxt->audio = new AudioManager( ctxt );
 
 	// Start the input handler
-	input = new InputManager( ctxt );
+	ctxt->input = new InputManager( ctxt );
 
 	// Start the scene manager
-	scene = new SceneManager( ctxt, renderer, input, audio );
-	scene->Load();
+	ctxt->scene = new SceneManager( ctxt );
+	ctxt->scene->Load();
 
 	return 0;
 }
@@ -114,8 +118,8 @@ int SDL_app::Shutdown()
 	printf("Shutting down fonts\n");
 	TTF_Quit();
 
-	// Free the music
-    // Mix_FreeMusic();
+	ctxt->audio->shutDown();
+
 	//Quit SDL_mixer
 	printf("Shuttind down audio\n");
     Mix_CloseAudio();
@@ -128,7 +132,7 @@ int SDL_app::Shutdown()
 
 int SDL_app::Update()
 {
-	renderer->Draw();
+	ctxt->renderer->Draw();
 	SDL_GL_SwapBuffers();
 	return 0;
 }
@@ -144,8 +148,8 @@ int SDL_app::Loop()
 	while( ctxt->quit == false )
 	{
 		this->Update();
-		scene->Update();
-		audio->playMusic();
+		ctxt->scene->Update();
+		ctxt->audio->playMusic();
 	}
 	return 0;
 }

@@ -9,10 +9,6 @@
 #include "SDL_mixer.h"
 
 #include "Context.h"
-#include "AudioManager.h"
-#include "InputManager.h"
-#include "SceneManager.h"
-#include "OpenGLRenderer.h"
 
 #include <stdio.h>
 
@@ -38,10 +34,7 @@ public:
 
 	Context* ctxt;
 	SDL_Surface* window;
-	Renderer* renderer;
-	AudioManager* audio;
-	InputManager* input;
-	SceneManager* scene;
+
 };
 
 #endif

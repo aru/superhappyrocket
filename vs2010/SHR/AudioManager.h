@@ -6,13 +6,14 @@
 
 class AudioManager {
 public:
+	AudioManager( Context* ctx );
 	AudioManager();
 	~AudioManager();
 	int loadMusic(const char* file);
 	int playMusic();
 	int pauseMusic();
 	int stopMusic();
-	int cleanUp();
+	int shutDown();
 
 	Context* ctxt;
 	Mix_Music *music;

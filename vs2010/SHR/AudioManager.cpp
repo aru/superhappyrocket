@@ -1,7 +1,13 @@
 #include "AudioManager.h"
 
 AudioManager::AudioManager() {}
-AudioManager::~AudioManager() {}
+AudioManager::~AudioManager() {
+	
+}
+AudioManager::AudioManager( Context* ctx )
+	:ctxt(ctx)
+{
+}
 int AudioManager::loadMusic(const char * file)
 {
 	music = Mix_LoadMUS( file );
@@ -23,4 +29,11 @@ int AudioManager::playMusic()
 			   }    
          }
 		return 0;
+}
+
+int AudioManager::shutDown()
+{
+	// Free the music
+    Mix_FreeMusic( music );
+	return 0;
 }
