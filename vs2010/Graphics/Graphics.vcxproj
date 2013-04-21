@@ -97,6 +97,7 @@
     <ClInclude Include="..\..\src\ShrAlphaState.h" />
     <ClInclude Include="..\..\src\ShrBound.h" />
     <ClInclude Include="..\..\src\ShrBuffer.h" />
+    <ClInclude Include="..\..\src\ShrCameraNode.h" />
     <ClInclude Include="..\..\src\ShrColor.h" />
     <ClInclude Include="..\..\src\ShrCullState.h" />
     <ClInclude Include="..\..\src\ShrDepthState.h" />
@@ -106,6 +107,7 @@
     <ClInclude Include="..\..\src\ShrGraphicsPCH.h" />
     <ClInclude Include="..\..\src\ShrHalfFloat.h" />
     <ClInclude Include="..\..\src\ShrIndexBuffer.h" />
+    <ClInclude Include="..\..\src\ShrNode.h" />
     <ClInclude Include="..\..\src\ShrOffsetState.h" />
     <ClInclude Include="..\..\src\ShrPixelShader.h" />
     <ClInclude Include="..\..\src\ShrPolypoint.h" />
@@ -154,6 +156,7 @@
     <ClCompile Include="..\..\src\ShrAlphaState.cpp" />
     <ClCompile Include="..\..\src\ShrBound.cpp" />
     <ClCompile Include="..\..\src\ShrBuffer.cpp" />
+    <ClCompile Include="..\..\src\ShrCameraNode.cpp" />
     <ClCompile Include="..\..\src\ShrColor.cpp" />
     <ClCompile Include="..\..\src\ShrCullState.cpp" />
     <ClCompile Include="..\..\src\ShrDepthState.cpp" />
@@ -161,6 +164,7 @@
     <ClCompile Include="..\..\src\ShrGraphicsPCH.cpp" />
     <ClCompile Include="..\..\src\ShrHalfFloat.cpp" />
     <ClCompile Include="..\..\src\ShrIndexBuffer.cpp" />
+    <ClCompile Include="..\..\src\ShrNode.cpp" />
     <ClCompile Include="..\..\src\ShrOffsetState.cpp" />
     <ClCompile Include="..\..\src\ShrPixelShader.cpp" />
     <ClCompile Include="..\..\src\ShrPolypoint.cpp" />
@@ -188,8 +192,10 @@
     <None Include="..\..\src\Renderers\ShrRenderer.inl" />
     <None Include="..\..\src\ShrBound.inl" />
     <None Include="..\..\src\ShrBuffer.inl" />
+    <None Include="..\..\src\ShrCameraNode.inl" />
     <None Include="..\..\src\ShrColor.inl" />
     <None Include="..\..\src\ShrIndexBuffer.inl" />
+    <None Include="..\..\src\ShrNode.inl" />
     <None Include="..\..\src\ShrPolypoint.inl" />
     <None Include="..\..\src\ShrPolysegment.inl" />
     <None Include="..\..\src\ShrRenderTarget.inl" />
