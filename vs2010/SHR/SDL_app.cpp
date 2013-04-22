@@ -5,7 +5,7 @@ SDL_app::SDL_app()
 }
 
 SDL_app::SDL_app( int w, int h, int b, int v)
-	: width(w), height(h), bpp(b), vMode(v)
+	: width(w), height(h), bpp(b), vMode(v), wantRedisplay(0)
 {
 	if( vMode && SDL_OPENGL )
 		Startup();
@@ -13,7 +13,7 @@ SDL_app::SDL_app( int w, int h, int b, int v)
 
 SDL_app::SDL_app( Context* context )
 	:ctxt(context), width(context->width), height(context->height), 
-		bpp(context->bpp), vMode(context->vMode)
+		bpp(context->bpp), vMode(context->vMode), wantRedisplay(0)
 {
 }
 
@@ -79,7 +79,7 @@ int SDL_app::Startup()
     SDL_EnableUNICODE( SDL_TRUE );
 
 	//Initialize OpenGL
-	ctxt->renderer = new Renderer();
+	ctxt->renderer = new Renderer( ctxt );
 
 	// Was this properly initialized? If not -> abort
 	if( !ctxt->renderer )
@@ -147,9 +147,36 @@ int SDL_app::Loop()
 
 	while( ctxt->quit == false )
 	{
-		this->Update();
+		//this->eventDispatcher();
 		ctxt->scene->Update();
+		this->Update();
 		ctxt->audio->playMusic();
 	}
 	return 0;
+}
+
+int SDL_app::resize( SDL_ResizeEvent* e )
+{
+	if (!(window = SDL_SetVideoMode(e->w, e->h,
+	window->format->BitsPerPixel, window->flags)))
+	{
+		exit(EXIT_FAILURE); /* failed to resize. */
+		return 1;
+	}
+	ctxt->renderer->changeSize(e->w, e->h);
+	postRedisplay();
+	return 0;
+}
+
+void SDL_app::eventDispatcher()
+{
+	SDL_Event e;
+	while( SDL_PollEvent( &e ) )
+	{
+		switch(e.type)
+		{
+		case SDL_VIDEORESIZE: resize(&e.resize); break;
+		case SDL_VIDEOEXPOSE: postRedisplay(); break;
+		}
+	}
 }

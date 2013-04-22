@@ -13,6 +13,16 @@ public:
 	vector<char*> songs;
 	vector<SimpleObject*> objects;
 	vector<GLBatch*> batches;
+
+	// Camera Support
+	static CStopWatch    *rotTimer;
+	GLFrame              *cameraFrame;
+	M3DMatrix44f         *mCamera;
+	GLMatrixStack		 *modelViewMatrix;		// Modelview Matrix
+	GLMatrixStack		 *projectionMatrix;		// Projection Matrix
+	GLFrustum			 *viewFrustum;			// View Frustum
+	GLGeometryTransform	 *transformPipeline;		// Geometry Transform Pipeline
+
 };
 
 #endif

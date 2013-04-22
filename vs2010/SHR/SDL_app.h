@@ -27,6 +27,12 @@ public:
 	int Unload();
 	int Shutdown();
 
+
+	int resize(SDL_ResizeEvent* e);
+	void eventDispatcher();
+	int wantRedisplay;
+	void postRedisplay() { wantRedisplay = 0; };
+
 	int width;
 	int height;
 	int bpp;
@@ -34,6 +40,7 @@ public:
 
 	Context* ctxt;
 	SDL_Surface* window;
+	SDL_Event event;
 
 };
 
