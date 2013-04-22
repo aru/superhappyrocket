@@ -20,6 +20,7 @@ public:
 	Context* ctxt;
 	SimpleObject* object;
 	GLBatch* batch;
+	GLBatch* bgBatch;
 	vector<Level> levels;
 
 };

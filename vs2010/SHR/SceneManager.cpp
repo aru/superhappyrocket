@@ -29,6 +29,7 @@ int SceneManager::Load()
 	unsigned int batC;
 	unsigned int objC;
 	unsigned int musC;
+	unsigned int bgbatC;
 
 	switch( ctxt->level )
 	{
@@ -48,6 +49,11 @@ int SceneManager::Load()
 		{
 			ctxt->renderer->addBatch(lvl.batches.at(batC));
 		}
+			// Add the batches to the renderer
+		for( bgbatC = 0; bgbatC < lvl.batches.size(); bgbatC++ )
+		{
+			ctxt->renderer->addBatch(lvl.batches.at(bgbatC));
+		}
 		break;
 	default:
 
@@ -63,6 +69,7 @@ int SceneManager::Unload()
 	case 1:
 		delete object;
 		delete batch;
+		delete bgBatch;
 		break;
 	default:
 		break;
