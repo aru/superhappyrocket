@@ -10,7 +10,7 @@ class Context;
 class AudioManager;
 class InputManager;
 class SceneManager;
-class OpenGLRenderer;
+class Renderer;
 
 #include "AudioManager.h"
 #include "InputManager.h"
