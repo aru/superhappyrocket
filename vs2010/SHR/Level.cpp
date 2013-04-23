@@ -6,6 +6,8 @@ Level::Level()
 	char * song = "../../content/sounds/shr_gp_music_0.wav";
 	songs.push_back(song);
 
+
+
 	// Load up a triangle
 	GLfloat vVerts[] = { -1.0f, 0.0f, 0.0f,
 						  1.0f, 0.0f, 0.0f,
@@ -22,7 +24,9 @@ Level::Level()
 
 	SimpleObject* obj;
 	GLBatch* bat;
+	GLBatch* rocketBatch;
 	GLBatch* bgBatch;
+	GLTriangleBatch     sphereBatch;
 
 	obj = new SimpleObject( 7, vArr, vArrSize, &iArr, iArrSize );
 	objects.push_back(obj);
@@ -34,8 +38,9 @@ Level::Level()
 	batches.push_back(bat);
 	
 
-	bgBatch = new GLBatch();
-	bgBatch->Begin(GL_TRIANGLES, 36, 1);
+	rocketBatch = new GLBatch();
+
+	rocketBatch->Begin(GL_TRIANGLES, 36, 1);
     
 	M3DVector3f vFrontLeftB = { -0.7f, -0.7f, 0.7f };
 	M3DVector3f vFrontRightB = { 0.7f, -0.7f, 0.7f };
@@ -49,165 +54,180 @@ Level::Level()
 
 	// front(BACK)
 	m3dFindNormal(n, vFrontLeftU, vFrontLeftB, vFrontRightB);
-	bgBatch->Normal3fv(n);
-	bgBatch->MultiTexCoord2f(0, 0.0f, 1.0f );
-	bgBatch->Vertex3fv(vFrontLeftU);		
+	rocketBatch->Normal3fv(n);
+	rocketBatch->MultiTexCoord2f(0, 0.0f, 1.0f );
+	rocketBatch->Vertex3fv(vFrontLeftU);		
     
-	bgBatch->Normal3fv(n);
-	bgBatch->MultiTexCoord2f(0, 1.0f, 1.0f );
-	bgBatch->Vertex3fv(vFrontLeftB);
+	rocketBatch->Normal3fv(n);
+	rocketBatch->MultiTexCoord2f(0, 1.0f, 1.0f );
+	rocketBatch->Vertex3fv(vFrontLeftB);
     
-	bgBatch->Normal3fv(n);
-	bgBatch->MultiTexCoord2f(0, 1.0f, 0.0f );
-	bgBatch->Vertex3fv(vFrontRightB);
+	rocketBatch->Normal3fv(n);
+	rocketBatch->MultiTexCoord2f(0, 1.0f, 0.0f );
+	rocketBatch->Vertex3fv(vFrontRightB);
     
-	bgBatch->Normal3fv(n);
-	bgBatch->MultiTexCoord2f(0, 0.0f, 0.0f );
-	bgBatch->Vertex3fv(vFrontRightU);
+	rocketBatch->Normal3fv(n);
+	rocketBatch->MultiTexCoord2f(0, 0.0f, 0.0f );
+	rocketBatch->Vertex3fv(vFrontRightU);
     
-	bgBatch->Normal3fv(n);
-	bgBatch->MultiTexCoord2f(0, 0.0f, 1.0f );
-	bgBatch->Vertex3fv(vFrontLeftU);
+	rocketBatch->Normal3fv(n);
+	rocketBatch->MultiTexCoord2f(0, 0.0f, 1.0f );
+	rocketBatch->Vertex3fv(vFrontLeftU);
     
-	bgBatch->Normal3fv(n);
-	bgBatch->MultiTexCoord2f(0, 1.0f, 0.0f );
-	bgBatch->Vertex3fv(vFrontRightB);
+	rocketBatch->Normal3fv(n);
+	rocketBatch->MultiTexCoord2f(0, 1.0f, 0.0f );
+	rocketBatch->Vertex3fv(vFrontRightB);
     
 
 	
 	// back (FRONT)
 	m3dFindNormal(n, vBackLeftU, vBackRightU, vBackRightB);
-	bgBatch->Normal3fv(n);
-	bgBatch->MultiTexCoord2f(0, 0.0f, 1.0f );
-	bgBatch->Vertex3fv(vBackLeftU);		
+	rocketBatch->Normal3fv(n);
+	rocketBatch->MultiTexCoord2f(0, 0.0f, 1.0f );
+	rocketBatch->Vertex3fv(vBackLeftU);		
     
-	bgBatch->Normal3fv(n);
-	bgBatch->MultiTexCoord2f(0, 1.0f, 1.0f );
-	bgBatch->Vertex3fv(vBackRightU);
+	rocketBatch->Normal3fv(n);
+	rocketBatch->MultiTexCoord2f(0, 1.0f, 1.0f );
+	rocketBatch->Vertex3fv(vBackRightU);
     
-	bgBatch->Normal3fv(n);
-	bgBatch->MultiTexCoord2f(0, 1.0f, 0.0f );
-	bgBatch->Vertex3fv(vBackRightB);
+	rocketBatch->Normal3fv(n);
+	rocketBatch->MultiTexCoord2f(0, 1.0f, 0.0f );
+	rocketBatch->Vertex3fv(vBackRightB);
     
-	bgBatch->Normal3fv(n);
-	bgBatch->MultiTexCoord2f(0, 0.0f, 0.0f );
-	bgBatch->Vertex3fv(vBackLeftB);
+	rocketBatch->Normal3fv(n);
+	rocketBatch->MultiTexCoord2f(0, 0.0f, 0.0f );
+	rocketBatch->Vertex3fv(vBackLeftB);
     
-	bgBatch->Normal3fv(n);
-	bgBatch->MultiTexCoord2f(0, 0.0f, 1.0f );
-	bgBatch->Vertex3fv(vBackLeftU);
+	rocketBatch->Normal3fv(n);
+	rocketBatch->MultiTexCoord2f(0, 0.0f, 1.0f );
+	rocketBatch->Vertex3fv(vBackLeftU);
     
-	bgBatch->Normal3fv(n);
-	bgBatch->MultiTexCoord2f(0, 1.0f, 0.0f );
-	bgBatch->Vertex3fv(vBackRightB);
+	rocketBatch->Normal3fv(n);
+	rocketBatch->MultiTexCoord2f(0, 1.0f, 0.0f );
+	rocketBatch->Vertex3fv(vBackRightB);
 
 	// Left (RIGHT)
 	m3dFindNormal(n, vFrontLeftU, vBackLeftU, vBackLeftB);
-	bgBatch->Normal3fv(n);
-	bgBatch->MultiTexCoord2f(0, 0.0f, 1.0f );
-	bgBatch->Vertex3fv(vFrontLeftU);		
+	rocketBatch->Normal3fv(n);
+	rocketBatch->MultiTexCoord2f(0, 0.0f, 1.0f );
+	rocketBatch->Vertex3fv(vFrontLeftU);		
     
-	bgBatch->Normal3fv(n);
-	bgBatch->MultiTexCoord2f(0, 1.0f, 1.0f );
-	bgBatch->Vertex3fv(vBackLeftU);
+	rocketBatch->Normal3fv(n);
+	rocketBatch->MultiTexCoord2f(0, 1.0f, 1.0f );
+	rocketBatch->Vertex3fv(vBackLeftU);
     
-	bgBatch->Normal3fv(n);
-	bgBatch->MultiTexCoord2f(0, 1.0f, 0.0f );
-	bgBatch->Vertex3fv(vBackLeftB);
+	rocketBatch->Normal3fv(n);
+	rocketBatch->MultiTexCoord2f(0, 1.0f, 0.0f );
+	rocketBatch->Vertex3fv(vBackLeftB);
     
-	bgBatch->Normal3fv(n);
-	bgBatch->MultiTexCoord2f(0, 0.0f, 0.0f );
-	bgBatch->Vertex3fv(vFrontLeftB);
+	rocketBatch->Normal3fv(n);
+	rocketBatch->MultiTexCoord2f(0, 0.0f, 0.0f );
+	rocketBatch->Vertex3fv(vFrontLeftB);
     
-	bgBatch->Normal3fv(n);
-	bgBatch->MultiTexCoord2f(0, 0.0f, 1.0f );
-	bgBatch->Vertex3fv(vFrontLeftU);
+	rocketBatch->Normal3fv(n);
+	rocketBatch->MultiTexCoord2f(0, 0.0f, 1.0f );
+	rocketBatch->Vertex3fv(vFrontLeftU);
     
-	bgBatch->Normal3fv(n);
-	bgBatch->MultiTexCoord2f(0, 1.0f, 0.0f );
-	bgBatch->Vertex3fv(vBackLeftB);
+	rocketBatch->Normal3fv(n);
+	rocketBatch->MultiTexCoord2f(0, 1.0f, 0.0f );
+	rocketBatch->Vertex3fv(vBackLeftB);
 
 
 	// Right (LEFT)
 	m3dFindNormal(n, vFrontRightU, vFrontRightB, vBackRightB);
-	bgBatch->Normal3fv(n);
-	bgBatch->MultiTexCoord2f(0, 0.0f, 1.0f );
-	bgBatch->Vertex3fv(vFrontRightU);		
+	rocketBatch->Normal3fv(n);
+	rocketBatch->MultiTexCoord2f(0, 0.0f, 1.0f );
+	rocketBatch->Vertex3fv(vFrontRightU);		
     
-	bgBatch->Normal3fv(n);
-	bgBatch->MultiTexCoord2f(0, 1.0f, 1.0f );
-	bgBatch->Vertex3fv(vFrontRightB);
+	rocketBatch->Normal3fv(n);
+	rocketBatch->MultiTexCoord2f(0, 1.0f, 1.0f );
+	rocketBatch->Vertex3fv(vFrontRightB);
     
-	bgBatch->Normal3fv(n);
-	bgBatch->MultiTexCoord2f(0, 1.0f, 0.0f );
-	bgBatch->Vertex3fv(vBackRightB);
+	rocketBatch->Normal3fv(n);
+	rocketBatch->MultiTexCoord2f(0, 1.0f, 0.0f );
+	rocketBatch->Vertex3fv(vBackRightB);
     
-	bgBatch->Normal3fv(n);
-	bgBatch->MultiTexCoord2f(0, 0.0f, 0.0f );
-	bgBatch->Vertex3fv(vBackRightU);
+	rocketBatch->Normal3fv(n);
+	rocketBatch->MultiTexCoord2f(0, 0.0f, 0.0f );
+	rocketBatch->Vertex3fv(vBackRightU);
     
-	bgBatch->Normal3fv(n);
-	bgBatch->MultiTexCoord2f(0, 0.0f, 1.0f );
-	bgBatch->Vertex3fv(vFrontRightU);
+	rocketBatch->Normal3fv(n);
+	rocketBatch->MultiTexCoord2f(0, 0.0f, 1.0f );
+	rocketBatch->Vertex3fv(vFrontRightU);
     
-	bgBatch->Normal3fv(n);
-	bgBatch->MultiTexCoord2f(0, 1.0f, 0.0f );
-	bgBatch->Vertex3fv(vBackRightB);
+	rocketBatch->Normal3fv(n);
+	rocketBatch->MultiTexCoord2f(0, 1.0f, 0.0f );
+	rocketBatch->Vertex3fv(vBackRightB);
 
 	// Up 
 	m3dFindNormal(n, vFrontRightU, vBackRightU, vBackLeftU);
-	bgBatch->Normal3fv(n);
-	bgBatch->MultiTexCoord2f(0, 0.0f, 1.0f );
-	bgBatch->Vertex3fv(vFrontRightU);		
+	rocketBatch->Normal3fv(n);
+	rocketBatch->MultiTexCoord2f(0, 0.0f, 1.0f );
+	rocketBatch->Vertex3fv(vFrontRightU);		
     
-	bgBatch->Normal3fv(n);
-	bgBatch->MultiTexCoord2f(0, 1.0f, 1.0f );
-	bgBatch->Vertex3fv(vBackRightU);
+	rocketBatch->Normal3fv(n);
+	rocketBatch->MultiTexCoord2f(0, 1.0f, 1.0f );
+	rocketBatch->Vertex3fv(vBackRightU);
     
-	bgBatch->Normal3fv(n);
-	bgBatch->MultiTexCoord2f(0, 1.0f, 0.0f );
-	bgBatch->Vertex3fv(vBackLeftU);
+	rocketBatch->Normal3fv(n);
+	rocketBatch->MultiTexCoord2f(0, 1.0f, 0.0f );
+	rocketBatch->Vertex3fv(vBackLeftU);
     
-	bgBatch->Normal3fv(n);
-	bgBatch->MultiTexCoord2f(0, 0.0f, 0.0f );
-	bgBatch->Vertex3fv(vFrontLeftU);
+	rocketBatch->Normal3fv(n);
+	rocketBatch->MultiTexCoord2f(0, 0.0f, 0.0f );
+	rocketBatch->Vertex3fv(vFrontLeftU);
     
-	bgBatch->Normal3fv(n);
-	bgBatch->MultiTexCoord2f(0, 0.0f, 1.0f );
-	bgBatch->Vertex3fv(vFrontRightU);
+	rocketBatch->Normal3fv(n);
+	rocketBatch->MultiTexCoord2f(0, 0.0f, 1.0f );
+	rocketBatch->Vertex3fv(vFrontRightU);
     
-	bgBatch->Normal3fv(n);
-	bgBatch->MultiTexCoord2f(0, 1.0f, 0.0f );
-	bgBatch->Vertex3fv(vBackLeftU);
+	rocketBatch->Normal3fv(n);
+	rocketBatch->MultiTexCoord2f(0, 1.0f, 0.0f );
+	rocketBatch->Vertex3fv(vBackLeftU);
 
 	// Down 
 	m3dFindNormal(n, vFrontRightB, vFrontLeftB, vBackLeftB);
-	bgBatch->Normal3fv(n);
-	bgBatch->MultiTexCoord2f(0, 0.0f, 1.0f );
-	bgBatch->Vertex3fv(vFrontRightB);		
+	rocketBatch->Normal3fv(n);
+	rocketBatch->MultiTexCoord2f(0, 0.0f, 1.0f );
+	rocketBatch->Vertex3fv(vFrontRightB);		
     
-	bgBatch->Normal3fv(n);
-	bgBatch->MultiTexCoord2f(0, 1.0f, 1.0f );
-	bgBatch->Vertex3fv(vFrontLeftB);
+	rocketBatch->Normal3fv(n);
+	rocketBatch->MultiTexCoord2f(0, 1.0f, 1.0f );
+	rocketBatch->Vertex3fv(vFrontLeftB);
     
-	bgBatch->Normal3fv(n);
-	bgBatch->MultiTexCoord2f(0, 1.0f, 0.0f );
-	bgBatch->Vertex3fv(vBackLeftB);
+	rocketBatch->Normal3fv(n);
+	rocketBatch->MultiTexCoord2f(0, 1.0f, 0.0f );
+	rocketBatch->Vertex3fv(vBackLeftB);
     
-	bgBatch->Normal3fv(n);
-	bgBatch->MultiTexCoord2f(0, 0.0f, 0.0f );
-	bgBatch->Vertex3fv(vBackRightB);
+	rocketBatch->Normal3fv(n);
+	rocketBatch->MultiTexCoord2f(0, 0.0f, 0.0f );
+	rocketBatch->Vertex3fv(vBackRightB);
     
-	bgBatch->Normal3fv(n);
-	bgBatch->MultiTexCoord2f(0, 0.0f, 1.0f );
-	bgBatch->Vertex3fv(vFrontRightB);
+	rocketBatch->Normal3fv(n);
+	rocketBatch->MultiTexCoord2f(0, 0.0f, 1.0f );
+	rocketBatch->Vertex3fv(vFrontRightB);
     
-	bgBatch->Normal3fv(n);
-	bgBatch->MultiTexCoord2f(0, 1.0f, 0.0f );
-	bgBatch->Vertex3fv(vBackLeftB);
+	rocketBatch->Normal3fv(n);
+	rocketBatch->MultiTexCoord2f(0, 1.0f, 0.0f );
+	rocketBatch->Vertex3fv(vBackLeftB);
 
+	rocketBatch->End();
+	batches.push_back(rocketBatch);
+
+	bgBatch = new GLBatch();
+	bgBatch->Begin(GL_TRIANGLE_FAN, 4, 1);
+	bgBatch->MultiTexCoord2f(0, 0.0f, 1.0f);
+	bgBatch->Vertex3f(-10.0f, 10.0f, -100.0f);
+	
+	bgBatch->MultiTexCoord2f(0, 0.0, 0.0f);
+    bgBatch->Vertex3f(-10.0f, -10.0f, -100.0f);
+	
+	bgBatch->MultiTexCoord2f(0, 1.0, 0.0);
+	bgBatch->Vertex3f(10.0f, -10.0f, -100.0f);
+	
+	bgBatch->MultiTexCoord2f(0, 1.0f, 1.0);
+	bgBatch->Vertex3f(10.0f, 10.0f, -100.0f);
 	bgBatch->End();
-
 	batches.push_back(bgBatch);
 
 }

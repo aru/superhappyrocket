@@ -57,7 +57,8 @@ int SceneManager::Unload()
 	switch( ctxt->level )
 	{
 	case 1:
-		delete bgBatch;
+		//delete rocketBatch;
+		//delete bgBatch;
 		break;
 	default:
 		break;

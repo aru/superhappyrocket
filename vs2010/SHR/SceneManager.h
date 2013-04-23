@@ -28,7 +28,8 @@ public:
 	int Unload();
 
 	Context* ctxt;
-	GLBatch* bgBatch;
+	//GLBatch* rocketBatch;
+	//GLBatch* bgBatch;
 	vector<Level> levels;
 
 	// Camera Support

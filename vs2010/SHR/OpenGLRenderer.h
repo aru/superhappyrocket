@@ -38,6 +38,9 @@ public:
 	int clearObjects();
 	int changeSize( int nWidth, int nHeight );
 
+	bool LoadTGATexture(const char *szFileName, GLenum minFilter, GLenum magFilter, GLenum wrapMode);
+
+
 	Context* ctxt;
 	vector<SimpleObject*> object;
 	GLShaderManager* shader;
@@ -50,6 +53,9 @@ public:
 	GLMatrixStack		 *projectionMatrix;		// Projection Matrix
 	GLFrustum			 *viewFrustum;			// View Frustum
 	GLGeometryTransform	 *transformPipeline;		// Geometry Transform Pipeline
+
+	GLuint				uiTextures;
+
 
 };
 

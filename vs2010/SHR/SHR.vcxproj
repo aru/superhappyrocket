@@ -83,6 +83,7 @@
     <ClCompile Include="SceneManager.cpp" />
     <ClCompile Include="SDL_app.cpp" />
     <ClCompile Include="SimpleObject.cpp" />
+    <ClCompile Include="Visual.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AudioManager.h" />
@@ -93,6 +94,7 @@
     <ClInclude Include="SceneManager.h" />
     <ClInclude Include="SDL_app.h" />
     <ClInclude Include="SimpleObject.h" />
+    <ClInclude Include="Visual.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
