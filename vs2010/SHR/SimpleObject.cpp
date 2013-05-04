@@ -1,7 +1,7 @@
 #include "SimpleObject.h"
 
 SimpleObject::SimpleObject()
-	:renderMe(true)
+	:renderMe(true), shaderFile(0), textureFile(0)
 {
 	primType = GL_POINTS;
 }
@@ -29,4 +29,23 @@ int SimpleObject::Draw()
 	glEnd();
 	
 	return 0;
+}
+
+int SimpleObject::Draw2()
+{
+	batch.Draw();
+	return 0;
+}
+
+void SimpleObject::setTexture( int text ){
+	textureFile = text;
+}
+void SimpleObject::setShader( int shade ){
+	shaderFile = shade;
+}
+int SimpleObject::getTexture(){
+	return textureFile;
+}
+int SimpleObject::getShader(){
+	return shaderFile;
 }

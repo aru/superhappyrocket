@@ -6,6 +6,7 @@
 #include "AudioManager.h"
 #include "InputManager.h"
 #include "OpenGLRenderer.h"
+#include "TextureManager.h"
 
 // Camera support etc
 #include "GLShaderManager.h"

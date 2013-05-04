@@ -11,6 +11,7 @@ public:
 	~Level();
 
 	vector<char*> songs;
+	vector<char*> textures;
 	vector<SimpleObject*> objects;
 	vector<GLBatch*> batches;
 

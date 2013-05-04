@@ -134,6 +134,7 @@ int SDL_app::Update()
 {
 	ctxt->renderer->Draw();
 	SDL_GL_SwapBuffers();
+	// postRedisplay() here
 	return 0;
 }
 

@@ -75,6 +75,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AudioManager.cpp" />
+    <ClCompile Include="Camera.cpp" />
     <ClCompile Include="Context.cpp" />
     <ClCompile Include="InputManager.cpp" />
     <ClCompile Include="Level.cpp" />
@@ -83,10 +84,12 @@
     <ClCompile Include="SceneManager.cpp" />
     <ClCompile Include="SDL_app.cpp" />
     <ClCompile Include="SimpleObject.cpp" />
+    <ClCompile Include="TextureManager.cpp" />
     <ClCompile Include="Visual.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AudioManager.h" />
+    <ClInclude Include="Camera.h" />
     <ClInclude Include="Context.h" />
     <ClInclude Include="InputManager.h" />
     <ClInclude Include="Level.h" />
@@ -94,6 +97,7 @@
     <ClInclude Include="SceneManager.h" />
     <ClInclude Include="SDL_app.h" />
     <ClInclude Include="SimpleObject.h" />
+    <ClInclude Include="TextureManager.h" />
     <ClInclude Include="Visual.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

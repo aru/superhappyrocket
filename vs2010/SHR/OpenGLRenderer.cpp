@@ -62,6 +62,52 @@ int Renderer::Init()
 
     return 0;
 }
+int Renderer::Draw2()
+{
+	//Clear buffers
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
+
+	// Save the current modelview matrix (the identity matrix)
+	modelViewMatrix->PushMatrix();	
+
+		// Get the camera
+		cameraFrame->GetCameraMatrix(camera);
+
+		// Apply camera transform
+		modelViewMatrix->PushMatrix(camera);
+
+	    //Draw objects (that don't move)
+		for( unsigned int i = 0; i < object.size(); i++ )
+		{
+			if( object.at(i)->renderMe == true )
+				object.at(i)->Draw();
+		}
+
+		// Draw moving stuff (actors)
+		for( unsigned int i = 0; i < batch.size(); i++ )
+		{
+			// Apply actor transform
+			modelViewMatrix->PushMatrix();
+			//Use the selected shader
+
+			//Bind texture if there is one
+			
+			// Draw actor geometry
+			actor.at(i)->Draw();
+			// Restore camera transform
+			modelViewMatrix->PopMatrix();
+		}
+
+		// Restore identity matrix		
+		modelViewMatrix->PopMatrix();
+
+	modelViewMatrix->PopMatrix();
+
+	// Swap buffers
+	// Post redisplay in SDL_app
+
+	return 0;
+}
 
 int Renderer::Draw()
 {

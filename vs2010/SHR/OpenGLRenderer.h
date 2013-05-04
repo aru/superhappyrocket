@@ -29,6 +29,7 @@ public:
 	~Renderer();
 	int Init();
 	int Draw();
+	int Draw2();
 	int Update();
 	int Clear();
 	int Shutdown();
@@ -42,7 +43,11 @@ public:
 
 
 	Context* ctxt;
+
+	M3DMatrix44f camera;
 	vector<SimpleObject*> object;
+	vector<SimpleObject*> actor;
+
 	GLShaderManager* shader;
 	vector<GLBatch*> batch;
 
