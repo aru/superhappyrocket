@@ -226,6 +226,7 @@ Level::Level()
 	gltMakeCube( betterRocket->batch, 1.0f );
 	betterRocket->textureFile = 1; // haruhi text file
 	betterRocket->shaderFile = GLT_SHADER_TEXTURE_POINT_LIGHT_DIFF;
+	betterRocket->frame.SetOrigin(2.0f,2.0f,0.0f);
 	actors.push_back(betterRocket);
 
 	gltMakeCube( betterRocket->batch, 2.0f );

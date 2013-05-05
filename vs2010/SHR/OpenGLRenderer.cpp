@@ -85,6 +85,10 @@ int Renderer::Draw()
 	    //Draw objects (that don't move)
 		for( unsigned int i = 0; i < object.size(); i++ )
 		{
+			shader->UseStockShader(GLT_SHADER_FLAT, 
+								 transformPipeline->GetModelViewProjectionMatrix(),
+								 vWhite);
+
 			if( object.at(i)->renderMe == true )
 				object.at(i)->Draw();
 		}
@@ -94,6 +98,7 @@ int Renderer::Draw()
 		{
 			// Apply actor transform
 			modelViewMatrix->PushMatrix();
+			modelViewMatrix->MultMatrix(actor.at(i)->frame);
 
 			//Bind texture if there is one
 			if( actor.at(i)->textureFile > 0 )
