@@ -11,6 +11,10 @@ Level::Level()
 	haruhiText = new Texture2D("haruhi.tga", GL_LINEAR, GL_LINEAR, GL_REPEAT );
 	texts.push_back(haruhiText);
 
+	Texture2D* coolText;
+	coolText = new Texture2D("CoolTexture.tga", GL_LINEAR_MIPMAP_LINEAR, GL_LINEAR, GL_CLAMP_TO_EDGE );
+	texts.push_back(coolText);
+
 	// Load up a triangle
 	GLfloat vVerts[] = { -1.0f, 0.0f, 0.0f,
 						  1.0f, 0.0f, 0.0f,
@@ -223,6 +227,12 @@ Level::Level()
 	betterRocket->textureFile = 1; // haruhi text file
 	betterRocket->shaderFile = GLT_SHADER_TEXTURE_POINT_LIGHT_DIFF;
 	actors.push_back(betterRocket);
+
+	gltMakeCube( betterRocket->batch, 2.0f );
+	betterRocket->textureFile = 2; // haruhi text file
+	betterRocket->shaderFile = GLT_SHADER_TEXTURE_POINT_LIGHT_DIFF;
+	actors.push_back(betterRocket);
+
 
 	bgBatch = new GLBatch();
 	bgBatch->Begin(GL_TRIANGLE_FAN, 4, 1);
