@@ -10,9 +10,11 @@ public:
 	InputManager( Context* context );
 	~InputManager();
 	Uint16 handleKeys();
+	bool isKeyPressed( Uint16 key );
 
 	Context* ctxt;
 	SDL_Event event;
+	bool keysHeld[SDLK_LAST];
 };
 
 #endif

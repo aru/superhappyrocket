@@ -78,17 +78,29 @@ int SceneManager::Unload()
 int SceneManager::Update()
 {
 	Uint16 key;
+	float linear = 0.05f;
+	float angular = float(m3dDegToRad(2.5f));
 
 	switch( ctxt->level )
 	{
 	case 1:
 		key = ctxt->input->handleKeys();
-		if( key == 'q' )
+		/*if( key == 'q' )
 		{
 			levels.at(0).objects.at(0)->renderMe = !levels.at(0).objects.at(0)->renderMe;
-		}
-		break;
-	default:
+		}*/
+		if( ctxt->input->keysHeld['q'] )
+			levels.at(0).objects.at(0)->renderMe = false;
+		else
+			levels.at(0).objects.at(0)->renderMe = true;
+		if( ctxt->input->keysHeld[SDLK_UP] )
+			ctxt->renderer->cameraFrame->MoveForward(linear);
+		if( ctxt->input->keysHeld[SDLK_DOWN] )
+			ctxt->renderer->cameraFrame->MoveForward(-linear);
+		if( ctxt->input->keysHeld[SDLK_LEFT] )
+			ctxt->renderer->cameraFrame->RotateWorld(angular, 0.0f, 1.0f, 0.0f);
+		if( ctxt->input->keysHeld[SDLK_RIGHT] )
+			ctxt->renderer->cameraFrame->RotateWorld(-angular, 0.0f, 1.0f, 0.0f);
 		break;
 	}
 	return 0;
