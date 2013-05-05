@@ -8,6 +8,7 @@ class InputManager;
 class SceneManager;
 class TextureManager;
 class Renderer;
+class Timer;
 
 #include <stdio.h>
 #include <iostream>
@@ -18,6 +19,7 @@ class Renderer;
 #include "SceneManager.h"
 #include "OpenGLRenderer.h"
 #include "TextureManager.h"
+#include "Timer.h"
 
 using namespace std;
 
@@ -40,7 +42,7 @@ public:
 	InputManager* input;
 	TextureManager* textMgr;
 	SceneManager* scene;
-
+	Timer* timer;
 };
 
 #endif

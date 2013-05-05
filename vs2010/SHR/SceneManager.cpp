@@ -78,8 +78,10 @@ int SceneManager::Unload()
 int SceneManager::Update()
 {
 	Uint16 key;
-	float linear = 0.005f;
-	float angular = float(m3dDegToRad(0.05f));
+	float xVel = 1.0f;
+	int deltaTicks = ctxt->timer->get_ticks();
+	float linear = 5.0f * (deltaTicks / 1000.0f );
+	float angular = float(m3dDegToRad(20.0f * (deltaTicks / 1000.0f )));
 
 	switch( ctxt->level )
 	{

@@ -113,6 +113,10 @@ int SDL_app::Startup()
 
 	ctxt->scene->Load();
 
+	// Initialize the timer and get it going
+	ctxt->timer = new Timer();
+	ctxt->timer->start();
+
 	return 0;
 }
 
@@ -154,7 +158,11 @@ int SDL_app::Loop()
 	{
 		//this->eventDispatcher();
 		ctxt->scene->Update();
+		//Restart delta timer
+        ctxt->timer->start();
+		// Update the SDL app
 		this->Update();
+		// Play the music
 		ctxt->audio->playMusic();
 	}
 	return 0;
