@@ -31,8 +31,8 @@ Level::Level()
 
 	SimpleObject* obj;
 	GLBatch* bat;
-	//GLBatch* rocketBatch;
 	SimpleObject* betterRocket;
+	SimpleObject* betterRocket2;
 	GLBatch* bgBatch;
 	GLTriangleBatch     sphereBatch;
 
@@ -46,181 +46,7 @@ Level::Level()
 	batches.push_back(bat);
 	
 
-	//rocketBatch = new GLBatch();
-
-	//rocketBatch->Begin(GL_TRIANGLES, 36, 1);
- //   
-	//M3DVector3f vFrontLeftB = { -0.7f, -0.7f, 0.7f };
-	//M3DVector3f vFrontRightB = { 0.7f, -0.7f, 0.7f };
-	//M3DVector3f vBackLeftB = { -0.7f, -0.7f, -0.7f };
-	//M3DVector3f vBackRightB = { 0.7f, -0.7f, -0.7f };
-	//M3DVector3f vFrontLeftU = { -0.7f, 0.7f, 0.7f };
-	//M3DVector3f vFrontRightU = { 0.7f, 0.7f, 0.7f };
-	//M3DVector3f vBackLeftU = { -0.7f, 0.7f, -0.7f };
-	//M3DVector3f vBackRightU = { 0.7f, 0.7f, -0.7f };
-	//M3DVector3f n;
-
-	//// front(BACK)
-	//m3dFindNormal(n, vFrontLeftU, vFrontLeftB, vFrontRightB);
-	//rocketBatch->Normal3fv(n);
-	//rocketBatch->MultiTexCoord2f(0, 0.0f, 1.0f );
-	//rocketBatch->Vertex3fv(vFrontLeftU);		
- //   
-	//rocketBatch->Normal3fv(n);
-	//rocketBatch->MultiTexCoord2f(0, 1.0f, 1.0f );
-	//rocketBatch->Vertex3fv(vFrontLeftB);
- //   
-	//rocketBatch->Normal3fv(n);
-	//rocketBatch->MultiTexCoord2f(0, 1.0f, 0.0f );
-	//rocketBatch->Vertex3fv(vFrontRightB);
- //   
-	//rocketBatch->Normal3fv(n);
-	//rocketBatch->MultiTexCoord2f(0, 0.0f, 0.0f );
-	//rocketBatch->Vertex3fv(vFrontRightU);
- //   
-	//rocketBatch->Normal3fv(n);
-	//rocketBatch->MultiTexCoord2f(0, 0.0f, 1.0f );
-	//rocketBatch->Vertex3fv(vFrontLeftU);
- //   
-	//rocketBatch->Normal3fv(n);
-	//rocketBatch->MultiTexCoord2f(0, 1.0f, 0.0f );
-	//rocketBatch->Vertex3fv(vFrontRightB);
- //   
-
-	//
-	//// back (FRONT)
-	//m3dFindNormal(n, vBackLeftU, vBackRightU, vBackRightB);
-	//rocketBatch->Normal3fv(n);
-	//rocketBatch->MultiTexCoord2f(0, 0.0f, 1.0f );
-	//rocketBatch->Vertex3fv(vBackLeftU);		
- //   
-	//rocketBatch->Normal3fv(n);
-	//rocketBatch->MultiTexCoord2f(0, 1.0f, 1.0f );
-	//rocketBatch->Vertex3fv(vBackRightU);
- //   
-	//rocketBatch->Normal3fv(n);
-	//rocketBatch->MultiTexCoord2f(0, 1.0f, 0.0f );
-	//rocketBatch->Vertex3fv(vBackRightB);
- //   
-	//rocketBatch->Normal3fv(n);
-	//rocketBatch->MultiTexCoord2f(0, 0.0f, 0.0f );
-	//rocketBatch->Vertex3fv(vBackLeftB);
- //   
-	//rocketBatch->Normal3fv(n);
-	//rocketBatch->MultiTexCoord2f(0, 0.0f, 1.0f );
-	//rocketBatch->Vertex3fv(vBackLeftU);
- //   
-	//rocketBatch->Normal3fv(n);
-	//rocketBatch->MultiTexCoord2f(0, 1.0f, 0.0f );
-	//rocketBatch->Vertex3fv(vBackRightB);
-
-	//// Left (RIGHT)
-	//m3dFindNormal(n, vFrontLeftU, vBackLeftU, vBackLeftB);
-	//rocketBatch->Normal3fv(n);
-	//rocketBatch->MultiTexCoord2f(0, 0.0f, 1.0f );
-	//rocketBatch->Vertex3fv(vFrontLeftU);		
- //   
-	//rocketBatch->Normal3fv(n);
-	//rocketBatch->MultiTexCoord2f(0, 1.0f, 1.0f );
-	//rocketBatch->Vertex3fv(vBackLeftU);
- //   
-	//rocketBatch->Normal3fv(n);
-	//rocketBatch->MultiTexCoord2f(0, 1.0f, 0.0f );
-	//rocketBatch->Vertex3fv(vBackLeftB);
- //   
-	//rocketBatch->Normal3fv(n);
-	//rocketBatch->MultiTexCoord2f(0, 0.0f, 0.0f );
-	//rocketBatch->Vertex3fv(vFrontLeftB);
- //   
-	//rocketBatch->Normal3fv(n);
-	//rocketBatch->MultiTexCoord2f(0, 0.0f, 1.0f );
-	//rocketBatch->Vertex3fv(vFrontLeftU);
- //   
-	//rocketBatch->Normal3fv(n);
-	//rocketBatch->MultiTexCoord2f(0, 1.0f, 0.0f );
-	//rocketBatch->Vertex3fv(vBackLeftB);
-
-
-	//// Right (LEFT)
-	//m3dFindNormal(n, vFrontRightU, vFrontRightB, vBackRightB);
-	//rocketBatch->Normal3fv(n);
-	//rocketBatch->MultiTexCoord2f(0, 0.0f, 1.0f );
-	//rocketBatch->Vertex3fv(vFrontRightU);		
- //   
-	//rocketBatch->Normal3fv(n);
-	//rocketBatch->MultiTexCoord2f(0, 1.0f, 1.0f );
-	//rocketBatch->Vertex3fv(vFrontRightB);
- //   
-	//rocketBatch->Normal3fv(n);
-	//rocketBatch->MultiTexCoord2f(0, 1.0f, 0.0f );
-	//rocketBatch->Vertex3fv(vBackRightB);
- //   
-	//rocketBatch->Normal3fv(n);
-	//rocketBatch->MultiTexCoord2f(0, 0.0f, 0.0f );
-	//rocketBatch->Vertex3fv(vBackRightU);
- //   
-	//rocketBatch->Normal3fv(n);
-	//rocketBatch->MultiTexCoord2f(0, 0.0f, 1.0f );
-	//rocketBatch->Vertex3fv(vFrontRightU);
- //   
-	//rocketBatch->Normal3fv(n);
-	//rocketBatch->MultiTexCoord2f(0, 1.0f, 0.0f );
-	//rocketBatch->Vertex3fv(vBackRightB);
-
-	//// Up 
-	//m3dFindNormal(n, vFrontRightU, vBackRightU, vBackLeftU);
-	//rocketBatch->Normal3fv(n);
-	//rocketBatch->MultiTexCoord2f(0, 0.0f, 1.0f );
-	//rocketBatch->Vertex3fv(vFrontRightU);		
- //   
-	//rocketBatch->Normal3fv(n);
-	//rocketBatch->MultiTexCoord2f(0, 1.0f, 1.0f );
-	//rocketBatch->Vertex3fv(vBackRightU);
- //   
-	//rocketBatch->Normal3fv(n);
-	//rocketBatch->MultiTexCoord2f(0, 1.0f, 0.0f );
-	//rocketBatch->Vertex3fv(vBackLeftU);
- //   
-	//rocketBatch->Normal3fv(n);
-	//rocketBatch->MultiTexCoord2f(0, 0.0f, 0.0f );
-	//rocketBatch->Vertex3fv(vFrontLeftU);
- //   
-	//rocketBatch->Normal3fv(n);
-	//rocketBatch->MultiTexCoord2f(0, 0.0f, 1.0f );
-	//rocketBatch->Vertex3fv(vFrontRightU);
- //   
-	//rocketBatch->Normal3fv(n);
-	//rocketBatch->MultiTexCoord2f(0, 1.0f, 0.0f );
-	//rocketBatch->Vertex3fv(vBackLeftU);
-
-	//// Down 
-	//m3dFindNormal(n, vFrontRightB, vFrontLeftB, vBackLeftB);
-	//rocketBatch->Normal3fv(n);
-	//rocketBatch->MultiTexCoord2f(0, 0.0f, 1.0f );
-	//rocketBatch->Vertex3fv(vFrontRightB);		
- //   
-	//rocketBatch->Normal3fv(n);
-	//rocketBatch->MultiTexCoord2f(0, 1.0f, 1.0f );
-	//rocketBatch->Vertex3fv(vFrontLeftB);
- //   
-	//rocketBatch->Normal3fv(n);
-	//rocketBatch->MultiTexCoord2f(0, 1.0f, 0.0f );
-	//rocketBatch->Vertex3fv(vBackLeftB);
- //   
-	//rocketBatch->Normal3fv(n);
-	//rocketBatch->MultiTexCoord2f(0, 0.0f, 0.0f );
-	//rocketBatch->Vertex3fv(vBackRightB);
- //   
-	//rocketBatch->Normal3fv(n);
-	//rocketBatch->MultiTexCoord2f(0, 0.0f, 1.0f );
-	//rocketBatch->Vertex3fv(vFrontRightB);
- //   
-	//rocketBatch->Normal3fv(n);
-	//rocketBatch->MultiTexCoord2f(0, 1.0f, 0.0f );
-	//rocketBatch->Vertex3fv(vBackLeftB);
-
-	//rocketBatch->End();
-	//batches.push_back(rocketBatch);
+	
 
 	betterRocket = new SimpleObject();
 	gltMakeCube( betterRocket->batch, 1.0f );
@@ -229,10 +55,11 @@ Level::Level()
 	betterRocket->frame.SetOrigin(2.0f,2.0f,0.0f);
 	actors.push_back(betterRocket);
 
-	gltMakeCube( betterRocket->batch, 2.0f );
-	betterRocket->textureFile = 2; // haruhi text file
-	betterRocket->shaderFile = GLT_SHADER_TEXTURE_POINT_LIGHT_DIFF;
-	actors.push_back(betterRocket);
+	betterRocket2 = new SimpleObject();
+	gltMakeCube( betterRocket2->batch, 1.0f );
+	betterRocket2->textureFile = 2; 
+	betterRocket2->shaderFile = GLT_SHADER_TEXTURE_POINT_LIGHT_DIFF;
+	actors.push_back(betterRocket2);
 
 
 	bgBatch = new GLBatch();
