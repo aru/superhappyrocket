@@ -1,21 +1,23 @@
 #ifndef SHR_CONTEXT
 #define SHR_CONTEXT
 
-#include <stdio.h>
-#include <iostream>
-#include <fstream>
-
 // Forward declare what we will use
 class Context;
 class AudioManager;
 class InputManager;
 class SceneManager;
+class TextureManager;
 class Renderer;
+
+#include <stdio.h>
+#include <iostream>
+#include <fstream>
 
 #include "AudioManager.h"
 #include "InputManager.h"
 #include "SceneManager.h"
 #include "OpenGLRenderer.h"
+#include "TextureManager.h"
 
 using namespace std;
 
@@ -36,6 +38,7 @@ public:
 	Renderer* renderer;
 	AudioManager* audio;
 	InputManager* input;
+	TextureManager* textMgr;
 	SceneManager* scene;
 
 };

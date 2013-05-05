@@ -18,7 +18,8 @@ int SceneManager::Load()
 	unsigned int batC;
 	unsigned int objC;
 	unsigned int musC;
-	unsigned int bgbatC;
+	unsigned int actC;
+	unsigned int textC;
 
 	switch( ctxt->level )
 	{
@@ -29,20 +30,27 @@ int SceneManager::Load()
 		{
 			ctxt->audio->loadMusic( lvl.songs.at(musC) );
 		}
+		// Load the textures into the texture manager
+		for( textC = 0; textC < lvl.texts.size(); textC++ )
+		{
+			ctxt->textMgr->addTexture( lvl.texts.at(textC) );
+		}
+		// Load these textures
+		ctxt->textMgr->Init2();
 		// Add the objects to the renderer
 		for( objC = 0; objC < lvl.objects.size(); objC++ )
 		{
-				ctxt->renderer->addObject(lvl.objects.at(objC));
+			ctxt->renderer->addObject(lvl.objects.at(objC));
+		}
+		// Add actors to the renderer
+		for( actC = 0; actC < lvl.actors.size(); actC++ )
+		{
+			ctxt->renderer->addActor(lvl.actors.at(actC));
 		}
 		// Add the batches to the renderer
 		for( batC = 0; batC < lvl.batches.size(); batC++ )
 		{
 			ctxt->renderer->addBatch(lvl.batches.at(batC));
-		}
-			// Add the batches to the renderer
-		for( bgbatC = 0; bgbatC < lvl.batches.size(); bgbatC++ )
-		{
-			ctxt->renderer->addBatch(lvl.batches.at(bgbatC));
 		}
 		break;
 	default:

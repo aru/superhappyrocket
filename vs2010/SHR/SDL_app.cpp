@@ -78,18 +78,6 @@ int SDL_app::Startup()
 	//Enable unicode
     SDL_EnableUNICODE( SDL_TRUE );
 
-	//Initialize OpenGL
-	ctxt->renderer = new Renderer( ctxt );
-
-	// Was this properly initialized? If not -> abort
-	if( !ctxt->renderer )
-		return 1;
-
-	if( ctxt->renderer->Init() != 0 )
-	{
-		printf("OpenGL Failed somehow\n");
-	}
-
 	/* Set the title bar in environments that support it */
 	SDL_WM_SetCaption("Thesis!", NULL);
 
@@ -105,8 +93,24 @@ int SDL_app::Startup()
 	// Start the input handler
 	ctxt->input = new InputManager( ctxt );
 
+	// Start the texture manager
+	ctxt->textMgr = new TextureManager( ctxt );
+
 	// Start the scene manager
 	ctxt->scene = new SceneManager( ctxt );
+
+	//Initialize OpenGL
+	ctxt->renderer = new Renderer( ctxt );
+
+	// Was this properly initialized? If not -> abort
+	if( !ctxt->renderer )
+		return 1;
+
+	if( ctxt->renderer->Init() != 0 )
+	{
+		printf("OpenGL Failed somehow\n");
+	}
+
 	ctxt->scene->Load();
 
 	return 0;

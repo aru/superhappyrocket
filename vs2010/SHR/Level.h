@@ -3,6 +3,7 @@
 
 class Level;
 #include "SceneManager.h"
+#include "Texture2D.h"
 
 class Level
 {
@@ -12,7 +13,9 @@ public:
 
 	vector<char*> songs;
 	vector<char*> textures;
+	vector<Texture2D*> texts;
 	vector<SimpleObject*> objects;
+	vector<SimpleObject*> actors;
 	vector<GLBatch*> batches;
 
 	// Camera Support

@@ -23,36 +23,38 @@ Renderer::~Renderer()
 
 int Renderer::Init()
 {
+	// Initialize glew
 	GLenum err = glewInit();
 	if (err != GLEW_OK)
 		printf(":<\n"); // or handle the error in a nicer way
 	glewGetString(err);
+
 	if (!GLEW_VERSION_2_1)  // check that the machine supports the 2.1 API.
 		printf(":<\n"); // or handle the error in a nicer way
 
-	////Initialize Projection Matrix
- //   glMatrixMode( GL_PROJECTION );
- //   glLoadIdentity();
-
- //   //Initialize Modelview Matrix
- //   glMatrixMode( GL_MODELVIEW );
- //   glLoadIdentity();
-
+	// Initialize the Projection Matrix/ModelView Matrix
 	changeSize( ctxt->width, ctxt->height );
 
+	// Set the clear color
 	glClearColor(0.0f, 0.0f, 1.0f, 0.0f);
+
+	// Init stock shaders
 	shader->InitializeStockShaders();
 
+	// Init textures (?)
+	//glGenTextures(1, &uiTextures);
+	//glBindTexture(GL_TEXTURE_2D, uiTextures);
+    //LoadTGATexture("haruhi.tga", GL_LINEAR, GL_LINEAR, GL_REPEAT);
 
-	glGenTextures(1, &uiTextures);
-	glBindTexture(GL_TEXTURE_2D, uiTextures);
-    LoadTGATexture("haruhi.tga", GL_LINEAR, GL_LINEAR, GL_REPEAT);
-
+	// Set the camera (?)
 	cameraFrame->MoveForward(-7.0f);
+
+	// Enable depth testing
 	glEnable(GL_DEPTH_TEST);
+	// Polygon mode?
 	/*glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);*/
 
-    //Check for error
+    //Check for errors
     GLenum error = glGetError();
     if( error != GL_NO_ERROR )
     {
@@ -62,8 +64,12 @@ int Renderer::Init()
 
     return 0;
 }
-int Renderer::Draw2()
+int Renderer::Draw()
 {
+
+	static GLfloat vWhite[] = { 1.0f, 1.0f, 1.0f, 1.0f };
+	static GLfloat vLightPos[] = { 0.0f, 3.0f, 0.0f, 1.0f};
+
 	//Clear buffers
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
 
@@ -84,16 +90,25 @@ int Renderer::Draw2()
 		}
 
 		// Draw moving stuff (actors)
-		for( unsigned int i = 0; i < batch.size(); i++ )
+		for( unsigned int i = 0; i < actor.size(); i++ )
 		{
 			// Apply actor transform
 			modelViewMatrix->PushMatrix();
-			//Use the selected shader
 
 			//Bind texture if there is one
-			
+			if( actor.at(i)->textureFile > 0 )
+				ctxt->textMgr->bindTexture(actor.at(i)->textureFile - 1);
+
+			//Use the selected shader
+			shader->UseStockShader(GLT_SHADER_TEXTURE_POINT_LIGHT_DIFF,
+                                     modelViewMatrix->GetMatrix(),
+                                     transformPipeline->GetProjectionMatrix(),
+                                     vLightPos, 
+                                     vWhite,
+                                     0);
+
 			// Draw actor geometry
-			actor.at(i)->Draw();
+			actor.at(i)->Draw2();
 			// Restore camera transform
 			modelViewMatrix->PopMatrix();
 		}
@@ -109,7 +124,7 @@ int Renderer::Draw2()
 	return 0;
 }
 
-int Renderer::Draw()
+int Renderer::Draw2()
 {
 	//Clear buffers
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
@@ -177,6 +192,12 @@ int Renderer::Shutdown()
 int Renderer::addObject( SimpleObject* obj )
 {
 	object.push_back(obj);
+	return 0;
+}
+
+int Renderer::addActor( SimpleObject* act )
+{
+	actor.push_back(act);
 	return 0;
 }
 

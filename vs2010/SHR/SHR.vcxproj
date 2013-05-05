@@ -74,6 +74,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Texture2D.cpp" />
     <ClCompile Include="AudioManager.cpp" />
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="Context.cpp" />
@@ -88,6 +89,7 @@
     <ClCompile Include="Visual.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Texture2D.h" />
     <ClInclude Include="AudioManager.h" />
     <ClInclude Include="Camera.h" />
     <ClInclude Include="Context.h" />

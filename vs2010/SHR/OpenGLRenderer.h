@@ -35,12 +35,12 @@ public:
 	int Shutdown();
 
 	int addObject( SimpleObject* obj );
+	int addActor( SimpleObject* act );
 	int addBatch( GLBatch* bat );
 	int clearObjects();
 	int changeSize( int nWidth, int nHeight );
 
 	bool LoadTGATexture(const char *szFileName, GLenum minFilter, GLenum magFilter, GLenum wrapMode);
-
 
 	Context* ctxt;
 
