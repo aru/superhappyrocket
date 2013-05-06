@@ -4,12 +4,14 @@
 class Level;
 #include "SceneManager.h"
 #include "Texture2D.h"
+#include "Timer.h"
 
 class Level
 {
 public:
 	Level();
 	~Level();
+	void Update( int delta );
 
 	vector<char*> songs;
 	vector<char*> textures;

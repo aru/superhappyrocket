@@ -88,19 +88,22 @@ int SDL_app::Startup()
 	window = SDL_GetVideoSurface();
 
 	// Start the audio
-	ctxt->audio = new AudioManager( ctxt );
+	//ctxt->audio = new AudioManager( ctxt );
 
-	// Start the input handler
-	ctxt->input = new InputManager( ctxt );
+	//// Start the input handler
+	//ctxt->input = new InputManager( ctxt );
 
-	// Start the texture manager
-	ctxt->textMgr = new TextureManager( ctxt );
+	//// Start the texture manager
+	//ctxt->textMgr = new TextureManager( ctxt );
 
-	// Start the scene manager
-	ctxt->scene = new SceneManager( ctxt );
+	//// Start the shader manger
+	//ctxt->mShader = new GLShaderManager();
 
-	//Initialize OpenGL
-	ctxt->renderer = new Renderer( ctxt );
+	//// Start the scene manager
+	//ctxt->scene = new SceneManager( ctxt );
+
+	////Initialize OpenGL
+	//ctxt->renderer = new Renderer( ctxt );
 
 	// Was this properly initialized? If not -> abort
 	if( !ctxt->renderer )
@@ -156,7 +159,9 @@ int SDL_app::Loop()
 
 	while( ctxt->quit == false )
 	{
-		//this->eventDispatcher();
+		// Handle the keys
+		ctxt->input->handleKeys();
+		// Update the scene
 		ctxt->scene->Update();
 		//Restart delta timer
         ctxt->timer->start();

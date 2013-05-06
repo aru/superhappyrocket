@@ -8,17 +8,12 @@ Renderer::Renderer()
 Renderer::Renderer( Context* ctx )
 	:ctxt(ctx)
 {
-	shader = new GLShaderManager();
-	cameraFrame = new GLFrame();
-	modelViewMatrix = new GLMatrixStack();
-	projectionMatrix = new GLMatrixStack();
-	viewFrustum = new GLFrustum();
-	transformPipeline = new GLGeometryTransform();
+
 }
 
 Renderer::~Renderer()
 {
-	delete shader;
+	//delete shader;
 }
 
 int Renderer::Init()
@@ -39,18 +34,15 @@ int Renderer::Init()
 	glClearColor(0.0f, 0.0f, 1.0f, 0.0f);
 
 	// Init stock shaders
-	shader->InitializeStockShaders();
-
-	// Init textures (?)
-	//glGenTextures(1, &uiTextures);
-	//glBindTexture(GL_TEXTURE_2D, uiTextures);
-    //LoadTGATexture("haruhi.tga", GL_LINEAR, GL_LINEAR, GL_REPEAT);
+	ctxt->mShader->InitializeStockShaders();
 
 	// Set the camera (?)
-	cameraFrame->MoveForward(-7.0f);
+	shrCamera()->cameraFrame->MoveForward(-7.0f);
+	//cameraFrame->MoveForward(-7.0f);
 
 	// Enable depth testing
 	glEnable(GL_DEPTH_TEST);
+
 	// Polygon mode?
 	/*glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);*/
 
@@ -74,19 +66,19 @@ int Renderer::Draw()
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
 
 	// Save the current modelview matrix (the identity matrix)
-	modelViewMatrix->PushMatrix();	
+	shrCamera()->modelViewMatrix->PushMatrix();	
 
 		// Get the camera
-		cameraFrame->GetCameraMatrix(camera);
+		ctxt->mCamera->cameraFrame->GetCameraMatrix( shrCamera()->camera );
 
 		// Apply camera transform
-		modelViewMatrix->PushMatrix(camera);
+		shrCamera()->modelViewMatrix->PushMatrix(shrCamera()->camera);
 
 	    //Draw objects (that don't move)
 		for( unsigned int i = 0; i < object.size(); i++ )
 		{
-			shader->UseStockShader(GLT_SHADER_FLAT, 
-								 transformPipeline->GetModelViewProjectionMatrix(),
+			ctxt->mShader->UseStockShader(GLT_SHADER_FLAT, 
+								 shrCamera()->transformPipeline->GetModelViewProjectionMatrix(),
 								 vWhite);
 
 			if( object.at(i)->renderMe == true )
@@ -97,17 +89,17 @@ int Renderer::Draw()
 		for( unsigned int i = 0; i < actor.size(); i++ )
 		{
 			// Apply actor transform
-			modelViewMatrix->PushMatrix();
-			modelViewMatrix->MultMatrix(actor.at(i)->frame);
+			shrCamera()->modelViewMatrix->PushMatrix();
+			shrCamera()->modelViewMatrix->MultMatrix(actor.at(i)->frame);
 
 			//Bind texture if there is one
 			if( actor.at(i)->textureFile > 0 )
 				ctxt->textMgr->bindTexture(actor.at(i)->textureFile - 1);
 
 			//Use the selected shader
-			shader->UseStockShader(GLT_SHADER_TEXTURE_POINT_LIGHT_DIFF,
-                                     modelViewMatrix->GetMatrix(),
-                                     transformPipeline->GetProjectionMatrix(),
+			ctxt->mShader->UseStockShader(GLT_SHADER_TEXTURE_POINT_LIGHT_DIFF,
+                                     shrCamera()->modelViewMatrix->GetMatrix(),
+                                     shrCamera()->transformPipeline->GetProjectionMatrix(),
                                      vLightPos, 
                                      vWhite,
                                      0);
@@ -115,13 +107,13 @@ int Renderer::Draw()
 			// Draw actor geometry
 			actor.at(i)->Draw2();
 			// Restore camera transform
-			modelViewMatrix->PopMatrix();
+			shrCamera()->modelViewMatrix->PopMatrix();
 		}
 
 		// Restore identity matrix		
-		modelViewMatrix->PopMatrix();
+		shrCamera()->modelViewMatrix->PopMatrix();
 
-	modelViewMatrix->PopMatrix();
+	shrCamera()->modelViewMatrix->PopMatrix();
 
 	// Swap buffers
 	// Post redisplay in SDL_app
@@ -190,7 +182,6 @@ int Renderer::Clear()
 
 int Renderer::Shutdown()
 {
-	glDeleteTextures(1, &uiTextures);
 	return 0;
 }
 
@@ -225,11 +216,12 @@ int Renderer::changeSize( int nWidth, int nHeight )
 	glViewport(0, 0, nWidth, nHeight);
 	
     // Create the projection matrix, and load it on the projection matrix stack
-	viewFrustum->SetPerspective(35.0f, float(nWidth)/float(nHeight), 1.0f, 100.0f);
-	projectionMatrix->LoadMatrix(viewFrustum->GetProjectionMatrix());
+	shrCamera()->viewFrustum->SetPerspective(35.0f, float(nWidth)/float(nHeight), 1.0f, 100.0f);
+	shrCamera()->projectionMatrix->LoadMatrix(shrCamera()->viewFrustum->GetProjectionMatrix());
     
     // Set the transformation pipeline to use the two matrix stacks 
-	transformPipeline->SetMatrixStacks(*modelViewMatrix, *projectionMatrix);
+	shrCamera()->transformPipeline->SetMatrixStacks(*shrCamera()->modelViewMatrix, *shrCamera()->projectionMatrix);
+	//shrCamera()->modelViewMatrix->LoadIdentity();
 
 	return 0;
 }

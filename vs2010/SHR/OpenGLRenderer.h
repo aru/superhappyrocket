@@ -10,9 +10,10 @@
 #include "Context.h"
 #include "SimpleObject.h"
 #include "GLTools.h"
+#include "CameraManager.h"
 
 // Camera Support etc
-#include "GLShaderManager.h"
+#include <GLShaderManager.h>
 #include <GLFrustum.h>
 #include <GLBatch.h>
 #include <GLFrame.h>
@@ -49,6 +50,7 @@ public:
 	vector<SimpleObject*> actor;
 
 	GLShaderManager* shader;
+	CameraManager* mCamera;
 	vector<GLBatch*> batch;
 
 	// Camera Support
@@ -60,7 +62,6 @@ public:
 	GLGeometryTransform	 *transformPipeline;		// Geometry Transform Pipeline
 
 	GLuint				uiTextures;
-
 
 };
 

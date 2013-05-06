@@ -74,9 +74,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CameraManager.cpp" />
     <ClCompile Include="Texture2D.cpp" />
     <ClCompile Include="AudioManager.cpp" />
-    <ClCompile Include="Camera.cpp" />
     <ClCompile Include="Context.cpp" />
     <ClCompile Include="InputManager.cpp" />
     <ClCompile Include="Level.cpp" />
@@ -90,9 +90,9 @@
     <ClCompile Include="Visual.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CameraManager.h" />
     <ClInclude Include="Texture2D.h" />
     <ClInclude Include="AudioManager.h" />
-    <ClInclude Include="Camera.h" />
     <ClInclude Include="Context.h" />
     <ClInclude Include="InputManager.h" />
     <ClInclude Include="Level.h" />

@@ -9,6 +9,8 @@ class SceneManager;
 class TextureManager;
 class Renderer;
 class Timer;
+class CameraManager;
+class GLShaderManager;
 
 #include <stdio.h>
 #include <iostream>
@@ -20,6 +22,10 @@ class Timer;
 #include "OpenGLRenderer.h"
 #include "TextureManager.h"
 #include "Timer.h"
+#include "CameraManager.h"
+#include <GLShaderManager.h>
+
+#define shrCamera() ctxt->mCamera
 
 using namespace std;
 
@@ -42,7 +48,9 @@ public:
 	InputManager* input;
 	TextureManager* textMgr;
 	SceneManager* scene;
+	GLShaderManager* mShader;
 	Timer* timer;
+	CameraManager* mCamera;
 };
 
 #endif

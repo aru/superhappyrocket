@@ -83,3 +83,8 @@ Level::Level()
 Level::~Level()
 {
 }
+
+void Level::Update( int delta )
+{
+	
+}

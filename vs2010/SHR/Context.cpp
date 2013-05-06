@@ -9,7 +9,22 @@ Context::Context()
 Context::Context(char* file)
 	:quit(false)
 {
-	LoadContext(file);
+	// Load the context from a file
+	LoadContext( file );
+	// Start the audio
+	audio = new AudioManager( this );
+	// Start the input handler
+	input = new InputManager( this );
+	// Start the texture manager
+	textMgr = new TextureManager( this );
+	// Start the shader manger
+	mShader = new GLShaderManager();
+	// Start the scene manager
+	scene = new SceneManager( this );
+	// Start the camera manager
+	mCamera = new CameraManager( this );
+	//Initialize OpenGL
+	renderer = new Renderer( this );
 }
 
 Context::~Context()

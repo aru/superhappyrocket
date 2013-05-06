@@ -1,8 +1,9 @@
 #ifndef SIMPLE_OBJECT
 #define SIMPLE_OBJECT
 
-#include "GLTools.h"
-#include "GLFrame.h"
+#include <GLTools.h>
+#include <GLFrame.h>
+#include <GLMatrixStack.h>
 #define NO_SDL_GLEXT
 //#include "SDL_opengl.h"
 #include <vector>
@@ -38,6 +39,7 @@ public:
 	// Arrays for data keeping
 	GLBatch batch;
 	GLFrame frame;
+	GLMatrixStack *modelViewMatrix;
 
 	vector<float> vertex;
 	vector<float> index;

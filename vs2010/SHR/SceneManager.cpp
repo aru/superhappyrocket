@@ -77,8 +77,6 @@ int SceneManager::Unload()
 
 int SceneManager::Update()
 {
-	Uint16 key;
-	float xVel = 1.0f;
 	int deltaTicks = ctxt->timer->get_ticks();
 	float linear = 5.0f * (deltaTicks / 1000.0f );
 	float angular = float(m3dDegToRad(20.0f * (deltaTicks / 1000.0f )));
@@ -86,24 +84,23 @@ int SceneManager::Update()
 	switch( ctxt->level )
 	{
 	case 1:
-		key = ctxt->input->handleKeys();
-		/*if( key == 'q' )
-		{
-			levels.at(0).objects.at(0)->renderMe = !levels.at(0).objects.at(0)->renderMe;
-		}*/
+		
 		if( ctxt->input->keysHeld['q'] )
 			levels.at(0).objects.at(0)->renderMe = false;
 		else
 			levels.at(0).objects.at(0)->renderMe = true;
 		if( ctxt->input->keysHeld[SDLK_UP] )
-			ctxt->renderer->cameraFrame->MoveForward(linear);
+			shrCamera()->cameraFrame->MoveForward(linear);
 		if( ctxt->input->keysHeld[SDLK_DOWN] )
-			ctxt->renderer->cameraFrame->MoveForward(-linear);
+			shrCamera()->cameraFrame->MoveForward(-linear);
 		if( ctxt->input->keysHeld[SDLK_LEFT] )
-			ctxt->renderer->cameraFrame->RotateWorld(angular, 0.0f, 1.0f, 0.0f);
+			shrCamera()->cameraFrame->RotateWorld(angular, 0.0f, 1.0f, 0.0f);
 		if( ctxt->input->keysHeld[SDLK_RIGHT] )
-			ctxt->renderer->cameraFrame->RotateWorld(-angular, 0.0f, 1.0f, 0.0f);
+			shrCamera()->cameraFrame->RotateWorld(-angular, 0.0f, 1.0f, 0.0f);
 		break;
 	}
+
+	levels.at(ctxt->level - 1).Update( deltaTicks );
+
 	return 0;
 }
