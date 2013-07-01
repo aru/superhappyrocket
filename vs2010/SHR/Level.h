@@ -11,7 +11,14 @@ class Level
 public:
 	Level();
 	~Level();
-	void Update( int delta );
+	// Declare and load every asset in this part
+	void LoadContent();
+	// Set the initial values of things
+	void Draw( int GameTimeElapsed );
+	// Update the values of everything in the level
+	void Update( int GameTimeElapsed );
+	// Unload every asset in this part just to be safe
+	void UnloadContent();
 
 	vector<char*> songs;
 	vector<char*> textures;
@@ -19,6 +26,7 @@ public:
 	vector<SimpleObject*> objects;
 	vector<SimpleObject*> actors;
 	vector<GLBatch*> batches;
+	vector<Light*> lights;
 
 	// Camera Support
 	static CStopWatch    *rotTimer;

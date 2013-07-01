@@ -21,6 +21,16 @@
 #include <GLGeometryTransform.h>
 #include <StopWatch.h>
 
+// Assimp support
+#include "assimp/Importer.hpp"
+#include "assimp/cimport.h"
+// assimp include files. These three are usually needed.
+#include "assimp/PostProcess.h"
+#include "assimp/Scene.h"
+#include "assimp/DefaultLogger.hpp"
+#include "assimp/LogStream.hpp"
+
+
 using namespace std;
 
 class Renderer{
@@ -38,6 +48,7 @@ public:
 	int addObject( SimpleObject* obj );
 	int addActor( SimpleObject* act );
 	int addBatch( GLBatch* bat );
+	int addLight( Light* lit );
 	int clearObjects();
 	int changeSize( int nWidth, int nHeight );
 
@@ -62,6 +73,9 @@ public:
 	GLGeometryTransform	 *transformPipeline;		// Geometry Transform Pipeline
 
 	GLuint				uiTextures;
+
+	// Light support
+	vector<Light*> lights;
 
 };
 

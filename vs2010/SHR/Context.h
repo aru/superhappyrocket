@@ -1,6 +1,14 @@
 #ifndef SHR_CONTEXT
 #define SHR_CONTEXT
 
+/* The Game Context class, where we store things that are relevant 
+	to every object in the game, where the different managers are,
+	how to access all of the stuff. Can be saved to a file and loaded
+	for future support of many things, game saves, reloading, tab switching...
+
+	Window configuration, video mode is also stored in here
+*/
+
 // Forward declare what we will use
 class Context;
 class AudioManager;
@@ -9,8 +17,11 @@ class SceneManager;
 class TextureManager;
 class Renderer;
 class Timer;
+class Light;
 class CameraManager;
 class GLShaderManager;
+class SimpleObject;
+class AssimpManager;
 
 #include <stdio.h>
 #include <iostream>
@@ -22,10 +33,14 @@ class GLShaderManager;
 #include "OpenGLRenderer.h"
 #include "TextureManager.h"
 #include "Timer.h"
+#include "Light.h"
 #include "CameraManager.h"
+#include "AssimpManager.h"
 #include <GLShaderManager.h>
 
+/* Lazy getters for very crucial things */
 #define shrCamera() ctxt->mCamera
+#define shrLightArr() ctxt->renderer->lights
 
 using namespace std;
 
@@ -39,6 +54,10 @@ public:
 	int LoadContext(char* file);
 	int SaveContext(char* file);
 
+	// Where are we?
+	// currently these are hardcoded
+	static const std::string basepath;
+
 	bool quit;
 	int width, height, bpp, vMode;
 	int level;
@@ -51,6 +70,7 @@ public:
 	GLShaderManager* mShader;
 	Timer* timer;
 	CameraManager* mCamera;
+	AssimpManager* aManager;
 };
 
 #endif

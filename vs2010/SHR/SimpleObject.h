@@ -1,6 +1,7 @@
 #ifndef SIMPLE_OBJECT
 #define SIMPLE_OBJECT
 
+#include "Context.h"
 #include <GLTools.h>
 #include <GLFrame.h>
 #include <GLMatrixStack.h>
@@ -13,13 +14,14 @@ using namespace std;
 class SimpleObject
 {
 public:
-
+	// Constructor && Destructor
 	SimpleObject();
+	SimpleObject( Context* ctx );
 	SimpleObject(GLenum type, float* vArr, int vArrSize, float* iArr, int iArrSize);
 	~SimpleObject();
 	int Init();
 	int Draw();
-	int Draw2();
+	virtual int Draw2();
 	int Update();
 	int CleanUp();
 	void addChildren();
@@ -41,6 +43,7 @@ public:
 	GLFrame frame;
 	GLMatrixStack *modelViewMatrix;
 
+	Context *ctxt;
 	vector<float> vertex;
 	vector<float> index;
 	vector<float> normal;
