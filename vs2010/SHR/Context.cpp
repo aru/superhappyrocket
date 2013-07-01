@@ -25,6 +25,8 @@ Context::Context(char* file)
 	mCamera = new CameraManager( this );
 	//Initialize OpenGL
 	renderer = new Renderer( this );
+	// Initialize Assimp Manager
+	aManager = new AssimpManager( this );
 }
 
 Context::~Context()
@@ -38,6 +40,7 @@ Context::~Context()
 int Context::LoadContext(char* file)
 {
 	ifstream ctxtFile;
+
 	ctxtFile.open( file );
 	if( ctxtFile.is_open() )
 	{

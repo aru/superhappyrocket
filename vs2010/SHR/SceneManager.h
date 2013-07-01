@@ -29,8 +29,6 @@ public:
 	int Unload();
 
 	Context* ctxt;
-	//GLBatch* rocketBatch;
-	//GLBatch* bgBatch;
 	vector<Level> levels;
 
 	// Camera Support
@@ -40,7 +38,7 @@ public:
 	GLMatrixStack		 *modelViewMatrix;		// Modelview Matrix
 	GLMatrixStack		 *projectionMatrix;		// Projection Matrix
 	GLFrustum			 *viewFrustum;			// View Frustum
-	GLGeometryTransform	 *transformPipeline;		// Geometry Transform Pipeline
+	GLGeometryTransform	 *transformPipeline;	// Geometry Transform Pipeline
 
 };
 

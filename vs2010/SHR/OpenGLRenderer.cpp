@@ -54,6 +54,12 @@ int Renderer::Init()
         return 1;
     }
 
+	// Temporary assimp support
+	if (!ctxt->aManager->Import3DFromFile("./../../content/models/cubo.blend")) 
+		return 0;
+
+	ctxt->aManager->logInfo("=============== Post Import ====================");
+
     return 0;
 }
 int Renderer::Draw()
@@ -110,13 +116,28 @@ int Renderer::Draw()
 			shrCamera()->modelViewMatrix->PopMatrix();
 		}
 
+		static float xrot = 0.0f;
+		static float yrot = 0.0f;
+		static float zrot = 0.0f;
+
+		glRotatef(xrot, 1.0f, 0.0f, 0.0f);
+		glRotatef(yrot, 0.0f, 1.0f, 0.0f);
+		glRotatef(zrot, 0.0f, 0.0f, 1.0f);
+
+
+		// Draw assimp here
+		ctxt->aManager->drawAiScene(ctxt->aManager->scene);
+
+		xrot+=0.0003f;
+		yrot+=0.0002f;
+
 		// Restore identity matrix		
 		shrCamera()->modelViewMatrix->PopMatrix();
 
 	shrCamera()->modelViewMatrix->PopMatrix();
 
 	// Swap buffers
-	// Post redisplay in SDL_app
+	// Post redisplay in SDL_app -- TODO!
 
 	return 0;
 }
@@ -200,6 +221,12 @@ int Renderer::addActor( SimpleObject* act )
 int Renderer::addBatch( GLBatch* bat )
 {
 	batch.push_back(bat);
+	return 0;
+}
+
+int Renderer::addLight( Light* lit )
+{
+	lights.push_back(lit);
 	return 0;
 }
 

@@ -13,6 +13,7 @@ int SceneManager::Load()
 {
 
 	Level lvl;
+	lvl.LoadContent();
 	levels.push_back(lvl);
 
 	unsigned int batC;
@@ -20,6 +21,7 @@ int SceneManager::Load()
 	unsigned int musC;
 	unsigned int actC;
 	unsigned int textC;
+	unsigned int lightC;
 
 	switch( ctxt->level )
 	{
@@ -51,6 +53,10 @@ int SceneManager::Load()
 		for( batC = 0; batC < lvl.batches.size(); batC++ )
 		{
 			ctxt->renderer->addBatch(lvl.batches.at(batC));
+		}
+		for( lightC = 0; lightC < lvl.lights.size(); lightC++ )
+		{
+			ctxt->renderer->addLight(lvl.lights.at(lightC));
 		}
 		break;
 	default:
@@ -85,10 +91,16 @@ int SceneManager::Update()
 	{
 	case 1:
 		
-		if( ctxt->input->keysHeld['q'] )
-			levels.at(0).objects.at(0)->renderMe = false;
-		else
-			levels.at(0).objects.at(0)->renderMe = true;
+		if( ctxt->input->keysHeld['q'] ) {
+			if( levels.size() > 0 )
+				if( levels.at(0).objects.size() > 0 )
+					levels.at(0).objects.at(0)->renderMe = false;
+		}
+		else {
+			if( levels.size() > 0 )
+				if( levels.at(0).objects.size() > 0 )
+					levels.at(0).objects.at(0)->renderMe = true;
+		}
 		if( ctxt->input->keysHeld[SDLK_UP] )
 			shrCamera()->cameraFrame->MoveForward(linear);
 		if( ctxt->input->keysHeld[SDLK_DOWN] )
@@ -99,7 +111,7 @@ int SceneManager::Update()
 			shrCamera()->cameraFrame->RotateWorld(-angular, 0.0f, 1.0f, 0.0f);
 		break;
 	}
-
+	// update the current level
 	levels.at(ctxt->level - 1).Update( deltaTicks );
 
 	return 0;

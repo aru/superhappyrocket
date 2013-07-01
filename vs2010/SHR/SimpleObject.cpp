@@ -6,6 +6,11 @@ SimpleObject::SimpleObject()
 	primType = GL_POINTS;
 }
 
+SimpleObject::SimpleObject( Context *ctx )
+	:renderMe(true), shaderFile(0), textureFile(0), ctxt( ctx )
+{
+}
+
 SimpleObject::~SimpleObject()
 {
 	vertex.clear();
