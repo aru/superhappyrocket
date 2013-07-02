@@ -55,7 +55,7 @@ int Renderer::Init()
     }
 
 	// Temporary assimp support
-	if (!ctxt->aManager->Import3DFromFile("./../../models/rocket.3ds")) 
+	if (!ctxt->aManager->Import3DFromFile("./../../models/edificios.3ds")) 
 		return 0;
 
 	ctxt->aManager->logInfo("=============== Post Import ====================");
