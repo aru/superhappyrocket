@@ -22,6 +22,12 @@ class CameraManager;
 class GLShaderManager;
 class SimpleObject;
 class AssimpManager;
+// Better assimp support
+class assimpMeshLoader;
+class assimpMesh;
+// Final assimp support
+class shrMesh;
+class shrMeshLoader;
 
 #include <stdio.h>
 #include <iostream>
@@ -36,6 +42,8 @@ class AssimpManager;
 #include "Light.h"
 #include "CameraManager.h"
 #include "AssimpManager.h"
+#include "assimpMeshLoader.h"
+#include "shrMeshLoader.h"
 #include <GLShaderManager.h>
 
 /* Lazy getters for very crucial things */
@@ -71,6 +79,8 @@ public:
 	Timer* timer;
 	CameraManager* mCamera;
 	AssimpManager* aManager;
+	// final assimp support
+	shrMeshLoader* mLoader;
 };
 
 #endif

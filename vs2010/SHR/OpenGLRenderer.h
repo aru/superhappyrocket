@@ -30,7 +30,7 @@
 #include "assimp/DefaultLogger.hpp"
 #include "assimp/LogStream.hpp"
 
-
+#include <string>
 using namespace std;
 
 class Renderer{
@@ -53,6 +53,15 @@ public:
 	int changeSize( int nWidth, int nHeight );
 
 	bool LoadTGATexture(const char *szFileName, GLenum minFilter, GLenum magFilter, GLenum wrapMode);
+
+	// Temporary Assimp support
+	unsigned int vs,fs,program;
+	void loadFile(const char* fn, std::string& str);
+	unsigned int loadShader(std::string& source, unsigned int mode);
+	void initShader(const char* vname, const char* fname);
+	void clean();
+	assimpMeshLoader* scene2;
+	shrMeshLoader* scene;
 
 	Context* ctxt;
 

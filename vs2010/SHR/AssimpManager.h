@@ -10,7 +10,7 @@
 #include "Context.h"
 
 // Assimp support
-#include "assimp/Importer.hpp"
+#include <assimp/Importer.hpp>
 #include "assimp/cimport.h"
 // assimp include files. These three are usually needed.
 #include "assimp/PostProcess.h"

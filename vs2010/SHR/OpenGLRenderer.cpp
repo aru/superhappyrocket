@@ -37,7 +37,7 @@ int Renderer::Init()
 	ctxt->mShader->InitializeStockShaders();
 
 	// Set the camera (?)
-	shrCamera()->cameraFrame->MoveForward(-7.0f);
+	shrCamera()->cameraFrame->MoveForward(-10.0f);
 	//cameraFrame->MoveForward(-7.0f);
 
 	// Enable depth testing
@@ -54,11 +54,14 @@ int Renderer::Init()
         return 1;
     }
 
-	// Temporary assimp support
-	if (!ctxt->aManager->Import3DFromFile("./../../content/models/cubo.blend")) 
-		return 0;
+	//// Temporary assimp support
+	//if (!ctxt->aManager->Import3DFromFile("./../../Models/edificio.3ds")) 
+	//	return 0;
 
-	ctxt->aManager->logInfo("=============== Post Import ====================");
+	//ctxt->aManager->logInfo("=============== Post Import ====================");
+
+	//initShader("vertex.vs","fragment.frag");
+	scene = new shrMeshLoader("./../../Models/test.blend");
 
     return 0;
 }
@@ -112,24 +115,35 @@ int Renderer::Draw()
 
 			// Draw actor geometry
 			actor.at(i)->Draw2();
-			// Restore camera transform
+			// Restore actor transform
 			shrCamera()->modelViewMatrix->PopMatrix();
 		}
 
-		static float xrot = 0.0f;
-		static float yrot = 0.0f;
-		static float zrot = 0.0f;
+		//static float xrot = 0.0f;
+		//static float yrot = 0.0f;
+		//static float zrot = 0.0f;
 
-		glRotatef(xrot, 1.0f, 0.0f, 0.0f);
-		glRotatef(yrot, 0.0f, 1.0f, 0.0f);
-		glRotatef(zrot, 0.0f, 0.0f, 1.0f);
+		//glRotatef(xrot, 1.0f, 0.0f, 0.0f);
+		//glRotatef(yrot, 0.0f, 1.0f, 0.0f);
+		//glRotatef(zrot, 0.0f, 0.0f, 1.0f);
 
+		shrCamera()->modelViewMatrix->PushMatrix();
 
-		// Draw assimp here
-		ctxt->aManager->drawAiScene(ctxt->aManager->scene);
+		ctxt->mShader->UseStockShader(GLT_SHADER_TEXTURE_POINT_LIGHT_DIFF,
+                                     shrCamera()->modelViewMatrix->GetMatrix(),
+                                     shrCamera()->transformPipeline->GetProjectionMatrix(),
+                                     vLightPos, 
+                                     vWhite,
+                                     0);
+		scene->draw();
+		shrCamera()->modelViewMatrix->PopMatrix();
 
-		xrot+=0.0003f;
-		yrot+=0.0002f;
+		//// Draw assimp here
+
+		//ctxt->aManager->drawAiScene(ctxt->aManager->scene);
+
+		//xrot+=0.0003f;
+		//yrot+=0.0002f;
 
 		// Restore identity matrix		
 		shrCamera()->modelViewMatrix->PopMatrix();
@@ -284,4 +298,62 @@ bool Renderer::LoadTGATexture(const char *szFileName, GLenum minFilter, GLenum m
         glGenerateMipmap(GL_TEXTURE_2D);
     
 	return true;
+}
+
+// Temporary ASSIMP support
+void Renderer::loadFile(const char* fn,std::string& str)
+{
+	std::ifstream in(fn);
+	if(!in.is_open())
+	{
+		std::cout << "ASSIMP: The file " << fn << " cannot be opened\n";
+		return;
+	}
+	char tmp[300];
+	while(!in.eof())
+	{
+		in.getline(tmp,300);
+		str+=tmp;
+		str+='\n';
+	}
+}
+unsigned int Renderer::loadShader(std::string& source,unsigned int mode)
+{
+	unsigned int id;
+	id=glCreateShader(mode);
+
+	const char* csource=source.c_str();
+
+	glShaderSource(id,1,&csource,NULL);
+	glCompileShader(id);
+	char error[1000];
+	glGetShaderInfoLog(id,1000,NULL,error);
+	std::cout << "Shader Compile status: \n" << error << std::endl;
+	return id;
+}
+
+void Renderer::initShader(const char* vname,const char* fname)
+{
+	std::string source;
+	loadFile(vname,source);
+	vs=loadShader(source,GL_VERTEX_SHADER);
+	source="";
+	loadFile(fname,source);
+	fs=loadShader(source,GL_FRAGMENT_SHADER);
+
+	program=glCreateProgram();
+	glAttachShader(program,vs);
+	glAttachShader(program,fs);
+
+	glLinkProgram(program);
+	glUseProgram(program);
+}
+
+void Renderer::clean()
+{
+	glDetachShader(program,vs);
+	glDetachShader(program,fs);
+	glDeleteShader(vs);
+	glDeleteShader(fs);
+	glDeleteProgram(program);
 }

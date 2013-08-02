@@ -75,6 +75,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AssimpManager.cpp" />
+    <ClCompile Include="assimpMesh.cpp" />
+    <ClCompile Include="assimpMeshLoader.cpp" />
+    <ClCompile Include="shrMeshLoader.cpp" />
     <ClCompile Include="shrModel.cpp" />
     <ClCompile Include="CameraManager.cpp" />
     <ClCompile Include="Star.cpp" />
@@ -94,6 +97,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AssimpManager.h" />
+    <ClInclude Include="assimpMesh.h" />
+    <ClInclude Include="assimpMeshData.h" />
+    <ClInclude Include="assimpMeshLoader.h" />
+    <ClInclude Include="shrMesh.h" />
+    <ClInclude Include="shrMeshData.h" />
+    <ClInclude Include="shrMeshLoader.h" />
     <ClInclude Include="shrModel.h" />
     <ClInclude Include="CameraManager.h" />
     <ClInclude Include="Light.h" />

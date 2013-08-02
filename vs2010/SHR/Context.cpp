@@ -26,7 +26,7 @@ Context::Context(char* file)
 	//Initialize OpenGL
 	renderer = new Renderer( this );
 	// Initialize Assimp Manager
-	aManager = new AssimpManager( this );
+	//aManager = new AssimpManager( this );
 }
 
 Context::~Context()
