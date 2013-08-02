@@ -26,7 +26,7 @@ void shrMeshLoader::processMesh( aiMesh* m, const aiScene* scene )
 	// temporary places to store data
 	std::vector<GLTriangleBatch> data;
 	std::vector<unsigned int> indices;
-	//std::vector<assimpTextureData> textures;
+	std::vector<assimpTextureData> textures;
 
 	// places to store materials?
 	aiColor4D col;
@@ -46,7 +46,8 @@ void shrMeshLoader::processMesh( aiMesh* m, const aiScene* scene )
 
 
 	// push the vertex/colors/text data into this new mesh
-	tmpMesh->data.Begin( GL_POLYGON, m->mNumVertices );
+	//tmpMesh->data.Begin( GL_TRIANGLES, m->mNumVertices );
+	tmpMesh->data.BeginMesh( m->mNumVertices );
 
 	for( i = 0; i < m->mNumVertices; i++)
 	{
@@ -56,51 +57,54 @@ void shrMeshLoader::processMesh( aiMesh* m, const aiScene* scene )
 		M3DVector3f color;
 		M3DVector2f texts;
 
-			//position
-			verts[0] = m->mVertices[i].x;
-			verts[1] = m->mVertices[i].y;
-			verts[2] = m->mVertices[i].z;
+		//position
+		verts[0] = m->mVertices[i].x;
+		verts[1] = m->mVertices[i].y;
+		verts[2] = m->mVertices[i].z;
 
-			//normals
-			norms[0] = m->mNormals[i].x;
-			norms[1] = m->mNormals[i].y;
-			norms[2] = m->mNormals[i].z;
+		//normals
+		norms[0] = m->mNormals[i].x;
+		norms[1] = m->mNormals[i].y;
+		norms[2] = m->mNormals[i].z;
 
-			////tangent
-			//if(m->mTangents)
-			//{
-			//	tmpVec[0] = m->mTangents[i].x;
-			//	tmpVec[1] = m->mTangents[i].y;
-			//	tmpVec[2] = m->mTangents[i].z;
-			//}else{
-			//	tmpVec[0] = 1.0;
-			//	tmpVec[1] = tmpVec[2] = 0;
-			//}
-			//m3dCopyVector3(tmp.tangent, tmpVec);
+		////tangent
+		//if(m->mTangents)
+		//{
+		//	tmpVec[0] = m->mTangents[i].x;
+		//	tmpVec[1] = m->mTangents[i].y;
+		//	tmpVec[2] = m->mTangents[i].z;
+		//}else{
+		//	tmpVec[0] = 1.0;
+		//	tmpVec[1] = tmpVec[2] = 0;
+		//}
+		//m3dCopyVector3(tmp.tangent, tmpVec);
 
-			// colors
-			//if(m->mColors[0])
-			//{
-			//	//!= material color
-			//	color[0] = m->mColors[0][i].r;
-			//	color[1] = m->mColors[0][i].g;
-			//	color[2] = m->mColors[0][i].b;
-			//}else{
-			//	m3dCopyVector3(color, defaultColor);
-			//}
+		// colors
+		//if(m->mColors[0])
+		//{
+		//	//!= material color
+		//	color[0] = m->mColors[0][i].r;
+		//	color[1] = m->mColors[0][i].g;
+		//	color[2] = m->mColors[0][i].b;
+		//}else{
+		//	m3dCopyVector3(color, defaultColor);
+		//}
 
 			// texture
-			/*if(m->mTextureCoords[0])
+			if(m->mTextureCoords[0])
 			{
 				texts[0] = m->mTextureCoords[0][i].x;
 				texts[1] = m->mTextureCoords[0][i].y;
 			}else{
-				texts[0] = texts[1] = texts[2] = 0.0;
-			}*/
+				texts[0] = texts[1] = 0.0f;
+			}
 			//data.push_back(tmp);
 
-			tmpMesh->data.Normal3fv(norms);
-			tmpMesh->data.Vertex3fv(verts);
+			tmpMesh->data.AddTriangle(&verts, &norms, &texts);
+
+			//tmpMesh->data.Normal3fv(norms);
+			//tmpMesh->data.Vertex3fv(verts);
+
 			//tmpMesh->data.MultiTexCoord2fv(texts);
 
 	}
