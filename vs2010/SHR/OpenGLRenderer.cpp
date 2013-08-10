@@ -61,7 +61,7 @@ int Renderer::Init()
 	//ctxt->aManager->logInfo("=============== Post Import ====================");
 
 	//initShader("vertex.vs","fragment.frag");
-	scene = new shrMeshLoader("./../../Models/edificio.3ds");
+	scene = new shrMeshLoader("./../../Models/cube.3ds");
 
     return 0;
 }
@@ -235,12 +235,6 @@ int Renderer::addActor( SimpleObject* act )
 int Renderer::addBatch( GLBatch* bat )
 {
 	batch.push_back(bat);
-	return 0;
-}
-
-int Renderer::addLight( Light* lit )
-{
-	lights.push_back(lit);
 	return 0;
 }
 
