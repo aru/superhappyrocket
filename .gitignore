@@ -44,3 +44,4 @@ build
 xcuserdata
 eduardo.*
 vs2010/lib/
+assimp.*lib
