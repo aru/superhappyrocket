@@ -61,7 +61,7 @@ int Renderer::Init()
 	//ctxt->aManager->logInfo("=============== Post Import ====================");
 
 	//initShader("vertex.vs","fragment.frag");
-	scene = new shrMeshLoader("./../../Models/triangulos249.blend");
+	scene = new shrMeshLoader("./../../Models/edificio.3ds");
 
     return 0;
 }

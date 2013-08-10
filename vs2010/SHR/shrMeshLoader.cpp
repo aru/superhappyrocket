@@ -21,12 +21,14 @@ void shrMeshLoader::recursiveProcess(aiNode* node,const aiScene* scene)
 void shrMeshLoader::processMesh( aiMesh* m, const aiScene* scene )
 {
 	// loop variables
-	unsigned int i,j;
+	unsigned int i,j,k;
+	//int indexCount;
 
 	// temporary places to store data
-	std::vector<GLTriangleBatch> data;
-	std::vector<unsigned int> indices;
-	std::vector<assimpTextureData> textures;
+	std::vector<M3DVector3f> vertices;
+	std::vector<M3DVector3f> normals;
+	std::vector<M3DVector2f> textures;
+	std::vector<GLushort> indices;
 
 	// places to store materials?
 	aiColor4D col;
@@ -37,35 +39,56 @@ void shrMeshLoader::processMesh( aiMesh* m, const aiScene* scene )
 	M3DVector3f defaultColor;
 	m3dLoadVector3( defaultColor, col.r,col.g, col.b );
 
+	// First off get the indexes, this is how we will make a new triangle
+	for( i = 0; i < m->mNumFaces; i++)
+	{
+		aiFace face = m->mFaces[i];
+		for( j = 0; j < face.mNumIndices; j++) //0..2
+		{
+			indices.push_back( face.mIndices[j] );
+		}
+	}
+
 	// make a new mesh and push it back into the array
 	shrMesh *tmpMesh;
 	tmpMesh = new shrMesh();
-	meshes.push_back(tmpMesh);
-
-	// Figure out what we have
-
 
 	// push the vertex/colors/text data into this new mesh
-	//tmpMesh->data.Begin( GL_TRIANGLES, m->mNumVertices );
-	tmpMesh->data.BeginMesh( m->mNumVertices );
+	tmpMesh->data.BeginMesh( indices.size() );
 
-	for( i = 0; i < m->mNumVertices; i++)
+	M3DVector3f tmpvert[3];
+	M3DVector3f tmpnorm[3];
+	M3DVector2f tmptext[3];
+    unsigned int idx = -1;
+
+	// With the indexes, we can now add triangles in order
+	// As long as we have indexes, assuming everything is a triangle
+	// we want to build triangles according to them
+	for( i = 0; i < indices.size(); )
 	{
+		for( j = 0; j < 3; j++ )
+		{
+			idx = indices.at(i);
+			//for( k = 0; k < 2; )
+			{
+				// Get everything for x
+				tmpvert[j][0] = m->mVertices[idx].x;
+				tmpnorm[j][0] = m->mNormals[idx].x;
+				tmptext[j][0] = 0.0f;
 
-		M3DVector3f verts;
-		M3DVector3f norms;
-		M3DVector3f color;
-		M3DVector2f texts;
+				// Get everything for y
+				tmpvert[j][1] = m->mVertices[idx].y;
+				tmpnorm[j][1] = m->mNormals[idx].y;
+				tmptext[j][1] = 0.0f;
 
-		//position
-		verts[0] = m->mVertices[i].x;
-		verts[1] = m->mVertices[i].y;
-		verts[2] = m->mVertices[i].z;
-
-		//normals
-		norms[0] = m->mNormals[i].x;
-		norms[1] = m->mNormals[i].y;
-		norms[2] = m->mNormals[i].z;
+				// Get everything for z
+				tmpvert[j][2] = m->mVertices[idx].z;
+				tmpnorm[j][2] = m->mNormals[idx].z;
+			}
+			if( (++i) % 3 == 0 )
+				tmpMesh->data.AddTriangle(tmpvert,tmpnorm,tmptext);
+		}
+	}
 
 		////tangent
 		//if(m->mTangents)
@@ -90,37 +113,23 @@ void shrMeshLoader::processMesh( aiMesh* m, const aiScene* scene )
 		//	m3dCopyVector3(color, defaultColor);
 		//}
 
-			// texture
-			if(m->mTextureCoords[0])
-			{
-				texts[0] = m->mTextureCoords[0][i].x;
-				texts[1] = m->mTextureCoords[0][i].y;
-			}else{
-				texts[0] = texts[1] = 0.0f;
-			}
-			//data.push_back(tmp);
-
-			tmpMesh->data.AddTriangle(&verts, &norms, &texts);
-
-			//tmpMesh->data.Normal3fv(norms);
-			//tmpMesh->data.Vertex3fv(verts);
-
-			//tmpMesh->data.MultiTexCoord2fv(texts);
-
-	}
-
-	tmpMesh->data.End();
-
-	//for(i=0;i<m->mNumFaces;i++)
-	//{
-	//	aiFace face=m->mFaces[i];
-	//	for(j=0;j<face.mNumIndices;j++) //0..2
-	//	{
-	//		indices.push_back(face.mIndices[j]);
-	//	}
+		// Get texture coords
+		/*if(m->mTextureCoords[0])
+		{
+			texts[0] = m->mTextureCoords[0][i].x;
+			texts[1] = m->mTextureCoords[0][i].y;
+		}else{
+			texts[0] = texts[1] = 0.0f;
+		}
+		textures.push_back( texts );*/
 	//}
 
+	// Finally push this mesh back
+	meshes.push_back(tmpMesh);
 
+	// End the mesh maybe
+	tmpMesh->data.End();
+	
 	//for(i=0;i<mat->GetTextureCount(aiTextureType_DIFFUSE);i++)
 	//{
 	//	aiString str;

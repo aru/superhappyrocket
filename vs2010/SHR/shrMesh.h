@@ -11,7 +11,7 @@
 class shrMesh{
 public:
 	// Save all of the data for this model
-	GLBatch data2;
+	//GLBatch data2;
 	// Alternative way of saving data
 	GLTriangleBatch data;
 	// Put in a frame to move easily

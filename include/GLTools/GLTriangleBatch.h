@@ -101,6 +101,8 @@ class GLTriangleBatch : public GLBatchBase
         inline GLuint GetIndexCount(void) { return nNumIndexes; }
         inline GLuint GetVertexCount(void) { return nNumVerts; }
 
+		// Useful for providing your own indexes
+		void AddIndex( GLushort *pIndex, size_t size );
         
         // Draw - make sure you call glEnableClientState for these arrays
         virtual void Draw(void);
