@@ -244,6 +244,12 @@ int Renderer::addLight( Light* lit )
 	return 0;
 }
 
+int Renderer::addLight( Light* lit )
+{
+	lights.push_back(lit);
+	return 0;
+}
+
 int Renderer::clearObjects()
 {
 	object.clear();
