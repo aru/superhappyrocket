@@ -21,11 +21,14 @@ vec2s 4
 	short x 0 2
 	short y 2 2
 
+<<<<<<< HEAD
 vec2i 8
 
 	int x 0 4
 	int y 4 4
 
+=======
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 vec2f 8
 
 	float x 0 4
@@ -44,7 +47,7 @@ vec3i 12
 	int z 8 4
 
 =======
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 vec3f 12
 
 	float x 0 4
@@ -80,7 +83,7 @@ vec4d 32
 	double w 24 8
 
 =======
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 rcti 16
 
 	int xmin 0 4
@@ -132,7 +135,7 @@ IDProperty 108
 	int totallen 104 4
 
 ID 100
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	void *next 0 4
 	void *prev 4 4
@@ -177,7 +180,7 @@ Library 2164
 	PackedFile *packedfile 2160 4
 
 PreviewImage 40
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	int w 0 8
 	int h 8 8
@@ -186,17 +189,14 @@ PreviewImage 40
 	short pad0 20 2
 	short pad1 22 2
 	int *rect 24 8
-
-IpoDriver 140
-
 =======
 	short changed_timestamp 20 4
 	int *rect 24 8
 	GPUTexture *gputexture 32 8
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 IpoDriver 140
 
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
 	Object *ob 0 4
 	short blocktype 4 2
 	short adrcode 6 2
@@ -252,7 +252,7 @@ Ipo 132
 	short pad 130 2
 
 KeyBlock 176
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	KeyBlock *next 0 4
 	KeyBlock *prev 4 4
@@ -324,7 +324,7 @@ Key 180
 	short flag 170 2
 	float ctime 172 4
 	int uidgen 176 4
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 TextLine 24
 
@@ -553,7 +553,7 @@ Image 1316
 	char pad 1309 7
 
 MTex 304
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	short texco 0 2
 	short mapto 2 2
@@ -665,7 +665,7 @@ PluginTex 332
 	float zenupfac 292 4
 	float zendownfac 296 4
 	float blendfac 300 4
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 CBData 24
 
@@ -887,7 +887,7 @@ Tex 352
 	char pad 345 7
 
 TexMapping 140
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	float loc 0 12
 	float rot 12 12
@@ -1398,7 +1398,7 @@ VFont 1136
 	PackedFile *temp_pf 1132 4
 
 MetaElem 84
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	MetaElem *next 0 4
 	MetaElem *prev 4 4
@@ -1486,7 +1486,7 @@ MetaBall 196
 	float rendersize 184 4
 	float thresh 188 4
 	MetaElem *lastelem 192 4
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 BezTriple 56
 
@@ -1494,8 +1494,14 @@ BezTriple 56
 	float alfa 36 4
 	float weight 40 4
 	float radius 44 4
+<<<<<<< HEAD
 	short h1 48 2
 	short h2 50 2
+=======
+	short ipo 48 2
+	char h1 50 1
+	char h2 51 1
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 	char f1 52 1
 	char f2 53 1
 	char f3 54 1
@@ -1782,7 +1788,7 @@ Mesh 1124
 	char editflag 1117 1
 	short totcol 1118 2
 	Multires *mr 1120 4
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 TFace 60
 
@@ -1801,8 +1807,12 @@ MFace 20
 	int v2 4 4
 	int v3 8 4
 	int v4 12 4
+<<<<<<< HEAD
 	char pad 16 1
 	char mat_nr 17 1
+=======
+	short mat_nr 16 2
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 	char edcode 18 1
 	char flag 19 1
 
@@ -1825,14 +1835,22 @@ MDeformVert 12
 	int totweight 4 4
 	int flag 8 4
 
+<<<<<<< HEAD
 MVert 24
+=======
+MVert 20
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	float co 0 12
 	short no 12 6
 	char flag 18 1
+<<<<<<< HEAD
 	char mat_nr 19 1
 	char bweight 20 1
 	char pad 21 3
+=======
+	char bweight 19 1
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 MCol 4
 
@@ -1842,14 +1860,6 @@ MCol 4
 	char b 3 1
 
 <<<<<<< HEAD
-MTexPoly 12
-
-	Image *tpage 0 4
-	char flag 4 1
-	char transp 5 1
-	short mode 6 2
-	short tile 8 2
-	short unwrap 10 2
 =======
 MPoly 12
 
@@ -1858,13 +1868,13 @@ MPoly 12
 	short mat_nr 8 2
 	char flag 10 1
 	char pad 11 1
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
 
 MLoop 8
 
 	int v 0 4
 	int e 4 4
 
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 MTexPoly 12
 
 	Image *tpage 0 4
@@ -1872,6 +1882,25 @@ MTexPoly 12
 	char transp 5 1
 	short mode 6 2
 	short tile 8 2
+<<<<<<< HEAD
+	short unwrap 10 2
+
+MLoopUV 8
+
+	float uv 0 8
+
+MLoopCol 8
+
+	char a 0 1
+	char r 1 1
+	char g 2 1
+	char b 3 1
+	int pad 4 4
+
+MSticky 8
+
+	float co 0 8
+=======
 	short pad 10 2
 
 MLoopUV 12
@@ -1885,6 +1914,7 @@ MLoopCol 4
 	char g 1 1
 	char b 2 1
 	char a 3 1
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 MSelect 8
 
@@ -1911,8 +1941,12 @@ MIntProperty 4
 
 MStringProperty 256
 
+<<<<<<< HEAD
+	char s 0 256
+=======
 	char s 0 255
 	char s_len 255 1
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 OrigSpaceFace 32
 
@@ -1931,7 +1965,7 @@ MDisps 16
 	float (*disps)() 8 4
 	int *hidden 12 4
 
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 MultiresCol 16
 
 	float a 0 4
@@ -1960,7 +1994,7 @@ MultiresEdge 12
 MultiresLevel 56
 =======
 MultiresLevel 40
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	MultiresLevel *next 0 4
 	MultiresLevel *prev 4 4
@@ -1987,7 +2021,7 @@ Multires 76
 	MVert *verts 36 4
 
 Multires 372
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	ListBase levels 0 8
 	MVert *verts 8 4
@@ -2549,7 +2583,7 @@ BooleanModifierData 108
 	Object *object 96 4
 	int operation 100 4
 	int pad 104 4
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 MDefInfluence 8
 
@@ -3037,7 +3071,7 @@ bDeformGroup 80
 	char name 8 64
 	char flag 72 1
 	char pad 73 7
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 BoundBox 104
 
@@ -3300,7 +3334,7 @@ Object 1172
 	float ima_ofs 1164 8
 
 ObHook 240
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	ObHook *next 0 4
 	ObHook *prev 4 4
@@ -3488,7 +3522,7 @@ PointCache 1288
 	ListBase mem_cache 1276 8
 	PTCacheEdit *edit 1284 4
 	void (*free_edit)() 1288 0
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 SBVertex 16
 
@@ -3920,7 +3954,7 @@ World 420
 	short pad 408 4
 	PreviewImage *preview 412 4
 	bNodeTree *nodetree 416 4
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 Base 28
 
@@ -3981,7 +4015,7 @@ QuicktimeCodecSettings 64
 	int pad1 60 4
 
 FFMpegCodecData 68
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	int type 0 4
 	int codec 4 4
@@ -4151,18 +4185,6 @@ RenderData 976
 	float domeresbuf 964 4
 	float pad2 968 4
 	Text *dometext 972 4
-
-RenderProfile 56
-
-	RenderProfile *next 0 4
-	RenderProfile *prev 4 4
-	char name 8 32
-	short particle_perc 40 2
-	short subsurf_max 42 2
-	short shadbufsample_max 44 2
-	short pad1 46 2
-	float ao_error 48 4
-	float pad2 52 4
 =======
 	int audio_mixrate 20 4
 	int audio_channels 24 4
@@ -4336,6 +4358,7 @@ RenderData 2496
 	float pad2 2456 4
 	Text *dometext 2460 4
 	char engine 2464 32
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 RenderProfile 56
 
@@ -4349,6 +4372,8 @@ RenderProfile 56
 	float ao_error 48 4
 	float pad2 52 4
 
+<<<<<<< HEAD
+=======
 GameDome 20
 
 	short res 0 2
@@ -4358,8 +4383,8 @@ GameDome 20
 	float resbuf 8 4
 	float pad2 12 4
 	Text *warptext 16 4
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
 
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 GameFraming 16
 
 	float col 0 12
@@ -4429,7 +4454,7 @@ GameData 180
 	float pad2 176 4
 
 TimeMarker 84
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	TimeMarker *next 0 4
 	TimeMarker *prev 4 4
@@ -4445,6 +4470,15 @@ ImagePaintSettings 12
 	short tool 6 2
 	short seam_bleed 8 2
 	short normal_angle 10 2
+
+ParticleBrushData 8
+
+	short size 0 2
+	short strength 2 2
+	short step 4 2
+	short invert 6 2
+
+ParticleEditSettings 72
 =======
 	Object *camera 80 4
 
@@ -4467,20 +4501,18 @@ ImagePaintSettings 44
 	short screen_grab_size 32 4
 	int pad1 36 4
 	void *paintcursor 40 4
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
 
-ParticleBrushData 8
+ParticleBrushData 16
 
 	short size 0 2
-	short strength 2 2
-	short step 4 2
-	short invert 6 2
+	short step 2 2
+	short invert 4 2
+	short count 6 2
+	int flag 8 4
+	float strength 12 4
 
-<<<<<<< HEAD
-ParticleEditSettings 72
-=======
 ParticleEditSettings 156
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	short flag 0 2
 	short totrekey 2 2
@@ -4558,6 +4590,180 @@ ToolSettings 232
 	char pad3 230 2
 
 BrushData 8
+
+	short size 0 2
+	char strength 2 1
+	char dir 3 1
+	char view 4 1
+	char flag 5 1
+	char pad 6 2
+
+SculptData 168
+
+	SculptSession *session 0 4
+	MTex *mtex 4 72
+	CurveMapping *cumap 76 4
+	BrushData drawbrush 80 8
+	BrushData smoothbrush 88 8
+	BrushData pinchbrush 96 8
+	BrushData inflatebrush 104 8
+	BrushData grabbrush 112 8
+	BrushData layerbrush 120 8
+	BrushData flattenbrush 128 8
+	float pivot 136 12
+	short brush_type 148 2
+	short texact 150 2
+	short texnr 152 2
+	short spacing 154 2
+	char texrept 156 1
+	char texfade 157 1
+	char texsep 158 1
+	char averaging 159 1
+	char flags 160 1
+	char tablet_size 161 1
+	char tablet_strength 162 1
+	char symm 163 1
+	char rake 164 1
+	char axislock 165 1
+	char pad 166 2
+
+Scene 1404
+
+	ID id 0 52
+	Object *camera 52 4
+	World *world 56 4
+	Scene *set 60 4
+	Image *ima 64 4
+	ListBase base 68 8
+	Base *basact 76 4
+	float cursor 80 12
+	float twcent 92 12
+	float twmin 104 12
+	float twmax 116 12
+	int lay 128 4
+	float editbutsize 132 4
+	short selectmode 136 2
+	short proportional 138 2
+	short prop_mode 140 2
+	short automerge 142 2
+	short pad5 144 2
+	short pad6 146 2
+	short autokey_mode 148 2
+	short use_nodes 150 2
+	bNodeTree *nodetree 152 4
+	void *ed 156 4
+	Radio *radio 160 4
+	GameFraming framing 164 16
+	ToolSettings *toolsettings 180 4
+	RenderData r 184 976
+	AudioData audio 1160 16
+	ScriptLink scriptlink 1176 16
+	ListBase markers 1192 8
+	ListBase transform_spaces 1200 8
+	short jumpframe 1208 2
+	short snap_mode 1210 2
+	short snap_flag 1212 2
+	short snap_target 1214 2
+	DagForest *theDag 1216 4
+	short dagisvalid 1220 2
+	short dagflags 1222 2
+	short pad4 1224 2
+	short recalc 1226 2
+	SculptData sculptdata 1228 168
+	int frame_step 1396 4
+	int pad 1400 4
+
+BGpic 60
+
+	Image *ima 0 4
+	ImageUser iuser 4 32
+	float xof 36 4
+	float yof 40 4
+	float size 44 4
+	float zoom 48 4
+	float blend 52 4
+	short xim 56 2
+	short yim 58 2
+
+View3D 796
+
+	SpaceLink *next 0 4
+	SpaceLink *prev 4 4
+	int spacetype 8 4
+	float blockscale 12 4
+	ScrArea *area 16 4
+	short blockhandler 20 16
+	float viewmat 36 64
+	float viewinv 100 64
+	float persmat 164 64
+	float persinv 228 64
+	float winmat1 292 64
+	float viewmat1 356 64
+	float viewquat 420 16
+	float dist 436 4
+	float zfac 440 4
+	int lay_used 444 4
+	short persp 448 2
+	short view 450 2
+	Object *camera 452 4
+	Object *ob_centre 456 4
+	BGpic *bgpic 460 4
+	View3D *localvd 464 4
+	RenderInfo *ri 468 4
+	RetopoViewData *retopo_view_data 472 4
+	ViewDepths *depths 476 4
+	char ob_centre_bone 480 32
+	short drawtype 512 2
+	short localview 514 2
+	int lay 516 4
+	int layact 520 4
+	short scenelock 524 2
+	short around 526 2
+	short camzoom 528 2
+	char pivot_last 530 1
+	char pad1 531 1
+	float lens 532 4
+	float grid 536 4
+	float gridview 540 4
+	float pixsize 544 4
+	float near 548 4
+	float far 552 4
+	float camdx 556 4
+	float camdy 560 4
+	float ofs 564 12
+	float cursor 576 12
+	short gridlines 588 2
+	short viewbut 590 2
+	short gridflag 592 2
+	short modeselect 594 2
+	short menunr 596 2
+	short texnr 598 2
+	short twtype 600 2
+	short twmode 602 2
+	short twflag 604 2
+	short twdrawflag 606 2
+	float twmat 608 64
+	float clip 672 64
+	BoundBox *clipbb 736 4
+	ListBase afterdraw 740 8
+	short zbuf 748 2
+	short transp 750 2
+	short xray 752 2
+	short flag 754 2
+	short flag2 756 2
+	short gridsubdiv 758 2
+	short keyflags 760 2
+	char ndofmode 762 1
+	char ndoffilter 763 1
+	void *properties_storage 764 4
+	bGPdata *gpd 768 4
+	float lviewquat 772 16
+	short lpersp 788 2
+	short lview 790 2
+	short pad5 792 2
+	short pad6 794 2
+
+View2D 136
 =======
 	ParticleBrushData brush 8 112
 	void *paintcursor 120 4
@@ -4726,183 +4932,9 @@ UnitSettings 8
 	char system 4 1
 	char system_rotation 5 1
 	short flag 6 2
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
 
-	short size 0 2
-	char strength 2 1
-	char dir 3 1
-	char view 4 1
-	char flag 5 1
-	char pad 6 2
+PhysicsSettings 24
 
-<<<<<<< HEAD
-SculptData 168
-
-	SculptSession *session 0 4
-	MTex *mtex 4 72
-	CurveMapping *cumap 76 4
-	BrushData drawbrush 80 8
-	BrushData smoothbrush 88 8
-	BrushData pinchbrush 96 8
-	BrushData inflatebrush 104 8
-	BrushData grabbrush 112 8
-	BrushData layerbrush 120 8
-	BrushData flattenbrush 128 8
-	float pivot 136 12
-	short brush_type 148 2
-	short texact 150 2
-	short texnr 152 2
-	short spacing 154 2
-	char texrept 156 1
-	char texfade 157 1
-	char texsep 158 1
-	char averaging 159 1
-	char flags 160 1
-	char tablet_size 161 1
-	char tablet_strength 162 1
-	char symm 163 1
-	char rake 164 1
-	char axislock 165 1
-	char pad 166 2
-
-Scene 1404
-
-	ID id 0 52
-	Object *camera 52 4
-	World *world 56 4
-	Scene *set 60 4
-	Image *ima 64 4
-	ListBase base 68 8
-	Base *basact 76 4
-	float cursor 80 12
-	float twcent 92 12
-	float twmin 104 12
-	float twmax 116 12
-	int lay 128 4
-	float editbutsize 132 4
-	short selectmode 136 2
-	short proportional 138 2
-	short prop_mode 140 2
-	short automerge 142 2
-	short pad5 144 2
-	short pad6 146 2
-	short autokey_mode 148 2
-	short use_nodes 150 2
-	bNodeTree *nodetree 152 4
-	void *ed 156 4
-	Radio *radio 160 4
-	GameFraming framing 164 16
-	ToolSettings *toolsettings 180 4
-	RenderData r 184 976
-	AudioData audio 1160 16
-	ScriptLink scriptlink 1176 16
-	ListBase markers 1192 8
-	ListBase transform_spaces 1200 8
-	short jumpframe 1208 2
-	short snap_mode 1210 2
-	short snap_flag 1212 2
-	short snap_target 1214 2
-	DagForest *theDag 1216 4
-	short dagisvalid 1220 2
-	short dagflags 1222 2
-	short pad4 1224 2
-	short recalc 1226 2
-	SculptData sculptdata 1228 168
-	int frame_step 1396 4
-	int pad 1400 4
-
-BGpic 60
-
-	Image *ima 0 4
-	ImageUser iuser 4 32
-	float xof 36 4
-	float yof 40 4
-	float size 44 4
-	float zoom 48 4
-	float blend 52 4
-	short xim 56 2
-	short yim 58 2
-
-View3D 796
-
-	SpaceLink *next 0 4
-	SpaceLink *prev 4 4
-	int spacetype 8 4
-	float blockscale 12 4
-	ScrArea *area 16 4
-	short blockhandler 20 16
-	float viewmat 36 64
-	float viewinv 100 64
-	float persmat 164 64
-	float persinv 228 64
-	float winmat1 292 64
-	float viewmat1 356 64
-	float viewquat 420 16
-	float dist 436 4
-	float zfac 440 4
-	int lay_used 444 4
-	short persp 448 2
-	short view 450 2
-	Object *camera 452 4
-	Object *ob_centre 456 4
-	BGpic *bgpic 460 4
-	View3D *localvd 464 4
-	RenderInfo *ri 468 4
-	RetopoViewData *retopo_view_data 472 4
-	ViewDepths *depths 476 4
-	char ob_centre_bone 480 32
-	short drawtype 512 2
-	short localview 514 2
-	int lay 516 4
-	int layact 520 4
-	short scenelock 524 2
-	short around 526 2
-	short camzoom 528 2
-	char pivot_last 530 1
-	char pad1 531 1
-	float lens 532 4
-	float grid 536 4
-	float gridview 540 4
-	float pixsize 544 4
-	float near 548 4
-	float far 552 4
-	float camdx 556 4
-	float camdy 560 4
-	float ofs 564 12
-	float cursor 576 12
-	short gridlines 588 2
-	short viewbut 590 2
-	short gridflag 592 2
-	short modeselect 594 2
-	short menunr 596 2
-	short texnr 598 2
-	short twtype 600 2
-	short twmode 602 2
-	short twflag 604 2
-	short twdrawflag 606 2
-	float twmat 608 64
-	float clip 672 64
-	BoundBox *clipbb 736 4
-	ListBase afterdraw 740 8
-	short zbuf 748 2
-	short transp 750 2
-	short xray 752 2
-	short flag 754 2
-	short flag2 756 2
-	short gridsubdiv 758 2
-	short keyflags 760 2
-	char ndofmode 762 1
-	char ndoffilter 763 1
-	void *properties_storage 764 4
-	bGPdata *gpd 768 4
-	float lviewquat 772 16
-	short lpersp 788 2
-	short lview 790 2
-	short pad5 792 2
-	short pad6 794 2
-
-View2D 136
-=======
 	float gravity 0 12
 	int flag 12 4
 	int quick_cache_step 16 4
@@ -5078,7 +5110,7 @@ View3D 300
 	bGPdata *gpd 296 4
 
 View2D 148
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	rctf tot 0 16
 	rctf cur 16 16
@@ -5090,10 +5122,10 @@ View2D 148
 	float minzoom 96 4
 	float maxzoom 100 4
 	short scroll 104 2
+<<<<<<< HEAD
 	short keeptot 106 2
 	short keepaspect 108 2
 	short keepzoom 110 2
-<<<<<<< HEAD
 	short oldwinx 112 2
 	short oldwiny 114 2
 	int flag 116 4
@@ -5520,7 +5552,12 @@ ThemeSpace 208
 	char handle_vertex_select 196 4
 	char handle_vertex_size 200 1
 	char hpad 201 7
+
+ThemeWireColor 16
 =======
+	short scroll_ui 106 2
+	short keeptot 108 2
+	short keepzoom 110 2
 	short keepofs 112 2
 	short flag 114 2
 	short align 116 2
@@ -6168,9 +6205,9 @@ ThemeSpace 560
 	char nla_meta_sel 548 4
 	char nla_sound 552 4
 	char nla_sound_sel 556 4
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
 
 ThemeWireColor 16
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	char solid 0 4
 	char select 4 4
@@ -6182,7 +6219,7 @@ ThemeWireColor 16
 bTheme 3640
 =======
 bTheme 10760
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	bTheme *next 0 4
 	bTheme *prev 4 4
@@ -6236,7 +6273,7 @@ bAddon 76
 	bAddon *prev 4 4
 	char module 8 64
 	IDProperty *prop 72 4
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 SolidLight 56
 
@@ -6465,7 +6502,7 @@ bScreen 180
 	short pad 170 2
 	wmTimer *animtimer 172 4
 	void *context 176 4
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 ScrVert 20
 
@@ -6478,7 +6515,7 @@ ScrVert 20
 =======
 	short flag 16 2
 	short editflag 18 2
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 ScrEdge 24
 
@@ -6551,7 +6588,7 @@ uiList 104
 	int list_grip_size 100 4
 
 ScrArea 96
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	ScrArea *next 0 4
 	ScrArea *prev 4 4
@@ -6634,7 +6671,7 @@ ARegion 268
 	void *regiondata 264 4
 
 FileGlobal 1064
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	char subvstr 0 4
 	short subversion 4 2
@@ -6677,7 +6714,7 @@ StripElem 264
 	char name 0 256
 	int orig_width 256 4
 	int orig_height 260 4
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 StripCrop 16
 
@@ -6691,19 +6728,23 @@ StripTransform 8
 	int xofs 0 4
 	int yofs 4 4
 
+<<<<<<< HEAD
 StripColorBalance 60
+=======
+StripColorBalance 44
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	float lift 0 12
 	float gamma 12 12
 	float gain 24 12
 	int flag 36 4
+<<<<<<< HEAD
 	int mode 40 4
 	float exposure 44 4
 	float saturation 48 4
 	int pad 52 4
 	StripColorBalanceGUIHelper *gui 56 4
 
-<<<<<<< HEAD
 StripProxy 252
 
 	char dir 0 160
@@ -6754,6 +6795,8 @@ PluginSeq 416
 
 Sequence 196
 =======
+	int pad 40 4
+
 StripProxy 1036
 
 	char dir 0 768
@@ -6781,7 +6824,7 @@ Strip 876
 	ColorManagedColorspaceSettings colorspace_settings 812 64
 
 Sequence 268
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	Sequence *next 0 4
 	Sequence *prev 4 4
@@ -6876,7 +6919,7 @@ Sequence 268
 	char alpha_mode 256 1
 	char pad 257 3
 	ListBase modifiers 260 8
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 MetaStack 16
 
@@ -6889,7 +6932,7 @@ MetaStack 16
 Editing 28
 =======
 Editing 2104
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	ListBase *seqbasep 0 4
 	ListBase seqbase 4 8
@@ -6907,7 +6950,7 @@ Editing 2104
 	int over_flag 2080 4
 	int pad 2084 4
 	rctf over_border 2088 16
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 WipeVars 12
 
@@ -6951,7 +6994,7 @@ TransformVars 32
 	int percent 20 4
 	int interpolation 24 4
 	int uniform_scale 28 4
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 SolidColorVars 16
 
@@ -6962,7 +7005,7 @@ SolidColorVars 16
 SpeedControlVars 28
 =======
 SpeedControlVars 20
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	float *frameMap 0 4
 	float globalSpeed 4 4
@@ -6972,122 +7015,6 @@ SpeedControlVars 20
 <<<<<<< HEAD
 	int blendFrames 20 4
 	int pad 24 4
-
-Effect 16
-
-	Effect *next 0 4
-	Effect *prev 4 4
-	short type 8 2
-	short flag 10 2
-	short buttype 12 2
-	short rt 14 2
-
-BuildEff 24
-
-	BuildEff *next 0 4
-	BuildEff *prev 4 4
-	short type 8 2
-	short flag 10 2
-	short buttype 12 2
-	short rt 14 2
-	float len 16 4
-	float sfra 20 4
-
-PartEff 312
-
-	PartEff *next 0 4
-	PartEff *prev 4 4
-	short type 8 2
-	short flag 10 2
-	short buttype 12 2
-	short stype 14 2
-	short vertgroup 16 2
-	short userjit 18 2
-	float sta 20 4
-	float end 24 4
-	float lifetime 28 4
-	int totpart 32 4
-	int totkey 36 4
-	int seed 40 4
-	float normfac 44 4
-	float obfac 48 4
-	float randfac 52 4
-	float texfac 56 4
-	float randlife 60 4
-	float force 64 12
-	float damp 76 4
-	float nabla 80 4
-	float vectsize 84 4
-	float maxlen 88 4
-	float pad 92 4
-	float defvec 96 12
-	float mult 108 16
-	float life 124 16
-	short child 140 8
-	short mat 148 8
-	short texmap 156 2
-	short curmult 158 2
-	short staticstep 160 2
-	short omat 162 2
-	short timetex 164 2
-	short speedtex 166 2
-	short flag2 168 2
-	short flag2neg 170 2
-	short disp 172 2
-	short vertgroup_v 174 2
-	char vgroupname 176 32
-	char vgroupname_v 208 32
-	float imat 240 64
-	Particle *keys 304 4
-	Group *group 308 4
-
-WaveEff 56
-
-	WaveEff *next 0 4
-	WaveEff *prev 4 4
-	short type 8 2
-	short flag 10 2
-	short buttype 12 2
-	short stype 14 2
-	float startx 16 4
-	float starty 20 4
-	float height 24 4
-	float width 28 4
-	float narrow 32 4
-	float speed 36 4
-	float minfac 40 4
-	float damp 44 4
-	float timeoffs 48 4
-	float lifetime 52 4
-
-TreeStoreElem 12
-
-	short type 0 2
-	short nr 2 2
-	short flag 4 2
-	short used 6 2
-	ID *id 8 4
-
-TreeStore 12
-
-	int totelem 0 4
-	int usedelem 4 4
-	TreeStoreElem *data 8 4
-
-Oops 44
-
-	Oops *next 0 4
-	Oops *prev 4 4
-	short type 8 2
-	short flag 10 2
-	short dt 12 2
-	short hide 14 2
-	float x 16 4
-	float y 20 4
-	float dx 24 4
-	float dy 28 4
-	ID *id 32 4
-	ListBase link 36 8
 =======
 
 SequenceModifierData 96
@@ -7119,27 +7046,12 @@ HueCorrectModifierData 368
 	CurveMapping curve_mapping 96 272
 
 BrightContrastModifierData 104
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
 
 	SequenceModifierData modifier 0 96
 	float bright 96 4
 	float contrast 100 4
 
-<<<<<<< HEAD
-	bProperty *next 0 4
-	bProperty *prev 4 4
-	char name 8 32
-	short type 40 2
-	short otype 42 2
-	int data 44 4
-	int old 48 4
-	short flag 52 2
-	short pad 54 2
-	void *poin 56 4
-	void *oldpoin 60 4
-=======
 SequencerScopes 24
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
 
 	ImBuf *reference_ibuf 0 4
 	ImBuf *zebra_ibuf 4 4
@@ -7147,6 +7059,7 @@ SequencerScopes 24
 	ImBuf *sep_waveform_ibuf 12 4
 	ImBuf *vector_ibuf 16 4
 	ImBuf *histogram_ibuf 20 4
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 Effect 16
 
@@ -7159,14 +7072,6 @@ Effect 16
 
 BuildEff 24
 
-<<<<<<< HEAD
-bTouchSensor 44
-
-	char name 0 32
-	Material *ma 32 4
-	float dist 36 4
-	float pad 40 4
-=======
 	BuildEff *next 0 4
 	BuildEff *prev 4 4
 	short type 8 2
@@ -7176,8 +7081,11 @@ bTouchSensor 44
 	float len 16 4
 	float sfra 20 4
 
+<<<<<<< HEAD
+PartEff 312
+=======
 PartEff 376
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	PartEff *next 0 4
 	PartEff *prev 4 4
@@ -7219,11 +7127,19 @@ PartEff 376
 	short flag2neg 170 2
 	short disp 172 2
 	short vertgroup_v 174 2
+<<<<<<< HEAD
+	char vgroupname 176 32
+	char vgroupname_v 208 32
+	float imat 240 64
+	Particle *keys 304 4
+	Group *group 308 4
+=======
 	char vgroupname 176 64
 	char vgroupname_v 240 64
 	float imat 304 64
 	Particle *keys 368 4
 	Group *group 372 4
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 WaveEff 56
 
@@ -7258,6 +7174,44 @@ TreeStore 12
 	int usedelem 4 4
 	TreeStoreElem *data 8 4
 
+<<<<<<< HEAD
+Oops 44
+
+	Oops *next 0 4
+	Oops *prev 4 4
+	short type 8 2
+	short flag 10 2
+	short dt 12 2
+	short hide 14 2
+	float x 16 4
+	float y 20 4
+	float dx 24 4
+	float dy 28 4
+	ID *id 32 4
+	ListBase link 36 8
+
+bProperty 64
+
+	bProperty *next 0 4
+	bProperty *prev 4 4
+	char name 8 32
+	short type 40 2
+	short otype 42 2
+	int data 44 4
+	int old 48 4
+	short flag 52 2
+	short pad 54 2
+	void *poin 56 4
+	void *oldpoin 60 4
+
+bNearSensor 48
+
+	char name 0 32
+	float dist 32 4
+	float resetdist 36 4
+	int lastval 40 4
+	int pad 44 4
+=======
 bProperty 84
 
 	bProperty *next 0 4
@@ -7275,6 +7229,7 @@ bNearSensor 80
 	float resetdist 68 4
 	int lastval 72 4
 	int pad 76 4
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 bMouseSensor 8
 
@@ -7283,6 +7238,16 @@ bMouseSensor 8
 	short pad1 4 2
 	short pad2 6 2
 
+<<<<<<< HEAD
+bTouchSensor 44
+
+	char name 0 32
+	Material *ma 32 4
+	float dist 36 4
+	float pad 40 4
+
+bKeyboardSensor 72
+=======
 bTouchSensor 76
 
 	char name 0 64
@@ -7291,11 +7256,30 @@ bTouchSensor 76
 	float pad 72 4
 
 bKeyboardSensor 136
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	short key 0 2
 	short qual 2 2
 	short type 4 2
 	short qual2 6 2
+<<<<<<< HEAD
+	char targetName 8 32
+	char toggleName 40 32
+
+bPropertySensor 104
+
+	int type 0 4
+	int pad 4 4
+	char name 8 32
+	char value 40 32
+	char maxvalue 72 32
+
+bActuatorSensor 40
+
+	int type 0 4
+	int pad 4 4
+	char name 8 32
+=======
 	char targetName 8 64
 	char toggleName 72 64
 
@@ -7312,6 +7296,7 @@ bActuatorSensor 72
 	int type 0 4
 	int pad 4 4
 	char name 8 64
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 bDelaySensor 8
 
@@ -7320,6 +7305,48 @@ bDelaySensor 8
 	short flag 4 2
 	short pad 6 2
 
+<<<<<<< HEAD
+bCollisionSensor 72
+
+	char name 0 32
+	char materialName 32 32
+	short damptimer 64 2
+	short damp 66 2
+	short mode 68 2
+	short pad2 70 2
+
+bRadarSensor 44
+
+	char name 0 32
+	float angle 32 4
+	float range 36 4
+	short flag 40 2
+	short axis 42 2
+
+bRandomSensor 40
+
+	char name 0 32
+	int seed 32 4
+	int delay 36 4
+
+bRaySensor 108
+
+	char name 0 32
+	float range 32 4
+	char propname 36 32
+	char matname 68 32
+	short mode 100 2
+	short pad1 102 2
+	int axisflag 104 4
+
+bMessageSensor 68
+
+	Object *fromObject 0 4
+	char subject 4 32
+	char body 36 32
+
+bSensor 76
+=======
 bCollisionSensor 136
 
 	char name 0 64
@@ -7353,16 +7380,6 @@ bRaySensor 204
 	short pad1 198 2
 	int axisflag 200 4
 
-<<<<<<< HEAD
-bMessageSensor 68
-
-	Object *fromObject 0 4
-	char subject 4 32
-	char body 36 32
-
-bSensor 76
-
-=======
 bArmatureSensor 136
 
 	char posechannel 0 64
@@ -7377,8 +7394,8 @@ bMessageSensor 132
 	char body 68 64
 
 bSensor 108
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
 	bSensor *next 0 4
 	bSensor *prev 4 4
 	short type 8 2
@@ -7435,7 +7452,7 @@ bJoystickSensor 92
 	int hat 80 4
 	int hatf 84 4
 	int precision 88 4
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 bExpressionCont 128
 
@@ -7447,15 +7464,13 @@ bPythonCont 76
 	char module 4 64
 	int mode 68 4
 	int flag 72 4
+
 <<<<<<< HEAD
-
 bController 80
-
 =======
-
 bController 112
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
 	bController *next 0 4
 	bController *prev 4 4
 	bController *mynew 8 4
@@ -7483,7 +7498,7 @@ bController 112
 	short val 104 2
 	short valo 106 2
 	int state_mask 108 4
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 bAddObjectActuator 12
 
@@ -7495,7 +7510,7 @@ bAddObjectActuator 12
 bActionActuator 92
 =======
 bActionActuator 164
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	bAction *act 0 4
 	short type 4 2
@@ -7512,6 +7527,29 @@ bActionActuator 164
 	float stridelength 88 4
 
 bSoundActuator 28
+
+	short flag 0 2
+	short sndnr 2 2
+	int sta 4 4
+	int end 8 4
+	short pad1 12 4
+	bSound *sound 16 4
+	short type 20 2
+	short makecopy 22 2
+	short copymade 24 2
+	short pad2 26 2
+
+bCDActuator 20
+
+	short flag 0 2
+	short sndnr 2 2
+	int sta 4 4
+	int end 8 4
+	short type 12 2
+	short track 14 2
+	float volume 16 4
+
+bEditObjectActuator 80
 =======
 	float sta 8 4
 	float end 12 4
@@ -7538,32 +7576,13 @@ Sound3D 32
 	float cone_outer_gain 28 4
 
 bSoundActuator 68
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
 
 	short flag 0 2
 	short sndnr 2 2
-	int sta 4 4
-	int end 8 4
-	short pad1 12 4
-	bSound *sound 16 4
-	short type 20 2
-	short makecopy 22 2
-	short copymade 24 2
-	short pad2 26 2
-
-bCDActuator 20
-
-	short flag 0 2
-	short sndnr 2 2
-	int sta 4 4
-	int end 8 4
-	short type 12 2
-	short track 14 2
+	int pad1 4 4
+	int pad2 8 4
+	short pad3 12 4
 	float volume 16 4
-<<<<<<< HEAD
-
-bEditObjectActuator 80
-=======
 	float pitch 20 4
 	bSound *sound 24 4
 	Sound3D sound3D 28 32
@@ -7573,7 +7592,7 @@ bEditObjectActuator 80
 	short pad6 66 2
 
 bEditObjectActuator 112
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	int time 0 4
 	short type 4 2
@@ -7594,33 +7613,37 @@ bEditObjectActuator 112
 	float mass 104 4
 	short localflag 108 2
 	short dyn_operation 110 2
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 bSceneActuator 16
 
 	short type 0 2
+<<<<<<< HEAD
 	short flag 2 2
+=======
+	short pad1 2 2
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 	int pad 4 4
 	Scene *scene 8 4
 	Object *camera 12 4
 
 <<<<<<< HEAD
 bPropertyActuator 76
-=======
-bPropertyActuator 140
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
 
 	int flag 0 4
 	int type 4 4
-<<<<<<< HEAD
 	char name 8 32
 	char value 40 32
 	Object *ob 72 4
 =======
+bPropertyActuator 140
+
+	int pad 0 4
+	int type 4 4
 	char name 8 64
 	char value 72 64
 	Object *ob 136 4
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 bObjectActuator 108
 
@@ -7630,19 +7653,24 @@ bObjectActuator 108
 	short damping 6 2
 	float forceloc 8 12
 	float forcerot 20 12
+<<<<<<< HEAD
 	float loc 32 12
 	float rot 44 12
+=======
+	float pad 32 12
+	float pad1 44 12
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 	float dloc 56 12
 	float drot 68 12
 	float linearvelocity 80 12
 	float angularvelocity 92 12
 	Object *reference 104 4
 
-bIpoActuator 148
+<<<<<<< HEAD
+bIpoActuator 84
 
 	short flag 0 2
 	short type 2 2
-<<<<<<< HEAD
 	int sta 4 4
 	int end 8 4
 	char name 12 32
@@ -7652,6 +7680,10 @@ bIpoActuator 148
 	short butsta 80 2
 	short butend 82 2
 =======
+bIpoActuator 148
+
+	short flag 0 2
+	short type 2 2
 	float sta 4 4
 	float end 8 4
 	char name 12 64
@@ -7660,7 +7692,7 @@ bIpoActuator 148
 	short pad2 142 2
 	short pad3 144 2
 	short pad4 146 2
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 bCameraActuator 28
 
@@ -7682,7 +7714,7 @@ bConstraintActuator 96
 	float pad2 24 4
 
 bConstraintActuator 128
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	short type 0 2
 	short mode 2 2
@@ -7695,13 +7727,15 @@ bConstraintActuator 128
 	float maxloc 28 12
 	float minrot 40 12
 	float maxrot 52 12
-	char matprop 64 64
-
 <<<<<<< HEAD
+	char matprop 64 32
+
 bGroupActuator 60
 =======
+	char matprop 64 64
+
 bGroupActuator 88
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	short flag 0 2
 	short type 2 2
@@ -7714,15 +7748,17 @@ bGroupActuator 88
 	short butsta 52 2
 	short butend 54 2
 	Group *group 56 4
+
+bRandomActuator 56
 =======
 	char name 12 64
 	short pad 76 6
 	short cur 82 2
 	short butsta 84 2
 	short butend 86 2
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
 
 bRandomActuator 88
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	int seed 0 4
 	int distribution 4 4
@@ -7730,9 +7766,9 @@ bRandomActuator 88
 	int int_arg_2 12 4
 	float float_arg_1 16 4
 	float float_arg_2 20 4
-	char propname 24 64
-
 <<<<<<< HEAD
+	char propname 24 32
+
 bMessageActuator 108
 
 	char toPropName 0 32
@@ -7743,6 +7779,8 @@ bMessageActuator 108
 	int pad2 72 4
 	char body 76 32
 =======
+	char propname 24 64
+
 bMessageActuator 204
 
 	char toPropName 0 64
@@ -7752,7 +7790,7 @@ bMessageActuator 204
 	short pad1 134 2
 	int pad2 136 4
 	char body 140 64
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 bGameActuator 140
 
@@ -7817,6 +7855,7 @@ bSteeringActuator 40
 	Object *navmesh 36 4
 
 bActuator 92
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	bActuator *next 0 4
 	bActuator *prev 4 4
@@ -7825,122 +7864,11 @@ bActuator 92
 	short flag 14 2
 	short otype 16 2
 	short go 18 2
-	char name 20 64
-	void *data 84 4
-	Object *ob 88 4
-
-bSound 1184
-
-	ID id 0 100
-	char name 100 1024
-	PackedFile *packedfile 1124 4
-	void *handle 1128 4
-	PackedFile *newpackedfile 1132 4
-	Ipo *ipo 1136 4
-	float volume 1140 4
-	float attenuation 1144 4
-	float pitch 1148 4
-	float min_gain 1152 4
-	float max_gain 1156 4
-	float distance 1160 4
-	int flags 1164 4
-	int pad 1168 4
-	void *cache 1172 4
-	void *waveform 1176 4
-	void *playback_handle 1180 4
-
-GroupObject 24
-
-	GroupObject *next 0 4
-	GroupObject *prev 4 4
-	Object *ob 8 4
-	void *lampren 12 4
-	short recalc 16 2
-	char pad 18 6
-
-Group 124
-
-	ID id 0 100
-	ListBase gobject 100 8
-	int layer 108 4
-	float dupli_ofs 112 12
-
-Bone 304
-
-	Bone *next 0 4
-	Bone *prev 4 4
-	IDProperty *prop 8 4
-	Bone *parent 12 4
-	ListBase childbase 16 8
-	char name 24 64
-	float roll 88 4
-	float head 92 12
-	float tail 104 12
-	float bone_mat 116 36
-	int flag 152 4
-	float arm_head 156 12
-	float arm_tail 168 12
-	float arm_mat 180 64
-	float arm_roll 244 4
-	float dist 248 4
-	float weight 252 4
-	float xwidth 256 4
-	float length 260 4
-	float zwidth 264 4
-	float ease1 268 4
-	float ease2 272 4
-	float rad_head 276 4
-	float rad_tail 280 4
-	float size 284 12
-	int layer 296 4
-	short segments 300 2
-	short pad 302 2
-
-bArmature 200
-
-	ID id 0 100
-	AnimData *adt 100 4
-	ListBase bonebase 104 8
-	ListBase chainbase 112 8
-	ListBase *edbo 120 4
-	Bone *act_bone 124 4
-	void *act_edbone 128 4
-	void *sketch 132 4
-	int flag 136 4
-	int drawtype 140 4
-	int gevertdeformer 144 4
-	int pad 148 4
-	short deformflag 152 2
-	short pathflag 154 2
-	int layer_used 156 4
-	int layer 160 4
-	int layer_protected 164 4
-	short ghostep 168 2
-	short ghostsize 170 2
-	short ghosttype 172 2
-	short pathsize 174 2
-	int ghostsf 176 4
-	int ghostef 180 4
-	int pathsf 184 4
-	int pathef 188 4
-	int pathbc 192 4
-	int pathac 196 4
-
-bMotionPathVert 16
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
-
-	bActuator *next 0 4
-	bActuator *prev 4 4
-	bActuator *mynew 8 4
-	short type 12 2
-	short flag 14 2
-	short otype 16 2
-	short go 18 2
+<<<<<<< HEAD
 	char name 20 32
 	void *data 52 4
 	Object *ob 56 4
 
-<<<<<<< HEAD
 FreeCamera 40
 
 	float mass 0 4
@@ -8002,6 +7930,31 @@ SpaceSound 176
 	short flag 168 2
 	short lock 170 2
 	int pad2 172 4
+=======
+	char name 20 64
+	void *data 84 4
+	Object *ob 88 4
+
+bSound 1184
+
+	ID id 0 100
+	char name 100 1024
+	PackedFile *packedfile 1124 4
+	void *handle 1128 4
+	PackedFile *newpackedfile 1132 4
+	Ipo *ipo 1136 4
+	float volume 1140 4
+	float attenuation 1144 4
+	float pitch 1148 4
+	float min_gain 1152 4
+	float max_gain 1156 4
+	float distance 1160 4
+	int flags 1164 4
+	int pad 1168 4
+	void *cache 1172 4
+	void *waveform 1176 4
+	void *playback_handle 1180 4
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 GroupObject 24
 
@@ -8009,6 +7962,7 @@ GroupObject 24
 	GroupObject *prev 4 4
 	Object *ob 8 4
 	void *lampren 12 4
+<<<<<<< HEAD
 	int recalc 16 4
 	int pad 20 4
 
@@ -8119,17 +8073,83 @@ bPose 56
 	int pad 52 4
 
 bActionGroup 72
-
-	bActionGroup *next 0 4
-	bActionGroup *prev 4 4
-	ListBase channels 8 8
-	int flag 16 4
-	int customCol 20 4
-	char name 24 32
-	ThemeWireColor cs 56 16
-
-bActionChannel 64
 =======
+	short recalc 16 2
+	char pad 18 6
+
+Group 124
+
+	ID id 0 100
+	ListBase gobject 100 8
+	int layer 108 4
+	float dupli_ofs 112 12
+
+Bone 304
+
+	Bone *next 0 4
+	Bone *prev 4 4
+	IDProperty *prop 8 4
+	Bone *parent 12 4
+	ListBase childbase 16 8
+	char name 24 64
+	float roll 88 4
+	float head 92 12
+	float tail 104 12
+	float bone_mat 116 36
+	int flag 152 4
+	float arm_head 156 12
+	float arm_tail 168 12
+	float arm_mat 180 64
+	float arm_roll 244 4
+	float dist 248 4
+	float weight 252 4
+	float xwidth 256 4
+	float length 260 4
+	float zwidth 264 4
+	float ease1 268 4
+	float ease2 272 4
+	float rad_head 276 4
+	float rad_tail 280 4
+	float size 284 12
+	int layer 296 4
+	short segments 300 2
+	short pad 302 2
+
+bArmature 200
+
+	ID id 0 100
+	AnimData *adt 100 4
+	ListBase bonebase 104 8
+	ListBase chainbase 112 8
+	ListBase *edbo 120 4
+	Bone *act_bone 124 4
+	void *act_edbone 128 4
+	void *sketch 132 4
+	int flag 136 4
+	int drawtype 140 4
+	int gevertdeformer 144 4
+	int pad 148 4
+	short deformflag 152 2
+	short pathflag 154 2
+	int layer_used 156 4
+	int layer 160 4
+	int layer_protected 164 4
+	short ghostep 168 2
+	short ghostsize 170 2
+	short ghosttype 172 2
+	short pathsize 174 2
+	int ghostsf 176 4
+	int ghostef 180 4
+	int pathsf 184 4
+	int pathef 188 4
+	int pathbc 192 4
+	int pathac 196 4
+
+bMotionPathVert 16
+
+	float co 0 12
+	int flag 12 4
+
 bMotionPath 20
 
 	bMotionPathVert *points 0 4
@@ -8239,12 +8259,19 @@ bItasc 40
 	float dampeps 36 4
 
 bActionGroup 104
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	bActionGroup *next 0 4
 	bActionGroup *prev 4 4
 	ListBase channels 8 8
 	int flag 16 4
 	int customCol 20 4
+<<<<<<< HEAD
+	char name 24 32
+	ThemeWireColor cs 56 16
+
+bActionChannel 64
+=======
 	char name 24 64
 	ThemeWireColor cs 88 16
 
@@ -8288,7 +8315,7 @@ SpaceAction 296
 	float timeslide 292 4
 
 bActionChannel 96
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	bActionChannel *next 0 4
 	bActionChannel *prev 4 4
@@ -8330,7 +8357,7 @@ SpaceAction 192
 =======
 	char name 28 64
 	int temp 92 4
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 bConstraintChannel 44
 
@@ -8344,7 +8371,7 @@ bConstraintChannel 44
 bConstraint 64
 =======
 bConstraint 104
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	bConstraint *next 0 4
 	bConstraint *prev 4 4
@@ -8371,7 +8398,7 @@ bConstraintTarget 116
 	float rot_error 100 4
 
 bConstraintTarget 148
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	bConstraintTarget *next 0 4
 	bConstraintTarget *prev 4 4
@@ -8385,33 +8412,6 @@ bConstraintTarget 148
 	short pad 114 2
 
 bPythonConstraint 60
-
-	Text *text 0 4
-	IDProperty *prop 4 4
-	int flag 8 4
-	int tarnum 12 4
-	ListBase targets 16 8
-	Object *tar 24 4
-	char subtarget 28 32
-
-bKinematicConstraint 104
-
-	Object *tar 0 4
-	short iterations 4 2
-	short flag 6 2
-	short rootbone 8 2
-	short max_rootbone 10 2
-	char subtarget 12 32
-	Object *poletar 44 4
-	char polesubtarget 48 32
-	float poleangle 80 4
-	float weight 84 4
-	float orientweight 88 4
-	float grabtarget 92 12
-
-bTrackToConstraint 52
-
-	Object *tar 0 4
 =======
 	char subtarget 12 64
 	float matrix 76 64
@@ -8421,6 +8421,7 @@ bTrackToConstraint 52
 	short rotOrder 146 2
 
 bPythonConstraint 92
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	Text *text 0 4
 	IDProperty *prop 4 4
@@ -8428,15 +8429,32 @@ bPythonConstraint 92
 	int tarnum 12 4
 	ListBase targets 16 8
 	Object *tar 24 4
+<<<<<<< HEAD
+	char subtarget 28 32
+
+bKinematicConstraint 104
+=======
 	char subtarget 28 64
 
 bKinematicConstraint 176
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	Object *tar 0 4
 	short iterations 4 2
 	short flag 6 2
 	short rootbone 8 2
 	short max_rootbone 10 2
+<<<<<<< HEAD
+	char subtarget 12 32
+	Object *poletar 44 4
+	char polesubtarget 48 32
+	float poleangle 80 4
+	float weight 84 4
+	float orientweight 88 4
+	float grabtarget 92 12
+
+bTrackToConstraint 52
+=======
 	char subtarget 12 64
 	Object *poletar 76 4
 	char polesubtarget 80 64
@@ -8458,9 +8476,9 @@ bSplineIKConstraint 16
 	short xzScaleMode 14 2
 
 bTrackToConstraint 84
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	Object *tar 0 4
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
 	int reserved1 4 4
 	int reserved2 8 4
 	int flags 12 4
@@ -8473,21 +8491,29 @@ bRotateLikeConstraint 44
 	char subtarget 20 64
 
 bRotateLikeConstraint 76
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	Object *tar 0 4
 	int flag 4 4
 	int reserved1 8 4
 <<<<<<< HEAD
 	char subtarget 12 32
+
+bLocateLikeConstraint 44
 =======
 	char subtarget 12 64
 
 bLocateLikeConstraint 76
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	Object *tar 0 4
 	int flag 4 4
 	int reserved1 8 4
+<<<<<<< HEAD
+	char subtarget 12 32
+
+bMinMaxConstraint 68
+=======
 	char subtarget 12 64
 
 bSizeLikeConstraint 76
@@ -8496,17 +8522,19 @@ bSizeLikeConstraint 76
 	int flag 4 4
 	int reserved1 8 4
 	char subtarget 12 64
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
 
-bLocateLikeConstraint 44
+bSameVolumeConstraint 8
+
+	int flag 0 4
+	float volume 4 4
+
+bTransLikeConstraint 68
 
 	Object *tar 0 4
-	int flag 4 4
-	int reserved1 8 4
-	char subtarget 12 32
+	char subtarget 4 64
 
-<<<<<<< HEAD
-bMinMaxConstraint 68
+bMinMaxConstraint 100
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	Object *tar 0 4
 	int minmaxflag 4 4
@@ -8517,6 +8545,7 @@ bMinMaxConstraint 68
 	short pad1 20 2
 	short pad2 22 2
 	float cache 24 12
+<<<<<<< HEAD
 	char subtarget 36 32
 
 bSizeLikeConstraint 44
@@ -8528,26 +8557,10 @@ bSizeLikeConstraint 44
 
 bActionConstraint 64
 =======
-bTransLikeConstraint 68
-
-	Object *tar 0 4
-	char subtarget 4 64
-
-bMinMaxConstraint 100
-
-	Object *tar 0 4
-	int minmaxflag 4 4
-	float offset 8 4
-	int flag 12 4
-	short sticky 16 2
-	short stuck 18 2
-	short pad1 20 2
-	short pad2 22 2
-	float cache 24 12
 	char subtarget 36 64
 
 bActionConstraint 96
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	Object *tar 0 4
 	short type 4 2
@@ -8568,57 +8581,13 @@ bLockTrackConstraint 44
 	char subtarget 32 64
 
 bLockTrackConstraint 76
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	Object *tar 0 4
 	int trackflag 4 4
 	int lockflag 8 4
 <<<<<<< HEAD
 	char subtarget 12 32
-
-bFollowPathConstraint 20
-
-	Object *tar 0 4
-	float offset 4 4
-	int followflag 8 4
-	int trackflag 12 4
-	int upflag 16 4
-
-bStretchToConstraint 52
-
-	Object *tar 0 4
-	int volmode 4 4
-	int plane 8 4
-	float orglength 12 4
-	float bulge 16 4
-	char subtarget 20 32
-
-bRigidBodyJointConstraint 96
-
-	Object *tar 0 4
-	Object *child 4 4
-	int type 8 4
-	float pivX 12 4
-	float pivY 16 4
-	float pivZ 20 4
-	float axX 24 4
-	float axY 28 4
-	float axZ 32 4
-	float minLimit 36 24
-	float maxLimit 60 24
-	float extraFz 84 4
-	short flag 88 2
-	short pad 90 2
-	short pad1 92 2
-	short pad2 94 2
-
-bClampToConstraint 12
-
-	Object *tar 0 4
-	int flag 4 4
-	int flag2 8 4
-
-bChildOfConstraint 108
 =======
 	char subtarget 12 64
 
@@ -8628,24 +8597,37 @@ bDampTrackConstraint 76
 	int trackflag 4 4
 	int pad 8 4
 	char subtarget 12 64
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 bFollowPathConstraint 20
 
 	Object *tar 0 4
 	float offset 4 4
+<<<<<<< HEAD
+	int followflag 8 4
+	int trackflag 12 4
+	int upflag 16 4
+
+bStretchToConstraint 52
+=======
 	float offset_fac 8 4
 	int followflag 12 4
 	short trackflag 16 2
 	short upflag 18 2
 
 bStretchToConstraint 84
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	Object *tar 0 4
 	int volmode 4 4
 	int plane 8 4
 	float orglength 12 4
 	float bulge 16 4
+<<<<<<< HEAD
+	char subtarget 20 32
+=======
 	char subtarget 20 64
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 bRigidBodyJointConstraint 96
 
@@ -8672,8 +8654,11 @@ bClampToConstraint 12
 	int flag 4 4
 	int flag2 8 4
 
+<<<<<<< HEAD
+bChildOfConstraint 108
+=======
 bChildOfConstraint 140
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	Object *tar 0 4
 	int flag 4 4
@@ -8717,7 +8702,7 @@ bPivotConstraint 84
 	float offset 68 12
 	short rotAxis 80 2
 	short flag 82 2
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 bLocLimitConstraint 28
 
@@ -8772,7 +8757,7 @@ bDistLimitConstraint 84
 	short flag 76 2
 	short mode 78 2
 	int pad 80 4
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 bShrinkwrapConstraint 20
 
@@ -8783,8 +8768,6 @@ bShrinkwrapConstraint 20
 	char pad 11 9
 
 <<<<<<< HEAD
-bActionModifier 60
-
 =======
 bFollowTrackConstraint 148
 
@@ -8811,9 +8794,9 @@ bObjectSolverConstraint 144
 	float invmat 76 64
 	Object *camera 140 4
 
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 bActionModifier 60
 
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
 	bActionModifier *next 0 4
 	bActionModifier *prev 4 4
 	short type 8 2
@@ -8854,7 +8837,7 @@ bActionStrip 140
 bNodeStack 36
 =======
 bNodeStack 44
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	float vec 0 16
 	float min 16 4
@@ -8873,7 +8856,7 @@ bNodeSocket 120
 	short pad 40 4
 
 bNodeSocket 172
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	bNodeSocket *next 0 4
 	bNodeSocket *prev 4 4
@@ -8924,7 +8907,7 @@ bNodePreview 12
 	int pad 8 4
 
 bNode 324
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	bNode *next 0 4
 	bNode *prev 4 4
@@ -9004,7 +8987,7 @@ bNodeLink 24
 	bNodeType *typeinfo 320 4
 
 bNodeLink 32
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	bNodeLink *next 0 4
 	bNodeLink *prev 4 4
@@ -9104,7 +9087,7 @@ NodeFrame 4
 
 	short flag 0 2
 	short label_size 2 2
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 NodeImageAnim 16
 
@@ -9115,6 +9098,8 @@ NodeImageAnim 16
 	char movie 13 1
 	short pad 14 2
 
+<<<<<<< HEAD
+=======
 ColorCorrectionData 24
 
 	float saturation 0 4
@@ -9164,6 +9149,7 @@ NodeImageLayer 8
 	int pass_index 0 4
 	int pass_flag 4 4
 
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 NodeBlurData 40
 
 	short sizex 0 2
@@ -9172,6 +9158,7 @@ NodeBlurData 40
 	short maxspeed 6 2
 	short minspeed 8 2
 	short relative 10 2
+<<<<<<< HEAD
 	float fac 12 4
 	float percentx 16 4
 	float percenty 20 4
@@ -9180,6 +9167,16 @@ NodeBlurData 40
 	char gamma 27 1
 	short curved 28 2
 	short pad 30 2
+=======
+	short aspect 12 2
+	short curved 14 2
+	float fac 16 4
+	float percentx 20 4
+	float percenty 24 4
+	short filtertype 28 2
+	char bokeh 30 1
+	char gamma 31 1
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 	int image_in_width 32 4
 	int image_in_height 36 4
 
@@ -9208,6 +9205,19 @@ NodeHueSat 12
 	float sat 4 4
 	float val 8 4
 
+<<<<<<< HEAD
+NodeImageFile 272
+
+	char name 0 256
+	short imtype 256 2
+	short subimtype 258 2
+	short quality 260 2
+	short codec 262 2
+	int sfra 264 4
+	int efra 268 4
+
+NodeChroma 40
+=======
 NodeImageFile 1208
 
 	char name 0 1024
@@ -9234,7 +9244,8 @@ NodeImageMultiFileSocket 1240
 	char layer 1208 30
 	char pad2 1238 2
 
-NodeChroma 40
+NodeChroma 44
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	float t1 0 4
 	float t2 4 4
@@ -9243,19 +9254,48 @@ NodeChroma 40
 	float fstrength 16 4
 	float falpha 20 4
 	float key 24 16
+<<<<<<< HEAD
 
 NodeTwoXYs 8
+=======
+	short algorithm 40 2
+	short channel 42 2
+
+NodeTwoXYs 24
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	short x1 0 2
 	short x2 2 2
 	short y1 4 2
 	short y2 6 2
+<<<<<<< HEAD
+=======
+	float fac_x1 8 4
+	float fac_x2 12 4
+	float fac_y1 16 4
+	float fac_y2 20 4
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 NodeTwoFloats 8
 
 	float x 0 4
 	float y 4 4
 
+<<<<<<< HEAD
+NodeGeometry 64
+
+	char uvname 0 32
+	char colname 32 32
+
+NodeVertexCol 32
+
+	char name 0 32
+
+NodeDefocus 24
+
+	char bktype 0 1
+	char rotation 1 1
+=======
 NodeGeometry 128
 
 	char uvname 0 64
@@ -9269,6 +9309,7 @@ NodeDefocus 32
 
 	char bktype 0 1
 	char pad_c1 1 1
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 	char preview 2 1
 	char gamco 3 1
 	short samples 4 2
@@ -9277,29 +9318,43 @@ NodeDefocus 32
 	float maxblur 12 4
 	float bthresh 16 4
 	float scale 20 4
+<<<<<<< HEAD
+=======
 	float rotation 24 4
 	float pad_f1 28 4
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 NodeScriptDict 8
 
 	void *dict 0 4
 	void *node 4 4
 
+<<<<<<< HEAD
+NodeGlare 24
+=======
 NodeGlare 32
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	char quality 0 1
 	char type 1 1
 	char iter 2 1
 	char angle 3 1
+<<<<<<< HEAD
+	char angle_ofs 4 1
+=======
 	char pad_c1 4 1
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 	char size 5 1
 	char pad 6 2
 	float colmod 8 4
 	float mix 12 4
 	float threshold 16 4
 	float fade 20 4
+<<<<<<< HEAD
+=======
 	float angle_ofs 24 4
 	float pad_f1 28 4
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 NodeTonemap 32
 
@@ -9321,6 +9376,8 @@ NodeLensDist 8
 
 <<<<<<< HEAD
 TexNodeOutput 32
+
+	char name 0 32
 =======
 NodeColorBalance 96
 
@@ -9438,7 +9495,6 @@ NodeKeyingScreenData 64
 	char tracking_object 0 64
 
 NodeKeyingData 48
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
 
 	float screen_balance 0 4
 	float despill_factor 4 4
@@ -9483,6 +9539,7 @@ NodeShaderNormalMap 68
 
 	int space 0 4
 	char uv_map 4 64
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 CurveMapPoint 12
 
@@ -9585,7 +9642,7 @@ ColorManagedDisplaySettings 64
 ColorManagedColorspaceSettings 64
 
 	char name 0 64
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 BrushClone 20
 
@@ -9653,7 +9710,7 @@ Brush 1584
 	float sub_col 1572 12
 
 CustomDataLayer 100
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	int type 0 4
 	int offset 4 4
@@ -9693,7 +9750,7 @@ CustomData 172
 	int totsize 160 4
 	void *pool 164 4
 	CustomDataExternal *external 168 4
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 HairKey 24
 
@@ -9729,7 +9786,7 @@ ParticleSpring 16
 	int delete_flag 12 4
 
 ChildParticle 64
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	int num 0 4
 	int parent 4 4
@@ -10085,7 +10142,7 @@ ParticleSettings 648
 	PartDeflect *pd2 644 4
 
 ParticleSystem 536
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	ParticleSystem *next 0 4
 	ParticleSystem *prev 4 4
@@ -10097,7 +10154,7 @@ ParticleSystem 536
 =======
 	PTCacheEdit *edit 20 4
 	void (*free_edit)() 24 0
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 	ParticleCacheKey **pathcache 24 4
 	ParticleCacheKey **childcache 28 4
 	ListBase pathcachebufs 32 8
@@ -10176,7 +10233,7 @@ ClothSimSettings 132
 	float _pad 532 4
 
 ClothSimSettings 144
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	LinkNode *cache 0 4
 	float mingoal 4 4
@@ -10252,7 +10309,7 @@ ClothCollSettings 28
 	EffectorWeights *effector_weights 140 4
 
 ClothCollSettings 48
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	LinkNode *collision_list 0 4
 	float epsilon 4 4
@@ -10277,42 +10334,35 @@ bGPDspoint 16
 	int pad2 44 4
 
 bGPDspoint 20
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	float x 0 4
 	float y 4 4
 	float z 8 4
 	float pressure 12 4
+<<<<<<< HEAD
+
+bGPDstroke 20
+=======
 	float time 16 4
 
-<<<<<<< HEAD
-bGPDstroke 20
+bGPDstroke 32
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 	bGPDstroke *next 0 4
 	bGPDstroke *prev 4 4
 	bGPDspoint *points 8 4
+<<<<<<< HEAD
 	int totpoints 12 4
 	short thickness 16 2
 	short flag 18 2
-
-bGPDframe 24
-
-	bGPDframe *next 0 4
-	bGPDframe *prev 4 4
-	ListBase strokes 8 8
-	int framenum 16 4
-	int flag 20 4
 =======
-bGPDstroke 32
-
-	bGPDstroke *next 0 4
-	bGPDstroke *prev 4 4
-	bGPDspoint *points 8 4
 	void *pad 12 4
 	int totpoints 16 4
 	short thickness 20 2
 	short flag 22 2
 	double inittime 24 8
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 bGPDframe 24
 
@@ -10334,6 +10384,15 @@ bGPDlayer 172
 	float color 28 16
 	char info 44 128
 
+<<<<<<< HEAD
+bGPdata 20
+
+	ListBase layers 0 8
+	int flag 8 4
+	short sbuffer_size 12 2
+	short sbuffer_sflag 14 2
+	void *sbuffer 16 4
+=======
 bGPdata 120
 
 	ID id 0 100
@@ -10500,29 +10559,16 @@ FMod_Generator 20
 	int poly_order 8 4
 	int mode 12 4
 	int flag 16 4
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
 
-bGPDlayer 172
+FMod_FunctionGenerator 24
 
-	bGPDlayer *next 0 4
-	bGPDlayer *prev 4 4
-	ListBase frames 8 8
-	bGPDframe *actframe 16 4
+	float amplitude 0 4
+	float phase_multiplier 4 4
+	float phase_offset 8 4
+	float value_offset 12 4
+	int type 16 4
 	int flag 20 4
-	short thickness 24 2
-	short gstep 26 2
-	float color 28 16
-	char info 44 128
 
-<<<<<<< HEAD
-bGPdata 20
-
-	ListBase layers 0 8
-	int flag 8 4
-	short sbuffer_size 12 2
-	short sbuffer_sflag 14 2
-	void *sbuffer 16 4
-=======
 FCM_EnvelopeData 16
 
 	float min 0 4
@@ -11386,5 +11432,5 @@ RigidBodyCon 100
 	float spring_damping_y 88 4
 	float spring_damping_z 92 4
 	void *physics_constraint 96 4
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 

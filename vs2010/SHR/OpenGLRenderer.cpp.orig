@@ -58,16 +58,18 @@ int Renderer::Init()
 	//// Temporary assimp support
 	//if (!ctxt->aManager->Import3DFromFile("./../../Models/edificio.3ds")) 
 	//	return 0;
-=======
-	// Temporary assimp support
-	if (!ctxt->aManager->Import3DFromFile("./../../models/estrella.3ds")) 
-		return 0;
->>>>>>> 7b13f41236e6d136d681970e25b920df2deb0a28
 
 	//ctxt->aManager->logInfo("=============== Post Import ====================");
 
 	//initShader("vertex.vs","fragment.frag");
-	scene = new shrMeshLoader("./../../Models/test.blend");
+	scene = new shrMeshLoader("./../../Models/edificio.3ds");
+=======
+	// Temporary assimp support
+	if (!ctxt->aManager->Import3DFromFile("./../../models/estrella.3ds")) 
+		return 0;
+
+	ctxt->aManager->logInfo("=============== Post Import ====================");
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
     return 0;
 }
@@ -125,6 +127,7 @@ int Renderer::Draw()
 			shrCamera()->modelViewMatrix->PopMatrix();
 		}
 
+<<<<<<< HEAD
 		//static float xrot = 0.0f;
 		//static float yrot = 0.0f;
 		//static float zrot = 0.0f;
@@ -150,6 +153,22 @@ int Renderer::Draw()
 
 		//xrot+=0.0003f;
 		//yrot+=0.0002f;
+=======
+		static float xrot = 0.0f;
+		static float yrot = 0.0f;
+		static float zrot = 0.0f;
+
+		glRotatef(xrot, 1.0f, 0.0f, 0.0f);
+		glRotatef(yrot, 0.0f, 1.0f, 0.0f);
+		glRotatef(zrot, 0.0f, 0.0f, 1.0f);
+
+
+		// Draw assimp here
+		ctxt->aManager->drawAiScene(ctxt->aManager->scene);
+
+		xrot+=0.0003f;
+		yrot+=0.0002f;
+>>>>>>> 97210ae47f2de7e40dca16035509a17e547a2b17
 
 		// Restore identity matrix		
 		shrCamera()->modelViewMatrix->PopMatrix();
