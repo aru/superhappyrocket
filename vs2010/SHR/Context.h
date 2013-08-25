@@ -1,13 +1,26 @@
+/**
+ * Context.h
+ *
+ * The Game Context class, where we store things that are relevant 
+ * to every object in the game, where the different managers are,
+ * how to access all of the stuff. Can be saved to a file and loaded
+ * for future support of many things, game saves, reloading, tab switching...
+ * Window configuration, video mode is also stored in here
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details http://www.gnu.org/licenses/.
+ */
+
 #ifndef SHR_CONTEXT
 #define SHR_CONTEXT
 
-/* The Game Context class, where we store things that are relevant 
-	to every object in the game, where the different managers are,
-	how to access all of the stuff. Can be saved to a file and loaded
-	for future support of many things, game saves, reloading, tab switching...
-
-	Window configuration, video mode is also stored in here
-*/
 
 // Forward declare what we will use
 class Context;
