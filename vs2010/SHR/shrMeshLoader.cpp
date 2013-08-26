@@ -74,16 +74,27 @@ void shrMeshLoader::processMesh( aiMesh* m, const aiScene* scene )
 				// Get everything for x
 				tmpvert[j][0] = m->mVertices[idx].x;
 				tmpnorm[j][0] = m->mNormals[idx].x;
-				tmptext[j][0] = 0.0f;
 
 				// Get everything for y
 				tmpvert[j][1] = m->mVertices[idx].y;
 				tmpnorm[j][1] = m->mNormals[idx].y;
-				tmptext[j][1] = 0.0f;
+				//tmptext[j][1] = 0.0f;
 
 				// Get everything for z
 				tmpvert[j][2] = m->mVertices[idx].z;
 				tmpnorm[j][2] = m->mNormals[idx].z;
+
+				// Get all of the text coords
+				if(m->mTextureCoords[0])
+				{
+					tmptext[j][0] = m->mTextureCoords[0][j].x;
+			        tmptext[j][1] = m->mTextureCoords[0][j].y;
+				}
+				else
+				{
+					tmptext[j][0] = tmptext[j][1] = 0.0f;
+				}
+
 			}
 			if( (++i) % 3 == 0 )
 				tmpMesh->data.AddTriangle(tmpvert,tmpnorm,tmptext);
@@ -130,15 +141,15 @@ void shrMeshLoader::processMesh( aiMesh* m, const aiScene* scene )
 	// End the mesh maybe
 	tmpMesh->data.End();
 	
-	//for(i=0;i<mat->GetTextureCount(aiTextureType_DIFFUSE);i++)
-	//{
-	//	aiString str;
-	//	mat->GetTexture(aiTextureType_DIFFUSE,i,&str);
-	//	assimpTextureData tmp;
-	//	tmp.id=loadTexture(str.C_Str());
-	//	tmp.type=0;
-	//	textures.push_back(tmp);
-	//}
+	for( i = 0; i < mat->GetTextureCount( aiTextureType_DIFFUSE ) || i < scene->HasMaterials(); i++)
+	{
+		aiString str;
+		mat->GetTexture( aiTextureType_DIFFUSE, i, &str);
+		assimpTextureData tmp;
+		tmp.id = loadTexture( str.C_Str() );
+		tmp.type = 0;
+		//textures.push_back(tmp);
+	}
 	//meshes.push_back(new shrMesh(&data,&indices,&textures));
 }
 

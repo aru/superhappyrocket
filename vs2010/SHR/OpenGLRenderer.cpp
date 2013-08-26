@@ -61,7 +61,7 @@ int Renderer::Init()
 	//ctxt->aManager->logInfo("=============== Post Import ====================");
 
 	//initShader("vertex.vs","fragment.frag");
-	scene = new shrMeshLoader("./../../Models/cube.3ds");
+	scene = new shrMeshLoader("./../../Models/estrella.3ds");
 
     return 0;
 }
