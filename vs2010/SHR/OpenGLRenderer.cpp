@@ -69,7 +69,7 @@ int Renderer::Draw()
 {
 
 	static GLfloat vWhite[] = { 1.0f, 1.0f, 1.0f, 1.0f };
-	static GLfloat vLightPos[] = { 0.0f, 3.0f, 0.0f, 1.0f};
+	static GLfloat vLightPos[] = { 0.0f, 3.0f, -20.0f, 1.0f};
 
 	//Clear buffers
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
@@ -128,7 +128,7 @@ int Renderer::Draw()
 		//glRotatef(zrot, 0.0f, 0.0f, 1.0f);
 
 		shrCamera()->modelViewMatrix->PushMatrix();
-
+		
 		ctxt->mShader->UseStockShader(GLT_SHADER_TEXTURE_POINT_LIGHT_DIFF,
                                      shrCamera()->modelViewMatrix->GetMatrix(),
                                      shrCamera()->transformPipeline->GetProjectionMatrix(),

@@ -156,9 +156,10 @@ void shrMeshLoader::processMesh( aiMesh* m, const aiScene* scene )
 	}
 
 	// Process the texture here for now
-	tmpMesh->texture = new Texture2D( (char*)(tmpMesh->textureString.c_str()), GL_LINEAR, GL_LINEAR, GL_REPEAT );
-	tmpMesh->textureFile = ctxt->textMgr->addTexture( tmpMesh->texture );
-
+	if( tmpMesh->textureString.length() != 0 ){
+		tmpMesh->texture = new Texture2D( (char*)(tmpMesh->textureString.c_str()), GL_LINEAR, GL_LINEAR, GL_REPEAT );
+		tmpMesh->textureFile = ctxt->textMgr->addTexture( tmpMesh->texture );
+	}
 	// Finally push this mesh back
 	meshes.push_back(tmpMesh);
 
