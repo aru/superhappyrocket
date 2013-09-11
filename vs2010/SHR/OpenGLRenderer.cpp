@@ -55,13 +55,13 @@ int Renderer::Init()
     }
 
 	//// Temporary assimp support
-	//if (!ctxt->aManager->Import3DFromFile("./../../Models/edificio.3ds")) 
+	//if (!ctxt->aManager->Import3DFromFile("./../../Models/estrella.blend")) 
 	//	return 0;
 
 	//ctxt->aManager->logInfo("=============== Post Import ====================");
 
 	//initShader("vertex.vs","fragment.frag");
-	scene = new shrMeshLoader("./../../Models/star249.3ds", ctxt);
+	scene = new shrMeshLoader("./../../Models/estrella.3ds", ctxt);
 
     return 0;
 }
