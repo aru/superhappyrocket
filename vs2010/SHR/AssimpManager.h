@@ -1,8 +1,7 @@
 /**
  * AssimpManager.h
  *
- * ASSIMP manager class 
- * Holds data on every model on the scene
+ * ASSIMP manager class that holds data on every model on the scene
  * In charge of loading and passing info to the renderer to render 3d models.
  *
  * This program is free software: you can redistribute it and/or modify
@@ -15,7 +14,6 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details http://www.gnu.org/licenses/.
  */
-
 
 #ifndef SHR_ASSIMPMGR
 #define SHR_ASSIMPMGR
