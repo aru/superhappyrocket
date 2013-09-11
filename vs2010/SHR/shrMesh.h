@@ -27,6 +27,11 @@
 
 class shrMesh{
 public:
+
+	shrMesh();
+	shrMesh( const shrMesh& mesh );
+	~shrMesh();
+
 	// Save all of the data for this model
 	//GLBatch data2;
 	// Alternative way of saving data
@@ -36,6 +41,10 @@ public:
 	// Save what texture/file this is using
 	unsigned int	textureFile;
 	unsigned int	shaderFile;
+	// Texture attached to this mesh
+	string          textureString; // File as in text
+	Texture2D*      texture;
+
 };
 
 #endif

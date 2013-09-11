@@ -50,7 +50,7 @@ void shrMeshLoader::processMesh( aiMesh* m, const aiScene* scene )
 	}
 
 	// make a new mesh and push it back into the array
-	shrMesh *tmpMesh;
+	shrMesh* tmpMesh;
 	tmpMesh = new shrMesh();
 
 	// push the vertex/colors/text data into this new mesh
@@ -135,21 +135,35 @@ void shrMeshLoader::processMesh( aiMesh* m, const aiScene* scene )
 		textures.push_back( texts );*/
 	//}
 
+	// End the mesh maybe
+	tmpMesh->data.End();
+
+	// Get the textures
+	// Temp vars
+	aiString str;
+	string tmp;
+	Texture2D* tmp2dtext;
+	//for( i = 0; i < mat->GetTextureCount( aiTextureType_DIFFUSE ) /*|| i < scene->HasMaterials()*/; i++)
+	if( mat->GetTextureCount(aiTextureType_DIFFUSE) > 0 )
+	{
+		// Get the name of this texture
+		mat->GetTexture( aiTextureType_DIFFUSE, 0, &str);
+		tmp = str.C_Str();
+		if( tmp.find("tga") == string::npos && tmp.length() > 0 )
+			tmp.append(".tga");
+		// Save the texture obtained
+		tmpMesh->textureString = tmp;
+	}
+
+	// Process the texture here for now
+	tmpMesh->texture = new Texture2D( (char*)(tmpMesh->textureString.c_str()), GL_LINEAR, GL_LINEAR, GL_REPEAT );
+	tmpMesh->textureFile = ctxt->textMgr->addTexture( tmpMesh->texture );
+
 	// Finally push this mesh back
 	meshes.push_back(tmpMesh);
 
-	// End the mesh maybe
-	tmpMesh->data.End();
-	
-	for( i = 0; i < mat->GetTextureCount( aiTextureType_DIFFUSE ) || i < scene->HasMaterials(); i++)
-	{
-		aiString str;
-		mat->GetTexture( aiTextureType_DIFFUSE, i, &str);
-		assimpTextureData tmp;
-		tmp.id = loadTexture( str.C_Str() );
-		tmp.type = 0;
-		//textures.push_back(tmp);
-	}
+	// If we found a texture, upload it
+	//tmpMesh.textureFile = ctxt->textMgr->addTexture( tmpMesh.texture );
 	//meshes.push_back(new shrMesh(&data,&indices,&textures));
 }
 
@@ -181,6 +195,32 @@ unsigned int shrMeshLoader::loadTexture(const char* filename)
 	return num;
 }
 
+unsigned int shrMeshLoader::loadTGATexture(const char* filename)
+{
+	unsigned int num;
+	glGenTextures(1,&num);
+	SDL_Surface* img = IMG_Load(filename);
+	if(img==NULL)
+	{
+		//std::cout << "img was not loaded" << std::endl;
+		return -1;
+	}
+	SDL_PixelFormat form={NULL,32,4,0,0,0,0,0,0,0,0,0xff000000,0x00ff0000,0x0000ff00,0x000000ff,0,255};
+	SDL_Surface* img2=SDL_ConvertSurface(img,&form,SDL_SWSURFACE);
+	if(img2==NULL)
+	{
+		//std::cout << "img2 was not loaded" << std::endl;
+		return -1;
+	}
+	glBindTexture(GL_TEXTURE_2D,num);
+
+	glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MAG_FILTER,GL_LINEAR);
+	glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MIN_FILTER,GL_LINEAR);
+	glTexImage2D(GL_TEXTURE_2D,0,GL_RGBA,img2->w,img2->h,0,GL_RGBA,GL_UNSIGNED_INT_8_8_8_8,img2->pixels);
+	SDL_FreeSurface(img);
+	SDL_FreeSurface(img2);
+	return num;
+}
 
 shrMeshLoader::shrMeshLoader(const char* filename)
 {
@@ -197,11 +237,27 @@ shrMeshLoader::shrMeshLoader(const char* filename)
 	recursiveProcess(scene->mRootNode,scene);
 }
 
+shrMeshLoader::shrMeshLoader( const char* filename, Context* pctx )
+{
+	ctxt = pctx;
+	const aiScene* scene = aiImportFile(filename, aiProcessPreset_TargetRealtime_Quality);
+	//const aiScene* scene = aiImportFile(filename, aiProcess_GenSmoothNormals | aiProcess_Triangulate | aiProcess_CalcTangentSpace | aiProcess_FlipUVs);
+	const char* error = aiGetErrorString();
+	if( strcmp(error, "") != 0 )
+	{
+		std::cout << "The file wasn't successfully opened " << filename << std::endl;
+		std::cout << "Error: " << error << std::endl;
+		return;
+	}
+
+	recursiveProcess(scene->mRootNode,scene);
+}
+
 shrMeshLoader::~shrMeshLoader()
 {
-	unsigned int i;
+	/*unsigned int i;
 	for( i = 0; i < meshes.size(); i++)
-		delete meshes[i];
+		delete meshes.at(i);*/
 }
 
 void shrMeshLoader::draw()
@@ -211,11 +267,16 @@ void shrMeshLoader::draw()
 	for( i = 0; i < meshes.size(); i++ )
 	{
 		//meshes[i]->draw(programId);
-		meshes[i]->data.Draw();
+		// In here, change the texture used according to the mesh
+		// hopefully there's only one texture for the entire mesh
+		//meshes[i]->textureFile;
+		if( meshes.at(i)->textureFile > 0 )
+				ctxt->textMgr->bindTexture(meshes.at(i)->textureFile - 1);
+		meshes.at(i)->data.Draw();
 	}
 }
 
-std::vector<shrMesh*>& shrMeshLoader::getMeshes()
-{
-	return meshes;
-}
+//std::vector<shrMesh*>& shrMeshLoader::getMeshes()
+//{
+//	return (shrMesh*)(meshes.at(i));
+//}

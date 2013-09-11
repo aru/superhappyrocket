@@ -38,6 +38,7 @@ public:
 	void Init2();
 	bool LoadTGATexture(const char *szFileName, GLenum minFilter, GLenum magFilter, GLenum wrapMode);
 	bool LoadTGATexture(Texture2D* text);
+	int getTexutre( char* name );
 
 	Context* ctxt;
 	GLuint *textures;

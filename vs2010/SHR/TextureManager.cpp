@@ -61,14 +61,14 @@ int TextureManager::addTexture(char* file)
 {
 	textureFiles.push_back(file);
 	numTextures++;
-	return 0;
+	return numTextures;
 }
 
 int TextureManager::addTexture(Texture2D* text)
 {
 	texts.push_back(text);
 	numTextures++;
-	return 0;
+	return numTextures;
 }
 
 void TextureManager::bindTexture( int text )

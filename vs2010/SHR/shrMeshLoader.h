@@ -17,6 +17,7 @@
 #ifndef SHR_MESHLOAD
 #define SHR_MESHLOAD
 
+#include "Context.h"
 #include "shrMesh.h"
 #include <assimp/cimport.h>
 #include <assimp/scene.h>
@@ -24,15 +25,22 @@
 
 class shrMeshLoader {
 
+public:
+	
 	std::vector<shrMesh*> meshes;
+	std::vector<Texture2D> texts;
+
 	void recursiveProcess(aiNode* node,const aiScene* scene);
 	void processMesh(aiMesh* mesh,const aiScene* scene);
 	unsigned int loadTexture(const char* filename);
-	public:
+	unsigned int loadTGATexture(const char* filename );
+	
+		Context* ctxt;
+		shrMeshLoader(const char* filename, Context* pctx );
 		shrMeshLoader(const char* filename);
 		~shrMeshLoader();
 		void draw();
-		std::vector<shrMesh*>& getMeshes();
+		//std::vector<shrMesh*>& getMeshes();
 
 };
 

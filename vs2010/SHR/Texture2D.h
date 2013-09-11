@@ -18,12 +18,14 @@
 #define SHR_TEXTURE2D
 
 #include "Context.h"
+#include <string>
 
 class Texture2D
 {
 public:
 	Texture2D();
 	Texture2D(const char* f, GLenum min, GLenum mag, GLenum wrap);
+	Texture2D(string* str, GLenum min, GLenum mag, GLenum wrap);
 	~Texture2D();
 
 	const char* file;
