@@ -264,6 +264,10 @@ void shrMeshLoader::processMesh2( aiMesh* m, const aiScene* scene )
 	// Finally push this mesh back
 	meshes.push_back(tmpMesh);
 
+	free( tVert );
+	free( tNorm );
+	free( tText );
+
 	// If we found a texture, upload it
 	//tmpMesh.textureFile = ctxt->textMgr->addTexture( tmpMesh.texture );
 	//meshes.push_back(new shrMesh(&data,&indices,&textures));
