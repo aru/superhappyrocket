@@ -19,6 +19,7 @@
 
 #include "Context.h"
 #include "shrMesh.h"
+#include <algorithm>
 #include <assimp/cimport.h>
 #include <assimp/scene.h>
 #include <assimp/postprocess.h>
@@ -32,6 +33,7 @@ public:
 
 	void recursiveProcess(aiNode* node,const aiScene* scene);
 	void processMesh(aiMesh* mesh,const aiScene* scene);
+	void processMesh2( aiMesh* m, const aiScene* scene );
 	unsigned int loadTexture(const char* filename);
 	unsigned int loadTGATexture(const char* filename );
 	

@@ -66,6 +66,14 @@ int TextureManager::addTexture(char* file)
 
 int TextureManager::addTexture(Texture2D* text)
 {
+	GLint iLoop;
+	if ( texts.size() > 0 ) {
+		for( iLoop = 0; iLoop < (int)texts.size(); iLoop++ )
+		{
+			if( strcmp( texts.at(iLoop)->file, text->file ) == 0 )
+				return iLoop;
+		}
+	}
 	texts.push_back(text);
 	numTextures++;
 	return numTextures;

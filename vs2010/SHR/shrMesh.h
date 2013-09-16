@@ -32,8 +32,10 @@ public:
 	shrMesh( const shrMesh& mesh );
 	~shrMesh();
 
+	// Is this a triangle batch or an upgraded batch?
+	int type; 
 	// Save all of the data for this model
-	//GLBatch data2;
+	GLBatch data2;
 	// Alternative way of saving data
 	GLTriangleBatch data;
 	// Put in a frame to move easily

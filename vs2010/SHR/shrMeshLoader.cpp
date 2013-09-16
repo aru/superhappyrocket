@@ -8,7 +8,7 @@ void shrMeshLoader::recursiveProcess(aiNode* node,const aiScene* scene)
 	for( i = 0; i < ( node->mNumMeshes ); i++)
 	{
 		aiMesh* mesh = scene->mMeshes[ node->mMeshes[i] ];
-		processMesh( mesh,scene );
+		processMesh2( mesh,scene );
 	}
 
 	// do them same (recursion) for every children in the scene
@@ -87,8 +87,10 @@ void shrMeshLoader::processMesh( aiMesh* m, const aiScene* scene )
 				// Get all of the text coords
 				if(m->mTextureCoords[0])
 				{
-					tmptext[j][0] = m->mTextureCoords[0][j].x;
-			        tmptext[j][1] = m->mTextureCoords[0][j].y;
+						//tmptext[j][0] = 1.0f;						
+						tmptext[j][0] = m->mTextureCoords[0][j].x;
+						//tmptext[j][1] = 0.0f;
+						tmptext[j][1] = m->mTextureCoords[0][j].y;
 				}
 				else
 				{
@@ -102,15 +104,15 @@ void shrMeshLoader::processMesh( aiMesh* m, const aiScene* scene )
 	}
 
 		////tangent
-		//if(m->mTangents)
-		//{
+		if(m->mTangents)
+		{
 		//	tmpVec[0] = m->mTangents[i].x;
 		//	tmpVec[1] = m->mTangents[i].y;
 		//	tmpVec[2] = m->mTangents[i].z;
 		//}else{
 		//	tmpVec[0] = 1.0;
 		//	tmpVec[1] = tmpVec[2] = 0;
-		//}
+		}
 		//m3dCopyVector3(tmp.tangent, tmpVec);
 
 		// colors
@@ -168,6 +170,104 @@ void shrMeshLoader::processMesh( aiMesh* m, const aiScene* scene )
 	//meshes.push_back(new shrMesh(&data,&indices,&textures));
 }
 
+void shrMeshLoader::processMesh2( aiMesh* m, const aiScene* scene )
+{
+	// loop variables
+	unsigned int i,j,k;
+	unsigned int numVerts = 0;
+	unsigned int numIndex = 0;
+	unsigned int numTexts = 0;
+
+		// temporary places to store data
+	std::vector<M3DVector3f> vertices;
+	std::vector<M3DVector3f> normals;
+	std::vector<M3DVector2f> textures;
+	std::vector<GLushort> indices;
+
+	// places to store materials?
+	aiColor4D col;
+	aiMaterial* mat = scene->mMaterials[ m->mMaterialIndex ];
+	aiGetMaterialColor( mat, AI_MATKEY_COLOR_DIFFUSE, &col);
+
+	// Get the indexes, this is how we will make a new triangle
+	for( i = 0; i < m->mNumFaces; i++)
+	{
+		aiFace face = m->mFaces[i];
+		for( j = 0; j < face.mNumIndices; j++) //0..2
+		{
+			indices.push_back( face.mIndices[j] );
+		}
+	}
+
+	// make a new mesh and push it back into the array
+	shrMesh* tmpMesh;
+	tmpMesh = new shrMesh();
+
+	// Get the information from the mesh
+
+	M3DVector3f* tVert;
+	tVert = (M3DVector3f*) malloc( sizeof(M3DVector3f) * m->mNumVertices );
+	M3DVector3f* tNorm;
+	tNorm = (M3DVector3f*) malloc( sizeof(M3DVector3f) * m->mNumVertices );
+	M3DVector2f* tText;
+	tText = (M3DVector2f*) malloc( sizeof(M3DVector2f) * m->mNumVertices );
+
+	for( i = 0; i < m->mNumVertices; i++ )
+	{
+		tVert[i][0] = m->mVertices[i].x;
+		tVert[i][1] = m->mVertices[i].y;
+		tVert[i][2] = m->mVertices[i].z;
+
+		tNorm[i][0] = m->mNormals[i].x;
+		tNorm[i][1] = m->mNormals[i].y;
+		tNorm[i][2] = m->mNormals[i].z;
+
+		if(m->mTextureCoords[0]) {
+			tText[i][0] = m->mTextureCoords[0][i].x;
+			tText[i][1] = m->mTextureCoords[0][i].y;
+		}
+	}
+
+	// push the vertex/colors/text data into this new mesh
+	tmpMesh->data2.idxBegin( GL_TRIANGLES, m->mNumVertices, indices.size(), 1 );
+	tmpMesh->data2.CopyVertexData3f(tVert);
+	tmpMesh->data2.CopyNormalDataf(tNorm);
+	if(m->mTextureCoords[0])
+		tmpMesh->data2.CopyTexCoordData2f(tText,0);
+	tmpMesh->data2.CopyIndexDataf((GLshort*)indices.data());
+
+	// End the mesh maybe
+	tmpMesh->data2.End();
+
+	// Get the textures
+	// Temp vars
+	aiString str;
+	string tmp;
+	Texture2D* tmp2dtext;
+	//for( i = 0; i < mat->GetTextureCount( aiTextureType_DIFFUSE ) /*|| i < scene->HasMaterials()*/; i++)
+	if( mat->GetTextureCount(aiTextureType_DIFFUSE) > 0 )
+	{
+		// Get the name of this texture
+		mat->GetTexture( aiTextureType_DIFFUSE, 0, &str);
+		tmp = str.C_Str();
+		if( tmp.find("tga") == string::npos && tmp.length() > 0 )
+			tmp.append(".tga");
+		// Save the texture obtained
+		tmpMesh->textureString = tmp;
+	}
+
+	// Process the texture here for now
+	if( tmpMesh->textureString.length() != 0 ){
+		tmpMesh->texture = new Texture2D( (char*)(tmpMesh->textureString.c_str()), GL_LINEAR, GL_LINEAR, GL_REPEAT );
+		tmpMesh->textureFile = ctxt->textMgr->addTexture( tmpMesh->texture );
+	}
+	// Finally push this mesh back
+	meshes.push_back(tmpMesh);
+
+	// If we found a texture, upload it
+	//tmpMesh.textureFile = ctxt->textMgr->addTexture( tmpMesh.texture );
+	//meshes.push_back(new shrMesh(&data,&indices,&textures));
+}
 
 unsigned int shrMeshLoader::loadTexture(const char* filename)
 {
@@ -273,7 +373,7 @@ void shrMeshLoader::draw()
 		//meshes[i]->textureFile;
 		if( meshes.at(i)->textureFile > 0 )
 				ctxt->textMgr->bindTexture(meshes.at(i)->textureFile - 1);
-		meshes.at(i)->data.Draw();
+		meshes.at(i)->data2.Draw();
 	}
 }
 

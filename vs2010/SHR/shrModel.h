@@ -22,6 +22,13 @@
 // Our engine support
 #include "Context.h"
 
+// GLTools support
+#include <GLTools.h>
+#include <GLFrame.h>
+#include <GLTriangleBatch.h>
+#include <vector>
+#include <string>
+
 // Assimp support
 #include "assimp/Importer.hpp"
 #include "assimp/cimport.h"
@@ -49,7 +56,8 @@ public:
 	// Destroy
 	int Destroy();
 
-	string fileName;
+	vector<GLBatch> meshes;
+
 };
 
 #endif

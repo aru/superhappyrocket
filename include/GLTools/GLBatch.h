@@ -75,6 +75,7 @@ class GLBatch : public GLBatchBase
         
 		// Start populating the array
         void Begin(GLenum primitive, GLuint nVerts, GLuint nTextureUnits = 0);
+		void idxBegin(GLenum primitive, GLuint nVerts, GLuint nIndex, GLuint nTextureUnits = 0);
         
 		// Tell the batch you are done
 		void End(void);
@@ -84,6 +85,8 @@ class GLBatch : public GLBatchBase
 		void CopyNormalDataf(M3DVector3f *vNorms);
 		void CopyColorData4f(M3DVector4f *vColors);
 		void CopyTexCoordData2f(M3DVector2f *vTexCoords, GLuint uiTextureLayer);
+		// Block Copy Indexes
+		void CopyIndexDataf(GLshort *vIndexes);
 
 		// Just to make life easier...
 		inline void CopyVertexData3f(GLfloat *vVerts) { CopyVertexData3f((M3DVector3f *)(vVerts)); }
@@ -115,12 +118,14 @@ class GLBatch : public GLBatchBase
 		GLuint		uiVertexArray;
 		GLuint      uiNormalArray;
 		GLuint		uiColorArray;
+		GLuint      uiIndexArray;
 		GLuint		*uiTextureCoordArray;
 		GLuint		vertexArrayObject;
         
         GLuint nVertsBuilding;			// Building up vertexes counter (immediate mode emulator)
         GLuint nNumVerts;				// Number of verticies in this batch
         GLuint nNumTextureUnits;		// Number of texture coordinate sets
+		GLuint nNumIndexes;
 		
         bool	bBatchDone;				// Batch has been built
  
@@ -129,6 +134,8 @@ class GLBatch : public GLBatchBase
 		M3DVector3f *pNormals;
 		M3DVector4f *pColors;
 		M3DVector2f **pTexCoords;
+		/* Adding index support */
+		GLushort *pIndexes;
 	
 		};
 
