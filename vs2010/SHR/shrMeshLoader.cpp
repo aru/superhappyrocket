@@ -250,8 +250,10 @@ void shrMeshLoader::processMesh2( aiMesh* m, const aiScene* scene )
 		// Get the name of this texture
 		mat->GetTexture( aiTextureType_DIFFUSE, 0, &str);
 		tmp = str.C_Str();
+		if( tmp.find(".") == string::npos && tmp.length() > 0 )
+			tmp.append(".");
 		if( tmp.find("tga") == string::npos && tmp.length() > 0 )
-			tmp.append(".tga");
+			tmp.append("tga");
 		// Save the texture obtained
 		tmpMesh->textureString = tmp;
 	}
@@ -263,6 +265,10 @@ void shrMeshLoader::processMesh2( aiMesh* m, const aiScene* scene )
 	}
 	// Finally push this mesh back
 	meshes.push_back(tmpMesh);
+
+	free( tVert );
+	free( tNorm );
+	free( tText );
 
 	// If we found a texture, upload it
 	//tmpMesh.textureFile = ctxt->textMgr->addTexture( tmpMesh.texture );
