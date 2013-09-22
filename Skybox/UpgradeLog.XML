@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="CubeMapped">
+</Property><Property Name="Solution File" Value="C:\Users\Popoca\Desktop\Libros\OpenGLsuperbible5\VisualStudio2008\Chapter07\CubeMapped\CubeMapped.sln">
+</Property><Property Name="Date" Value="Sunday, September 15, 2013">
+</Property><Property Name="Time" Value="17:32:55 PM">
+</Property></Properties><Event ErrorLevel="0" Project="CubeMapped" Source="CubeMapped.vcproj" Description="Converting project file 'C:\Users\Popoca\Desktop\Libros\OpenGLsuperbible5\VisualStudio2008\Chapter07\CubeMapped\CubeMapped.vcproj'.">
+</Event><Event ErrorLevel="1" Project="CubeMapped" Source="CubeMapped.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="CubeMapped" Source="CubeMapped.vcproj" Description="Done converting to new project file 'C:\Users\Popoca\Desktop\Libros\OpenGLsuperbible5\VisualStudio2008\Chapter07\CubeMapped\CubeMapped.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="CubeMapped" Source="CubeMapped.vcproj" Description="Converted">
+</Event></UpgradeLog>
