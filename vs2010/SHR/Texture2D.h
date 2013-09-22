@@ -24,14 +24,18 @@ class Texture2D
 {
 public:
 	Texture2D();
+	Texture2D( const Texture2D &txt );
 	Texture2D(const char* f, GLenum min, GLenum mag, GLenum wrap);
 	Texture2D(string* str, GLenum min, GLenum mag, GLenum wrap);
+	Texture2D(string str, GLenum min, GLenum mag, GLenum wrap);
 	~Texture2D();
 
 	const char* file;
-	GLenum minFilter; 
-	GLenum magFilter; 
-	GLenum wrapMode;
+	string      textureString;
+	unsigned int	textureFile;
+	GLenum		minFilter; 
+	GLenum		magFilter; 
+	GLenum		wrapMode;
 };
 
 #endif

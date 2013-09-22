@@ -21,7 +21,7 @@ void shrMeshLoader::recursiveProcess(aiNode* node,const aiScene* scene)
 void shrMeshLoader::processMesh( aiMesh* m, const aiScene* scene )
 {
 	// loop variables
-	unsigned int i,j,k;
+	unsigned int i,j;
 	//int indexCount;
 
 	// temporary places to store data
@@ -144,7 +144,7 @@ void shrMeshLoader::processMesh( aiMesh* m, const aiScene* scene )
 	// Temp vars
 	aiString str;
 	string tmp;
-	Texture2D* tmp2dtext;
+	//Texture2D* tmp2dtext;
 	//for( i = 0; i < mat->GetTextureCount( aiTextureType_DIFFUSE ) /*|| i < scene->HasMaterials()*/; i++)
 	if( mat->GetTextureCount(aiTextureType_DIFFUSE) > 0 )
 	{
@@ -172,79 +172,27 @@ void shrMeshLoader::processMesh( aiMesh* m, const aiScene* scene )
 
 void shrMeshLoader::processMesh2( aiMesh* m, const aiScene* scene )
 {
-	// loop variables
-	unsigned int i,j,k;
-	unsigned int numVerts = 0;
+	/* Variables that we use for counting elements and looping */
+	unsigned int i,j;
+	unsigned int numVertexes = 0;
 	unsigned int numIndex = 0;
 	unsigned int numTexts = 0;
-
-		// temporary places to store data
-	std::vector<M3DVector3f> vertices;
-	std::vector<M3DVector3f> normals;
-	std::vector<M3DVector2f> textures;
-	std::vector<GLushort> indices;
-
-	// places to store materials?
+	bool repeatedText = false;
+	/* This mesh has no untextured arrays unless proven otherwise */
+	hasUntexturedVerts = false;
+	// places to store materials
 	aiColor4D col;
 	aiMaterial* mat = scene->mMaterials[ m->mMaterialIndex ];
+
+	/* Get the material color */
 	aiGetMaterialColor( mat, AI_MATKEY_COLOR_DIFFUSE, &col);
 
-	// Get the indexes, this is how we will make a new triangle
-	for( i = 0; i < m->mNumFaces; i++)
-	{
-		aiFace face = m->mFaces[i];
-		for( j = 0; j < face.mNumIndices; j++) //0..2
-		{
-			indices.push_back( face.mIndices[j] );
-		}
-	}
-
-	// make a new mesh and push it back into the array
-	shrMesh* tmpMesh;
-	tmpMesh = new shrMesh();
-
-	// Get the information from the mesh
-
-	M3DVector3f* tVert;
-	tVert = (M3DVector3f*) malloc( sizeof(M3DVector3f) * m->mNumVertices );
-	M3DVector3f* tNorm;
-	tNorm = (M3DVector3f*) malloc( sizeof(M3DVector3f) * m->mNumVertices );
-	M3DVector2f* tText;
-	tText = (M3DVector2f*) malloc( sizeof(M3DVector2f) * m->mNumVertices );
-
-	for( i = 0; i < m->mNumVertices; i++ )
-	{
-		tVert[i][0] = m->mVertices[i].x;
-		tVert[i][1] = m->mVertices[i].y;
-		tVert[i][2] = m->mVertices[i].z;
-
-		tNorm[i][0] = m->mNormals[i].x;
-		tNorm[i][1] = m->mNormals[i].y;
-		tNorm[i][2] = m->mNormals[i].z;
-
-		if(m->mTextureCoords[0]) {
-			tText[i][0] = m->mTextureCoords[0][i].x;
-			tText[i][1] = m->mTextureCoords[0][i].y;
-		}
-	}
-
-	// push the vertex/colors/text data into this new mesh
-	tmpMesh->data2.idxBegin( GL_TRIANGLES, m->mNumVertices, indices.size(), 1 );
-	tmpMesh->data2.CopyVertexData3f(tVert);
-	tmpMesh->data2.CopyNormalDataf(tNorm);
-	if(m->mTextureCoords[0])
-		tmpMesh->data2.CopyTexCoordData2f(tText,0);
-	tmpMesh->data2.CopyIndexDataf((GLshort*)indices.data());
-
-	// End the mesh maybe
-	tmpMesh->data2.End();
-
-	// Get the textures
+	// Get the textures first as we will be sorting based on this
 	// Temp vars
 	aiString str;
 	string tmp;
 	Texture2D* tmp2dtext;
-	//for( i = 0; i < mat->GetTextureCount( aiTextureType_DIFFUSE ) /*|| i < scene->HasMaterials()*/; i++)
+	// If this doesn't have a texture then we have untextured verts
 	if( mat->GetTextureCount(aiTextureType_DIFFUSE) > 0 )
 	{
 		// Get the name of this texture
@@ -254,21 +202,180 @@ void shrMeshLoader::processMesh2( aiMesh* m, const aiScene* scene )
 			tmp.append(".");
 		if( tmp.find("tga") == string::npos && tmp.length() > 0 )
 			tmp.append("tga");
+		hasUntexturedVerts = false;
 		// Save the texture obtained
-		tmpMesh->textureString = tmp;
+		//tmp2dtext->textureString = tmp;
 	}
+	else if( m->mNumVertices > 0 )
+		hasUntexturedVerts = true;
 
 	// Process the texture here for now
-	if( tmpMesh->textureString.length() != 0 ){
-		tmpMesh->texture = new Texture2D( (char*)(tmpMesh->textureString.c_str()), GL_LINEAR, GL_LINEAR, GL_REPEAT );
-		tmpMesh->textureFile = ctxt->textMgr->addTexture( tmpMesh->texture );
+	if( tmp.length() != 0 ){
+		tmp2dtext = new Texture2D( tmp, GL_LINEAR, GL_LINEAR, GL_REPEAT );
+		//tmp2dtext->textureString.copy( (char*)tmp.c_str(), tmp.size() );
+		tmp2dtext->textureFile = ctxt->textMgr->addTexture( tmp2dtext );
 	}
-	// Finally push this mesh back
-	meshes.push_back(tmpMesh);
+	
+	// Now that we have the texture, aux here is gonna solve our life
+	unsigned int aux;
+	if( hasUntexturedVerts )
+		aux = 0;
+	else
+		aux = tmp2dtext->textureFile;
 
-	free( tVert );
-	free( tNorm );
-	free( tText );
+	/* Not sure if this is needed, save the texture pointers */
+	/*for( i = 0; i < tmpTexts.size(); i++ )
+	{
+		if( strcmp( tmpTexts.at(i)->file, tmp2dtext->file ) == 0 )
+			repeatedText = true;
+	}
+	if( !repeatedText )
+		tmpTexts.push_back( tmp2dtext );*/
+
+	// Get the indexes
+	// temporary places to store data
+	std::vector<GLushort> tmpindices;
+	bool exists = false;
+
+	// If our current texture is below the index size, then we already have this array stored
+	// we should only add values to that
+	if( !(aux < verts.size()) )
+	{
+		verts.push_back( vector<float>() );
+		norms.push_back( vector<float>() );
+		texts.push_back( vector<float>() );
+		indexes.push_back( vector<GLushort>() );
+
+	}
+
+	for( i = 0; i < m->mNumFaces; i++)
+	{
+		aiFace face = m->mFaces[i];
+		for( j = 0; j < face.mNumIndices; j++) //0..2
+		{
+			indexes[aux].push_back( face.mIndices[j] );
+			//tmpindices.push_back( face.mIndices[j] );
+			numIndex++; 
+		}
+	}
+
+	//indices = (GLushort*)malloc( sizeof(GLushort) * numIndex );
+	//unsigned int offset = 0;
+	//for( i = 0; i < m->mNumFaces; i++)
+	//{
+	//	aiFace face = m->mFaces[i];
+	//	for( j = 0; j < face.mNumIndices; j++) //0..2
+	//	{
+	//		indices[ j + offset ] = face.mIndices[j];
+	//	}
+	//	offset += face.mNumIndices;
+	//}
+
+	//unsigned int oldIndex = 0;
+	//unsigned int oldVerts = 0;
+
+	// Get the old values
+	//oldIndex = numIndexes[aux];
+	//oldVerts = numVerts[aux];
+	// Get the new values
+	/* Get number of indexes and vertices */
+	//if( numIndexes[aux] == 0 )
+	//	numIndexes[aux] = numIndex;
+	//else
+	//	numIndexes[aux] += numIndex;
+	//if( numVerts[aux] == 0 )
+	//{
+	//	numVerts[aux] = m->mNumVertices;
+	//}
+	//else
+	//	numVerts[aux] += m->mNumVertices;
+
+	// Temp values because realloc is total LOL
+	//M3DVector3f* tmpverts;
+	//M3DVector3f* tmpnorms;
+	//M3DVector2f* tmptexts;
+	//GLushort* tmpindexes;
+
+	///* Initialize our arrays based on these two parameters */
+	//verts[aux].reserve( numVerts[aux] );
+	//norms[aux].reserve( numVerts[aux] );
+	//texts[aux].reserve( numVerts[aux] );
+	//indexes[aux].reserve( numIndexes[aux] );
+	//tmpverts = (M3DVector3f*)realloc( verts[aux], sizeof(M3DVector3f) * numverts[aux] );
+	//tmpnorms = (M3DVector3f*)realloc( norms[aux], sizeof(M3DVector3f) * numverts[aux] );
+	//tmptexts = (M3DVector2f*)realloc( texts[aux], sizeof(M3DVector2f) * numverts[aux] );
+	//tmpindexes = (GLushort*)realloc( indexes[aux], sizeof(GLushort) * numindexes[aux] );
+
+	//verts[aux] = tmpverts;
+	//norms[aux] = tmpnorms;
+	//texts[aux] = tmptexts;
+	//indexes[aux] = tmpindexes;
+
+	// Temporary vectors to get the information from the mesh
+	vector<float> tVert;
+	vector<float> tNorm;
+	vector<float> tText;
+
+	//M3DVector3f* tVert;
+	//tVert = (M3DVector3f*) malloc( sizeof(M3DVector3f) * (m->mNumVertices) );
+	//M3DVector3f* tNorm;
+	//tNorm = (M3DVector3f*) malloc( sizeof(M3DVector3f) * (m->mNumVertices) );
+	//M3DVector2f* tText;
+	//tText = (M3DVector2f*) malloc( sizeof(M3DVector2f) * (m->mNumVertices) );
+
+	for( i = 0; i < m->mNumVertices; i++ )
+	{
+		/*tVert.push_back( m->mVertices[i].x );
+		tVert.push_back( m->mVertices[i].y );
+		tVert.push_back( m->mVertices[i].z );*/
+
+		verts.at(aux).push_back( m->mVertices[i].x );
+		verts.at(aux).push_back( m->mVertices[i].y );
+		verts.at(aux).push_back( m->mVertices[i].z );
+
+		//tNorm.push_back( m->mNormals[i].x );
+		//tNorm.push_back( m->mNormals[i].y );
+		//tNorm.push_back( m->mNormals[i].z );
+
+		norms.at(aux).push_back( m->mNormals[i].x );
+		norms.at(aux).push_back( m->mNormals[i].y );
+		norms.at(aux).push_back( m->mNormals[i].z );
+
+		if(m->mTextureCoords[0]) {
+			//tText.push_back( m->mTextureCoords[0][i].x );
+			//tText.push_back( m->mTextureCoords[0][i].y );
+			texts.at(aux).push_back( m->mTextureCoords[0][i].x );
+			texts.at(aux).push_back( m->mTextureCoords[0][i].y );
+		
+		}
+		/*if( (++i) % 3 == 0 )
+		{
+			verts[aux].push_back( tVert );
+			norms[aux].push_back( tNorm );
+			texts[aux].push_back( tText );
+			tVert.clear();
+			tNorm.clear();
+			tText.clear();
+		}*/
+	}
+
+	//verts[aux].push_back( tVert );
+	//norms[aux].push_back( tNorm );
+	//texts[aux].push_back( tText );
+
+	//memmove( verts[aux] + oldVerts, tVert, sizeof(M3DVector3f) * (m->mNumVertices) );
+	//memmove( norms[aux] + oldVerts, tNorm, sizeof(M3DVector3f) * (m->mNumVertices) );
+	//memmove( texts[aux] + oldVerts, tText, sizeof(M3DVector2f) * (m->mNumVertices) );
+	///* Before we can just copy the indexes, we must add them up */
+	//for( i = 0; i < numIndex; i++ )
+	//{
+	//	indices[i] += oldIndex;
+	//}
+	//memmove( indexes[aux] + oldIndex, indices, sizeof(GLushort) * numindexes[aux] );
+
+	//free( tVert );
+	//free( tNorm );
+	//free( tText );
 
 	// If we found a texture, upload it
 	//tmpMesh.textureFile = ctxt->textMgr->addTexture( tmpMesh.texture );
@@ -345,6 +452,7 @@ shrMeshLoader::shrMeshLoader(const char* filename)
 }
 
 shrMeshLoader::shrMeshLoader( const char* filename, Context* pctx )
+	:verts(0), norms(0), texts(0), indexes(0), numVerts(0), numIndexes(0), numTextures(0), hasUntexturedVerts(false)
 {
 	ctxt = pctx;
 	const aiScene* scene = aiImportFile(filename, aiProcessPreset_TargetRealtime_Quality);
@@ -357,14 +465,42 @@ shrMeshLoader::shrMeshLoader( const char* filename, Context* pctx )
 		return;
 	}
 
+	/* Initialize our temporary arrays, overcompensate a bit because scene->mNumTextures is unreliable */
+	if( scene->mNumMaterials == 0 )
+		numTextures = 2;
+	else
+		numTextures = scene->mNumMaterials + 1;
+	/*verts = (M3DVector3f**)calloc( numTextures, sizeof(M3DVector3f*) * (numTextures) );
+	norms = (M3DVector3f**)calloc( numTextures, sizeof(M3DVector3f*) * (numTextures) );
+	texts = (M3DVector2f**)calloc( numTextures, sizeof(M3DVector2f*) * (numTextures) );
+	indexes = (GLushort**)calloc( numTextures, sizeof(GLushort*) * (numTextures) );*/
+	// Add the first row as an empty vector
+	verts.push_back( vector<float>() );
+	norms.push_back( vector<float>() );
+	texts.push_back( vector<float>() );
+	indexes.push_back( vector<GLushort>() );
+
 	recursiveProcess(scene->mRootNode,scene);
+	// After gathering all the intel create batches
+	createBatches();
 }
 
 shrMeshLoader::~shrMeshLoader()
 {
-	/*unsigned int i;
-	for( i = 0; i < meshes.size(); i++)
-		delete meshes.at(i);*/
+	//unsigned int i = 0;
+	//for( i = 0; i < numTextures + 1; i++ );
+	//{
+	//	free( verts[i] );
+	//	free( norms[i] );
+	//	free( texts[i] );
+	//	free( indexes[i] );
+	//}
+	//if( verts != 0 ) free( verts );
+	//if( verts != 0 ) free( norms );
+	//if( texts != 0 ) free( texts );
+	//if( indexes != 0 ) free( indexes );
+	//if( numverts != 0 ) free( numverts );
+	//if( numindexes != 0 ) free( numindexes );
 }
 
 void shrMeshLoader::draw()
@@ -378,12 +514,79 @@ void shrMeshLoader::draw()
 		// hopefully there's only one texture for the entire mesh
 		//meshes[i]->textureFile;
 		if( meshes.at(i)->textureFile > 0 )
-				ctxt->textMgr->bindTexture(meshes.at(i)->textureFile - 1);
+			ctxt->textMgr->bindTexture(meshes.at(i)->textureFile - 1);
 		meshes.at(i)->data2.Draw();
 	}
 }
 
-//std::vector<shrMesh*>& shrMeshLoader::getMeshes()
-//{
-//	return (shrMesh*)(meshes.at(i));
-//}
+void shrMeshLoader::createBatches()
+{
+	unsigned int i = 0, j = 0, k = 0;
+	//M3DVector3f *v, *n, *t, *idx;
+
+	for( i = 0; i < numTextures; i++ ) 
+	{
+		// Please...
+		k = 0;
+
+		/* If array 0 is empty skip it */
+		if( i == 0 && !hasUntexturedVerts )
+			continue;
+
+		// make a new mesh and push it back into the array
+		shrMesh* tmpMesh;
+		tmpMesh = new shrMesh();
+
+		tmpMesh->textureFile = i;
+
+		// push the vertex/colors/text data into this new mesh
+		tmpMesh->data2.idxBegin( GL_TRIANGLES, (verts[i].size() / 3), indexes[i].size(), 1 );
+
+		// Construct our vectors because lol
+		M3DVector3f* tVert;
+		tVert = (M3DVector3f*) calloc( (verts[i].size() / 3), sizeof(M3DVector3f) );
+		M3DVector3f* tNorm;
+		tNorm = (M3DVector3f*) calloc( (verts[i].size() / 3), sizeof(M3DVector3f) );
+		M3DVector2f* tText;
+		tText = (M3DVector2f*) calloc( (texts[i].size() / 2), sizeof(M3DVector2f) );
+
+		for( j = 0; j < verts[i].size(); j += 3 )
+		{
+			tVert[k][0] = verts[i][j];
+			tVert[k][1] = verts[i][j+1];
+			tVert[k][2] = verts[i][j+2];
+
+			tNorm[k][0] = norms[i][j];
+			tNorm[k][1] = norms[i][j+1];
+			tNorm[k][2] = norms[i][j+2];
+			k++;
+		}
+		k=0;
+		if( i != 0 ) {
+			for( j = 0; j < texts[i].size(); j += 2 )
+			{
+				tText[k][0] = texts[i][j];
+				tText[k][1] = texts[i][j+1];
+				k++;
+			}
+		}
+
+		tmpMesh->data2.CopyVertexData3f( tVert );
+		tmpMesh->data2.CopyNormalDataf( tNorm );
+		if( i != 0 )
+			tmpMesh->data2.CopyTexCoordData2f( tText,0 );
+		tmpMesh->data2.CopyIndexDataf(indexes[i].data());
+
+		// End the mesh
+		tmpMesh->data2.End();
+
+		tmpMesh->texture = 0;
+		tmpMesh->textureString = "dunno";
+		// Finally push this mesh back
+		meshes.push_back(tmpMesh);
+
+		free(tVert);
+		free(tNorm);
+		free(tText);
+	}
+}

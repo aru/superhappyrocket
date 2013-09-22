@@ -61,7 +61,7 @@ int Renderer::Init()
 	//ctxt->aManager->logInfo("=============== Post Import ====================");
 
 	//initShader("vertex.vs","fragment.frag");
-	scene = new shrMeshLoader("./../../Models/catlow249.3ds", ctxt);
+	scene = new shrMeshLoader("./../../Models/rocket249.3ds", ctxt);
 
     return 0;
 }

@@ -86,7 +86,7 @@ class GLBatch : public GLBatchBase
 		void CopyColorData4f(M3DVector4f *vColors);
 		void CopyTexCoordData2f(M3DVector2f *vTexCoords, GLuint uiTextureLayer);
 		// Block Copy Indexes
-		void CopyIndexDataf(GLshort *vIndexes);
+		void CopyIndexDataf(GLushort *vIndexes);
 
 		// Just to make life easier...
 		inline void CopyVertexData3f(GLfloat *vVerts) { CopyVertexData3f((M3DVector3f *)(vVerts)); }

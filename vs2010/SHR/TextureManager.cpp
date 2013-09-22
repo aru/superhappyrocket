@@ -70,8 +70,8 @@ int TextureManager::addTexture(Texture2D* text)
 	if ( texts.size() > 0 ) {
 		for( iLoop = 0; iLoop < (int)texts.size(); iLoop++ )
 		{
-			if( strcmp( texts.at(iLoop)->file, text->file ) == 0 )
-				return iLoop;
+			if( texts.at(iLoop)->textureString.compare( text->textureString ) == 0 )
+				return iLoop+1;
 		}
 	}
 	texts.push_back(text);
