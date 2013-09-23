@@ -179,7 +179,7 @@ void shrMeshLoader::processMesh2( aiMesh* m, const aiScene* scene )
 	unsigned int numTexts = 0;
 	bool repeatedText = false;
 	/* This mesh has no untextured arrays unless proven otherwise */
-	hasUntexturedVerts = false;
+	//hasUntexturedVerts = false;
 	// places to store materials
 	aiColor4D col;
 	aiMaterial* mat = scene->mMaterials[ m->mMaterialIndex ];
@@ -466,10 +466,10 @@ shrMeshLoader::shrMeshLoader( const char* filename, Context* pctx )
 	}
 
 	/* Initialize our temporary arrays, overcompensate a bit because scene->mNumTextures is unreliable */
-	if( scene->mNumMaterials == 0 )
-		numTextures = 1;
-	else
-		numTextures = scene->mNumMaterials;
+	//if( scene->mNumMaterials == 0 )
+	//	numTextures = 1;
+	//else
+	numTextures = scene->mNumMaterials;
 	/*verts = (M3DVector3f**)calloc( numTextures, sizeof(M3DVector3f*) * (numTextures) );
 	norms = (M3DVector3f**)calloc( numTextures, sizeof(M3DVector3f*) * (numTextures) );
 	texts = (M3DVector2f**)calloc( numTextures, sizeof(M3DVector2f*) * (numTextures) );
@@ -528,10 +528,10 @@ void shrMeshLoader::createBatches()
 	if( numTextures != verts.size() + 1 )
 		printf("SOMETHING BAD HAPPENED");
 
-	for( i = 0; i <= numTextures; i++ ) 
+	for( i = 0; i < verts.size(); i++ ) 
 	{
 		/* If array 0 is empty skip it */
-		if( i == 0 && !hasUntexturedVerts )
+		if( i == 0 && verts[i].size() == 0 )
 			continue;
 
 		// make a new mesh and push it back into the array
