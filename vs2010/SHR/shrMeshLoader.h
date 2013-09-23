@@ -59,6 +59,7 @@ public:
 	vector<vector<GLfloat>> norms;
 	vector<vector<GLfloat>> texts;
 	vector<vector<GLushort>> indexes;
+	vector<GLushort> maxIndex;
 
 };
 

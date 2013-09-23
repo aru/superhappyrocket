@@ -178,6 +178,7 @@ void shrMeshLoader::processMesh2( aiMesh* m, const aiScene* scene )
 	unsigned int numIndex = 0;
 	unsigned int numTexts = 0;
 	bool repeatedText = false;
+	unsigned int offset = 0;
 	/* This mesh has no untextured arrays unless proven otherwise */
 	//hasUntexturedVerts = false;
 	// places to store materials
@@ -245,7 +246,15 @@ void shrMeshLoader::processMesh2( aiMesh* m, const aiScene* scene )
 		norms.push_back( vector<float>() );
 		texts.push_back( vector<float>() );
 		indexes.push_back( vector<GLushort>() );
-
+		maxIndex.push_back( GLushort() ); // initialize this thing
+	}
+	else
+	{
+		if( maxIndex.at(aux) != 0 )
+			offset = maxIndex.at(aux)+1;
+		else
+			offset = maxIndex.at(aux);
+		exists = true;
 	}
 
 	for( i = 0; i < m->mNumFaces; i++)
@@ -253,9 +262,12 @@ void shrMeshLoader::processMesh2( aiMesh* m, const aiScene* scene )
 		aiFace face = m->mFaces[i];
 		for( j = 0; j < face.mNumIndices; j++) //0..2
 		{
+			if( exists )
+				face.mIndices[j] += offset;
 			indexes[aux].push_back( face.mIndices[j] );
 			//tmpindices.push_back( face.mIndices[j] );
-			numIndex++; 
+			if( face.mIndices[j] > maxIndex.at(aux) )
+				maxIndex.at(aux) = face.mIndices[j];
 		}
 	}
 
@@ -479,6 +491,7 @@ shrMeshLoader::shrMeshLoader( const char* filename, Context* pctx )
 	norms.push_back( vector<float>() );
 	texts.push_back( vector<float>() );
 	indexes.push_back( vector<GLushort>() );
+	maxIndex.push_back( GLushort() );
 
 	recursiveProcess(scene->mRootNode,scene);
 	// After gathering all the intel create batches
