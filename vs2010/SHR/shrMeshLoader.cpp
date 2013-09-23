@@ -467,7 +467,7 @@ shrMeshLoader::shrMeshLoader( const char* filename, Context* pctx )
 
 	/* Initialize our temporary arrays, overcompensate a bit because scene->mNumTextures is unreliable */
 	if( scene->mNumMaterials == 0 )
-		numTextures = 2;
+		numTextures = 1;
 	else
 		numTextures = scene->mNumMaterials;
 	/*verts = (M3DVector3f**)calloc( numTextures, sizeof(M3DVector3f*) * (numTextures) );
@@ -525,10 +525,10 @@ void shrMeshLoader::createBatches()
 	//M3DVector3f *v, *n, *t, *idx;
 
 	// Just a little sanity check
-	if( numTextures != verts.size() )
+	if( numTextures != verts.size() + 1 )
 		printf("SOMETHING BAD HAPPENED");
 
-	for( i = 0; i < numTextures; i++ ) 
+	for( i = 0; i <= numTextures; i++ ) 
 	{
 		/* If array 0 is empty skip it */
 		if( i == 0 && !hasUntexturedVerts )
