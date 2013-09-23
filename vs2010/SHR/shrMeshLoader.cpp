@@ -469,7 +469,7 @@ shrMeshLoader::shrMeshLoader( const char* filename, Context* pctx )
 	if( scene->mNumMaterials == 0 )
 		numTextures = 2;
 	else
-		numTextures = scene->mNumMaterials + 1;
+		numTextures = scene->mNumMaterials;
 	/*verts = (M3DVector3f**)calloc( numTextures, sizeof(M3DVector3f*) * (numTextures) );
 	norms = (M3DVector3f**)calloc( numTextures, sizeof(M3DVector3f*) * (numTextures) );
 	texts = (M3DVector2f**)calloc( numTextures, sizeof(M3DVector2f*) * (numTextures) );
@@ -524,11 +524,12 @@ void shrMeshLoader::createBatches()
 	unsigned int i = 0, j = 0, k = 0;
 	//M3DVector3f *v, *n, *t, *idx;
 
+	// Just a little sanity check
+	if( numTextures != verts.size() )
+		printf("SOMETHING BAD HAPPENED");
+
 	for( i = 0; i < numTextures; i++ ) 
 	{
-		// Please...
-		k = 0;
-
 		/* If array 0 is empty skip it */
 		if( i == 0 && !hasUntexturedVerts )
 			continue;
@@ -542,11 +543,14 @@ void shrMeshLoader::createBatches()
 		// push the vertex/colors/text data into this new mesh
 		tmpMesh->data2.idxBegin( GL_TRIANGLES, (verts[i].size() / 3), indexes[i].size(), 1 );
 
+		// Please...
+		k = 0;
+
 		// Construct our vectors because lol
 		M3DVector3f* tVert;
 		tVert = (M3DVector3f*) calloc( (verts[i].size() / 3), sizeof(M3DVector3f) );
 		M3DVector3f* tNorm;
-		tNorm = (M3DVector3f*) calloc( (verts[i].size() / 3), sizeof(M3DVector3f) );
+		tNorm = (M3DVector3f*) calloc( (norms[i].size() / 3), sizeof(M3DVector3f) );
 		M3DVector2f* tText;
 		tText = (M3DVector2f*) calloc( (texts[i].size() / 2), sizeof(M3DVector2f) );
 
@@ -561,7 +565,7 @@ void shrMeshLoader::createBatches()
 			tNorm[k][2] = norms[i][j+2];
 			k++;
 		}
-		k=0;
+		k = 0;
 		if( i != 0 ) {
 			for( j = 0; j < texts[i].size(); j += 2 )
 			{
