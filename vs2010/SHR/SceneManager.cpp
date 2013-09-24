@@ -90,8 +90,8 @@ int SceneManager::Unload()
 int SceneManager::Update()
 {
 	int deltaTicks = ctxt->timer->get_ticks();
-	float linear = 5.0f * (deltaTicks / 1000.0f );
-	float angular = float(m3dDegToRad(20.0f * (deltaTicks / 1000.0f )));
+	float linear = 6.0f * (deltaTicks / 1000.0f );
+	float angular = float(m3dDegToRad(25.0f * (deltaTicks / 1000.0f )));
 
 	switch( ctxt->level )
 	{
@@ -115,6 +115,14 @@ int SceneManager::Update()
 			shrCamera()->cameraFrame->RotateWorld(angular, 0.0f, 1.0f, 0.0f);
 		if( ctxt->input->keysHeld[SDLK_RIGHT] )
 			shrCamera()->cameraFrame->RotateWorld(-angular, 0.0f, 1.0f, 0.0f);
+		if( ctxt->input->keysHeld[SDLK_PERIOD] )
+			shrCamera()->cameraFrame->RotateWorld(angular, 1.0f, 0.0f, 0.0f);
+		if( ctxt->input->keysHeld[SDLK_COMMA] )
+			shrCamera()->cameraFrame->RotateWorld(-angular, 1.0f, 0.0f, 0.0f);
+		if( ctxt->input->keysHeld[SDLK_SEMICOLON] )
+			shrCamera()->cameraFrame->RotateWorld(angular*2, 0.0f, 0.0f, 1.0f);
+		if( ctxt->input->keysHeld[SDLK_l] )
+			shrCamera()->cameraFrame->RotateWorld(-angular*2, 0.0f, 0.0f, 1.0f);
 		break;
 	}
 	// update the current level
