@@ -34,6 +34,7 @@ void Level::LoadContent()
 
 	/* Assimp models used in the level */
 	shrMeshLoader* stage = new shrMeshLoader( "./../../Models/ciudad249.3ds", ctxt );
+	stage->frame.RotateLocalX( 10.0f );
 	assimpMesh.push_back( stage );
 
 	/* Geometry used in the level */
