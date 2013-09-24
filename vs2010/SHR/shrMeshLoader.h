@@ -40,6 +40,8 @@ public:
 	void createBatches();
 	
 	Context* ctxt;
+	// Global transform
+	GLFrame frame;
 	shrMeshLoader(const char* filename, Context* pctx );
 	shrMeshLoader(const char* filename);
 	~shrMeshLoader();

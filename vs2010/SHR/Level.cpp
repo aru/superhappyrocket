@@ -4,6 +4,11 @@ Level::Level()
 {
 }
 
+Level::Level( Context* pctxt )
+	:ctxt(pctxt)
+{
+}
+
 Level::~Level()
 {
 }
@@ -26,6 +31,10 @@ void Level::LoadContent()
 	Texture2D* coolText;
 	coolText = new Texture2D("CoolTexture.tga", GL_LINEAR_MIPMAP_LINEAR, GL_LINEAR, GL_CLAMP_TO_EDGE );
 	texts.push_back(coolText);
+
+	/* Assimp models used in the level */
+	shrMeshLoader* stage = new shrMeshLoader( "./../../Models/ciudad249.3ds", ctxt );
+	assimpMesh.push_back( stage );
 
 	/* Geometry used in the level */
 

@@ -19,6 +19,7 @@
 #define SHR_MESH
 
 #include "Context.h"
+#include "Texture2D.h"
 #include <GLTools.h>
 #include <GLFrame.h>
 #include <GLTriangleBatch.h>

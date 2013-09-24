@@ -12,7 +12,7 @@ SceneManager::~SceneManager()
 int SceneManager::Load()
 {
 
-	Level lvl;
+	Level lvl(ctxt);
 	lvl.LoadContent();
 	levels.push_back(lvl);
 
@@ -22,6 +22,7 @@ int SceneManager::Load()
 	unsigned int actC;
 	unsigned int textC;
 	unsigned int lightC;
+	unsigned int assimpC;
 
 	switch( ctxt->level )
 	{
@@ -57,6 +58,11 @@ int SceneManager::Load()
 		for( lightC = 0; lightC < lvl.lights.size(); lightC++ )
 		{
 			ctxt->renderer->addLight(lvl.lights.at(lightC));
+		}
+		// Add assimp meshes
+		for( assimpC = 0; assimpC < lvl.assimpMesh.size(); assimpC++ )
+		{
+			ctxt->renderer->addAssimpMesh(lvl.assimpMesh.at(assimpC));
 		}
 		break;
 	default:

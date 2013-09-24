@@ -67,6 +67,8 @@ public:
 	int addActor( SimpleObject* act );
 	int addBatch( GLBatch* bat );
 	int addLight( Light* lit );
+	// Add Assimp mesh
+	int addAssimpMesh( shrMeshLoader* mesh );
 	int clearObjects();
 	int changeSize( int nWidth, int nHeight );
 
@@ -78,7 +80,7 @@ public:
 	unsigned int loadShader(std::string& source, unsigned int mode);
 	void initShader(const char* vname, const char* fname);
 	void clean();
-	assimpMeshLoader* scene2;
+	//assimpMeshLoader* scene2;
 	shrMeshLoader* scene;
 
 	Context* ctxt;
@@ -86,6 +88,7 @@ public:
 	M3DMatrix44f camera;
 	vector<SimpleObject*> object;
 	vector<SimpleObject*> actor;
+	vector<shrMeshLoader*> assimpMesh;
 
 	GLShaderManager* shader;
 	CameraManager* mCamera;

@@ -61,7 +61,7 @@ int Renderer::Init()
 	//ctxt->aManager->logInfo("=============== Post Import ====================");
 
 	//initShader("vertex.vs","fragment.frag");
-	scene = new shrMeshLoader("./../../Models/ciudad249.3ds", ctxt);
+	//scene = new shrMeshLoader("./../../Models/ciudad249.3ds", ctxt);
 
     return 0;
 }		
@@ -119,6 +119,24 @@ int Renderer::Draw()
 			shrCamera()->modelViewMatrix->PopMatrix();
 		}
 
+		// Draw assimp stuff
+		for( unsigned int i = 0; i < assimpMesh.size(); i++ )
+		{
+			// Apply actor transform
+			shrCamera()->modelViewMatrix->PushMatrix();
+			shrCamera()->modelViewMatrix->MultMatrix(assimpMesh.at(i)->frame);
+
+			ctxt->mShader->UseStockShader(GLT_SHADER_TEXTURE_POINT_LIGHT_DIFF,
+                                     shrCamera()->modelViewMatrix->GetMatrix(),
+                                     shrCamera()->transformPipeline->GetProjectionMatrix(),
+                                     vLightPos, 
+                                     vWhite,
+                                     0);
+
+			assimpMesh.at(i)->draw();
+			shrCamera()->modelViewMatrix->PopMatrix();
+		}
+
 		//static float xrot = 0.0f;
 		//static float yrot = 0.0f;
 		//static float zrot = 0.0f;
@@ -127,7 +145,7 @@ int Renderer::Draw()
 		//glRotatef(yrot, 0.0f, 1.0f, 0.0f);
 		//glRotatef(zrot, 0.0f, 0.0f, 1.0f);
 
-		shrCamera()->modelViewMatrix->PushMatrix();
+		/*shrCamera()->modelViewMatrix->PushMatrix();
 		
 		ctxt->mShader->UseStockShader(GLT_SHADER_TEXTURE_POINT_LIGHT_DIFF,
                                      shrCamera()->modelViewMatrix->GetMatrix(),
@@ -136,7 +154,7 @@ int Renderer::Draw()
                                      vWhite,
                                      0);
 		scene->draw();
-		shrCamera()->modelViewMatrix->PopMatrix();
+		shrCamera()->modelViewMatrix->PopMatrix();*/
 
 		//// Draw assimp here
 
@@ -248,6 +266,13 @@ int Renderer::clearObjects()
 {
 	object.clear();
 	batch.clear();
+	assimpMesh.clear();
+	return 0;
+}
+
+int Renderer::addAssimpMesh( shrMeshLoader* mesh )
+{
+	assimpMesh.push_back( mesh );
 	return 0;
 }
 

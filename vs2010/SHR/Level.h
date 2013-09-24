@@ -20,6 +20,7 @@
 
 class Level;
 #include "SceneManager.h"
+#include "shrMeshLoader.h"
 #include "Texture2D.h"
 #include "Timer.h"
 
@@ -27,6 +28,7 @@ class Level
 {
 public:
 	Level();
+	Level( Context* pctxt );
 	~Level();
 	// Declare and load every asset in this part
 	void LoadContent();
@@ -37,6 +39,9 @@ public:
 	// Unload every asset in this part just to be safe
 	void UnloadContent();
 
+	// Context support
+	Context* ctxt;
+	// The rest of the stuff
 	vector<char*> songs;
 	vector<char*> textures;
 	vector<Texture2D*> texts;
@@ -44,6 +49,7 @@ public:
 	vector<SimpleObject*> actors;
 	vector<GLBatch*> batches;
 	vector<Light*> lights;
+	vector<shrMeshLoader*> assimpMesh;
 
 	// Camera Support
 	static CStopWatch    *rotTimer;
