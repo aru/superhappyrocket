@@ -216,11 +216,25 @@ void shrMeshLoader::processMesh2( aiMesh* m, const aiScene* scene )
 	}
 	
 	// Now that we have the texture, aux here is gonna solve our life
+	vector<int>::iterator it;
 	unsigned int aux;
 	if( hasUntexturedVerts )
+	{
 		aux = 0;
+	}
 	else
-		aux = tmp2dtext->textureFile;
+	{
+		it = find( textures.begin(), textures.end(), tmp2dtext->textureFile );
+		if( it == textures.end() )
+		{
+			textures.push_back( tmp2dtext->textureFile );
+			aux = textures.size();
+		}
+		else
+		{
+			aux = *it;
+		}
+	}
 
 	// Get the indexes
 	// temporary places to store data
@@ -357,6 +371,8 @@ shrMeshLoader::shrMeshLoader( const char* filename, Context* pctx )
 	:verts(0), norms(0), texts(0), indexes(0), numVerts(0), numIndexes(0), numTextures(0), hasUntexturedVerts(false), verts3d(0), norms3d(0), texts3d(0)
 {
 	ctxt = pctx;
+	// Set the offset right now!
+	//offset = ctxt->textMgr->numTextures;
 	const aiScene* scene = aiImportFile(filename, aiProcessPreset_TargetRealtime_Quality);
 	//const aiScene* scene = aiImportFile(filename, aiProcess_GenSmoothNormals | aiProcess_Triangulate | aiProcess_CalcTangentSpace | aiProcess_FlipUVs);
 	const char* error = aiGetErrorString();
@@ -436,7 +452,8 @@ void shrMeshLoader::createBatches()
 		shrMesh* tmpMesh;
 		tmpMesh = new shrMesh();
 
-		tmpMesh->textureFile = i;
+		if( i != 0 )
+			tmpMesh->textureFile = textures.at(i-1);
 
 		// push the vertex/colors/text data into this new mesh
 		//tmpMesh->data2.idxBegin( GL_TRIANGLES, (verts[i].size() / 3), indexes[i].size(), 1 );

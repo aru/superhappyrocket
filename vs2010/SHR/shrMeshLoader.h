@@ -56,7 +56,6 @@ public:
 	bool hasUntexturedVerts;
 
 	vector<string> textStrings;
-	Texture2D** textureStructs;
 
 	vector<vector<GLfloat>> verts;
 	vector<vector<GLfloat>> norms;
@@ -68,6 +67,11 @@ public:
 	vector<vector<shr3DVector>> verts3d;
 	vector<vector<shr3DVector>> norms3d;
 	vector<vector<shr3DVector>> texts3d;
+
+	/* WELL, not every model will start at 0 apparently, so we need to keep track of things in a better way
+	 * this is why we will construct an array, indepently of how we store the vertices, we will store what 
+	 * texture goes where, with an int array */
+	vector<int> textures;
 
 };
 

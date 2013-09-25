@@ -37,6 +37,11 @@ void Level::LoadContent()
 	stage->frame.RotateLocalX( 10.0f );
 	assimpMesh.push_back( stage );
 
+	/* Assimp models used in the level */
+	shrMeshLoader* stage2 = new shrMeshLoader( "./../../Models/249.3ds", ctxt );
+	stage2->frame.RotateLocalX( -10.0f );
+	assimpMesh.push_back( stage2 );
+
 	/* Add Lights to our scene */
 	static GLfloat vWhite[] = { 1.0f, 1.0f, 1.0f, 1.0f };
 	static GLfloat vLightPos[] = { 0.0f, 0.0f, 0.0f, 1.0f};
