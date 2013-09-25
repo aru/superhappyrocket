@@ -123,6 +123,14 @@ int SceneManager::Update()
 			shrCamera()->cameraFrame->RotateWorld(angular*2, 0.0f, 0.0f, 1.0f);
 		if( ctxt->input->keysHeld[SDLK_l] )
 			shrCamera()->cameraFrame->RotateWorld(-angular*2, 0.0f, 0.0f, 1.0f);
+		if( ctxt->input->keysHeld[SDLK_h] )
+			shrCamera()->cameraFrame->MoveRight(linear);
+		if( ctxt->input->keysHeld[SDLK_k] )
+			shrCamera()->cameraFrame->MoveRight(-linear);
+		if( ctxt->input->keysHeld[SDLK_u] )
+			shrCamera()->cameraFrame->MoveUp(linear);
+		if( ctxt->input->keysHeld[SDLK_j] )
+			shrCamera()->cameraFrame->MoveUp(-linear);
 		// Camera Controls
 		if( ctxt->input->keysHeld[SDLK_w] )
 			ctxt->renderer->lights.at(0)->lightFrame.MoveForward(linear);
