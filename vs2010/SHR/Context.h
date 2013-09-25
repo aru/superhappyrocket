@@ -41,6 +41,8 @@ class assimpMesh;
 // Final assimp support
 class shrMesh;
 class shrMeshLoader;
+// Vector support
+class shr3DVector;
 
 #include <stdio.h>
 #include <iostream>

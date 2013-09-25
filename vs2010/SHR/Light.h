@@ -23,14 +23,27 @@ class Light
 {
 public:
 	Light();
+	Light( GLfloat* pos, GLfloat* col );
+	Light( M3DVector4f* vec, M3DVector4f* col );
 	~Light();
+	M3DVector3f* getPosition();
+	M3DVector4f* getColor();
+	void Draw();
 
-	M3DMatrix44f		 light;
+	bool renderMe;
+	bool tBatch;
+
+	M3DVector3f          position;
 	M3DVector4f          color; // Color of this light
-	GLFrame              *lightFrame;
-	GLMatrixStack		 *modelViewMatrix;		// Modelview Matrix
-	GLMatrixStack		 *projectionMatrix;		// Projection Matrix
-	GLGeometryTransform	 *transformPipeline;		// Geometry Transform Pipeline
+
+	M3DMatrix44f		 lightMatrix;
+	M3DVector4f          pos;
+	GLFrame              lightFrame;
+	GLTriangleBatch      triBatch;
+	GLBatch              batch;
+	GLMatrixStack		 modelViewMatrix;		// Modelview Matrix
+	GLMatrixStack		 projectionMatrix;		// Projection Matrix
+	GLGeometryTransform	 transformPipeline;		// Geometry Transform Pipeline
 };
 
 #endif

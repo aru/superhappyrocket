@@ -123,6 +123,19 @@ int SceneManager::Update()
 			shrCamera()->cameraFrame->RotateWorld(angular*2, 0.0f, 0.0f, 1.0f);
 		if( ctxt->input->keysHeld[SDLK_l] )
 			shrCamera()->cameraFrame->RotateWorld(-angular*2, 0.0f, 0.0f, 1.0f);
+		// Camera Controls
+		if( ctxt->input->keysHeld[SDLK_w] )
+			ctxt->renderer->lights.at(0)->lightFrame.MoveForward(linear);
+		if( ctxt->input->keysHeld[SDLK_s] )
+			ctxt->renderer->lights.at(0)->lightFrame.MoveForward(-linear);
+		if( ctxt->input->keysHeld[SDLK_a] )
+			ctxt->renderer->lights.at(0)->lightFrame.MoveRight(linear);
+		if( ctxt->input->keysHeld[SDLK_d] )
+			ctxt->renderer->lights.at(0)->lightFrame.MoveRight(-linear);
+		if( ctxt->input->keysHeld[SDLK_q] )
+			ctxt->renderer->lights.at(0)->lightFrame.MoveUp(linear);
+		if( ctxt->input->keysHeld[SDLK_e] )
+			ctxt->renderer->lights.at(0)->lightFrame.MoveUp(-linear);
 		break;
 	}
 	// update the current level

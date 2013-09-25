@@ -13,7 +13,7 @@ int Star::Draw2()
 	// Declare a light position that matters to us
 	static GLfloat vLightPos[] = { 0.0f, 0.0f, 0.0f };
 	// Get the actual light position that we care about, light0 in this case
-	shrLightArr().at(0)->lightFrame->GetOrigin(vLightPos);
+	shrLightArr().at(0)->lightFrame.GetOrigin(vLightPos);
 	// Declare a dummy color for the light (white)
 	static GLfloat vWhite[] = { 1.0f, 1.0f, 1.0f, 1.0f };
 	// Get the actual light color from the light

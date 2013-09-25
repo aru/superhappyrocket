@@ -33,9 +33,22 @@ void Level::LoadContent()
 	texts.push_back(coolText);
 
 	/* Assimp models used in the level */
-	shrMeshLoader* stage = new shrMeshLoader( "./../../Models/ciudad249.3ds", ctxt );
+	shrMeshLoader* stage = new shrMeshLoader( "./../../Models/citylow1.3ds", ctxt );
 	stage->frame.RotateLocalX( 10.0f );
 	assimpMesh.push_back( stage );
+
+	/* Add Lights to our scene */
+	static GLfloat vWhite[] = { 1.0f, 1.0f, 1.0f, 1.0f };
+	static GLfloat vLightPos[] = { 0.0f, 0.0f, 0.0f, 1.0f};
+
+	Light* newLight = new Light( vLightPos, vWhite );
+	lights.push_back( newLight );
+
+	/* Draw a small ball to represent the light */
+	gltMakeSphere( newLight->triBatch, 0.25f, 26, 13 );
+	//gltMakeCube( newLight->batch, 1.0f );
+	newLight->tBatch = true;
+	newLight->renderMe = true;
 
 	/* Geometry used in the level */
 

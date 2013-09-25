@@ -101,24 +101,47 @@ int Renderer::Draw()
 			shrCamera()->modelViewMatrix->PushMatrix();
 			shrCamera()->modelViewMatrix->MultMatrix(actor.at(i)->frame);
 
-			//Bind texture if there is one
+			//Bind and draw textured if there is one
 			if( actor.at(i)->textureFile > 0 )
+			{
 				ctxt->textMgr->bindTexture(actor.at(i)->textureFile - 1);
 
-			//Use the selected shader
-			ctxt->mShader->UseStockShader(GLT_SHADER_TEXTURE_POINT_LIGHT_DIFF,
+				//Use the selected shader
+				ctxt->mShader->UseStockShader(GLT_SHADER_TEXTURE_POINT_LIGHT_DIFF,
                                      shrCamera()->modelViewMatrix->GetMatrix(),
                                      shrCamera()->transformPipeline->GetProjectionMatrix(),
                                      vLightPos, 
                                      vWhite,
                                      0);
-
+			}
+			else
+			{
+				ctxt->mShader->UseStockShader(GLT_SHADER_FLAT, 
+								 shrCamera()->transformPipeline->GetModelViewProjectionMatrix(),
+								 vWhite);
+			}
 			// Draw actor geometry
 			actor.at(i)->Draw2();
 			// Restore actor transform
 			shrCamera()->modelViewMatrix->PopMatrix();
 		}
+		// Draw moving lights
+		for( unsigned int i = 0; i < lights.size(); i++ )
+		{
+			// Apply actor transform
+			shrCamera()->modelViewMatrix->PushMatrix();
+			shrCamera()->modelViewMatrix->MultMatrix(lights.at(i)->lightFrame);
 
+
+			ctxt->mShader->UseStockShader(GLT_SHADER_FLAT, 
+									      shrCamera()->transformPipeline->GetModelViewProjectionMatrix(),
+										  vWhite);
+
+			// Draw actor geometry
+			lights.at(i)->Draw();
+			// Restore actor transform
+			shrCamera()->modelViewMatrix->PopMatrix();
+		}
 		// Draw assimp stuff
 		for( unsigned int i = 0; i < assimpMesh.size(); i++ )
 		{
@@ -129,39 +152,13 @@ int Renderer::Draw()
 			ctxt->mShader->UseStockShader(GLT_SHADER_TEXTURE_POINT_LIGHT_DIFF,
                                      shrCamera()->modelViewMatrix->GetMatrix(),
                                      shrCamera()->transformPipeline->GetProjectionMatrix(),
-                                     vLightPos, 
-                                     vWhite,
+									 lights.at(0)->getPosition(), 
+                                     lights.at(0)->getColor(),
                                      0);
 
 			assimpMesh.at(i)->draw();
 			shrCamera()->modelViewMatrix->PopMatrix();
 		}
-
-		//static float xrot = 0.0f;
-		//static float yrot = 0.0f;
-		//static float zrot = 0.0f;
-
-		//glRotatef(xrot, 1.0f, 0.0f, 0.0f);
-		//glRotatef(yrot, 0.0f, 1.0f, 0.0f);
-		//glRotatef(zrot, 0.0f, 0.0f, 1.0f);
-
-		/*shrCamera()->modelViewMatrix->PushMatrix();
-		
-		ctxt->mShader->UseStockShader(GLT_SHADER_TEXTURE_POINT_LIGHT_DIFF,
-                                     shrCamera()->modelViewMatrix->GetMatrix(),
-                                     shrCamera()->transformPipeline->GetProjectionMatrix(),
-                                     vLightPos, 
-                                     vWhite,
-                                     0);
-		scene->draw();
-		shrCamera()->modelViewMatrix->PopMatrix();*/
-
-		//// Draw assimp here
-
-		//ctxt->aManager->drawAiScene(ctxt->aManager->scene);
-
-		//xrot+=0.0003f;
-		//yrot+=0.0002f;
 
 		// Restore identity matrix		
 		shrCamera()->modelViewMatrix->PopMatrix();

@@ -1,13 +1,13 @@
 #include "SimpleObject.h"
 
 SimpleObject::SimpleObject()
-	:renderMe(true), shaderFile(0), textureFile(0)
+	:renderMe(true), shaderFile(0), textureFile(0), tBatch( false )
 {
 	primType = GL_POINTS;
 }
 
 SimpleObject::SimpleObject( Context *ctx )
-	:renderMe(true), shaderFile(0), textureFile(0), ctxt( ctx )
+	:renderMe(true), shaderFile(0), textureFile(0), ctxt( ctx ), tBatch(false)
 {
 }
 
@@ -18,7 +18,7 @@ SimpleObject::~SimpleObject()
 }
 
 SimpleObject::SimpleObject(GLenum type, float* vArr, int vArrSize, float* iArr, int iArrSize)
-	:primType(type), renderMe(true)
+	:primType(type), renderMe(true), tBatch(false)
 {
 	vertex.assign(vArr,vArr+vArrSize);
 	index.assign(iArr,iArr+iArrSize);
@@ -38,7 +38,10 @@ int SimpleObject::Draw()
 
 int SimpleObject::Draw2()
 {
-	batch.Draw();
+	if( tBatch )
+		triBatch.Draw();
+	else
+		batch.Draw();
 	return 0;
 }
 

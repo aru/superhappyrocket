@@ -51,11 +51,16 @@ public:
 	
 	// is this object movable?
 	bool actor;
+
+	// is this object a triangle batch?
+	bool tBatch;
+
 	// what type of primitive is this?
 	GLenum primType;
 
 	// Arrays for data keeping
 	GLBatch batch;
+	GLTriangleBatch triBatch;
 	GLFrame frame;
 	GLMatrixStack *modelViewMatrix;
 

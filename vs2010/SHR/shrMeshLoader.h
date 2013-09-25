@@ -19,6 +19,7 @@
 
 #include "Context.h"
 #include "shrMesh.h"
+#include "shr3DVector.h"
 #include <algorithm>
 #include <assimp/cimport.h>
 #include <assimp/scene.h>
@@ -62,6 +63,11 @@ public:
 	vector<vector<GLfloat>> texts;
 	vector<vector<GLushort>> indexes;
 	vector<GLushort> maxIndex;
+
+	// Our new algorithm uses these data types
+	vector<vector<shr3DVector>> verts3d;
+	vector<vector<shr3DVector>> norms3d;
+	vector<vector<shr3DVector>> texts3d;
 
 };
 
