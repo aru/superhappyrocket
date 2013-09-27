@@ -217,23 +217,40 @@ void shrMeshLoader::processMesh2( aiMesh* m, const aiScene* scene )
 	
 	// Now that we have the texture, aux here is gonna solve our life
 	vector<int>::iterator it;
+	bool found = false;
 	unsigned int aux;
 	if( hasUntexturedVerts )
 	{
 		aux = 0;
 	}
-	else
+	else // Look for the value in our array of textures
 	{
-		it = find( textures.begin(), textures.end(), tmp2dtext->textureFile );
-		if( it == textures.end() )
+		for( unsigned int count = 0; count < textures.size(); count++ )
+		{
+			if( tmp2dtext->textureFile == textures.at(count) )
+			{
+				aux = count+1;
+				found = true;
+				break;
+			}
+		}
+
+		if( !found )
 		{
 			textures.push_back( tmp2dtext->textureFile );
 			aux = textures.size();
 		}
-		else
-		{
-			aux = *it;
-		}
+
+		//it = find( textures.begin(), textures.end(), tmp2dtext->textureFile );
+		//if( it == textures.end() )
+		//{
+		//	textures.push_back( tmp2dtext->textureFile );
+		//	aux = textures.size();
+		//}
+		//else
+		//{
+		//	aux = *it; // get the place where this is at, not the value
+		//}
 	}
 
 	// Get the indexes
