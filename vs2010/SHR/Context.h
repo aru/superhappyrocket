@@ -43,6 +43,7 @@ class shrMesh;
 class shrMeshLoader;
 // Vector support
 class shr3DVector;
+//class ShadedObject;
 
 #include <stdio.h>
 #include <iostream>
@@ -63,6 +64,7 @@ class shr3DVector;
 
 /* Lazy getters for very crucial things */
 #define shrCamera() ctxt->mCamera
+#define shrShader() ctxt->mShader
 #define shrLightArr() ctxt->renderer->lights
 
 using namespace std;

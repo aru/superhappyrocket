@@ -74,6 +74,8 @@ int Renderer::Draw()
 	//Clear buffers
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
 
+	shrCamera()->modelViewMatrix->LoadIdentity();
+
 	// Save the current modelview matrix (the identity matrix)
 	shrCamera()->modelViewMatrix->PushMatrix();	
 
@@ -104,21 +106,34 @@ int Renderer::Draw()
 			//Bind and draw textured if there is one
 			if( actor.at(i)->textureFile > 0 )
 			{
-				ctxt->textMgr->bindTexture(actor.at(i)->textureFile - 1);
 
 				//Use the selected shader
-				ctxt->mShader->UseStockShader(GLT_SHADER_TEXTURE_POINT_LIGHT_DIFF,
-                                     shrCamera()->modelViewMatrix->GetMatrix(),
-                                     shrCamera()->transformPipeline->GetProjectionMatrix(),
-                                     vLightPos, 
-                                     vWhite,
-                                     0);
+				if( actor.at(i)->shaderFile < 9 )
+				{
+					ctxt->mShader->UseStockShader(GLT_SHADER_TEXTURE_POINT_LIGHT_DIFF,
+						                 shrCamera()->modelViewMatrix->GetMatrix(),
+							             shrCamera()->transformPipeline->GetProjectionMatrix(),
+								         lights.at(0)->getPosition(), 
+									     vWhite,
+										 0);
+				}
+				else
+				{
+					glUseProgram( actor.at(i)->shaderFile );
+				}
+
+				// Bind the texture
+				ctxt->textMgr->bindTexture(actor.at(i)->textureFile - 1);
+
 			}
 			else
 			{
-				ctxt->mShader->UseStockShader(GLT_SHADER_FLAT, 
+				if( actor.at(i)->shaderFile < 9 )
+					ctxt->mShader->UseStockShader(GLT_SHADER_FLAT, 
 								 shrCamera()->transformPipeline->GetModelViewProjectionMatrix(),
 								 vWhite);
+				else
+					glUseProgram( actor.at(i)->shaderFile );
 			}
 			// Draw actor geometry
 			actor.at(i)->Draw2();

@@ -24,6 +24,7 @@
 #include "InputManager.h"
 #include "OpenGLRenderer.h"
 #include "TextureManager.h"
+//#include "ShadedObject.h"
 
 // Camera support etc
 #include "GLShaderManager.h"
