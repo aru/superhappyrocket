@@ -57,3 +57,8 @@ int SimpleObject::getTexture(){
 int SimpleObject::getShader(){
 	return shaderFile;
 }
+
+SimpleObject::SimpleObject( const SimpleObject& obj )
+{
+
+}

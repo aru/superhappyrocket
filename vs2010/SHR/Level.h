@@ -23,6 +23,7 @@ class Level;
 #include "shrMeshLoader.h"
 #include "Texture2D.h"
 #include "Timer.h"
+//#include "ShadedObject.h"
 
 class Level
 {

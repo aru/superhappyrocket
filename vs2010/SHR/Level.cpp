@@ -33,14 +33,14 @@ void Level::LoadContent()
 	texts.push_back(coolText);
 
 	/* Assimp models used in the level */
-	shrMeshLoader* stage = new shrMeshLoader( "./../../Models/249.3ds", ctxt );
+	/*shrMeshLoader* stage = new shrMeshLoader( "./../../Models/249.3ds", ctxt );
 	stage->frame.RotateLocalX( 10.0f );
-	assimpMesh.push_back( stage );
+	assimpMesh.push_back( stage );*/
 
 	/* Assimp models used in the level */
-	shrMeshLoader* stage2 = new shrMeshLoader( "./../../Models/catlow1.3ds", ctxt );
+	/*shrMeshLoader* stage2 = new shrMeshLoader( "./../../Models/catlow1.3ds", ctxt );
 	stage2->frame.RotateLocalX( -10.0f );
-	assimpMesh.push_back( stage2 );
+	assimpMesh.push_back( stage2 );*/
 
 	/* Add Lights to our scene */
 	static GLfloat vWhite[] = { 1.0f, 1.0f, 1.0f, 1.0f };
@@ -58,7 +58,7 @@ void Level::LoadContent()
 	/* Geometry used in the level */
 
 	// Load up a triangle
-	GLfloat vVerts[] = { -1.0f, 0.0f, 0.0f,
+	GLfloat vVerts2[] = { -1.0f, 0.0f, 0.0f,
 						  1.0f, 0.0f, 0.0f,
 						  1.0f, 0.5f, 0.0f };
 
@@ -67,6 +67,29 @@ void Level::LoadContent()
 						   0.5f, -0.5f,
 						   0.5f, 0.5f,
 						   -0.5f, 0.5f };
+
+	GLfloat vVerts[] = { -0.5f, 0.0f, 0.0f, 
+		                  0.5f, 0.0f, 0.0f,
+						  0.0f, 0.5f, 0.0f };
+
+	GLfloat vColors [] = { 1.0f, 0.0f, 0.0f, 1.0f,
+		                   0.0f, 1.0f, 0.0f, 1.0f,
+						   0.0f, 0.0f, 1.0f, 1.0f };
+
+	GLfloat vTexCoords [] = { 0.0f, 0.0f,
+		                      1.0f, 0.0f, 
+						      0.5f, 1.0f };
+
+	// Six sides of a cube map
+	const char *szCubeFaces[6] = { "pos_x.tga", "neg_x.tga", "pos_y.tga", "neg_y.tga", "pos_z.tga", "neg_z.tga" };
+
+	GLenum  cube[6] = {  GL_TEXTURE_CUBE_MAP_POSITIVE_X,
+                     GL_TEXTURE_CUBE_MAP_NEGATIVE_X,
+                     GL_TEXTURE_CUBE_MAP_POSITIVE_Y,
+                     GL_TEXTURE_CUBE_MAP_NEGATIVE_Y,
+                     GL_TEXTURE_CUBE_MAP_POSITIVE_Z,
+                     GL_TEXTURE_CUBE_MAP_NEGATIVE_Z };
+
 	int vArrSize = 8;
 	float iArr = 0;
 	int iArrSize = 0;
@@ -75,6 +98,7 @@ void Level::LoadContent()
 	GLBatch* bat;
 	SimpleObject* betterRocket;
 	SimpleObject* betterRocket2;
+	//ShadedObject* shadedRocket;
 	GLBatch* bgBatch;
 	GLTriangleBatch     sphereBatch;
 
@@ -87,12 +111,20 @@ void Level::LoadContent()
 	bat->End();
 	//batches.push_back(bat);
 
-	betterRocket = new SimpleObject();
-	gltMakeCube( betterRocket->batch, 1.0f );
+	//betterRocket = new SimpleObject();
+	betterRocket = new ShadedObject();
+	//gltMakeCube( betterRocket->batch, 1.0f );
+	betterRocket->batch.Begin(GL_TRIANGLES, 3,  1);
+	betterRocket->batch.CopyVertexData3f(vVerts);
+	betterRocket->batch.CopyTexCoordData2f(vTexCoords, 0);
+	//betterRocket->batch.CopyColorData4f(vColors);
+	betterRocket->batch.End();
 	betterRocket->textureFile = 1; // haruhi text file
-	betterRocket->shaderFile = GLT_SHADER_TEXTURE_POINT_LIGHT_DIFF;
+	//betterRocket->shaderFile = GLT_SHADER_TEXTURE_POINT_LIGHT_DIFF;
+	betterRocket->shaderFile = shrShader()->LoadShaderPairWithAttributes("./../../shaders/TexturedIdentity.vp", "./../../shaders/TexturedIdentity.fp", 2, GLT_ATTRIBUTE_VERTEX,"vVertex", GLT_ATTRIBUTE_TEXTURE0, "vTexCoords");
+	//betterRocket->shaderFile = gltLoadShaderPairSrcWithAttributes("ShadedIdentity.vp", "ShadedIdentity.fp", 2, GLT_ATTRIBUTE_VERTEX,"vVertex", GLT_ATTRIBUTE_COLOR, "vColor");
 	betterRocket->frame.SetOrigin(2.0f,2.0f,0.0f);
-	//actors.push_back(betterRocket);
+	actors.push_back(betterRocket);
 
 	betterRocket2 = new SimpleObject();
 	gltMakeCube( betterRocket2->batch, 1.0f );
@@ -126,6 +158,8 @@ void Level::UnloadContent()
 	textures.clear();
 	texts.clear();
 	objects.clear();
+	for( unsigned int i=0; i < actors.size(); i++ )
+		free( actors.at(i) );
 	actors.clear();
 	batches.clear();
 }

@@ -78,6 +78,7 @@
     <ClCompile Include="assimpMesh.cpp" />
     <ClCompile Include="assimpMeshLoader.cpp" />
     <ClCompile Include="Light.cpp" />
+    <ClCompile Include="ShadedObject.cpp" />
     <ClCompile Include="shr3DVector.cpp" />
     <ClCompile Include="shrMesh.cpp" />
     <ClCompile Include="shrMeshLoader.cpp" />
@@ -99,6 +100,7 @@
     <ClCompile Include="Visual.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ShadedObject.h" />
     <ClInclude Include="shr3DVector.h" />
     <ClInclude Include="AssimpManager.h" />
     <ClInclude Include="assimpMesh.h" />

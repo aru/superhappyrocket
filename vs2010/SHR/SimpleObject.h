@@ -34,7 +34,8 @@ public:
 	SimpleObject();
 	SimpleObject( Context* ctx );
 	SimpleObject(GLenum type, float* vArr, int vArrSize, float* iArr, int iArrSize);
-	~SimpleObject();
+	SimpleObject( const SimpleObject& obj );
+	virtual ~SimpleObject();
 	int Init();
 	int Draw();
 	virtual int Draw2();
@@ -74,10 +75,14 @@ public:
 	vector<SimpleObject*> child;
 	int numChildren;
 	// what shader is this using? shader 0 is default pipeline shader
-	int shaderFile;
+	GLint shaderFile;
+	// strings for the shaders this object will be using
+	string fragShader, vertShader;
 	// what texture is this using? texture 0 is no texture
 	int textureFile;
 
 };
+
+#include "ShadedObject.h"
 
 #endif
