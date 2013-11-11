@@ -20,8 +20,8 @@ Thumbs.db
 *.ilk
 *.log
 *.opensdf
-[Bb]in
-[Dd]ebug*/
+[B]in
+[D]ebug*/
 *.sbr
 *.sdf
 *.ipch
