@@ -240,7 +240,7 @@ void GLTriangleBatch::Draw(void)
 	{
     #ifndef OPENGL_ES
 	glBindVertexArray(vertexArrayBufferObject);
-    #else
+	//#else
     glBindBuffer(GL_ARRAY_BUFFER, bufferObjects[VERTEX_DATA]);
     glEnableVertexAttribArray(GLT_ATTRIBUTE_VERTEX);
     glVertexAttribPointer(GLT_ATTRIBUTE_VERTEX, 3, GL_FLOAT, GL_FALSE, 0, 0);
@@ -258,7 +258,6 @@ void GLTriangleBatch::Draw(void)
     // Indexes
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, bufferObjects[INDEX_DATA]);
     #endif
-
 
     glDrawElements(GL_TRIANGLES, nNumIndexes, GL_UNSIGNED_SHORT, 0);
     
