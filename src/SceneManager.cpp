@@ -72,7 +72,7 @@ const int SceneManager::Draw()
 	return SHR_SUCCESS;
 }
 
-const int SceneManager::Update( int gameTime )
+const int SceneManager::Update( Uint32 gameTime )
 {
 	levels.at( currentLevel )->Update( gameTime );	
 	return SHR_SUCCESS;

@@ -135,6 +135,8 @@ Level1::~Level1()
 const int Level1::Initialize()
 {
 	/* Get the time our level has started */
+	clock = new Timer();
+	clock->start();
 	startTicks = ctxt->timer->get_ticks();
 
 	ctxt->camera->cameraFrame.MoveForward( -15.0f );
@@ -148,15 +150,15 @@ const int Level1::Initialize()
 	return SHR_SUCCESS;
 }
 
-const int Level1::Update( int gameTime )
+const int Level1::Update( Uint32 gameTime )
 {
 	/* Get the time this level has been online */
 	currentTicks = gameTime - startTicks;
 	/* Get the time difference between this update and the last */
-	deltaTicks = ( (gameTime - currentTicks) / 1000 );
+	deltaTicks = ( gameTime - currentTicks );
 
-	float linear = (0.5f * deltaTicks) / 100;
-	float angular = float(m3dDegToRad( (deltaTicks * 1.5f ) / 100));
+	float linear = ( 0.25f * (deltaTicks / 1000 ));
+	float angular = float(m3dDegToRad( 0.5f * (deltaTicks / 1000)));
 
 	if( currentTicks < 10000 )
 	{

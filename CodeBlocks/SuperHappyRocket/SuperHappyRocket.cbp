@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="SuperHappyRocket" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/SuperHappyRocket" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="../../include/SDL/include" />
+					<Add directory="../../include/SDL_mixer/include" />
+					<Add directory="../../include/GLTools/include" />
+					<Add directory="../../include/assimp/include" />
+				</Compiler>
+				<Linker>
+					<Add library="SDL2.lib" />
+					<Add library="SDL2main.lib" />
+					<Add library="SDL2_mixer.lib" />
+					<Add library="gltoolsd.lib" />
+					<Add library="opengl32.lib" />
+					<Add library="glu32.lib" />
+					<Add library="assimp.lib" />
+					<Add directory="../../include/SDL/lib/x86" />
+					<Add directory="../../include/SDL_mixer/lib/x86" />
+					<Add directory="../GLTools/lib" />
+					<Add directory="../../include/assimp/lib/deb" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/SuperHappyRocket" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="../../src/AudioManager.cpp" />
+		<Unit filename="../../src/AudioManager.h" />
+		<Unit filename="../../src/BaseLevel.cpp" />
+		<Unit filename="../../src/BaseLevel.h" />
+		<Unit filename="../../src/Camera.cpp" />
+		<Unit filename="../../src/Camera.h" />
+		<Unit filename="../../src/Context.cpp" />
+		<Unit filename="../../src/Context.h" />
+		<Unit filename="../../src/CubeMap.cpp" />
+		<Unit filename="../../src/CubeMap.h" />
+		<Unit filename="../../src/InputManager.cpp" />
+		<Unit filename="../../src/InputManager.h" />
+		<Unit filename="../../src/Level1.cpp" />
+		<Unit filename="../../src/Level1.h" />
+		<Unit filename="../../src/Light.cpp" />
+		<Unit filename="../../src/Light.h" />
+		<Unit filename="../../src/OpenGLRenderer.cpp" />
+		<Unit filename="../../src/OpenGLRenderer.h" />
+		<Unit filename="../../src/ReflectedObject.cpp" />
+		<Unit filename="../../src/ReflectedObject.h" />
+		<Unit filename="../../src/SDLApp.cpp" />
+		<Unit filename="../../src/SDLApp.h" />
+		<Unit filename="../../src/SceneManager.cpp" />
+		<Unit filename="../../src/SceneManager.h" />
+		<Unit filename="../../src/SimpleObject.cpp" />
+		<Unit filename="../../src/SimpleObject.h" />
+		<Unit filename="../../src/Texture2D.cpp" />
+		<Unit filename="../../src/Texture2D.h" />
+		<Unit filename="../../src/TextureManager.cpp" />
+		<Unit filename="../../src/TextureManager.h" />
+		<Unit filename="../../src/Timer.cpp" />
+		<Unit filename="../../src/Timer.h" />
+		<Unit filename="../../src/assimpMesh.cpp" />
+		<Unit filename="../../src/assimpMesh.h" />
+		<Unit filename="../../src/main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

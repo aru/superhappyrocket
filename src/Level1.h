@@ -10,7 +10,7 @@ public:
 	~Level1();
 	const int Initialize();
 	const int LoadContent();
-	const int Update( int gameTime );
+	const int Update( Uint32 gameTime );
 
 	/* Level content */
 	assimpMesh* rocket;

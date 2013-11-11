@@ -1,7 +1,7 @@
 #include "BaseLevel.h"
 
 BaseLevel::BaseLevel( Context* ctx )
-	:ctxt(ctx), lightSource(0)
+	:ctxt(ctx), lightSource(0), deltaTicks(0), startTicks(0), currentTicks(0)
 {
 }
 
@@ -10,7 +10,7 @@ BaseLevel::~BaseLevel() {}
 const int BaseLevel::Initialize() { return SHR_SUCCESS; }
 //const int BaseLevel::LoadContent() { return SHR_SUCCESS; }
 const int BaseLevel::Draw() { return SHR_SUCCESS; }
-const int BaseLevel::Update( int gameTime ) { return SHR_SUCCESS; }
+const int BaseLevel::Update( Uint32 gameTime ) { return SHR_SUCCESS; }
 
 const int BaseLevel::UnloadContent() 
 { 

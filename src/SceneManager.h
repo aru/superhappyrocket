@@ -31,7 +31,7 @@ public:
 	const int Initialize();
 	const int LoadContent( const unsigned int level );
 	const int Draw();
-	const int Update( int gameTime );
+	const int Update( Uint32 gameTime );
 	const int UnloadContent();
 
 	Context* ctxt;
