@@ -26,9 +26,8 @@ Debug/
 *.ipch
 *.sdf
 *opensdf
-*.ipch
 *.orig
 obj/
-[Rr]elease*/
+[R]elease*/
 _ReSharper*/
 [Tt]est[Rr]esult*
