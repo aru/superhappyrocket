@@ -27,6 +27,7 @@ Thumbs.db
 *.ipch
 *.sdf
 *.ipch
+*.orig
 obj/
 [Rr]elease*/
 _ReSharper*/
