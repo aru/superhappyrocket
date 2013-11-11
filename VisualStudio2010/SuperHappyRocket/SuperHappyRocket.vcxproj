@@ -40,7 +40,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>../../include/SDL/include;../../src/;../../include/SDL_mixer/include;../../include/GLTools/include;../../include/assimp/include;$(IncludePath)</IncludePath>
-    <LibraryPath>../../include/SDL/lib/x86/;../../include/SDL_mixer/lib/x86/;./lib/;../../include/assimp/lib/debug/;$(LibraryPath)</LibraryPath>
+    <LibraryPath>../../include/SDL/lib/x86/;../../include/SDL_mixer/lib/x86/;./lib/;../../include/assimp/lib/deb/;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
