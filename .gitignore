@@ -26,6 +26,7 @@ Thumbs.db
 *.sdf
 *.ipch
 *.sdf
+*opensdf
 *.ipch
 *.orig
 obj/
