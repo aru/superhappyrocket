@@ -37,7 +37,7 @@ const int Renderer::Initialize()
 
 #ifdef DEBUG
 	/* Now check if we can use ARB_debug_output */
-	if( GL_ARB_debug_output ) {
+	if( GLEW_ARB_debug_output ) {
 		glDebugMessageCallbackARB( &Renderer::myErrorCallback, NULL );
 		glEnable( GL_DEBUG_OUTPUT_SYNCHRONOUS );
 		glDebugMessageControlARB(GL_DONT_CARE,
