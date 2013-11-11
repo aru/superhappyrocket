@@ -35,7 +35,7 @@ const int Level1::LoadContent()
 	/* Add an object to reflect the cube map */
 	ReflectedObject* reflectedObject;
 	reflectedObject = new ReflectedObject( "../../content/textures/tarnish.tga", cubeMap->textureFile );
-	gltMakeSphere( reflectedObject->triBatch, 2.0f, 52, 30 );
+	gltMakeSphere( reflectedObject->triBatch, 2.0f, 22, 22 );
 	reflectedObject->frame.MoveUp( 5.0f );
 	actors.push_back( (SimpleObject*)reflectedObject );
 
