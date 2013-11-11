@@ -27,6 +27,7 @@ Debug/
 *.sdf
 *opensdf
 *.orig
+gltools*lib
 obj/
 [R]elease*/
 _ReSharper*/
