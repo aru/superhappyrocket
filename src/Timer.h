@@ -42,7 +42,7 @@ public:
     void unpause();
 
     //Gets the timer's time
-    int get_ticks();
+    Uint32 get_ticks();
 
     //Checks the status of the timer
     bool is_started();

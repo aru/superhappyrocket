@@ -31,7 +31,7 @@ public:
 	virtual const int Initialize();
 	virtual const int LoadContent() = 0;
 	virtual const int Draw();
-	virtual const int Update( int gameTime );
+	virtual const int Update( Uint32 gameTime );
 	virtual const int UnloadContent();
 
 	Context* ctxt;
@@ -43,9 +43,10 @@ public:
 	Light* lightSource; // Light Source in the level
 
 	/* Timing support */
-	int startTicks;   /* Time when level was started */
-	int currentTicks; /* Difference between start and sdl_getticks */
-	int deltaTicks;   /* place to save ticks passed since last time */
+	Timer* clock;
+	Uint32 startTicks;   /* Time when level was started */
+	Uint32 currentTicks; /* Difference between start and sdl_getticks */
+	Uint32 deltaTicks;   /* place to save ticks passed since last time */
 };
 
 /* Include additional levels */
