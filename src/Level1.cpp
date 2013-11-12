@@ -1,7 +1,7 @@
 #include "Level1.h"
 
 Level1::Level1( Context* ctx )
-	:BaseLevel( ctx )
+	:BaseLevel( ctx ), start(false)
 {
 }
 
@@ -27,9 +27,9 @@ const int Level1::LoadContent()
 
 	/* Add a cube map */
 	CubeMap* cubeMap;
-	cubeMap = new CubeMap( 40.0f, 
+	cubeMap = new CubeMap( 50.0f, 
 						   "../../content/textures/pos_x1.tga", "../../content/textures/neg_x1.tga", "../../content/textures/pos_y1.tga", 
-						   "../../content/textures/neg_y1.tga", "../../content/textures/pos_z1.tga", "../../content/textures/neg_z1.tga");
+						   "../../content/textures/neg_y1.tga", "../../content/textures/pos_z2.tga", "../../content/textures/neg_z1.tga");
 	actors.push_back( (SimpleObject*)cubeMap );
 
 	/* Add an object to reflect the cube map */
@@ -46,6 +46,7 @@ const int Level1::LoadContent()
 	rocket->frame.RotateLocalX( float( m3dDegToRad( -90.0f ) ));
 	rocket->frame.GetForwardVector( rocketForwardVector );
 	rocket->frame.GetUpVector( rocketUpVector );
+	rocket->frame.GetOrigin( rocketOrigin );
 	actors.push_back( (SimpleObject*)rocket );
 
 	/* Add an assimp model */
@@ -93,8 +94,12 @@ const int Level1::LoadContent()
 	/* Add an assimp model */
 	build = new assimpMesh( "../../content/models/edi1.3ds", ctxt );
 	build->frame.RotateLocalX( float( m3dDegToRad( 90.0f ) ));
-	build->frame.MoveForward( 5.0f );
+	build->frame.TranslateWorld( -2.5f, -10.0f, -30.0f );
 	build->frame.MoveRight( 3.0f );
+	build->frame.MoveUp( 5.0f );
+	build->scaleVector[0] = 6.0f;
+	build->scaleVector[1] = 6.0f;
+	build->scaleVector[2] = 6.0f;
 	actors.push_back( (SimpleObject*)build );
 
 	/* Add an assimp model */
@@ -102,6 +107,7 @@ const int Level1::LoadContent()
 	build2->frame.RotateLocalX( float( m3dDegToRad( 90.0f ) ));
 	build2->frame.MoveForward( 5.0f );
 	build2->frame.MoveRight( -3.0f );
+	build2->frame.MoveUp( 5.0f );
 	actors.push_back( (SimpleObject*)build2 );
 
 	/* Add an assimp model */
@@ -109,6 +115,7 @@ const int Level1::LoadContent()
 	build3->frame.RotateLocalX( float( m3dDegToRad( 90.0f ) ));
 	build3->frame.MoveForward( 5.0f );
 	build3->frame.MoveRight( 3.0f );
+	build3->frame.MoveUp( 5.0f );
 	actors.push_back( (SimpleObject*)build3 );
 
 	return SHR_SUCCESS;
@@ -135,15 +142,12 @@ Level1::~Level1()
 const int Level1::Initialize()
 {
 	/* Get the time our level has started */
-	clock = new Timer();
-	clock->start();
 	startTicks = ctxt->timer->get_ticks();
 
 	ctxt->camera->cameraFrame.MoveForward( -15.0f );
 	ctxt->camera->cameraFrame.GetForwardVector( cameraForwardVector );
 	ctxt->camera->cameraFrame.GetUpVector( cameraUpVector );
 	ctxt->camera->cameraFrame.GetOrigin( cameraOrigin );
-	ctxt->camera->modelViewMatrix.GetMatrix( cameraMatrix );
 
 	//ctxt->camera->cameraFrame.TranslateWorld( 0.0f, 0.0f, 10.0f );
 
@@ -155,12 +159,12 @@ const int Level1::Update( Uint32 gameTime )
 	/* Get the time this level has been online */
 	currentTicks = gameTime - startTicks;
 	/* Get the time difference between this update and the last */
-	deltaTicks = ( gameTime - currentTicks );
+	deltaTicks = (currentTicks - deltaTicks);
 
-	float linear = ( 0.25f * (deltaTicks / 1000 ));
-	float angular = float(m3dDegToRad( 0.5f * (deltaTicks / 1000)));
+	linear = ( 50.0f * ( deltaTicks / 1000.f));
+	angular = float(m3dDegToRad( 50.0f * (deltaTicks / 1000.f)));
 
-	if( currentTicks < 10000 )
+	if( !start )
 	{
 		cat->frame.RotateWorld( -angular, 0.0f, 1.0f, 0.0f );
 
@@ -173,65 +177,127 @@ const int Level1::Update( Uint32 gameTime )
 		star3->frame.RotateLocal( -angular, 1.0f, 1.0f, 0.0f );
 		star4->frame.RotateLocal( angular, 1.0f, 1.0f, 0.0f );
 		star5->frame.RotateLocal( -angular, 1.0f, 1.0f, 0.0f );
-
 	}
-	if( currentTicks > 10000 && currentTicks < 10500 )
+	else
 	{
-		rocket->frame.SetForwardVector( rocketForwardVector );
-		rocket->frame.SetUpVector( rocketUpVector );
-
-		ctxt->camera->cameraFrame.SetForwardVector( cameraForwardVector );
-		ctxt->camera->cameraFrame.SetUpVector( cameraUpVector );
-		ctxt->camera->cameraFrame.SetOrigin( cameraOrigin );
-		ctxt->camera->cameraFrame.MoveUp( 1.0f );
-		ctxt->camera->cameraFrame.RotateLocalX( float(m3dDegToRad(5.0f)) );
-
-		ctxt->audio->PlayMusic();
-	}
-	if( currentTicks >= 10500 )
-	{
-		ctxt->audio->PlayMusic();
-		rocket->frame.RotateLocal( angular, 0.0f, 1.0f, 0.0f );
-		star->frame.RotateLocal( -angular, 1.0f, 1.0f, 0.0f );
-		star->frame.TranslateWorld( 0.0f, 0.0f, linear );
-	}
-	if( currentTicks >= 13000 )
-	{
-		star2->frame.RotateLocal( angular, 1.0f, 1.0f, 0.0f );
-		star2->frame.TranslateWorld( 0.0f, 0.0f, linear );
-	}
-	if( currentTicks >= 15000 )
-	{
-		star3->frame.RotateLocal( -angular, 1.0f, 1.0f, 0.0f );
-		star3->frame.TranslateWorld( 0.0f, 0.0f, linear );
-	}
-	if( currentTicks >= 17000 )
-	{
-		star4->frame.RotateLocal( angular, 1.0f, 1.0f, 0.0f );
-		star4->frame.TranslateWorld( 0.0f, 0.0f, linear );
-	}
-	if( currentTicks >= 19000 )
-	{
-		star5->frame.RotateLocal( -angular, 1.0f, 1.0f, 0.0f );
-		star5->frame.TranslateWorld( 0.0f, 0.0f, linear );
-	}
-
-	if( ctxt->input->isKeyPressed( SDL_SCANCODE_RIGHT ) )
-	{
-		/* Usual right */
-		if( rocket->frame.GetOriginX() <= 1.25f )
+		if( currentTicks < 10 )
 		{
-			rocket->frame.TranslateWorld( 0.1f * linear, 0.0f, 0.0f );
+			rocket->frame.SetOrigin( rocketOrigin );
+			rocket->frame.SetUpVector( rocketUpVector );
+			rocket->frame.SetForwardVector( rocketForwardVector );
+
+			ctxt->camera->cameraFrame.SetOrigin( cameraOrigin );
+			ctxt->camera->cameraFrame.SetUpVector( cameraUpVector );
+			ctxt->camera->cameraFrame.SetForwardVector( cameraForwardVector );
+			//ctxt->camera->cameraFrame.MoveUp( 1.0f );
+			//ctxt->camera->cameraFrame.RotateLocalX( float(m3dDegToRad(5.0f)) );
+
+			ctxt->audio->PlayMusic();
+		}
+		if( currentTicks >= 1000 )
+		{
+			ctxt->audio->PlayMusic();
+			rocket->frame.RotateLocal( angular, 0.0f, 1.0f, 0.0f );
+			star->frame.RotateLocal( -angular, 1.0f, 1.0f, 0.0f );
+			star->frame.TranslateWorld( 0.0f, 0.0f, linear );
+			build->frame.TranslateWorld( 0.0f, 0.0f, 0.25f*linear );
+		}
+		if( currentTicks >= 1800 )
+		{
+			star2->frame.RotateLocal( angular, 1.0f, 1.0f, 0.0f );
+			star2->frame.TranslateWorld( 0.0f, 0.0f, linear );
+		}
+		if( currentTicks >= 20000 )
+		{
+			star3->frame.RotateLocal( -angular, 1.0f, 1.0f, 0.0f );
+			star3->frame.TranslateWorld( 0.0f, 0.0f, linear );
+		}
+		if( currentTicks >= 12000 )
+		{
+			star4->frame.RotateLocal( angular, 1.0f, 1.0f, 0.0f );
+			star4->frame.TranslateWorld( 0.0f, 0.0f, linear );
+		}
+		if( currentTicks >= 14000 )
+		{
+			star5->frame.RotateLocal( -angular, 1.0f, 1.0f, 0.0f );
+			star5->frame.TranslateWorld( 0.0f, 0.0f, linear );
 		}
 	}
-	if( ctxt->input->isKeyPressed( SDL_SCANCODE_LEFT ) )
-	{
-		/* Usual left */
-		if( rocket->frame.GetOriginX() >= -1.25f )
-		{
-			rocket->frame.TranslateWorld( 0.1f * -linear, 0.0f, 0.0f );
-		}
-	}
+	HandleInput( ctxt->input, gameTime );
+
+	deltaTicks = currentTicks;
 
 	return SHR_SUCCESS;
+}
+
+void Level1::HandleInput( InputManager* input, Uint32 gameTime )
+{
+	/* Keyboard Control */
+	if( !start )
+	{
+		if( input->isKeyPressed( SDL_SCANCODE_RETURN ) )
+		{
+			start = true;
+			startTicks = gameTime;
+		}
+		if( input->isKeyPressed( SDL_SCANCODE_RIGHT ) )
+		{
+			ctxt->camera->cameraFrame.TranslateWorld( linear, 0.0f, 0.0f );
+		}
+		if( input->isKeyPressed( SDL_SCANCODE_LEFT ) )
+		{
+			ctxt->camera->cameraFrame.TranslateWorld( -linear, 0.0f, 0.0f );
+		}
+		if( input->isKeyPressed( SDL_SCANCODE_UP ) )
+		{
+			ctxt->camera->cameraFrame.TranslateWorld( 0.0f, linear, 0.0f );
+		}
+		if( input->isKeyPressed( SDL_SCANCODE_DOWN ) )
+		{
+			ctxt->camera->cameraFrame.TranslateWorld( 0.0f, -linear, 0.0f );
+		}
+		if( input->isKeyPressed( SDL_SCANCODE_Q ) )
+		{
+			ctxt->camera->cameraFrame.TranslateWorld( 0.0f, 0.0f, linear );
+		}
+		if( input->isKeyPressed( SDL_SCANCODE_E ) )
+		{
+			ctxt->camera->cameraFrame.TranslateWorld( 0.0f, 0.0f, -linear );
+		}
+		if( input->isKeyPressed( SDL_SCANCODE_D ) )
+		{
+			ctxt->camera->cameraFrame.RotateLocal( -angular, 0.0f, 1.0f, 0.0f );
+		}
+		if( input->isKeyPressed( SDL_SCANCODE_A ) )
+		{
+			ctxt->camera->cameraFrame.RotateLocal( angular, 0.0f, 1.0f, 0.0f );
+		}
+		if( input->isKeyPressed( SDL_SCANCODE_W ) )
+		{
+			ctxt->camera->cameraFrame.RotateLocal( -angular, 1.0f, 0.0f, 0.0f );
+		}
+		if( input->isKeyPressed( SDL_SCANCODE_S ) )
+		{
+			ctxt->camera->cameraFrame.RotateLocal( angular, 1.0f, 0.0f, 0.0f );
+		}
+	}
+	else
+	{
+		if( input->isKeyPressed( SDL_SCANCODE_RIGHT ) )
+		{
+			/* Usual right */
+			if( rocket->frame.GetOriginX() <= 1.25f )
+			{
+				rocket->frame.TranslateWorld( 0.1f * linear, 0.0f, 0.0f );
+			}
+		}
+		if( input->isKeyPressed( SDL_SCANCODE_LEFT ) )
+		{
+			/* Usual left */
+			if( rocket->frame.GetOriginX() >= -1.25f )
+			{
+				rocket->frame.TranslateWorld( 0.1f * -linear, 0.0f, 0.0f );
+			}
+		}
+	}
 }

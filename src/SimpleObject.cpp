@@ -38,14 +38,19 @@ const int SimpleObject::Draw()
 /* A SimpleObject has either a texture or it doesn't */
 const int SimpleObject::Draw( Camera* camera, GLShaderManager* shaderManager, TextureManager* textureManager, Light* light )
 {
-
+	/* Get the camera matrix */
 	camera->cameraFrame.GetCameraMatrix(camera->camera, false);
+
+	/* Get the final transformation for this object */
+	frame.GetMatrix( mScaleMatrix );
+	m3dScaleMatrix44( mScaleMatrix, scaleVector );
 
 	/* Apply Actor Transform */
 	camera->modelViewMatrix.PushMatrix();
 
 	camera->modelViewMatrix.MultMatrix( camera->camera );
 	camera->modelViewMatrix.MultMatrix( frame );
+	camera->modelViewMatrix.MultMatrix( mScaleMatrix );
 
 	switch( shaderFile ) 
 	{

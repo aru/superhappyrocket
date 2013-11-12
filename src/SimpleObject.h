@@ -63,6 +63,10 @@ public:
 	/* Shader File associated to this particular object */
 	GLuint shaderFile;
 	string vShader, fShader;
+
+	/* Matrix transforms for everything */
+	M3DMatrix44f mScaleMatrix;
+	M3DVector3f scaleVector;
 };
 
 #include "Light.h"

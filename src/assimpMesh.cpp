@@ -3,6 +3,9 @@
 assimpMesh::assimpMesh( const char* filename, Context* ctx )
 	:ctxt(ctx), fileName( filename ), untexturedVerts( false ), numTextures(0)
 {
+	scaleVector[0] = 1.0f;
+	scaleVector[1] = 1.0f;
+	scaleVector[2] = 1.0f;
 }
 
 assimpMesh::assimpMesh( const assimpMesh& mesh )
@@ -60,11 +63,17 @@ const int assimpMesh::Draw( Camera* camera, GLShaderManager* shaderManager, Text
 	unsigned int i = 0;
 
 	camera->cameraFrame.GetCameraMatrix(camera->camera, false);
+	/* Get the final transformation for this object */
+	frame.GetMatrix( mScaleMatrix );
+	m3dScaleMatrix44( mScaleMatrix, scaleVector );
 
 	camera->modelViewMatrix.PushMatrix();
 
 	camera->modelViewMatrix.MultMatrix( camera->camera );
 	camera->modelViewMatrix.MultMatrix( frame );
+	camera->modelViewMatrix.MultMatrix( mScaleMatrix );
+
+	/* Do some transformations */
 
 	for( i = 0; i < objects.size(); i++ )
 	{

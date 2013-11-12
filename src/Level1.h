@@ -11,6 +11,7 @@ public:
 	const int Initialize();
 	const int LoadContent();
 	const int Update( Uint32 gameTime );
+	void HandleInput( InputManager* input, Uint32 gameTime );
 
 	/* Level content */
 	assimpMesh* rocket;
@@ -37,6 +38,10 @@ public:
 	assimpMesh* build6;
 
 	assimpMesh* cat;
+
+	bool start;
+	float linear;
+	float angular;
 };
 
 #endif
