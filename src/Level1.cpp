@@ -180,7 +180,7 @@ const int Level1::Update( Uint32 gameTime )
 	}
 	else
 	{
-		if( currentTicks < 10 )
+		if( currentTicks <= 1000 )
 		{
 			rocket->frame.SetOrigin( rocketOrigin );
 			rocket->frame.SetUpVector( rocketUpVector );
@@ -189,8 +189,8 @@ const int Level1::Update( Uint32 gameTime )
 			ctxt->camera->cameraFrame.SetOrigin( cameraOrigin );
 			ctxt->camera->cameraFrame.SetUpVector( cameraUpVector );
 			ctxt->camera->cameraFrame.SetForwardVector( cameraForwardVector );
-			//ctxt->camera->cameraFrame.MoveUp( 1.0f );
-			//ctxt->camera->cameraFrame.RotateLocalX( float(m3dDegToRad(5.0f)) );
+			ctxt->camera->cameraFrame.MoveUp( 1.0f );
+			ctxt->camera->cameraFrame.RotateLocalX( float(m3dDegToRad(5.0f)) );
 
 			ctxt->audio->PlayMusic();
 		}
@@ -207,17 +207,17 @@ const int Level1::Update( Uint32 gameTime )
 			star2->frame.RotateLocal( angular, 1.0f, 1.0f, 0.0f );
 			star2->frame.TranslateWorld( 0.0f, 0.0f, linear );
 		}
-		if( currentTicks >= 20000 )
+		if( currentTicks >= 2000 )
 		{
 			star3->frame.RotateLocal( -angular, 1.0f, 1.0f, 0.0f );
 			star3->frame.TranslateWorld( 0.0f, 0.0f, linear );
 		}
-		if( currentTicks >= 12000 )
+		if( currentTicks >= 3000 )
 		{
 			star4->frame.RotateLocal( angular, 1.0f, 1.0f, 0.0f );
 			star4->frame.TranslateWorld( 0.0f, 0.0f, linear );
 		}
-		if( currentTicks >= 14000 )
+		if( currentTicks >= 4000 )
 		{
 			star5->frame.RotateLocal( -angular, 1.0f, 1.0f, 0.0f );
 			star5->frame.TranslateWorld( 0.0f, 0.0f, linear );
