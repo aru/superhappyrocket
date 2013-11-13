@@ -28,8 +28,8 @@ const int Level1::LoadContent()
 	/* Add a cube map */
 	CubeMap* cubeMap;
 	cubeMap = new CubeMap( 50.0f, 
-						   "../../content/textures/pos_x1.tga", "../../content/textures/neg_x1.tga", "../../content/textures/pos_y1.tga", 
-						   "../../content/textures/neg_y1.tga", "../../content/textures/pos_z2.tga", "../../content/textures/neg_z1.tga");
+						   "../../content/textures/pos_x2.tga", "../../content/textures/neg_x2.tga", "../../content/textures/pos_y2.tga", 
+						   "../../content/textures/neg_y2.tga", "../../content/textures/pos_z2.tga", "../../content/textures/neg_z2.tga");
 	actors.push_back( (SimpleObject*)cubeMap );
 
 	/* Add an object to reflect the cube map */
