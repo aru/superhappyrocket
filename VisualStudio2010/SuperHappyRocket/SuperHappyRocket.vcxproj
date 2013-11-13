@@ -84,6 +84,8 @@
     <ClCompile Include="..\..\src\assimpMesh.cpp" />
     <ClCompile Include="..\..\src\AudioManager.cpp" />
     <ClCompile Include="..\..\src\BaseLevel.cpp" />
+    <ClCompile Include="..\..\src\BoundingBox.cpp" />
+    <ClCompile Include="..\..\src\Building.cpp" />
     <ClCompile Include="..\..\src\Camera.cpp" />
     <ClCompile Include="..\..\src\Context.cpp" />
     <ClCompile Include="..\..\src\CubeMap.cpp" />
@@ -96,6 +98,7 @@
     <ClCompile Include="..\..\src\SceneManager.cpp" />
     <ClCompile Include="..\..\src\SDLApp.cpp" />
     <ClCompile Include="..\..\src\SimpleObject.cpp" />
+    <ClCompile Include="..\..\src\Star.cpp" />
     <ClCompile Include="..\..\src\Texture2D.cpp" />
     <ClCompile Include="..\..\src\TextureManager.cpp" />
     <ClCompile Include="..\..\src\Timer.cpp" />
@@ -104,9 +107,12 @@
     <ClInclude Include="..\..\src\assimpMesh.h" />
     <ClInclude Include="..\..\src\AudioManager.h" />
     <ClInclude Include="..\..\src\BaseLevel.h" />
+    <ClInclude Include="..\..\src\BoundingBox.h" />
+    <ClInclude Include="..\..\src\Building.h" />
     <ClInclude Include="..\..\src\Camera.h" />
     <ClInclude Include="..\..\src\Context.h" />
     <ClInclude Include="..\..\src\CubeMap.h" />
+    <ClInclude Include="..\..\src\EntityManager.h" />
     <ClInclude Include="..\..\src\InputManager.h" />
     <ClInclude Include="..\..\src\Level1.h" />
     <ClInclude Include="..\..\src\Light.h" />
@@ -115,6 +121,7 @@
     <ClInclude Include="..\..\src\SimpleObject.h" />
     <ClInclude Include="..\..\src\OpenGLRenderer.h" />
     <ClInclude Include="..\..\src\SDLApp.h" />
+    <ClInclude Include="..\..\src\Star.h" />
     <ClInclude Include="..\..\src\Texture2D.h" />
     <ClInclude Include="..\..\src\TextureManager.h" />
     <ClInclude Include="..\..\src\Timer.h" />
