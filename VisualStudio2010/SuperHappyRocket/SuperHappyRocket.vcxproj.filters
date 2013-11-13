@@ -37,6 +37,12 @@
     <Filter Include="Renderer\Textures">
       <UniqueIdentifier>{01c70cdf-027c-42f4-a2b1-1aaf9e4863c7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Physics">
+      <UniqueIdentifier>{5eb3900e-b25b-4f22-8910-5da7e2805b51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects">
+      <UniqueIdentifier>{e9459d91-5350-4182-94ab-0d4ec6bc4236}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\main.cpp" />
@@ -91,6 +97,15 @@
     <ClCompile Include="..\..\src\assimpMesh.cpp">
       <Filter>Utils&amp;Importers</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\src\BoundingBox.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Star.cpp">
+      <Filter>Game\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Building.cpp">
+      <Filter>Game\GameObjects</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\src\Context.h">
@@ -143,6 +158,18 @@
     </ClInclude>
     <ClInclude Include="..\..\src\assimpMesh.h">
       <Filter>Utils&amp;Importers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\BoundingBox.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\EntityManager.h">
+      <Filter>Game\Scene Management</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Star.h">
+      <Filter>Game\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Building.h">
+      <Filter>Game\GameObjects</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

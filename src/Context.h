@@ -35,6 +35,8 @@ class Texture2D;
 class TextureManager;
 class Light;
 class assimpMesh;
+class EntityManager;
+class Star;
 
 /* SHR Engine Includes */
 #include "AudioManager.h"
