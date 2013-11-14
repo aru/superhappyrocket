@@ -46,6 +46,9 @@ const bool EntityManager::parseFile( const char* file )
 		spawnTimes.push_back( temp );
 	}
 
+	/* Create the objects now that we know how many there are, but don't create too many */
+	createObjects( spawnTimes.size() );
+
 	return true;
 }
 
@@ -54,6 +57,7 @@ const int EntityManager::Update( float gameTime )
 	if( spawnTimes.size() > 0 && gameTime >= spawnTimes.at(0) )
 	{
 		entities.at(0)->move = true;
+		spawnTimes.pop_back();
 	}
 	return SHR_SUCCESS;
 }
