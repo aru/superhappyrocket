@@ -97,13 +97,19 @@
     <ClCompile Include="..\..\src\assimpMesh.cpp">
       <Filter>Utils&amp;Importers</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\BoundingBox.cpp">
-      <Filter>Physics</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\src\Star.cpp">
       <Filter>Game\GameObjects</Filter>
     </ClCompile>
     <ClCompile Include="..\..\src\Building.cpp">
+      <Filter>Game\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\BoundingBox.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\EntityManager.cpp">
+      <Filter>Game\Scene Management</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Entity.cpp">
       <Filter>Game\GameObjects</Filter>
     </ClCompile>
   </ItemGroup>
@@ -169,6 +175,9 @@
       <Filter>Game\GameObjects</Filter>
     </ClInclude>
     <ClInclude Include="..\..\src\Building.h">
+      <Filter>Game\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Entity.h">
       <Filter>Game\GameObjects</Filter>
     </ClInclude>
   </ItemGroup>

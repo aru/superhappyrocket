@@ -17,6 +17,7 @@ public:
 	/* Check if it collides with another object */
 	const bool collidesWith( const assimpMesh& mesh );
 
+	/* Every star is associated to a model */
 	/* Every star also has a bounding box */
 	BoundingBox* box;
 

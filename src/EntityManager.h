@@ -1,20 +1,30 @@
 #ifndef SHR_ENTITYMANAGER
 #define SHR_ENTITYMANAGER
 
+#define MAX_ENTITY_NUMBER 7
+
+/* C++ STD includes */
 #include <vector>
+#include <string>
+#include <stdlib.h>
+#include <fstream>
+
+/* SHR includes */
 #include "Context.h"
-#include "Star.h"
+#include "Entity.h"
 
 using namespace std;
 
 class EntityManager
 {
 public:
-	EntityManager();
+	EntityManager( Context* ctx );
 	~EntityManager();
 
+	const int Update( float gameTime );
+
 	/* We need to first create the objects to be managed */
-	const bool createObjects( int numObjects );
+	const bool createObjects( const unsigned int numObjects );
 
 	/* We then need to subscribe them to the level in question */ /* ---> let the level do this */
 
@@ -43,6 +53,9 @@ public:
 
 	/* An array to a list of spawn points */
 	vector<int> spawnTimes;
+
+	/* An array for all of the objects that we will manage */
+	vector<Entity*> entities;
 };
 
 #endif
