@@ -42,6 +42,7 @@ const int CubeMap::Draw( Camera* camera, GLShaderManager* shaderManager, Texture
 	camera->modelViewMatrix.PushMatrix();
 
 		camera->modelViewMatrix.MultMatrix( mCameraRotOnly );
+		camera->modelViewMatrix.MultMatrix( frame );
 		glUseProgram( shaderFile );
 		glUniformMatrix4fv( locMVPSkyBox, 1, GL_FALSE, camera->transformPipeline.GetModelViewProjectionMatrix() );
 		glUniform1i( locCubeMap, 1 );

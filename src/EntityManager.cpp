@@ -52,12 +52,47 @@ const bool EntityManager::parseFile( const char* file )
 	return true;
 }
 
-const int EntityManager::Update( float gameTime )
+const int EntityManager::Update( float gameTime, float deltaTicks )
 {
-	if( spawnTimes.size() > 0 && gameTime >= spawnTimes.at(0) )
+	/* We need to spawn each entity so that they reach the player when the textFile says
+	 * it should, for this to happen, we calculate:
+	 * When to spawnTime = gameTime + timeToReachPlayer
+	 * where
+	 * timeToReachPlayer = distanceToPlayer / entitySpeed 
+	 * so in the end we have:
+	 * whenToSpawn = gameTime + (distanceToPlayer / entitySpeed ) */
+
+	// Get the distance to the player
+	float distanceToPlayer;
+	/*M3DVector3f playerOrigin, entityOrigin;
+	player->frame.GetOrigin( playerOrigin );
+	entities.at(0)->mesh->frame.GetOrigin( entityOrigin );*/
+
+	/*distanceToPlayer = m3dGetDistance3( playerOrigin, entityOrigin );*/
+
+	// ^ a bit of wishful thinking, we're just gonna hardcode it right now, haha, got you, real good, didn't I?
+	distanceToPlayer = 50.0f;
+
+	// Get the entity speed
+	float speed;
+	speed = entities.at(0)->speed;
+
+	if( spawnTimes.size() > 0 && spawnTimes.at(0) >= ( gameTime + (distanceToPlayer / speed) ) )
 	{
+		/* start moving the desired entity */
 		entities.at(0)->move = true;
+		/* pop the spawn time, we don't need it anymore */
 		spawnTimes.pop_back();
 	}
+
+	/* Update each entity now */
+	unsigned int i = 0;
+
+	for( i = 0; i < entities.size(); i++ )
+	{
+		entities.at(i)->Update( deltaTicks );
+	}
+
 	return SHR_SUCCESS;
+
 }
