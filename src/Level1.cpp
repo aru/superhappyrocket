@@ -27,16 +27,13 @@ const int Level1::LoadContent()
 
 	/* Add a cube map */
 	CubeMap* cubeMap;
-<<<<<<< HEAD
+
 	cubeMap = new CubeMap( 50.0f, 
 						   "../../content/textures/pos_x3.tga", "../../content/textures/neg_x3.tga", "../../content/textures/pos_y3.tga", 
 						   "../../content/textures/neg_y3.tga", "../../content/textures/pos_z3.tga", "../../content/textures/neg_z3.tga");
-=======
-	cubeMap = new CubeMap( 100.0f, 
-						   "../../content/textures/pos_x3.tga", "../../content/textures/neg_x2.tga", "../../content/textures/pos_y2.tga", 
-						   "../../content/textures/neg_y2.tga", "../../content/textures/pos_z2.tga", "../../content/textures/neg_z2.tga");
-	cubeMap->frame.RotateLocalY( float( m3dDegToRad( 90.0f ) ));
->>>>>>> cbd57d3d044ed0f6e5e0e3a1d664388355b21fc2
+
+	//cubeMap->frame.RotateLocalY( float( m3dDegToRad( 90.0f ) ));             
+
 	actors.push_back( (SimpleObject*)cubeMap );
 
 	/* Add an object to reflect the cube map */
