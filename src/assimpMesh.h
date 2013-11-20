@@ -72,7 +72,4 @@ public:
 	bool untexturedVerts;
 };
 
-#include "Star.h"
-#include "Building.h"
-
 #endif

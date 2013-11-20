@@ -27,9 +27,13 @@ const int Level1::LoadContent()
 
 	/* Add a cube map */
 	CubeMap* cubeMap;
+
 	cubeMap = new CubeMap( 50.0f, 
-						   "../../content/textures/pos_x2.tga", "../../content/textures/neg_x2.tga", "../../content/textures/pos_y2.tga", 
-						   "../../content/textures/neg_y2.tga", "../../content/textures/pos_z2.tga", "../../content/textures/neg_z2.tga");
+						   "../../content/textures/pos_x3.tga", "../../content/textures/neg_x3.tga", "../../content/textures/pos_y3.tga", 
+						   "../../content/textures/neg_y3.tga", "../../content/textures/pos_z3.tga", "../../content/textures/neg_z3.tga");
+
+	//cubeMap->frame.RotateLocalY( float( m3dDegToRad( 90.0f ) ));             
+
 	actors.push_back( (SimpleObject*)cubeMap );
 
 	/* Add an object to reflect the cube map */
@@ -56,67 +60,72 @@ const int Level1::LoadContent()
 	cat->frame.TranslateWorld( -5.0f, 0.0f, 0.0f );
 	actors.push_back( (SimpleObject*)cat );
 
-	/* Add an assimp model */
-	star = new assimpMesh( "../../content/models/estrella249.3ds", ctxt );
-	star->frame.RotateLocalZ( float( m3dDegToRad( 90.0f ) ));
-	star->frame.MoveForward( 50.0f );
-	star->frame.MoveRight( 0.0f );
-	actors.push_back( (SimpleObject*)star );
+	/* Add our entity Manager */
+	entityManager = new EntityManager( ctxt );
+	entityManager->parseFile( "../../content/files/Level1.txt" );
+	pushEntityManagerObjects();
 
 	/* Add an assimp model */
-	star2 = new assimpMesh( "../../content/models/estrella249.3ds", ctxt );
-	star2->frame.RotateLocalZ( float( m3dDegToRad( 90.0f ) ));
-	star2->frame.MoveForward( 50.0f );
-	star2->frame.MoveRight( 0.0f );
-	actors.push_back( (SimpleObject*)star2 );
+	//star = new assimpMesh( "../../content/models/estrella249.3ds", ctxt );
+	//star->frame.RotateLocalZ( float( m3dDegToRad( 90.0f ) ));
+	//star->frame.MoveForward( 50.0f );
+	//star->frame.MoveRight( 0.0f );
+	//actors.push_back( (SimpleObject*)star );
 
-	/* Add an assimp model */
-	star3 = new assimpMesh( "../../content/models/estrella249.3ds", ctxt );
-	star3->frame.RotateLocalZ( float( m3dDegToRad( 90.0f ) ));
-	star3->frame.MoveForward( 50.0f );
-	star3->frame.MoveRight( 0.0f );
-	actors.push_back( (SimpleObject*)star3 );
+	///* Add an assimp model */
+	//star2 = new assimpMesh( "../../content/models/estrella249.3ds", ctxt );
+	//star2->frame.RotateLocalZ( float( m3dDegToRad( 90.0f ) ));
+	//star2->frame.MoveForward( 50.0f );
+	//star2->frame.MoveRight( 0.0f );
+	//actors.push_back( (SimpleObject*)star2 );
 
-	/* Add an assimp model */
-	star4 = new assimpMesh( "../../content/models/estrella249.3ds", ctxt );
-	star4->frame.RotateLocalZ( float( m3dDegToRad( 90.0f ) ));
-	star4->frame.MoveForward( 50.0f );
-	star4->frame.MoveRight( 0.0f );
-	actors.push_back( (SimpleObject*)star4 );
+	///* Add an assimp model */
+	//star3 = new assimpMesh( "../../content/models/estrella249.3ds", ctxt );
+	//star3->frame.RotateLocalZ( float( m3dDegToRad( 90.0f ) ));
+	//star3->frame.MoveForward( 50.0f );
+	//star3->frame.MoveRight( 0.0f );
+	//actors.push_back( (SimpleObject*)star3 );
 
-	/* Add an assimp model */
-	star5 = new assimpMesh( "../../content/models/estrella249.3ds", ctxt );
-	star5->frame.RotateLocalZ( float( m3dDegToRad( 90.0f ) ));
-	star5->frame.MoveForward( 50.0f );
-	star5->frame.MoveRight( 0.0f );
-	actors.push_back( (SimpleObject*)star5 );
+	///* Add an assimp model */
+	//star4 = new assimpMesh( "../../content/models/estrella249.3ds", ctxt );
+	//star4->frame.RotateLocalZ( float( m3dDegToRad( 90.0f ) ));
+	//star4->frame.MoveForward( 50.0f );
+	//star4->frame.MoveRight( 0.0f );
+	//actors.push_back( (SimpleObject*)star4 );
 
-	/* Add an assimp model */
-	build = new assimpMesh( "../../content/models/edi1.3ds", ctxt );
-	build->frame.RotateLocalX( float( m3dDegToRad( 90.0f ) ));
-	build->frame.TranslateWorld( -2.5f, -10.0f, -30.0f );
-	build->frame.MoveRight( 3.0f );
-	build->frame.MoveUp( 5.0f );
-	build->scaleVector[0] = 6.0f;
-	build->scaleVector[1] = 6.0f;
-	build->scaleVector[2] = 6.0f;
-	actors.push_back( (SimpleObject*)build );
+	///* Add an assimp model */
+	//star5 = new assimpMesh( "../../content/models/estrella249.3ds", ctxt );
+	//star5->frame.RotateLocalZ( float( m3dDegToRad( 90.0f ) ));
+	//star5->frame.MoveForward( 50.0f );
+	//star5->frame.MoveRight( 0.0f );
+	//actors.push_back( (SimpleObject*)star5 );
 
-	/* Add an assimp model */
-	build2 = new assimpMesh( "../../content/models/edi2.3ds", ctxt );
-	build2->frame.RotateLocalX( float( m3dDegToRad( 90.0f ) ));
-	build2->frame.MoveForward( 5.0f );
-	build2->frame.MoveRight( -3.0f );
-	build2->frame.MoveUp( 5.0f );
-	actors.push_back( (SimpleObject*)build2 );
+	///* Add an assimp model */
+	//build = new assimpMesh( "../../content/models/edi1.3ds", ctxt );
+	//build->frame.RotateLocalX( float( m3dDegToRad( 90.0f ) ));
+	//build->frame.TranslateWorld( -2.5f, -10.0f, -30.0f );
+	//build->frame.MoveRight( 3.0f );
+	//build->frame.MoveUp( 5.0f );
+	//build->scaleVector[0] = 6.0f;
+	//build->scaleVector[1] = 6.0f;
+	//build->scaleVector[2] = 6.0f;
+	//actors.push_back( (SimpleObject*)build );
 
-	/* Add an assimp model */
-	build3 = new assimpMesh( "../../content/models/edi3.3ds", ctxt );
-	build3->frame.RotateLocalX( float( m3dDegToRad( 90.0f ) ));
-	build3->frame.MoveForward( 5.0f );
-	build3->frame.MoveRight( 3.0f );
-	build3->frame.MoveUp( 5.0f );
-	actors.push_back( (SimpleObject*)build3 );
+	///* Add an assimp model */
+	//build2 = new assimpMesh( "../../content/models/edi2.3ds", ctxt );
+	//build2->frame.RotateLocalX( float( m3dDegToRad( 90.0f ) ));
+	//build2->frame.MoveForward( 5.0f );
+	//build2->frame.MoveRight( -3.0f );
+	//build2->frame.MoveUp( 5.0f );
+	//actors.push_back( (SimpleObject*)build2 );
+
+	///* Add an assimp model */
+	//build3 = new assimpMesh( "../../content/models/edi3.3ds", ctxt );
+	//build3->frame.RotateLocalX( float( m3dDegToRad( 90.0f ) ));
+	//build3->frame.MoveForward( 5.0f );
+	//build3->frame.MoveRight( 3.0f );
+	//build3->frame.MoveUp( 5.0f );
+	//actors.push_back( (SimpleObject*)build3 );
 
 	return SHR_SUCCESS;
 }
@@ -172,14 +181,17 @@ const int Level1::Update( Uint32 gameTime )
 		rocket->frame.RotateLocal( angular, 0.0f, 1.0f, 0.0f );
 		rocket->frame.Normalize();
 
-		star->frame.RotateLocal( -angular, 1.0f, 1.0f, 0.0f );
-		star2->frame.RotateLocal( angular, 1.0f, 1.0f, 0.0f );
-		star3->frame.RotateLocal( -angular, 1.0f, 1.0f, 0.0f );
-		star4->frame.RotateLocal( angular, 1.0f, 1.0f, 0.0f );
-		star5->frame.RotateLocal( -angular, 1.0f, 1.0f, 0.0f );
+		//star->frame.RotateLocal( -angular, 1.0f, 1.0f, 0.0f );
+		//star2->frame.RotateLocal( angular, 1.0f, 1.0f, 0.0f );
+		//star3->frame.RotateLocal( -angular, 1.0f, 1.0f, 0.0f );
+		//star4->frame.RotateLocal( angular, 1.0f, 1.0f, 0.0f );
+		//star5->frame.RotateLocal( -angular, 1.0f, 1.0f, 0.0f );
 	}
 	else
 	{
+		entityManager->Update( currentTicks, deltaTicks );
+		ctxt->audio->PlayMusic();
+
 		if( currentTicks <= 1000 )
 		{
 			rocket->frame.SetOrigin( rocketOrigin );
@@ -192,35 +204,13 @@ const int Level1::Update( Uint32 gameTime )
 			ctxt->camera->cameraFrame.MoveUp( 1.0f );
 			ctxt->camera->cameraFrame.RotateLocalX( float(m3dDegToRad(5.0f)) );
 
-			ctxt->audio->PlayMusic();
 		}
 		if( currentTicks >= 1000 )
 		{
-			ctxt->audio->PlayMusic();
 			rocket->frame.RotateLocal( angular, 0.0f, 1.0f, 0.0f );
-			star->frame.RotateLocal( -angular, 1.0f, 1.0f, 0.0f );
-			star->frame.TranslateWorld( 0.0f, 0.0f, linear );
-			build->frame.TranslateWorld( 0.0f, 0.0f, 0.25f*linear );
-		}
-		if( currentTicks >= 1800 )
-		{
-			star2->frame.RotateLocal( angular, 1.0f, 1.0f, 0.0f );
-			star2->frame.TranslateWorld( 0.0f, 0.0f, linear );
-		}
-		if( currentTicks >= 2000 )
-		{
-			star3->frame.RotateLocal( -angular, 1.0f, 1.0f, 0.0f );
-			star3->frame.TranslateWorld( 0.0f, 0.0f, linear );
-		}
-		if( currentTicks >= 3000 )
-		{
-			star4->frame.RotateLocal( angular, 1.0f, 1.0f, 0.0f );
-			star4->frame.TranslateWorld( 0.0f, 0.0f, linear );
-		}
-		if( currentTicks >= 4000 )
-		{
-			star5->frame.RotateLocal( -angular, 1.0f, 1.0f, 0.0f );
-			star5->frame.TranslateWorld( 0.0f, 0.0f, linear );
+			//star->frame.RotateLocal( -angular, 1.0f, 1.0f, 0.0f );
+			//star->frame.TranslateWorld( 0.0f, 0.0f, linear );
+			//build->frame.TranslateWorld( 0.0f, 0.0f, 0.25f*linear );
 		}
 	}
 	HandleInput( ctxt->input, gameTime );
@@ -280,6 +270,14 @@ void Level1::HandleInput( InputManager* input, Uint32 gameTime )
 		{
 			ctxt->camera->cameraFrame.RotateLocal( angular, 1.0f, 0.0f, 0.0f );
 		}
+		if( input->isKeyPressed( SDL_SCANCODE_Z ) )
+		{
+			ctxt->camera->cameraFrame.RotateLocal( -angular, 0.0f, 0.0f, 1.0f );
+		}
+		if( input->isKeyPressed( SDL_SCANCODE_C ) )
+		{
+			ctxt->camera->cameraFrame.RotateLocal( angular, 0.0f, 0.0f, 1.0f );
+		}
 	}
 	else
 	{
@@ -299,5 +297,15 @@ void Level1::HandleInput( InputManager* input, Uint32 gameTime )
 				rocket->frame.TranslateWorld( 0.1f * -linear, 0.0f, 0.0f );
 			}
 		}
+	}
+}
+
+void Level1::pushEntityManagerObjects()
+{
+	unsigned int i = 0;
+
+	for( i = 0; i < entityManager->entities.size(); i++ )
+	{
+		actors.push_back( (SimpleObject*)entityManager->entities.at(i)->mesh );
 	}
 }

@@ -21,7 +21,7 @@ public:
 	EntityManager( Context* ctx );
 	~EntityManager();
 
-	const int Update( float gameTime );
+	const int Update( float gameTime, float deltaTicks );
 
 	/* We need to first create the objects to be managed */
 	const bool createObjects( const unsigned int numObjects );
@@ -56,6 +56,9 @@ public:
 
 	/* An array for all of the objects that we will manage */
 	vector<Entity*> entities;
+
+	/* We need to know the time when the user pressed enter */
+	Uint32 startTime;
 };
 
 #endif

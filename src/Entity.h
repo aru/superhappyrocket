@@ -1,7 +1,7 @@
 #ifndef SHR_ENTITY
 #define SHR_ENTITY
 
-#include "assimpMesh.h"
+#include "Context.h"
 #include "BoundingBox.h"
 
 /* An entity is a spawnable object by our entity manager 
@@ -15,8 +15,8 @@ public:
 	Entity( const int type, Context* ctx );
 	~Entity();
 
-	/* Update method for this object */
-	const int Update( float gameTime );
+	void Update( Uint32 gameTime );
+
 
 	/* Has a pointer to the context */
 	Context* ctxt;
@@ -28,6 +28,8 @@ public:
 	BoundingBox* box;
 	/* Has a variable to know when to move */
 	bool move;
+	/* Entity speed */
+	float speed;
 };
 
 #endif

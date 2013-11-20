@@ -58,7 +58,7 @@ const int Renderer::Initialize()
 	glEnable(GL_DEPTH_TEST);
 
 	/* Set the clear color */
-	glClearColor( 0.0f, 0.0f, 0.0f, 1.0f );
+	glClearColor( 0.0f, 1.0f, 0.0f, 1.0f );
 
 	/* Initialize the Projection Matrix/ModelView Matrix */
 	camera->modelViewMatrix.LoadIdentity();
@@ -129,7 +129,7 @@ const int Renderer::ChangeSize( int nWidth, int nHeight )
 	glViewport( 0, 0, nWidth, nHeight );
 
 	/* Create the projection matrix, and load it on the projection matrix stack */
-	camera->viewFrustum.SetPerspective( 35.0f, float(nWidth) / float(nHeight), 1.0f, 100.0f);
+	camera->viewFrustum.SetPerspective( 55.0f, float(nWidth) / float(nHeight), 1.0f, 200.0f);
 	camera->projectionMatrix.LoadMatrix( camera->viewFrustum.GetProjectionMatrix() );
     
     /* Set the transformation pipeline to use the two matrix stacks */
