@@ -52,7 +52,7 @@ const bool EntityManager::parseFile( const char* file )
 	return true;
 }
 
-const int EntityManager::Update( float gameTime, float deltaTicks )
+const int EntityManager::Update( Uint32 gameTime, Uint32 deltaTicks )
 {
 	/* We need to spawn each entity so that they reach the player when the textFile says
 	 * it should, for this to happen, we calculate:
@@ -77,12 +77,14 @@ const int EntityManager::Update( float gameTime, float deltaTicks )
 	float speed;
 	speed = entities.at(0)->speed;
 
-	if( spawnTimes.size() > 0 && spawnTimes.at(0) >= ( gameTime + (distanceToPlayer / speed) ) )
+	static unsigned int entityCount = 0;
+
+	if( spawnTimes.size() > 0 && spawnTimes.at(0) <= ( gameTime + (distanceToPlayer / speed) ) )
 	{
 		/* start moving the desired entity */
-		entities.at(0)->move = true;
+		entities.at(entityCount++)->move = true;
 		/* pop the spawn time, we don't need it anymore */
-		spawnTimes.pop_back();
+		spawnTimes.erase( spawnTimes.begin() );
 	}
 
 	/* Update each entity now */

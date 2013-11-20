@@ -21,7 +21,7 @@ public:
 	EntityManager( Context* ctx );
 	~EntityManager();
 
-	const int Update( float gameTime, float deltaTicks );
+	const int Update( Uint32 gameTime, Uint32 deltaTicks );
 
 	/* We need to first create the objects to be managed */
 	const bool createObjects( const unsigned int numObjects );

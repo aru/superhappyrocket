@@ -6,6 +6,9 @@ assimpMesh::assimpMesh( const char* filename, Context* ctx )
 	scaleVector[0] = 1.0f;
 	scaleVector[1] = 1.0f;
 	scaleVector[2] = 1.0f;
+
+	// Put this mesh somewhere visible
+	frame.SetOrigin( 0.0f, 0.0f, 0.0f );
 }
 
 assimpMesh::assimpMesh( const assimpMesh& mesh )
