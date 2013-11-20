@@ -54,3 +54,16 @@ Entity::~Entity()
 	mesh = 0;
 }
 
+const int Entity::Update( float gameTime )
+{
+	if( move )
+	{
+		static float linear = ( 50.0f * ( gameTime / 1000.f));
+		static float angular = float(m3dDegToRad( 50.0f * (gameTime / 1000.f)));
+
+		mesh->frame.RotateLocal( -angular, 1.0f, 1.0f, 1.0f );
+		mesh->frame.TranslateWorld( 0.0f, 0.0f, linear );
+	}
+
+	return SHR_SUCCESS;
+}

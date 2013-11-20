@@ -59,5 +59,11 @@ const int EntityManager::Update( float gameTime )
 		entities.at(0)->move = true;
 		spawnTimes.pop_back();
 	}
+
+	for( unsigned int i = 0; i < entities.size(); i++ )
+	{
+		entities.at(i)->Update( gameTime );
+	}
+
 	return SHR_SUCCESS;
 }

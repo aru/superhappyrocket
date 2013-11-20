@@ -15,6 +15,9 @@ public:
 	Entity( const int type, Context* ctx );
 	~Entity();
 
+	/* Update method for this object */
+	const int Update( float gameTime );
+
 	/* Has a pointer to the context */
 	Context* ctxt;
 	/* An entity is of one type */
