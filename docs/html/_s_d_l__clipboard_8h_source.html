@@ -141,11 +141,11 @@ $(document).ready(function(){initNavTree('_s_d_l__clipboard_8h_source.html','');
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">/* Function prototypes */</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">extern</span> <a class="code" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <span class="keywordtype">int</span> <a class="code" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> <a class="code" href="_s_d_l__clipboard_8h.html#a36d97ed867cc1a6a4f015aaa5972ed46">SDL_SetClipboardText</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *text);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">extern</span> DECLSPEC <span class="keywordtype">int</span> SDLCALL <a class="code" href="_s_d_l__clipboard_8h.html#a36d97ed867cc1a6a4f015aaa5972ed46">SDL_SetClipboardText</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *text);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">extern</span> <a class="code" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <span class="keywordtype">char</span> * <a class="code" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> <a class="code" href="_s_d_l__clipboard_8h.html#abbe260fcf16ab844d6626e0bd83587d1">SDL_GetClipboardText</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">extern</span> DECLSPEC <span class="keywordtype">char</span> * SDLCALL <a class="code" href="_s_d_l__clipboard_8h.html#abbe260fcf16ab844d6626e0bd83587d1">SDL_GetClipboardText</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">extern</span> <a class="code" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="code" href="_s_d_l__stdinc_8h.html#a8fca68df0f976765230fe589a7c7733b">SDL_bool</a> <a class="code" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> <a class="code" href="_s_d_l__clipboard_8h.html#a415fa85de093cf6117626a9415394509">SDL_HasClipboardText</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">extern</span> DECLSPEC SDL_bool SDLCALL <a class="code" href="_s_d_l__clipboard_8h.html#a415fa85de093cf6117626a9415394509">SDL_HasClipboardText</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">/* Ends C function definitions when using C++ */</span></div>
@@ -158,9 +158,6 @@ $(document).ready(function(){initNavTree('_s_d_l__clipboard_8h_source.html','');
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">/* vi: set ts=4 sw=4 expandtab: */</span></div>
 <div class="ttc" id="_s_d_l__clipboard_8h_html_a415fa85de093cf6117626a9415394509"><div class="ttname"><a href="_s_d_l__clipboard_8h.html#a415fa85de093cf6117626a9415394509">SDL_HasClipboardText</a></div><div class="ttdeci">DECLSPEC SDL_bool SDLCALL SDL_HasClipboardText(void)</div><div class="ttdoc">Returns a flag indicating whether the clipboard exists and contains a text string that is non-empty...</div></div>
-<div class="ttc" id="_s_d_l__stdinc_8h_html_a8fca68df0f976765230fe589a7c7733b"><div class="ttname"><a href="_s_d_l__stdinc_8h.html#a8fca68df0f976765230fe589a7c7733b">SDL_bool</a></div><div class="ttdeci">SDL_bool</div><div class="ttdef"><b>Definition:</b> SDL_stdinc.h:116</div></div>
-<div class="ttc" id="begin__code_8h_html_aa4c7a931f4a968f818b2a1b10a432185"><div class="ttname"><a href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a></div><div class="ttdeci">#define DECLSPEC</div><div class="ttdef"><b>Definition:</b> begin_code.h:58</div></div>
-<div class="ttc" id="begin__code_8h_html_a81faf4ba0455dc75f2e0507eddb79401"><div class="ttname"><a href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a></div><div class="ttdeci">#define SDLCALL</div><div class="ttdef"><b>Definition:</b> begin_code.h:68</div></div>
 <div class="ttc" id="begin__code_8h_html"><div class="ttname"><a href="begin__code_8h.html">begin_code.h</a></div></div>
 <div class="ttc" id="_s_d_l__clipboard_8h_html_abbe260fcf16ab844d6626e0bd83587d1"><div class="ttname"><a href="_s_d_l__clipboard_8h.html#abbe260fcf16ab844d6626e0bd83587d1">SDL_GetClipboardText</a></div><div class="ttdeci">DECLSPEC char *SDLCALL SDL_GetClipboardText(void)</div><div class="ttdoc">Get UTF-8 text from the clipboard, which must be freed with SDL_free() </div></div>
 <div class="ttc" id="close__code_8h_html"><div class="ttname"><a href="close__code_8h.html">close_code.h</a></div></div>
@@ -172,7 +169,7 @@ $(document).ready(function(){initNavTree('_s_d_l__clipboard_8h_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_bb71c587d4eee030bda30f2f35ebd6b7.html">SDL</a></li><li class="navelem"><a class="el" href="dir_3b9b8e98eade024f68a871db77d1527d.html">include</a></li><li class="navelem"><a class="el" href="_s_d_l__clipboard_8h.html">SDL_clipboard.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 20:57:14 for Super Happy Rocket by
+    <li class="footer">Generated on Fri Nov 22 2013 01:07:53 for Super Happy Rocket by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

@@ -163,13 +163,13 @@ $(document).ready(function(){initNavTree('anim_8h_source.html','');});
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">double</span> mTime;     </div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="defs_8h.html#ab51df4230ceb602bbc1bc109c432a6a0">C_STRUCT</a> <a class="code" href="structai_vector3_d.html">aiVector3D</a> mValue; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    C_STRUCT <a class="code" href="structai_vector3_d.html">aiVector3D</a> mValue; </div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    aiVectorKey(){}</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    aiVectorKey(<span class="keywordtype">double</span> time, <span class="keyword">const</span> <a class="code" href="structai_vector3_d.html">aiVector3D</a>&amp; <a class="code" href="_g_l_e_w_2glew_8h.html#a79169be77d7e02a24f68a5bfe627dc29">value</a>)</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    aiVectorKey(<span class="keywordtype">double</span> time, <span class="keyword">const</span> <a class="code" href="structai_vector3_d.html">aiVector3D</a>&amp; value)</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        :   mTime   (time)</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        ,   mValue  (value)</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    {}</div>
@@ -200,13 +200,13 @@ $(document).ready(function(){initNavTree('anim_8h_source.html','');});
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;{</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">double</span> mTime;     </div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <a class="code" href="defs_8h.html#ab51df4230ceb602bbc1bc109c432a6a0">C_STRUCT</a> <a class="code" href="structai_quaternion.html">aiQuaternion</a> mValue; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    C_STRUCT <a class="code" href="structai_quaternion.html">aiQuaternion</a> mValue; </div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor"></span>    aiQuatKey(){</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    }</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    aiQuatKey(<span class="keywordtype">double</span> time, <span class="keyword">const</span> <a class="code" href="structai_quaternion.html">aiQuaternion</a>&amp; <a class="code" href="_g_l_e_w_2glew_8h.html#a79169be77d7e02a24f68a5bfe627dc29">value</a>)</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    aiQuatKey(<span class="keywordtype">double</span> time, <span class="keyword">const</span> <a class="code" href="structai_quaternion.html">aiQuaternion</a>&amp; value)</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        :   mTime   (time)</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        ,   mValue  (value)</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    {}</div>
@@ -243,7 +243,7 @@ $(document).ready(function(){initNavTree('anim_8h_source.html','');});
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    aiMeshKey() {</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    }</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    aiMeshKey(<span class="keywordtype">double</span> time, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="_g_l_e_w_2glew_8h.html#a79169be77d7e02a24f68a5bfe627dc29">value</a>)</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    aiMeshKey(<span class="keywordtype">double</span> time, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> value)</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        :   mTime   (time)</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        ,   mValue  (value)</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    {}</div>
@@ -290,32 +290,32 @@ $(document).ready(function(){initNavTree('anim_8h_source.html','');});
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="comment">// ---------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="comment"></span><span class="keyword">struct </span>aiNodeAnim</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;{</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <a class="code" href="defs_8h.html#ab51df4230ceb602bbc1bc109c432a6a0">C_STRUCT</a> <a class="code" href="structai_string.html">aiString</a> mNodeName;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    C_STRUCT <a class="code" href="structai_string.html">aiString</a> mNodeName;</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> mNumPositionKeys;</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <a class="code" href="defs_8h.html#ab51df4230ceb602bbc1bc109c432a6a0">C_STRUCT</a> aiVectorKey* mPositionKeys;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    C_STRUCT aiVectorKey* mPositionKeys;</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> mNumRotationKeys;</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <a class="code" href="defs_8h.html#ab51df4230ceb602bbc1bc109c432a6a0">C_STRUCT</a> aiQuatKey* mRotationKeys;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    C_STRUCT aiQuatKey* mRotationKeys;</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> mNumScalingKeys;</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <a class="code" href="defs_8h.html#ab51df4230ceb602bbc1bc109c432a6a0">C_STRUCT</a> aiVectorKey* mScalingKeys;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    C_STRUCT aiVectorKey* mScalingKeys;</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <a class="code" href="defs_8h.html#aa8c1788fd9d096036c9e3b6cfe4b1301">C_ENUM</a> aiAnimBehaviour mPreState;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    C_ENUM aiAnimBehaviour mPreState;</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    <a class="code" href="defs_8h.html#aa8c1788fd9d096036c9e3b6cfe4b1301">C_ENUM</a> aiAnimBehaviour mPostState;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    C_ENUM aiAnimBehaviour mPostState;</div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;</div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="preprocessor"></span>    aiNodeAnim()</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    {</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        mNumPositionKeys = 0; mPositionKeys = <a class="code" href="begin__code_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>; </div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        mNumRotationKeys = 0; mRotationKeys = <a class="code" href="begin__code_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>; </div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        mNumScalingKeys  = 0; mScalingKeys  = <a class="code" href="begin__code_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>; </div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        mNumPositionKeys = 0; mPositionKeys = NULL; </div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        mNumRotationKeys = 0; mRotationKeys = NULL; </div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        mNumScalingKeys  = 0; mScalingKeys  = NULL; </div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;</div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        mPreState = mPostState = aiAnimBehaviour_DEFAULT;</div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    }</div>
@@ -332,11 +332,11 @@ $(document).ready(function(){initNavTree('anim_8h_source.html','');});
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="comment">// ---------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="comment"></span><span class="keyword">struct </span>aiMeshAnim</div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;{</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    <a class="code" href="defs_8h.html#ab51df4230ceb602bbc1bc109c432a6a0">C_STRUCT</a> <a class="code" href="structai_string.html">aiString</a> mName;</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    C_STRUCT <a class="code" href="structai_string.html">aiString</a> mName;</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> mNumKeys;</div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    <a class="code" href="defs_8h.html#ab51df4230ceb602bbc1bc109c432a6a0">C_STRUCT</a> aiMeshKey* mKeys;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    C_STRUCT aiMeshKey* mKeys;</div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;</div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="preprocessor"></span></div>
@@ -356,7 +356,7 @@ $(document).ready(function(){initNavTree('anim_8h_source.html','');});
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="comment">// ---------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="comment"></span><span class="keyword">struct </span>aiAnimation</div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;{</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    <a class="code" href="defs_8h.html#ab51df4230ceb602bbc1bc109c432a6a0">C_STRUCT</a> <a class="code" href="structai_string.html">aiString</a> mName;</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    C_STRUCT <a class="code" href="structai_string.html">aiString</a> mName;</div>
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;</div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    <span class="keywordtype">double</span> mDuration;</div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;</div>
@@ -364,12 +364,12 @@ $(document).ready(function(){initNavTree('anim_8h_source.html','');});
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;</div>
 <div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> mNumChannels;</div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    <a class="code" href="defs_8h.html#ab51df4230ceb602bbc1bc109c432a6a0">C_STRUCT</a> aiNodeAnim** mChannels;</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    C_STRUCT aiNodeAnim** mChannels;</div>
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;</div>
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;</div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> mNumMeshChannels;</div>
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <a class="code" href="defs_8h.html#ab51df4230ceb602bbc1bc109c432a6a0">C_STRUCT</a> aiMeshAnim** mMeshChannels;</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    C_STRUCT aiMeshAnim** mMeshChannels;</div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;</div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;<span class="preprocessor"></span>    aiAnimation()</div>
@@ -386,15 +386,15 @@ $(document).ready(function(){initNavTree('anim_8h_source.html','');});
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    {</div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        <span class="comment">// DO NOT REMOVE THIS ADDITIONAL CHECK</span></div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;        <span class="keywordflow">if</span> (mNumChannels &amp;&amp; mChannels)  {</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;            <span class="keywordflow">for</span>( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="_g_l_e_w_2glew_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a> = 0; <a class="code" href="_g_l_e_w_2glew_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a> &lt; mNumChannels; <a class="code" href="_g_l_e_w_2glew_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a>++) {</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;                <span class="keyword">delete</span> mChannels[<a class="code" href="_g_l_e_w_2glew_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a>];</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;            <span class="keywordflow">for</span>( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> a = 0; a &lt; mNumChannels; a++) {</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;                <span class="keyword">delete</span> mChannels[a];</div>
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;            }</div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;</div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;        <span class="keyword">delete</span> [] mChannels;</div>
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;        }</div>
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        <span class="keywordflow">if</span> (mNumMeshChannels &amp;&amp; mMeshChannels)  {</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;            <span class="keywordflow">for</span>( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="_g_l_e_w_2glew_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a> = 0; <a class="code" href="_g_l_e_w_2glew_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a> &lt; mNumMeshChannels; <a class="code" href="_g_l_e_w_2glew_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a>++) {</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;                <span class="keyword">delete</span> mMeshChannels[<a class="code" href="_g_l_e_w_2glew_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a>];</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;            <span class="keywordflow">for</span>( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> a = 0; a &lt; mNumMeshChannels; a++) {</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;                <span class="keyword">delete</span> mMeshChannels[a];</div>
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;            }</div>
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;</div>
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;        <span class="keyword">delete</span> [] mMeshChannels;</div>
@@ -415,34 +415,34 @@ $(document).ready(function(){initNavTree('anim_8h_source.html','');});
 <div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;<span class="keyword">struct </span>Interpolator     </div>
 <div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;{   </div>
 <div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    <span class="comment">// ------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> operator () (T&amp; out,<span class="keyword">const</span> T&amp; <a class="code" href="_g_l_e_w_2glew_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a>, <span class="keyword">const</span> T&amp; <a class="code" href="_g_l_e_w_2glew_8h.html#a6eba317e3cf44d6d26c04a5a8f197dcb">b</a>, <span class="keywordtype">float</span> d)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;        out = a + (b-<a class="code" href="_g_l_e_w_2glew_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a>)*d;</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> operator () (T&amp; out,<span class="keyword">const</span> T&amp; a, <span class="keyword">const</span> T&amp; b, <span class="keywordtype">float</span> d)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;        out = a + (b-a)*d;</div>
 <div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    }</div>
 <div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;}; <span class="comment">// ! Interpolator &lt;T&gt;</span></div>
 <div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;</div>
 <div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;</div>
 <div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
 <div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;<span class="keyword">struct </span>Interpolator &lt;<a class="code" href="structai_quaternion.html">aiQuaternion</a>&gt;  {   </div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;    <span class="keywordtype">void</span> operator () (<a class="code" href="structai_quaternion.html">aiQuaternion</a>&amp; out,<span class="keyword">const</span> <a class="code" href="structai_quaternion.html">aiQuaternion</a>&amp; <a class="code" href="_g_l_e_w_2glew_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a>, </div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;        <span class="keyword">const</span> <a class="code" href="structai_quaternion.html">aiQuaternion</a>&amp; <a class="code" href="_g_l_e_w_2glew_8h.html#a6eba317e3cf44d6d26c04a5a8f197dcb">b</a>, <span class="keywordtype">float</span> d)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;    <span class="keywordtype">void</span> operator () (<a class="code" href="structai_quaternion.html">aiQuaternion</a>&amp; out,<span class="keyword">const</span> <a class="code" href="structai_quaternion.html">aiQuaternion</a>&amp; a, </div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;        <span class="keyword">const</span> <a class="code" href="structai_quaternion.html">aiQuaternion</a>&amp; b, <span class="keywordtype">float</span> d)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;        aiQuaternion::Interpolate(out,a,b,d);</div>
 <div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    }</div>
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;}; <span class="comment">// ! Interpolator &lt;aiQuaternion&gt;</span></div>
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;</div>
 <div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;<span class="keyword">struct </span>Interpolator &lt;unsigned <a class="code" href="_g_l_e_w_2wglew_8h.html#a500a82aecba06f4550f6849b8099ca21">int</a>&gt;  {   </div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;    <span class="keywordtype">void</span> operator () (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>&amp; out,<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="_g_l_e_w_2glew_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a>, </div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="_g_l_e_w_2glew_8h.html#a6eba317e3cf44d6d26c04a5a8f197dcb">b</a>, <span class="keywordtype">float</span> d)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;<span class="keyword">struct </span>Interpolator &lt;unsigned int&gt;  {   </div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;    <span class="keywordtype">void</span> operator () (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>&amp; out,<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> a, </div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> b, <span class="keywordtype">float</span> d)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;        out = d&gt;0.5f ? b : <a class="code" href="_g_l_e_w_2glew_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a>;</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;        out = d&gt;0.5f ? b : a;</div>
 <div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;    }</div>
 <div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;}; <span class="comment">// ! Interpolator &lt;aiQuaternion&gt;</span></div>
 <div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;</div>
 <div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
 <div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;<span class="keyword">struct </span>Interpolator  &lt;aiVectorKey&gt;  {   </div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;    <span class="keywordtype">void</span> operator () (<a class="code" href="structai_vector3_d.html">aiVector3D</a>&amp; out,<span class="keyword">const</span> aiVectorKey&amp; <a class="code" href="_g_l_e_w_2glew_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a>,</div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;        <span class="keyword">const</span> aiVectorKey&amp; <a class="code" href="_g_l_e_w_2glew_8h.html#a6eba317e3cf44d6d26c04a5a8f197dcb">b</a>, <span class="keywordtype">float</span> d)<span class="keyword"> const    </span></div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;    <span class="keywordtype">void</span> operator () (<a class="code" href="structai_vector3_d.html">aiVector3D</a>&amp; out,<span class="keyword">const</span> aiVectorKey&amp; a,</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;        <span class="keyword">const</span> aiVectorKey&amp; b, <span class="keywordtype">float</span> d)<span class="keyword"> const    </span></div>
 <div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;        Interpolator&lt;aiVector3D&gt; ipl;</div>
 <div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;        ipl(out,a.mValue,b.mValue,d);</div>
@@ -451,8 +451,8 @@ $(document).ready(function(){initNavTree('anim_8h_source.html','');});
 <div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;</div>
 <div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
 <div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;<span class="keyword">struct </span>Interpolator &lt;aiQuatKey&gt;     {</div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;    <span class="keywordtype">void</span> operator () (<a class="code" href="structai_quaternion.html">aiQuaternion</a>&amp; out, <span class="keyword">const</span> aiQuatKey <a class="code" href="_g_l_e_w_2glew_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a>,</div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;        <span class="keyword">const</span> aiQuatKey&amp; <a class="code" href="_g_l_e_w_2glew_8h.html#a6eba317e3cf44d6d26c04a5a8f197dcb">b</a>, <span class="keywordtype">float</span> d)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;    <span class="keywordtype">void</span> operator () (<a class="code" href="structai_quaternion.html">aiQuaternion</a>&amp; out, <span class="keyword">const</span> aiQuatKey a,</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;        <span class="keyword">const</span> aiQuatKey&amp; b, <span class="keywordtype">float</span> d)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;        Interpolator&lt;aiQuaternion&gt; ipl;</div>
 <div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;        ipl(out,a.mValue,b.mValue,d);</div>
@@ -461,8 +461,8 @@ $(document).ready(function(){initNavTree('anim_8h_source.html','');});
 <div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;</div>
 <div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
 <div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;<span class="keyword">struct </span>Interpolator &lt;aiMeshKey&gt;     {</div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;    <span class="keywordtype">void</span> operator () (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>&amp; out, <span class="keyword">const</span> aiMeshKey <a class="code" href="_g_l_e_w_2glew_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a>,</div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;        <span class="keyword">const</span> aiMeshKey&amp; <a class="code" href="_g_l_e_w_2glew_8h.html#a6eba317e3cf44d6d26c04a5a8f197dcb">b</a>, <span class="keywordtype">float</span> d)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;    <span class="keywordtype">void</span> operator () (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>&amp; out, <span class="keyword">const</span> aiMeshKey a,</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;        <span class="keyword">const</span> aiMeshKey&amp; b, <span class="keywordtype">float</span> d)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;        Interpolator&lt;unsigned int&gt; ipl;</div>
 <div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;        ipl(out,a.mValue,b.mValue,d);</div>
@@ -476,16 +476,9 @@ $(document).ready(function(){initNavTree('anim_8h_source.html','');});
 <div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;<span class="preprocessor">#endif // __cplusplus</span></div>
 <div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif // AI_ANIM_H_INC</span></div>
 <div class="ttc" id="types_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div></div>
-<div class="ttc" id="defs_8h_html_aa8c1788fd9d096036c9e3b6cfe4b1301"><div class="ttname"><a href="defs_8h.html#aa8c1788fd9d096036c9e3b6cfe4b1301">C_ENUM</a></div><div class="ttdeci">#define C_ENUM</div><div class="ttdef"><b>Definition:</b> defs.h:181</div></div>
 <div class="ttc" id="structai_vector3_d_html"><div class="ttname"><a href="structai_vector3_d.html">aiVector3D</a></div><div class="ttdef"><b>Definition:</b> vector3.h:128</div></div>
-<div class="ttc" id="_g_l_e_w_2glew_8h_html_ac8729153468b5dcf13f971b21d84d4e5"><div class="ttname"><a href="_g_l_e_w_2glew_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a></div><div class="ttdeci">GLboolean GLboolean GLboolean GLboolean a</div><div class="ttdef"><b>Definition:</b> glew.h:8736</div></div>
-<div class="ttc" id="defs_8h_html_ab51df4230ceb602bbc1bc109c432a6a0"><div class="ttname"><a href="defs_8h.html#ab51df4230ceb602bbc1bc109c432a6a0">C_STRUCT</a></div><div class="ttdeci">#define C_STRUCT</div><div class="ttdef"><b>Definition:</b> defs.h:180</div></div>
-<div class="ttc" id="_g_l_e_w_2glew_8h_html_a79169be77d7e02a24f68a5bfe627dc29"><div class="ttname"><a href="_g_l_e_w_2glew_8h.html#a79169be77d7e02a24f68a5bfe627dc29">value</a></div><div class="ttdeci">GLsizei const GLfloat * value</div><div class="ttdef"><b>Definition:</b> glew.h:1835</div></div>
-<div class="ttc" id="_g_l_e_w_2wglew_8h_html_a500a82aecba06f4550f6849b8099ca21"><div class="ttname"><a href="_g_l_e_w_2wglew_8h.html#a500a82aecba06f4550f6849b8099ca21">int</a></div><div class="ttdeci">typedef int(WINAPI *PFNWGLRELEASEPBUFFERDCARBPROC)(HPBUFFERARB hPbuffer</div></div>
 <div class="ttc" id="structai_string_html"><div class="ttname"><a href="structai_string.html">aiString</a></div><div class="ttdef"><b>Definition:</b> types.h:238</div></div>
-<div class="ttc" id="begin__code_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="begin__code_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> begin_code.h:147</div></div>
 <div class="ttc" id="quaternion_8h_html"><div class="ttname"><a href="quaternion_8h.html">quaternion.h</a></div><div class="ttdoc">Quaternion structure, including operators when compiling in C++. </div></div>
-<div class="ttc" id="_g_l_e_w_2glew_8h_html_a6eba317e3cf44d6d26c04a5a8f197dcb"><div class="ttname"><a href="_g_l_e_w_2glew_8h.html#a6eba317e3cf44d6d26c04a5a8f197dcb">b</a></div><div class="ttdeci">GLdouble GLdouble GLdouble b</div><div class="ttdef"><b>Definition:</b> glew.h:8383</div></div>
 <div class="ttc" id="structai_quaternion_html"><div class="ttname"><a href="structai_quaternion.html">aiQuaternion</a></div><div class="ttdef"><b>Definition:</b> quaternion.h:117</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -493,7 +486,7 @@ $(document).ready(function(){initNavTree('anim_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_2a3ab8ae23d2cffc0bffa70c4703d52b.html">assimp</a></li><li class="navelem"><a class="el" href="dir_775f47f696c8e1c7e288eb84d9156930.html">include</a></li><li class="navelem"><a class="el" href="anim_8h.html">anim.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 20:57:09 for Super Happy Rocket by
+    <li class="footer">Generated on Fri Nov 22 2013 01:07:49 for Super Happy Rocket by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

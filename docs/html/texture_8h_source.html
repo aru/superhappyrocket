@@ -164,35 +164,35 @@ $(document).ready(function(){initNavTree('texture_8h_source.html','');});
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pushpack1_8h.html">./Compiler/pushpack1.h</a>&quot;</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#include &quot;./Compiler/pushpack1.h&quot;</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">// --------------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="structai_texel.html">   80</a></span>&#160;<span class="comment"></span><span class="keyword">struct </span><a class="code" href="structai_texel.html">aiTexel</a></div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;{</div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="structai_texel.html#ae9408c0d18f6ff597715cc626398a0ff">   82</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="structai_texel.html#a5b4f97f69cf59cb9065af67389599ba6">b</a>,<a class="code" href="structai_texel.html#a41da3516b8241165e4ca58ea8ed68fe6">g</a>,<a class="code" href="structai_texel.html#ae9408c0d18f6ff597715cc626398a0ff">r</a>,<a class="code" href="structai_texel.html#a6d4450e83b02b29d24f7aab27958034e">a</a>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> b,g,r,a;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor"></span>    <span class="keywordtype">bool</span> operator== (<span class="keyword">const</span> <a class="code" href="structai_texel.html">aiTexel</a>&amp; other)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_g_l_e_w_2glew_8h.html#a6eba317e3cf44d6d26c04a5a8f197dcb">b</a> == other.<a class="code" href="structai_texel.html#a5b4f97f69cf59cb9065af67389599ba6">b</a> &amp;&amp; <a class="code" href="_g_l_e_w_2glew_8h.html#abe08814c2f72843fde4d8df41440d5a0">r</a> == other.<a class="code" href="structai_texel.html#ae9408c0d18f6ff597715cc626398a0ff">r</a> &amp;&amp;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;               <a class="code" href="_g_l_e_w_2glew_8h.html#a9cd653b1648845554169fbc3a3f6d37a">g</a> == other.<a class="code" href="structai_texel.html#a41da3516b8241165e4ca58ea8ed68fe6">g</a> &amp;&amp; <a class="code" href="_g_l_e_w_2glew_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a> == other.<a class="code" href="structai_texel.html#a6d4450e83b02b29d24f7aab27958034e">a</a>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordflow">return</span> b == other.b &amp;&amp; r == other.r &amp;&amp;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;               g == other.g &amp;&amp; a == other.a;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">bool</span> operator!= (<span class="keyword">const</span> <a class="code" href="structai_texel.html">aiTexel</a>&amp; other)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_g_l_e_w_2glew_8h.html#a6eba317e3cf44d6d26c04a5a8f197dcb">b</a> != other.<a class="code" href="structai_texel.html#a5b4f97f69cf59cb9065af67389599ba6">b</a> || <a class="code" href="_g_l_e_w_2glew_8h.html#abe08814c2f72843fde4d8df41440d5a0">r</a> != other.<a class="code" href="structai_texel.html#ae9408c0d18f6ff597715cc626398a0ff">r</a> ||</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;               <a class="code" href="_g_l_e_w_2glew_8h.html#a9cd653b1648845554169fbc3a3f6d37a">g</a> != other.<a class="code" href="structai_texel.html#a41da3516b8241165e4ca58ea8ed68fe6">g</a> || <a class="code" href="_g_l_e_w_2glew_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a> != other.<a class="code" href="structai_texel.html#a6d4450e83b02b29d24f7aab27958034e">a</a>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordflow">return</span> b != other.b || r != other.r ||</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;               g != other.g || a != other.a;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keyword">operator</span> <a class="code" href="structai_color4_d.html">aiColor4D</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="structai_color4_d.html">aiColor4D</a>(<a class="code" href="_g_l_e_w_2glew_8h.html#abe08814c2f72843fde4d8df41440d5a0">r</a>/255.<a class="code" href="_g_l_e_w_2glew_8h.html#aba8ad56949f59242bc167b073dae3715">f</a>,<a class="code" href="_g_l_e_w_2glew_8h.html#a9cd653b1648845554169fbc3a3f6d37a">g</a>/255.<a class="code" href="_g_l_e_w_2glew_8h.html#aba8ad56949f59242bc167b073dae3715">f</a>,<a class="code" href="_g_l_e_w_2glew_8h.html#a6eba317e3cf44d6d26c04a5a8f197dcb">b</a>/255.<a class="code" href="_g_l_e_w_2glew_8h.html#aba8ad56949f59242bc167b073dae3715">f</a>,<a class="code" href="_g_l_e_w_2glew_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a>/255.<a class="code" href="_g_l_e_w_2glew_8h.html#aba8ad56949f59242bc167b073dae3715">f</a>);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="structai_color4_d.html">aiColor4D</a>(r/255.f,g/255.f,b/255.f,a/255.f);</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif // __cplusplus</span></div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;} <a class="code" href="color4_8h.html#a4eb9b3c1748b9622c575b45bcd9481f0">PACK_STRUCT</a>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;} PACK_STRUCT;</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="poppack1_8h.html">./Compiler/poppack1.h</a>&quot;</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#include &quot;./Compiler/poppack1.h&quot;</span></div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">// --------------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="structai_texture.html">  120</a></span>&#160;<span class="comment"></span><span class="keyword">struct </span><a class="code" href="structai_texture.html">aiTexture</a></div>
@@ -203,11 +203,11 @@ $(document).ready(function(){initNavTree('texture_8h_source.html','');});
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
 <div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="structai_texture.html#aa9f44996acf3b301bfeb4e5348311540">  149</a></span>&#160;    <span class="keywordtype">char</span> <a class="code" href="structai_texture.html#aa9f44996acf3b301bfeb4e5348311540">achFormatHint</a>[4];</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
-<div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="structai_texture.html#aeb07528748b6e49d2d81c60006024f9a">  160</a></span>&#160;    <a class="code" href="defs_8h.html#ab51df4230ceb602bbc1bc109c432a6a0">C_STRUCT</a> <a class="code" href="structai_texel.html">aiTexel</a>* <a class="code" href="structai_texture.html#aeb07528748b6e49d2d81c60006024f9a">pcData</a>;</div>
+<div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="structai_texture.html#aeb07528748b6e49d2d81c60006024f9a">  160</a></span>&#160;    C_STRUCT <a class="code" href="structai_texel.html">aiTexel</a>* <a class="code" href="structai_texture.html#aeb07528748b6e49d2d81c60006024f9a">pcData</a>;</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordtype">bool</span> CheckFormat(<span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="_g_l_e_w_2glew_8h.html#ad585a1393cfa368fa9dc3d8ebff640d5">s</a>)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordtype">bool</span> CheckFormat(<span class="keyword">const</span> <span class="keywordtype">char</span>* s)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <span class="keywordflow">return</span> (0 == ::strncmp(<a class="code" href="structai_texture.html#aa9f44996acf3b301bfeb4e5348311540">achFormatHint</a>,s,3));</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    }</div>
@@ -216,7 +216,7 @@ $(document).ready(function(){initNavTree('texture_8h_source.html','');});
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <a class="code" href="structai_texture.html">aiTexture</a> ()</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        : <a class="code" href="structai_texture.html#aaa3ad8cfe44fdc4dea2db91977d92234">mWidth</a>  (0)</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        , <a class="code" href="structai_texture.html#ac1e2fa6f1f646e9c55e3985d4418a752">mHeight</a> (0)</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        , <a class="code" href="structai_texture.html#aeb07528748b6e49d2d81c60006024f9a">pcData</a>  (<a class="code" href="begin__code_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        , <a class="code" href="structai_texture.html#aeb07528748b6e49d2d81c60006024f9a">pcData</a>  (NULL)</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    {</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        <a class="code" href="structai_texture.html#aa9f44996acf3b301bfeb4e5348311540">achFormatHint</a>[0] = <a class="code" href="structai_texture.html#aa9f44996acf3b301bfeb4e5348311540">achFormatHint</a>[1] = 0;</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <a class="code" href="structai_texture.html#aa9f44996acf3b301bfeb4e5348311540">achFormatHint</a>[2] = <a class="code" href="structai_texture.html#aa9f44996acf3b301bfeb4e5348311540">achFormatHint</a>[3] = 0;</div>
@@ -237,35 +237,20 @@ $(document).ready(function(){initNavTree('texture_8h_source.html','');});
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="preprocessor">#endif // AI_TEXTURE_H_INC</span></div>
 <div class="ttc" id="types_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div></div>
-<div class="ttc" id="_g_l_e_w_2glew_8h_html_a9cd653b1648845554169fbc3a3f6d37a"><div class="ttname"><a href="_g_l_e_w_2glew_8h.html#a9cd653b1648845554169fbc3a3f6d37a">g</a></div><div class="ttdeci">GLboolean GLboolean g</div><div class="ttdef"><b>Definition:</b> glew.h:8736</div></div>
-<div class="ttc" id="_g_l_e_w_2glew_8h_html_ad585a1393cfa368fa9dc3d8ebff640d5"><div class="ttname"><a href="_g_l_e_w_2glew_8h.html#ad585a1393cfa368fa9dc3d8ebff640d5">s</a></div><div class="ttdeci">GLdouble s</div><div class="ttdef"><b>Definition:</b> glew.h:1376</div></div>
-<div class="ttc" id="structai_texel_html_ae9408c0d18f6ff597715cc626398a0ff"><div class="ttname"><a href="structai_texel.html#ae9408c0d18f6ff597715cc626398a0ff">aiTexel::r</a></div><div class="ttdeci">unsigned char r</div><div class="ttdef"><b>Definition:</b> texture.h:82</div></div>
 <div class="ttc" id="structai_color4_d_html"><div class="ttname"><a href="structai_color4_d.html">aiColor4D</a></div><div class="ttdef"><b>Definition:</b> color4.h:95</div></div>
 <div class="ttc" id="structai_texture_html_aa9f44996acf3b301bfeb4e5348311540"><div class="ttname"><a href="structai_texture.html#aa9f44996acf3b301bfeb4e5348311540">aiTexture::achFormatHint</a></div><div class="ttdeci">char achFormatHint[4]</div><div class="ttdef"><b>Definition:</b> texture.h:149</div></div>
 <div class="ttc" id="structai_texture_html_ac1e2fa6f1f646e9c55e3985d4418a752"><div class="ttname"><a href="structai_texture.html#ac1e2fa6f1f646e9c55e3985d4418a752">aiTexture::mHeight</a></div><div class="ttdeci">unsigned int mHeight</div><div class="ttdef"><b>Definition:</b> texture.h:135</div></div>
-<div class="ttc" id="structai_texel_html_a5b4f97f69cf59cb9065af67389599ba6"><div class="ttname"><a href="structai_texel.html#a5b4f97f69cf59cb9065af67389599ba6">aiTexel::b</a></div><div class="ttdeci">unsigned char b</div><div class="ttdef"><b>Definition:</b> texture.h:82</div></div>
-<div class="ttc" id="_g_l_e_w_2glew_8h_html_ac8729153468b5dcf13f971b21d84d4e5"><div class="ttname"><a href="_g_l_e_w_2glew_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a></div><div class="ttdeci">GLboolean GLboolean GLboolean GLboolean a</div><div class="ttdef"><b>Definition:</b> glew.h:8736</div></div>
-<div class="ttc" id="defs_8h_html_ab51df4230ceb602bbc1bc109c432a6a0"><div class="ttname"><a href="defs_8h.html#ab51df4230ceb602bbc1bc109c432a6a0">C_STRUCT</a></div><div class="ttdeci">#define C_STRUCT</div><div class="ttdef"><b>Definition:</b> defs.h:180</div></div>
-<div class="ttc" id="structai_texel_html_a6d4450e83b02b29d24f7aab27958034e"><div class="ttname"><a href="structai_texel.html#a6d4450e83b02b29d24f7aab27958034e">aiTexel::a</a></div><div class="ttdeci">unsigned char a</div><div class="ttdef"><b>Definition:</b> texture.h:82</div></div>
-<div class="ttc" id="_g_l_e_w_2glew_8h_html_aba8ad56949f59242bc167b073dae3715"><div class="ttname"><a href="_g_l_e_w_2glew_8h.html#aba8ad56949f59242bc167b073dae3715">f</a></div><div class="ttdeci">GLclampf f</div><div class="ttdef"><b>Definition:</b> glew.h:3390</div></div>
 <div class="ttc" id="structai_texture_html"><div class="ttname"><a href="structai_texture.html">aiTexture</a></div><div class="ttdef"><b>Definition:</b> texture.h:120</div></div>
 <div class="ttc" id="structai_texture_html_aeb07528748b6e49d2d81c60006024f9a"><div class="ttname"><a href="structai_texture.html#aeb07528748b6e49d2d81c60006024f9a">aiTexture::pcData</a></div><div class="ttdeci">C_STRUCT aiTexel * pcData</div><div class="ttdef"><b>Definition:</b> texture.h:160</div></div>
-<div class="ttc" id="pushpack1_8h_html"><div class="ttname"><a href="pushpack1_8h.html">pushpack1.h</a></div></div>
 <div class="ttc" id="structai_texel_html"><div class="ttname"><a href="structai_texel.html">aiTexel</a></div><div class="ttdoc">Helper structure to represent a texel in a ARGB8888 format. </div><div class="ttdef"><b>Definition:</b> texture.h:80</div></div>
-<div class="ttc" id="begin__code_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="begin__code_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> begin_code.h:147</div></div>
 <div class="ttc" id="structai_texture_html_aaa3ad8cfe44fdc4dea2db91977d92234"><div class="ttname"><a href="structai_texture.html#aaa3ad8cfe44fdc4dea2db91977d92234">aiTexture::mWidth</a></div><div class="ttdeci">unsigned int mWidth</div><div class="ttdef"><b>Definition:</b> texture.h:128</div></div>
-<div class="ttc" id="_g_l_e_w_2glew_8h_html_a6eba317e3cf44d6d26c04a5a8f197dcb"><div class="ttname"><a href="_g_l_e_w_2glew_8h.html#a6eba317e3cf44d6d26c04a5a8f197dcb">b</a></div><div class="ttdeci">GLdouble GLdouble GLdouble b</div><div class="ttdef"><b>Definition:</b> glew.h:8383</div></div>
-<div class="ttc" id="poppack1_8h_html"><div class="ttname"><a href="poppack1_8h.html">poppack1.h</a></div></div>
-<div class="ttc" id="_g_l_e_w_2glew_8h_html_abe08814c2f72843fde4d8df41440d5a0"><div class="ttname"><a href="_g_l_e_w_2glew_8h.html#abe08814c2f72843fde4d8df41440d5a0">r</a></div><div class="ttdeci">GLdouble GLdouble GLdouble r</div><div class="ttdef"><b>Definition:</b> glew.h:1392</div></div>
-<div class="ttc" id="structai_texel_html_a41da3516b8241165e4ca58ea8ed68fe6"><div class="ttname"><a href="structai_texel.html#a41da3516b8241165e4ca58ea8ed68fe6">aiTexel::g</a></div><div class="ttdeci">unsigned char g</div><div class="ttdef"><b>Definition:</b> texture.h:82</div></div>
-<div class="ttc" id="color4_8h_html_a4eb9b3c1748b9622c575b45bcd9481f0"><div class="ttname"><a href="color4_8h.html#a4eb9b3c1748b9622c575b45bcd9481f0">PACK_STRUCT</a></div><div class="ttdeci">struct aiColor4D PACK_STRUCT</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_2a3ab8ae23d2cffc0bffa70c4703d52b.html">assimp</a></li><li class="navelem"><a class="el" href="dir_775f47f696c8e1c7e288eb84d9156930.html">include</a></li><li class="navelem"><a class="el" href="texture_8h.html">texture.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 20:57:10 for Super Happy Rocket by
+    <li class="footer">Generated on Fri Nov 22 2013 01:07:50 for Super Happy Rocket by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

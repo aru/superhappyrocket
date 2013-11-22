@@ -10,5 +10,4 @@ digraph "include/assimp/include" {
     dir_5da2a656afadae239da10cb18e8ea97a [shape=box label="Compiler" color="black" fillcolor="white" style="filled" URL="dir_5da2a656afadae239da10cb18e8ea97a.html"];
   }
   }
-  dir_775f47f696c8e1c7e288eb84d9156930->dir_5da2a656afadae239da10cb18e8ea97a [headlabel="14", labeldistance=1.5 headhref="dir_000002_000004.html"];
 }

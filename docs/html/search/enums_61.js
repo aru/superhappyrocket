@@ -3,7 +3,6 @@ var searchData=
   ['aiblendmode',['aiBlendMode',['../material_8h.html#ae1236da1ccfbf4f23bb490287a4d61ac',1,'material.h']]],
   ['aicomponent',['aiComponent',['../config_8h.html#a97ac2ef7a3967402a223f3da2640b2b3',1,'config.h']]],
   ['aiimporterflags',['aiImporterFlags',['../importerdesc_8h.html#a3c78e1208ecbd75fecdbb4e38d820449',1,'importerdesc.h']]],
-  ['ailightsourcetype',['aiLightSourceType',['../include_2assimp_2include_2light_8h.html#a7a75cb224d903e71e8daede432449766',1,'light.h']]],
   ['aipostprocesssteps',['aiPostProcessSteps',['../postprocess_8h.html#a64795260b95f5a4b3f3dc1be4f52e410',1,'postprocess.h']]],
   ['aiprimitivetype',['aiPrimitiveType',['../mesh_8h.html#ac352902280db7c3bd8ba64c133b7f03f',1,'mesh.h']]],
   ['aishadingmode',['aiShadingMode',['../material_8h.html#a93e23e0201d6ed86fb4287e15218e4cf',1,'material.h']]],

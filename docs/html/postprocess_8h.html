@@ -136,7 +136,7 @@ Macros</h2></td></tr>
 <tr class="memitem:acd2361a766665ce2dbfb3eae201b784d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="postprocess_8h.html#acd2361a766665ce2dbfb3eae201b784d">aiProcess_ConvertToLeftHanded</a></td></tr>
 <tr class="memdesc:acd2361a766665ce2dbfb3eae201b784d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shortcut flag for Direct3D-based applications.  <a href="#acd2361a766665ce2dbfb3eae201b784d">More...</a><br/></td></tr>
 <tr class="separator:acd2361a766665ce2dbfb3eae201b784d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac72dfcb11eae3f0403430b2d9bd6aaac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="postprocess_8h.html#ac72dfcb11eae3f0403430b2d9bd6aaac">aiProcessPreset_TargetRealtime_Fast</a></td></tr>
+<tr class="memitem:ac72dfcb11eae3f0403430b2d9bd6aaac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>aiProcessPreset_TargetRealtime_Fast</b></td></tr>
 <tr class="separator:ac72dfcb11eae3f0403430b2d9bd6aaac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a450d38c62891ec72077a011098ee4412"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="postprocess_8h.html#a450d38c62891ec72077a011098ee4412">aiProcessPreset_TargetRealtime_Quality</a></td></tr>
 <tr class="memdesc:a450d38c62891ec72077a011098ee4412"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default postprocess configuration optimizing the data for real-time rendering.  <a href="#a450d38c62891ec72077a011098ee4412">More...</a><br/></td></tr>
@@ -304,7 +304,7 @@ Enumerations</h2></td></tr>
 <div class="ttc" id="postprocess_8h_html_a64795260b95f5a4b3f3dc1be4f52e410a6afb4fee42eca4482674859196cb8685"><div class="ttname"><a href="postprocess_8h.html#a64795260b95f5a4b3f3dc1be4f52e410a6afb4fee42eca4482674859196cb8685">aiProcess_GenSmoothNormals</a></div><div class="ttdef"><b>Definition:</b> postprocess.h:177</div></div>
 </div><!-- fragment -->
 <p>Default postprocess configuration optimizing the data for real-time rendering. </p>
-<p>Unlike <a class="el" href="postprocess_8h.html#ac72dfcb11eae3f0403430b2d9bd6aaac">aiProcessPreset_TargetRealtime_Fast</a>, this configuration performs some extra optimizations to improve rendering speed and to minimize memory usage. It could be a good choice for a level editor environment where import speed is not so important.</p>
+<p>Unlike #aiProcessPreset_TargetRealtime_Fast, this configuration performs some extra optimizations to improve rendering speed and to minimize memory usage. It could be a good choice for a level editor environment where import speed is not so important.</p>
 <p>If you're using DirectX, don't forget to combine this value with the <a class="el" href="postprocess_8h.html#acd2361a766665ce2dbfb3eae201b784d" title="Shortcut flag for Direct3D-based applications. ">aiProcess_ConvertToLeftHanded</a> step. If you don't support UV transformations in your application apply the <a class="el" href="postprocess_8h.html#a64795260b95f5a4b3f3dc1be4f52e410a87577c60885b193571a10237341b237f">aiProcess_TransformUVCoords</a> step, too. </p>
 <dl class="section note"><dt>Note</dt><dd>Please take the time to read the docs for the steps enabled by this preset. Some of them offer further configurable properties, while some of them might not be of use for you so it might be better to not specify them. </dd></dl>
 
@@ -324,9 +324,9 @@ Enumerations</h2></td></tr>
 <p>Defines the flags for all possible post processing steps. </p>
 <dl class="section see"><dt>See Also</dt><dd>Importer::ReadFile </dd>
 <dd>
-<a class="el" href="cimport_8h.html#a37baf75d55599334097f7337ce8f25c5">aiImportFile</a> </dd>
+aiImportFile </dd>
 <dd>
-<a class="el" href="cimport_8h.html#a60c8f08f9daa728b5e2d20623e81cd13">aiImportFileEx</a> </dd></dl>
+aiImportFileEx </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a64795260b95f5a4b3f3dc1be4f52e410a8857a0e30688127a82c7b8939958c6dc"></a>aiProcess_CalcTangentSpace</em>&nbsp;</td><td class="fielddoc">
 <hr/>
@@ -375,7 +375,7 @@ Specify both <a class="el" href="postprocess_8h.html#a64795260b95f5a4b3f3dc1be4f
 <hr/>
 <p>Splits large meshes into smaller sub-meshes.</p>
 <p>This is quite useful for real-time rendering, where the number of triangles which can be maximally processed in a single draw-call is limited by the video driver/hardware. The maximum vertex buffer is usually limited too. Both requirements can be met with this step: you may specify both a triangle and vertex limit for a single mesh.</p>
-<p>The split limits can (and should!) be set through the <code><a class="el" href="config_8h.html#a67d3e772a82c3bbb921ce4d8f2448f2f" title="Set the maximum number of vertices in a mesh. ">AI_CONFIG_PP_SLM_VERTEX_LIMIT</a></code> and <code><a class="el" href="config_8h.html#a28b904b69e6e5261aaae50b858316041" title="Set the maximum number of triangles in a mesh. ">AI_CONFIG_PP_SLM_TRIANGLE_LIMIT</a></code> settings. The default values are <code><a class="el" href="config_8h.html#a3d82573abff7d733ec1f24456662a99d">AI_SLM_DEFAULT_MAX_VERTICES</a></code> and <code><a class="el" href="config_8h.html#abfe0ddcde0e04816e7bc9e429dcd8185">AI_SLM_DEFAULT_MAX_TRIANGLES</a></code>.</p>
+<p>The split limits can (and should!) be set through the <code><a class="el" href="config_8h.html#a67d3e772a82c3bbb921ce4d8f2448f2f" title="Set the maximum number of vertices in a mesh. ">AI_CONFIG_PP_SLM_VERTEX_LIMIT</a></code> and <code><a class="el" href="config_8h.html#a28b904b69e6e5261aaae50b858316041" title="Set the maximum number of triangles in a mesh. ">AI_CONFIG_PP_SLM_TRIANGLE_LIMIT</a></code> settings. The default values are <code>#AI_SLM_DEFAULT_MAX_VERTICES</code> and <code>#AI_SLM_DEFAULT_MAX_TRIANGLES</code>.</p>
 <p>Note that splitting is generally a time-consuming task, but only if there's something to split. The use of this step is recommended for most users. </p>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a64795260b95f5a4b3f3dc1be4f52e410a6e50fab95214a33996e28fae3efc7582"></a>aiProcess_PreTransformVertices</em>&nbsp;</td><td class="fielddoc">
@@ -387,7 +387,7 @@ Specify both <a class="el" href="postprocess_8h.html#a64795260b95f5a4b3f3dc1be4f
 <tr><td class="fieldname"><em><a class="anchor" id="a64795260b95f5a4b3f3dc1be4f52e410a9fc450a103aa2831c145c49bc56c9439"></a>aiProcess_LimitBoneWeights</em>&nbsp;</td><td class="fielddoc">
 <hr/>
 <p>Limits the number of bones simultaneously affecting a single vertex to a maximum value.</p>
-<p>If any vertex is affected by more than the maximum number of bones, the least important vertex weights are removed and the remaining vertex weights are renormalized so that the weights still sum up to 1. The default bone weight limit is 4 (defined as <code><a class="el" href="config_8h.html#ab0dbe36911bd9df0661bdb69ecadb2e1">AI_LMW_MAX_WEIGHTS</a></code> in config.h), but you can use the <code><a class="el" href="config_8h.html#a37c3ad7872523b615d42761f2dc1bdf5" title="Set the maximum number of bones affecting a single vertex. ">AI_CONFIG_PP_LBW_MAX_WEIGHTS</a></code> setting to supply your own limit to the post processing step.</p>
+<p>If any vertex is affected by more than the maximum number of bones, the least important vertex weights are removed and the remaining vertex weights are renormalized so that the weights still sum up to 1. The default bone weight limit is 4 (defined as <code>#AI_LMW_MAX_WEIGHTS</code> in <a class="el" href="config_8h.html" title="Defines constants for configurable properties for the library. ">config.h</a>), but you can use the <code><a class="el" href="config_8h.html#a37c3ad7872523b615d42761f2dc1bdf5" title="Set the maximum number of bones affecting a single vertex. ">AI_CONFIG_PP_LBW_MAX_WEIGHTS</a></code> setting to supply your own limit to the post processing step.</p>
 <p>If you intend to perform the skinning in hardware, this post processing step might be of interest to you. </p>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a64795260b95f5a4b3f3dc1be4f52e410ae420ce22fbbac9d0fd21fd92f2b630fa"></a>aiProcess_ValidateDataStructure</em>&nbsp;</td><td class="fielddoc">
@@ -396,7 +396,7 @@ Specify both <a class="el" href="postprocess_8h.html#a64795260b95f5a4b3f3dc1be4f
 <p>It is recommended that you capture <a class="el" href="namespace_assimp.html">Assimp</a>'s log output if you use this flag, so you can easily find out what's wrong if a file fails the validation. The validator is quite strict and will find <em>all</em> inconsistencies in the data structure... It is recommended that plugin developers use it to debug their loaders. There are two types of validation failures: </p>
 <ul>
 <li>
-Error: There's something wrong with the imported data. Further postprocessing is not possible and the data is not usable at all. The import fails. #Importer::GetErrorString() or <a class="el" href="cimport_8h.html#abe72551b74cc4bc3c49349ce3014bc9b">aiGetErrorString()</a> carry the error message around. </li>
+Error: There's something wrong with the imported data. Further postprocessing is not possible and the data is not usable at all. The import fails. #Importer::GetErrorString() or #aiGetErrorString() carry the error message around. </li>
 <li>
 Warning: There are some minor issues (e.g. 1000000 animation keyframes with the same time), but further postprocessing and use of the data structure is still safe. Warning details are written to the log file, <code>#AI_SCENE_FLAGS_VALIDATION_WARNING</code> is set in #aiScene::mFlags </li>
 </ul>
@@ -510,11 +510,11 @@ usually fixes them all and makes them renderable. </pre> </td></tr>
 <hr/>
 <p>This step flips all UV coordinates along the y-axis and adjusts material settings and bitangents accordingly.</p>
 <p><b>Output UV coordinate system:</b> </p>
-<div class="fragment"><div class="line">* 0<a class="code" href="_g_l_e_w_2glew_8h.html#a74d80fd479c0f6d0153c709949a089ef">y</a>|0<a class="code" href="_g_l_e_w_2glew_8h.html#a74d80fd479c0f6d0153c709949a089ef">y</a> ---------- 1<a class="code" href="_g_l_e_w_2glew_8h.html#a0cdec8e97a75ee9458b23d152bf962d4">x</a>|0<a class="code" href="_g_l_e_w_2glew_8h.html#a74d80fd479c0f6d0153c709949a089ef">y</a> </div>
+<div class="fragment"><div class="line">* 0y|0y ---------- 1x|0y </div>
 <div class="line">* |                 |</div>
 <div class="line">* |                 |</div>
 <div class="line">* |                 |</div>
-<div class="line">* 0<a class="code" href="_g_l_e_w_2glew_8h.html#a0cdec8e97a75ee9458b23d152bf962d4">x</a>|1<a class="code" href="_g_l_e_w_2glew_8h.html#a74d80fd479c0f6d0153c709949a089ef">y</a> ---------- 1<a class="code" href="_g_l_e_w_2glew_8h.html#a0cdec8e97a75ee9458b23d152bf962d4">x</a>|1<a class="code" href="_g_l_e_w_2glew_8h.html#a74d80fd479c0f6d0153c709949a089ef">y</a></div>
+<div class="line">* 0x|1y ---------- 1x|1y</div>
 <div class="line">* </div>
 </div><!-- fragment --><p>You'll probably want to consider this flag if you use Direct3D for rendering. The <a class="el" href="postprocess_8h.html#acd2361a766665ce2dbfb3eae201b784d" title="Shortcut flag for Direct3D-based applications. ">aiProcess_ConvertToLeftHanded</a> flag supersedes this setting and bundles all conversions typically required for D3D-based applications. </p>
 </td></tr>
@@ -525,8 +525,8 @@ usually fixes them all and makes them renderable. </pre> </td></tr>
 <p><b>Output face order:</b> </p>
 <div class="fragment"><div class="line">*       x2</div>
 <div class="line">*           </div>
-<div class="line">*                         <a class="code" href="_g_l_e_w_2glew_8h.html#a98ac434677655cc8438bb72de2719f39">x0</a></div>
-<div class="line">*  <a class="code" href="_g_l_e_w_2glew_8h.html#a49825216c96caaeb09237b36651181c5">x1</a></div>
+<div class="line">*                         x0</div>
+<div class="line">*  x1</div>
 <div class="line">* </div>
 </div><!-- fragment --> </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a64795260b95f5a4b3f3dc1be4f52e410ac662c1d8f4e37cdf2a54023b174da192"></a>aiProcess_SplitByBoneCount</em>&nbsp;</td><td class="fielddoc">
@@ -555,7 +555,7 @@ only if all bones within the scene qualify for removal.</pre> </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_2a3ab8ae23d2cffc0bffa70c4703d52b.html">assimp</a></li><li class="navelem"><a class="el" href="dir_775f47f696c8e1c7e288eb84d9156930.html">include</a></li><li class="navelem"><a class="el" href="postprocess_8h.html">postprocess.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 20:57:20 for Super Happy Rocket by
+    <li class="footer">Generated on Fri Nov 22 2013 01:07:55 for Super Happy Rocket by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

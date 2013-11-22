@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('_default_logger_8hpp_source.html','');
 <div class="title">DefaultLogger.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_default_logger_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">Open Asset Import Library (assimp)</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">----------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"></span></div>
@@ -150,8 +150,8 @@ $(document).ready(function(){initNavTree('_default_logger_8hpp_source.html','');
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define INCLUDED_AI_DEFAULTLOGGER</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_logger_8hpp.html">Logger.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_log_stream_8hpp.html">LogStream.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_null_logger_8hpp.html">NullLogger.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#include &quot;LogStream.hpp&quot;</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#include &quot;NullLogger.hpp&quot;</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
 <div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="namespace_assimp.html">   51</a></span>&#160;<span class="keyword">namespace </span>Assimp    {</div>
@@ -159,19 +159,19 @@ $(document).ready(function(){initNavTree('_default_logger_8hpp_source.html','');
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">class </span><a class="code" href="class_assimp_1_1_i_o_stream.html">IOStream</a>;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">struct </span>LogStreamInfo;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="_default_logger_8hpp.html#a5e31e6d6c9f8a8954134f3da38fec0a0">   57</a></span>&#160;<span class="preprocessor">#define ASSIMP_DEFAULT_LOG_NAME &quot;AssimpLog.txt&quot;</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#define ASSIMP_DEFAULT_LOG_NAME &quot;AssimpLog.txt&quot;</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">// ------------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="class_assimp_1_1_default_logger.html">   72</a></span>&#160;<span class="comment"></span><span class="keyword">class </span><a class="code" href="defs_8h.html#a7d617d307e656cb6ff315ba71ff958d4">ASSIMP_API</a> <a class="code" href="class_assimp_1_1_default_logger.html">DefaultLogger</a> :</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="class_assimp_1_1_default_logger.html">   72</a></span>&#160;<span class="comment"></span><span class="keyword">class </span>ASSIMP_API <a class="code" href="class_assimp_1_1_default_logger.html">DefaultLogger</a> :</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">public</span> <a class="code" href="class_assimp_1_1_logger.html">Logger</a>   {</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">// ----------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment"></span>    <span class="keyword">static</span> <a class="code" href="class_assimp_1_1_logger.html">Logger</a> *create(<span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="_g_l_e_w_2glew_8h.html#aaced7cfc21e7d37775d6921bb8177239">name</a> = <a class="code" href="_default_logger_8hpp.html#a5e31e6d6c9f8a8954134f3da38fec0a0">ASSIMP_DEFAULT_LOG_NAME</a>,</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <a class="code" href="class_assimp_1_1_logger.html#a8b6248a0fd062431e8572556350d29e6">LogSeverity</a> <a class="code" href="_g_l_e_w_2glew_8h.html#aa9ef9fc6186ec914a859436da4764bca">severity</a>    = NORMAL,</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment"></span>    <span class="keyword">static</span> <a class="code" href="class_assimp_1_1_logger.html">Logger</a> *create(<span class="keyword">const</span> <span class="keywordtype">char</span>* name = ASSIMP_DEFAULT_LOG_NAME,</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <a class="code" href="class_assimp_1_1_logger.html#a8b6248a0fd062431e8572556350d29e6">LogSeverity</a> severity    = NORMAL,</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> defStreams = aiDefaultLogStream_DEBUGGER | aiDefaultLogStream_FILE,</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <a class="code" href="class_assimp_1_1_i_o_system.html">IOSystem</a>* io            = <a class="code" href="begin__code_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <a class="code" href="class_assimp_1_1_i_o_system.html">IOSystem</a>* io            = NULL);</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">// ----------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment"></span>    <span class="keyword">static</span> <span class="keywordtype">void</span> set (<a class="code" href="class_assimp_1_1_logger.html">Logger</a> *logger);</div>
@@ -187,7 +187,7 @@ $(document).ready(function(){initNavTree('_default_logger_8hpp_source.html','');
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    </div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="comment">// ----------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment"></span>    <span class="keywordtype">bool</span> attachStream(<a class="code" href="class_assimp_1_1_log_stream.html">LogStream</a> *pStream,</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="_g_l_e_w_2glew_8h.html#aa9ef9fc6186ec914a859436da4764bca">severity</a>);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> severity);</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="comment">// ----------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="comment"></span>    <span class="keywordtype">bool</span> detatchStream(<a class="code" href="class_assimp_1_1_log_stream.html">LogStream</a> *pStream, </div>
@@ -204,7 +204,7 @@ $(document).ready(function(){initNavTree('_default_logger_8hpp_source.html','');
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordtype">void</span> OnDebug(<span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="_g_l_e_w_2glew_8h.html#ab5d4c2bfcb78f279c688575297d42f74">message</a>);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordtype">void</span> OnDebug(<span class="keyword">const</span> <span class="keywordtype">char</span>* message);</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keywordtype">void</span> OnInfo(<span class="keyword">const</span> <span class="keywordtype">char</span>*  message);</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
@@ -230,7 +230,7 @@ $(document).ready(function(){initNavTree('_default_logger_8hpp_source.html','');
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    StreamArray m_StreamArray;</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keywordtype">bool</span> noRepeatMsg;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="keywordtype">char</span> lastMsg[<a class="code" href="_logger_8hpp.html#a3adf7dc8e9dcfe1da6e33aa8043a80c3">MAX_LOG_MESSAGE_LENGTH</a>*2];</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="keywordtype">char</span> lastMsg[MAX_LOG_MESSAGE_LENGTH*2];</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keywordtype">size_t</span> lastLen;</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;};</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="comment">// ------------------------------------------------------------------------------------</span></div>
@@ -240,29 +240,20 @@ $(document).ready(function(){initNavTree('_default_logger_8hpp_source.html','');
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="preprocessor">#endif // !! INCLUDED_AI_DEFAULTLOGGER</span></div>
 <div class="ttc" id="class_assimp_1_1_null_logger_html"><div class="ttname"><a href="class_assimp_1_1_null_logger.html">Assimp::NullLogger</a></div><div class="ttdoc">CPP-API: Empty logging implementation. </div><div class="ttdef"><b>Definition:</b> NullLogger.hpp:55</div></div>
 <div class="ttc" id="class_assimp_1_1_logger_html_acd0b52a87d6fc11e957ed2c6e2ad75b6"><div class="ttname"><a href="class_assimp_1_1_logger.html#acd0b52a87d6fc11e957ed2c6e2ad75b6">Assimp::Logger::ErrorSeverity</a></div><div class="ttdeci">ErrorSeverity</div><div class="ttdoc">Description for severity of a log message. </div><div class="ttdef"><b>Definition:</b> Logger.hpp:81</div></div>
-<div class="ttc" id="_null_logger_8hpp_html"><div class="ttname"><a href="_null_logger_8hpp.html">NullLogger.hpp</a></div></div>
-<div class="ttc" id="_log_stream_8hpp_html"><div class="ttname"><a href="_log_stream_8hpp.html">LogStream.hpp</a></div></div>
-<div class="ttc" id="_default_logger_8hpp_html_a5e31e6d6c9f8a8954134f3da38fec0a0"><div class="ttname"><a href="_default_logger_8hpp.html#a5e31e6d6c9f8a8954134f3da38fec0a0">ASSIMP_DEFAULT_LOG_NAME</a></div><div class="ttdeci">#define ASSIMP_DEFAULT_LOG_NAME</div><div class="ttdef"><b>Definition:</b> DefaultLogger.hpp:57</div></div>
-<div class="ttc" id="_logger_8hpp_html_a3adf7dc8e9dcfe1da6e33aa8043a80c3"><div class="ttname"><a href="_logger_8hpp.html#a3adf7dc8e9dcfe1da6e33aa8043a80c3">MAX_LOG_MESSAGE_LENGTH</a></div><div class="ttdeci">#define MAX_LOG_MESSAGE_LENGTH</div><div class="ttdef"><b>Definition:</b> Logger.hpp:52</div></div>
 <div class="ttc" id="class_assimp_1_1_default_logger_html"><div class="ttname"><a href="class_assimp_1_1_default_logger.html">Assimp::DefaultLogger</a></div><div class="ttdoc">CPP-API: Primary logging facility of Assimp. </div><div class="ttdef"><b>Definition:</b> DefaultLogger.hpp:72</div></div>
 <div class="ttc" id="class_assimp_1_1_log_stream_html"><div class="ttname"><a href="class_assimp_1_1_log_stream.html">Assimp::LogStream</a></div><div class="ttdoc">CPP-API: Abstract interface for log stream implementations. </div><div class="ttdef"><b>Definition:</b> LogStream.hpp:56</div></div>
 <div class="ttc" id="_logger_8hpp_html"><div class="ttname"><a href="_logger_8hpp.html">Logger.hpp</a></div><div class="ttdoc">Abstract base class &amp;#39;Logger&amp;#39;, base of the logging system. </div></div>
-<div class="ttc" id="begin__code_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="begin__code_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> begin_code.h:147</div></div>
 <div class="ttc" id="class_assimp_1_1_i_o_stream_html"><div class="ttname"><a href="class_assimp_1_1_i_o_stream.html">Assimp::IOStream</a></div><div class="ttdoc">CPP-API: Class to handle file I/O for C++. </div><div class="ttdef"><b>Definition:</b> IOStream.hpp:64</div></div>
 <div class="ttc" id="class_assimp_1_1_i_o_system_html"><div class="ttname"><a href="class_assimp_1_1_i_o_system.html">Assimp::IOSystem</a></div><div class="ttdoc">CPP-API: Interface to the file system. </div><div class="ttdef"><b>Definition:</b> IOSystem.hpp:67</div></div>
-<div class="ttc" id="_g_l_e_w_2glew_8h_html_ab5d4c2bfcb78f279c688575297d42f74"><div class="ttname"><a href="_g_l_e_w_2glew_8h.html#ab5d4c2bfcb78f279c688575297d42f74">message</a></div><div class="ttdeci">GLsizei GLenum GLuint GLuint GLsizei GLchar * message</div><div class="ttdef"><b>Definition:</b> glew.h:2540</div></div>
-<div class="ttc" id="_g_l_e_w_2glew_8h_html_aaced7cfc21e7d37775d6921bb8177239"><div class="ttname"><a href="_g_l_e_w_2glew_8h.html#aaced7cfc21e7d37775d6921bb8177239">name</a></div><div class="ttdeci">GLuint const GLchar * name</div><div class="ttdef"><b>Definition:</b> glew.h:1800</div></div>
-<div class="ttc" id="_g_l_e_w_2glew_8h_html_aa9ef9fc6186ec914a859436da4764bca"><div class="ttname"><a href="_g_l_e_w_2glew_8h.html#aa9ef9fc6186ec914a859436da4764bca">severity</a></div><div class="ttdeci">GLenum severity</div><div class="ttdef"><b>Definition:</b> glew.h:2538</div></div>
 <div class="ttc" id="class_assimp_1_1_logger_html"><div class="ttname"><a href="class_assimp_1_1_logger.html">Assimp::Logger</a></div><div class="ttdoc">CPP-API: Abstract interface for logger implementations. Assimp provides a default implementation and ...</div><div class="ttdef"><b>Definition:</b> Logger.hpp:59</div></div>
 <div class="ttc" id="class_assimp_1_1_logger_html_a8b6248a0fd062431e8572556350d29e6"><div class="ttname"><a href="class_assimp_1_1_logger.html#a8b6248a0fd062431e8572556350d29e6">Assimp::Logger::LogSeverity</a></div><div class="ttdeci">LogSeverity</div><div class="ttdoc">Log severity to describe the granularity of logging. </div><div class="ttdef"><b>Definition:</b> Logger.hpp:67</div></div>
-<div class="ttc" id="defs_8h_html_a7d617d307e656cb6ff315ba71ff958d4"><div class="ttname"><a href="defs_8h.html#a7d617d307e656cb6ff315ba71ff958d4">ASSIMP_API</a></div><div class="ttdeci">#define ASSIMP_API</div><div class="ttdef"><b>Definition:</b> defs.h:142</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_2a3ab8ae23d2cffc0bffa70c4703d52b.html">assimp</a></li><li class="navelem"><a class="el" href="dir_775f47f696c8e1c7e288eb84d9156930.html">include</a></li><li class="navelem"><a class="el" href="_default_logger_8hpp.html">DefaultLogger.hpp</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 20:57:09 for Super Happy Rocket by
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_2a3ab8ae23d2cffc0bffa70c4703d52b.html">assimp</a></li><li class="navelem"><a class="el" href="dir_775f47f696c8e1c7e288eb84d9156930.html">include</a></li><li class="navelem"><b>DefaultLogger.hpp</b></li>
+    <li class="footer">Generated on Fri Nov 22 2013 01:07:49 for Super Happy Rocket by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

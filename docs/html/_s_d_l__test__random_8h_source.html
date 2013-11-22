@@ -152,17 +152,17 @@ $(document).ready(function(){initNavTree('_s_d_l__test__random_8h_source.html','
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment"> * Macros that return a random number in a specific format.</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="_s_d_l__test__random_8h.html#a10ad442c3a8b85d202b6ac306bfe04cc">   54</a></span>&#160;<span class="preprocessor">#define SDLTest_RandomInt(c)        ((int)SDLTest_Random(c))</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#define SDLTest_RandomInt(c)        ((int)SDLTest_Random(c))</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"> * Context structure for the random number generator state.</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="struct_s_d_l_test___random_context.html">   59</a></span>&#160;  <span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="struct_s_d_l_test___random_context.html#a24f830d6cb476c96fbe325c99331e45f">   60</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="struct_s_d_l_test___random_context.html#a24f830d6cb476c96fbe325c99331e45f">a</a>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="struct_s_d_l_test___random_context.html#a8bd6d1b4e1677ed1c06f5cc09f1af5b6">   61</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="struct_s_d_l_test___random_context.html#a8bd6d1b4e1677ed1c06f5cc09f1af5b6">x</a>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="struct_s_d_l_test___random_context.html#a17a6a7e7b68a33c67d9b74c8c7c33198">   62</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="struct_s_d_l_test___random_context.html#a17a6a7e7b68a33c67d9b74c8c7c33198">c</a>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="struct_s_d_l_test___random_context.html#a2c8d2f1ee16cdfd38361b8f03b3fdb85">   63</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="struct_s_d_l_test___random_context.html#a2c8d2f1ee16cdfd38361b8f03b3fdb85">ah</a>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="struct_s_d_l_test___random_context.html#a0e2bccd3611d383d6510c6c828aa54c4">   64</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="struct_s_d_l_test___random_context.html#a0e2bccd3611d383d6510c6c828aa54c4">al</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> a;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> x;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> c;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> ah;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> al;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  } <a class="code" href="struct_s_d_l_test___random_context.html">SDLTest_RandomContext</a>;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
@@ -186,24 +186,19 @@ $(document).ready(function(){initNavTree('_s_d_l__test__random_8h_source.html','
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _SDL_test_random_h */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment">/* vi: set ts=4 sw=4 expandtab: */</span></div>
-<div class="ttc" id="struct_s_d_l_test___random_context_html_a24f830d6cb476c96fbe325c99331e45f"><div class="ttname"><a href="struct_s_d_l_test___random_context.html#a24f830d6cb476c96fbe325c99331e45f">SDLTest_RandomContext::a</a></div><div class="ttdeci">unsigned int a</div><div class="ttdef"><b>Definition:</b> SDL_test_random.h:60</div></div>
 <div class="ttc" id="begin__code_8h_html"><div class="ttname"><a href="begin__code_8h.html">begin_code.h</a></div></div>
-<div class="ttc" id="struct_s_d_l_test___random_context_html_a2c8d2f1ee16cdfd38361b8f03b3fdb85"><div class="ttname"><a href="struct_s_d_l_test___random_context.html#a2c8d2f1ee16cdfd38361b8f03b3fdb85">SDLTest_RandomContext::ah</a></div><div class="ttdeci">unsigned int ah</div><div class="ttdef"><b>Definition:</b> SDL_test_random.h:63</div></div>
 <div class="ttc" id="_s_d_l__test__random_8h_html_ac02d87003e18791250a4f762f8779c4f"><div class="ttname"><a href="_s_d_l__test__random_8h.html#ac02d87003e18791250a4f762f8779c4f">SDLTest_RandomInit</a></div><div class="ttdeci">void SDLTest_RandomInit(SDLTest_RandomContext *rndContext, unsigned int xi, unsigned int ci)</div><div class="ttdoc">Initialize random number generator with two integers. </div></div>
-<div class="ttc" id="struct_s_d_l_test___random_context_html_a17a6a7e7b68a33c67d9b74c8c7c33198"><div class="ttname"><a href="struct_s_d_l_test___random_context.html#a17a6a7e7b68a33c67d9b74c8c7c33198">SDLTest_RandomContext::c</a></div><div class="ttdeci">unsigned int c</div><div class="ttdef"><b>Definition:</b> SDL_test_random.h:62</div></div>
 <div class="ttc" id="_s_d_l__test__random_8h_html_a1d1378845f65b7e471f13cb4f3b1a54e"><div class="ttname"><a href="_s_d_l__test__random_8h.html#a1d1378845f65b7e471f13cb4f3b1a54e">SDLTest_RandomInitTime</a></div><div class="ttdeci">void SDLTest_RandomInitTime(SDLTest_RandomContext *rndContext)</div><div class="ttdoc">Initialize random number generator based on current system time. </div></div>
 <div class="ttc" id="close__code_8h_html"><div class="ttname"><a href="close__code_8h.html">close_code.h</a></div></div>
-<div class="ttc" id="struct_s_d_l_test___random_context_html_a8bd6d1b4e1677ed1c06f5cc09f1af5b6"><div class="ttname"><a href="struct_s_d_l_test___random_context.html#a8bd6d1b4e1677ed1c06f5cc09f1af5b6">SDLTest_RandomContext::x</a></div><div class="ttdeci">unsigned int x</div><div class="ttdef"><b>Definition:</b> SDL_test_random.h:61</div></div>
 <div class="ttc" id="struct_s_d_l_test___random_context_html"><div class="ttname"><a href="struct_s_d_l_test___random_context.html">SDLTest_RandomContext</a></div><div class="ttdef"><b>Definition:</b> SDL_test_random.h:59</div></div>
 <div class="ttc" id="_s_d_l__test__random_8h_html_a7a64ae98b2b7034bf7c38ef5cbc39ead"><div class="ttname"><a href="_s_d_l__test__random_8h.html#a7a64ae98b2b7034bf7c38ef5cbc39ead">SDLTest_Random</a></div><div class="ttdeci">unsigned int SDLTest_Random(SDLTest_RandomContext *rndContext)</div><div class="ttdoc">Initialize random number generator based on current system time. </div></div>
-<div class="ttc" id="struct_s_d_l_test___random_context_html_a0e2bccd3611d383d6510c6c828aa54c4"><div class="ttname"><a href="struct_s_d_l_test___random_context.html#a0e2bccd3611d383d6510c6c828aa54c4">SDLTest_RandomContext::al</a></div><div class="ttdeci">unsigned int al</div><div class="ttdef"><b>Definition:</b> SDL_test_random.h:64</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_bb71c587d4eee030bda30f2f35ebd6b7.html">SDL</a></li><li class="navelem"><a class="el" href="dir_3b9b8e98eade024f68a871db77d1527d.html">include</a></li><li class="navelem"><a class="el" href="_s_d_l__test__random_8h.html">SDL_test_random.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 20:57:16 for Super Happy Rocket by
+    <li class="footer">Generated on Fri Nov 22 2013 01:07:54 for Super Happy Rocket by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

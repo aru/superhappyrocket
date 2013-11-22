@@ -144,15 +144,16 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:aba3239116c763175b6ea41ef78b72091"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#aba3239116c763175b6ea41ef78b72091">SDL_MUSTLOCK</a>(S)&#160;&#160;&#160;(((S)-&gt;<a class="el" href="_g_l_e_w_2glew_8h.html#a0f11defcf8fd03368fc70485bffe71e9">flags</a> &amp; <a class="el" href="_s_d_l__surface_8h.html#a3b3d53ad7ba0b7294ca25251d88d40fb">SDL_RLEACCEL</a>) != 0)</td></tr>
+<tr class="memitem:aba3239116c763175b6ea41ef78b72091"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#aba3239116c763175b6ea41ef78b72091">SDL_MUSTLOCK</a>(S)&#160;&#160;&#160;(((S)-&gt;flags &amp; <a class="el" href="_s_d_l__surface_8h.html#a3b3d53ad7ba0b7294ca25251d88d40fb">SDL_RLEACCEL</a>) != 0)</td></tr>
 <tr class="separator:aba3239116c763175b6ea41ef78b72091"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae63aa646481001be542220a8733c3ce0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#ae63aa646481001be542220a8733c3ce0">SDL_LoadBMP</a>(file)&#160;&#160;&#160;<a class="el" href="_s_d_l__surface_8h.html#aac1d1435b9fa8523d699c3a33264d559">SDL_LoadBMP_RW</a>(<a class="el" href="_s_d_l__rwops_8h.html#aef7e843c3486bd1770667a594aa0b439">SDL_RWFromFile</a>(file, &quot;rb&quot;), 1)</td></tr>
+<tr class="memitem:ae63aa646481001be542220a8733c3ce0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#ae63aa646481001be542220a8733c3ce0">SDL_LoadBMP</a>(file)&#160;&#160;&#160;<a class="el" href="_s_d_l__surface_8h.html#aac1d1435b9fa8523d699c3a33264d559">SDL_LoadBMP_RW</a>(SDL_RWFromFile(file, &quot;rb&quot;), 1)</td></tr>
 <tr class="separator:ae63aa646481001be542220a8733c3ce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a425e7a69acbdf2bd9ba46d332d917320"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#a425e7a69acbdf2bd9ba46d332d917320">SDL_SaveBMP</a>(surface, file)&#160;&#160;&#160;<a class="el" href="_s_d_l__surface_8h.html#aadc126a4edeafb5033d5e942cf32db6a">SDL_SaveBMP_RW</a>(surface, <a class="el" href="_s_d_l__rwops_8h.html#aef7e843c3486bd1770667a594aa0b439">SDL_RWFromFile</a>(file, &quot;wb&quot;), 1)</td></tr>
+<tr class="memitem:a425e7a69acbdf2bd9ba46d332d917320"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#a425e7a69acbdf2bd9ba46d332d917320">SDL_SaveBMP</a>(surface, file)&#160;&#160;&#160;<a class="el" href="_s_d_l__surface_8h.html#aadc126a4edeafb5033d5e942cf32db6a">SDL_SaveBMP_RW</a>(surface, SDL_RWFromFile(file, &quot;wb&quot;), 1)</td></tr>
 <tr class="separator:a425e7a69acbdf2bd9ba46d332d917320"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad8d7ebe5e953593cb7d91373e73ba9a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#aad8d7ebe5e953593cb7d91373e73ba9a">SDL_BlitSurface</a>&#160;&#160;&#160;<a class="el" href="_s_d_l__surface_8h.html#ac418c4404813eeb32f4e1b24f9deae96">SDL_UpperBlit</a></td></tr>
 <tr class="separator:aad8d7ebe5e953593cb7d91373e73ba9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0be5f27c24e29a61096c2f59610ff1bf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#a0be5f27c24e29a61096c2f59610ff1bf">SDL_BlitScaled</a>&#160;&#160;&#160;<a class="el" href="_s_d_l__surface_8h.html#a90ac01634e9ee33764fcf5ec7bc43c46">SDL_UpperBlitScaled</a></td></tr>
+<tr class="memitem:a0be5f27c24e29a61096c2f59610ff1bf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0be5f27c24e29a61096c2f59610ff1bf"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SDL_BlitScaled</b>&#160;&#160;&#160;<a class="el" href="_s_d_l__surface_8h.html#a90ac01634e9ee33764fcf5ec7bc43c46">SDL_UpperBlitScaled</a></td></tr>
 <tr class="separator:a0be5f27c24e29a61096c2f59610ff1bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Surface flags</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>These are the currently supported flags for the <a class="el" href="struct_s_d_l___surface.html" title="A collection of pixels used in software blitting. ">SDL_Surface</a>. </p>
@@ -171,99 +172,92 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a32471ad028ae3d2a132302bc5efcb1ee"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#a32471ad028ae3d2a132302bc5efcb1ee">SDL_Surface</a></td></tr>
 <tr class="memdesc:a32471ad028ae3d2a132302bc5efcb1ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">A collection of pixels used in software blitting.  <a href="#a32471ad028ae3d2a132302bc5efcb1ee">More...</a><br/></td></tr>
 <tr class="separator:a32471ad028ae3d2a132302bc5efcb1ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72448df55427d80f216884ed3419b431"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#a72448df55427d80f216884ed3419b431">SDL_blit</a> )(struct <a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *<a class="el" href="_g_l_e_w_2glew_8h.html#a2a98ddb6f79ec1048ff9e15cdd2422ba">src</a>, <a class="el" href="struct_s_d_l___rect.html">SDL_Rect</a> *srcrect, struct <a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *<a class="el" href="_g_l_e_w_2glew_8h.html#a85e59cd56e10d0a7f49ab199f277d486">dst</a>, <a class="el" href="struct_s_d_l___rect.html">SDL_Rect</a> *dstrect)</td></tr>
-<tr class="memdesc:a72448df55427d80f216884ed3419b431"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of function used for surface blitting functions.  <a href="#a72448df55427d80f216884ed3419b431">More...</a><br/></td></tr>
+<tr class="memitem:a72448df55427d80f216884ed3419b431"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a72448df55427d80f216884ed3419b431"></a>
+typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#a72448df55427d80f216884ed3419b431">SDL_blit</a> )(struct <a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *src, <a class="el" href="struct_s_d_l___rect.html">SDL_Rect</a> *srcrect, struct <a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *dst, <a class="el" href="struct_s_d_l___rect.html">SDL_Rect</a> *dstrect)</td></tr>
+<tr class="memdesc:a72448df55427d80f216884ed3419b431"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of function used for surface blitting functions. <br/></td></tr>
 <tr class="separator:a72448df55427d80f216884ed3419b431"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aac106bf796c828587cce76cb847d11ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *<a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#aac106bf796c828587cce76cb847d11ae">SDL_CreateRGBSurface</a> (<a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> <a class="el" href="_g_l_e_w_2glew_8h.html#a0f11defcf8fd03368fc70485bffe71e9">flags</a>, <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="_g_l_e_w_2glew_8h.html#a09f9f706d2021bb37c99c58db2ae6667">width</a>, <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="_g_l_e_w_2glew_8h.html#adfc5239a084231275658aaa86eb21f78">height</a>, <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="_g_l_e_w_2glew_8h.html#a0f2dc2287d9e9a1478109fff79cf016a">depth</a>, <a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> Rmask, <a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> Gmask, <a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> Bmask, <a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> Amask)</td></tr>
+<tr class="memitem:aac106bf796c828587cce76cb847d11ae"><td class="memItemLeft" align="right" valign="top">DECLSPEC <a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *SDLCALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#aac106bf796c828587cce76cb847d11ae">SDL_CreateRGBSurface</a> (<a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> flags, int width, int height, int depth, <a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> Rmask, <a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> Gmask, <a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> Bmask, <a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> Amask)</td></tr>
 <tr class="separator:aac106bf796c828587cce76cb847d11ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25c74ddbc73538e9a4accb42e1c09971"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *<a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#a25c74ddbc73538e9a4accb42e1c09971">SDL_CreateRGBSurfaceFrom</a> (<a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> *<a class="el" href="_g_l_e_w_2glew_8h.html#a48d3b9c29c4dad1a9d619cec9617801e">pixels</a>, <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="_g_l_e_w_2glew_8h.html#a09f9f706d2021bb37c99c58db2ae6667">width</a>, <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="_g_l_e_w_2glew_8h.html#adfc5239a084231275658aaa86eb21f78">height</a>, <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="_g_l_e_w_2glew_8h.html#a0f2dc2287d9e9a1478109fff79cf016a">depth</a>, <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> pitch, <a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> Rmask, <a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> Gmask, <a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> Bmask, <a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> Amask)</td></tr>
+<tr class="memitem:a25c74ddbc73538e9a4accb42e1c09971"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a25c74ddbc73538e9a4accb42e1c09971"></a>
+DECLSPEC <a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *SDLCALL&#160;</td><td class="memItemRight" valign="bottom"><b>SDL_CreateRGBSurfaceFrom</b> (<a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a> *pixels, int width, int height, int depth, int pitch, <a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> Rmask, <a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> Gmask, <a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> Bmask, <a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> Amask)</td></tr>
 <tr class="separator:a25c74ddbc73538e9a4accb42e1c09971"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b8d4f9cc058822501896a2eed81220e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#a7b8d4f9cc058822501896a2eed81220e">SDL_FreeSurface</a> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *surface)</td></tr>
+<tr class="memitem:a7b8d4f9cc058822501896a2eed81220e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7b8d4f9cc058822501896a2eed81220e"></a>
+DECLSPEC <a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a> SDLCALL&#160;</td><td class="memItemRight" valign="bottom"><b>SDL_FreeSurface</b> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *surface)</td></tr>
 <tr class="separator:a7b8d4f9cc058822501896a2eed81220e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72c780465293acb1f586995943422a17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#a72c780465293acb1f586995943422a17">SDL_SetSurfacePalette</a> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *surface, <a class="el" href="struct_s_d_l___palette.html">SDL_Palette</a> *palette)</td></tr>
+<tr class="memitem:a72c780465293acb1f586995943422a17"><td class="memItemLeft" align="right" valign="top">DECLSPEC int SDLCALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#a72c780465293acb1f586995943422a17">SDL_SetSurfacePalette</a> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *surface, <a class="el" href="struct_s_d_l___palette.html">SDL_Palette</a> *palette)</td></tr>
 <tr class="memdesc:a72c780465293acb1f586995943422a17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the palette used by a surface.  <a href="#a72c780465293acb1f586995943422a17">More...</a><br/></td></tr>
 <tr class="separator:a72c780465293acb1f586995943422a17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d1da1c7ecdaa461fac51a10785f5077"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#a3d1da1c7ecdaa461fac51a10785f5077">SDL_LockSurface</a> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *surface)</td></tr>
+<tr class="memitem:a3d1da1c7ecdaa461fac51a10785f5077"><td class="memItemLeft" align="right" valign="top">DECLSPEC int SDLCALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#a3d1da1c7ecdaa461fac51a10785f5077">SDL_LockSurface</a> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *surface)</td></tr>
 <tr class="memdesc:a3d1da1c7ecdaa461fac51a10785f5077"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up a surface for directly accessing the pixels.  <a href="#a3d1da1c7ecdaa461fac51a10785f5077">More...</a><br/></td></tr>
 <tr class="separator:a3d1da1c7ecdaa461fac51a10785f5077"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56b93f51358b55d7fc213a3ba9b02c24"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#a56b93f51358b55d7fc213a3ba9b02c24">SDL_UnlockSurface</a> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *surface)</td></tr>
+<tr class="memitem:a56b93f51358b55d7fc213a3ba9b02c24"><td class="memItemLeft" align="right" valign="top">DECLSPEC <a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a> SDLCALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#a56b93f51358b55d7fc213a3ba9b02c24">SDL_UnlockSurface</a> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *surface)</td></tr>
 <tr class="separator:a56b93f51358b55d7fc213a3ba9b02c24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac1d1435b9fa8523d699c3a33264d559"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *<a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#aac1d1435b9fa8523d699c3a33264d559">SDL_LoadBMP_RW</a> (<a class="el" href="struct_s_d_l___r_wops.html">SDL_RWops</a> *<a class="el" href="_g_l_e_w_2glew_8h.html#a2a98ddb6f79ec1048ff9e15cdd2422ba">src</a>, <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> freesrc)</td></tr>
+<tr class="memitem:aac1d1435b9fa8523d699c3a33264d559"><td class="memItemLeft" align="right" valign="top">DECLSPEC <a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *SDLCALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#aac1d1435b9fa8523d699c3a33264d559">SDL_LoadBMP_RW</a> (<a class="el" href="struct_s_d_l___r_wops.html">SDL_RWops</a> *src, int freesrc)</td></tr>
 <tr class="separator:aac1d1435b9fa8523d699c3a33264d559"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadc126a4edeafb5033d5e942cf32db6a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#aadc126a4edeafb5033d5e942cf32db6a">SDL_SaveBMP_RW</a> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *surface, <a class="el" href="struct_s_d_l___r_wops.html">SDL_RWops</a> *<a class="el" href="_g_l_e_w_2glew_8h.html#a85e59cd56e10d0a7f49ab199f277d486">dst</a>, <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> freedst)</td></tr>
+<tr class="memitem:aadc126a4edeafb5033d5e942cf32db6a"><td class="memItemLeft" align="right" valign="top">DECLSPEC int SDLCALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#aadc126a4edeafb5033d5e942cf32db6a">SDL_SaveBMP_RW</a> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *surface, <a class="el" href="struct_s_d_l___r_wops.html">SDL_RWops</a> *dst, int freedst)</td></tr>
 <tr class="separator:aadc126a4edeafb5033d5e942cf32db6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2f6d70b8071e83e0c84241dbdcd3a3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#ae2f6d70b8071e83e0c84241dbdcd3a3b">SDL_SetSurfaceRLE</a> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *surface, <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> flag)</td></tr>
+<tr class="memitem:ae2f6d70b8071e83e0c84241dbdcd3a3b"><td class="memItemLeft" align="right" valign="top">DECLSPEC int SDLCALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#ae2f6d70b8071e83e0c84241dbdcd3a3b">SDL_SetSurfaceRLE</a> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *surface, int flag)</td></tr>
 <tr class="memdesc:ae2f6d70b8071e83e0c84241dbdcd3a3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the RLE acceleration hint for a surface.  <a href="#ae2f6d70b8071e83e0c84241dbdcd3a3b">More...</a><br/></td></tr>
 <tr class="separator:ae2f6d70b8071e83e0c84241dbdcd3a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cbe831b210dc900cb93101352357b73"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#a4cbe831b210dc900cb93101352357b73">SDL_SetColorKey</a> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *surface, <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> flag, <a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> key)</td></tr>
+<tr class="memitem:a4cbe831b210dc900cb93101352357b73"><td class="memItemLeft" align="right" valign="top">DECLSPEC int SDLCALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#a4cbe831b210dc900cb93101352357b73">SDL_SetColorKey</a> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *surface, int flag, <a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> key)</td></tr>
 <tr class="memdesc:a4cbe831b210dc900cb93101352357b73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the color key (transparent pixel) in a blittable surface.  <a href="#a4cbe831b210dc900cb93101352357b73">More...</a><br/></td></tr>
 <tr class="separator:a4cbe831b210dc900cb93101352357b73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ff80a244bad20f1c4fa85adf1e1deb9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#a2ff80a244bad20f1c4fa85adf1e1deb9">SDL_GetColorKey</a> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *surface, <a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> *key)</td></tr>
+<tr class="memitem:a2ff80a244bad20f1c4fa85adf1e1deb9"><td class="memItemLeft" align="right" valign="top">DECLSPEC int SDLCALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#a2ff80a244bad20f1c4fa85adf1e1deb9">SDL_GetColorKey</a> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *surface, <a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> *key)</td></tr>
 <tr class="memdesc:a2ff80a244bad20f1c4fa85adf1e1deb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the color key (transparent pixel) in a blittable surface.  <a href="#a2ff80a244bad20f1c4fa85adf1e1deb9">More...</a><br/></td></tr>
 <tr class="separator:a2ff80a244bad20f1c4fa85adf1e1deb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4edf978396e3f562d43c672630e0ca71"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#a4edf978396e3f562d43c672630e0ca71">SDL_SetSurfaceColorMod</a> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *surface, <a class="el" href="_s_d_l__stdinc_8h.html#a2944638813a090aa23e62f4da842c3e2">Uint8</a> <a class="el" href="_g_l_e_w_2glew_8h.html#abe08814c2f72843fde4d8df41440d5a0">r</a>, <a class="el" href="_s_d_l__stdinc_8h.html#a2944638813a090aa23e62f4da842c3e2">Uint8</a> <a class="el" href="_g_l_e_w_2glew_8h.html#a9cd653b1648845554169fbc3a3f6d37a">g</a>, <a class="el" href="_s_d_l__stdinc_8h.html#a2944638813a090aa23e62f4da842c3e2">Uint8</a> <a class="el" href="_g_l_e_w_2glew_8h.html#a6eba317e3cf44d6d26c04a5a8f197dcb">b</a>)</td></tr>
+<tr class="memitem:a4edf978396e3f562d43c672630e0ca71"><td class="memItemLeft" align="right" valign="top">DECLSPEC int SDLCALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#a4edf978396e3f562d43c672630e0ca71">SDL_SetSurfaceColorMod</a> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *surface, <a class="el" href="_s_d_l__stdinc_8h.html#a2944638813a090aa23e62f4da842c3e2">Uint8</a> r, <a class="el" href="_s_d_l__stdinc_8h.html#a2944638813a090aa23e62f4da842c3e2">Uint8</a> g, <a class="el" href="_s_d_l__stdinc_8h.html#a2944638813a090aa23e62f4da842c3e2">Uint8</a> b)</td></tr>
 <tr class="memdesc:a4edf978396e3f562d43c672630e0ca71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set an additional color value used in blit operations.  <a href="#a4edf978396e3f562d43c672630e0ca71">More...</a><br/></td></tr>
 <tr class="separator:a4edf978396e3f562d43c672630e0ca71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5db1ae32b7884b598d86424e205c3a86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#a5db1ae32b7884b598d86424e205c3a86">SDL_GetSurfaceColorMod</a> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *surface, <a class="el" href="_s_d_l__stdinc_8h.html#a2944638813a090aa23e62f4da842c3e2">Uint8</a> *<a class="el" href="_g_l_e_w_2glew_8h.html#abe08814c2f72843fde4d8df41440d5a0">r</a>, <a class="el" href="_s_d_l__stdinc_8h.html#a2944638813a090aa23e62f4da842c3e2">Uint8</a> *<a class="el" href="_g_l_e_w_2glew_8h.html#a9cd653b1648845554169fbc3a3f6d37a">g</a>, <a class="el" href="_s_d_l__stdinc_8h.html#a2944638813a090aa23e62f4da842c3e2">Uint8</a> *<a class="el" href="_g_l_e_w_2glew_8h.html#a6eba317e3cf44d6d26c04a5a8f197dcb">b</a>)</td></tr>
+<tr class="memitem:a5db1ae32b7884b598d86424e205c3a86"><td class="memItemLeft" align="right" valign="top">DECLSPEC int SDLCALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#a5db1ae32b7884b598d86424e205c3a86">SDL_GetSurfaceColorMod</a> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *surface, <a class="el" href="_s_d_l__stdinc_8h.html#a2944638813a090aa23e62f4da842c3e2">Uint8</a> *r, <a class="el" href="_s_d_l__stdinc_8h.html#a2944638813a090aa23e62f4da842c3e2">Uint8</a> *g, <a class="el" href="_s_d_l__stdinc_8h.html#a2944638813a090aa23e62f4da842c3e2">Uint8</a> *b)</td></tr>
 <tr class="memdesc:a5db1ae32b7884b598d86424e205c3a86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the additional color value used in blit operations.  <a href="#a5db1ae32b7884b598d86424e205c3a86">More...</a><br/></td></tr>
 <tr class="separator:a5db1ae32b7884b598d86424e205c3a86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0035f0239f0588d16c57aff7672be174"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#a0035f0239f0588d16c57aff7672be174">SDL_SetSurfaceAlphaMod</a> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *surface, <a class="el" href="_s_d_l__stdinc_8h.html#a2944638813a090aa23e62f4da842c3e2">Uint8</a> <a class="el" href="_g_l_e_w_2glew_8h.html#a55d98ec4b6aa35ace9b91275e7ad847b">alpha</a>)</td></tr>
+<tr class="memitem:a0035f0239f0588d16c57aff7672be174"><td class="memItemLeft" align="right" valign="top">DECLSPEC int SDLCALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#a0035f0239f0588d16c57aff7672be174">SDL_SetSurfaceAlphaMod</a> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *surface, <a class="el" href="_s_d_l__stdinc_8h.html#a2944638813a090aa23e62f4da842c3e2">Uint8</a> alpha)</td></tr>
 <tr class="memdesc:a0035f0239f0588d16c57aff7672be174"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set an additional alpha value used in blit operations.  <a href="#a0035f0239f0588d16c57aff7672be174">More...</a><br/></td></tr>
 <tr class="separator:a0035f0239f0588d16c57aff7672be174"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09a99bb24420857e85071e39607678f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#a09a99bb24420857e85071e39607678f6">SDL_GetSurfaceAlphaMod</a> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *surface, <a class="el" href="_s_d_l__stdinc_8h.html#a2944638813a090aa23e62f4da842c3e2">Uint8</a> *<a class="el" href="_g_l_e_w_2glew_8h.html#a55d98ec4b6aa35ace9b91275e7ad847b">alpha</a>)</td></tr>
+<tr class="memitem:a09a99bb24420857e85071e39607678f6"><td class="memItemLeft" align="right" valign="top">DECLSPEC int SDLCALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#a09a99bb24420857e85071e39607678f6">SDL_GetSurfaceAlphaMod</a> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *surface, <a class="el" href="_s_d_l__stdinc_8h.html#a2944638813a090aa23e62f4da842c3e2">Uint8</a> *alpha)</td></tr>
 <tr class="memdesc:a09a99bb24420857e85071e39607678f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the additional alpha value used in blit operations.  <a href="#a09a99bb24420857e85071e39607678f6">More...</a><br/></td></tr>
 <tr class="separator:a09a99bb24420857e85071e39607678f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35f5b3b64c503c4a8da01566f62976a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#a35f5b3b64c503c4a8da01566f62976a9">SDL_SetSurfaceBlendMode</a> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *surface, <a class="el" href="_s_d_l__blendmode_8h.html#a850d3c67a878fd6698a1c8dbb1eabf1e">SDL_BlendMode</a> blendMode)</td></tr>
+<tr class="memitem:a35f5b3b64c503c4a8da01566f62976a9"><td class="memItemLeft" align="right" valign="top">DECLSPEC int SDLCALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#a35f5b3b64c503c4a8da01566f62976a9">SDL_SetSurfaceBlendMode</a> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *surface, <a class="el" href="_s_d_l__blendmode_8h.html#a850d3c67a878fd6698a1c8dbb1eabf1e">SDL_BlendMode</a> blendMode)</td></tr>
 <tr class="memdesc:a35f5b3b64c503c4a8da01566f62976a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the blend mode used for blit operations.  <a href="#a35f5b3b64c503c4a8da01566f62976a9">More...</a><br/></td></tr>
 <tr class="separator:a35f5b3b64c503c4a8da01566f62976a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95570c617879f45bf7e2e4d330534f6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#a95570c617879f45bf7e2e4d330534f6b">SDL_GetSurfaceBlendMode</a> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *surface, <a class="el" href="_s_d_l__blendmode_8h.html#a850d3c67a878fd6698a1c8dbb1eabf1e">SDL_BlendMode</a> *blendMode)</td></tr>
+<tr class="memitem:a95570c617879f45bf7e2e4d330534f6b"><td class="memItemLeft" align="right" valign="top">DECLSPEC int SDLCALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#a95570c617879f45bf7e2e4d330534f6b">SDL_GetSurfaceBlendMode</a> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *surface, <a class="el" href="_s_d_l__blendmode_8h.html#a850d3c67a878fd6698a1c8dbb1eabf1e">SDL_BlendMode</a> *blendMode)</td></tr>
 <tr class="memdesc:a95570c617879f45bf7e2e4d330534f6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the blend mode used for blit operations.  <a href="#a95570c617879f45bf7e2e4d330534f6b">More...</a><br/></td></tr>
 <tr class="separator:a95570c617879f45bf7e2e4d330534f6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cf2c30be55f51fe9e4faf97e3f8d08b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__stdinc_8h.html#a8fca68df0f976765230fe589a7c7733b">SDL_bool</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#a6cf2c30be55f51fe9e4faf97e3f8d08b">SDL_SetClipRect</a> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *surface, const <a class="el" href="struct_s_d_l___rect.html">SDL_Rect</a> *rect)</td></tr>
+<tr class="memitem:a6cf2c30be55f51fe9e4faf97e3f8d08b"><td class="memItemLeft" align="right" valign="top">DECLSPEC SDL_bool SDLCALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#a6cf2c30be55f51fe9e4faf97e3f8d08b">SDL_SetClipRect</a> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *surface, const <a class="el" href="struct_s_d_l___rect.html">SDL_Rect</a> *rect)</td></tr>
 <tr class="separator:a6cf2c30be55f51fe9e4faf97e3f8d08b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d7f71b94748a1b0db3b5b769834ed27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#a7d7f71b94748a1b0db3b5b769834ed27">SDL_GetClipRect</a> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *surface, <a class="el" href="struct_s_d_l___rect.html">SDL_Rect</a> *rect)</td></tr>
+<tr class="memitem:a7d7f71b94748a1b0db3b5b769834ed27"><td class="memItemLeft" align="right" valign="top">DECLSPEC <a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a> SDLCALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#a7d7f71b94748a1b0db3b5b769834ed27">SDL_GetClipRect</a> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *surface, <a class="el" href="struct_s_d_l___rect.html">SDL_Rect</a> *rect)</td></tr>
 <tr class="separator:a7d7f71b94748a1b0db3b5b769834ed27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4098aa5d51f85c7a0c7d032737ce9e74"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *<a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#a4098aa5d51f85c7a0c7d032737ce9e74">SDL_ConvertSurface</a> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *<a class="el" href="_g_l_e_w_2glew_8h.html#a2a98ddb6f79ec1048ff9e15cdd2422ba">src</a>, <a class="el" href="struct_s_d_l___pixel_format.html">SDL_PixelFormat</a> *fmt, <a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> <a class="el" href="_g_l_e_w_2glew_8h.html#a0f11defcf8fd03368fc70485bffe71e9">flags</a>)</td></tr>
+<tr class="memitem:a4098aa5d51f85c7a0c7d032737ce9e74"><td class="memItemLeft" align="right" valign="top">DECLSPEC <a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *SDLCALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#a4098aa5d51f85c7a0c7d032737ce9e74">SDL_ConvertSurface</a> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *src, <a class="el" href="struct_s_d_l___pixel_format.html">SDL_PixelFormat</a> *fmt, <a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> flags)</td></tr>
 <tr class="separator:a4098aa5d51f85c7a0c7d032737ce9e74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec0b84e7d50b9cc84bd9e785170ce2cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *<a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#aec0b84e7d50b9cc84bd9e785170ce2cd">SDL_ConvertSurfaceFormat</a> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *<a class="el" href="_g_l_e_w_2glew_8h.html#a2a98ddb6f79ec1048ff9e15cdd2422ba">src</a>, <a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> pixel_format, <a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> <a class="el" href="_g_l_e_w_2glew_8h.html#a0f11defcf8fd03368fc70485bffe71e9">flags</a>)</td></tr>
+<tr class="memitem:aec0b84e7d50b9cc84bd9e785170ce2cd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aec0b84e7d50b9cc84bd9e785170ce2cd"></a>
+DECLSPEC <a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *SDLCALL&#160;</td><td class="memItemRight" valign="bottom"><b>SDL_ConvertSurfaceFormat</b> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *src, <a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> pixel_format, <a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> flags)</td></tr>
 <tr class="separator:aec0b84e7d50b9cc84bd9e785170ce2cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a339c5728a1181e2d6334ad07e1e84440"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#a339c5728a1181e2d6334ad07e1e84440">SDL_ConvertPixels</a> (<a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="_g_l_e_w_2glew_8h.html#a09f9f706d2021bb37c99c58db2ae6667">width</a>, <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="_g_l_e_w_2glew_8h.html#adfc5239a084231275658aaa86eb21f78">height</a>, <a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> src_format, const <a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> *<a class="el" href="_g_l_e_w_2glew_8h.html#a2a98ddb6f79ec1048ff9e15cdd2422ba">src</a>, <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> src_pitch, <a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> dst_format, <a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> *<a class="el" href="_g_l_e_w_2glew_8h.html#a85e59cd56e10d0a7f49ab199f277d486">dst</a>, <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> dst_pitch)</td></tr>
+<tr class="memitem:a339c5728a1181e2d6334ad07e1e84440"><td class="memItemLeft" align="right" valign="top">DECLSPEC int SDLCALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#a339c5728a1181e2d6334ad07e1e84440">SDL_ConvertPixels</a> (int width, int height, <a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> src_format, const <a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a> *src, int src_pitch, <a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> dst_format, <a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a> *dst, int dst_pitch)</td></tr>
 <tr class="memdesc:a339c5728a1181e2d6334ad07e1e84440"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy a block of pixels of one format to another format.  <a href="#a339c5728a1181e2d6334ad07e1e84440">More...</a><br/></td></tr>
 <tr class="separator:a339c5728a1181e2d6334ad07e1e84440"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98b3595458c6271303d6470cb2b2c721"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#a98b3595458c6271303d6470cb2b2c721">SDL_FillRect</a> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *<a class="el" href="_g_l_e_w_2glew_8h.html#a85e59cd56e10d0a7f49ab199f277d486">dst</a>, const <a class="el" href="struct_s_d_l___rect.html">SDL_Rect</a> *rect, <a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> <a class="el" href="_g_l_e_w_2glew_8h.html#a3ea846f998d64f079b86052b6c4193a8">color</a>)</td></tr>
+<tr class="memitem:a98b3595458c6271303d6470cb2b2c721"><td class="memItemLeft" align="right" valign="top">DECLSPEC int SDLCALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#a98b3595458c6271303d6470cb2b2c721">SDL_FillRect</a> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *dst, const <a class="el" href="struct_s_d_l___rect.html">SDL_Rect</a> *rect, <a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> color)</td></tr>
 <tr class="separator:a98b3595458c6271303d6470cb2b2c721"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b893162f400b8193ff6ca628ec784b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#a7b893162f400b8193ff6ca628ec784b6">SDL_FillRects</a> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *<a class="el" href="_g_l_e_w_2glew_8h.html#a85e59cd56e10d0a7f49ab199f277d486">dst</a>, const <a class="el" href="struct_s_d_l___rect.html">SDL_Rect</a> *rects, <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="_g_l_e_w_2glew_8h.html#a4e867eee5910f6b2df6123b47ab70dae">count</a>, <a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> <a class="el" href="_g_l_e_w_2glew_8h.html#a3ea846f998d64f079b86052b6c4193a8">color</a>)</td></tr>
+<tr class="memitem:a7b893162f400b8193ff6ca628ec784b6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7b893162f400b8193ff6ca628ec784b6"></a>
+DECLSPEC int SDLCALL&#160;</td><td class="memItemRight" valign="bottom"><b>SDL_FillRects</b> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *dst, const <a class="el" href="struct_s_d_l___rect.html">SDL_Rect</a> *rects, int count, <a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> color)</td></tr>
 <tr class="separator:a7b893162f400b8193ff6ca628ec784b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac418c4404813eeb32f4e1b24f9deae96"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#ac418c4404813eeb32f4e1b24f9deae96">SDL_UpperBlit</a> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *<a class="el" href="_g_l_e_w_2glew_8h.html#a2a98ddb6f79ec1048ff9e15cdd2422ba">src</a>, const <a class="el" href="struct_s_d_l___rect.html">SDL_Rect</a> *srcrect, <a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *<a class="el" href="_g_l_e_w_2glew_8h.html#a85e59cd56e10d0a7f49ab199f277d486">dst</a>, <a class="el" href="struct_s_d_l___rect.html">SDL_Rect</a> *dstrect)</td></tr>
+<tr class="memitem:ac418c4404813eeb32f4e1b24f9deae96"><td class="memItemLeft" align="right" valign="top">DECLSPEC int SDLCALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#ac418c4404813eeb32f4e1b24f9deae96">SDL_UpperBlit</a> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *src, const <a class="el" href="struct_s_d_l___rect.html">SDL_Rect</a> *srcrect, <a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *dst, <a class="el" href="struct_s_d_l___rect.html">SDL_Rect</a> *dstrect)</td></tr>
 <tr class="separator:ac418c4404813eeb32f4e1b24f9deae96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82bd1c0e0886d77e287207fe6351bf87"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#a82bd1c0e0886d77e287207fe6351bf87">SDL_LowerBlit</a> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *<a class="el" href="_g_l_e_w_2glew_8h.html#a2a98ddb6f79ec1048ff9e15cdd2422ba">src</a>, <a class="el" href="struct_s_d_l___rect.html">SDL_Rect</a> *srcrect, <a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *<a class="el" href="_g_l_e_w_2glew_8h.html#a85e59cd56e10d0a7f49ab199f277d486">dst</a>, <a class="el" href="struct_s_d_l___rect.html">SDL_Rect</a> *dstrect)</td></tr>
+<tr class="memitem:a82bd1c0e0886d77e287207fe6351bf87"><td class="memItemLeft" align="right" valign="top">DECLSPEC int SDLCALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#a82bd1c0e0886d77e287207fe6351bf87">SDL_LowerBlit</a> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *src, <a class="el" href="struct_s_d_l___rect.html">SDL_Rect</a> *srcrect, <a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *dst, <a class="el" href="struct_s_d_l___rect.html">SDL_Rect</a> *dstrect)</td></tr>
 <tr class="separator:a82bd1c0e0886d77e287207fe6351bf87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee44fe7d5dba376a971793d70ffcf55c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#aee44fe7d5dba376a971793d70ffcf55c">SDL_SoftStretch</a> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *<a class="el" href="_g_l_e_w_2glew_8h.html#a2a98ddb6f79ec1048ff9e15cdd2422ba">src</a>, const <a class="el" href="struct_s_d_l___rect.html">SDL_Rect</a> *srcrect, <a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *<a class="el" href="_g_l_e_w_2glew_8h.html#a85e59cd56e10d0a7f49ab199f277d486">dst</a>, const <a class="el" href="struct_s_d_l___rect.html">SDL_Rect</a> *dstrect)</td></tr>
+<tr class="memitem:aee44fe7d5dba376a971793d70ffcf55c"><td class="memItemLeft" align="right" valign="top">DECLSPEC int SDLCALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#aee44fe7d5dba376a971793d70ffcf55c">SDL_SoftStretch</a> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *src, const <a class="el" href="struct_s_d_l___rect.html">SDL_Rect</a> *srcrect, <a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *dst, const <a class="el" href="struct_s_d_l___rect.html">SDL_Rect</a> *dstrect)</td></tr>
 <tr class="memdesc:aee44fe7d5dba376a971793d70ffcf55c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a fast, low quality, stretch blit between two surfaces of the same pixel format.  <a href="#aee44fe7d5dba376a971793d70ffcf55c">More...</a><br/></td></tr>
 <tr class="separator:aee44fe7d5dba376a971793d70ffcf55c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90ac01634e9ee33764fcf5ec7bc43c46"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#a90ac01634e9ee33764fcf5ec7bc43c46">SDL_UpperBlitScaled</a> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *<a class="el" href="_g_l_e_w_2glew_8h.html#a2a98ddb6f79ec1048ff9e15cdd2422ba">src</a>, const <a class="el" href="struct_s_d_l___rect.html">SDL_Rect</a> *srcrect, <a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *<a class="el" href="_g_l_e_w_2glew_8h.html#a85e59cd56e10d0a7f49ab199f277d486">dst</a>, <a class="el" href="struct_s_d_l___rect.html">SDL_Rect</a> *dstrect)</td></tr>
+<tr class="memitem:a90ac01634e9ee33764fcf5ec7bc43c46"><td class="memItemLeft" align="right" valign="top">DECLSPEC int SDLCALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#a90ac01634e9ee33764fcf5ec7bc43c46">SDL_UpperBlitScaled</a> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *src, const <a class="el" href="struct_s_d_l___rect.html">SDL_Rect</a> *srcrect, <a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *dst, <a class="el" href="struct_s_d_l___rect.html">SDL_Rect</a> *dstrect)</td></tr>
 <tr class="separator:a90ac01634e9ee33764fcf5ec7bc43c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c6b2f06726600d41ff75ff259d4383b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#a5c6b2f06726600d41ff75ff259d4383b">SDL_LowerBlitScaled</a> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *<a class="el" href="_g_l_e_w_2glew_8h.html#a2a98ddb6f79ec1048ff9e15cdd2422ba">src</a>, <a class="el" href="struct_s_d_l___rect.html">SDL_Rect</a> *srcrect, <a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *<a class="el" href="_g_l_e_w_2glew_8h.html#a85e59cd56e10d0a7f49ab199f277d486">dst</a>, <a class="el" href="struct_s_d_l___rect.html">SDL_Rect</a> *dstrect)</td></tr>
+<tr class="memitem:a5c6b2f06726600d41ff75ff259d4383b"><td class="memItemLeft" align="right" valign="top">DECLSPEC int SDLCALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__surface_8h.html#a5c6b2f06726600d41ff75ff259d4383b">SDL_LowerBlitScaled</a> (<a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *src, <a class="el" href="struct_s_d_l___rect.html">SDL_Rect</a> *srcrect, <a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *dst, <a class="el" href="struct_s_d_l___rect.html">SDL_Rect</a> *dstrect)</td></tr>
 <tr class="separator:a5c6b2f06726600d41ff75ff259d4383b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Header file for <a class="el" href="struct_s_d_l___surface.html" title="A collection of pixels used in software blitting. ">SDL_Surface</a> definition and management functions. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="a0be5f27c24e29a61096c2f59610ff1bf"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SDL_BlitScaled&#160;&#160;&#160;<a class="el" href="_s_d_l__surface_8h.html#a90ac01634e9ee33764fcf5ec7bc43c46">SDL_UpperBlitScaled</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="aad8d7ebe5e953593cb7d91373e73ba9a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -341,7 +335,7 @@ RGB-&gt;RGB:
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">file</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="_s_d_l__surface_8h.html#aac1d1435b9fa8523d699c3a33264d559">SDL_LoadBMP_RW</a>(<a class="el" href="_s_d_l__rwops_8h.html#aef7e843c3486bd1770667a594aa0b439">SDL_RWFromFile</a>(file, &quot;rb&quot;), 1)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="_s_d_l__surface_8h.html#aac1d1435b9fa8523d699c3a33264d559">SDL_LoadBMP_RW</a>(SDL_RWFromFile(file, &quot;rb&quot;), 1)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -359,7 +353,7 @@ RGB-&gt;RGB:
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">S</td><td>)</td>
-          <td>&#160;&#160;&#160;(((S)-&gt;<a class="el" href="_g_l_e_w_2glew_8h.html#a0f11defcf8fd03368fc70485bffe71e9">flags</a> &amp; <a class="el" href="_s_d_l__surface_8h.html#a3b3d53ad7ba0b7294ca25251d88d40fb">SDL_RLEACCEL</a>) != 0)</td>
+          <td>&#160;&#160;&#160;(((S)-&gt;flags &amp; <a class="el" href="_s_d_l__surface_8h.html#a3b3d53ad7ba0b7294ca25251d88d40fb">SDL_RLEACCEL</a>) != 0)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -412,7 +406,7 @@ RGB-&gt;RGB:
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="_s_d_l__surface_8h.html#aadc126a4edeafb5033d5e942cf32db6a">SDL_SaveBMP_RW</a>(surface, <a class="el" href="_s_d_l__rwops_8h.html#aef7e843c3486bd1770667a594aa0b439">SDL_RWFromFile</a>(file, &quot;wb&quot;), 1)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="_s_d_l__surface_8h.html#aadc126a4edeafb5033d5e942cf32db6a">SDL_SaveBMP_RW</a>(surface, SDL_RWFromFile(file, &quot;wb&quot;), 1)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -435,20 +429,6 @@ RGB-&gt;RGB:
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a class="anchor" id="a72448df55427d80f216884ed3419b431"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a>(* SDL_blit)(struct <a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *<a class="el" href="_g_l_e_w_2glew_8h.html#a2a98ddb6f79ec1048ff9e15cdd2422ba">src</a>, <a class="el" href="struct_s_d_l___rect.html">SDL_Rect</a> *srcrect, struct <a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *<a class="el" href="_g_l_e_w_2glew_8h.html#a85e59cd56e10d0a7f49ab199f277d486">dst</a>, <a class="el" href="struct_s_d_l___rect.html">SDL_Rect</a> *dstrect)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The type of function used for surface blitting functions. </p>
-
-</div>
-</div>
 <a class="anchor" id="a32471ad028ae3d2a132302bc5efcb1ee"></a>
 <div class="memitem">
 <div class="memproto">
@@ -470,15 +450,15 @@ RGB-&gt;RGB:
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_ConvertPixels </td>
+          <td class="memname">DECLSPEC int SDLCALL SDL_ConvertPixels </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>width</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>height</em>, </td>
         </tr>
         <tr>
@@ -490,13 +470,13 @@ RGB-&gt;RGB:
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a> *&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>src_pitch</em>, </td>
         </tr>
         <tr>
@@ -508,13 +488,13 @@ RGB-&gt;RGB:
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a> *&#160;</td>
           <td class="paramname"><em>dst</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>dst_pitch</em>&#160;</td>
         </tr>
         <tr>
@@ -535,7 +515,7 @@ RGB-&gt;RGB:
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a>* <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_ConvertSurface </td>
+          <td class="memname">DECLSPEC <a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a>* SDLCALL SDL_ConvertSurface </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *&#160;</td>
           <td class="paramname"><em>src</em>, </td>
@@ -564,44 +544,12 @@ RGB-&gt;RGB:
 
 </div>
 </div>
-<a class="anchor" id="aec0b84e7d50b9cc84bd9e785170ce2cd"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a>* <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_ConvertSurfaceFormat </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *&#160;</td>
-          <td class="paramname"><em>src</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a>&#160;</td>
-          <td class="paramname"><em>pixel_format</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a>&#160;</td>
-          <td class="paramname"><em>flags</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="aac106bf796c828587cce76cb847d11ae"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a>* <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_CreateRGBSurface </td>
+          <td class="memname">DECLSPEC <a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a>* SDLCALL SDL_CreateRGBSurface </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a>&#160;</td>
           <td class="paramname"><em>flags</em>, </td>
@@ -609,19 +557,19 @@ RGB-&gt;RGB:
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>width</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>height</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>depth</em>, </td>
         </tr>
         <tr>
@@ -674,80 +622,12 @@ RGB-&gt;RGB:
 
 </div>
 </div>
-<a class="anchor" id="a25c74ddbc73538e9a4accb42e1c09971"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a>* <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_CreateRGBSurfaceFrom </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> *&#160;</td>
-          <td class="paramname"><em>pixels</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a>&#160;</td>
-          <td class="paramname"><em>width</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a>&#160;</td>
-          <td class="paramname"><em>height</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a>&#160;</td>
-          <td class="paramname"><em>depth</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a>&#160;</td>
-          <td class="paramname"><em>pitch</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a>&#160;</td>
-          <td class="paramname"><em>Rmask</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a>&#160;</td>
-          <td class="paramname"><em>Gmask</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a>&#160;</td>
-          <td class="paramname"><em>Bmask</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a>&#160;</td>
-          <td class="paramname"><em>Amask</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a98b3595458c6271303d6470cb2b2c721"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_FillRect </td>
+          <td class="memname">DECLSPEC int SDLCALL SDL_FillRect </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *&#160;</td>
           <td class="paramname"><em>dst</em>, </td>
@@ -778,66 +658,12 @@ RGB-&gt;RGB:
 
 </div>
 </div>
-<a class="anchor" id="a7b893162f400b8193ff6ca628ec784b6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_FillRects </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *&#160;</td>
-          <td class="paramname"><em>dst</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="struct_s_d_l___rect.html">SDL_Rect</a> *&#160;</td>
-          <td class="paramname"><em>rects</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a>&#160;</td>
-          <td class="paramname"><em>count</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a>&#160;</td>
-          <td class="paramname"><em>color</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a7b8d4f9cc058822501896a2eed81220e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_FreeSurface </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *&#160;</td>
-          <td class="paramname"><em>surface</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a7d7f71b94748a1b0db3b5b769834ed27"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_GetClipRect </td>
+          <td class="memname">DECLSPEC <a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a> SDLCALL SDL_GetClipRect </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *&#160;</td>
           <td class="paramname"><em>surface</em>, </td>
@@ -865,7 +691,7 @@ RGB-&gt;RGB:
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_GetColorKey </td>
+          <td class="memname">DECLSPEC int SDLCALL SDL_GetColorKey </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *&#160;</td>
           <td class="paramname"><em>surface</em>, </td>
@@ -901,7 +727,7 @@ RGB-&gt;RGB:
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_GetSurfaceAlphaMod </td>
+          <td class="memname">DECLSPEC int SDLCALL SDL_GetSurfaceAlphaMod </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *&#160;</td>
           <td class="paramname"><em>surface</em>, </td>
@@ -938,7 +764,7 @@ RGB-&gt;RGB:
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_GetSurfaceBlendMode </td>
+          <td class="memname">DECLSPEC int SDLCALL SDL_GetSurfaceBlendMode </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *&#160;</td>
           <td class="paramname"><em>surface</em>, </td>
@@ -975,7 +801,7 @@ RGB-&gt;RGB:
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_GetSurfaceColorMod </td>
+          <td class="memname">DECLSPEC int SDLCALL SDL_GetSurfaceColorMod </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *&#160;</td>
           <td class="paramname"><em>surface</em>, </td>
@@ -1026,7 +852,7 @@ RGB-&gt;RGB:
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a>* <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_LoadBMP_RW </td>
+          <td class="memname">DECLSPEC <a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a>* SDLCALL SDL_LoadBMP_RW </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_s_d_l___r_wops.html">SDL_RWops</a> *&#160;</td>
           <td class="paramname"><em>src</em>, </td>
@@ -1034,7 +860,7 @@ RGB-&gt;RGB:
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>freesrc</em>&#160;</td>
         </tr>
         <tr>
@@ -1046,7 +872,7 @@ RGB-&gt;RGB:
 </div><div class="memdoc">
 <p>Load a surface from a seekable SDL data stream (memory or file).</p>
 <p>If <code>freesrc</code> is non-zero, the stream will be closed after being read.</p>
-<p>The new surface should be freed with <a class="el" href="_s_d_l__surface_8h.html#a7b8d4f9cc058822501896a2eed81220e">SDL_FreeSurface()</a>.</p>
+<p>The new surface should be freed with SDL_FreeSurface().</p>
 <dl class="section return"><dt>Returns</dt><dd>the new surface, or NULL if there was an error. </dd></dl>
 
 </div>
@@ -1056,7 +882,7 @@ RGB-&gt;RGB:
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_LockSurface </td>
+          <td class="memname">DECLSPEC int SDLCALL SDL_LockSurface </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *&#160;</td>
           <td class="paramname"><em>surface</em></td><td>)</td>
@@ -1079,7 +905,7 @@ RGB-&gt;RGB:
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_LowerBlit </td>
+          <td class="memname">DECLSPEC int SDLCALL SDL_LowerBlit </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *&#160;</td>
           <td class="paramname"><em>src</em>, </td>
@@ -1118,7 +944,7 @@ RGB-&gt;RGB:
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_LowerBlitScaled </td>
+          <td class="memname">DECLSPEC int SDLCALL SDL_LowerBlitScaled </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *&#160;</td>
           <td class="paramname"><em>src</em>, </td>
@@ -1157,7 +983,7 @@ RGB-&gt;RGB:
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_SaveBMP_RW </td>
+          <td class="memname">DECLSPEC int SDLCALL SDL_SaveBMP_RW </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *&#160;</td>
           <td class="paramname"><em>surface</em>, </td>
@@ -1171,7 +997,7 @@ RGB-&gt;RGB:
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>freedst</em>&#160;</td>
         </tr>
         <tr>
@@ -1192,7 +1018,7 @@ RGB-&gt;RGB:
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__stdinc_8h.html#a8fca68df0f976765230fe589a7c7733b">SDL_bool</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_SetClipRect </td>
+          <td class="memname">DECLSPEC SDL_bool SDLCALL SDL_SetClipRect </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *&#160;</td>
           <td class="paramname"><em>surface</em>, </td>
@@ -1222,7 +1048,7 @@ RGB-&gt;RGB:
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_SetColorKey </td>
+          <td class="memname">DECLSPEC int SDLCALL SDL_SetColorKey </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *&#160;</td>
           <td class="paramname"><em>surface</em>, </td>
@@ -1230,7 +1056,7 @@ RGB-&gt;RGB:
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>flag</em>, </td>
         </tr>
         <tr>
@@ -1266,7 +1092,7 @@ RGB-&gt;RGB:
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_SetSurfaceAlphaMod </td>
+          <td class="memname">DECLSPEC int SDLCALL SDL_SetSurfaceAlphaMod </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *&#160;</td>
           <td class="paramname"><em>surface</em>, </td>
@@ -1303,7 +1129,7 @@ RGB-&gt;RGB:
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_SetSurfaceBlendMode </td>
+          <td class="memname">DECLSPEC int SDLCALL SDL_SetSurfaceBlendMode </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *&#160;</td>
           <td class="paramname"><em>surface</em>, </td>
@@ -1340,7 +1166,7 @@ RGB-&gt;RGB:
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_SetSurfaceColorMod </td>
+          <td class="memname">DECLSPEC int SDLCALL SDL_SetSurfaceColorMod </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *&#160;</td>
           <td class="paramname"><em>surface</em>, </td>
@@ -1391,7 +1217,7 @@ RGB-&gt;RGB:
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_SetSurfacePalette </td>
+          <td class="memname">DECLSPEC int SDLCALL SDL_SetSurfacePalette </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *&#160;</td>
           <td class="paramname"><em>surface</em>, </td>
@@ -1421,7 +1247,7 @@ RGB-&gt;RGB:
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_SetSurfaceRLE </td>
+          <td class="memname">DECLSPEC int SDLCALL SDL_SetSurfaceRLE </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *&#160;</td>
           <td class="paramname"><em>surface</em>, </td>
@@ -1429,7 +1255,7 @@ RGB-&gt;RGB:
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>flag</em>&#160;</td>
         </tr>
         <tr>
@@ -1451,7 +1277,7 @@ RGB-&gt;RGB:
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_SoftStretch </td>
+          <td class="memname">DECLSPEC int SDLCALL SDL_SoftStretch </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *&#160;</td>
           <td class="paramname"><em>src</em>, </td>
@@ -1492,7 +1318,7 @@ RGB-&gt;RGB:
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_UnlockSurface </td>
+          <td class="memname">DECLSPEC <a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a> SDLCALL SDL_UnlockSurface </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *&#160;</td>
           <td class="paramname"><em>surface</em></td><td>)</td>
@@ -1509,7 +1335,7 @@ RGB-&gt;RGB:
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_UpperBlit </td>
+          <td class="memname">DECLSPEC int SDLCALL SDL_UpperBlit </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *&#160;</td>
           <td class="paramname"><em>src</em>, </td>
@@ -1548,7 +1374,7 @@ RGB-&gt;RGB:
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_UpperBlitScaled </td>
+          <td class="memname">DECLSPEC int SDLCALL SDL_UpperBlitScaled </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_s_d_l___surface.html">SDL_Surface</a> *&#160;</td>
           <td class="paramname"><em>src</em>, </td>
@@ -1578,7 +1404,7 @@ RGB-&gt;RGB:
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This is the public scaled blit function, <a class="el" href="_s_d_l__surface_8h.html#a0be5f27c24e29a61096c2f59610ff1bf">SDL_BlitScaled()</a>, and it performs rectangle validation and clipping before passing it to <a class="el" href="_s_d_l__surface_8h.html#a5c6b2f06726600d41ff75ff259d4383b">SDL_LowerBlitScaled()</a> </p>
+<p>This is the public scaled blit function, SDL_BlitScaled(), and it performs rectangle validation and clipping before passing it to <a class="el" href="_s_d_l__surface_8h.html#a5c6b2f06726600d41ff75ff259d4383b">SDL_LowerBlitScaled()</a> </p>
 
 </div>
 </div>
@@ -1588,7 +1414,7 @@ RGB-&gt;RGB:
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_bb71c587d4eee030bda30f2f35ebd6b7.html">SDL</a></li><li class="navelem"><a class="el" href="dir_3b9b8e98eade024f68a871db77d1527d.html">include</a></li><li class="navelem"><a class="el" href="_s_d_l__surface_8h.html">SDL_surface.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 20:57:44 for Super Happy Rocket by
+    <li class="footer">Generated on Fri Nov 22 2013 01:07:56 for Super Happy Rocket by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

@@ -130,50 +130,33 @@ This graph shows which files directly or indirectly include this file:</div>
 </div>
 <p><a href="_s_d_l__main_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:aff46224d961128004c2b4223648f3d40"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__main_8h.html#aff46224d961128004c2b4223648f3d40">C_LINKAGE</a></td></tr>
-<tr class="separator:aff46224d961128004c2b4223648f3d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:abebe82923d88787c3718e201b3e62295"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_s_d_l__main_8h.html#aff46224d961128004c2b4223648f3d40">C_LINKAGE</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__main_8h.html#abebe82923d88787c3718e201b3e62295">SDL_main</a> (<a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> argc, char *argv[])</td></tr>
+<tr class="memitem:abebe82923d88787c3718e201b3e62295"><td class="memItemLeft" align="right" valign="top">C_LINKAGE int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__main_8h.html#abebe82923d88787c3718e201b3e62295">SDL_main</a> (int argc, char *argv[])</td></tr>
 <tr class="separator:abebe82923d88787c3718e201b3e62295"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1708741e718285d8ca53f1287fbe7dc7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__main_8h.html#a1708741e718285d8ca53f1287fbe7dc7">SDL_SetMainReady</a> (<a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a>)</td></tr>
+<tr class="memitem:a1708741e718285d8ca53f1287fbe7dc7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1708741e718285d8ca53f1287fbe7dc7"></a>
+DECLSPEC <a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SDL_SetMainReady</b> (<a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a>)</td></tr>
 <tr class="separator:a1708741e718285d8ca53f1287fbe7dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Redefine <a class="el" href="main_8cpp.html#a700a0caa5b70a06d1064e576f9f3cf65">main()</a> on some platforms so that it is called by SDL.</p>
-<p>The application's <a class="el" href="main_8cpp.html#a700a0caa5b70a06d1064e576f9f3cf65">main()</a> function must be called with C linkage, and should be declared like this: </p>
+<div class="textblock"><p>Redefine main() on some platforms so that it is called by SDL.</p>
+<p>The application's main() function must be called with C linkage, and should be declared like this: </p>
 <div class="fragment"><div class="line">*  #ifdef __cplusplus</div>
 <div class="line">*  <span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span></div>
 <div class="line">*  #endif</div>
-<div class="line">*  <span class="keywordtype">int</span> <a class="code" href="main_8cpp.html#a700a0caa5b70a06d1064e576f9f3cf65">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[])</div>
+<div class="line">*  <span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[])</div>
 <div class="line">*  {</div>
 <div class="line">*  }</div>
 <div class="line">*  </div>
-</div><!-- fragment --> </div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="aff46224d961128004c2b4223648f3d40"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define C_LINKAGE</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
+</div><!-- fragment --> </div><h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="abebe82923d88787c3718e201b3e62295"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_s_d_l__main_8h.html#aff46224d961128004c2b4223648f3d40">C_LINKAGE</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> SDL_main </td>
+          <td class="memname">C_LINKAGE int SDL_main </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>argc</em>, </td>
         </tr>
         <tr>
@@ -189,23 +172,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The prototype for the application's <a class="el" href="main_8cpp.html#a700a0caa5b70a06d1064e576f9f3cf65">main()</a> function </p>
-
-</div>
-</div>
-<a class="anchor" id="a1708741e718285d8ca53f1287fbe7dc7"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> SDL_SetMainReady </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a>&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>The prototype for the application's main() function </p>
 
 </div>
 </div>
@@ -215,7 +182,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_bb71c587d4eee030bda30f2f35ebd6b7.html">SDL</a></li><li class="navelem"><a class="el" href="dir_3b9b8e98eade024f68a871db77d1527d.html">include</a></li><li class="navelem"><a class="el" href="_s_d_l__main_8h.html">SDL_main.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 20:57:37 for Super Happy Rocket by
+    <li class="footer">Generated on Fri Nov 22 2013 01:07:55 for Super Happy Rocket by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('version_8h_source.html','');});
 <div class="title">version.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="version_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">---------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">Open Asset Import Library (assimp)</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">---------------------------------------------------------------------------</span></div>
@@ -156,46 +156,40 @@ $(document).ready(function(){initNavTree('version_8h_source.html','');});
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">// ---------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"></span><a class="code" href="defs_8h.html#a7d617d307e656cb6ff315ba71ff958d4">ASSIMP_API</a> <span class="keyword">const</span> <span class="keywordtype">char</span>*  <a class="code" href="version_8h.html#aae8020339846d0d9e7e5d2756148c87c">aiGetLegalString</a>  (<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"></span>ASSIMP_API <span class="keyword">const</span> <span class="keywordtype">char</span>*  aiGetLegalString  (<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">// ---------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment"></span><a class="code" href="defs_8h.html#a7d617d307e656cb6ff315ba71ff958d4">ASSIMP_API</a> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="version_8h.html#a875b57215e9763ffaf075cf9950ae4c5">aiGetVersionMinor</a> (<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment"></span>ASSIMP_API <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> aiGetVersionMinor (<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">// ---------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment"></span><a class="code" href="defs_8h.html#a7d617d307e656cb6ff315ba71ff958d4">ASSIMP_API</a> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="version_8h.html#a4e3809928b7b55d303af0f01f379667a">aiGetVersionMajor</a> (<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment"></span>ASSIMP_API <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> aiGetVersionMajor (<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">// ---------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment"></span><a class="code" href="defs_8h.html#a7d617d307e656cb6ff315ba71ff958d4">ASSIMP_API</a> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="version_8h.html#a8865df81b23f4978fc06e4401c5ea4f5">aiGetVersionRevision</a> (<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment"></span>ASSIMP_API <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> aiGetVersionRevision (<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="version_8h.html#a8a8c659a20a5df0d3800ad5af79a763d">   83</a></span>&#160;<span class="preprocessor">#define ASSIMP_CFLAGS_SHARED  0x1 </span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#define ASSIMP_CFLAGS_SHARED  0x1 </span></div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ASSIMP_CFLAGS_STLPORT 0x2</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ASSIMP_CFLAGS_DEBUG   0x4</span></div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="version_8h.html#a4246a70502fdc483b02c47beabd99dde">   90</a></span>&#160;<span class="preprocessor">#define ASSIMP_CFLAGS_NOBOOST           0x8</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#define ASSIMP_CFLAGS_NOBOOST           0x8</span></div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ASSIMP_CFLAGS_SINGLETHREADED    0x10</span></div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">// ---------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment"></span><a class="code" href="defs_8h.html#a7d617d307e656cb6ff315ba71ff958d4">ASSIMP_API</a> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="version_8h.html#ac914a32bb053cb6572032668562873f2">aiGetCompileFlags</a> (<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment"></span>ASSIMP_API <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> aiGetCompileFlags (<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor"></span>} <span class="comment">// end extern &quot;C&quot;</span></div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif // !! #ifndef INCLUDED_AI_VERSION_H</span></div>
-<div class="ttc" id="version_8h_html_aae8020339846d0d9e7e5d2756148c87c"><div class="ttname"><a href="version_8h.html#aae8020339846d0d9e7e5d2756148c87c">aiGetLegalString</a></div><div class="ttdeci">ASSIMP_API const char * aiGetLegalString(void)</div><div class="ttdoc">Returns a string with legal copyright and licensing information about Assimp. The string may include ...</div></div>
-<div class="ttc" id="version_8h_html_ac914a32bb053cb6572032668562873f2"><div class="ttname"><a href="version_8h.html#ac914a32bb053cb6572032668562873f2">aiGetCompileFlags</a></div><div class="ttdeci">ASSIMP_API unsigned int aiGetCompileFlags(void)</div><div class="ttdoc">Returns assimp&amp;#39;s compile flags. </div></div>
-<div class="ttc" id="version_8h_html_a4e3809928b7b55d303af0f01f379667a"><div class="ttname"><a href="version_8h.html#a4e3809928b7b55d303af0f01f379667a">aiGetVersionMajor</a></div><div class="ttdeci">ASSIMP_API unsigned int aiGetVersionMajor(void)</div><div class="ttdoc">Returns the current major version number of Assimp. </div></div>
-<div class="ttc" id="version_8h_html_a875b57215e9763ffaf075cf9950ae4c5"><div class="ttname"><a href="version_8h.html#a875b57215e9763ffaf075cf9950ae4c5">aiGetVersionMinor</a></div><div class="ttdeci">ASSIMP_API unsigned int aiGetVersionMinor(void)</div><div class="ttdoc">Returns the current minor version number of Assimp. </div></div>
-<div class="ttc" id="defs_8h_html_a7d617d307e656cb6ff315ba71ff958d4"><div class="ttname"><a href="defs_8h.html#a7d617d307e656cb6ff315ba71ff958d4">ASSIMP_API</a></div><div class="ttdeci">#define ASSIMP_API</div><div class="ttdef"><b>Definition:</b> defs.h:142</div></div>
-<div class="ttc" id="version_8h_html_a8865df81b23f4978fc06e4401c5ea4f5"><div class="ttname"><a href="version_8h.html#a8865df81b23f4978fc06e4401c5ea4f5">aiGetVersionRevision</a></div><div class="ttdeci">ASSIMP_API unsigned int aiGetVersionRevision(void)</div><div class="ttdoc">Returns the repository revision of the Assimp runtime. </div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_2a3ab8ae23d2cffc0bffa70c4703d52b.html">assimp</a></li><li class="navelem"><a class="el" href="dir_775f47f696c8e1c7e288eb84d9156930.html">include</a></li><li class="navelem"><a class="el" href="version_8h.html">version.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 20:57:10 for Super Happy Rocket by
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_2a3ab8ae23d2cffc0bffa70c4703d52b.html">assimp</a></li><li class="navelem"><a class="el" href="dir_775f47f696c8e1c7e288eb84d9156930.html">include</a></li><li class="navelem"><b>version.h</b></li>
+    <li class="footer">Generated on Fri Nov 22 2013 01:07:50 for Super Happy Rocket by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

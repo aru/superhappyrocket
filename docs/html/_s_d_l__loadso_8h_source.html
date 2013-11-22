@@ -140,12 +140,12 @@ $(document).ready(function(){initNavTree('_s_d_l__loadso_8h_source.html','');});
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">extern</span> <a class="code" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <span class="keywordtype">void</span> *<a class="code" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> <a class="code" href="_s_d_l__loadso_8h.html#a278c5f3a6bb4f141680ef164e94b12b0">SDL_LoadObject</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *sofile);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">extern</span> DECLSPEC <span class="keywordtype">void</span> *SDLCALL <a class="code" href="_s_d_l__loadso_8h.html#a278c5f3a6bb4f141680ef164e94b12b0">SDL_LoadObject</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *sofile);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">extern</span> <a class="code" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <span class="keywordtype">void</span> *<a class="code" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> <a class="code" href="_s_d_l__loadso_8h.html#a926a605bda55d8d3d66ff6389bc98941">SDL_LoadFunction</a>(<span class="keywordtype">void</span> *handle,</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                                               <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="_g_l_e_w_2glew_8h.html#aaced7cfc21e7d37775d6921bb8177239">name</a>);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">extern</span> DECLSPEC <span class="keywordtype">void</span> *SDLCALL <a class="code" href="_s_d_l__loadso_8h.html#a926a605bda55d8d3d66ff6389bc98941">SDL_LoadFunction</a>(<span class="keywordtype">void</span> *handle,</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                                               <span class="keyword">const</span> <span class="keywordtype">char</span> *name);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">extern</span> <a class="code" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <span class="keywordtype">void</span> <a class="code" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> <a class="code" href="_s_d_l__loadso_8h.html#a041e43c276cb826c2034eff220be7fe4">SDL_UnloadObject</a>(<span class="keywordtype">void</span> *handle);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">extern</span> DECLSPEC <span class="keywordtype">void</span> SDLCALL <a class="code" href="_s_d_l__loadso_8h.html#a041e43c276cb826c2034eff220be7fe4">SDL_UnloadObject</a>(<span class="keywordtype">void</span> *handle);</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">/* Ends C function definitions when using C++ */</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
@@ -156,14 +156,11 @@ $(document).ready(function(){initNavTree('_s_d_l__loadso_8h_source.html','');});
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _SDL_loadso_h */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">/* vi: set ts=4 sw=4 expandtab: */</span></div>
-<div class="ttc" id="begin__code_8h_html_aa4c7a931f4a968f818b2a1b10a432185"><div class="ttname"><a href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a></div><div class="ttdeci">#define DECLSPEC</div><div class="ttdef"><b>Definition:</b> begin_code.h:58</div></div>
-<div class="ttc" id="begin__code_8h_html_a81faf4ba0455dc75f2e0507eddb79401"><div class="ttname"><a href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a></div><div class="ttdeci">#define SDLCALL</div><div class="ttdef"><b>Definition:</b> begin_code.h:68</div></div>
 <div class="ttc" id="begin__code_8h_html"><div class="ttname"><a href="begin__code_8h.html">begin_code.h</a></div></div>
 <div class="ttc" id="close__code_8h_html"><div class="ttname"><a href="close__code_8h.html">close_code.h</a></div></div>
 <div class="ttc" id="_s_d_l__loadso_8h_html_a278c5f3a6bb4f141680ef164e94b12b0"><div class="ttname"><a href="_s_d_l__loadso_8h.html#a278c5f3a6bb4f141680ef164e94b12b0">SDL_LoadObject</a></div><div class="ttdeci">DECLSPEC void *SDLCALL SDL_LoadObject(const char *sofile)</div></div>
 <div class="ttc" id="_s_d_l__loadso_8h_html_a041e43c276cb826c2034eff220be7fe4"><div class="ttname"><a href="_s_d_l__loadso_8h.html#a041e43c276cb826c2034eff220be7fe4">SDL_UnloadObject</a></div><div class="ttdeci">DECLSPEC void SDLCALL SDL_UnloadObject(void *handle)</div></div>
 <div class="ttc" id="_s_d_l__stdinc_8h_html"><div class="ttname"><a href="_s_d_l__stdinc_8h.html">SDL_stdinc.h</a></div></div>
-<div class="ttc" id="_g_l_e_w_2glew_8h_html_aaced7cfc21e7d37775d6921bb8177239"><div class="ttname"><a href="_g_l_e_w_2glew_8h.html#aaced7cfc21e7d37775d6921bb8177239">name</a></div><div class="ttdeci">GLuint const GLchar * name</div><div class="ttdef"><b>Definition:</b> glew.h:1800</div></div>
 <div class="ttc" id="_s_d_l__loadso_8h_html_a926a605bda55d8d3d66ff6389bc98941"><div class="ttname"><a href="_s_d_l__loadso_8h.html#a926a605bda55d8d3d66ff6389bc98941">SDL_LoadFunction</a></div><div class="ttdeci">DECLSPEC void *SDLCALL SDL_LoadFunction(void *handle, const char *name)</div></div>
 <div class="ttc" id="_s_d_l__error_8h_html"><div class="ttname"><a href="_s_d_l__error_8h.html">SDL_error.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -172,7 +169,7 @@ $(document).ready(function(){initNavTree('_s_d_l__loadso_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_bb71c587d4eee030bda30f2f35ebd6b7.html">SDL</a></li><li class="navelem"><a class="el" href="dir_3b9b8e98eade024f68a871db77d1527d.html">include</a></li><li class="navelem"><a class="el" href="_s_d_l__loadso_8h.html">SDL_loadso.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 20:57:14 for Super Happy Rocket by
+    <li class="footer">Generated on Fri Nov 22 2013 01:07:53 for Super Happy Rocket by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

@@ -161,8 +161,9 @@ Macros</h2></td></tr>
 <tr class="memitem:a5295df139727cd78a0663afb0b91010b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__hints_8h.html#a5295df139727cd78a0663afb0b91010b">SDL_HINT_GRAB_KEYBOARD</a>&#160;&#160;&#160;&quot;SDL_GRAB_KEYBOARD&quot;</td></tr>
 <tr class="memdesc:a5295df139727cd78a0663afb0b91010b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A variable controlling whether grabbing input grabs the keyboard.  <a href="#a5295df139727cd78a0663afb0b91010b">More...</a><br/></td></tr>
 <tr class="separator:a5295df139727cd78a0663afb0b91010b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85488274590bff72c3d1dba5829443f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__hints_8h.html#a85488274590bff72c3d1dba5829443f6">SDL_HINT_VIDEO_MINIMIZE_ON_FOCUS_LOSS</a>&#160;&#160;&#160;&quot;SDL_VIDEO_MINIMIZE_ON_FOCUS_LOSS&quot;</td></tr>
-<tr class="memdesc:a85488274590bff72c3d1dba5829443f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimize your SDL_Window if it loses key focus when in Fullscreen mode. Defaults to true.  <a href="#a85488274590bff72c3d1dba5829443f6">More...</a><br/></td></tr>
+<tr class="memitem:a85488274590bff72c3d1dba5829443f6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a85488274590bff72c3d1dba5829443f6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__hints_8h.html#a85488274590bff72c3d1dba5829443f6">SDL_HINT_VIDEO_MINIMIZE_ON_FOCUS_LOSS</a>&#160;&#160;&#160;&quot;SDL_VIDEO_MINIMIZE_ON_FOCUS_LOSS&quot;</td></tr>
+<tr class="memdesc:a85488274590bff72c3d1dba5829443f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimize your SDL_Window if it loses key focus when in Fullscreen mode. Defaults to true. <br/></td></tr>
 <tr class="separator:a85488274590bff72c3d1dba5829443f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe9410e8b6809c9fdcb1f69e6894a2e8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__hints_8h.html#abe9410e8b6809c9fdcb1f69e6894a2e8">SDL_HINT_IDLE_TIMER_DISABLED</a>&#160;&#160;&#160;&quot;SDL_IOS_IDLE_TIMER_DISABLED&quot;</td></tr>
 <tr class="memdesc:abe9410e8b6809c9fdcb1f69e6894a2e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">A variable controlling whether the idle timer is disabled on iOS.  <a href="#abe9410e8b6809c9fdcb1f69e6894a2e8">More...</a><br/></td></tr>
@@ -188,36 +189,37 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a9466a87e203a4942eb769057196696c3"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__hints_8h.html#a9466a87e203a4942eb769057196696c3">SDL_HintCallback</a> )(<a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> *userdata, const char *<a class="el" href="_g_l_e_w_2glew_8h.html#aaced7cfc21e7d37775d6921bb8177239">name</a>, const char *oldValue, const char *newValue)</td></tr>
+<tr class="memitem:a9466a87e203a4942eb769057196696c3"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__hints_8h.html#a9466a87e203a4942eb769057196696c3">SDL_HintCallback</a> )(<a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a> *userdata, const char *name, const char *oldValue, const char *newValue)</td></tr>
 <tr class="memdesc:a9466a87e203a4942eb769057196696c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a function to watch a particular hint.  <a href="#a9466a87e203a4942eb769057196696c3">More...</a><br/></td></tr>
 <tr class="separator:a9466a87e203a4942eb769057196696c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ab85f3099d9bb0445b0c6b5002cfaa7ed"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__hints_8h.html#ab85f3099d9bb0445b0c6b5002cfaa7ed">SDL_HintPriority</a> { <a class="el" href="_s_d_l__hints_8h.html#ab85f3099d9bb0445b0c6b5002cfaa7eda3dd1382c2b23c690411c1aacfac9b634">SDL_HINT_DEFAULT</a>, 
-<a class="el" href="_s_d_l__hints_8h.html#ab85f3099d9bb0445b0c6b5002cfaa7edaef363821cdc9c74e84d79cfea42e32b9">SDL_HINT_NORMAL</a>, 
-<a class="el" href="_s_d_l__hints_8h.html#ab85f3099d9bb0445b0c6b5002cfaa7edac85d90168e4a0cd4cd52ba38a68bcebf">SDL_HINT_OVERRIDE</a>
+<tr class="memitem:ab85f3099d9bb0445b0c6b5002cfaa7ed"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__hints_8h.html#ab85f3099d9bb0445b0c6b5002cfaa7ed">SDL_HintPriority</a> { <b>SDL_HINT_DEFAULT</b>, 
+<b>SDL_HINT_NORMAL</b>, 
+<b>SDL_HINT_OVERRIDE</b>
  }</td></tr>
-<tr class="memdesc:ab85f3099d9bb0445b0c6b5002cfaa7ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumeration of hint priorities.  <a href="_s_d_l__hints_8h.html#ab85f3099d9bb0445b0c6b5002cfaa7ed">More...</a><br/></td></tr>
+<tr class="memdesc:ab85f3099d9bb0445b0c6b5002cfaa7ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumeration of hint priorities. <br/></td></tr>
 <tr class="separator:ab85f3099d9bb0445b0c6b5002cfaa7ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa8dbcd854090784ae237aeeefb7e6232"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__stdinc_8h.html#a8fca68df0f976765230fe589a7c7733b">SDL_bool</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__hints_8h.html#aa8dbcd854090784ae237aeeefb7e6232">SDL_SetHintWithPriority</a> (const char *<a class="el" href="_g_l_e_w_2glew_8h.html#aaced7cfc21e7d37775d6921bb8177239">name</a>, const char *<a class="el" href="_g_l_e_w_2glew_8h.html#a79169be77d7e02a24f68a5bfe627dc29">value</a>, <a class="el" href="_s_d_l__hints_8h.html#ab85f3099d9bb0445b0c6b5002cfaa7ed">SDL_HintPriority</a> priority)</td></tr>
+<tr class="memitem:aa8dbcd854090784ae237aeeefb7e6232"><td class="memItemLeft" align="right" valign="top">DECLSPEC SDL_bool SDLCALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__hints_8h.html#aa8dbcd854090784ae237aeeefb7e6232">SDL_SetHintWithPriority</a> (const char *name, const char *value, <a class="el" href="_s_d_l__hints_8h.html#ab85f3099d9bb0445b0c6b5002cfaa7ed">SDL_HintPriority</a> priority)</td></tr>
 <tr class="memdesc:aa8dbcd854090784ae237aeeefb7e6232"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a hint with a specific priority.  <a href="#aa8dbcd854090784ae237aeeefb7e6232">More...</a><br/></td></tr>
 <tr class="separator:aa8dbcd854090784ae237aeeefb7e6232"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b47f5aa3911644f0a5a3f0cfa9198a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__stdinc_8h.html#a8fca68df0f976765230fe589a7c7733b">SDL_bool</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__hints_8h.html#a9b47f5aa3911644f0a5a3f0cfa9198a4">SDL_SetHint</a> (const char *<a class="el" href="_g_l_e_w_2glew_8h.html#aaced7cfc21e7d37775d6921bb8177239">name</a>, const char *<a class="el" href="_g_l_e_w_2glew_8h.html#a79169be77d7e02a24f68a5bfe627dc29">value</a>)</td></tr>
+<tr class="memitem:a9b47f5aa3911644f0a5a3f0cfa9198a4"><td class="memItemLeft" align="right" valign="top">DECLSPEC SDL_bool SDLCALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__hints_8h.html#a9b47f5aa3911644f0a5a3f0cfa9198a4">SDL_SetHint</a> (const char *name, const char *value)</td></tr>
 <tr class="memdesc:a9b47f5aa3911644f0a5a3f0cfa9198a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a hint with normal priority.  <a href="#a9b47f5aa3911644f0a5a3f0cfa9198a4">More...</a><br/></td></tr>
 <tr class="separator:a9b47f5aa3911644f0a5a3f0cfa9198a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b26a63a33768fab43d50e3fd0d41eb5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> const char *<a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__hints_8h.html#a7b26a63a33768fab43d50e3fd0d41eb5">SDL_GetHint</a> (const char *<a class="el" href="_g_l_e_w_2glew_8h.html#aaced7cfc21e7d37775d6921bb8177239">name</a>)</td></tr>
+<tr class="memitem:a7b26a63a33768fab43d50e3fd0d41eb5"><td class="memItemLeft" align="right" valign="top">DECLSPEC const char *SDLCALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__hints_8h.html#a7b26a63a33768fab43d50e3fd0d41eb5">SDL_GetHint</a> (const char *name)</td></tr>
 <tr class="memdesc:a7b26a63a33768fab43d50e3fd0d41eb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a hint.  <a href="#a7b26a63a33768fab43d50e3fd0d41eb5">More...</a><br/></td></tr>
 <tr class="separator:a7b26a63a33768fab43d50e3fd0d41eb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8731ae1704dd7a70f63cc6cdd242b5ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__hints_8h.html#a8731ae1704dd7a70f63cc6cdd242b5ae">SDL_AddHintCallback</a> (const char *<a class="el" href="_g_l_e_w_2glew_8h.html#aaced7cfc21e7d37775d6921bb8177239">name</a>, <a class="el" href="_s_d_l__hints_8h.html#a9466a87e203a4942eb769057196696c3">SDL_HintCallback</a> callback, <a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> *userdata)</td></tr>
+<tr class="memitem:a8731ae1704dd7a70f63cc6cdd242b5ae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8731ae1704dd7a70f63cc6cdd242b5ae"></a>
+DECLSPEC <a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a> SDLCALL&#160;</td><td class="memItemRight" valign="bottom"><b>SDL_AddHintCallback</b> (const char *name, <a class="el" href="_s_d_l__hints_8h.html#a9466a87e203a4942eb769057196696c3">SDL_HintCallback</a> callback, <a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a> *userdata)</td></tr>
 <tr class="separator:a8731ae1704dd7a70f63cc6cdd242b5ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff84d56f5de197e49a778e18ad76ab0e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__hints_8h.html#aff84d56f5de197e49a778e18ad76ab0e">SDL_DelHintCallback</a> (const char *<a class="el" href="_g_l_e_w_2glew_8h.html#aaced7cfc21e7d37775d6921bb8177239">name</a>, <a class="el" href="_s_d_l__hints_8h.html#a9466a87e203a4942eb769057196696c3">SDL_HintCallback</a> callback, <a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> *userdata)</td></tr>
+<tr class="memitem:aff84d56f5de197e49a778e18ad76ab0e"><td class="memItemLeft" align="right" valign="top">DECLSPEC <a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a> SDLCALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__hints_8h.html#aff84d56f5de197e49a778e18ad76ab0e">SDL_DelHintCallback</a> (const char *name, <a class="el" href="_s_d_l__hints_8h.html#a9466a87e203a4942eb769057196696c3">SDL_HintCallback</a> callback, <a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a> *userdata)</td></tr>
 <tr class="memdesc:aff84d56f5de197e49a778e18ad76ab0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a function watching a particular hint.  <a href="#aff84d56f5de197e49a778e18ad76ab0e">More...</a><br/></td></tr>
 <tr class="separator:aff84d56f5de197e49a778e18ad76ab0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7feb78f92319c07e9d53d7be8185cdbb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__hints_8h.html#a7feb78f92319c07e9d53d7be8185cdbb">SDL_ClearHints</a> (<a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a>)</td></tr>
+<tr class="memitem:a7feb78f92319c07e9d53d7be8185cdbb"><td class="memItemLeft" align="right" valign="top">DECLSPEC <a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a> SDLCALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__hints_8h.html#a7feb78f92319c07e9d53d7be8185cdbb">SDL_ClearHints</a> (<a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a>)</td></tr>
 <tr class="memdesc:a7feb78f92319c07e9d53d7be8185cdbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear all hints.  <a href="#a7feb78f92319c07e9d53d7be8185cdbb">More...</a><br/></td></tr>
 <tr class="separator:a7feb78f92319c07e9d53d7be8185cdbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -270,7 +272,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>A variable that lets you manually hint extra gamecontroller db entries. </p>
-<p>The variable should be newline delimited rows of gamecontroller config data, see SDL_gamecontroller.h</p>
+<p>The variable should be newline delimited rows of gamecontroller config data, see <a class="el" href="_s_d_l__gamecontroller_8h.html">SDL_gamecontroller.h</a></p>
 <p>This hint must be set before calling SDL_Init(SDL_INIT_GAMECONTROLLER) You can update mappings after the system is initialized with <a class="el" href="_s_d_l__gamecontroller_8h.html#a2bd404799b40e27d75d3699c866904cf">SDL_GameControllerMappingForGUID()</a> and <a class="el" href="_s_d_l__gamecontroller_8h.html#a62cb682b1c589135cd32cce381d403f8">SDL_GameControllerAddMapping()</a> </p>
 
 </div>
@@ -422,20 +424,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a85488274590bff72c3d1dba5829443f6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SDL_HINT_VIDEO_MINIMIZE_ON_FOCUS_LOSS&#160;&#160;&#160;&quot;SDL_VIDEO_MINIMIZE_ON_FOCUS_LOSS&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Minimize your SDL_Window if it loses key focus when in Fullscreen mode. Defaults to true. </p>
-
-</div>
-</div>
 <a class="anchor" id="ad40f9ea3808d57729baf6d69c019af4b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -505,7 +493,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a>(* SDL_HintCallback)(<a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> *userdata, const char *<a class="el" href="_g_l_e_w_2glew_8h.html#aaced7cfc21e7d37775d6921bb8177239">name</a>, const char *oldValue, const char *newValue)</td>
+          <td class="memname">typedef <a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a>(* SDL_HintCallback)(<a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a> *userdata, const char *name, const char *oldValue, const char *newValue)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -522,70 +510,15 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
-<a class="anchor" id="ab85f3099d9bb0445b0c6b5002cfaa7ed"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="_s_d_l__hints_8h.html#ab85f3099d9bb0445b0c6b5002cfaa7ed">SDL_HintPriority</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>An enumeration of hint priorities. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ab85f3099d9bb0445b0c6b5002cfaa7eda3dd1382c2b23c690411c1aacfac9b634"></a>SDL_HINT_DEFAULT</em>&nbsp;</td><td class="fielddoc">
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="ab85f3099d9bb0445b0c6b5002cfaa7edaef363821cdc9c74e84d79cfea42e32b9"></a>SDL_HINT_NORMAL</em>&nbsp;</td><td class="fielddoc">
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="ab85f3099d9bb0445b0c6b5002cfaa7edac85d90168e4a0cd4cd52ba38a68bcebf"></a>SDL_HINT_OVERRIDE</em>&nbsp;</td><td class="fielddoc">
-</td></tr>
-</table>
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a8731ae1704dd7a70f63cc6cdd242b5ae"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_AddHintCallback </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="_s_d_l__hints_8h.html#a9466a87e203a4942eb769057196696c3">SDL_HintCallback</a>&#160;</td>
-          <td class="paramname"><em>callback</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> *&#160;</td>
-          <td class="paramname"><em>userdata</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a7feb78f92319c07e9d53d7be8185cdbb"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_ClearHints </td>
+          <td class="memname">DECLSPEC <a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a> SDLCALL SDL_ClearHints </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -602,7 +535,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_DelHintCallback </td>
+          <td class="memname">DECLSPEC <a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a> SDLCALL SDL_DelHintCallback </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>name</em>, </td>
@@ -616,7 +549,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a> *&#160;</td>
           <td class="paramname"><em>userdata</em>&#160;</td>
         </tr>
         <tr>
@@ -644,7 +577,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> const char* <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_GetHint </td>
+          <td class="memname">DECLSPEC const char* SDLCALL SDL_GetHint </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
@@ -663,7 +596,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__stdinc_8h.html#a8fca68df0f976765230fe589a7c7733b">SDL_bool</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_SetHint </td>
+          <td class="memname">DECLSPEC SDL_bool SDLCALL SDL_SetHint </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>name</em>, </td>
@@ -692,7 +625,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__stdinc_8h.html#a8fca68df0f976765230fe589a7c7733b">SDL_bool</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_SetHintWithPriority </td>
+          <td class="memname">DECLSPEC SDL_bool SDLCALL SDL_SetHintWithPriority </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>name</em>, </td>
@@ -729,7 +662,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_bb71c587d4eee030bda30f2f35ebd6b7.html">SDL</a></li><li class="navelem"><a class="el" href="dir_3b9b8e98eade024f68a871db77d1527d.html">include</a></li><li class="navelem"><a class="el" href="_s_d_l__hints_8h.html">SDL_hints.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 20:57:35 for Super Happy Rocket by
+    <li class="footer">Generated on Fri Nov 22 2013 01:07:55 for Super Happy Rocket by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

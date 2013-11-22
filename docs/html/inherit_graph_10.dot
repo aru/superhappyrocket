@@ -3,5 +3,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="aiFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structai_file.html",tooltip="C-API: File callbacks. "];
+  Node1 [label="SDLApp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_s_d_l_app.html"];
 }

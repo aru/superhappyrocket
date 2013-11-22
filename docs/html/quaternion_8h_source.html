@@ -160,17 +160,17 @@ $(document).ready(function(){initNavTree('quaternion_8h_source.html','');});
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">class </span>aiQuaterniont</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    aiQuaterniont() : <a class="code" href="_g_l_e_w_2glew_8h.html#adb12a0d439f32ca388b2c806150cc54d">w</a>(), <a class="code" href="_g_l_e_w_2glew_8h.html#a0cdec8e97a75ee9458b23d152bf962d4">x</a>(), <a class="code" href="_g_l_e_w_2glew_8h.html#a74d80fd479c0f6d0153c709949a089ef">y</a>(), <a class="code" href="_g_l_e_w_2glew_8h.html#aee38b51639b577753f6a92029fb92000">z</a>() {}</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    aiQuaterniont(TReal <a class="code" href="_g_l_e_w_2glew_8h.html#adb12a0d439f32ca388b2c806150cc54d">w</a>, TReal <a class="code" href="_g_l_e_w_2glew_8h.html#a0cdec8e97a75ee9458b23d152bf962d4">x</a>, TReal <a class="code" href="_g_l_e_w_2glew_8h.html#a74d80fd479c0f6d0153c709949a089ef">y</a>, TReal <a class="code" href="_g_l_e_w_2glew_8h.html#aee38b51639b577753f6a92029fb92000">z</a>) </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    aiQuaterniont() : w(), x(), y(), z() {}</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    aiQuaterniont(TReal w, TReal x, TReal y, TReal z) </div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        : w(w), x(x), y(y), z(z) {}</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    aiQuaterniont( <span class="keyword">const</span> aiMatrix3x3t&lt;TReal&gt;&amp; pRotMatrix);</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    aiQuaterniont( TReal rotx, TReal roty, TReal rotz);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    aiQuaterniont( aiVector3t&lt;TReal&gt; axis, TReal <a class="code" href="_g_l_e_w_2glew_8h.html#a9e06c1f76a20fed54ca742cd25cb02c4">angle</a>);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    aiQuaterniont( aiVector3t&lt;TReal&gt; axis, TReal angle);</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    aiQuaterniont( aiVector3t&lt;TReal&gt; <a class="code" href="_g_l_e_w_2glew_8h.html#a991495bc19f64c176dd83a350b8b1c88">normalized</a>);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    aiQuaterniont( aiVector3t&lt;TReal&gt; normalized);</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    aiMatrix3x3t&lt;TReal&gt; GetMatrix() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
@@ -185,7 +185,7 @@ $(document).ready(function(){initNavTree('quaternion_8h_source.html','');});
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    aiQuaterniont&amp; Conjugate ();</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    aiVector3t&lt;TReal&gt; Rotate (<span class="keyword">const</span> aiVector3t&lt;TReal&gt;&amp; <a class="code" href="_g_l_e_w_2glew_8h.html#a83ad0ee7f1e06b59c90271716e689080">in</a>);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    aiVector3t&lt;TReal&gt; Rotate (<span class="keyword">const</span> aiVector3t&lt;TReal&gt;&amp; in);</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    aiQuaterniont operator* (<span class="keyword">const</span> aiQuaterniont&amp; two) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
@@ -196,7 +196,7 @@ $(document).ready(function(){initNavTree('quaternion_8h_source.html','');});
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    TReal <a class="code" href="_g_l_e_w_2glew_8h.html#adb12a0d439f32ca388b2c806150cc54d">w</a>, <a class="code" href="_g_l_e_w_2glew_8h.html#a0cdec8e97a75ee9458b23d152bf962d4">x</a>, <a class="code" href="_g_l_e_w_2glew_8h.html#a74d80fd479c0f6d0153c709949a089ef">y</a>, <a class="code" href="_g_l_e_w_2glew_8h.html#aee38b51639b577753f6a92029fb92000">z</a>;   </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    TReal w, x, y, z;   </div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;} ;</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keyword">typedef</span> aiQuaterniont&lt;float&gt; <a class="code" href="structai_quaternion.html">aiQuaternion</a>;</div>
@@ -204,24 +204,13 @@ $(document).ready(function(){initNavTree('quaternion_8h_source.html','');});
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="structai_quaternion.html">  117</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structai_quaternion.html">aiQuaternion</a> {</div>
-<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="structai_quaternion.html#acc30da6103d5131fb1bed6640f1eeda0">  118</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="structai_quaternion.html#a410b3c46417d67d728a01a5810907a36">w</a>, <a class="code" href="structai_quaternion.html#af9db21b086c14d8654d62005f740e75f">x</a>, <a class="code" href="structai_quaternion.html#a1695fefbc60becf95fcafcc08573ab44">y</a>, <a class="code" href="structai_quaternion.html#acc30da6103d5131fb1bed6640f1eeda0">z</a>;   </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">float</span> w, x, y, z;   </div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;};</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#endif // AI_QUATERNION_H_INC</span></div>
-<div class="ttc" id="_g_l_e_w_2glew_8h_html_a0cdec8e97a75ee9458b23d152bf962d4"><div class="ttname"><a href="_g_l_e_w_2glew_8h.html#a0cdec8e97a75ee9458b23d152bf962d4">x</a></div><div class="ttdeci">GLint GLint GLint GLint GLint x</div><div class="ttdef"><b>Definition:</b> glew.h:1238</div></div>
-<div class="ttc" id="_g_l_e_w_2glew_8h_html_aee38b51639b577753f6a92029fb92000"><div class="ttname"><a href="_g_l_e_w_2glew_8h.html#aee38b51639b577753f6a92029fb92000">z</a></div><div class="ttdeci">GLdouble GLdouble z</div><div class="ttdef"><b>Definition:</b> glew.h:1545</div></div>
-<div class="ttc" id="_g_l_e_w_2glew_8h_html_adb12a0d439f32ca388b2c806150cc54d"><div class="ttname"><a href="_g_l_e_w_2glew_8h.html#adb12a0d439f32ca388b2c806150cc54d">w</a></div><div class="ttdeci">GLubyte GLubyte GLubyte GLubyte w</div><div class="ttdef"><b>Definition:</b> glew.h:1876</div></div>
-<div class="ttc" id="_g_l_e_w_2glew_8h_html_a9e06c1f76a20fed54ca742cd25cb02c4"><div class="ttname"><a href="_g_l_e_w_2glew_8h.html#a9e06c1f76a20fed54ca742cd25cb02c4">angle</a></div><div class="ttdeci">GLdouble angle</div><div class="ttdef"><b>Definition:</b> glew.h:8396</div></div>
-<div class="ttc" id="_g_l_e_w_2glew_8h_html_a83ad0ee7f1e06b59c90271716e689080"><div class="ttname"><a href="_g_l_e_w_2glew_8h.html#a83ad0ee7f1e06b59c90271716e689080">in</a></div><div class="ttdeci">GLuint in</div><div class="ttdef"><b>Definition:</b> glew.h:10672</div></div>
-<div class="ttc" id="_g_l_e_w_2glew_8h_html_a991495bc19f64c176dd83a350b8b1c88"><div class="ttname"><a href="_g_l_e_w_2glew_8h.html#a991495bc19f64c176dd83a350b8b1c88">normalized</a></div><div class="ttdeci">GLint GLenum GLboolean normalized</div><div class="ttdef"><b>Definition:</b> glew.h:1891</div></div>
-<div class="ttc" id="_g_l_e_w_2glew_8h_html_a74d80fd479c0f6d0153c709949a089ef"><div class="ttname"><a href="_g_l_e_w_2glew_8h.html#a74d80fd479c0f6d0153c709949a089ef">y</a></div><div class="ttdeci">GLint GLint GLint GLint GLint GLint y</div><div class="ttdef"><b>Definition:</b> glew.h:1238</div></div>
-<div class="ttc" id="structai_quaternion_html_af9db21b086c14d8654d62005f740e75f"><div class="ttname"><a href="structai_quaternion.html#af9db21b086c14d8654d62005f740e75f">aiQuaternion::x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> quaternion.h:118</div></div>
-<div class="ttc" id="structai_quaternion_html_a1695fefbc60becf95fcafcc08573ab44"><div class="ttname"><a href="structai_quaternion.html#a1695fefbc60becf95fcafcc08573ab44">aiQuaternion::y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition:</b> quaternion.h:118</div></div>
-<div class="ttc" id="structai_quaternion_html_acc30da6103d5131fb1bed6640f1eeda0"><div class="ttname"><a href="structai_quaternion.html#acc30da6103d5131fb1bed6640f1eeda0">aiQuaternion::z</a></div><div class="ttdeci">float z</div><div class="ttdef"><b>Definition:</b> quaternion.h:118</div></div>
-<div class="ttc" id="structai_quaternion_html_a410b3c46417d67d728a01a5810907a36"><div class="ttname"><a href="structai_quaternion.html#a410b3c46417d67d728a01a5810907a36">aiQuaternion::w</a></div><div class="ttdeci">float w</div><div class="ttdef"><b>Definition:</b> quaternion.h:118</div></div>
 <div class="ttc" id="structai_quaternion_html"><div class="ttname"><a href="structai_quaternion.html">aiQuaternion</a></div><div class="ttdef"><b>Definition:</b> quaternion.h:117</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -229,7 +218,7 @@ $(document).ready(function(){initNavTree('quaternion_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_2a3ab8ae23d2cffc0bffa70c4703d52b.html">assimp</a></li><li class="navelem"><a class="el" href="dir_775f47f696c8e1c7e288eb84d9156930.html">include</a></li><li class="navelem"><a class="el" href="quaternion_8h.html">quaternion.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 20:57:10 for Super Happy Rocket by
+    <li class="footer">Generated on Fri Nov 22 2013 01:07:50 for Super Happy Rocket by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

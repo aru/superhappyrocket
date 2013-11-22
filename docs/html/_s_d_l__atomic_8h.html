@@ -140,41 +140,45 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a36d435d444dc115a5cc11fa7027576ec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__atomic_8h.html#a36d435d444dc115a5cc11fa7027576ec">SDL_CompilerBarrier</a>()&#160;&#160;&#160;{ <a class="el" href="_s_d_l__atomic_8h.html#a59179ff8d21c65b9d9a544f3c2088e81">SDL_SpinLock</a> _tmp = 0; <a class="el" href="_s_d_l__atomic_8h.html#a95ecd72190ba8e5ed6ed78d5d1b36509">SDL_AtomicLock</a>(&amp;_tmp); <a class="el" href="_s_d_l__atomic_8h.html#a3fb14c56b17347349ac2fb5300205bac">SDL_AtomicUnlock</a>(&amp;_tmp); }</td></tr>
+<tr class="memitem:a36d435d444dc115a5cc11fa7027576ec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__atomic_8h.html#a36d435d444dc115a5cc11fa7027576ec">SDL_CompilerBarrier</a>()&#160;&#160;&#160;{ SDL_SpinLock _tmp = 0; <a class="el" href="_s_d_l__atomic_8h.html#a95ecd72190ba8e5ed6ed78d5d1b36509">SDL_AtomicLock</a>(&amp;_tmp); <a class="el" href="_s_d_l__atomic_8h.html#a3fb14c56b17347349ac2fb5300205bac">SDL_AtomicUnlock</a>(&amp;_tmp); }</td></tr>
 <tr class="separator:a36d435d444dc115a5cc11fa7027576ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a041cb5705236fe51b35cb3d59c1fbba7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__atomic_8h.html#a041cb5705236fe51b35cb3d59c1fbba7">SDL_MemoryBarrierRelease</a>()&#160;&#160;&#160;<a class="el" href="_s_d_l__atomic_8h.html#a36d435d444dc115a5cc11fa7027576ec">SDL_CompilerBarrier</a>()</td></tr>
 <tr class="separator:a041cb5705236fe51b35cb3d59c1fbba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa33019d94c637a106218dde56b46a20a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__atomic_8h.html#aa33019d94c637a106218dde56b46a20a">SDL_MemoryBarrierAcquire</a>()&#160;&#160;&#160;<a class="el" href="_s_d_l__atomic_8h.html#a36d435d444dc115a5cc11fa7027576ec">SDL_CompilerBarrier</a>()</td></tr>
+<tr class="memitem:aa33019d94c637a106218dde56b46a20a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa33019d94c637a106218dde56b46a20a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SDL_MemoryBarrierAcquire</b>()&#160;&#160;&#160;<a class="el" href="_s_d_l__atomic_8h.html#a36d435d444dc115a5cc11fa7027576ec">SDL_CompilerBarrier</a>()</td></tr>
 <tr class="separator:aa33019d94c637a106218dde56b46a20a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c3b04a6ce4b6907bfb6e2ea4649ff64"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__atomic_8h.html#a9c3b04a6ce4b6907bfb6e2ea4649ff64">SDL_AtomicIncRef</a>(<a class="el" href="_g_l_e_w_2glew_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a>)&#160;&#160;&#160;<a class="el" href="_s_d_l__atomic_8h.html#afcba4e5ea1d597eff228360ab62e7b13">SDL_AtomicAdd</a>(<a class="el" href="_g_l_e_w_2glew_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a>, 1)</td></tr>
-<tr class="memdesc:a9c3b04a6ce4b6907bfb6e2ea4649ff64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increment an atomic variable used as a reference count.  <a href="#a9c3b04a6ce4b6907bfb6e2ea4649ff64">More...</a><br/></td></tr>
+<tr class="memitem:a9c3b04a6ce4b6907bfb6e2ea4649ff64"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9c3b04a6ce4b6907bfb6e2ea4649ff64"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__atomic_8h.html#a9c3b04a6ce4b6907bfb6e2ea4649ff64">SDL_AtomicIncRef</a>(a)&#160;&#160;&#160;<a class="el" href="_s_d_l__atomic_8h.html#afcba4e5ea1d597eff228360ab62e7b13">SDL_AtomicAdd</a>(a, 1)</td></tr>
+<tr class="memdesc:a9c3b04a6ce4b6907bfb6e2ea4649ff64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increment an atomic variable used as a reference count. <br/></td></tr>
 <tr class="separator:a9c3b04a6ce4b6907bfb6e2ea4649ff64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1602c33647cfdfa8ae49a2eef10341c9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__atomic_8h.html#a1602c33647cfdfa8ae49a2eef10341c9">SDL_AtomicDecRef</a>(<a class="el" href="_g_l_e_w_2glew_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a>)&#160;&#160;&#160;(<a class="el" href="_s_d_l__atomic_8h.html#afcba4e5ea1d597eff228360ab62e7b13">SDL_AtomicAdd</a>(<a class="el" href="_g_l_e_w_2glew_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a>, -1) == 1)</td></tr>
+<tr class="memitem:a1602c33647cfdfa8ae49a2eef10341c9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__atomic_8h.html#a1602c33647cfdfa8ae49a2eef10341c9">SDL_AtomicDecRef</a>(a)&#160;&#160;&#160;(<a class="el" href="_s_d_l__atomic_8h.html#afcba4e5ea1d597eff228360ab62e7b13">SDL_AtomicAdd</a>(a, -1) == 1)</td></tr>
 <tr class="memdesc:a1602c33647cfdfa8ae49a2eef10341c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrement an atomic variable used as a reference count.  <a href="#a1602c33647cfdfa8ae49a2eef10341c9">More...</a><br/></td></tr>
 <tr class="separator:a1602c33647cfdfa8ae49a2eef10341c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ad6b90be91abb896260930d3908c0437b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__stdinc_8h.html#a8fca68df0f976765230fe589a7c7733b">SDL_bool</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__atomic_8h.html#ad6b90be91abb896260930d3908c0437b">SDL_AtomicCAS</a> (<a class="el" href="struct_s_d_l__atomic__t.html">SDL_atomic_t</a> *<a class="el" href="_g_l_e_w_2glew_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a>, <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> oldval, <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> newval)</td></tr>
+<tr class="memitem:ad6b90be91abb896260930d3908c0437b"><td class="memItemLeft" align="right" valign="top">DECLSPEC SDL_bool SDLCALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__atomic_8h.html#ad6b90be91abb896260930d3908c0437b">SDL_AtomicCAS</a> (<a class="el" href="struct_s_d_l__atomic__t.html">SDL_atomic_t</a> *a, int oldval, int newval)</td></tr>
 <tr class="memdesc:ad6b90be91abb896260930d3908c0437b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set an atomic variable to a new value if it is currently an old value.  <a href="#ad6b90be91abb896260930d3908c0437b">More...</a><br/></td></tr>
 <tr class="separator:ad6b90be91abb896260930d3908c0437b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b04535a48ef4dcf65728bf8b991709e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#addf1f12c70f89102cc187297860c5961">SDL_FORCE_INLINE</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__atomic_8h.html#a4b04535a48ef4dcf65728bf8b991709e">SDL_AtomicSet</a> (<a class="el" href="struct_s_d_l__atomic__t.html">SDL_atomic_t</a> *<a class="el" href="_g_l_e_w_2glew_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a>, <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="_g_l_e_w_2glew_8h.html#a4568fc090febc136eed4577a600739ca">v</a>)</td></tr>
+<tr class="memitem:a4b04535a48ef4dcf65728bf8b991709e"><td class="memItemLeft" align="right" valign="top">SDL_FORCE_INLINE int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__atomic_8h.html#a4b04535a48ef4dcf65728bf8b991709e">SDL_AtomicSet</a> (<a class="el" href="struct_s_d_l__atomic__t.html">SDL_atomic_t</a> *a, int v)</td></tr>
 <tr class="memdesc:a4b04535a48ef4dcf65728bf8b991709e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set an atomic variable to a value.  <a href="#a4b04535a48ef4dcf65728bf8b991709e">More...</a><br/></td></tr>
 <tr class="separator:a4b04535a48ef4dcf65728bf8b991709e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21b38f9ad48cc2789242f69dc0c80ec7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#addf1f12c70f89102cc187297860c5961">SDL_FORCE_INLINE</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__atomic_8h.html#a21b38f9ad48cc2789242f69dc0c80ec7">SDL_AtomicGet</a> (<a class="el" href="struct_s_d_l__atomic__t.html">SDL_atomic_t</a> *<a class="el" href="_g_l_e_w_2glew_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a>)</td></tr>
-<tr class="memdesc:a21b38f9ad48cc2789242f69dc0c80ec7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the value of an atomic variable.  <a href="#a21b38f9ad48cc2789242f69dc0c80ec7">More...</a><br/></td></tr>
+<tr class="memitem:a21b38f9ad48cc2789242f69dc0c80ec7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a21b38f9ad48cc2789242f69dc0c80ec7"></a>
+SDL_FORCE_INLINE int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__atomic_8h.html#a21b38f9ad48cc2789242f69dc0c80ec7">SDL_AtomicGet</a> (<a class="el" href="struct_s_d_l__atomic__t.html">SDL_atomic_t</a> *a)</td></tr>
+<tr class="memdesc:a21b38f9ad48cc2789242f69dc0c80ec7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the value of an atomic variable. <br/></td></tr>
 <tr class="separator:a21b38f9ad48cc2789242f69dc0c80ec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afcba4e5ea1d597eff228360ab62e7b13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#addf1f12c70f89102cc187297860c5961">SDL_FORCE_INLINE</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__atomic_8h.html#afcba4e5ea1d597eff228360ab62e7b13">SDL_AtomicAdd</a> (<a class="el" href="struct_s_d_l__atomic__t.html">SDL_atomic_t</a> *<a class="el" href="_g_l_e_w_2glew_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a>, <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="_g_l_e_w_2glew_8h.html#a4568fc090febc136eed4577a600739ca">v</a>)</td></tr>
+<tr class="memitem:afcba4e5ea1d597eff228360ab62e7b13"><td class="memItemLeft" align="right" valign="top">SDL_FORCE_INLINE int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__atomic_8h.html#afcba4e5ea1d597eff228360ab62e7b13">SDL_AtomicAdd</a> (<a class="el" href="struct_s_d_l__atomic__t.html">SDL_atomic_t</a> *a, int v)</td></tr>
 <tr class="memdesc:afcba4e5ea1d597eff228360ab62e7b13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add to an atomic variable.  <a href="#afcba4e5ea1d597eff228360ab62e7b13">More...</a><br/></td></tr>
 <tr class="separator:afcba4e5ea1d597eff228360ab62e7b13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3070cf7f391b522e08595822c2f0eba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__stdinc_8h.html#a8fca68df0f976765230fe589a7c7733b">SDL_bool</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__atomic_8h.html#aa3070cf7f391b522e08595822c2f0eba">SDL_AtomicCASPtr</a> (<a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> **<a class="el" href="_g_l_e_w_2glew_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a>, <a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> *oldval, <a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> *newval)</td></tr>
+<tr class="memitem:aa3070cf7f391b522e08595822c2f0eba"><td class="memItemLeft" align="right" valign="top">DECLSPEC SDL_bool SDLCALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__atomic_8h.html#aa3070cf7f391b522e08595822c2f0eba">SDL_AtomicCASPtr</a> (<a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a> **a, <a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a> *oldval, <a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a> *newval)</td></tr>
 <tr class="memdesc:aa3070cf7f391b522e08595822c2f0eba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a pointer to a new value if it is currently an old value.  <a href="#aa3070cf7f391b522e08595822c2f0eba">More...</a><br/></td></tr>
 <tr class="separator:aa3070cf7f391b522e08595822c2f0eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78429934078db98e182fadc96104e110"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#addf1f12c70f89102cc187297860c5961">SDL_FORCE_INLINE</a> <a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__atomic_8h.html#a78429934078db98e182fadc96104e110">SDL_AtomicSetPtr</a> (<a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> **<a class="el" href="_g_l_e_w_2glew_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a>, <a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> *<a class="el" href="_g_l_e_w_2glew_8h.html#a4568fc090febc136eed4577a600739ca">v</a>)</td></tr>
+<tr class="memitem:a78429934078db98e182fadc96104e110"><td class="memItemLeft" align="right" valign="top">SDL_FORCE_INLINE <a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__atomic_8h.html#a78429934078db98e182fadc96104e110">SDL_AtomicSetPtr</a> (<a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a> **a, <a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a> *v)</td></tr>
 <tr class="memdesc:a78429934078db98e182fadc96104e110"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a pointer to a value atomically.  <a href="#a78429934078db98e182fadc96104e110">More...</a><br/></td></tr>
 <tr class="separator:a78429934078db98e182fadc96104e110"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1c91f3e9f81f596f62d1424920282ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#addf1f12c70f89102cc187297860c5961">SDL_FORCE_INLINE</a> <a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__atomic_8h.html#af1c91f3e9f81f596f62d1424920282ec">SDL_AtomicGetPtr</a> (<a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> **<a class="el" href="_g_l_e_w_2glew_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a>)</td></tr>
-<tr class="memdesc:af1c91f3e9f81f596f62d1424920282ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the value of a pointer atomically.  <a href="#af1c91f3e9f81f596f62d1424920282ec">More...</a><br/></td></tr>
+<tr class="memitem:af1c91f3e9f81f596f62d1424920282ec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af1c91f3e9f81f596f62d1424920282ec"></a>
+SDL_FORCE_INLINE <a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__atomic_8h.html#af1c91f3e9f81f596f62d1424920282ec">SDL_AtomicGetPtr</a> (<a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a> **a)</td></tr>
+<tr class="memdesc:af1c91f3e9f81f596f62d1424920282ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the value of a pointer atomically. <br/></td></tr>
 <tr class="separator:af1c91f3e9f81f596f62d1424920282ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
@@ -183,15 +187,16 @@ SDL AtomicLock</h2></td></tr>
 <p>The atomic locks are not safe to lock recursively.</p>
 <p>Porting Note: The spin lock functions and type are required and can not be emulated because they are used in the atomic emulation code. </p>
 </td></tr>
-<tr class="memitem:a59179ff8d21c65b9d9a544f3c2088e81"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__atomic_8h.html#a59179ff8d21c65b9d9a544f3c2088e81">SDL_SpinLock</a></td></tr>
+<tr class="memitem:a59179ff8d21c65b9d9a544f3c2088e81"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a59179ff8d21c65b9d9a544f3c2088e81"></a>
+typedef int&#160;</td><td class="memItemRight" valign="bottom"><b>SDL_SpinLock</b></td></tr>
 <tr class="separator:a59179ff8d21c65b9d9a544f3c2088e81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5410c5f832f0d862282cd65fc432fc0b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__stdinc_8h.html#a8fca68df0f976765230fe589a7c7733b">SDL_bool</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__atomic_8h.html#a5410c5f832f0d862282cd65fc432fc0b">SDL_AtomicTryLock</a> (<a class="el" href="_s_d_l__atomic_8h.html#a59179ff8d21c65b9d9a544f3c2088e81">SDL_SpinLock</a> *lock)</td></tr>
+<tr class="memitem:a5410c5f832f0d862282cd65fc432fc0b"><td class="memItemLeft" align="right" valign="top">DECLSPEC SDL_bool SDLCALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__atomic_8h.html#a5410c5f832f0d862282cd65fc432fc0b">SDL_AtomicTryLock</a> (SDL_SpinLock *lock)</td></tr>
 <tr class="memdesc:a5410c5f832f0d862282cd65fc432fc0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to lock a spin lock by setting it to a non-zero value.  <a href="#a5410c5f832f0d862282cd65fc432fc0b">More...</a><br/></td></tr>
 <tr class="separator:a5410c5f832f0d862282cd65fc432fc0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95ecd72190ba8e5ed6ed78d5d1b36509"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__atomic_8h.html#a95ecd72190ba8e5ed6ed78d5d1b36509">SDL_AtomicLock</a> (<a class="el" href="_s_d_l__atomic_8h.html#a59179ff8d21c65b9d9a544f3c2088e81">SDL_SpinLock</a> *lock)</td></tr>
+<tr class="memitem:a95ecd72190ba8e5ed6ed78d5d1b36509"><td class="memItemLeft" align="right" valign="top">DECLSPEC <a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a> SDLCALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__atomic_8h.html#a95ecd72190ba8e5ed6ed78d5d1b36509">SDL_AtomicLock</a> (SDL_SpinLock *lock)</td></tr>
 <tr class="memdesc:a95ecd72190ba8e5ed6ed78d5d1b36509"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock a spin lock by setting it to a non-zero value.  <a href="#a95ecd72190ba8e5ed6ed78d5d1b36509">More...</a><br/></td></tr>
 <tr class="separator:a95ecd72190ba8e5ed6ed78d5d1b36509"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fb14c56b17347349ac2fb5300205bac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__atomic_8h.html#a3fb14c56b17347349ac2fb5300205bac">SDL_AtomicUnlock</a> (<a class="el" href="_s_d_l__atomic_8h.html#a59179ff8d21c65b9d9a544f3c2088e81">SDL_SpinLock</a> *lock)</td></tr>
+<tr class="memitem:a3fb14c56b17347349ac2fb5300205bac"><td class="memItemLeft" align="right" valign="top">DECLSPEC <a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a> SDLCALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__atomic_8h.html#a3fb14c56b17347349ac2fb5300205bac">SDL_AtomicUnlock</a> (SDL_SpinLock *lock)</td></tr>
 <tr class="memdesc:a3fb14c56b17347349ac2fb5300205bac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlock a spin lock by setting it to 0. Always returns immediately.  <a href="#a3fb14c56b17347349ac2fb5300205bac">More...</a><br/></td></tr>
 <tr class="separator:a3fb14c56b17347349ac2fb5300205bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -213,32 +218,14 @@ SDL AtomicLock</h2></td></tr>
           <td class="memname">#define SDL_AtomicDecRef</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="_g_l_e_w_2glew_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a></td><td>)</td>
-          <td>&#160;&#160;&#160;(<a class="el" href="_s_d_l__atomic_8h.html#afcba4e5ea1d597eff228360ab62e7b13">SDL_AtomicAdd</a>(<a class="el" href="_g_l_e_w_2glew_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a>, -1) == 1)</td>
+          <td class="paramname">a</td><td>)</td>
+          <td>&#160;&#160;&#160;(<a class="el" href="_s_d_l__atomic_8h.html#afcba4e5ea1d597eff228360ab62e7b13">SDL_AtomicAdd</a>(a, -1) == 1)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Decrement an atomic variable used as a reference count. </p>
 <dl class="section return"><dt>Returns</dt><dd>SDL_TRUE if the variable reached zero after decrementing, SDL_FALSE otherwise </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a9c3b04a6ce4b6907bfb6e2ea4649ff64"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SDL_AtomicIncRef</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="_g_l_e_w_2glew_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a></td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="_s_d_l__atomic_8h.html#afcba4e5ea1d597eff228360ab62e7b13">SDL_AtomicAdd</a>(<a class="el" href="_g_l_e_w_2glew_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a>, 1)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Increment an atomic variable used as a reference count. </p>
 
 </div>
 </div>
@@ -250,26 +237,11 @@ SDL AtomicLock</h2></td></tr>
           <td class="memname">#define SDL_CompilerBarrier</td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;{ <a class="el" href="_s_d_l__atomic_8h.html#a59179ff8d21c65b9d9a544f3c2088e81">SDL_SpinLock</a> _tmp = 0; <a class="el" href="_s_d_l__atomic_8h.html#a95ecd72190ba8e5ed6ed78d5d1b36509">SDL_AtomicLock</a>(&amp;_tmp); <a class="el" href="_s_d_l__atomic_8h.html#a3fb14c56b17347349ac2fb5300205bac">SDL_AtomicUnlock</a>(&amp;_tmp); }</td>
+          <td>&#160;&#160;&#160;{ SDL_SpinLock _tmp = 0; <a class="el" href="_s_d_l__atomic_8h.html#a95ecd72190ba8e5ed6ed78d5d1b36509">SDL_AtomicLock</a>(&amp;_tmp); <a class="el" href="_s_d_l__atomic_8h.html#a3fb14c56b17347349ac2fb5300205bac">SDL_AtomicUnlock</a>(&amp;_tmp); }</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>The compiler barrier prevents the compiler from reordering reads and writes to globally visible variables across the call. </p>
-
-</div>
-</div>
-<a class="anchor" id="aa33019d94c637a106218dde56b46a20a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SDL_MemoryBarrierAcquire</td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="_s_d_l__atomic_8h.html#a36d435d444dc115a5cc11fa7027576ec">SDL_CompilerBarrier</a>()</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -292,26 +264,13 @@ SDL AtomicLock</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a class="anchor" id="a59179ff8d21c65b9d9a544f3c2088e81"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="_s_d_l__atomic_8h.html#a59179ff8d21c65b9d9a544f3c2088e81">SDL_SpinLock</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="afcba4e5ea1d597eff228360ab62e7b13"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#addf1f12c70f89102cc187297860c5961">SDL_FORCE_INLINE</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> SDL_AtomicAdd </td>
+          <td class="memname">SDL_FORCE_INLINE int SDL_AtomicAdd </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_s_d_l__atomic__t.html">SDL_atomic_t</a> *&#160;</td>
           <td class="paramname"><em>a</em>, </td>
@@ -319,7 +278,7 @@ SDL AtomicLock</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>v</em>&#160;</td>
         </tr>
         <tr>
@@ -341,7 +300,7 @@ SDL AtomicLock</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__stdinc_8h.html#a8fca68df0f976765230fe589a7c7733b">SDL_bool</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_AtomicCAS </td>
+          <td class="memname">DECLSPEC SDL_bool SDLCALL SDL_AtomicCAS </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_s_d_l__atomic__t.html">SDL_atomic_t</a> *&#160;</td>
           <td class="paramname"><em>a</em>, </td>
@@ -349,13 +308,13 @@ SDL AtomicLock</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>oldval</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>newval</em>&#160;</td>
         </tr>
         <tr>
@@ -377,21 +336,21 @@ SDL AtomicLock</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__stdinc_8h.html#a8fca68df0f976765230fe589a7c7733b">SDL_bool</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_AtomicCASPtr </td>
+          <td class="memname">DECLSPEC SDL_bool SDLCALL SDL_AtomicCASPtr </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> **&#160;</td>
+          <td class="paramtype"><a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a> **&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a> *&#160;</td>
           <td class="paramname"><em>oldval</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a> *&#160;</td>
           <td class="paramname"><em>newval</em>&#160;</td>
         </tr>
         <tr>
@@ -408,50 +367,14 @@ SDL AtomicLock</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a21b38f9ad48cc2789242f69dc0c80ec7"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#addf1f12c70f89102cc187297860c5961">SDL_FORCE_INLINE</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> SDL_AtomicGet </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_s_d_l__atomic__t.html">SDL_atomic_t</a> *&#160;</td>
-          <td class="paramname"><em>a</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the value of an atomic variable. </p>
-
-</div>
-</div>
-<a class="anchor" id="af1c91f3e9f81f596f62d1424920282ec"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#addf1f12c70f89102cc187297860c5961">SDL_FORCE_INLINE</a> <a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a>* SDL_AtomicGetPtr </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> **&#160;</td>
-          <td class="paramname"><em>a</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the value of a pointer atomically. </p>
-
-</div>
-</div>
 <a class="anchor" id="a95ecd72190ba8e5ed6ed78d5d1b36509"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_AtomicLock </td>
+          <td class="memname">DECLSPEC <a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a> SDLCALL SDL_AtomicLock </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_s_d_l__atomic_8h.html#a59179ff8d21c65b9d9a544f3c2088e81">SDL_SpinLock</a> *&#160;</td>
+          <td class="paramtype">SDL_SpinLock *&#160;</td>
           <td class="paramname"><em>lock</em></td><td>)</td>
           <td></td>
         </tr>
@@ -473,7 +396,7 @@ SDL AtomicLock</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#addf1f12c70f89102cc187297860c5961">SDL_FORCE_INLINE</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> SDL_AtomicSet </td>
+          <td class="memname">SDL_FORCE_INLINE int SDL_AtomicSet </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_s_d_l__atomic__t.html">SDL_atomic_t</a> *&#160;</td>
           <td class="paramname"><em>a</em>, </td>
@@ -481,7 +404,7 @@ SDL AtomicLock</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>v</em>&#160;</td>
         </tr>
         <tr>
@@ -502,15 +425,15 @@ SDL AtomicLock</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#addf1f12c70f89102cc187297860c5961">SDL_FORCE_INLINE</a> <a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a>* SDL_AtomicSetPtr </td>
+          <td class="memname">SDL_FORCE_INLINE <a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a>* SDL_AtomicSetPtr </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> **&#160;</td>
+          <td class="paramtype"><a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a> **&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a> *&#160;</td>
           <td class="paramname"><em>v</em>&#160;</td>
         </tr>
         <tr>
@@ -531,9 +454,9 @@ SDL AtomicLock</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__stdinc_8h.html#a8fca68df0f976765230fe589a7c7733b">SDL_bool</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_AtomicTryLock </td>
+          <td class="memname">DECLSPEC SDL_bool SDLCALL SDL_AtomicTryLock </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_s_d_l__atomic_8h.html#a59179ff8d21c65b9d9a544f3c2088e81">SDL_SpinLock</a> *&#160;</td>
+          <td class="paramtype">SDL_SpinLock *&#160;</td>
           <td class="paramname"><em>lock</em></td><td>)</td>
           <td></td>
         </tr>
@@ -556,9 +479,9 @@ SDL AtomicLock</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_AtomicUnlock </td>
+          <td class="memname">DECLSPEC <a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a> SDLCALL SDL_AtomicUnlock </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_s_d_l__atomic_8h.html#a59179ff8d21c65b9d9a544f3c2088e81">SDL_SpinLock</a> *&#160;</td>
+          <td class="paramtype">SDL_SpinLock *&#160;</td>
           <td class="paramname"><em>lock</em></td><td>)</td>
           <td></td>
         </tr>
@@ -581,7 +504,7 @@ SDL AtomicLock</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_bb71c587d4eee030bda30f2f35ebd6b7.html">SDL</a></li><li class="navelem"><a class="el" href="dir_3b9b8e98eade024f68a871db77d1527d.html">include</a></li><li class="navelem"><a class="el" href="_s_d_l__atomic_8h.html">SDL_atomic.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 20:57:33 for Super Happy Rocket by
+    <li class="footer">Generated on Fri Nov 22 2013 01:07:55 for Super Happy Rocket by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

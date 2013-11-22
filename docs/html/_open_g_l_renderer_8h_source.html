@@ -45,8 +45,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -93,7 +91,7 @@ $(document).ready(function(){initNavTree('_open_g_l_renderer_8h_source.html','')
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -120,12 +118,12 @@ $(document).ready(function(){initNavTree('_open_g_l_renderer_8h_source.html','')
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">/* SHR include Files */</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_context_8h.html">Context.h</a>&quot;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="src_2camera_8h.html">Camera.h</a>&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_camera_8h.html">Camera.h</a>&quot;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_simple_object_8h.html">SimpleObject.h</a>&quot;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">/* GLTools include files */</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;GLTools.h&quot;</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_g_l_frame_8h.html">GLFrame.h</a>&quot;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;GLFrame.h&quot;</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">/* SDL Imports */</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
@@ -159,7 +157,7 @@ $(document).ready(function(){initNavTree('_open_g_l_renderer_8h_source.html','')
 <div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="class_renderer.html#af7ed774ad36cde6ec727ccc0bd5d0b6f">   67</a></span>&#160;    <a class="code" href="class_camera.html">Camera</a>* <a class="code" href="class_renderer.html#af7ed774ad36cde6ec727ccc0bd5d0b6f">camera</a>;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">/* Shader support */</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_renderer.html#a8cde2a34816fc71455871bc0e3b18853">   70</a></span>&#160;    <a class="code" href="class_g_l_shader_manager.html">GLShaderManager</a> <a class="code" href="class_renderer.html#a8cde2a34816fc71455871bc0e3b18853">shaderManager</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_renderer.html#a8cde2a34816fc71455871bc0e3b18853">   70</a></span>&#160;    GLShaderManager <a class="code" href="class_renderer.html#a8cde2a34816fc71455871bc0e3b18853">shaderManager</a>;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">/* Drawable Objects Array */</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_renderer.html#a0720c526eb9be11876d4849af801eb91">   73</a></span>&#160;    vector&lt;SimpleObject*&gt; <a class="code" href="class_renderer.html#a0720c526eb9be11876d4849af801eb91">actors</a>;</div>
@@ -168,11 +166,11 @@ $(document).ready(function(){initNavTree('_open_g_l_renderer_8h_source.html','')
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">//vector&lt;SimpleObject*&gt; lights;</span></div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">/* ARB_debug_output support */</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="_g_l_e_w_2glew_8h.html#a428a91acf2c2439dc1a257708ee1f805">APIENTRY</a> myErrorCallback( <a class="code" href="_g_l_e_w_2glew_8h.html#a5d5233918a454ad3975c620a69ac5f0b">GLenum</a> _source, </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <a class="code" href="_g_l_e_w_2glew_8h.html#a5d5233918a454ad3975c620a69ac5f0b">GLenum</a> _type, <a class="code" href="_g_l_e_w_2glew_8h.html#a68c4714e43d8e827d80759f9cb864f3c">GLuint</a> _id, <a class="code" href="_g_l_e_w_2glew_8h.html#a5d5233918a454ad3975c620a69ac5f0b">GLenum</a> _severity,</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <a class="code" href="_g_l_e_w_2glew_8h.html#a554225105c98042437ff21db4732908f">GLsizei</a> _length, <span class="keyword">const</span> <span class="keywordtype">char</span>* _message,</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> APIENTRY myErrorCallback( GLenum _source, </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        GLenum _type, GLuint _id, GLenum _severity,</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        GLsizei _length, <span class="keyword">const</span> <span class="keywordtype">char</span>* _message,</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordtype">void</span>* _userParam );</div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="class_renderer.html#a4182a30e4246da1112f631b3d850ac14">   83</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="_g_l_e_w_2glew_8h.html#a68c4714e43d8e827d80759f9cb864f3c">GLuint</a> <a class="code" href="class_renderer.html#a4182a30e4246da1112f631b3d850ac14">unusedIds</a>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="class_renderer.html#a4182a30e4246da1112f631b3d850ac14">   83</a></span>&#160;    <span class="keyword">static</span> GLuint <a class="code" href="class_renderer.html#a4182a30e4246da1112f631b3d850ac14">unusedIds</a>;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;};</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment">/* Useful Renderer Only Macros */</span></div>
@@ -182,18 +180,12 @@ $(document).ready(function(){initNavTree('_open_g_l_renderer_8h_source.html','')
 <div class="ttc" id="class_light_html"><div class="ttname"><a href="class_light.html">Light</a></div><div class="ttdef"><b>Definition:</b> Light.h:22</div></div>
 <div class="ttc" id="class_renderer_html"><div class="ttname"><a href="class_renderer.html">Renderer</a></div><div class="ttdef"><b>Definition:</b> OpenGLRenderer.h:44</div></div>
 <div class="ttc" id="class_renderer_html_aea515600e7513ae80843e009e5148f53"><div class="ttname"><a href="class_renderer.html#aea515600e7513ae80843e009e5148f53">Renderer::ctxt</a></div><div class="ttdeci">Context * ctxt</div><div class="ttdef"><b>Definition:</b> OpenGLRenderer.h:62</div></div>
-<div class="ttc" id="_g_l_e_w_2glew_8h_html_a554225105c98042437ff21db4732908f"><div class="ttname"><a href="_g_l_e_w_2glew_8h.html#a554225105c98042437ff21db4732908f">GLsizei</a></div><div class="ttdeci">int GLsizei</div><div class="ttdef"><b>Definition:</b> glew.h:274</div></div>
 <div class="ttc" id="class_camera_html"><div class="ttname"><a href="class_camera.html">Camera</a></div><div class="ttdef"><b>Definition:</b> Camera.h:32</div></div>
 <div class="ttc" id="_simple_object_8h_html"><div class="ttname"><a href="_simple_object_8h.html">SimpleObject.h</a></div></div>
 <div class="ttc" id="class_renderer_html_a4182a30e4246da1112f631b3d850ac14"><div class="ttname"><a href="class_renderer.html#a4182a30e4246da1112f631b3d850ac14">Renderer::unusedIds</a></div><div class="ttdeci">static GLuint unusedIds</div><div class="ttdef"><b>Definition:</b> OpenGLRenderer.h:83</div></div>
-<div class="ttc" id="_g_l_e_w_2glew_8h_html_a5d5233918a454ad3975c620a69ac5f0b"><div class="ttname"><a href="_g_l_e_w_2glew_8h.html#a5d5233918a454ad3975c620a69ac5f0b">GLenum</a></div><div class="ttdeci">unsigned int GLenum</div><div class="ttdef"><b>Definition:</b> glew.h:270</div></div>
-<div class="ttc" id="_g_l_frame_8h_html"><div class="ttname"><a href="_g_l_frame_8h.html">GLFrame.h</a></div></div>
-<div class="ttc" id="_g_l_e_w_2glew_8h_html_a428a91acf2c2439dc1a257708ee1f805"><div class="ttname"><a href="_g_l_e_w_2glew_8h.html#a428a91acf2c2439dc1a257708ee1f805">APIENTRY</a></div><div class="ttdeci">#define APIENTRY</div><div class="ttdef"><b>Definition:</b> glew.h:228</div></div>
-<div class="ttc" id="class_g_l_shader_manager_html"><div class="ttname"><a href="class_g_l_shader_manager.html">GLShaderManager</a></div><div class="ttdef"><b>Definition:</b> GLShaderManager.h:89</div></div>
-<div class="ttc" id="_g_l_e_w_2glew_8h_html_a68c4714e43d8e827d80759f9cb864f3c"><div class="ttname"><a href="_g_l_e_w_2glew_8h.html#a68c4714e43d8e827d80759f9cb864f3c">GLuint</a></div><div class="ttdeci">unsigned int GLuint</div><div class="ttdef"><b>Definition:</b> glew.h:272</div></div>
 <div class="ttc" id="class_renderer_html_a8cde2a34816fc71455871bc0e3b18853"><div class="ttname"><a href="class_renderer.html#a8cde2a34816fc71455871bc0e3b18853">Renderer::shaderManager</a></div><div class="ttdeci">GLShaderManager shaderManager</div><div class="ttdef"><b>Definition:</b> OpenGLRenderer.h:70</div></div>
-<div class="ttc" id="src_2camera_8h_html"><div class="ttname"><a href="src_2camera_8h.html">Camera.h</a></div></div>
 <div class="ttc" id="class_renderer_html_a0720c526eb9be11876d4849af801eb91"><div class="ttname"><a href="class_renderer.html#a0720c526eb9be11876d4849af801eb91">Renderer::actors</a></div><div class="ttdeci">vector&lt; SimpleObject * &gt; actors</div><div class="ttdef"><b>Definition:</b> OpenGLRenderer.h:73</div></div>
+<div class="ttc" id="_camera_8h_html"><div class="ttname"><a href="_camera_8h.html">Camera.h</a></div></div>
 <div class="ttc" id="class_context_html"><div class="ttname"><a href="class_context.html">Context</a></div><div class="ttdef"><b>Definition:</b> Context.h:64</div></div>
 <div class="ttc" id="class_renderer_html_adade11a742565582736c8058041803e5"><div class="ttname"><a href="class_renderer.html#adade11a742565582736c8058041803e5">Renderer::light</a></div><div class="ttdeci">Light * light</div><div class="ttdef"><b>Definition:</b> OpenGLRenderer.h:75</div></div>
 <div class="ttc" id="_context_8h_html"><div class="ttname"><a href="_context_8h.html">Context.h</a></div></div>
@@ -203,7 +195,7 @@ $(document).ready(function(){initNavTree('_open_g_l_renderer_8h_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="_open_g_l_renderer_8h.html">OpenGLRenderer.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 20:57:17 for Super Happy Rocket by
+    <li class="footer">Generated on Fri Nov 22 2013 01:11:42 for Super Happy Rocket by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

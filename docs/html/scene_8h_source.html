@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('scene_8h_source.html','');});
 <div class="title">scene.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="scene_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">---------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">Open Asset Import Library (assimp)</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">---------------------------------------------------------------------------</span></div>
@@ -154,8 +154,8 @@ $(document).ready(function(){initNavTree('scene_8h_source.html','');});
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="types_8h.html">types.h</a>&quot;</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="texture_8h.html">texture.h</a>&quot;</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mesh_8h.html">mesh.h</a>&quot;</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="include_2assimp_2include_2light_8h.html">light.h</a>&quot;</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="include_2assimp_2include_2camera_8h.html">camera.h</a>&quot;</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#include &quot;light.h&quot;</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#include &quot;camera.h&quot;</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="material_8h.html">material.h</a>&quot;</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="anim_8h.html">anim.h</a>&quot;</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
@@ -167,15 +167,15 @@ $(document).ready(function(){initNavTree('scene_8h_source.html','');});
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment"></span><span class="comment">// -------------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">struct </span>aiNode</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="defs_8h.html#ab51df4230ceb602bbc1bc109c432a6a0">C_STRUCT</a> <a class="code" href="structai_string.html">aiString</a> mName;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    C_STRUCT <a class="code" href="structai_string.html">aiString</a> mName;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="defs_8h.html#ab51df4230ceb602bbc1bc109c432a6a0">C_STRUCT</a> <a class="code" href="structai_matrix4x4.html">aiMatrix4x4</a> mTransformation;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    C_STRUCT <a class="code" href="structai_matrix4x4.html">aiMatrix4x4</a> mTransformation;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="defs_8h.html#ab51df4230ceb602bbc1bc109c432a6a0">C_STRUCT</a> aiNode* mParent;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    C_STRUCT aiNode* mParent;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> mNumChildren;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="defs_8h.html#ab51df4230ceb602bbc1bc109c432a6a0">C_STRUCT</a> aiNode** mChildren;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    C_STRUCT aiNode** mChildren;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> mNumMeshes;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
@@ -186,18 +186,18 @@ $(document).ready(function(){initNavTree('scene_8h_source.html','');});
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    aiNode() </div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    { </div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="comment">// set all members to zero by default</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        mParent = <a class="code" href="begin__code_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        mNumChildren = 0; mChildren = <a class="code" href="begin__code_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        mNumMeshes = 0; mMeshes = <a class="code" href="begin__code_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        mParent = NULL; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        mNumChildren = 0; mChildren = NULL;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        mNumMeshes = 0; mMeshes = NULL;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    }</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    aiNode(<span class="keyword">const</span> <a class="code" href="_g_l_e_w_2glew_8h.html#a06b88fc81ad0b30d1512e9609e3d7c82">std::string</a>&amp; <a class="code" href="_g_l_e_w_2glew_8h.html#aaced7cfc21e7d37775d6921bb8177239">name</a>) </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    aiNode(<span class="keyword">const</span> std::string&amp; name) </div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    { </div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="comment">// set all members to zero by default</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        mParent = <a class="code" href="begin__code_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>; </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        mNumChildren = 0; mChildren = <a class="code" href="begin__code_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        mNumMeshes = 0; mMeshes = <a class="code" href="begin__code_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        mName = <a class="code" href="_g_l_e_w_2glew_8h.html#aaced7cfc21e7d37775d6921bb8177239">name</a>;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        mParent = NULL; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        mNumChildren = 0; mChildren = NULL;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        mNumMeshes = 0; mMeshes = NULL;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        mName = name;</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    }</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    ~aiNode()</div>
@@ -206,28 +206,28 @@ $(document).ready(function(){initNavTree('scene_8h_source.html','');});
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="comment">// to make sure we won&#39;t crash if the data is invalid ...</span></div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keywordflow">if</span> (mChildren &amp;&amp; mNumChildren)  </div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        {</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            <span class="keywordflow">for</span>( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="_g_l_e_w_2glew_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a> = 0; <a class="code" href="_g_l_e_w_2glew_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a> &lt; mNumChildren; <a class="code" href="_g_l_e_w_2glew_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a>++)</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                <span class="keyword">delete</span> mChildren[<a class="code" href="_g_l_e_w_2glew_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a>];</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            <span class="keywordflow">for</span>( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> a = 0; a &lt; mNumChildren; a++)</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                <span class="keyword">delete</span> mChildren[a];</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        }</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="keyword">delete</span> [] mChildren;</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="keyword">delete</span> [] mMeshes;</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    }</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keyword">inline</span> aiNode* FindNode(<span class="keyword">const</span> <a class="code" href="structai_string.html">aiString</a>&amp; <a class="code" href="_g_l_e_w_2glew_8h.html#aaced7cfc21e7d37775d6921bb8177239">name</a>)</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keyword">inline</span> aiNode* FindNode(<span class="keyword">const</span> <a class="code" href="structai_string.html">aiString</a>&amp; name)</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    {</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <span class="keywordflow">return</span> FindNode(name.<a class="code" href="structai_string.html#aa90b1da7d347a3dcca0a95061e6ea41d">data</a>);</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    }</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keyword">inline</span> aiNode* FindNode(<span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="_g_l_e_w_2glew_8h.html#aaced7cfc21e7d37775d6921bb8177239">name</a>)</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keyword">inline</span> aiNode* FindNode(<span class="keyword">const</span> <span class="keywordtype">char</span>* name)</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    {</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        <span class="keywordflow">if</span> (!::strcmp( mName.data,name))<span class="keywordflow">return</span> <span class="keyword">this</span>;</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; mNumChildren;++i)</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        {</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            aiNode* <a class="code" href="_g_l_e_w_2glew_8h.html#aa5367c14d90f462230c2611b81b41d23">p</a> = mChildren[i]-&gt;FindNode(name);</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            <span class="keywordflow">if</span> (p)<span class="keywordflow">return</span> <a class="code" href="_g_l_e_w_2glew_8h.html#aa5367c14d90f462230c2611b81b41d23">p</a>;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            aiNode* p = mChildren[i]-&gt;FindNode(name);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            <span class="keywordflow">if</span> (p)<span class="keywordflow">return</span> p;</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        }</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="comment">// there is definitely no sub node with this name</span></div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="begin__code_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    }</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="preprocessor">#endif // __cplusplus</span></div>
@@ -254,41 +254,41 @@ $(document).ready(function(){initNavTree('scene_8h_source.html','');});
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> mFlags;</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <a class="code" href="defs_8h.html#ab51df4230ceb602bbc1bc109c432a6a0">C_STRUCT</a> aiNode* mRootNode;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    C_STRUCT aiNode* mRootNode;</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> mNumMeshes;</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <a class="code" href="defs_8h.html#ab51df4230ceb602bbc1bc109c432a6a0">C_STRUCT</a> <a class="code" href="structai_mesh.html">aiMesh</a>** mMeshes;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    C_STRUCT <a class="code" href="structai_mesh.html">aiMesh</a>** mMeshes;</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> mNumMaterials;</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <a class="code" href="defs_8h.html#ab51df4230ceb602bbc1bc109c432a6a0">C_STRUCT</a> <a class="code" href="structai_material.html">aiMaterial</a>** mMaterials;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    C_STRUCT <a class="code" href="structai_material.html">aiMaterial</a>** mMaterials;</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> mNumAnimations; </div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    <a class="code" href="defs_8h.html#ab51df4230ceb602bbc1bc109c432a6a0">C_STRUCT</a> aiAnimation** mAnimations;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    C_STRUCT aiAnimation** mAnimations;</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;</div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;</div>
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;</div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> mNumTextures;</div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <a class="code" href="defs_8h.html#ab51df4230ceb602bbc1bc109c432a6a0">C_STRUCT</a> <a class="code" href="structai_texture.html">aiTexture</a>** mTextures;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    C_STRUCT <a class="code" href="structai_texture.html">aiTexture</a>** mTextures;</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;</div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;</div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> mNumLights;</div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <a class="code" href="defs_8h.html#ab51df4230ceb602bbc1bc109c432a6a0">C_STRUCT</a> <a class="code" href="structai_light.html">aiLight</a>** mLights;</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    C_STRUCT <a class="code" href="structai_light.html">aiLight</a>** mLights;</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> mNumCameras;</div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <a class="code" href="defs_8h.html#ab51df4230ceb602bbc1bc109c432a6a0">C_STRUCT</a> <a class="code" href="structai_camera.html">aiCamera</a>** mCameras;</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    C_STRUCT <a class="code" href="structai_camera.html">aiCamera</a>** mCameras;</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;<span class="preprocessor"></span></div>
@@ -297,22 +297,22 @@ $(document).ready(function(){initNavTree('scene_8h_source.html','');});
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    ~aiScene();</div>
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;</div>
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> HasMeshes()<span class="keyword"> const </span></div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="keyword">        </span>{ <span class="keywordflow">return</span> mMeshes != <a class="code" href="begin__code_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> &amp;&amp; mNumMeshes &gt; 0; }</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="keyword">        </span>{ <span class="keywordflow">return</span> mMeshes != NULL &amp;&amp; mNumMeshes &gt; 0; }</div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> HasMaterials()<span class="keyword"> const </span></div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;<span class="keyword">        </span>{ <span class="keywordflow">return</span> mMaterials != <a class="code" href="begin__code_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> &amp;&amp; mNumMaterials &gt; 0; }</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;<span class="keyword">        </span>{ <span class="keywordflow">return</span> mMaterials != NULL &amp;&amp; mNumMaterials &gt; 0; }</div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;</div>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> HasLights()<span class="keyword"> const </span></div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;<span class="keyword">        </span>{ <span class="keywordflow">return</span> mLights != <a class="code" href="begin__code_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> &amp;&amp; mNumLights &gt; 0; }</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;<span class="keyword">        </span>{ <span class="keywordflow">return</span> mLights != NULL &amp;&amp; mNumLights &gt; 0; }</div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;</div>
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> HasTextures()<span class="keyword"> const </span></div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="keyword">        </span>{ <span class="keywordflow">return</span> mTextures != <a class="code" href="begin__code_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> &amp;&amp; mNumTextures &gt; 0; }</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="keyword">        </span>{ <span class="keywordflow">return</span> mTextures != NULL &amp;&amp; mNumTextures &gt; 0; }</div>
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;</div>
 <div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> HasCameras()<span class="keyword"> const </span></div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="keyword">        </span>{ <span class="keywordflow">return</span> mCameras != <a class="code" href="begin__code_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> &amp;&amp; mNumCameras &gt; 0; }</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="keyword">        </span>{ <span class="keywordflow">return</span> mCameras != NULL &amp;&amp; mNumCameras &gt; 0; }</div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;</div>
 <div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> HasAnimations()<span class="keyword"> const </span></div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<span class="keyword">        </span>{ <span class="keywordflow">return</span> mAnimations != <a class="code" href="begin__code_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> &amp;&amp; mNumAnimations &gt; 0; }</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<span class="keyword">        </span>{ <span class="keywordflow">return</span> mAnimations != NULL &amp;&amp; mNumAnimations &gt; 0; }</div>
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;</div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="preprocessor">#endif // __cplusplus</span></div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;<span class="preprocessor"></span></div>
@@ -336,28 +336,20 @@ $(document).ready(function(){initNavTree('scene_8h_source.html','');});
 <div class="ttc" id="structai_matrix4x4_html"><div class="ttname"><a href="structai_matrix4x4.html">aiMatrix4x4</a></div><div class="ttdef"><b>Definition:</b> matrix4x4.h:226</div></div>
 <div class="ttc" id="mesh_8h_html"><div class="ttname"><a href="mesh_8h.html">mesh.h</a></div><div class="ttdoc">Declares the data structures in which the imported geometry is returned by ASSIMP: aiMesh...</div></div>
 <div class="ttc" id="texture_8h_html"><div class="ttname"><a href="texture_8h.html">texture.h</a></div><div class="ttdoc">Defines texture helper structures for the library. </div></div>
-<div class="ttc" id="_g_l_e_w_2glew_8h_html_a06b88fc81ad0b30d1512e9609e3d7c82"><div class="ttname"><a href="_g_l_e_w_2glew_8h.html#a06b88fc81ad0b30d1512e9609e3d7c82">string</a></div><div class="ttdeci">GLsizei const GLcharARB ** string</div><div class="ttdef"><b>Definition:</b> glew.h:5638</div></div>
-<div class="ttc" id="_g_l_e_w_2glew_8h_html_ac8729153468b5dcf13f971b21d84d4e5"><div class="ttname"><a href="_g_l_e_w_2glew_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a></div><div class="ttdeci">GLboolean GLboolean GLboolean GLboolean a</div><div class="ttdef"><b>Definition:</b> glew.h:8736</div></div>
-<div class="ttc" id="defs_8h_html_ab51df4230ceb602bbc1bc109c432a6a0"><div class="ttname"><a href="defs_8h.html#ab51df4230ceb602bbc1bc109c432a6a0">C_STRUCT</a></div><div class="ttdeci">#define C_STRUCT</div><div class="ttdef"><b>Definition:</b> defs.h:180</div></div>
-<div class="ttc" id="_g_l_e_w_2glew_8h_html_aa5367c14d90f462230c2611b81b41d23"><div class="ttname"><a href="_g_l_e_w_2glew_8h.html#aa5367c14d90f462230c2611b81b41d23">p</a></div><div class="ttdeci">GLfloat GLfloat p</div><div class="ttdef"><b>Definition:</b> glew.h:14938</div></div>
 <div class="ttc" id="anim_8h_html"><div class="ttname"><a href="anim_8h.html">anim.h</a></div><div class="ttdoc">Defines the data structures in which the imported animations are returned. </div></div>
 <div class="ttc" id="structai_mesh_html"><div class="ttname"><a href="structai_mesh.html">aiMesh</a></div><div class="ttdoc">A mesh represents a geometry or model with a single material. </div><div class="ttdef"><b>Definition:</b> mesh.h:460</div></div>
 <div class="ttc" id="structai_texture_html"><div class="ttname"><a href="structai_texture.html">aiTexture</a></div><div class="ttdef"><b>Definition:</b> texture.h:120</div></div>
 <div class="ttc" id="structai_string_html"><div class="ttname"><a href="structai_string.html">aiString</a></div><div class="ttdef"><b>Definition:</b> types.h:238</div></div>
-<div class="ttc" id="include_2assimp_2include_2light_8h_html"><div class="ttname"><a href="include_2assimp_2include_2light_8h.html">light.h</a></div></div>
-<div class="ttc" id="begin__code_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="begin__code_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> begin_code.h:147</div></div>
 <div class="ttc" id="structai_camera_html"><div class="ttname"><a href="structai_camera.html">aiCamera</a></div><div class="ttdef"><b>Definition:</b> camera.h:98</div></div>
 <div class="ttc" id="structai_string_html_aa90b1da7d347a3dcca0a95061e6ea41d"><div class="ttname"><a href="structai_string.html#aa90b1da7d347a3dcca0a95061e6ea41d">aiString::data</a></div><div class="ttdeci">char data[MAXLEN]</div><div class="ttdef"><b>Definition:</b> types.h:353</div></div>
-<div class="ttc" id="_g_l_e_w_2glew_8h_html_aaced7cfc21e7d37775d6921bb8177239"><div class="ttname"><a href="_g_l_e_w_2glew_8h.html#aaced7cfc21e7d37775d6921bb8177239">name</a></div><div class="ttdeci">GLuint const GLchar * name</div><div class="ttdef"><b>Definition:</b> glew.h:1800</div></div>
 <div class="ttc" id="structai_light_html"><div class="ttname"><a href="structai_light.html">aiLight</a></div><div class="ttdef"><b>Definition:</b> light.h:100</div></div>
-<div class="ttc" id="include_2assimp_2include_2camera_8h_html"><div class="ttname"><a href="include_2assimp_2include_2camera_8h.html">camera.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_2a3ab8ae23d2cffc0bffa70c4703d52b.html">assimp</a></li><li class="navelem"><a class="el" href="dir_775f47f696c8e1c7e288eb84d9156930.html">include</a></li><li class="navelem"><a class="el" href="scene_8h.html">scene.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 20:57:10 for Super Happy Rocket by
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_2a3ab8ae23d2cffc0bffa70c4703d52b.html">assimp</a></li><li class="navelem"><a class="el" href="dir_775f47f696c8e1c7e288eb84d9156930.html">include</a></li><li class="navelem"><b>scene.h</b></li>
+    <li class="footer">Generated on Fri Nov 22 2013 01:07:50 for Super Happy Rocket by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

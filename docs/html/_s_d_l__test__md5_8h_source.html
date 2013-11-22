@@ -166,14 +166,14 @@ $(document).ready(function(){initNavTree('_s_d_l__test__md5_8h_source.html','');
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">/* ------------ Definitions --------- */</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">/* typedef a 32-bit type */</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="_s_d_l__test__md5_8h.html#a2bdcfd1b3373be8191c70eb4a7cb84c6">   68</a></span>&#160;  <span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> <a class="code" href="_s_d_l__test__md5_8h.html#a2bdcfd1b3373be8191c70eb4a7cb84c6">MD5UINT4</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> MD5UINT4;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">/* Data structure for MD5 (Message-Digest) computation */</span></div>
 <div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="struct_s_d_l_test___md5_context.html">   71</a></span>&#160;  <span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="struct_s_d_l_test___md5_context.html#a95b3d5fd74fd1b7a27bf96f3bb32beb4">   72</a></span>&#160;    MD5UINT4  i[2];     <span class="comment">/* number of _bits_ handled mod 2^64 */</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="struct_s_d_l_test___md5_context.html#a061f0cead7ec49ac4c5baf0bbd9c13a7">   73</a></span>&#160;    MD5UINT4  <a class="code" href="_g_l_e_w_2glew_8h.html#aa3b73d9ca9f2e2396cbeae1ce6ce14be">buf</a>[4];       <span class="comment">/* scratch buffer */</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="struct_s_d_l_test___md5_context.html#a337638ef799dc0ad9397ea9b175ea388">   74</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="_g_l_e_w_2glew_8h.html#a83ad0ee7f1e06b59c90271716e689080">in</a>[64];   <span class="comment">/* input buffer */</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="struct_s_d_l_test___md5_context.html#ab29079997a9f35e5d52c2aac3ad28f90">   75</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> digest[16];   <span class="comment">/* actual digest after Md5Final call */</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    MD5UINT4  i[2];     <span class="comment">/* number of _bits_ handled mod 2^64 */</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    MD5UINT4  buf[4];       <span class="comment">/* scratch buffer */</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> in[64];   <span class="comment">/* input buffer */</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> digest[16];   <span class="comment">/* actual digest after Md5Final call */</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  } <a class="code" href="struct_s_d_l_test___md5_context.html">SDLTest_Md5Context</a>;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">/* ---------- Function Prototypes ------------- */</span></div>
@@ -195,7 +195,7 @@ $(document).ready(function(){initNavTree('_s_d_l__test__md5_8h_source.html','');
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment"> *       Always call before using the digest[] variable.</span></div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; <span class="keywordtype">void</span> <a class="code" href="_s_d_l__test__md5_8h.html#a3f0bd1fb177aea21d09b3ff7b3323e77">SDLTest_Md5Final</a>(<a class="code" href="struct_s_d_l_test___md5_context.html">SDLTest_Md5Context</a> * mdContext);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; <span class="keywordtype">void</span> SDLTest_Md5Final(<a class="code" href="struct_s_d_l_test___md5_context.html">SDLTest_Md5Context</a> * mdContext);</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="comment">/* Ends C function definitions when using C++ */</span></div>
@@ -207,22 +207,18 @@ $(document).ready(function(){initNavTree('_s_d_l__test__md5_8h_source.html','');
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _SDL_test_md5_h */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="comment">/* vi: set ts=4 sw=4 expandtab: */</span></div>
-<div class="ttc" id="_g_l_e_w_2glew_8h_html_a83ad0ee7f1e06b59c90271716e689080"><div class="ttname"><a href="_g_l_e_w_2glew_8h.html#a83ad0ee7f1e06b59c90271716e689080">in</a></div><div class="ttdeci">GLuint in</div><div class="ttdef"><b>Definition:</b> glew.h:10672</div></div>
 <div class="ttc" id="struct_s_d_l_test___md5_context_html"><div class="ttname"><a href="struct_s_d_l_test___md5_context.html">SDLTest_Md5Context</a></div><div class="ttdef"><b>Definition:</b> SDL_test_md5.h:71</div></div>
 <div class="ttc" id="begin__code_8h_html"><div class="ttname"><a href="begin__code_8h.html">begin_code.h</a></div></div>
 <div class="ttc" id="close__code_8h_html"><div class="ttname"><a href="close__code_8h.html">close_code.h</a></div></div>
 <div class="ttc" id="_s_d_l__test__md5_8h_html_a435607e2ee1bf1ce09686ef97c21a7d5"><div class="ttname"><a href="_s_d_l__test__md5_8h.html#a435607e2ee1bf1ce09686ef97c21a7d5">SDLTest_Md5Update</a></div><div class="ttdeci">void SDLTest_Md5Update(SDLTest_Md5Context *mdContext, unsigned char *inBuf, unsigned int inLen)</div></div>
-<div class="ttc" id="_g_l_e_w_2glew_8h_html_aa3b73d9ca9f2e2396cbeae1ce6ce14be"><div class="ttname"><a href="_g_l_e_w_2glew_8h.html#aa3b73d9ca9f2e2396cbeae1ce6ce14be">buf</a></div><div class="ttdeci">GLenum GLuint GLsizei const GLchar * buf</div><div class="ttdef"><b>Definition:</b> glew.h:2539</div></div>
 <div class="ttc" id="_s_d_l__test__md5_8h_html_add801a5f4162ed3bb0211d0e7b5829ec"><div class="ttname"><a href="_s_d_l__test__md5_8h.html#add801a5f4162ed3bb0211d0e7b5829ec">SDLTest_Md5Init</a></div><div class="ttdeci">void SDLTest_Md5Init(SDLTest_Md5Context *mdContext)</div></div>
-<div class="ttc" id="_s_d_l__test__md5_8h_html_a2bdcfd1b3373be8191c70eb4a7cb84c6"><div class="ttname"><a href="_s_d_l__test__md5_8h.html#a2bdcfd1b3373be8191c70eb4a7cb84c6">MD5UINT4</a></div><div class="ttdeci">unsigned long int MD5UINT4</div><div class="ttdef"><b>Definition:</b> SDL_test_md5.h:68</div></div>
-<div class="ttc" id="_s_d_l__test__md5_8h_html_a3f0bd1fb177aea21d09b3ff7b3323e77"><div class="ttname"><a href="_s_d_l__test__md5_8h.html#a3f0bd1fb177aea21d09b3ff7b3323e77">SDLTest_Md5Final</a></div><div class="ttdeci">void SDLTest_Md5Final(SDLTest_Md5Context *mdContext)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_bb71c587d4eee030bda30f2f35ebd6b7.html">SDL</a></li><li class="navelem"><a class="el" href="dir_3b9b8e98eade024f68a871db77d1527d.html">include</a></li><li class="navelem"><a class="el" href="_s_d_l__test__md5_8h.html">SDL_test_md5.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 20:57:16 for Super Happy Rocket by
+    <li class="footer">Generated on Fri Nov 22 2013 01:07:54 for Super Happy Rocket by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('color4_8h_source.html','');});
 <div class="title">color4.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="color4_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">---------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">Open Asset Import Library (assimp)</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">---------------------------------------------------------------------------</span></div>
@@ -150,7 +150,7 @@ $(document).ready(function(){initNavTree('color4_8h_source.html','');});
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#ifndef AI_COLOR4D_H_INC</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define AI_COLOR4D_H_INC</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pushpack1_8h.html">./Compiler/pushpack1.h</a>&quot;</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#include &quot;./Compiler/pushpack1.h&quot;</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor"></span></div>
@@ -160,19 +160,19 @@ $(document).ready(function(){initNavTree('color4_8h_source.html','');});
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">class </span>aiColor4t</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    aiColor4t () : <a class="code" href="_g_l_e_w_2glew_8h.html#abe08814c2f72843fde4d8df41440d5a0">r</a>(), <a class="code" href="_g_l_e_w_2glew_8h.html#a9cd653b1648845554169fbc3a3f6d37a">g</a>(), <a class="code" href="_g_l_e_w_2glew_8h.html#a6eba317e3cf44d6d26c04a5a8f197dcb">b</a>(), <a class="code" href="_g_l_e_w_2glew_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a>() {}</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    aiColor4t () : r(), g(), b(), a() {}</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    aiColor4t (TReal _r, TReal _g, TReal _b, TReal _a) </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        : <a class="code" href="_g_l_e_w_2glew_8h.html#abe08814c2f72843fde4d8df41440d5a0">r</a>(_r), <a class="code" href="_g_l_e_w_2glew_8h.html#a9cd653b1648845554169fbc3a3f6d37a">g</a>(_g), <a class="code" href="_g_l_e_w_2glew_8h.html#a6eba317e3cf44d6d26c04a5a8f197dcb">b</a>(_b), <a class="code" href="_g_l_e_w_2glew_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a>(_a) {}</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    aiColor4t (TReal _r) : <a class="code" href="_g_l_e_w_2glew_8h.html#abe08814c2f72843fde4d8df41440d5a0">r</a>(_r), <a class="code" href="_g_l_e_w_2glew_8h.html#a9cd653b1648845554169fbc3a3f6d37a">g</a>(_r), <a class="code" href="_g_l_e_w_2glew_8h.html#a6eba317e3cf44d6d26c04a5a8f197dcb">b</a>(_r), <a class="code" href="_g_l_e_w_2glew_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a>(_r) {}</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        : r(_r), g(_g), b(_b), a(_a) {}</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    aiColor4t (TReal _r) : r(_r), g(_r), b(_r), a(_r) {}</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    aiColor4t (<span class="keyword">const</span> aiColor4t&amp; o) </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        : <a class="code" href="_g_l_e_w_2glew_8h.html#abe08814c2f72843fde4d8df41440d5a0">r</a>(o.<a class="code" href="_g_l_e_w_2glew_8h.html#abe08814c2f72843fde4d8df41440d5a0">r</a>), <a class="code" href="_g_l_e_w_2glew_8h.html#a9cd653b1648845554169fbc3a3f6d37a">g</a>(o.<a class="code" href="_g_l_e_w_2glew_8h.html#a9cd653b1648845554169fbc3a3f6d37a">g</a>), <a class="code" href="_g_l_e_w_2glew_8h.html#a6eba317e3cf44d6d26c04a5a8f197dcb">b</a>(o.<a class="code" href="_g_l_e_w_2glew_8h.html#a6eba317e3cf44d6d26c04a5a8f197dcb">b</a>), <a class="code" href="_g_l_e_w_2glew_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a>(o.<a class="code" href="_g_l_e_w_2glew_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a>) {}</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        : r(o.r), g(o.g), b(o.b), a(o.a) {}</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">// combined operators</span></div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">const</span> aiColor4t&amp; operator += (<span class="keyword">const</span> aiColor4t&amp; o);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">const</span> aiColor4t&amp; operator -= (<span class="keyword">const</span> aiColor4t&amp; o);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">const</span> aiColor4t&amp; operator *= (TReal <a class="code" href="_g_l_e_w_2glew_8h.html#aba8ad56949f59242bc167b073dae3715">f</a>);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">const</span> aiColor4t&amp; operator /= (TReal <a class="code" href="_g_l_e_w_2glew_8h.html#aba8ad56949f59242bc167b073dae3715">f</a>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">const</span> aiColor4t&amp; operator *= (TReal f);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">const</span> aiColor4t&amp; operator /= (TReal f);</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">// comparison</span></div>
@@ -188,42 +188,30 @@ $(document).ready(function(){initNavTree('color4_8h_source.html','');});
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="comment">// Red, green, blue and alpha color values </span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    TReal <a class="code" href="_g_l_e_w_2glew_8h.html#abe08814c2f72843fde4d8df41440d5a0">r</a>, <a class="code" href="_g_l_e_w_2glew_8h.html#a9cd653b1648845554169fbc3a3f6d37a">g</a>, <a class="code" href="_g_l_e_w_2glew_8h.html#a6eba317e3cf44d6d26c04a5a8f197dcb">b</a>, <a class="code" href="_g_l_e_w_2glew_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a>;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;} <a class="code" href="color4_8h.html#a4eb9b3c1748b9622c575b45bcd9481f0">PACK_STRUCT</a>;  <span class="comment">// !struct aiColor4D</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    TReal r, g, b, a;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;} PACK_STRUCT;  <span class="comment">// !struct aiColor4D</span></div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">typedef</span> aiColor4t&lt;float&gt; <a class="code" href="structai_color4_d.html">aiColor4D</a>;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="structai_color4_d.html">   95</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structai_color4_d.html">aiColor4D</a> {</div>
-<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="structai_color4_d.html#a989c2117cfae5a4457fa65f0257e93c7">   96</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="structai_color4_d.html#a989c2117cfae5a4457fa65f0257e93c7">r</a>, <a class="code" href="structai_color4_d.html#a32e929c7db12fb6f79f74a611f6d8fe6">g</a>, <a class="code" href="structai_color4_d.html#ab64376fc730371f8952f5f98084b2430">b</a>, <a class="code" href="structai_color4_d.html#a1bf4f719c14e844dcd7ce5a1c1969c89">a</a>;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;} <a class="code" href="color4_8h.html#a4eb9b3c1748b9622c575b45bcd9481f0">PACK_STRUCT</a>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">float</span> r, g, b, a;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;} PACK_STRUCT;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#endif // __cplusplus</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="poppack1_8h.html">./Compiler/poppack1.h</a>&quot;</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#include &quot;./Compiler/poppack1.h&quot;</span></div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#endif // AI_COLOR4D_H_INC</span></div>
-<div class="ttc" id="structai_color4_d_html_a32e929c7db12fb6f79f74a611f6d8fe6"><div class="ttname"><a href="structai_color4_d.html#a32e929c7db12fb6f79f74a611f6d8fe6">aiColor4D::g</a></div><div class="ttdeci">float g</div><div class="ttdef"><b>Definition:</b> color4.h:96</div></div>
-<div class="ttc" id="_g_l_e_w_2glew_8h_html_a9cd653b1648845554169fbc3a3f6d37a"><div class="ttname"><a href="_g_l_e_w_2glew_8h.html#a9cd653b1648845554169fbc3a3f6d37a">g</a></div><div class="ttdeci">GLboolean GLboolean g</div><div class="ttdef"><b>Definition:</b> glew.h:8736</div></div>
 <div class="ttc" id="structai_color4_d_html"><div class="ttname"><a href="structai_color4_d.html">aiColor4D</a></div><div class="ttdef"><b>Definition:</b> color4.h:95</div></div>
-<div class="ttc" id="structai_color4_d_html_a989c2117cfae5a4457fa65f0257e93c7"><div class="ttname"><a href="structai_color4_d.html#a989c2117cfae5a4457fa65f0257e93c7">aiColor4D::r</a></div><div class="ttdeci">float r</div><div class="ttdef"><b>Definition:</b> color4.h:96</div></div>
-<div class="ttc" id="_g_l_e_w_2glew_8h_html_ac8729153468b5dcf13f971b21d84d4e5"><div class="ttname"><a href="_g_l_e_w_2glew_8h.html#ac8729153468b5dcf13f971b21d84d4e5">a</a></div><div class="ttdeci">GLboolean GLboolean GLboolean GLboolean a</div><div class="ttdef"><b>Definition:</b> glew.h:8736</div></div>
-<div class="ttc" id="_g_l_e_w_2glew_8h_html_aba8ad56949f59242bc167b073dae3715"><div class="ttname"><a href="_g_l_e_w_2glew_8h.html#aba8ad56949f59242bc167b073dae3715">f</a></div><div class="ttdeci">GLclampf f</div><div class="ttdef"><b>Definition:</b> glew.h:3390</div></div>
-<div class="ttc" id="pushpack1_8h_html"><div class="ttname"><a href="pushpack1_8h.html">pushpack1.h</a></div></div>
-<div class="ttc" id="structai_color4_d_html_a1bf4f719c14e844dcd7ce5a1c1969c89"><div class="ttname"><a href="structai_color4_d.html#a1bf4f719c14e844dcd7ce5a1c1969c89">aiColor4D::a</a></div><div class="ttdeci">float a</div><div class="ttdef"><b>Definition:</b> color4.h:96</div></div>
-<div class="ttc" id="_g_l_e_w_2glew_8h_html_a6eba317e3cf44d6d26c04a5a8f197dcb"><div class="ttname"><a href="_g_l_e_w_2glew_8h.html#a6eba317e3cf44d6d26c04a5a8f197dcb">b</a></div><div class="ttdeci">GLdouble GLdouble GLdouble b</div><div class="ttdef"><b>Definition:</b> glew.h:8383</div></div>
-<div class="ttc" id="poppack1_8h_html"><div class="ttname"><a href="poppack1_8h.html">poppack1.h</a></div></div>
-<div class="ttc" id="_g_l_e_w_2glew_8h_html_abe08814c2f72843fde4d8df41440d5a0"><div class="ttname"><a href="_g_l_e_w_2glew_8h.html#abe08814c2f72843fde4d8df41440d5a0">r</a></div><div class="ttdeci">GLdouble GLdouble GLdouble r</div><div class="ttdef"><b>Definition:</b> glew.h:1392</div></div>
-<div class="ttc" id="structai_color4_d_html_ab64376fc730371f8952f5f98084b2430"><div class="ttname"><a href="structai_color4_d.html#ab64376fc730371f8952f5f98084b2430">aiColor4D::b</a></div><div class="ttdeci">float b</div><div class="ttdef"><b>Definition:</b> color4.h:96</div></div>
-<div class="ttc" id="color4_8h_html_a4eb9b3c1748b9622c575b45bcd9481f0"><div class="ttname"><a href="color4_8h.html#a4eb9b3c1748b9622c575b45bcd9481f0">PACK_STRUCT</a></div><div class="ttdeci">struct aiColor4D PACK_STRUCT</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_2a3ab8ae23d2cffc0bffa70c4703d52b.html">assimp</a></li><li class="navelem"><a class="el" href="dir_775f47f696c8e1c7e288eb84d9156930.html">include</a></li><li class="navelem"><a class="el" href="color4_8h.html">color4.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 20:57:09 for Super Happy Rocket by
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_2a3ab8ae23d2cffc0bffa70c4703d52b.html">assimp</a></li><li class="navelem"><a class="el" href="dir_775f47f696c8e1c7e288eb84d9156930.html">include</a></li><li class="navelem"><b>color4.h</b></li>
+    <li class="footer">Generated on Fri Nov 22 2013 01:07:49 for Super Happy Rocket by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

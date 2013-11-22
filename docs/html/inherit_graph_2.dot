@@ -3,5 +3,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="aiAnimMesh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structai_anim_mesh.html",tooltip="NOT CURRENTLY IN USE. An AnimMesh is an attachment to an aiMesh stores per-vertex animations for a pa..."];
+  Node1 [label="BoundingBox",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_bounding_box.html"];
 }

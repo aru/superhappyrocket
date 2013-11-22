@@ -11,6 +11,5 @@ digraph "include" {
     dir_bb71c587d4eee030bda30f2f35ebd6b7 [shape=box label="SDL" color="red" fillcolor="white" style="filled" URL="dir_bb71c587d4eee030bda30f2f35ebd6b7.html"];
     dir_08f4c3bd02e0afc66d49fdc02357d0dd [shape=box label="SDL_mixer" color="red" fillcolor="white" style="filled" URL="dir_08f4c3bd02e0afc66d49fdc02357d0dd.html"];
   }
-  dir_127e130de9cc7749b89932d401a80414->dir_04d2248af09e8d4b47039d32314b7c56 [headlabel="1", labeldistance=1.5 headhref="dir_000005_000006.html"];
   dir_08f4c3bd02e0afc66d49fdc02357d0dd->dir_bb71c587d4eee030bda30f2f35ebd6b7 [headlabel="7", labeldistance=1.5 headhref="dir_000014_000012.html"];
 }

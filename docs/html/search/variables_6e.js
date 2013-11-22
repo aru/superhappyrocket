@@ -1,30 +1,6 @@
 var searchData=
 [
-  ['name',['name',['../structai_export_data_blob.html#a22fbdb28a7ebc30b4d3c3339be18b5f2',1,'aiExportDataBlob::name()'],['../struct_s_d_l___renderer_info.html#a433ecb2865c81ba9f28038e56a4ae6f3',1,'SDL_RendererInfo::name()'],['../struct_s_d_l_test___test_case_reference.html#aabd588c915c52fb13bcd0c71e071a604',1,'SDLTest_TestCaseReference::name()'],['../struct_s_d_l_test___test_suite_reference.html#a8b002d932f91b321b384e59ae17f8f39',1,'SDLTest_TestSuiteReference::name()']]],
-  ['ncolors',['ncolors',['../struct_s_d_l___palette.html#a81a0cc3197480e994c6b06f1f0567091',1,'SDL_Palette']]],
-  ['nearll',['nearLL',['../class_g_l_frustum.html#a3fb95dabc5be223d79248cff485caa72',1,'GLFrustum']]],
-  ['nearllt',['nearLLT',['../class_g_l_frustum.html#a5f228145759f233b2dcea16b2c52e693',1,'GLFrustum']]],
-  ['nearlr',['nearLR',['../class_g_l_frustum.html#a7c1ec477fc6c3c830e7282a5930a74f1',1,'GLFrustum']]],
-  ['nearlrt',['nearLRT',['../class_g_l_frustum.html#a70d8d4adab36a77473211472ea7df24c',1,'GLFrustum']]],
-  ['nearplane',['nearPlane',['../class_g_l_frustum.html#ad547972a20ea7cffe2fef76b14f5fb9c',1,'GLFrustum']]],
-  ['nearul',['nearUL',['../class_g_l_frustum.html#a1b577bcf56bc6251bbec0c88d2f552e4',1,'GLFrustum']]],
-  ['nearult',['nearULT',['../class_g_l_frustum.html#aee355a8ff715b43dafb158d08680e52d',1,'GLFrustum']]],
-  ['nearur',['nearUR',['../class_g_l_frustum.html#ac160cfff393ad6691577b10984ad7bee',1,'GLFrustum']]],
-  ['nearurt',['nearURT',['../class_g_l_frustum.html#a6f67e8ff610896911187d9cc62dadc72',1,'GLFrustum']]],
-  ['needed',['needed',['../struct_s_d_l___audio_c_v_t.html#ac600a035a48df05e14d3712fd6953ad4',1,'SDL_AudioCVT']]],
-  ['networkid',['networkId',['../struct_g_l_x_hyperpipe_network_s_g_i_x.html#a81393053988b32fadb0b21615024add1',1,'GLXHyperpipeNetworkSGIX']]],
-  ['next',['next',['../structai_export_data_blob.html#a73baa3d77f95f360540b0b1922075ba5',1,'aiExportDataBlob::next()'],['../struct_s_d_l__assert__data.html#ab0beb52f0ae9d8b88dd90df4ad4b07ff',1,'SDL_assert_data::next()'],['../struct_s_d_l___pixel_format.html#a1953b66c817116bf81bae4873ee6bce5',1,'SDL_PixelFormat::next()']]],
-  ['nmaxindexes',['nMaxIndexes',['../class_g_l_triangle_batch.html#ad71adff46009cbdbea504bc8df3e6483',1,'GLTriangleBatch']]],
-  ['nnumindexes',['nNumIndexes',['../class_g_l_triangle_batch.html#aa898172f3199fe04a570162affe65742',1,'GLTriangleBatch']]],
-  ['nnumtextureunits',['nNumTextureUnits',['../class_g_l_batch.html#af07f7fd1e0b0e5590e2e1222e20117f2',1,'GLBatch']]],
-  ['nnumverts',['nNumVerts',['../class_g_l_batch.html#ad418a5dc12c486c3f9ab66fcebff0110',1,'GLBatch::nNumVerts()'],['../class_g_l_triangle_batch.html#abdf5887a9f634e0a649590c0de136c59',1,'GLTriangleBatch::nNumVerts()']]],
   ['normal',['normal',['../class_simple_object.html#a87b06e177a337bb9f7655dbd5067cf7b',1,'SimpleObject']]],
   ['norms',['norms',['../classassimp_mesh.html#a71635c933787e2acfce8bfdfe60fb958',1,'assimpMesh']]],
-  ['num',['num',['../struct_s_d_l___r_wops.html#a630921d5c84cf48a4a10f9a75e1caa10',1,'SDL_RWops']]],
-  ['num_5ftexture_5fformats',['num_texture_formats',['../struct_s_d_l___renderer_info.html#acdec165b2053b914313f5996983ec6b8',1,'SDL_RendererInfo']]],
-  ['num_5fwindows',['num_windows',['../struct_s_d_l_test___common_state.html#a4f8020400392b1ae374c066b45a56538',1,'SDLTest_CommonState']]],
-  ['numbuttons',['numbuttons',['../struct_s_d_l___message_box_data.html#a133f4fef549cc0cb14b799af35f3dc5a',1,'SDL_MessageBoxData']]],
-  ['numfingers',['numFingers',['../struct_s_d_l___multi_gesture_event.html#a6b06cf80372ce3cad40110fdb6ef0353',1,'SDL_MultiGestureEvent::numFingers()'],['../struct_s_d_l___dollar_gesture_event.html#a14160d8bad8569f53dd18ed8f64d253f',1,'SDL_DollarGestureEvent::numFingers()']]],
-  ['numtextures',['numTextures',['../classassimp_mesh.html#a5bca3d425fef3b8cef719bb9e0384d8a',1,'assimpMesh::numTextures()'],['../class_texture_manager.html#a683f7d58d8b19498b4d68a0f481c3290',1,'TextureManager::numTextures()']]],
-  ['nvertsbuilding',['nVertsBuilding',['../class_g_l_batch.html#a896a080ed265b23b9d323a3983eb59ca',1,'GLBatch']]]
+  ['numtextures',['numTextures',['../classassimp_mesh.html#a5bca3d425fef3b8cef719bb9e0384d8a',1,'assimpMesh::numTextures()'],['../class_texture_manager.html#a683f7d58d8b19498b4d68a0f481c3290',1,'TextureManager::numTextures()']]]
 ];

@@ -60,7 +60,7 @@ digraph "include/SDL/include/begin_code.h"
   Node20 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node20 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node15 -> Node21 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node21 [label="include/SDL/include\l/SDL_messagebox.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_s_d_l__messagebox_8h.html"];
+  Node21 [label="include/SDL/include\l/SDL_messagebox.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_s_d_l__messagebox_8h_source.html"];
   Node21 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node15 -> Node22 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node22 [label="include/SDL/include\l/SDL_render.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_s_d_l__render_8h.html"];
@@ -155,7 +155,7 @@ digraph "include/SDL/include/begin_code.h"
   Node9 -> Node24 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node1 -> Node40 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node40 [label="include/SDL/include\l/SDL_assert.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_s_d_l__assert_8h.html"];
+  Node40 [label="include/SDL/include\l/SDL_assert.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_s_d_l__assert_8h_source.html"];
   Node40 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];

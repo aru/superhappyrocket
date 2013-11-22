@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('_i_o_stream_8hpp_source.html','');});
 <div class="title">IOStream.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_i_o_stream_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">---------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">Open Asset Import Library (assimp)</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">---------------------------------------------------------------------------</span></div>
@@ -160,7 +160,7 @@ $(document).ready(function(){initNavTree('_i_o_stream_8hpp_source.html','');});
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">namespace </span>Assimp    {</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">// ----------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_assimp_1_1_i_o_stream.html">   64</a></span>&#160;<span class="comment"></span><span class="keyword">class </span><a class="code" href="defs_8h.html#a7d617d307e656cb6ff315ba71ff958d4">ASSIMP_API</a> <a class="code" href="class_assimp_1_1_i_o_stream.html">IOStream</a> : <span class="keyword">public</span> Intern::AllocateFromAssimpHeap</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_assimp_1_1_i_o_stream.html">   64</a></span>&#160;<span class="comment"></span><span class="keyword">class </span>ASSIMP_API <a class="code" href="class_assimp_1_1_i_o_stream.html">IOStream</a> : <span class="keyword">public</span> Intern::AllocateFromAssimpHeap</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="class_assimp_1_1_i_o_stream.html">IOStream</a>(<span class="keywordtype">void</span>);</div>
@@ -171,7 +171,7 @@ $(document).ready(function(){initNavTree('_i_o_stream_8hpp_source.html','');});
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">// -------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment"></span>    <span class="keyword">virtual</span> <span class="keywordtype">size_t</span> Read(<span class="keywordtype">void</span>* pvBuffer, </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordtype">size_t</span> <a class="code" href="_g_l_e_w_2wglew_8h.html#a95e478a19268863e38a9733ac885ac14">pSize</a>, </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordtype">size_t</span> pSize, </div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordtype">size_t</span> pCount) = 0;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="comment">// -------------------------------------------------------------------</span></div>
@@ -212,15 +212,13 @@ $(document).ready(function(){initNavTree('_i_o_stream_8hpp_source.html','');});
 <div class="ttc" id="class_assimp_1_1_i_o_stream_html_a6cedc5033bf531bf14b97d1c9b788de8"><div class="ttname"><a href="class_assimp_1_1_i_o_stream.html#a6cedc5033bf531bf14b97d1c9b788de8">Assimp::IOStream::~IOStream</a></div><div class="ttdeci">virtual ~IOStream()</div><div class="ttdoc">Destructor. Deleting the object closes the underlying file, alternatively you may use IOSystem::Close...</div><div class="ttdef"><b>Definition:</b> IOStream.hpp:128</div></div>
 <div class="ttc" id="class_assimp_1_1_i_o_stream_html_af5ae78123b6c6f7afc31b2a52dc9192e"><div class="ttname"><a href="class_assimp_1_1_i_o_stream.html#af5ae78123b6c6f7afc31b2a52dc9192e">Assimp::IOStream::IOStream</a></div><div class="ttdeci">IOStream(void)</div><div class="ttdoc">class IOStream </div><div class="ttdef"><b>Definition:</b> IOStream.hpp:122</div></div>
 <div class="ttc" id="class_assimp_1_1_i_o_stream_html"><div class="ttname"><a href="class_assimp_1_1_i_o_stream.html">Assimp::IOStream</a></div><div class="ttdoc">CPP-API: Class to handle file I/O for C++. </div><div class="ttdef"><b>Definition:</b> IOStream.hpp:64</div></div>
-<div class="ttc" id="defs_8h_html_a7d617d307e656cb6ff315ba71ff958d4"><div class="ttname"><a href="defs_8h.html#a7d617d307e656cb6ff315ba71ff958d4">ASSIMP_API</a></div><div class="ttdeci">#define ASSIMP_API</div><div class="ttdef"><b>Definition:</b> defs.h:142</div></div>
-<div class="ttc" id="_g_l_e_w_2wglew_8h_html_a95e478a19268863e38a9733ac885ac14"><div class="ttname"><a href="_g_l_e_w_2wglew_8h.html#a95e478a19268863e38a9733ac885ac14">pSize</a></div><div class="ttdeci">HANDLE LPVOID DWORD * pSize</div><div class="ttdef"><b>Definition:</b> wglew.h:826</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_2a3ab8ae23d2cffc0bffa70c4703d52b.html">assimp</a></li><li class="navelem"><a class="el" href="dir_775f47f696c8e1c7e288eb84d9156930.html">include</a></li><li class="navelem"><a class="el" href="_i_o_stream_8hpp.html">IOStream.hpp</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 20:57:10 for Super Happy Rocket by
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_2a3ab8ae23d2cffc0bffa70c4703d52b.html">assimp</a></li><li class="navelem"><a class="el" href="dir_775f47f696c8e1c7e288eb84d9156930.html">include</a></li><li class="navelem"><b>IOStream.hpp</b></li>
+    <li class="footer">Generated on Fri Nov 22 2013 01:07:49 for Super Happy Rocket by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

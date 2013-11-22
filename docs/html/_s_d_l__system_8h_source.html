@@ -147,8 +147,8 @@ $(document).ready(function(){initNavTree('_s_d_l__system_8h_source.html','');});
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">/* Platform specific functions for iOS */</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#if defined(__IPHONEOS__) &amp;&amp; __IPHONEOS__</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">extern</span> <a class="code" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <span class="keywordtype">int</span> <a class="code" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_iPhoneSetAnimationCallback(<a class="code" href="_s_d_l__video_8h.html#a55a196c7d3b8497538632c79ae1e6392">SDL_Window</a> * window, <span class="keywordtype">int</span> interval, <span class="keywordtype">void</span> (*callback)(<span class="keywordtype">void</span>*), <span class="keywordtype">void</span> *callbackParam);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">extern</span> <a class="code" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <span class="keywordtype">void</span> <a class="code" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_iPhoneSetEventPump(<a class="code" href="_s_d_l__stdinc_8h.html#a8fca68df0f976765230fe589a7c7733b">SDL_bool</a> <a class="code" href="_g_l_e_w_2glew_8h.html#a0455a397ab5468d21c3021f2efa6dd3c">enabled</a>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">extern</span> DECLSPEC <span class="keywordtype">int</span> SDLCALL SDL_iPhoneSetAnimationCallback(<a class="code" href="_s_d_l__video_8h.html#a55a196c7d3b8497538632c79ae1e6392">SDL_Window</a> * window, <span class="keywordtype">int</span> interval, <span class="keywordtype">void</span> (*callback)(<span class="keywordtype">void</span>*), <span class="keywordtype">void</span> *callbackParam);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">extern</span> DECLSPEC <span class="keywordtype">void</span> SDLCALL SDL_iPhoneSetEventPump(SDL_bool enabled);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __IPHONEOS__ */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor"></span></div>
@@ -159,7 +159,7 @@ $(document).ready(function(){initNavTree('_s_d_l__system_8h_source.html','');});
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">/* Get the JNI environment for the current thread</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">   This returns JNIEnv*, but the prototype is void* so we don&#39;t need jni.h</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">extern</span> <a class="code" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <span class="keywordtype">void</span> * <a class="code" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_AndroidGetJNIEnv();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">extern</span> DECLSPEC <span class="keywordtype">void</span> * SDLCALL SDL_AndroidGetJNIEnv();</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">/* Get the SDL Activity object for the application</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">   This returns jobject, but the prototype is void* so we don&#39;t need jni.h</span></div>
@@ -167,7 +167,7 @@ $(document).ready(function(){initNavTree('_s_d_l__system_8h_source.html','');});
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">   It is the caller&#39;s responsibility to properly release it</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">   (using env-&gt;Push/PopLocalFrame or manually with env-&gt;DeleteLocalRef)</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">extern</span> <a class="code" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <span class="keywordtype">void</span> * <a class="code" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_AndroidGetActivity();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">extern</span> DECLSPEC <span class="keywordtype">void</span> * SDLCALL SDL_AndroidGetActivity();</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">/* See the official Android developer guide for more information:</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">   http://developer.android.com/guide/topics/data/data-storage.html</span></div>
@@ -179,20 +179,20 @@ $(document).ready(function(){initNavTree('_s_d_l__system_8h_source.html','');});
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">   This path is unique to your application and cannot be written to</span></div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">   by other applications.</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">extern</span> <a class="code" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <span class="keyword">const</span> <span class="keywordtype">char</span> * <a class="code" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_AndroidGetInternalStoragePath();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">extern</span> DECLSPEC <span class="keyword">const</span> <span class="keywordtype">char</span> * SDLCALL SDL_AndroidGetInternalStoragePath();</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">/* Get the current state of external storage, a bitmask of these values:</span></div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">    SDL_ANDROID_EXTERNAL_STORAGE_READ</span></div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">    SDL_ANDROID_EXTERNAL_STORAGE_WRITE</span></div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">   If external storage is currently unavailable, this will return 0.</span></div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">extern</span> <a class="code" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <span class="keywordtype">int</span> <a class="code" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_AndroidGetExternalStorageState();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">extern</span> DECLSPEC <span class="keywordtype">int</span> SDLCALL SDL_AndroidGetExternalStorageState();</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">/* Get the path used for external storage for this application.</span></div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">   This path is unique to your application, but is public and can be</span></div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">   written to by other applications.</span></div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keyword">extern</span> <a class="code" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <span class="keyword">const</span> <span class="keywordtype">char</span> * <a class="code" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_AndroidGetExternalStoragePath();</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keyword">extern</span> DECLSPEC <span class="keyword">const</span> <span class="keywordtype">char</span> * SDLCALL SDL_AndroidGetExternalStoragePath();</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __ANDROID__ */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor"></span></div>
@@ -206,13 +206,9 @@ $(document).ready(function(){initNavTree('_s_d_l__system_8h_source.html','');});
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _SDL_system_h */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment">/* vi: set ts=4 sw=4 expandtab: */</span></div>
-<div class="ttc" id="_s_d_l__stdinc_8h_html_a8fca68df0f976765230fe589a7c7733b"><div class="ttname"><a href="_s_d_l__stdinc_8h.html#a8fca68df0f976765230fe589a7c7733b">SDL_bool</a></div><div class="ttdeci">SDL_bool</div><div class="ttdef"><b>Definition:</b> SDL_stdinc.h:116</div></div>
-<div class="ttc" id="begin__code_8h_html_aa4c7a931f4a968f818b2a1b10a432185"><div class="ttname"><a href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a></div><div class="ttdeci">#define DECLSPEC</div><div class="ttdef"><b>Definition:</b> begin_code.h:58</div></div>
-<div class="ttc" id="begin__code_8h_html_a81faf4ba0455dc75f2e0507eddb79401"><div class="ttname"><a href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a></div><div class="ttdeci">#define SDLCALL</div><div class="ttdef"><b>Definition:</b> begin_code.h:68</div></div>
 <div class="ttc" id="begin__code_8h_html"><div class="ttname"><a href="begin__code_8h.html">begin_code.h</a></div></div>
 <div class="ttc" id="_s_d_l__video_8h_html"><div class="ttname"><a href="_s_d_l__video_8h.html">SDL_video.h</a></div></div>
 <div class="ttc" id="close__code_8h_html"><div class="ttname"><a href="close__code_8h.html">close_code.h</a></div></div>
-<div class="ttc" id="_g_l_e_w_2glew_8h_html_a0455a397ab5468d21c3021f2efa6dd3c"><div class="ttname"><a href="_g_l_e_w_2glew_8h.html#a0455a397ab5468d21c3021f2efa6dd3c">enabled</a></div><div class="ttdeci">GLenum GLsizei const GLuint GLboolean enabled</div><div class="ttdef"><b>Definition:</b> glew.h:2538</div></div>
 <div class="ttc" id="_s_d_l__video_8h_html_a55a196c7d3b8497538632c79ae1e6392"><div class="ttname"><a href="_s_d_l__video_8h.html#a55a196c7d3b8497538632c79ae1e6392">SDL_Window</a></div><div class="ttdeci">struct SDL_Window SDL_Window</div><div class="ttdoc">The type used to identify a window. </div><div class="ttdef"><b>Definition:</b> SDL_video.h:89</div></div>
 <div class="ttc" id="_s_d_l__keyboard_8h_html"><div class="ttname"><a href="_s_d_l__keyboard_8h.html">SDL_keyboard.h</a></div></div>
 <div class="ttc" id="_s_d_l__stdinc_8h_html"><div class="ttname"><a href="_s_d_l__stdinc_8h.html">SDL_stdinc.h</a></div></div>
@@ -222,7 +218,7 @@ $(document).ready(function(){initNavTree('_s_d_l__system_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_bb71c587d4eee030bda30f2f35ebd6b7.html">SDL</a></li><li class="navelem"><a class="el" href="dir_3b9b8e98eade024f68a871db77d1527d.html">include</a></li><li class="navelem"><a class="el" href="_s_d_l__system_8h.html">SDL_system.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 20:57:16 for Super Happy Rocket by
+    <li class="footer">Generated on Fri Nov 22 2013 01:07:54 for Super Happy Rocket by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

@@ -130,7 +130,8 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a28f0e45d1be91312001526ec45d9dc83"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l__quit_8h.html#a28f0e45d1be91312001526ec45d9dc83">SDL_QuitRequested</a>()&#160;&#160;&#160;(<a class="el" href="_s_d_l__events_8h.html#aa15403d1c8fc341cd9cf750e27a66d19">SDL_PumpEvents</a>(), (<a class="el" href="_s_d_l__events_8h.html#a83618a672f963892ddd0eef74a402e75">SDL_PeepEvents</a>(<a class="el" href="begin__code_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,0,<a class="el" href="_s_d_l__events_8h.html#a8fdf1485b0419bb77b89e745267dc179a75469beff07bfd6aa7fa4f54674ce34d">SDL_PEEKEVENT</a>,<a class="el" href="_s_d_l__events_8h.html#a3b589e89be6b35c02e0dd34a55f3fccaa31acc5fdafc86ebe2c1f5c3cae48d603">SDL_QUIT</a>,<a class="el" href="_s_d_l__events_8h.html#a3b589e89be6b35c02e0dd34a55f3fccaa31acc5fdafc86ebe2c1f5c3cae48d603">SDL_QUIT</a>) &gt; 0))</td></tr>
+<tr class="memitem:a28f0e45d1be91312001526ec45d9dc83"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a28f0e45d1be91312001526ec45d9dc83"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SDL_QuitRequested</b>()&#160;&#160;&#160;(<a class="el" href="_s_d_l__events_8h.html#aa15403d1c8fc341cd9cf750e27a66d19">SDL_PumpEvents</a>(), (<a class="el" href="_s_d_l__events_8h.html#a83618a672f963892ddd0eef74a402e75">SDL_PeepEvents</a>(NULL,0,SDL_PEEKEVENT,<a class="el" href="_s_d_l__events_8h.html#a3b589e89be6b35c02e0dd34a55f3fccaa31acc5fdafc86ebe2c1f5c3cae48d603">SDL_QUIT</a>,<a class="el" href="_s_d_l__events_8h.html#a3b589e89be6b35c02e0dd34a55f3fccaa31acc5fdafc86ebe2c1f5c3cae48d603">SDL_QUIT</a>) &gt; 0))</td></tr>
 <tr class="separator:a28f0e45d1be91312001526ec45d9dc83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -138,29 +139,13 @@ Macros</h2></td></tr>
 <p>An <a class="el" href="_s_d_l__events_8h.html#a3b589e89be6b35c02e0dd34a55f3fccaa31acc5fdafc86ebe2c1f5c3cae48d603">SDL_QUIT</a> event is generated when the user tries to close the application window. If it is ignored or filtered out, the window will remain open. If it is not ignored or filtered, it is queued normally and the window is allowed to close. When the window is closed, screen updates will complete, but have no effect.</p>
 <p><a class="el" href="_s_d_l_8h.html#a8fc8d35348d7c74bad8392d776c937b8">SDL_Init()</a> installs signal handlers for SIGINT (keyboard interrupt) and SIGTERM (system termination request), if handlers do not already exist, that generate <a class="el" href="_s_d_l__events_8h.html#a3b589e89be6b35c02e0dd34a55f3fccaa31acc5fdafc86ebe2c1f5c3cae48d603">SDL_QUIT</a> events as well. There is no way to determine the cause of an <a class="el" href="_s_d_l__events_8h.html#a3b589e89be6b35c02e0dd34a55f3fccaa31acc5fdafc86ebe2c1f5c3cae48d603">SDL_QUIT</a> event, but setting a signal handler in your application will override the default generation of quit events for that signal.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="_s_d_l_8h.html#afdabaf714781099083592051f2d9ac11">SDL_Quit()</a> </dd></dl>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="a28f0e45d1be91312001526ec45d9dc83"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SDL_QuitRequested</td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;(<a class="el" href="_s_d_l__events_8h.html#aa15403d1c8fc341cd9cf750e27a66d19">SDL_PumpEvents</a>(), (<a class="el" href="_s_d_l__events_8h.html#a83618a672f963892ddd0eef74a402e75">SDL_PeepEvents</a>(<a class="el" href="begin__code_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,0,<a class="el" href="_s_d_l__events_8h.html#a8fdf1485b0419bb77b89e745267dc179a75469beff07bfd6aa7fa4f54674ce34d">SDL_PEEKEVENT</a>,<a class="el" href="_s_d_l__events_8h.html#a3b589e89be6b35c02e0dd34a55f3fccaa31acc5fdafc86ebe2c1f5c3cae48d603">SDL_QUIT</a>,<a class="el" href="_s_d_l__events_8h.html#a3b589e89be6b35c02e0dd34a55f3fccaa31acc5fdafc86ebe2c1f5c3cae48d603">SDL_QUIT</a>) &gt; 0))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_bb71c587d4eee030bda30f2f35ebd6b7.html">SDL</a></li><li class="navelem"><a class="el" href="dir_3b9b8e98eade024f68a871db77d1527d.html">include</a></li><li class="navelem"><a class="el" href="_s_d_l__quit_8h.html">SDL_quit.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 20:57:40 for Super Happy Rocket by
+    <li class="footer">Generated on Fri Nov 22 2013 01:07:55 for Super Happy Rocket by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

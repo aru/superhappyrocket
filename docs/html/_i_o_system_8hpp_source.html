@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('_i_o_system_8hpp_source.html','');});
 <div class="title">IOSystem.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_i_o_system_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">---------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">Open Asset Import Library (assimp)</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">---------------------------------------------------------------------------</span></div>
@@ -161,7 +161,7 @@ $(document).ready(function(){initNavTree('_i_o_system_8hpp_source.html','');});
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">class </span>IOStream;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">// ---------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="class_assimp_1_1_i_o_system.html">   67</a></span>&#160;<span class="comment"></span><span class="keyword">class </span><a class="code" href="defs_8h.html#a7d617d307e656cb6ff315ba71ff958d4">ASSIMP_API</a> <a class="code" href="class_assimp_1_1_i_o_system.html">IOSystem</a> : <span class="keyword">public</span> Intern::AllocateFromAssimpHeap</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="class_assimp_1_1_i_o_system.html">   67</a></span>&#160;<span class="comment"></span><span class="keyword">class </span>ASSIMP_API <a class="code" href="class_assimp_1_1_i_o_system.html">IOSystem</a> : <span class="keyword">public</span> Intern::AllocateFromAssimpHeap</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
@@ -175,7 +175,7 @@ $(document).ready(function(){initNavTree('_i_o_system_8hpp_source.html','');});
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">// -------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment"></span>    <a class="code" href="defs_8h.html#a61d239a320b58eca56bacc46fc2c79b8">AI_FORCE_INLINE</a> <span class="keywordtype">bool</span> Exists( <span class="keyword">const</span> <a class="code" href="_g_l_e_w_2glew_8h.html#a06b88fc81ad0b30d1512e9609e3d7c82">std::string</a>&amp; pFile) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment"></span>    AI_FORCE_INLINE <span class="keywordtype">bool</span> Exists( <span class="keyword">const</span> std::string&amp; pFile) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="comment">// -------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment"></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> Exists( <span class="keyword">const</span> <span class="keywordtype">char</span>* pFile) <span class="keyword">const</span> = 0;</div>
@@ -191,8 +191,8 @@ $(document).ready(function(){initNavTree('_i_o_system_8hpp_source.html','');});
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* pMode = <span class="stringliteral">&quot;rb&quot;</span>) = 0;</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="comment">// -------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="comment"></span>    <span class="keyword">inline</span> <a class="code" href="class_assimp_1_1_i_o_stream.html">IOStream</a>* Open(<span class="keyword">const</span> <a class="code" href="_g_l_e_w_2glew_8h.html#a06b88fc81ad0b30d1512e9609e3d7c82">std::string</a>&amp; pFile,</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="keyword">const</span> <a class="code" href="_g_l_e_w_2glew_8h.html#a06b88fc81ad0b30d1512e9609e3d7c82">std::string</a>&amp; pMode = <a class="code" href="_g_l_e_w_2glew_8h.html#a06b88fc81ad0b30d1512e9609e3d7c82">std::string</a>(<span class="stringliteral">&quot;rb&quot;</span>));</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="comment"></span>    <span class="keyword">inline</span> <a class="code" href="class_assimp_1_1_i_o_stream.html">IOStream</a>* Open(<span class="keyword">const</span> std::string&amp; pFile,</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="keyword">const</span> std::string&amp; pMode = std::string(<span class="stringliteral">&quot;rb&quot;</span>));</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
@@ -204,18 +204,18 @@ $(document).ready(function(){initNavTree('_i_o_system_8hpp_source.html','');});
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* second) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="comment">// -------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="comment"></span>    <span class="keyword">inline</span> <span class="keywordtype">bool</span> ComparePaths (<span class="keyword">const</span> <a class="code" href="_g_l_e_w_2glew_8h.html#a06b88fc81ad0b30d1512e9609e3d7c82">std::string</a>&amp; one, </div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <span class="keyword">const</span> <a class="code" href="_g_l_e_w_2glew_8h.html#a06b88fc81ad0b30d1512e9609e3d7c82">std::string</a>&amp; second) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="comment"></span>    <span class="keyword">inline</span> <span class="keywordtype">bool</span> ComparePaths (<span class="keyword">const</span> std::string&amp; one, </div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <span class="keyword">const</span> std::string&amp; second) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;};</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="comment">// ----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00173"></a><span class="lineno"><a class="line" href="class_assimp_1_1_i_o_system.html#af8ba1ee2dc0686da8fc9e3dad49af801">  173</a></span>&#160;<a class="code" href="defs_8h.html#a61d239a320b58eca56bacc46fc2c79b8">AI_FORCE_INLINE</a> <a class="code" href="class_assimp_1_1_i_o_system.html#af8ba1ee2dc0686da8fc9e3dad49af801">IOSystem::IOSystem</a>() </div>
+<div class="line"><a name="l00173"></a><span class="lineno"><a class="line" href="class_assimp_1_1_i_o_system.html#af8ba1ee2dc0686da8fc9e3dad49af801">  173</a></span>&#160;AI_FORCE_INLINE <a class="code" href="class_assimp_1_1_i_o_system.html#af8ba1ee2dc0686da8fc9e3dad49af801">IOSystem::IOSystem</a>() </div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;{</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="comment">// empty</span></div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;}</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="comment">// ----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00179"></a><span class="lineno"><a class="line" href="class_assimp_1_1_i_o_system.html#a617417f1c5125770606fea3b41068b36">  179</a></span>&#160;<a class="code" href="defs_8h.html#a61d239a320b58eca56bacc46fc2c79b8">AI_FORCE_INLINE</a> <a class="code" href="class_assimp_1_1_i_o_system.html#a617417f1c5125770606fea3b41068b36">IOSystem::~IOSystem</a>() </div>
+<div class="line"><a name="l00179"></a><span class="lineno"><a class="line" href="class_assimp_1_1_i_o_system.html#a617417f1c5125770606fea3b41068b36">  179</a></span>&#160;AI_FORCE_INLINE <a class="code" href="class_assimp_1_1_i_o_system.html#a617417f1c5125770606fea3b41068b36">IOSystem::~IOSystem</a>() </div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;{</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="comment">// empty</span></div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;}</div>
@@ -227,8 +227,8 @@ $(document).ready(function(){initNavTree('_i_o_system_8hpp_source.html','');});
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="comment">// ----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="comment">// ----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00191"></a><span class="lineno"><a class="line" href="class_assimp_1_1_i_o_system.html#aef35fabc9bd49fb83bfd4f12a94083c3">  191</a></span>&#160;<a class="code" href="defs_8h.html#a61d239a320b58eca56bacc46fc2c79b8">AI_FORCE_INLINE</a> <a class="code" href="class_assimp_1_1_i_o_stream.html">IOStream</a>* <a class="code" href="class_assimp_1_1_i_o_system.html#ac512ece3b0701de5682553007a4c0816">IOSystem::Open</a>(<span class="keyword">const</span> <a class="code" href="_g_l_e_w_2glew_8h.html#a06b88fc81ad0b30d1512e9609e3d7c82">std::string</a>&amp; pFile,</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keyword">const</span> <a class="code" href="_g_l_e_w_2glew_8h.html#a06b88fc81ad0b30d1512e9609e3d7c82">std::string</a>&amp; pMode)</div>
+<div class="line"><a name="l00191"></a><span class="lineno"><a class="line" href="class_assimp_1_1_i_o_system.html#aef35fabc9bd49fb83bfd4f12a94083c3">  191</a></span>&#160;AI_FORCE_INLINE <a class="code" href="class_assimp_1_1_i_o_stream.html">IOStream</a>* <a class="code" href="class_assimp_1_1_i_o_system.html#ac512ece3b0701de5682553007a4c0816">IOSystem::Open</a>(<span class="keyword">const</span> std::string&amp; pFile,</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keyword">const</span> std::string&amp; pMode)</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;{</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="comment">// NOTE:</span></div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="comment">// For compatibility, interface was changed to const char* to</span></div>
@@ -237,7 +237,7 @@ $(document).ready(function(){initNavTree('_i_o_system_8hpp_source.html','');});
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;}</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="comment">// ----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00201"></a><span class="lineno"><a class="line" href="class_assimp_1_1_i_o_system.html#a7ae6cfaea4957408967463bfc3b84b27">  201</a></span>&#160;<a class="code" href="defs_8h.html#a61d239a320b58eca56bacc46fc2c79b8">AI_FORCE_INLINE</a> <span class="keywordtype">bool</span> <a class="code" href="class_assimp_1_1_i_o_system.html#a7ae6cfaea4957408967463bfc3b84b27">IOSystem::Exists</a>( <span class="keyword">const</span> <a class="code" href="_g_l_e_w_2glew_8h.html#a06b88fc81ad0b30d1512e9609e3d7c82">std::string</a>&amp; pFile)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno"><a class="line" href="class_assimp_1_1_i_o_system.html#a7ae6cfaea4957408967463bfc3b84b27">  201</a></span>&#160;AI_FORCE_INLINE <span class="keywordtype">bool</span> <a class="code" href="class_assimp_1_1_i_o_system.html#a7ae6cfaea4957408967463bfc3b84b27">IOSystem::Exists</a>( <span class="keyword">const</span> std::string&amp; pFile)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="comment">// NOTE:</span></div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="comment">// For compatibility, interface was changed to const char* to</span></div>
@@ -246,8 +246,8 @@ $(document).ready(function(){initNavTree('_i_o_system_8hpp_source.html','');});
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;}</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="comment">// ----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00210"></a><span class="lineno"><a class="line" href="class_assimp_1_1_i_o_system.html#a279d1d4b0b2aa37800e222aad508dff1">  210</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="class_assimp_1_1_i_o_system.html#a11349a65b353ed62f655c3dd802b9062">IOSystem::ComparePaths</a> (<span class="keyword">const</span> <a class="code" href="_g_l_e_w_2glew_8h.html#a06b88fc81ad0b30d1512e9609e3d7c82">std::string</a>&amp; one, </div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="keyword">const</span> <a class="code" href="_g_l_e_w_2glew_8h.html#a06b88fc81ad0b30d1512e9609e3d7c82">std::string</a>&amp; second)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno"><a class="line" href="class_assimp_1_1_i_o_system.html#a279d1d4b0b2aa37800e222aad508dff1">  210</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="class_assimp_1_1_i_o_system.html#a11349a65b353ed62f655c3dd802b9062">IOSystem::ComparePaths</a> (<span class="keyword">const</span> std::string&amp; one, </div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="keyword">const</span> std::string&amp; second)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <span class="comment">// NOTE:</span></div>
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="comment">// For compatibility, interface was changed to const char* to</span></div>
@@ -260,23 +260,20 @@ $(document).ready(function(){initNavTree('_i_o_system_8hpp_source.html','');});
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="preprocessor">#endif //AI_IOSYSTEM_H_INC</span></div>
 <div class="ttc" id="types_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div></div>
-<div class="ttc" id="defs_8h_html_a61d239a320b58eca56bacc46fc2c79b8"><div class="ttname"><a href="defs_8h.html#a61d239a320b58eca56bacc46fc2c79b8">AI_FORCE_INLINE</a></div><div class="ttdeci">#define AI_FORCE_INLINE</div><div class="ttdef"><b>Definition:</b> defs.h:144</div></div>
 <div class="ttc" id="class_assimp_1_1_i_o_system_html_a11349a65b353ed62f655c3dd802b9062"><div class="ttname"><a href="class_assimp_1_1_i_o_system.html#a11349a65b353ed62f655c3dd802b9062">Assimp::IOSystem::ComparePaths</a></div><div class="ttdeci">virtual bool ComparePaths(const char *one, const char *second) const </div><div class="ttdoc">Compares two paths and check whether the point to identical files. </div></div>
 <div class="ttc" id="class_assimp_1_1_i_o_system_html_a7ae6cfaea4957408967463bfc3b84b27"><div class="ttname"><a href="class_assimp_1_1_i_o_system.html#a7ae6cfaea4957408967463bfc3b84b27">Assimp::IOSystem::Exists</a></div><div class="ttdeci">AI_FORCE_INLINE bool Exists(const std::string &amp;pFile) const </div><div class="ttdoc">For backward compatibility. </div><div class="ttdef"><b>Definition:</b> IOSystem.hpp:201</div></div>
-<div class="ttc" id="_g_l_e_w_2glew_8h_html_a06b88fc81ad0b30d1512e9609e3d7c82"><div class="ttname"><a href="_g_l_e_w_2glew_8h.html#a06b88fc81ad0b30d1512e9609e3d7c82">string</a></div><div class="ttdeci">GLsizei const GLcharARB ** string</div><div class="ttdef"><b>Definition:</b> glew.h:5638</div></div>
 <div class="ttc" id="class_assimp_1_1_i_o_system_html_af8ba1ee2dc0686da8fc9e3dad49af801"><div class="ttname"><a href="class_assimp_1_1_i_o_system.html#af8ba1ee2dc0686da8fc9e3dad49af801">Assimp::IOSystem::IOSystem</a></div><div class="ttdeci">IOSystem()</div><div class="ttdoc">Default constructor. </div><div class="ttdef"><b>Definition:</b> IOSystem.hpp:173</div></div>
 <div class="ttc" id="class_assimp_1_1_i_o_system_html_a617417f1c5125770606fea3b41068b36"><div class="ttname"><a href="class_assimp_1_1_i_o_system.html#a617417f1c5125770606fea3b41068b36">Assimp::IOSystem::~IOSystem</a></div><div class="ttdeci">virtual ~IOSystem()</div><div class="ttdoc">Virtual destructor. </div><div class="ttdef"><b>Definition:</b> IOSystem.hpp:179</div></div>
 <div class="ttc" id="class_assimp_1_1_i_o_stream_html"><div class="ttname"><a href="class_assimp_1_1_i_o_stream.html">Assimp::IOStream</a></div><div class="ttdoc">CPP-API: Class to handle file I/O for C++. </div><div class="ttdef"><b>Definition:</b> IOStream.hpp:64</div></div>
 <div class="ttc" id="class_assimp_1_1_i_o_system_html"><div class="ttname"><a href="class_assimp_1_1_i_o_system.html">Assimp::IOSystem</a></div><div class="ttdoc">CPP-API: Interface to the file system. </div><div class="ttdef"><b>Definition:</b> IOSystem.hpp:67</div></div>
 <div class="ttc" id="class_assimp_1_1_i_o_system_html_ac512ece3b0701de5682553007a4c0816"><div class="ttname"><a href="class_assimp_1_1_i_o_system.html#ac512ece3b0701de5682553007a4c0816">Assimp::IOSystem::Open</a></div><div class="ttdeci">virtual IOStream * Open(const char *pFile, const char *pMode=&quot;rb&quot;)=0</div><div class="ttdoc">Open a new file with a given path. </div></div>
-<div class="ttc" id="defs_8h_html_a7d617d307e656cb6ff315ba71ff958d4"><div class="ttname"><a href="defs_8h.html#a7d617d307e656cb6ff315ba71ff958d4">ASSIMP_API</a></div><div class="ttdeci">#define ASSIMP_API</div><div class="ttdef"><b>Definition:</b> defs.h:142</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_2a3ab8ae23d2cffc0bffa70c4703d52b.html">assimp</a></li><li class="navelem"><a class="el" href="dir_775f47f696c8e1c7e288eb84d9156930.html">include</a></li><li class="navelem"><a class="el" href="_i_o_system_8hpp.html">IOSystem.hpp</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 20:57:10 for Super Happy Rocket by
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_2a3ab8ae23d2cffc0bffa70c4703d52b.html">assimp</a></li><li class="navelem"><a class="el" href="dir_775f47f696c8e1c7e288eb84d9156930.html">include</a></li><li class="navelem"><b>IOSystem.hpp</b></li>
+    <li class="footer">Generated on Fri Nov 22 2013 01:07:49 for Super Happy Rocket by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

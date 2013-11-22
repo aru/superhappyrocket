@@ -11,5 +11,4 @@ digraph "include/GLTools" {
     dir_e06d6f7f64394931447d653856f6e441 [shape=box label="src" color="black" fillcolor="white" style="filled" URL="dir_e06d6f7f64394931447d653856f6e441.html"];
   }
   }
-  dir_e06d6f7f64394931447d653856f6e441->dir_0bdf6ec8bf0dd4e8a8e77453d3eb4f73 [headlabel="10", labeldistance=1.5 headhref="dir_000011_000007.html"];
 }

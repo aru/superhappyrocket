@@ -124,13 +124,13 @@ Collaboration diagram for aiCamera:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:aa6a5fe5e04b3db1b23f69eb9910c6816"><td class="memItemLeft" align="right" valign="top"><a class="el" href="defs_8h.html#ab51df4230ceb602bbc1bc109c432a6a0">C_STRUCT</a> <a class="el" href="structai_string.html">aiString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structai_camera.html#aa6a5fe5e04b3db1b23f69eb9910c6816">mName</a></td></tr>
+<tr class="memitem:aa6a5fe5e04b3db1b23f69eb9910c6816"><td class="memItemLeft" align="right" valign="top">C_STRUCT <a class="el" href="structai_string.html">aiString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structai_camera.html#aa6a5fe5e04b3db1b23f69eb9910c6816">mName</a></td></tr>
 <tr class="separator:aa6a5fe5e04b3db1b23f69eb9910c6816"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a518617ea192ca0698e748a4399e7c3a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="defs_8h.html#ab51df4230ceb602bbc1bc109c432a6a0">C_STRUCT</a> <a class="el" href="structai_vector3_d.html">aiVector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structai_camera.html#a518617ea192ca0698e748a4399e7c3a5">mPosition</a></td></tr>
+<tr class="memitem:a518617ea192ca0698e748a4399e7c3a5"><td class="memItemLeft" align="right" valign="top">C_STRUCT <a class="el" href="structai_vector3_d.html">aiVector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structai_camera.html#a518617ea192ca0698e748a4399e7c3a5">mPosition</a></td></tr>
 <tr class="separator:a518617ea192ca0698e748a4399e7c3a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fb42b287389b4f99c883098268d6d1a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="defs_8h.html#ab51df4230ceb602bbc1bc109c432a6a0">C_STRUCT</a> <a class="el" href="structai_vector3_d.html">aiVector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structai_camera.html#a7fb42b287389b4f99c883098268d6d1a">mUp</a></td></tr>
+<tr class="memitem:a7fb42b287389b4f99c883098268d6d1a"><td class="memItemLeft" align="right" valign="top">C_STRUCT <a class="el" href="structai_vector3_d.html">aiVector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structai_camera.html#a7fb42b287389b4f99c883098268d6d1a">mUp</a></td></tr>
 <tr class="separator:a7fb42b287389b4f99c883098268d6d1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9463249ac870e030fa435b1186cef23"><td class="memItemLeft" align="right" valign="top"><a class="el" href="defs_8h.html#ab51df4230ceb602bbc1bc109c432a6a0">C_STRUCT</a> <a class="el" href="structai_vector3_d.html">aiVector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structai_camera.html#af9463249ac870e030fa435b1186cef23">mLookAt</a></td></tr>
+<tr class="memitem:af9463249ac870e030fa435b1186cef23"><td class="memItemLeft" align="right" valign="top">C_STRUCT <a class="el" href="structai_vector3_d.html">aiVector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structai_camera.html#af9463249ac870e030fa435b1186cef23">mLookAt</a></td></tr>
 <tr class="separator:af9463249ac870e030fa435b1186cef23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcdea73ece19ea0a9068f5544ec23592"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structai_camera.html#adcdea73ece19ea0a9068f5544ec23592">mHorizontalFOV</a></td></tr>
 <tr class="separator:adcdea73ece19ea0a9068f5544ec23592"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,22 +149,22 @@ Public Attributes</h2></td></tr>
 <div class="fragment"><div class="line">* <span class="comment">// Get the camera matrix for a camera at a specific time</span></div>
 <div class="line">* <span class="comment">// if the node hierarchy for the camera does not contain</span></div>
 <div class="line">* <span class="comment">// at least one animated node this is a static computation</span></div>
-<div class="line">* <span class="keyword">get</span>-camera-<a class="code" href="_g_l_e_w_2glew_8h.html#a7b24a3f2f56eb1244ae69dacb4fecb6f">matrix</a> (node sceneRoot, camera cam) : matrix</div>
+<div class="line">* <span class="keyword">get</span>-camera-matrix (node sceneRoot, camera cam) : matrix</div>
 <div class="line">* {</div>
 <div class="line">*    node   cnd = find-node-<span class="keywordflow">for</span>-camera(cam)</div>
 <div class="line">*    matrix cmt = identity()</div>
 <div class="line">*</div>
 <div class="line">*    <span class="comment">// as usual - get the absolute camera transformation for this frame</span></div>
-<div class="line">*    <span class="keywordflow">for each</span> node nd <a class="code" href="_g_l_e_w_2glew_8h.html#a83ad0ee7f1e06b59c90271716e689080">in</a> hierarchy from sceneRoot to cnd</div>
+<div class="line">*    <span class="keywordflow">for each</span> node nd in hierarchy from sceneRoot to cnd</div>
 <div class="line">*      matrix cur</div>
 <div class="line">*      <span class="keywordflow">if</span> (is-animated(nd))</div>
 <div class="line">*         cur = eval-animation(nd)</div>
 <div class="line">*      <span class="keywordflow">else</span> cur = nd-&gt;mTransformation;</div>
 <div class="line">*      cmt = mult-matrices( cmt, cur )</div>
-<div class="line">*    <a class="code" href="_g_l_e_w_2glew_8h.html#a432111147038972f06e049e18a837002">end</a> <span class="keywordflow">for</span></div>
+<div class="line">*    end <span class="keywordflow">for</span></div>
 <div class="line">*</div>
 <div class="line">*    <span class="comment">// now multiply with the camera&#39;s own local transform</span></div>
-<div class="line">*    cam = mult-matrices (cam, <span class="keyword">get</span>-camera-<a class="code" href="_g_l_e_w_2glew_8h.html#a7b24a3f2f56eb1244ae69dacb4fecb6f">matrix</a>(cmt) )</div>
+<div class="line">*    cam = mult-matrices (cam, <span class="keyword">get</span>-camera-matrix(cmt) )</div>
 <div class="line">* }</div>
 <div class="line">* </div>
 </div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>some file formats (such as 3DS, ASE) export a "target point" - the point the camera is looking at (it can even be animated). <a class="el" href="namespace_assimp.html">Assimp</a> writes the target point as a subnode of the camera's main node, called "&lt;camName&gt;.Target". However this is just additional information then the transformation tracks of the camera main node make the camera already look in the right direction. </dd></dl>
@@ -230,7 +230,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="defs_8h.html#ab51df4230ceb602bbc1bc109c432a6a0">C_STRUCT</a> <a class="el" href="structai_vector3_d.html">aiVector3D</a> aiCamera::mLookAt</td>
+          <td class="memname">C_STRUCT <a class="el" href="structai_vector3_d.html">aiVector3D</a> aiCamera::mLookAt</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -244,7 +244,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="defs_8h.html#ab51df4230ceb602bbc1bc109c432a6a0">C_STRUCT</a> <a class="el" href="structai_string.html">aiString</a> aiCamera::mName</td>
+          <td class="memname">C_STRUCT <a class="el" href="structai_string.html">aiString</a> aiCamera::mName</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -258,7 +258,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="defs_8h.html#ab51df4230ceb602bbc1bc109c432a6a0">C_STRUCT</a> <a class="el" href="structai_vector3_d.html">aiVector3D</a> aiCamera::mPosition</td>
+          <td class="memname">C_STRUCT <a class="el" href="structai_vector3_d.html">aiVector3D</a> aiCamera::mPosition</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -272,7 +272,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="defs_8h.html#ab51df4230ceb602bbc1bc109c432a6a0">C_STRUCT</a> <a class="el" href="structai_vector3_d.html">aiVector3D</a> aiCamera::mUp</td>
+          <td class="memname">C_STRUCT <a class="el" href="structai_vector3_d.html">aiVector3D</a> aiCamera::mUp</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -290,7 +290,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structai_camera.html">aiCamera</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 20:58:00 for Super Happy Rocket by
+    <li class="footer">Generated on Fri Nov 22 2013 01:07:56 for Super Happy Rocket by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

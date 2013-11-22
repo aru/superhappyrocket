@@ -135,31 +135,34 @@ Collaboration diagram for Assimp::IOStream:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6cedc5033bf531bf14b97d1c9b788de8"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_assimp_1_1_i_o_stream.html#a6cedc5033bf531bf14b97d1c9b788de8">~IOStream</a> ()</td></tr>
-<tr class="memdesc:a6cedc5033bf531bf14b97d1c9b788de8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. Deleting the object closes the underlying file, alternatively you may use <a class="el" href="class_assimp_1_1_i_o_system.html#a8c334d60f04bceeb6bd0157d21723f3e" title="Closes the given file and releases all resources associated with it. ">IOSystem::Close()</a> to release the file.  <a href="#a6cedc5033bf531bf14b97d1c9b788de8">More...</a><br/></td></tr>
+<tr class="memitem:a6cedc5033bf531bf14b97d1c9b788de8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6cedc5033bf531bf14b97d1c9b788de8"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_assimp_1_1_i_o_stream.html#a6cedc5033bf531bf14b97d1c9b788de8">~IOStream</a> ()</td></tr>
+<tr class="memdesc:a6cedc5033bf531bf14b97d1c9b788de8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. Deleting the object closes the underlying file, alternatively you may use <a class="el" href="class_assimp_1_1_i_o_system.html#a8c334d60f04bceeb6bd0157d21723f3e" title="Closes the given file and releases all resources associated with it. ">IOSystem::Close()</a> to release the file. <br/></td></tr>
 <tr class="separator:a6cedc5033bf531bf14b97d1c9b788de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae376f641020989d61863b9c6f55c7abf"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_s_d_l__config_8h.html#a7c94ea6f8948649f8d181ae55911eeaf">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_assimp_1_1_i_o_stream.html#ae376f641020989d61863b9c6f55c7abf">Read</a> (<a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> *pvBuffer, <a class="el" href="_s_d_l__config_8h.html#a7c94ea6f8948649f8d181ae55911eeaf">size_t</a> <a class="el" href="_g_l_e_w_2wglew_8h.html#a95e478a19268863e38a9733ac885ac14">pSize</a>, <a class="el" href="_s_d_l__config_8h.html#a7c94ea6f8948649f8d181ae55911eeaf">size_t</a> pCount)=0</td></tr>
+<tr class="memitem:ae376f641020989d61863b9c6f55c7abf"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_assimp_1_1_i_o_stream.html#ae376f641020989d61863b9c6f55c7abf">Read</a> (<a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a> *pvBuffer, size_t pSize, size_t pCount)=0</td></tr>
 <tr class="memdesc:ae376f641020989d61863b9c6f55c7abf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read from the file.  <a href="#ae376f641020989d61863b9c6f55c7abf">More...</a><br/></td></tr>
 <tr class="separator:ae376f641020989d61863b9c6f55c7abf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0ca4aae1b8c4d00db391ac3a4171f7b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_s_d_l__config_8h.html#a7c94ea6f8948649f8d181ae55911eeaf">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_assimp_1_1_i_o_stream.html#ad0ca4aae1b8c4d00db391ac3a4171f7b">Write</a> (const <a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> *pvBuffer, <a class="el" href="_s_d_l__config_8h.html#a7c94ea6f8948649f8d181ae55911eeaf">size_t</a> <a class="el" href="_g_l_e_w_2wglew_8h.html#a95e478a19268863e38a9733ac885ac14">pSize</a>, <a class="el" href="_s_d_l__config_8h.html#a7c94ea6f8948649f8d181ae55911eeaf">size_t</a> pCount)=0</td></tr>
+<tr class="memitem:ad0ca4aae1b8c4d00db391ac3a4171f7b"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_assimp_1_1_i_o_stream.html#ad0ca4aae1b8c4d00db391ac3a4171f7b">Write</a> (const <a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a> *pvBuffer, size_t pSize, size_t pCount)=0</td></tr>
 <tr class="memdesc:ad0ca4aae1b8c4d00db391ac3a4171f7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write to the file.  <a href="#ad0ca4aae1b8c4d00db391ac3a4171f7b">More...</a><br/></td></tr>
 <tr class="separator:ad0ca4aae1b8c4d00db391ac3a4171f7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ed0dddf418ab08cf3fc21f3f3032220"><td class="memItemLeft" align="right" valign="top">virtual aiReturn&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_assimp_1_1_i_o_stream.html#a5ed0dddf418ab08cf3fc21f3f3032220">Seek</a> (<a class="el" href="_s_d_l__config_8h.html#a7c94ea6f8948649f8d181ae55911eeaf">size_t</a> pOffset, aiOrigin pOrigin)=0</td></tr>
+<tr class="memitem:a5ed0dddf418ab08cf3fc21f3f3032220"><td class="memItemLeft" align="right" valign="top">virtual aiReturn&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_assimp_1_1_i_o_stream.html#a5ed0dddf418ab08cf3fc21f3f3032220">Seek</a> (size_t pOffset, aiOrigin pOrigin)=0</td></tr>
 <tr class="memdesc:a5ed0dddf418ab08cf3fc21f3f3032220"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the read/write cursor of the file.  <a href="#a5ed0dddf418ab08cf3fc21f3f3032220">More...</a><br/></td></tr>
 <tr class="separator:a5ed0dddf418ab08cf3fc21f3f3032220"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a316ac6cd16b5a493d1313f792c806194"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_s_d_l__config_8h.html#a7c94ea6f8948649f8d181ae55911eeaf">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_assimp_1_1_i_o_stream.html#a316ac6cd16b5a493d1313f792c806194">Tell</a> () const =0</td></tr>
+<tr class="memitem:a316ac6cd16b5a493d1313f792c806194"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_assimp_1_1_i_o_stream.html#a316ac6cd16b5a493d1313f792c806194">Tell</a> () const =0</td></tr>
 <tr class="memdesc:a316ac6cd16b5a493d1313f792c806194"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current position of the read/write cursor.  <a href="#a316ac6cd16b5a493d1313f792c806194">More...</a><br/></td></tr>
 <tr class="separator:a316ac6cd16b5a493d1313f792c806194"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa01183d197fb714f28d6c611b6fa058"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_s_d_l__config_8h.html#a7c94ea6f8948649f8d181ae55911eeaf">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_assimp_1_1_i_o_stream.html#aaa01183d197fb714f28d6c611b6fa058">FileSize</a> () const =0</td></tr>
-<tr class="memdesc:aaa01183d197fb714f28d6c611b6fa058"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns filesize Returns the filesize.  <a href="#aaa01183d197fb714f28d6c611b6fa058">More...</a><br/></td></tr>
+<tr class="memitem:aaa01183d197fb714f28d6c611b6fa058"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaa01183d197fb714f28d6c611b6fa058"></a>
+virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_assimp_1_1_i_o_stream.html#aaa01183d197fb714f28d6c611b6fa058">FileSize</a> () const =0</td></tr>
+<tr class="memdesc:aaa01183d197fb714f28d6c611b6fa058"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns filesize Returns the filesize. <br/></td></tr>
 <tr class="separator:aaa01183d197fb714f28d6c611b6fa058"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c19952446ece90924b246f087417899"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_assimp_1_1_i_o_stream.html#a7c19952446ece90924b246f087417899">Flush</a> ()=0</td></tr>
-<tr class="memdesc:a7c19952446ece90924b246f087417899"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flush the contents of the file buffer (for writers) See fflush() for more details.  <a href="#a7c19952446ece90924b246f087417899">More...</a><br/></td></tr>
+<tr class="memitem:a7c19952446ece90924b246f087417899"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c19952446ece90924b246f087417899"></a>
+virtual <a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_assimp_1_1_i_o_stream.html#a7c19952446ece90924b246f087417899">Flush</a> ()=0</td></tr>
+<tr class="memdesc:a7c19952446ece90924b246f087417899"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flush the contents of the file buffer (for writers) See fflush() for more details. <br/></td></tr>
 <tr class="separator:a7c19952446ece90924b246f087417899"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:af5ae78123b6c6f7afc31b2a52dc9192e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_assimp_1_1_i_o_stream.html#af5ae78123b6c6f7afc31b2a52dc9192e">IOStream</a> (<a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a>)</td></tr>
+<tr class="memitem:af5ae78123b6c6f7afc31b2a52dc9192e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_assimp_1_1_i_o_stream.html#af5ae78123b6c6f7afc31b2a52dc9192e">IOStream</a> (<a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a>)</td></tr>
 <tr class="memdesc:af5ae78123b6c6f7afc31b2a52dc9192e"><td class="mdescLeft">&#160;</td><td class="mdescRight">class <a class="el" href="class_assimp_1_1_i_o_stream.html" title="CPP-API: Class to handle file I/O for C++. ">IOStream</a>  <a href="#af5ae78123b6c6f7afc31b2a52dc9192e">More...</a><br/></td></tr>
 <tr class="separator:af5ae78123b6c6f7afc31b2a52dc9192e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -177,7 +180,7 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">Assimp::IOStream::IOStream </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -194,82 +197,7 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a6cedc5033bf531bf14b97d1c9b788de8"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Assimp::IOStream::~IOStream </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Destructor. Deleting the object closes the underlying file, alternatively you may use <a class="el" href="class_assimp_1_1_i_o_system.html#a8c334d60f04bceeb6bd0157d21723f3e" title="Closes the given file and releases all resources associated with it. ">IOSystem::Close()</a> to release the file. </p>
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aaa01183d197fb714f28d6c611b6fa058"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="_s_d_l__config_8h.html#a7c94ea6f8948649f8d181ae55911eeaf">size_t</a> Assimp::IOStream::FileSize </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns filesize Returns the filesize. </p>
-
-</div>
-</div>
-<a class="anchor" id="a7c19952446ece90924b246f087417899"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> Assimp::IOStream::Flush </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Flush the contents of the file buffer (for writers) See fflush() for more details. </p>
-
-</div>
-</div>
 <a class="anchor" id="ae376f641020989d61863b9c6f55c7abf"></a>
 <div class="memitem">
 <div class="memproto">
@@ -278,21 +206,21 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="_s_d_l__config_8h.html#a7c94ea6f8948649f8d181ae55911eeaf">size_t</a> Assimp::IOStream::Read </td>
+          <td class="memname">virtual size_t Assimp::IOStream::Read </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a> *&#160;</td>
           <td class="paramname"><em>pvBuffer</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_s_d_l__config_8h.html#a7c94ea6f8948649f8d181ae55911eeaf">size_t</a>&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>pSize</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_s_d_l__config_8h.html#a7c94ea6f8948649f8d181ae55911eeaf">size_t</a>&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>pCount</em>&#160;</td>
         </tr>
         <tr>
@@ -323,7 +251,7 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual aiReturn Assimp::IOStream::Seek </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_s_d_l__config_8h.html#a7c94ea6f8948649f8d181ae55911eeaf">size_t</a>&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>pOffset</em>, </td>
         </tr>
         <tr>
@@ -358,7 +286,7 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="_s_d_l__config_8h.html#a7c94ea6f8948649f8d181ae55911eeaf">size_t</a> Assimp::IOStream::Tell </td>
+          <td class="memname">virtual size_t Assimp::IOStream::Tell </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -384,21 +312,21 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="_s_d_l__config_8h.html#a7c94ea6f8948649f8d181ae55911eeaf">size_t</a> Assimp::IOStream::Write </td>
+          <td class="memname">virtual size_t Assimp::IOStream::Write </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a> *&#160;</td>
           <td class="paramname"><em>pvBuffer</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_s_d_l__config_8h.html#a7c94ea6f8948649f8d181ae55911eeaf">size_t</a>&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>pSize</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_s_d_l__config_8h.html#a7c94ea6f8948649f8d181ae55911eeaf">size_t</a>&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>pCount</em>&#160;</td>
         </tr>
         <tr>
@@ -428,7 +356,7 @@ Protected Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_assimp.html">Assimp</a></li><li class="navelem"><a class="el" href="class_assimp_1_1_i_o_stream.html">IOStream</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 20:58:05 for Super Happy Rocket by
+    <li class="footer">Generated on Fri Nov 22 2013 01:07:58 for Super Happy Rocket by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

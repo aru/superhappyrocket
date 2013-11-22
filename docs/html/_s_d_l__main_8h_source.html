@@ -164,14 +164,14 @@ $(document).ready(function(){initNavTree('_s_d_l__main_8h_source.html','');});
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define C_LINKAGE   &quot;C&quot;</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="_s_d_l__main_8h.html#aff46224d961128004c2b4223648f3d40">   64</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define C_LINKAGE</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define C_LINKAGE</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#if defined(SDL_MAIN_NEEDED) || defined(SDL_MAIN_AVAILABLE)</span></div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define main    SDL_main</span></div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">extern</span> <a class="code" href="_s_d_l__main_8h.html#aff46224d961128004c2b4223648f3d40">C_LINKAGE</a> <span class="keywordtype">int</span> <a class="code" href="_s_d_l__main_8h.html#abebe82923d88787c3718e201b3e62295">SDL_main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[]);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">extern</span> C_LINKAGE <span class="keywordtype">int</span> <a class="code" href="_s_d_l__main_8h.html#abebe82923d88787c3718e201b3e62295">SDL_main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[]);</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="begin__code_8h.html">begin_code.h</a>&quot;</span></div>
@@ -186,13 +186,13 @@ $(document).ready(function(){initNavTree('_s_d_l__main_8h_source.html','');});
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment"> *  Calling this yourself without knowing what you&#39;re doing can cause</span></div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment"> *  crashes and hard to diagnose problems with your application.</span></div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">extern</span> <a class="code" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <span class="keywordtype">void</span> <a class="code" href="_s_d_l__main_8h.html#a1708741e718285d8ca53f1287fbe7dc7">SDL_SetMainReady</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">extern</span> DECLSPEC <span class="keywordtype">void</span> SDL_SetMainReady(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#ifdef __WIN32__</span></div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keyword">extern</span> <a class="code" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <span class="keywordtype">int</span> <a class="code" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_RegisterApp(<span class="keywordtype">char</span> *<a class="code" href="_g_l_e_w_2glew_8h.html#aaced7cfc21e7d37775d6921bb8177239">name</a>, <a class="code" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> style,</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keyword">extern</span> DECLSPEC <span class="keywordtype">int</span> SDLCALL SDL_RegisterApp(<span class="keywordtype">char</span> *name, <a class="code" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> style,</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                                            <span class="keywordtype">void</span> *hInst);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keyword">extern</span> <a class="code" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <span class="keywordtype">void</span> <a class="code" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_UnregisterApp(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keyword">extern</span> DECLSPEC <span class="keywordtype">void</span> SDLCALL SDL_UnregisterApp(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __WIN32__ */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor"></span></div>
@@ -205,23 +205,18 @@ $(document).ready(function(){initNavTree('_s_d_l__main_8h_source.html','');});
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _SDL_main_h */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="comment">/* vi: set ts=4 sw=4 expandtab: */</span></div>
-<div class="ttc" id="_s_d_l__main_8h_html_a1708741e718285d8ca53f1287fbe7dc7"><div class="ttname"><a href="_s_d_l__main_8h.html#a1708741e718285d8ca53f1287fbe7dc7">SDL_SetMainReady</a></div><div class="ttdeci">DECLSPEC void SDL_SetMainReady(void)</div></div>
-<div class="ttc" id="_s_d_l__main_8h_html_aff46224d961128004c2b4223648f3d40"><div class="ttname"><a href="_s_d_l__main_8h.html#aff46224d961128004c2b4223648f3d40">C_LINKAGE</a></div><div class="ttdeci">#define C_LINKAGE</div><div class="ttdef"><b>Definition:</b> SDL_main.h:64</div></div>
-<div class="ttc" id="begin__code_8h_html_aa4c7a931f4a968f818b2a1b10a432185"><div class="ttname"><a href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a></div><div class="ttdeci">#define DECLSPEC</div><div class="ttdef"><b>Definition:</b> begin_code.h:58</div></div>
 <div class="ttc" id="_s_d_l__stdinc_8h_html_add440eff171ea5f55cb00c4a9ab8672d"><div class="ttname"><a href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a></div><div class="ttdeci">uint32_t Uint32</div><div class="ttdoc">An unsigned 32-bit integer type. </div><div class="ttdef"><b>Definition:</b> SDL_stdinc.h:145</div></div>
-<div class="ttc" id="begin__code_8h_html_a81faf4ba0455dc75f2e0507eddb79401"><div class="ttname"><a href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a></div><div class="ttdeci">#define SDLCALL</div><div class="ttdef"><b>Definition:</b> begin_code.h:68</div></div>
 <div class="ttc" id="begin__code_8h_html"><div class="ttname"><a href="begin__code_8h.html">begin_code.h</a></div></div>
 <div class="ttc" id="close__code_8h_html"><div class="ttname"><a href="close__code_8h.html">close_code.h</a></div></div>
 <div class="ttc" id="_s_d_l__main_8h_html_abebe82923d88787c3718e201b3e62295"><div class="ttname"><a href="_s_d_l__main_8h.html#abebe82923d88787c3718e201b3e62295">SDL_main</a></div><div class="ttdeci">C_LINKAGE int SDL_main(int argc, char *argv[])</div></div>
 <div class="ttc" id="_s_d_l__stdinc_8h_html"><div class="ttname"><a href="_s_d_l__stdinc_8h.html">SDL_stdinc.h</a></div></div>
-<div class="ttc" id="_g_l_e_w_2glew_8h_html_aaced7cfc21e7d37775d6921bb8177239"><div class="ttname"><a href="_g_l_e_w_2glew_8h.html#aaced7cfc21e7d37775d6921bb8177239">name</a></div><div class="ttdeci">GLuint const GLchar * name</div><div class="ttdef"><b>Definition:</b> glew.h:1800</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_bb71c587d4eee030bda30f2f35ebd6b7.html">SDL</a></li><li class="navelem"><a class="el" href="dir_3b9b8e98eade024f68a871db77d1527d.html">include</a></li><li class="navelem"><a class="el" href="_s_d_l__main_8h.html">SDL_main.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 20:57:14 for Super Happy Rocket by
+    <li class="footer">Generated on Fri Nov 22 2013 01:07:53 for Super Happy Rocket by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

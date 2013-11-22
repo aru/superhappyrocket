@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('_s_d_l_8h.html','');});
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_s_d_l__main_8h_source.html">SDL_main.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="_s_d_l__stdinc_8h_source.html">SDL_stdinc.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="_s_d_l__assert_8h_source.html">SDL_assert.h</a>&quot;</code><br/>
+<code>#include &quot;SDL_assert.h&quot;</code><br/>
 <code>#include &quot;<a class="el" href="_s_d_l__atomic_8h_source.html">SDL_atomic.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="_s_d_l__audio_8h_source.html">SDL_audio.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="_s_d_l__clipboard_8h_source.html">SDL_clipboard.h</a>&quot;</code><br/>
@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('_s_d_l_8h.html','');});
 <code>#include &quot;<a class="el" href="_s_d_l__hints_8h_source.html">SDL_hints.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="_s_d_l__loadso_8h_source.html">SDL_loadso.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="_s_d_l__log_8h_source.html">SDL_log.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="_s_d_l__messagebox_8h_source.html">SDL_messagebox.h</a>&quot;</code><br/>
+<code>#include &quot;SDL_messagebox.h&quot;</code><br/>
 <code>#include &quot;<a class="el" href="_s_d_l__mutex_8h_source.html">SDL_mutex.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="_s_d_l__power_8h_source.html">SDL_power.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="_s_d_l__render_8h_source.html">SDL_render.h</a>&quot;</code><br/>
@@ -159,65 +159,45 @@ Macros</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">SDL_INIT_*</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>These are the flags which may be passed to <a class="el" href="_s_d_l_8h.html#a8fc8d35348d7c74bad8392d776c937b8">SDL_Init()</a>. You should specify the subsystems which you will be using in your application. </p>
 </div></td></tr>
-<tr class="memitem:aadfaf3382d6e136b5944d1d5e7e50290"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l_8h.html#aadfaf3382d6e136b5944d1d5e7e50290">SDL_INIT_TIMER</a>&#160;&#160;&#160;0x00000001</td></tr>
+<tr class="memitem:aadfaf3382d6e136b5944d1d5e7e50290"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aadfaf3382d6e136b5944d1d5e7e50290"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SDL_INIT_TIMER</b>&#160;&#160;&#160;0x00000001</td></tr>
 <tr class="separator:aadfaf3382d6e136b5944d1d5e7e50290"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abeceb02c19508655cb05cc8e64206333"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l_8h.html#abeceb02c19508655cb05cc8e64206333">SDL_INIT_AUDIO</a>&#160;&#160;&#160;0x00000010</td></tr>
+<tr class="memitem:abeceb02c19508655cb05cc8e64206333"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abeceb02c19508655cb05cc8e64206333"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SDL_INIT_AUDIO</b>&#160;&#160;&#160;0x00000010</td></tr>
 <tr class="separator:abeceb02c19508655cb05cc8e64206333"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc988e510ed522628ffeb7c76f80c233"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l_8h.html#afc988e510ed522628ffeb7c76f80c233">SDL_INIT_VIDEO</a>&#160;&#160;&#160;0x00000020</td></tr>
 <tr class="separator:afc988e510ed522628ffeb7c76f80c233"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6b47d785eaa00d9c48e6c1cff4aef4b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l_8h.html#ad6b47d785eaa00d9c48e6c1cff4aef4b">SDL_INIT_JOYSTICK</a>&#160;&#160;&#160;0x00000200</td></tr>
 <tr class="separator:ad6b47d785eaa00d9c48e6c1cff4aef4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfd88189fec07574cae461b9dea75a85"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l_8h.html#adfd88189fec07574cae461b9dea75a85">SDL_INIT_HAPTIC</a>&#160;&#160;&#160;0x00001000</td></tr>
+<tr class="memitem:adfd88189fec07574cae461b9dea75a85"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adfd88189fec07574cae461b9dea75a85"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SDL_INIT_HAPTIC</b>&#160;&#160;&#160;0x00001000</td></tr>
 <tr class="separator:adfd88189fec07574cae461b9dea75a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac224a9aa4208de0e9b03948ff9b5fe0a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l_8h.html#ac224a9aa4208de0e9b03948ff9b5fe0a">SDL_INIT_GAMECONTROLLER</a>&#160;&#160;&#160;0x00002000</td></tr>
 <tr class="separator:ac224a9aa4208de0e9b03948ff9b5fe0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addad89db9e13b46ebcd46a0db8ba0382"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l_8h.html#addad89db9e13b46ebcd46a0db8ba0382">SDL_INIT_EVENTS</a>&#160;&#160;&#160;0x00004000</td></tr>
+<tr class="memitem:addad89db9e13b46ebcd46a0db8ba0382"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="addad89db9e13b46ebcd46a0db8ba0382"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SDL_INIT_EVENTS</b>&#160;&#160;&#160;0x00004000</td></tr>
 <tr class="separator:addad89db9e13b46ebcd46a0db8ba0382"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab848174dfbc69cb2cc7bbf06a6e5c584"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l_8h.html#ab848174dfbc69cb2cc7bbf06a6e5c584">SDL_INIT_NOPARACHUTE</a>&#160;&#160;&#160;0x00100000</td></tr>
 <tr class="separator:ab848174dfbc69cb2cc7bbf06a6e5c584"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a574afd93f30161d6e87449f675081fb5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l_8h.html#a574afd93f30161d6e87449f675081fb5">SDL_INIT_EVERYTHING</a></td></tr>
+<tr class="memitem:a574afd93f30161d6e87449f675081fb5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>SDL_INIT_EVERYTHING</b></td></tr>
 <tr class="separator:a574afd93f30161d6e87449f675081fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8fc8d35348d7c74bad8392d776c937b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l_8h.html#a8fc8d35348d7c74bad8392d776c937b8">SDL_Init</a> (<a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> <a class="el" href="_g_l_e_w_2glew_8h.html#a0f11defcf8fd03368fc70485bffe71e9">flags</a>)</td></tr>
+<tr class="memitem:a8fc8d35348d7c74bad8392d776c937b8"><td class="memItemLeft" align="right" valign="top">DECLSPEC int SDLCALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l_8h.html#a8fc8d35348d7c74bad8392d776c937b8">SDL_Init</a> (<a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> flags)</td></tr>
 <tr class="separator:a8fc8d35348d7c74bad8392d776c937b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfbfddc0ec609b5e5e5cb1c89298e4db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l_8h.html#adfbfddc0ec609b5e5e5cb1c89298e4db">SDL_InitSubSystem</a> (<a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> <a class="el" href="_g_l_e_w_2glew_8h.html#a0f11defcf8fd03368fc70485bffe71e9">flags</a>)</td></tr>
+<tr class="memitem:adfbfddc0ec609b5e5e5cb1c89298e4db"><td class="memItemLeft" align="right" valign="top">DECLSPEC int SDLCALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l_8h.html#adfbfddc0ec609b5e5e5cb1c89298e4db">SDL_InitSubSystem</a> (<a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> flags)</td></tr>
 <tr class="separator:adfbfddc0ec609b5e5e5cb1c89298e4db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14e9091982e09097985e10e3ca65debb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l_8h.html#a14e9091982e09097985e10e3ca65debb">SDL_QuitSubSystem</a> (<a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> <a class="el" href="_g_l_e_w_2glew_8h.html#a0f11defcf8fd03368fc70485bffe71e9">flags</a>)</td></tr>
+<tr class="memitem:a14e9091982e09097985e10e3ca65debb"><td class="memItemLeft" align="right" valign="top">DECLSPEC <a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a> SDLCALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l_8h.html#a14e9091982e09097985e10e3ca65debb">SDL_QuitSubSystem</a> (<a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> flags)</td></tr>
 <tr class="separator:a14e9091982e09097985e10e3ca65debb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04dc570990c697eed95681216801710d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l_8h.html#a04dc570990c697eed95681216801710d">SDL_WasInit</a> (<a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> <a class="el" href="_g_l_e_w_2glew_8h.html#a0f11defcf8fd03368fc70485bffe71e9">flags</a>)</td></tr>
+<tr class="memitem:a04dc570990c697eed95681216801710d"><td class="memItemLeft" align="right" valign="top">DECLSPEC <a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> SDLCALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l_8h.html#a04dc570990c697eed95681216801710d">SDL_WasInit</a> (<a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> flags)</td></tr>
 <tr class="separator:a04dc570990c697eed95681216801710d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdabaf714781099083592051f2d9ac11"><td class="memItemLeft" align="right" valign="top"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l_8h.html#afdabaf714781099083592051f2d9ac11">SDL_Quit</a> (<a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a>)</td></tr>
+<tr class="memitem:afdabaf714781099083592051f2d9ac11"><td class="memItemLeft" align="right" valign="top">DECLSPEC <a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a> SDLCALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_d_l_8h.html#afdabaf714781099083592051f2d9ac11">SDL_Quit</a> (<a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a>)</td></tr>
 <tr class="separator:afdabaf714781099083592051f2d9ac11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Main include header for the SDL library </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="abeceb02c19508655cb05cc8e64206333"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SDL_INIT_AUDIO&#160;&#160;&#160;0x00000010</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="addad89db9e13b46ebcd46a0db8ba0382"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SDL_INIT_EVENTS&#160;&#160;&#160;0x00004000</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a574afd93f30161d6e87449f675081fb5"></a>
 <div class="memitem">
 <div class="memproto">
@@ -227,16 +207,12 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">( <a class="code" href="_s_d_l_8h.html#aadfaf3382d6e136b5944d1d5e7e50290">\</a></div>
-<div class="line"><a class="code" href="_s_d_l_8h.html#aadfaf3382d6e136b5944d1d5e7e50290">                SDL_INIT_TIMER</a> | <a class="code" href="_s_d_l_8h.html#abeceb02c19508655cb05cc8e64206333">SDL_INIT_AUDIO</a> | <a class="code" href="_s_d_l_8h.html#afc988e510ed522628ffeb7c76f80c233">SDL_INIT_VIDEO</a> | <a class="code" href="_s_d_l_8h.html#addad89db9e13b46ebcd46a0db8ba0382">SDL_INIT_EVENTS</a> | <a class="code" href="_s_d_l_8h.html#ad6b47d785eaa00d9c48e6c1cff4aef4b">\</a></div>
-<div class="line"><a class="code" href="_s_d_l_8h.html#ad6b47d785eaa00d9c48e6c1cff4aef4b">                SDL_INIT_JOYSTICK</a> | <a class="code" href="_s_d_l_8h.html#adfd88189fec07574cae461b9dea75a85">SDL_INIT_HAPTIC</a> | <a class="code" href="_s_d_l_8h.html#ac224a9aa4208de0e9b03948ff9b5fe0a">SDL_INIT_GAMECONTROLLER</a> \</div>
+<b>Value:</b><div class="fragment"><div class="line">( \</div>
+<div class="line">                SDL_INIT_TIMER | SDL_INIT_AUDIO | <a class="code" href="_s_d_l_8h.html#afc988e510ed522628ffeb7c76f80c233">SDL_INIT_VIDEO</a> | SDL_INIT_EVENTS | <a class="code" href="_s_d_l_8h.html#ad6b47d785eaa00d9c48e6c1cff4aef4b">\</a></div>
+<div class="line"><a class="code" href="_s_d_l_8h.html#ad6b47d785eaa00d9c48e6c1cff4aef4b">                SDL_INIT_JOYSTICK</a> | SDL_INIT_HAPTIC | <a class="code" href="_s_d_l_8h.html#ac224a9aa4208de0e9b03948ff9b5fe0a">SDL_INIT_GAMECONTROLLER</a> \</div>
 <div class="line">            )</div>
-<div class="ttc" id="_s_d_l_8h_html_addad89db9e13b46ebcd46a0db8ba0382"><div class="ttname"><a href="_s_d_l_8h.html#addad89db9e13b46ebcd46a0db8ba0382">SDL_INIT_EVENTS</a></div><div class="ttdeci">#define SDL_INIT_EVENTS</div><div class="ttdef"><b>Definition:</b> SDL.h:113</div></div>
 <div class="ttc" id="_s_d_l_8h_html_ad6b47d785eaa00d9c48e6c1cff4aef4b"><div class="ttname"><a href="_s_d_l_8h.html#ad6b47d785eaa00d9c48e6c1cff4aef4b">SDL_INIT_JOYSTICK</a></div><div class="ttdeci">#define SDL_INIT_JOYSTICK</div><div class="ttdef"><b>Definition:</b> SDL.h:110</div></div>
-<div class="ttc" id="_s_d_l_8h_html_aadfaf3382d6e136b5944d1d5e7e50290"><div class="ttname"><a href="_s_d_l_8h.html#aadfaf3382d6e136b5944d1d5e7e50290">SDL_INIT_TIMER</a></div><div class="ttdeci">#define SDL_INIT_TIMER</div><div class="ttdef"><b>Definition:</b> SDL.h:107</div></div>
-<div class="ttc" id="_s_d_l_8h_html_abeceb02c19508655cb05cc8e64206333"><div class="ttname"><a href="_s_d_l_8h.html#abeceb02c19508655cb05cc8e64206333">SDL_INIT_AUDIO</a></div><div class="ttdeci">#define SDL_INIT_AUDIO</div><div class="ttdef"><b>Definition:</b> SDL.h:108</div></div>
 <div class="ttc" id="_s_d_l_8h_html_ac224a9aa4208de0e9b03948ff9b5fe0a"><div class="ttname"><a href="_s_d_l_8h.html#ac224a9aa4208de0e9b03948ff9b5fe0a">SDL_INIT_GAMECONTROLLER</a></div><div class="ttdeci">#define SDL_INIT_GAMECONTROLLER</div><div class="ttdef"><b>Definition:</b> SDL.h:112</div></div>
-<div class="ttc" id="_s_d_l_8h_html_adfd88189fec07574cae461b9dea75a85"><div class="ttname"><a href="_s_d_l_8h.html#adfd88189fec07574cae461b9dea75a85">SDL_INIT_HAPTIC</a></div><div class="ttdeci">#define SDL_INIT_HAPTIC</div><div class="ttdef"><b>Definition:</b> SDL.h:111</div></div>
 <div class="ttc" id="_s_d_l_8h_html_afc988e510ed522628ffeb7c76f80c233"><div class="ttname"><a href="_s_d_l_8h.html#afc988e510ed522628ffeb7c76f80c233">SDL_INIT_VIDEO</a></div><div class="ttdeci">#define SDL_INIT_VIDEO</div><div class="ttdef"><b>Definition:</b> SDL.h:109</div></div>
 </div><!-- fragment -->
 </div>
@@ -251,18 +227,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>SDL_INIT_GAMECONTROLLER implies SDL_INIT_JOYSTICK </p>
-
-</div>
-</div>
-<a class="anchor" id="adfd88189fec07574cae461b9dea75a85"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SDL_INIT_HAPTIC&#160;&#160;&#160;0x00001000</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -292,18 +256,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aadfaf3382d6e136b5944d1d5e7e50290"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SDL_INIT_TIMER&#160;&#160;&#160;0x00000001</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="afc988e510ed522628ffeb7c76f80c233"></a>
 <div class="memitem">
 <div class="memproto">
@@ -323,7 +275,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_Init </td>
+          <td class="memname">DECLSPEC int SDLCALL SDL_Init </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a>&#160;</td>
           <td class="paramname"><em>flags</em></td><td>)</td>
@@ -340,7 +292,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__thread_8h.html#a6a64f9be4433e4de6e2f2f548cf3c08e">int</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_InitSubSystem </td>
+          <td class="memname">DECLSPEC int SDLCALL SDL_InitSubSystem </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a>&#160;</td>
           <td class="paramname"><em>flags</em></td><td>)</td>
@@ -357,9 +309,9 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_Quit </td>
+          <td class="memname">DECLSPEC <a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a> SDLCALL SDL_Quit </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -374,7 +326,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__opengl_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_QuitSubSystem </td>
+          <td class="memname">DECLSPEC <a class="el" href="_s_d_l__audio_8h.html#a52835ae37c4bb905b903cbaf5d04b05f">void</a> SDLCALL SDL_QuitSubSystem </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a>&#160;</td>
           <td class="paramname"><em>flags</em></td><td>)</td>
@@ -391,7 +343,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="begin__code_8h.html#aa4c7a931f4a968f818b2a1b10a432185">DECLSPEC</a> <a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> <a class="el" href="begin__code_8h.html#a81faf4ba0455dc75f2e0507eddb79401">SDLCALL</a> SDL_WasInit </td>
+          <td class="memname">DECLSPEC <a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a> SDLCALL SDL_WasInit </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="_s_d_l__stdinc_8h.html#add440eff171ea5f55cb00c4a9ab8672d">Uint32</a>&#160;</td>
           <td class="paramname"><em>flags</em></td><td>)</td>
@@ -410,7 +362,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_bb71c587d4eee030bda30f2f35ebd6b7.html">SDL</a></li><li class="navelem"><a class="el" href="dir_3b9b8e98eade024f68a871db77d1527d.html">include</a></li><li class="navelem"><a class="el" href="_s_d_l_8h.html">SDL.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 20:57:32 for Super Happy Rocket by
+    <li class="footer">Generated on Fri Nov 22 2013 01:07:55 for Super Happy Rocket by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('_progress_handler_8hpp_source.html',''
 <div class="title">ProgressHandler.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_progress_handler_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">Open Asset Import Library (assimp)</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">----------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"></span></div>
@@ -153,7 +153,7 @@ $(document).ready(function(){initNavTree('_progress_handler_8hpp_source.html',''
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">namespace </span>Assimp    {</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">// ------------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_assimp_1_1_progress_handler.html">   54</a></span>&#160;<span class="comment"></span><span class="keyword">class </span><a class="code" href="defs_8h.html#a7d617d307e656cb6ff315ba71ff958d4">ASSIMP_API</a> <a class="code" href="class_assimp_1_1_progress_handler.html">ProgressHandler</a> </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_assimp_1_1_progress_handler.html">   54</a></span>&#160;<span class="comment"></span><span class="keyword">class </span>ASSIMP_API <a class="code" href="class_assimp_1_1_progress_handler.html">ProgressHandler</a> </div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    : <span class="keyword">public</span> Intern::AllocateFromAssimpHeap {</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_assimp_1_1_progress_handler.html#a53b192913e9904c674b851c46e1ea9e8">   58</a></span>&#160;    <a class="code" href="class_assimp_1_1_progress_handler.html#a53b192913e9904c674b851c46e1ea9e8">ProgressHandler</a> () {</div>
@@ -163,7 +163,7 @@ $(document).ready(function(){initNavTree('_progress_handler_8hpp_source.html',''
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">// -------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment"></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> Update(<span class="keywordtype">float</span> percentage = -1.<a class="code" href="_g_l_e_w_2glew_8h.html#aba8ad56949f59242bc167b073dae3715">f</a>) = 0;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment"></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> Update(<span class="keywordtype">float</span> percentage = -1.f) = 0;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
@@ -176,15 +176,13 @@ $(document).ready(function(){initNavTree('_progress_handler_8hpp_source.html',''
 <div class="ttc" id="class_assimp_1_1_progress_handler_html_a53b192913e9904c674b851c46e1ea9e8"><div class="ttname"><a href="class_assimp_1_1_progress_handler.html#a53b192913e9904c674b851c46e1ea9e8">Assimp::ProgressHandler::ProgressHandler</a></div><div class="ttdeci">ProgressHandler()</div><div class="ttdoc">Default constructor. </div><div class="ttdef"><b>Definition:</b> ProgressHandler.hpp:58</div></div>
 <div class="ttc" id="class_assimp_1_1_progress_handler_html"><div class="ttname"><a href="class_assimp_1_1_progress_handler.html">Assimp::ProgressHandler</a></div><div class="ttdoc">CPP-API: Abstract interface for custom progress report receivers. </div><div class="ttdef"><b>Definition:</b> ProgressHandler.hpp:54</div></div>
 <div class="ttc" id="class_assimp_1_1_progress_handler_html_a3ec465a62e1feaae00f585ca0cffb81e"><div class="ttname"><a href="class_assimp_1_1_progress_handler.html#a3ec465a62e1feaae00f585ca0cffb81e">Assimp::ProgressHandler::~ProgressHandler</a></div><div class="ttdeci">virtual ~ProgressHandler()</div><div class="ttdoc">Virtual destructor. </div><div class="ttdef"><b>Definition:</b> ProgressHandler.hpp:62</div></div>
-<div class="ttc" id="_g_l_e_w_2glew_8h_html_aba8ad56949f59242bc167b073dae3715"><div class="ttname"><a href="_g_l_e_w_2glew_8h.html#aba8ad56949f59242bc167b073dae3715">f</a></div><div class="ttdeci">GLclampf f</div><div class="ttdef"><b>Definition:</b> glew.h:3390</div></div>
-<div class="ttc" id="defs_8h_html_a7d617d307e656cb6ff315ba71ff958d4"><div class="ttname"><a href="defs_8h.html#a7d617d307e656cb6ff315ba71ff958d4">ASSIMP_API</a></div><div class="ttdeci">#define ASSIMP_API</div><div class="ttdef"><b>Definition:</b> defs.h:142</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_2a3ab8ae23d2cffc0bffa70c4703d52b.html">assimp</a></li><li class="navelem"><a class="el" href="dir_775f47f696c8e1c7e288eb84d9156930.html">include</a></li><li class="navelem"><a class="el" href="_progress_handler_8hpp.html">ProgressHandler.hpp</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 20:57:10 for Super Happy Rocket by
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_2a3ab8ae23d2cffc0bffa70c4703d52b.html">assimp</a></li><li class="navelem"><a class="el" href="dir_775f47f696c8e1c7e288eb84d9156930.html">include</a></li><li class="navelem"><b>ProgressHandler.hpp</b></li>
+    <li class="footer">Generated on Fri Nov 22 2013 01:07:50 for Super Happy Rocket by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

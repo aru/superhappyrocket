@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('_stop_watch_8h_source.html','');});
 <div class="title">StopWatch.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_stop_watch_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// StopWatch.h</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// StopWatch.h</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Stopwatch class for high resolution timing.</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// Code by Richard S. Wright Jr.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// March 23, 1999</span></div>
@@ -161,41 +161,41 @@ $(document).ready(function(){initNavTree('_stop_watch_8h_source.html','');});
 <div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_c_stop_watch.html">   53</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_stop_watch.html">CStopWatch</a></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    {</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_c_stop_watch.html#a1e6f5cfd59158719dc5cc0531f725839">   56</a></span>&#160;        <a class="code" href="class_c_stop_watch.html#a1e6f5cfd59158719dc5cc0531f725839">CStopWatch</a>(<span class="keywordtype">void</span>)    <span class="comment">// Constructor</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="class_c_stop_watch.html">CStopWatch</a>(<span class="keywordtype">void</span>)    <span class="comment">// Constructor</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            {</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">            #ifdef WIN32</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor"></span>            QueryPerformanceFrequency(&amp;m_CounterFrequency);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            QueryPerformanceCounter(&amp;<a class="code" href="class_c_stop_watch.html#a893951d9fb4af2ac40bc1cc6021888dd">m_LastCount</a>);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            QueryPerformanceCounter(&amp;m_LastCount);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">            #else</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor"></span>            gettimeofday(&amp;<a class="code" href="class_c_stop_watch.html#a893951d9fb4af2ac40bc1cc6021888dd">m_LastCount</a>, 0);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor"></span>            gettimeofday(&amp;m_LastCount, 0);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">            #endif</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor"></span>            }</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="comment">// Resets timer (difference) to zero</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="class_c_stop_watch.html#adec47af574242195ffe2657320815774">   67</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_c_stop_watch.html#adec47af574242195ffe2657320815774">Reset</a>(<span class="keywordtype">void</span>) </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">void</span> Reset(<span class="keywordtype">void</span>) </div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            {</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">            #ifdef WIN32</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor"></span>            QueryPerformanceCounter(&amp;<a class="code" href="class_c_stop_watch.html#a893951d9fb4af2ac40bc1cc6021888dd">m_LastCount</a>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor"></span>            QueryPerformanceCounter(&amp;m_LastCount);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">            #else</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor"></span>            gettimeofday(&amp;<a class="code" href="class_c_stop_watch.html#a893951d9fb4af2ac40bc1cc6021888dd">m_LastCount</a>, 0);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor"></span>            gettimeofday(&amp;m_LastCount, 0);</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">            #endif</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor"></span>            }                   </div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        </div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="comment">// Get elapsed time in seconds</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="class_c_stop_watch.html#a32af4015a7093b70f83829a05d692712">   77</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="class_c_stop_watch.html#a32af4015a7093b70f83829a05d692712">GetElapsedSeconds</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordtype">float</span> GetElapsedSeconds(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            {</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="comment">// Get the current count</span></div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">            #ifdef WIN32</span></div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor"></span>            LARGE_INTEGER lCurrent;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            QueryPerformanceCounter(&amp;lCurrent);</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <span class="keywordflow">return</span> float((lCurrent.QuadPart - <a class="code" href="class_c_stop_watch.html#a893951d9fb4af2ac40bc1cc6021888dd">m_LastCount</a>.QuadPart) /</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <span class="keywordflow">return</span> float((lCurrent.QuadPart - m_LastCount.QuadPart) /</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                                        <span class="keywordtype">double</span>(m_CounterFrequency.QuadPart));</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">            #else</span></div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor"></span>            timeval lcurrent;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            gettimeofday(&amp;lcurrent, 0);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keywordtype">float</span> fSeconds = (float)(lcurrent.tv_sec - <a class="code" href="class_c_stop_watch.html#a893951d9fb4af2ac40bc1cc6021888dd">m_LastCount</a>.tv_sec);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="keywordtype">float</span> fFraction = (float)(lcurrent.tv_usec - <a class="code" href="class_c_stop_watch.html#a893951d9fb4af2ac40bc1cc6021888dd">m_LastCount</a>.tv_usec) * 0.000001f;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keywordtype">float</span> fSeconds = (float)(lcurrent.tv_sec - m_LastCount.tv_sec);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="keywordtype">float</span> fFraction = (float)(lcurrent.tv_usec - m_LastCount.tv_usec) * 0.000001f;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="keywordflow">return</span> fSeconds + fFraction;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">            #endif</span></div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor"></span>            }   </div>
@@ -203,26 +203,22 @@ $(document).ready(function(){initNavTree('_stop_watch_8h_source.html','');});
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">    #ifdef WIN32</span></div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor"></span>        LARGE_INTEGER m_CounterFrequency;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        LARGE_INTEGER <a class="code" href="class_c_stop_watch.html#a893951d9fb4af2ac40bc1cc6021888dd">m_LastCount</a>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        LARGE_INTEGER m_LastCount;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">    #else</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="class_c_stop_watch.html#a893951d9fb4af2ac40bc1cc6021888dd">  100</a></span>&#160;<span class="preprocessor"></span>        timeval <a class="code" href="class_c_stop_watch.html#a893951d9fb4af2ac40bc1cc6021888dd">m_LastCount</a>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor"></span>        timeval m_LastCount;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">    #endif</span></div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor"></span>    };</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="class_c_stop_watch_html_a32af4015a7093b70f83829a05d692712"><div class="ttname"><a href="class_c_stop_watch.html#a32af4015a7093b70f83829a05d692712">CStopWatch::GetElapsedSeconds</a></div><div class="ttdeci">float GetElapsedSeconds(void)</div><div class="ttdef"><b>Definition:</b> StopWatch.h:77</div></div>
-<div class="ttc" id="class_c_stop_watch_html_a1e6f5cfd59158719dc5cc0531f725839"><div class="ttname"><a href="class_c_stop_watch.html#a1e6f5cfd59158719dc5cc0531f725839">CStopWatch::CStopWatch</a></div><div class="ttdeci">CStopWatch(void)</div><div class="ttdef"><b>Definition:</b> StopWatch.h:56</div></div>
-<div class="ttc" id="class_c_stop_watch_html_adec47af574242195ffe2657320815774"><div class="ttname"><a href="class_c_stop_watch.html#adec47af574242195ffe2657320815774">CStopWatch::Reset</a></div><div class="ttdeci">void Reset(void)</div><div class="ttdef"><b>Definition:</b> StopWatch.h:67</div></div>
 <div class="ttc" id="class_c_stop_watch_html"><div class="ttname"><a href="class_c_stop_watch.html">CStopWatch</a></div><div class="ttdef"><b>Definition:</b> StopWatch.h:53</div></div>
-<div class="ttc" id="class_c_stop_watch_html_a893951d9fb4af2ac40bc1cc6021888dd"><div class="ttname"><a href="class_c_stop_watch.html#a893951d9fb4af2ac40bc1cc6021888dd">CStopWatch::m_LastCount</a></div><div class="ttdeci">timeval m_LastCount</div><div class="ttdef"><b>Definition:</b> StopWatch.h:100</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_04d2248af09e8d4b47039d32314b7c56.html">GLTools</a></li><li class="navelem"><a class="el" href="dir_0bdf6ec8bf0dd4e8a8e77453d3eb4f73.html">include</a></li><li class="navelem"><a class="el" href="_stop_watch_8h.html">StopWatch.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 20:57:13 for Super Happy Rocket by
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_04d2248af09e8d4b47039d32314b7c56.html">GLTools</a></li><li class="navelem"><a class="el" href="dir_0bdf6ec8bf0dd4e8a8e77453d3eb4f73.html">include</a></li><li class="navelem"><b>StopWatch.h</b></li>
+    <li class="footer">Generated on Fri Nov 22 2013 01:07:53 for Super Happy Rocket by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

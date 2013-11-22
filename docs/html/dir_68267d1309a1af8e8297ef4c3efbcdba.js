@@ -17,7 +17,7 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
       [ "BoundingBox", "class_bounding_box.html", "class_bounding_box" ]
     ] ],
     [ "Camera.cpp", "_camera_8cpp.html", null ],
-    [ "Camera.h", "src_2camera_8h.html", [
+    [ "Camera.h", "_camera_8h.html", [
       [ "Camera", "class_camera.html", "class_camera" ]
     ] ],
     [ "Context.cpp", "_context_8cpp.html", null ],
@@ -41,7 +41,7 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
       [ "Level1", "class_level1.html", "class_level1" ]
     ] ],
     [ "Light.cpp", "_light_8cpp.html", null ],
-    [ "Light.h", "src_2light_8h.html", [
+    [ "Light.h", "_light_8h.html", [
       [ "Light", "class_light.html", "class_light" ]
     ] ],
     [ "main.cpp", "main_8cpp.html", "main_8cpp" ],
