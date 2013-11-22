@@ -1,0 +1,243 @@
+\hypertarget{_skybox_2_debug_2_g_l_tools_8h}{\section{Skybox/\-Debug/\-G\-L\-Tools.h File Reference}
+\label{_skybox_2_debug_2_g_l_tools_8h}\index{Skybox/\-Debug/\-G\-L\-Tools.\-h@{Skybox/\-Debug/\-G\-L\-Tools.\-h}}
+}
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$math.\-h$>$}\\*
+{\ttfamily \#include $<$math3d.\-h$>$}\\*
+{\ttfamily \#include $<$G\-L\-Batch.\-h$>$}\\*
+{\ttfamily \#include $<$G\-L\-Triangle\-Batch.\-h$>$}\\*
+Include dependency graph for G\-L\-Tools.\-h\-:
+This graph shows which files directly or indirectly include this file\-:
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_skybox_2_debug_2_g_l_tools_8h_aac3bff4dfe1b35eb5281bae9072b8871}{M\-A\-X\-\_\-\-S\-H\-A\-D\-E\-R\-\_\-\-L\-E\-N\-G\-T\-H}~8192
+\item 
+\#define \hyperlink{_skybox_2_debug_2_g_l_tools_8h_aadd349df93c3b434894fceec7449aa95}{L\-I\-T\-T\-L\-E\-\_\-\-E\-N\-D\-I\-A\-N\-\_\-\-W\-O\-R\-D}
+\item 
+\#define \hyperlink{_skybox_2_debug_2_g_l_tools_8h_a3411fb366591473a20d4a5c5a0d642c7}{L\-I\-T\-T\-L\-E\-\_\-\-E\-N\-D\-I\-A\-N\-\_\-\-D\-W\-O\-R\-D}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} \hyperlink{_skybox_2_debug_2_g_l_tools_8h_a3bbffdd67f8bee7899d5dc0825b8bf2f}{glt\-Get\-Open\-G\-L\-Version} (\hyperlink{_g_l_e_w_2glew_8h_acebcc1c5663f14ebde1d16831e5fed94}{G\-Lint} \&n\-Major, \hyperlink{_g_l_e_w_2glew_8h_acebcc1c5663f14ebde1d16831e5fed94}{G\-Lint} \&n\-Minor)
+\item 
+\hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{_skybox_2_debug_2_g_l_tools_8h_add5ab34990ba9417d067d8abd7af3c1a}{glt\-Is\-Ext\-Supported} (const char $\ast$sz\-Extension)
+\item 
+\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} \hyperlink{_skybox_2_debug_2_g_l_tools_8h_ad1cd5829323498432cc035d488b095da}{glt\-Set\-Working\-Directory} (const char $\ast$sz\-Argv)
+\item 
+\hyperlink{_g_l_e_w_2glew_8h_a0a9e8b1f1d9c4bcf1c0bc5d5d4e3608a}{G\-Lbyte} $\ast$ \hyperlink{_skybox_2_debug_2_g_l_tools_8h_aab878c2dffa85ef90b6e9cbb1af11b4b}{glt\-Read\-B\-M\-P\-Bits} (const char $\ast$sz\-File\-Name, \hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} $\ast$n\-Width, \hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} $\ast$n\-Height)
+\item 
+\hyperlink{_g_l_e_w_2glew_8h_a0a9e8b1f1d9c4bcf1c0bc5d5d4e3608a}{G\-Lbyte} $\ast$ \hyperlink{_skybox_2_debug_2_g_l_tools_8h_a47a0ca72b4210508090f86c776ad8d41}{glt\-Read\-T\-G\-A\-Bits} (const char $\ast$sz\-File\-Name, \hyperlink{_g_l_e_w_2glew_8h_acebcc1c5663f14ebde1d16831e5fed94}{G\-Lint} $\ast$\hyperlink{_g_l_e_w_2wglew_8h_a30fafed225cae9e58d3fe93fe778565b}{i\-Width}, \hyperlink{_g_l_e_w_2glew_8h_acebcc1c5663f14ebde1d16831e5fed94}{G\-Lint} $\ast$\hyperlink{_g_l_e_w_2wglew_8h_a39ec6c6cbc64ff726f20a1398f026fd9}{i\-Height}, \hyperlink{_g_l_e_w_2glew_8h_acebcc1c5663f14ebde1d16831e5fed94}{G\-Lint} $\ast$i\-Components, \hyperlink{_g_l_e_w_2glew_8h_a5d5233918a454ad3975c620a69ac5f0b}{G\-Lenum} $\ast$e\-Format)
+\item 
+\hyperlink{_g_l_e_w_2glew_8h_acebcc1c5663f14ebde1d16831e5fed94}{G\-Lint} \hyperlink{_skybox_2_debug_2_g_l_tools_8h_affd41b245cf6e95e58ebb006eec8c921}{glt\-Grab\-Screen\-T\-G\-A} (const char $\ast$sz\-File\-Name)
+\item 
+\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} \hyperlink{_skybox_2_debug_2_g_l_tools_8h_a6b25c52ab58557dab7156c3af831a8cb}{glt\-Make\-Torus} (\hyperlink{class_g_l_triangle_batch}{G\-L\-Triangle\-Batch} \&torus\-Batch, \hyperlink{_g_l_e_w_2glew_8h_a4a966015c733cb5fe2733de64a62a3a5}{G\-Lfloat} major\-Radius, \hyperlink{_g_l_e_w_2glew_8h_a4a966015c733cb5fe2733de64a62a3a5}{G\-Lfloat} minor\-Radius, \hyperlink{_g_l_e_w_2glew_8h_acebcc1c5663f14ebde1d16831e5fed94}{G\-Lint} num\-Major, \hyperlink{_g_l_e_w_2glew_8h_acebcc1c5663f14ebde1d16831e5fed94}{G\-Lint} num\-Minor)
+\item 
+\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} \hyperlink{_skybox_2_debug_2_g_l_tools_8h_a365309115a133cb5a4e51ee0a94ebdb1}{glt\-Make\-Sphere} (\hyperlink{class_g_l_triangle_batch}{G\-L\-Triangle\-Batch} \&sphere\-Batch, \hyperlink{_g_l_e_w_2glew_8h_a4a966015c733cb5fe2733de64a62a3a5}{G\-Lfloat} f\-Radius, \hyperlink{_g_l_e_w_2glew_8h_acebcc1c5663f14ebde1d16831e5fed94}{G\-Lint} i\-Slices, \hyperlink{_g_l_e_w_2glew_8h_acebcc1c5663f14ebde1d16831e5fed94}{G\-Lint} i\-Stacks)
+\item 
+\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} \hyperlink{_skybox_2_debug_2_g_l_tools_8h_a11beec4878a483fb80f3f05aae0a3081}{glt\-Make\-Disk} (\hyperlink{class_g_l_triangle_batch}{G\-L\-Triangle\-Batch} \&disk\-Batch, \hyperlink{_g_l_e_w_2glew_8h_a4a966015c733cb5fe2733de64a62a3a5}{G\-Lfloat} inner\-Radius, \hyperlink{_g_l_e_w_2glew_8h_a4a966015c733cb5fe2733de64a62a3a5}{G\-Lfloat} outer\-Radius, \hyperlink{_g_l_e_w_2glew_8h_acebcc1c5663f14ebde1d16831e5fed94}{G\-Lint} n\-Slices, \hyperlink{_g_l_e_w_2glew_8h_acebcc1c5663f14ebde1d16831e5fed94}{G\-Lint} n\-Stacks)
+\item 
+\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} \hyperlink{_skybox_2_debug_2_g_l_tools_8h_a5557d3598ad97d6a69189b8f566285b9}{glt\-Make\-Cylinder} (\hyperlink{class_g_l_triangle_batch}{G\-L\-Triangle\-Batch} \&cylinder\-Batch, \hyperlink{_g_l_e_w_2glew_8h_a4a966015c733cb5fe2733de64a62a3a5}{G\-Lfloat} base\-Radius, \hyperlink{_g_l_e_w_2glew_8h_a4a966015c733cb5fe2733de64a62a3a5}{G\-Lfloat} top\-Radius, \hyperlink{_g_l_e_w_2glew_8h_a4a966015c733cb5fe2733de64a62a3a5}{G\-Lfloat} f\-Length, \hyperlink{_g_l_e_w_2glew_8h_acebcc1c5663f14ebde1d16831e5fed94}{G\-Lint} num\-Slices, \hyperlink{_g_l_e_w_2glew_8h_acebcc1c5663f14ebde1d16831e5fed94}{G\-Lint} num\-Stacks)
+\item 
+\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} \hyperlink{_skybox_2_debug_2_g_l_tools_8h_abfb0ea387e464355ef08740a9bfe5557}{glt\-Make\-Cube} (\hyperlink{class_g_l_batch}{G\-L\-Batch} \&cube\-Batch, \hyperlink{_g_l_e_w_2glew_8h_a4a966015c733cb5fe2733de64a62a3a5}{G\-Lfloat} f\-Radius)
+\item 
+\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} \hyperlink{_skybox_2_debug_2_g_l_tools_8h_af8025b14b9649102f284955353a7c894}{glt\-Load\-Shader\-Src} (const char $\ast$sz\-Shader\-Src, \hyperlink{_g_l_e_w_2glew_8h_a68c4714e43d8e827d80759f9cb864f3c}{G\-Luint} \hyperlink{_g_l_e_w_2glew_8h_a57b2a96adb1d51204909a82d861e395e}{shader})
+\item 
+bool \hyperlink{_skybox_2_debug_2_g_l_tools_8h_a41c0cb8940c4658309913134483fa190}{glt\-Load\-Shader\-File} (const char $\ast$sz\-File, \hyperlink{_g_l_e_w_2glew_8h_a68c4714e43d8e827d80759f9cb864f3c}{G\-Luint} \hyperlink{_g_l_e_w_2glew_8h_a57b2a96adb1d51204909a82d861e395e}{shader})
+\item 
+\hyperlink{_g_l_e_w_2glew_8h_a68c4714e43d8e827d80759f9cb864f3c}{G\-Luint} \hyperlink{_skybox_2_debug_2_g_l_tools_8h_a39ed0c7a6d0b8f79450ef1facfe397b6}{glt\-Load\-Shader\-Pair} (const char $\ast$sz\-Vertex\-Prog, const char $\ast$sz\-Fragment\-Prog)
+\item 
+\hyperlink{_g_l_e_w_2glew_8h_a68c4714e43d8e827d80759f9cb864f3c}{G\-Luint} \hyperlink{_skybox_2_debug_2_g_l_tools_8h_aa43689f6b22911e8467de1c02d446148}{glt\-Load\-Shader\-Pair\-With\-Attributes} (const char $\ast$sz\-Vertex\-Prog, const char $\ast$sz\-Fragment\-Prog,...)
+\item 
+\hyperlink{_g_l_e_w_2glew_8h_a68c4714e43d8e827d80759f9cb864f3c}{G\-Luint} \hyperlink{_skybox_2_debug_2_g_l_tools_8h_a203d56dbec7610adab58c86001648129}{glt\-Load\-Shader\-Pair\-Src} (const char $\ast$sz\-Vertex\-Src, const char $\ast$sz\-Fragment\-Src)
+\item 
+\hyperlink{_g_l_e_w_2glew_8h_a68c4714e43d8e827d80759f9cb864f3c}{G\-Luint} \hyperlink{_skybox_2_debug_2_g_l_tools_8h_ac27843384310d9db435b7b2069e85b41}{glt\-Load\-Shader\-Pair\-Src\-With\-Attributes} (const char $\ast$sz\-Vertex\-Prog, const char $\ast$sz\-Fragment\-Prog,...)
+\item 
+bool \hyperlink{_skybox_2_debug_2_g_l_tools_8h_a51fe9825b31ffa9b5e84c843f351c750}{glt\-Check\-Errors} (\hyperlink{_g_l_e_w_2glew_8h_a68c4714e43d8e827d80759f9cb864f3c}{G\-Luint} prog\-Name=0)
+\item 
+\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} \hyperlink{_skybox_2_debug_2_g_l_tools_8h_aca6d1e96e1d478463c5835bb44c96873}{glt\-Generate\-Ortho2\-D\-Mat} (\hyperlink{_g_l_e_w_2glew_8h_a68c4714e43d8e827d80759f9cb864f3c}{G\-Luint} \hyperlink{_g_l_e_w_2glew_8h_a09f9f706d2021bb37c99c58db2ae6667}{width}, \hyperlink{_g_l_e_w_2glew_8h_a68c4714e43d8e827d80759f9cb864f3c}{G\-Luint} \hyperlink{_g_l_e_w_2glew_8h_adfc5239a084231275658aaa86eb21f78}{height}, \hyperlink{math3d_8h_a1e8690467d81d5ed97c5ecc3a144a4ac}{M3\-D\-Matrix44f} \&ortho\-Matrix, \hyperlink{class_g_l_batch}{G\-L\-Batch} \&screen\-Quad)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_skybox_2_debug_2_g_l_tools_8h_a3411fb366591473a20d4a5c5a0d642c7}{\index{Skybox/\-Debug/\-G\-L\-Tools.\-h@{Skybox/\-Debug/\-G\-L\-Tools.\-h}!L\-I\-T\-T\-L\-E\-\_\-\-E\-N\-D\-I\-A\-N\-\_\-\-D\-W\-O\-R\-D@{L\-I\-T\-T\-L\-E\-\_\-\-E\-N\-D\-I\-A\-N\-\_\-\-D\-W\-O\-R\-D}}
+\index{L\-I\-T\-T\-L\-E\-\_\-\-E\-N\-D\-I\-A\-N\-\_\-\-D\-W\-O\-R\-D@{L\-I\-T\-T\-L\-E\-\_\-\-E\-N\-D\-I\-A\-N\-\_\-\-D\-W\-O\-R\-D}!Skybox/Debug/GLTools.h@{Skybox/\-Debug/\-G\-L\-Tools.\-h}}
+\subsubsection[{L\-I\-T\-T\-L\-E\-\_\-\-E\-N\-D\-I\-A\-N\-\_\-\-D\-W\-O\-R\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-I\-T\-T\-L\-E\-\_\-\-E\-N\-D\-I\-A\-N\-\_\-\-D\-W\-O\-R\-D}}\label{_skybox_2_debug_2_g_l_tools_8h_a3411fb366591473a20d4a5c5a0d642c7}
+\hypertarget{_skybox_2_debug_2_g_l_tools_8h_aadd349df93c3b434894fceec7449aa95}{\index{Skybox/\-Debug/\-G\-L\-Tools.\-h@{Skybox/\-Debug/\-G\-L\-Tools.\-h}!L\-I\-T\-T\-L\-E\-\_\-\-E\-N\-D\-I\-A\-N\-\_\-\-W\-O\-R\-D@{L\-I\-T\-T\-L\-E\-\_\-\-E\-N\-D\-I\-A\-N\-\_\-\-W\-O\-R\-D}}
+\index{L\-I\-T\-T\-L\-E\-\_\-\-E\-N\-D\-I\-A\-N\-\_\-\-W\-O\-R\-D@{L\-I\-T\-T\-L\-E\-\_\-\-E\-N\-D\-I\-A\-N\-\_\-\-W\-O\-R\-D}!Skybox/Debug/GLTools.h@{Skybox/\-Debug/\-G\-L\-Tools.\-h}}
+\subsubsection[{L\-I\-T\-T\-L\-E\-\_\-\-E\-N\-D\-I\-A\-N\-\_\-\-W\-O\-R\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-I\-T\-T\-L\-E\-\_\-\-E\-N\-D\-I\-A\-N\-\_\-\-W\-O\-R\-D}}\label{_skybox_2_debug_2_g_l_tools_8h_aadd349df93c3b434894fceec7449aa95}
+\hypertarget{_skybox_2_debug_2_g_l_tools_8h_aac3bff4dfe1b35eb5281bae9072b8871}{\index{Skybox/\-Debug/\-G\-L\-Tools.\-h@{Skybox/\-Debug/\-G\-L\-Tools.\-h}!M\-A\-X\-\_\-\-S\-H\-A\-D\-E\-R\-\_\-\-L\-E\-N\-G\-T\-H@{M\-A\-X\-\_\-\-S\-H\-A\-D\-E\-R\-\_\-\-L\-E\-N\-G\-T\-H}}
+\index{M\-A\-X\-\_\-\-S\-H\-A\-D\-E\-R\-\_\-\-L\-E\-N\-G\-T\-H@{M\-A\-X\-\_\-\-S\-H\-A\-D\-E\-R\-\_\-\-L\-E\-N\-G\-T\-H}!Skybox/Debug/GLTools.h@{Skybox/\-Debug/\-G\-L\-Tools.\-h}}
+\subsubsection[{M\-A\-X\-\_\-\-S\-H\-A\-D\-E\-R\-\_\-\-L\-E\-N\-G\-T\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-A\-X\-\_\-\-S\-H\-A\-D\-E\-R\-\_\-\-L\-E\-N\-G\-T\-H~8192}}\label{_skybox_2_debug_2_g_l_tools_8h_aac3bff4dfe1b35eb5281bae9072b8871}
+
+
+\subsection{Function Documentation}
+\hypertarget{_skybox_2_debug_2_g_l_tools_8h_a51fe9825b31ffa9b5e84c843f351c750}{\index{Skybox/\-Debug/\-G\-L\-Tools.\-h@{Skybox/\-Debug/\-G\-L\-Tools.\-h}!glt\-Check\-Errors@{glt\-Check\-Errors}}
+\index{glt\-Check\-Errors@{glt\-Check\-Errors}!Skybox/Debug/GLTools.h@{Skybox/\-Debug/\-G\-L\-Tools.\-h}}
+\subsubsection[{glt\-Check\-Errors}]{\setlength{\rightskip}{0pt plus 5cm}bool glt\-Check\-Errors (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-Luint}}]{prog\-Name = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{_skybox_2_debug_2_g_l_tools_8h_a51fe9825b31ffa9b5e84c843f351c750}
+\hypertarget{_skybox_2_debug_2_g_l_tools_8h_aca6d1e96e1d478463c5835bb44c96873}{\index{Skybox/\-Debug/\-G\-L\-Tools.\-h@{Skybox/\-Debug/\-G\-L\-Tools.\-h}!glt\-Generate\-Ortho2\-D\-Mat@{glt\-Generate\-Ortho2\-D\-Mat}}
+\index{glt\-Generate\-Ortho2\-D\-Mat@{glt\-Generate\-Ortho2\-D\-Mat}!Skybox/Debug/GLTools.h@{Skybox/\-Debug/\-G\-L\-Tools.\-h}}
+\subsubsection[{glt\-Generate\-Ortho2\-D\-Mat}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} glt\-Generate\-Ortho2\-D\-Mat (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-Luint}}]{width, }
+\item[{{\bf G\-Luint}}]{height, }
+\item[{{\bf M3\-D\-Matrix44f} \&}]{ortho\-Matrix, }
+\item[{{\bf G\-L\-Batch} \&}]{screen\-Quad}
+\end{DoxyParamCaption}
+)}}\label{_skybox_2_debug_2_g_l_tools_8h_aca6d1e96e1d478463c5835bb44c96873}
+\hypertarget{_skybox_2_debug_2_g_l_tools_8h_a3bbffdd67f8bee7899d5dc0825b8bf2f}{\index{Skybox/\-Debug/\-G\-L\-Tools.\-h@{Skybox/\-Debug/\-G\-L\-Tools.\-h}!glt\-Get\-Open\-G\-L\-Version@{glt\-Get\-Open\-G\-L\-Version}}
+\index{glt\-Get\-Open\-G\-L\-Version@{glt\-Get\-Open\-G\-L\-Version}!Skybox/Debug/GLTools.h@{Skybox/\-Debug/\-G\-L\-Tools.\-h}}
+\subsubsection[{glt\-Get\-Open\-G\-L\-Version}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} glt\-Get\-Open\-G\-L\-Version (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-Lint} \&}]{n\-Major, }
+\item[{{\bf G\-Lint} \&}]{n\-Minor}
+\end{DoxyParamCaption}
+)}}\label{_skybox_2_debug_2_g_l_tools_8h_a3bbffdd67f8bee7899d5dc0825b8bf2f}
+\hypertarget{_skybox_2_debug_2_g_l_tools_8h_affd41b245cf6e95e58ebb006eec8c921}{\index{Skybox/\-Debug/\-G\-L\-Tools.\-h@{Skybox/\-Debug/\-G\-L\-Tools.\-h}!glt\-Grab\-Screen\-T\-G\-A@{glt\-Grab\-Screen\-T\-G\-A}}
+\index{glt\-Grab\-Screen\-T\-G\-A@{glt\-Grab\-Screen\-T\-G\-A}!Skybox/Debug/GLTools.h@{Skybox/\-Debug/\-G\-L\-Tools.\-h}}
+\subsubsection[{glt\-Grab\-Screen\-T\-G\-A}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-Lint} glt\-Grab\-Screen\-T\-G\-A (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\-File\-Name}
+\end{DoxyParamCaption}
+)}}\label{_skybox_2_debug_2_g_l_tools_8h_affd41b245cf6e95e58ebb006eec8c921}
+\hypertarget{_skybox_2_debug_2_g_l_tools_8h_add5ab34990ba9417d067d8abd7af3c1a}{\index{Skybox/\-Debug/\-G\-L\-Tools.\-h@{Skybox/\-Debug/\-G\-L\-Tools.\-h}!glt\-Is\-Ext\-Supported@{glt\-Is\-Ext\-Supported}}
+\index{glt\-Is\-Ext\-Supported@{glt\-Is\-Ext\-Supported}!Skybox/Debug/GLTools.h@{Skybox/\-Debug/\-G\-L\-Tools.\-h}}
+\subsubsection[{glt\-Is\-Ext\-Supported}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} glt\-Is\-Ext\-Supported (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\-Extension}
+\end{DoxyParamCaption}
+)}}\label{_skybox_2_debug_2_g_l_tools_8h_add5ab34990ba9417d067d8abd7af3c1a}
+\hypertarget{_skybox_2_debug_2_g_l_tools_8h_a41c0cb8940c4658309913134483fa190}{\index{Skybox/\-Debug/\-G\-L\-Tools.\-h@{Skybox/\-Debug/\-G\-L\-Tools.\-h}!glt\-Load\-Shader\-File@{glt\-Load\-Shader\-File}}
+\index{glt\-Load\-Shader\-File@{glt\-Load\-Shader\-File}!Skybox/Debug/GLTools.h@{Skybox/\-Debug/\-G\-L\-Tools.\-h}}
+\subsubsection[{glt\-Load\-Shader\-File}]{\setlength{\rightskip}{0pt plus 5cm}bool glt\-Load\-Shader\-File (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\-File, }
+\item[{{\bf G\-Luint}}]{shader}
+\end{DoxyParamCaption}
+)}}\label{_skybox_2_debug_2_g_l_tools_8h_a41c0cb8940c4658309913134483fa190}
+\hypertarget{_skybox_2_debug_2_g_l_tools_8h_a39ed0c7a6d0b8f79450ef1facfe397b6}{\index{Skybox/\-Debug/\-G\-L\-Tools.\-h@{Skybox/\-Debug/\-G\-L\-Tools.\-h}!glt\-Load\-Shader\-Pair@{glt\-Load\-Shader\-Pair}}
+\index{glt\-Load\-Shader\-Pair@{glt\-Load\-Shader\-Pair}!Skybox/Debug/GLTools.h@{Skybox/\-Debug/\-G\-L\-Tools.\-h}}
+\subsubsection[{glt\-Load\-Shader\-Pair}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-Luint} glt\-Load\-Shader\-Pair (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\-Vertex\-Prog, }
+\item[{const char $\ast$}]{sz\-Fragment\-Prog}
+\end{DoxyParamCaption}
+)}}\label{_skybox_2_debug_2_g_l_tools_8h_a39ed0c7a6d0b8f79450ef1facfe397b6}
+\hypertarget{_skybox_2_debug_2_g_l_tools_8h_a203d56dbec7610adab58c86001648129}{\index{Skybox/\-Debug/\-G\-L\-Tools.\-h@{Skybox/\-Debug/\-G\-L\-Tools.\-h}!glt\-Load\-Shader\-Pair\-Src@{glt\-Load\-Shader\-Pair\-Src}}
+\index{glt\-Load\-Shader\-Pair\-Src@{glt\-Load\-Shader\-Pair\-Src}!Skybox/Debug/GLTools.h@{Skybox/\-Debug/\-G\-L\-Tools.\-h}}
+\subsubsection[{glt\-Load\-Shader\-Pair\-Src}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-Luint} glt\-Load\-Shader\-Pair\-Src (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\-Vertex\-Src, }
+\item[{const char $\ast$}]{sz\-Fragment\-Src}
+\end{DoxyParamCaption}
+)}}\label{_skybox_2_debug_2_g_l_tools_8h_a203d56dbec7610adab58c86001648129}
+\hypertarget{_skybox_2_debug_2_g_l_tools_8h_ac27843384310d9db435b7b2069e85b41}{\index{Skybox/\-Debug/\-G\-L\-Tools.\-h@{Skybox/\-Debug/\-G\-L\-Tools.\-h}!glt\-Load\-Shader\-Pair\-Src\-With\-Attributes@{glt\-Load\-Shader\-Pair\-Src\-With\-Attributes}}
+\index{glt\-Load\-Shader\-Pair\-Src\-With\-Attributes@{glt\-Load\-Shader\-Pair\-Src\-With\-Attributes}!Skybox/Debug/GLTools.h@{Skybox/\-Debug/\-G\-L\-Tools.\-h}}
+\subsubsection[{glt\-Load\-Shader\-Pair\-Src\-With\-Attributes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-Luint} glt\-Load\-Shader\-Pair\-Src\-With\-Attributes (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\-Vertex\-Prog, }
+\item[{const char $\ast$}]{sz\-Fragment\-Prog, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}}\label{_skybox_2_debug_2_g_l_tools_8h_ac27843384310d9db435b7b2069e85b41}
+\hypertarget{_skybox_2_debug_2_g_l_tools_8h_aa43689f6b22911e8467de1c02d446148}{\index{Skybox/\-Debug/\-G\-L\-Tools.\-h@{Skybox/\-Debug/\-G\-L\-Tools.\-h}!glt\-Load\-Shader\-Pair\-With\-Attributes@{glt\-Load\-Shader\-Pair\-With\-Attributes}}
+\index{glt\-Load\-Shader\-Pair\-With\-Attributes@{glt\-Load\-Shader\-Pair\-With\-Attributes}!Skybox/Debug/GLTools.h@{Skybox/\-Debug/\-G\-L\-Tools.\-h}}
+\subsubsection[{glt\-Load\-Shader\-Pair\-With\-Attributes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-Luint} glt\-Load\-Shader\-Pair\-With\-Attributes (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\-Vertex\-Prog, }
+\item[{const char $\ast$}]{sz\-Fragment\-Prog, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}}\label{_skybox_2_debug_2_g_l_tools_8h_aa43689f6b22911e8467de1c02d446148}
+\hypertarget{_skybox_2_debug_2_g_l_tools_8h_af8025b14b9649102f284955353a7c894}{\index{Skybox/\-Debug/\-G\-L\-Tools.\-h@{Skybox/\-Debug/\-G\-L\-Tools.\-h}!glt\-Load\-Shader\-Src@{glt\-Load\-Shader\-Src}}
+\index{glt\-Load\-Shader\-Src@{glt\-Load\-Shader\-Src}!Skybox/Debug/GLTools.h@{Skybox/\-Debug/\-G\-L\-Tools.\-h}}
+\subsubsection[{glt\-Load\-Shader\-Src}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} glt\-Load\-Shader\-Src (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\-Shader\-Src, }
+\item[{{\bf G\-Luint}}]{shader}
+\end{DoxyParamCaption}
+)}}\label{_skybox_2_debug_2_g_l_tools_8h_af8025b14b9649102f284955353a7c894}
+\hypertarget{_skybox_2_debug_2_g_l_tools_8h_abfb0ea387e464355ef08740a9bfe5557}{\index{Skybox/\-Debug/\-G\-L\-Tools.\-h@{Skybox/\-Debug/\-G\-L\-Tools.\-h}!glt\-Make\-Cube@{glt\-Make\-Cube}}
+\index{glt\-Make\-Cube@{glt\-Make\-Cube}!Skybox/Debug/GLTools.h@{Skybox/\-Debug/\-G\-L\-Tools.\-h}}
+\subsubsection[{glt\-Make\-Cube}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} glt\-Make\-Cube (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-L\-Batch} \&}]{cube\-Batch, }
+\item[{{\bf G\-Lfloat}}]{f\-Radius}
+\end{DoxyParamCaption}
+)}}\label{_skybox_2_debug_2_g_l_tools_8h_abfb0ea387e464355ef08740a9bfe5557}
+\hypertarget{_skybox_2_debug_2_g_l_tools_8h_a5557d3598ad97d6a69189b8f566285b9}{\index{Skybox/\-Debug/\-G\-L\-Tools.\-h@{Skybox/\-Debug/\-G\-L\-Tools.\-h}!glt\-Make\-Cylinder@{glt\-Make\-Cylinder}}
+\index{glt\-Make\-Cylinder@{glt\-Make\-Cylinder}!Skybox/Debug/GLTools.h@{Skybox/\-Debug/\-G\-L\-Tools.\-h}}
+\subsubsection[{glt\-Make\-Cylinder}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} glt\-Make\-Cylinder (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-L\-Triangle\-Batch} \&}]{cylinder\-Batch, }
+\item[{{\bf G\-Lfloat}}]{base\-Radius, }
+\item[{{\bf G\-Lfloat}}]{top\-Radius, }
+\item[{{\bf G\-Lfloat}}]{f\-Length, }
+\item[{{\bf G\-Lint}}]{num\-Slices, }
+\item[{{\bf G\-Lint}}]{num\-Stacks}
+\end{DoxyParamCaption}
+)}}\label{_skybox_2_debug_2_g_l_tools_8h_a5557d3598ad97d6a69189b8f566285b9}
+\hypertarget{_skybox_2_debug_2_g_l_tools_8h_a11beec4878a483fb80f3f05aae0a3081}{\index{Skybox/\-Debug/\-G\-L\-Tools.\-h@{Skybox/\-Debug/\-G\-L\-Tools.\-h}!glt\-Make\-Disk@{glt\-Make\-Disk}}
+\index{glt\-Make\-Disk@{glt\-Make\-Disk}!Skybox/Debug/GLTools.h@{Skybox/\-Debug/\-G\-L\-Tools.\-h}}
+\subsubsection[{glt\-Make\-Disk}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} glt\-Make\-Disk (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-L\-Triangle\-Batch} \&}]{disk\-Batch, }
+\item[{{\bf G\-Lfloat}}]{inner\-Radius, }
+\item[{{\bf G\-Lfloat}}]{outer\-Radius, }
+\item[{{\bf G\-Lint}}]{n\-Slices, }
+\item[{{\bf G\-Lint}}]{n\-Stacks}
+\end{DoxyParamCaption}
+)}}\label{_skybox_2_debug_2_g_l_tools_8h_a11beec4878a483fb80f3f05aae0a3081}
+\hypertarget{_skybox_2_debug_2_g_l_tools_8h_a365309115a133cb5a4e51ee0a94ebdb1}{\index{Skybox/\-Debug/\-G\-L\-Tools.\-h@{Skybox/\-Debug/\-G\-L\-Tools.\-h}!glt\-Make\-Sphere@{glt\-Make\-Sphere}}
+\index{glt\-Make\-Sphere@{glt\-Make\-Sphere}!Skybox/Debug/GLTools.h@{Skybox/\-Debug/\-G\-L\-Tools.\-h}}
+\subsubsection[{glt\-Make\-Sphere}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} glt\-Make\-Sphere (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-L\-Triangle\-Batch} \&}]{sphere\-Batch, }
+\item[{{\bf G\-Lfloat}}]{f\-Radius, }
+\item[{{\bf G\-Lint}}]{i\-Slices, }
+\item[{{\bf G\-Lint}}]{i\-Stacks}
+\end{DoxyParamCaption}
+)}}\label{_skybox_2_debug_2_g_l_tools_8h_a365309115a133cb5a4e51ee0a94ebdb1}
+\hypertarget{_skybox_2_debug_2_g_l_tools_8h_a6b25c52ab58557dab7156c3af831a8cb}{\index{Skybox/\-Debug/\-G\-L\-Tools.\-h@{Skybox/\-Debug/\-G\-L\-Tools.\-h}!glt\-Make\-Torus@{glt\-Make\-Torus}}
+\index{glt\-Make\-Torus@{glt\-Make\-Torus}!Skybox/Debug/GLTools.h@{Skybox/\-Debug/\-G\-L\-Tools.\-h}}
+\subsubsection[{glt\-Make\-Torus}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} glt\-Make\-Torus (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-L\-Triangle\-Batch} \&}]{torus\-Batch, }
+\item[{{\bf G\-Lfloat}}]{major\-Radius, }
+\item[{{\bf G\-Lfloat}}]{minor\-Radius, }
+\item[{{\bf G\-Lint}}]{num\-Major, }
+\item[{{\bf G\-Lint}}]{num\-Minor}
+\end{DoxyParamCaption}
+)}}\label{_skybox_2_debug_2_g_l_tools_8h_a6b25c52ab58557dab7156c3af831a8cb}
+\hypertarget{_skybox_2_debug_2_g_l_tools_8h_aab878c2dffa85ef90b6e9cbb1af11b4b}{\index{Skybox/\-Debug/\-G\-L\-Tools.\-h@{Skybox/\-Debug/\-G\-L\-Tools.\-h}!glt\-Read\-B\-M\-P\-Bits@{glt\-Read\-B\-M\-P\-Bits}}
+\index{glt\-Read\-B\-M\-P\-Bits@{glt\-Read\-B\-M\-P\-Bits}!Skybox/Debug/GLTools.h@{Skybox/\-Debug/\-G\-L\-Tools.\-h}}
+\subsubsection[{glt\-Read\-B\-M\-P\-Bits}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-Lbyte}$\ast$ glt\-Read\-B\-M\-P\-Bits (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\-File\-Name, }
+\item[{{\bf int} $\ast$}]{n\-Width, }
+\item[{{\bf int} $\ast$}]{n\-Height}
+\end{DoxyParamCaption}
+)}}\label{_skybox_2_debug_2_g_l_tools_8h_aab878c2dffa85ef90b6e9cbb1af11b4b}
+\hypertarget{_skybox_2_debug_2_g_l_tools_8h_a47a0ca72b4210508090f86c776ad8d41}{\index{Skybox/\-Debug/\-G\-L\-Tools.\-h@{Skybox/\-Debug/\-G\-L\-Tools.\-h}!glt\-Read\-T\-G\-A\-Bits@{glt\-Read\-T\-G\-A\-Bits}}
+\index{glt\-Read\-T\-G\-A\-Bits@{glt\-Read\-T\-G\-A\-Bits}!Skybox/Debug/GLTools.h@{Skybox/\-Debug/\-G\-L\-Tools.\-h}}
+\subsubsection[{glt\-Read\-T\-G\-A\-Bits}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-Lbyte}$\ast$ glt\-Read\-T\-G\-A\-Bits (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\-File\-Name, }
+\item[{{\bf G\-Lint} $\ast$}]{i\-Width, }
+\item[{{\bf G\-Lint} $\ast$}]{i\-Height, }
+\item[{{\bf G\-Lint} $\ast$}]{i\-Components, }
+\item[{{\bf G\-Lenum} $\ast$}]{e\-Format}
+\end{DoxyParamCaption}
+)}}\label{_skybox_2_debug_2_g_l_tools_8h_a47a0ca72b4210508090f86c776ad8d41}
+\hypertarget{_skybox_2_debug_2_g_l_tools_8h_ad1cd5829323498432cc035d488b095da}{\index{Skybox/\-Debug/\-G\-L\-Tools.\-h@{Skybox/\-Debug/\-G\-L\-Tools.\-h}!glt\-Set\-Working\-Directory@{glt\-Set\-Working\-Directory}}
+\index{glt\-Set\-Working\-Directory@{glt\-Set\-Working\-Directory}!Skybox/Debug/GLTools.h@{Skybox/\-Debug/\-G\-L\-Tools.\-h}}
+\subsubsection[{glt\-Set\-Working\-Directory}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} glt\-Set\-Working\-Directory (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\-Argv}
+\end{DoxyParamCaption}
+)}}\label{_skybox_2_debug_2_g_l_tools_8h_ad1cd5829323498432cc035d488b095da}

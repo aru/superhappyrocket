@@ -1,0 +1,219 @@
+\hypertarget{classassimp_mesh}{\section{assimp\-Mesh Class Reference}
+\label{classassimp_mesh}\index{assimp\-Mesh@{assimp\-Mesh}}
+}
+
+
+{\ttfamily \#include $<$assimp\-Mesh.\-h$>$}
+
+
+
+Inheritance diagram for assimp\-Mesh\-:
+
+
+Collaboration diagram for assimp\-Mesh\-:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classassimp_mesh_a85f493d33637bd9801bd8a0945ac1ea7}{assimp\-Mesh} (const char $\ast$filename, \hyperlink{class_context}{Context} $\ast$ctx)
+\item 
+\hyperlink{classassimp_mesh_a857338e51304936c3cc9cd51562ce22e}{assimp\-Mesh} (const \hyperlink{classassimp_mesh}{assimp\-Mesh} \&mesh)
+\item 
+\hyperlink{classassimp_mesh_a572b0209390f0afa8a8441b9b267ac9d}{$\sim$assimp\-Mesh} ()
+\item 
+const \hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{classassimp_mesh_a4e8fdf121ad27687430cb46fb3d4adee}{Initialize} (\hyperlink{class_context}{Context} $\ast$ctx)
+\item 
+const \hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{classassimp_mesh_a24631cc83038c0b1b68959f76f367d49}{Load\-Content} ()
+\item 
+const \hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{classassimp_mesh_a27c59be8d8f40e4363c8d2338b8a1fd1}{Draw} (\hyperlink{class_camera}{Camera} $\ast$camera, \hyperlink{class_g_l_shader_manager}{G\-L\-Shader\-Manager} $\ast$shader\-Manager, \hyperlink{class_texture_manager}{Texture\-Manager} $\ast$texture\-Manager, \hyperlink{class_light}{Light} $\ast$light)
+\item 
+const \hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{classassimp_mesh_a59eac83134c165e131b4a2f8d6b67410}{Update} ()
+\item 
+const \hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{classassimp_mesh_a84833758a86565f8a70802074e4c86b7}{Unload\-Content} ()
+\item 
+\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} \hyperlink{classassimp_mesh_a36b884bb029d5a2b8fdb71462cbcfb78}{recursive\-Process} (ai\-Node $\ast$node, const ai\-Scene $\ast$scene)
+\item 
+\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} \hyperlink{classassimp_mesh_a031d2bee1d447a845afca213b4172f8c}{process\-Mesh} (\hyperlink{structai_mesh}{ai\-Mesh} $\ast$mesh, const ai\-Scene $\ast$scene)
+\item 
+\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} \hyperlink{classassimp_mesh_afb0cdc86e349421e12d3e5efff466725}{create\-Batches} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_context}{Context} $\ast$ \hyperlink{classassimp_mesh_a02d771465184fd290ac9cc4b38b32828}{ctxt}
+\item 
+\hyperlink{_g_l_e_w_2glew_8h_a06b88fc81ad0b30d1512e9609e3d7c82}{string} \hyperlink{classassimp_mesh_ab3e634962612b237a956fd8128f70c84}{file\-Name}
+\item 
+vector$<$ \hyperlink{class_simple_object}{Simple\-Object} $\ast$ $>$ \hyperlink{classassimp_mesh_a130a8db8b84bdb7b83599034a5543763}{objects}
+\item 
+vector$<$ vector$<$ \hyperlink{_g_l_e_w_2glew_8h_a4a966015c733cb5fe2733de64a62a3a5}{G\-Lfloat} $>$ $>$ \hyperlink{classassimp_mesh_aafe85632fb36e3b7a55f5e49023feaa1}{verts}
+\item 
+vector$<$ vector$<$ \hyperlink{_g_l_e_w_2glew_8h_a4a966015c733cb5fe2733de64a62a3a5}{G\-Lfloat} $>$ $>$ \hyperlink{classassimp_mesh_a71635c933787e2acfce8bfdfe60fb958}{norms}
+\item 
+vector$<$ vector$<$ \hyperlink{_g_l_e_w_2glew_8h_a4a966015c733cb5fe2733de64a62a3a5}{G\-Lfloat} $>$ $>$ \hyperlink{classassimp_mesh_af73735a4a7b8b692b658af1e4f292e6d}{texts}
+\item 
+vector$<$ vector$<$ \hyperlink{_g_l_e_w_2glew_8h_ac995a558f6571eb5f98b7a6d2b2a4468}{G\-Lushort} $>$ $>$ \hyperlink{classassimp_mesh_a488c709de58bc05a6c1748a379d29109}{indexes}
+\item 
+vector$<$ \hyperlink{_g_l_e_w_2glew_8h_ac995a558f6571eb5f98b7a6d2b2a4468}{G\-Lushort} $>$ \hyperlink{classassimp_mesh_a103119ca657355e47e36a88802fa485a}{max\-Index}
+\item 
+vector$<$ \hyperlink{_g_l_e_w_2glew_8h_a68c4714e43d8e827d80759f9cb864f3c}{G\-Luint} $>$ \hyperlink{classassimp_mesh_a5b64a6b1ffa93791b51bc0205d7f8dfa}{textures}
+\item 
+vector$<$ \hyperlink{class_texture2_d}{Texture2\-D} $\ast$ $>$ \hyperlink{classassimp_mesh_ad7c6c414b638d448d4f4ee5ce1e47fae}{texture\-Struct}
+\item 
+unsigned \hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{classassimp_mesh_a5bca3d425fef3b8cef719bb9e0384d8a}{num\-Textures}
+\item 
+bool \hyperlink{classassimp_mesh_a17eccca561b80ff903e4845aaa29b6cf}{untextured\-Verts}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classassimp_mesh_a85f493d33637bd9801bd8a0945ac1ea7}{\index{assimp\-Mesh@{assimp\-Mesh}!assimp\-Mesh@{assimp\-Mesh}}
+\index{assimp\-Mesh@{assimp\-Mesh}!assimpMesh@{assimp\-Mesh}}
+\subsubsection[{assimp\-Mesh}]{\setlength{\rightskip}{0pt plus 5cm}assimp\-Mesh\-::assimp\-Mesh (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filename, }
+\item[{{\bf Context} $\ast$}]{ctx}
+\end{DoxyParamCaption}
+)}}\label{classassimp_mesh_a85f493d33637bd9801bd8a0945ac1ea7}
+\hypertarget{classassimp_mesh_a857338e51304936c3cc9cd51562ce22e}{\index{assimp\-Mesh@{assimp\-Mesh}!assimp\-Mesh@{assimp\-Mesh}}
+\index{assimp\-Mesh@{assimp\-Mesh}!assimpMesh@{assimp\-Mesh}}
+\subsubsection[{assimp\-Mesh}]{\setlength{\rightskip}{0pt plus 5cm}assimp\-Mesh\-::assimp\-Mesh (
+\begin{DoxyParamCaption}
+\item[{const {\bf assimp\-Mesh} \&}]{mesh}
+\end{DoxyParamCaption}
+)}}\label{classassimp_mesh_a857338e51304936c3cc9cd51562ce22e}
+\hypertarget{classassimp_mesh_a572b0209390f0afa8a8441b9b267ac9d}{\index{assimp\-Mesh@{assimp\-Mesh}!$\sim$assimp\-Mesh@{$\sim$assimp\-Mesh}}
+\index{$\sim$assimp\-Mesh@{$\sim$assimp\-Mesh}!assimpMesh@{assimp\-Mesh}}
+\subsubsection[{$\sim$assimp\-Mesh}]{\setlength{\rightskip}{0pt plus 5cm}assimp\-Mesh\-::$\sim$assimp\-Mesh (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classassimp_mesh_a572b0209390f0afa8a8441b9b267ac9d}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classassimp_mesh_afb0cdc86e349421e12d3e5efff466725}{\index{assimp\-Mesh@{assimp\-Mesh}!create\-Batches@{create\-Batches}}
+\index{create\-Batches@{create\-Batches}!assimpMesh@{assimp\-Mesh}}
+\subsubsection[{create\-Batches}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} assimp\-Mesh\-::create\-Batches (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classassimp_mesh_afb0cdc86e349421e12d3e5efff466725}
+\hypertarget{classassimp_mesh_a27c59be8d8f40e4363c8d2338b8a1fd1}{\index{assimp\-Mesh@{assimp\-Mesh}!Draw@{Draw}}
+\index{Draw@{Draw}!assimpMesh@{assimp\-Mesh}}
+\subsubsection[{Draw}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf int} assimp\-Mesh\-::\-Draw (
+\begin{DoxyParamCaption}
+\item[{{\bf Camera} $\ast$}]{camera, }
+\item[{{\bf G\-L\-Shader\-Manager} $\ast$}]{shader\-Manager, }
+\item[{{\bf Texture\-Manager} $\ast$}]{texture\-Manager, }
+\item[{{\bf Light} $\ast$}]{light}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classassimp_mesh_a27c59be8d8f40e4363c8d2338b8a1fd1}
+
+
+Reimplemented from \hyperlink{class_simple_object_ac4a7b3ff3c2215ff68b3967b57c77fa9}{Simple\-Object}.
+
+\hypertarget{classassimp_mesh_a4e8fdf121ad27687430cb46fb3d4adee}{\index{assimp\-Mesh@{assimp\-Mesh}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!assimpMesh@{assimp\-Mesh}}
+\subsubsection[{Initialize}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf int} assimp\-Mesh\-::\-Initialize (
+\begin{DoxyParamCaption}
+\item[{{\bf Context} $\ast$}]{ctx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classassimp_mesh_a4e8fdf121ad27687430cb46fb3d4adee}
+
+
+Reimplemented from \hyperlink{class_simple_object_ad8cab013f221a2b7132dc243a304b20f}{Simple\-Object}.
+
+\hypertarget{classassimp_mesh_a24631cc83038c0b1b68959f76f367d49}{\index{assimp\-Mesh@{assimp\-Mesh}!Load\-Content@{Load\-Content}}
+\index{Load\-Content@{Load\-Content}!assimpMesh@{assimp\-Mesh}}
+\subsubsection[{Load\-Content}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf int} assimp\-Mesh\-::\-Load\-Content (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classassimp_mesh_a24631cc83038c0b1b68959f76f367d49}
+
+
+Reimplemented from \hyperlink{class_simple_object_ae06adca212a0d4bf4607b324908b2b8e}{Simple\-Object}.
+
+\hypertarget{classassimp_mesh_a031d2bee1d447a845afca213b4172f8c}{\index{assimp\-Mesh@{assimp\-Mesh}!process\-Mesh@{process\-Mesh}}
+\index{process\-Mesh@{process\-Mesh}!assimpMesh@{assimp\-Mesh}}
+\subsubsection[{process\-Mesh}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} assimp\-Mesh\-::process\-Mesh (
+\begin{DoxyParamCaption}
+\item[{{\bf ai\-Mesh} $\ast$}]{mesh, }
+\item[{const ai\-Scene $\ast$}]{scene}
+\end{DoxyParamCaption}
+)}}\label{classassimp_mesh_a031d2bee1d447a845afca213b4172f8c}
+\hypertarget{classassimp_mesh_a36b884bb029d5a2b8fdb71462cbcfb78}{\index{assimp\-Mesh@{assimp\-Mesh}!recursive\-Process@{recursive\-Process}}
+\index{recursive\-Process@{recursive\-Process}!assimpMesh@{assimp\-Mesh}}
+\subsubsection[{recursive\-Process}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} assimp\-Mesh\-::recursive\-Process (
+\begin{DoxyParamCaption}
+\item[{ai\-Node $\ast$}]{node, }
+\item[{const ai\-Scene $\ast$}]{scene}
+\end{DoxyParamCaption}
+)}}\label{classassimp_mesh_a36b884bb029d5a2b8fdb71462cbcfb78}
+\hypertarget{classassimp_mesh_a84833758a86565f8a70802074e4c86b7}{\index{assimp\-Mesh@{assimp\-Mesh}!Unload\-Content@{Unload\-Content}}
+\index{Unload\-Content@{Unload\-Content}!assimpMesh@{assimp\-Mesh}}
+\subsubsection[{Unload\-Content}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf int} assimp\-Mesh\-::\-Unload\-Content (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classassimp_mesh_a84833758a86565f8a70802074e4c86b7}
+
+
+Reimplemented from \hyperlink{class_simple_object_a5fe4d692b6633f2c68b6eae1d3f6b059}{Simple\-Object}.
+
+\hypertarget{classassimp_mesh_a59eac83134c165e131b4a2f8d6b67410}{\index{assimp\-Mesh@{assimp\-Mesh}!Update@{Update}}
+\index{Update@{Update}!assimpMesh@{assimp\-Mesh}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf int} assimp\-Mesh\-::\-Update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classassimp_mesh_a59eac83134c165e131b4a2f8d6b67410}
+
+
+Reimplemented from \hyperlink{class_simple_object_a7523273ddea5901d2049575229c8b5ca}{Simple\-Object}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classassimp_mesh_a02d771465184fd290ac9cc4b38b32828}{\index{assimp\-Mesh@{assimp\-Mesh}!ctxt@{ctxt}}
+\index{ctxt@{ctxt}!assimpMesh@{assimp\-Mesh}}
+\subsubsection[{ctxt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Context}$\ast$ assimp\-Mesh\-::ctxt}}\label{classassimp_mesh_a02d771465184fd290ac9cc4b38b32828}
+\hypertarget{classassimp_mesh_ab3e634962612b237a956fd8128f70c84}{\index{assimp\-Mesh@{assimp\-Mesh}!file\-Name@{file\-Name}}
+\index{file\-Name@{file\-Name}!assimpMesh@{assimp\-Mesh}}
+\subsubsection[{file\-Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf string} assimp\-Mesh\-::file\-Name}}\label{classassimp_mesh_ab3e634962612b237a956fd8128f70c84}
+\hypertarget{classassimp_mesh_a488c709de58bc05a6c1748a379d29109}{\index{assimp\-Mesh@{assimp\-Mesh}!indexes@{indexes}}
+\index{indexes@{indexes}!assimpMesh@{assimp\-Mesh}}
+\subsubsection[{indexes}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ vector$<${\bf G\-Lushort}$>$ $>$ assimp\-Mesh\-::indexes}}\label{classassimp_mesh_a488c709de58bc05a6c1748a379d29109}
+\hypertarget{classassimp_mesh_a103119ca657355e47e36a88802fa485a}{\index{assimp\-Mesh@{assimp\-Mesh}!max\-Index@{max\-Index}}
+\index{max\-Index@{max\-Index}!assimpMesh@{assimp\-Mesh}}
+\subsubsection[{max\-Index}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf G\-Lushort}$>$ assimp\-Mesh\-::max\-Index}}\label{classassimp_mesh_a103119ca657355e47e36a88802fa485a}
+\hypertarget{classassimp_mesh_a71635c933787e2acfce8bfdfe60fb958}{\index{assimp\-Mesh@{assimp\-Mesh}!norms@{norms}}
+\index{norms@{norms}!assimpMesh@{assimp\-Mesh}}
+\subsubsection[{norms}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ vector$<${\bf G\-Lfloat}$>$ $>$ assimp\-Mesh\-::norms}}\label{classassimp_mesh_a71635c933787e2acfce8bfdfe60fb958}
+\hypertarget{classassimp_mesh_a5bca3d425fef3b8cef719bb9e0384d8a}{\index{assimp\-Mesh@{assimp\-Mesh}!num\-Textures@{num\-Textures}}
+\index{num\-Textures@{num\-Textures}!assimpMesh@{assimp\-Mesh}}
+\subsubsection[{num\-Textures}]{\setlength{\rightskip}{0pt plus 5cm}unsigned {\bf int} assimp\-Mesh\-::num\-Textures}}\label{classassimp_mesh_a5bca3d425fef3b8cef719bb9e0384d8a}
+\hypertarget{classassimp_mesh_a130a8db8b84bdb7b83599034a5543763}{\index{assimp\-Mesh@{assimp\-Mesh}!objects@{objects}}
+\index{objects@{objects}!assimpMesh@{assimp\-Mesh}}
+\subsubsection[{objects}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Simple\-Object}$\ast$$>$ assimp\-Mesh\-::objects}}\label{classassimp_mesh_a130a8db8b84bdb7b83599034a5543763}
+\hypertarget{classassimp_mesh_af73735a4a7b8b692b658af1e4f292e6d}{\index{assimp\-Mesh@{assimp\-Mesh}!texts@{texts}}
+\index{texts@{texts}!assimpMesh@{assimp\-Mesh}}
+\subsubsection[{texts}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ vector$<${\bf G\-Lfloat}$>$ $>$ assimp\-Mesh\-::texts}}\label{classassimp_mesh_af73735a4a7b8b692b658af1e4f292e6d}
+\hypertarget{classassimp_mesh_a5b64a6b1ffa93791b51bc0205d7f8dfa}{\index{assimp\-Mesh@{assimp\-Mesh}!textures@{textures}}
+\index{textures@{textures}!assimpMesh@{assimp\-Mesh}}
+\subsubsection[{textures}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf G\-Luint}$>$ assimp\-Mesh\-::textures}}\label{classassimp_mesh_a5b64a6b1ffa93791b51bc0205d7f8dfa}
+\hypertarget{classassimp_mesh_ad7c6c414b638d448d4f4ee5ce1e47fae}{\index{assimp\-Mesh@{assimp\-Mesh}!texture\-Struct@{texture\-Struct}}
+\index{texture\-Struct@{texture\-Struct}!assimpMesh@{assimp\-Mesh}}
+\subsubsection[{texture\-Struct}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Texture2\-D}$\ast$$>$ assimp\-Mesh\-::texture\-Struct}}\label{classassimp_mesh_ad7c6c414b638d448d4f4ee5ce1e47fae}
+\hypertarget{classassimp_mesh_a17eccca561b80ff903e4845aaa29b6cf}{\index{assimp\-Mesh@{assimp\-Mesh}!untextured\-Verts@{untextured\-Verts}}
+\index{untextured\-Verts@{untextured\-Verts}!assimpMesh@{assimp\-Mesh}}
+\subsubsection[{untextured\-Verts}]{\setlength{\rightskip}{0pt plus 5cm}bool assimp\-Mesh\-::untextured\-Verts}}\label{classassimp_mesh_a17eccca561b80ff903e4845aaa29b6cf}
+\hypertarget{classassimp_mesh_aafe85632fb36e3b7a55f5e49023feaa1}{\index{assimp\-Mesh@{assimp\-Mesh}!verts@{verts}}
+\index{verts@{verts}!assimpMesh@{assimp\-Mesh}}
+\subsubsection[{verts}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ vector$<${\bf G\-Lfloat}$>$ $>$ assimp\-Mesh\-::verts}}\label{classassimp_mesh_aafe85632fb36e3b7a55f5e49023feaa1}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{assimp_mesh_8h}{assimp\-Mesh.\-h}\item 
+src/\hyperlink{assimp_mesh_8cpp}{assimp\-Mesh.\-cpp}\end{DoxyCompactItemize}

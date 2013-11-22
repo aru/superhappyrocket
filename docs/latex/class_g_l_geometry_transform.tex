@@ -1,0 +1,123 @@
+\hypertarget{class_g_l_geometry_transform}{\section{G\-L\-Geometry\-Transform Class Reference}
+\label{class_g_l_geometry_transform}\index{G\-L\-Geometry\-Transform@{G\-L\-Geometry\-Transform}}
+}
+
+
+{\ttfamily \#include $<$G\-L\-Geometry\-Transform.\-h$>$}
+
+
+
+Collaboration diagram for G\-L\-Geometry\-Transform\-:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_g_l_geometry_transform_ac12c81c996e670194e0b405758848cc7}{G\-L\-Geometry\-Transform} (\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void})
+\item 
+\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} \hyperlink{class_g_l_geometry_transform_a274a2fa32a96a450d572fca44992ab54}{Set\-Model\-View\-Matrix\-Stack} (\hyperlink{class_g_l_matrix_stack}{G\-L\-Matrix\-Stack} \&m\-Model\-View)
+\item 
+\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} \hyperlink{class_g_l_geometry_transform_a46a56ad2f8f0b125471b953232dccf4b}{Set\-Projection\-Matrix\-Stack} (\hyperlink{class_g_l_matrix_stack}{G\-L\-Matrix\-Stack} \&m\-Projection)
+\item 
+\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} \hyperlink{class_g_l_geometry_transform_a0d4786d4988445ee7364df85c0354192}{Set\-Matrix\-Stacks} (\hyperlink{class_g_l_matrix_stack}{G\-L\-Matrix\-Stack} \&m\-Model\-View, \hyperlink{class_g_l_matrix_stack}{G\-L\-Matrix\-Stack} \&m\-Projection)
+\item 
+const \hyperlink{math3d_8h_a1e8690467d81d5ed97c5ecc3a144a4ac}{M3\-D\-Matrix44f} \& \hyperlink{class_g_l_geometry_transform_a57b6a1d7f784234921b783893a1d584d}{Get\-Model\-View\-Projection\-Matrix} (\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void})
+\item 
+const \hyperlink{math3d_8h_a1e8690467d81d5ed97c5ecc3a144a4ac}{M3\-D\-Matrix44f} \& \hyperlink{class_g_l_geometry_transform_a5a7741b13f76bc3b572f769ab5ec7ecd}{Get\-Model\-View\-Matrix} (\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void})
+\item 
+const \hyperlink{math3d_8h_a1e8690467d81d5ed97c5ecc3a144a4ac}{M3\-D\-Matrix44f} \& \hyperlink{class_g_l_geometry_transform_a8fb2620effe367c08066cc2f52f95db6}{Get\-Projection\-Matrix} (\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void})
+\item 
+const \hyperlink{math3d_8h_a8a8053baac8d5fc03f1dd4316d8da1dd}{M3\-D\-Matrix33f} \& \hyperlink{class_g_l_geometry_transform_a8665b1cec49a4913f51e9d59578a12c9}{Get\-Normal\-Matrix} (bool b\-Normalize=false)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{math3d_8h_a1e8690467d81d5ed97c5ecc3a144a4ac}{M3\-D\-Matrix44f} \hyperlink{class_g_l_geometry_transform_a01bbd7a1985a4674c7479f842d17d53d}{\-\_\-m\-Model\-View\-Projection}
+\item 
+\hyperlink{math3d_8h_a8a8053baac8d5fc03f1dd4316d8da1dd}{M3\-D\-Matrix33f} \hyperlink{class_g_l_geometry_transform_a3f1ea76d82d5c97d622d5e34c3f28467}{\-\_\-m\-Normal\-Matrix}
+\item 
+\hyperlink{class_g_l_matrix_stack}{G\-L\-Matrix\-Stack} $\ast$ \hyperlink{class_g_l_geometry_transform_a0f0d878692add5eeeac0e7b5713078bc}{\-\_\-m\-Model\-View}
+\item 
+\hyperlink{class_g_l_matrix_stack}{G\-L\-Matrix\-Stack} $\ast$ \hyperlink{class_g_l_geometry_transform_a566214dba8ce4d8f0e309d2283da3dea}{\-\_\-m\-Projection}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_g_l_geometry_transform_ac12c81c996e670194e0b405758848cc7}{\index{G\-L\-Geometry\-Transform@{G\-L\-Geometry\-Transform}!G\-L\-Geometry\-Transform@{G\-L\-Geometry\-Transform}}
+\index{G\-L\-Geometry\-Transform@{G\-L\-Geometry\-Transform}!GLGeometryTransform@{G\-L\-Geometry\-Transform}}
+\subsubsection[{G\-L\-Geometry\-Transform}]{\setlength{\rightskip}{0pt plus 5cm}G\-L\-Geometry\-Transform\-::\-G\-L\-Geometry\-Transform (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_g_l_geometry_transform_ac12c81c996e670194e0b405758848cc7}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_g_l_geometry_transform_a5a7741b13f76bc3b572f769ab5ec7ecd}{\index{G\-L\-Geometry\-Transform@{G\-L\-Geometry\-Transform}!Get\-Model\-View\-Matrix@{Get\-Model\-View\-Matrix}}
+\index{Get\-Model\-View\-Matrix@{Get\-Model\-View\-Matrix}!GLGeometryTransform@{G\-L\-Geometry\-Transform}}
+\subsubsection[{Get\-Model\-View\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf M3\-D\-Matrix44f}\& G\-L\-Geometry\-Transform\-::\-Get\-Model\-View\-Matrix (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_g_l_geometry_transform_a5a7741b13f76bc3b572f769ab5ec7ecd}
+\hypertarget{class_g_l_geometry_transform_a57b6a1d7f784234921b783893a1d584d}{\index{G\-L\-Geometry\-Transform@{G\-L\-Geometry\-Transform}!Get\-Model\-View\-Projection\-Matrix@{Get\-Model\-View\-Projection\-Matrix}}
+\index{Get\-Model\-View\-Projection\-Matrix@{Get\-Model\-View\-Projection\-Matrix}!GLGeometryTransform@{G\-L\-Geometry\-Transform}}
+\subsubsection[{Get\-Model\-View\-Projection\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf M3\-D\-Matrix44f}\& G\-L\-Geometry\-Transform\-::\-Get\-Model\-View\-Projection\-Matrix (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_g_l_geometry_transform_a57b6a1d7f784234921b783893a1d584d}
+\hypertarget{class_g_l_geometry_transform_a8665b1cec49a4913f51e9d59578a12c9}{\index{G\-L\-Geometry\-Transform@{G\-L\-Geometry\-Transform}!Get\-Normal\-Matrix@{Get\-Normal\-Matrix}}
+\index{Get\-Normal\-Matrix@{Get\-Normal\-Matrix}!GLGeometryTransform@{G\-L\-Geometry\-Transform}}
+\subsubsection[{Get\-Normal\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf M3\-D\-Matrix33f}\& G\-L\-Geometry\-Transform\-::\-Get\-Normal\-Matrix (
+\begin{DoxyParamCaption}
+\item[{bool}]{b\-Normalize = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_g_l_geometry_transform_a8665b1cec49a4913f51e9d59578a12c9}
+\hypertarget{class_g_l_geometry_transform_a8fb2620effe367c08066cc2f52f95db6}{\index{G\-L\-Geometry\-Transform@{G\-L\-Geometry\-Transform}!Get\-Projection\-Matrix@{Get\-Projection\-Matrix}}
+\index{Get\-Projection\-Matrix@{Get\-Projection\-Matrix}!GLGeometryTransform@{G\-L\-Geometry\-Transform}}
+\subsubsection[{Get\-Projection\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf M3\-D\-Matrix44f}\& G\-L\-Geometry\-Transform\-::\-Get\-Projection\-Matrix (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_g_l_geometry_transform_a8fb2620effe367c08066cc2f52f95db6}
+\hypertarget{class_g_l_geometry_transform_a0d4786d4988445ee7364df85c0354192}{\index{G\-L\-Geometry\-Transform@{G\-L\-Geometry\-Transform}!Set\-Matrix\-Stacks@{Set\-Matrix\-Stacks}}
+\index{Set\-Matrix\-Stacks@{Set\-Matrix\-Stacks}!GLGeometryTransform@{G\-L\-Geometry\-Transform}}
+\subsubsection[{Set\-Matrix\-Stacks}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} G\-L\-Geometry\-Transform\-::\-Set\-Matrix\-Stacks (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-L\-Matrix\-Stack} \&}]{m\-Model\-View, }
+\item[{{\bf G\-L\-Matrix\-Stack} \&}]{m\-Projection}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_g_l_geometry_transform_a0d4786d4988445ee7364df85c0354192}
+\hypertarget{class_g_l_geometry_transform_a274a2fa32a96a450d572fca44992ab54}{\index{G\-L\-Geometry\-Transform@{G\-L\-Geometry\-Transform}!Set\-Model\-View\-Matrix\-Stack@{Set\-Model\-View\-Matrix\-Stack}}
+\index{Set\-Model\-View\-Matrix\-Stack@{Set\-Model\-View\-Matrix\-Stack}!GLGeometryTransform@{G\-L\-Geometry\-Transform}}
+\subsubsection[{Set\-Model\-View\-Matrix\-Stack}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} G\-L\-Geometry\-Transform\-::\-Set\-Model\-View\-Matrix\-Stack (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-L\-Matrix\-Stack} \&}]{m\-Model\-View}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_g_l_geometry_transform_a274a2fa32a96a450d572fca44992ab54}
+\hypertarget{class_g_l_geometry_transform_a46a56ad2f8f0b125471b953232dccf4b}{\index{G\-L\-Geometry\-Transform@{G\-L\-Geometry\-Transform}!Set\-Projection\-Matrix\-Stack@{Set\-Projection\-Matrix\-Stack}}
+\index{Set\-Projection\-Matrix\-Stack@{Set\-Projection\-Matrix\-Stack}!GLGeometryTransform@{G\-L\-Geometry\-Transform}}
+\subsubsection[{Set\-Projection\-Matrix\-Stack}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} G\-L\-Geometry\-Transform\-::\-Set\-Projection\-Matrix\-Stack (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-L\-Matrix\-Stack} \&}]{m\-Projection}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_g_l_geometry_transform_a46a56ad2f8f0b125471b953232dccf4b}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_g_l_geometry_transform_a0f0d878692add5eeeac0e7b5713078bc}{\index{G\-L\-Geometry\-Transform@{G\-L\-Geometry\-Transform}!\-\_\-m\-Model\-View@{\-\_\-m\-Model\-View}}
+\index{\-\_\-m\-Model\-View@{\-\_\-m\-Model\-View}!GLGeometryTransform@{G\-L\-Geometry\-Transform}}
+\subsubsection[{\-\_\-m\-Model\-View}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-L\-Matrix\-Stack}$\ast$ G\-L\-Geometry\-Transform\-::\-\_\-m\-Model\-View\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_g_l_geometry_transform_a0f0d878692add5eeeac0e7b5713078bc}
+\hypertarget{class_g_l_geometry_transform_a01bbd7a1985a4674c7479f842d17d53d}{\index{G\-L\-Geometry\-Transform@{G\-L\-Geometry\-Transform}!\-\_\-m\-Model\-View\-Projection@{\-\_\-m\-Model\-View\-Projection}}
+\index{\-\_\-m\-Model\-View\-Projection@{\-\_\-m\-Model\-View\-Projection}!GLGeometryTransform@{G\-L\-Geometry\-Transform}}
+\subsubsection[{\-\_\-m\-Model\-View\-Projection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M3\-D\-Matrix44f} G\-L\-Geometry\-Transform\-::\-\_\-m\-Model\-View\-Projection\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_g_l_geometry_transform_a01bbd7a1985a4674c7479f842d17d53d}
+\hypertarget{class_g_l_geometry_transform_a3f1ea76d82d5c97d622d5e34c3f28467}{\index{G\-L\-Geometry\-Transform@{G\-L\-Geometry\-Transform}!\-\_\-m\-Normal\-Matrix@{\-\_\-m\-Normal\-Matrix}}
+\index{\-\_\-m\-Normal\-Matrix@{\-\_\-m\-Normal\-Matrix}!GLGeometryTransform@{G\-L\-Geometry\-Transform}}
+\subsubsection[{\-\_\-m\-Normal\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M3\-D\-Matrix33f} G\-L\-Geometry\-Transform\-::\-\_\-m\-Normal\-Matrix\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_g_l_geometry_transform_a3f1ea76d82d5c97d622d5e34c3f28467}
+\hypertarget{class_g_l_geometry_transform_a566214dba8ce4d8f0e309d2283da3dea}{\index{G\-L\-Geometry\-Transform@{G\-L\-Geometry\-Transform}!\-\_\-m\-Projection@{\-\_\-m\-Projection}}
+\index{\-\_\-m\-Projection@{\-\_\-m\-Projection}!GLGeometryTransform@{G\-L\-Geometry\-Transform}}
+\subsubsection[{\-\_\-m\-Projection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-L\-Matrix\-Stack}$\ast$ G\-L\-Geometry\-Transform\-::\-\_\-m\-Projection\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_g_l_geometry_transform_a566214dba8ce4d8f0e309d2283da3dea}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+include/\-G\-L\-Tools/include/\hyperlink{_g_l_geometry_transform_8h}{G\-L\-Geometry\-Transform.\-h}\end{DoxyCompactItemize}

@@ -1,0 +1,89 @@
+\hypertarget{class_entity}{\section{Entity Class Reference}
+\label{class_entity}\index{Entity@{Entity}}
+}
+
+
+{\ttfamily \#include $<$Entity.\-h$>$}
+
+
+
+Collaboration diagram for Entity\-:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_entity_a4f15b363a898d971ff97856f05b042c2}{Entity} (const \hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{_g_l_e_w_2glew_8h_a7d05960f4f1c1b11f3177dc963a45d86}{type}, \hyperlink{class_context}{Context} $\ast$ctx)
+\item 
+\hyperlink{class_entity_adf6d3f7cb1b2ba029b6b048a395cc8ae}{$\sim$\-Entity} ()
+\item 
+\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} \hyperlink{class_entity_af87d92f23623d0a7e0d663222ae801c0}{Update} (\hyperlink{_s_d_l__stdinc_8h_add440eff171ea5f55cb00c4a9ab8672d}{Uint32} game\-Time)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_context}{Context} $\ast$ \hyperlink{class_entity_abfdb0e47275191119d445f868fda66dd}{ctxt}
+\item 
+\hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{class_entity_ac8f79ba45e199ebfead685eb61787c00}{entity\-Type}
+\item 
+\hyperlink{classassimp_mesh}{assimp\-Mesh} $\ast$ \hyperlink{class_entity_a59fc8989c8317562a370c6d681f186ed}{mesh}
+\item 
+\hyperlink{class_bounding_box}{Bounding\-Box} $\ast$ \hyperlink{class_entity_aba343b718e9fdd8d27041bebc7bc5885}{box}
+\item 
+bool \hyperlink{class_entity_aa7c25fb47375d3d50235f11a53666981}{move}
+\item 
+float \hyperlink{class_entity_a1de3d8d9ab8088f61e6726069b26fa60}{speed}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_entity_a4f15b363a898d971ff97856f05b042c2}{\index{Entity@{Entity}!Entity@{Entity}}
+\index{Entity@{Entity}!Entity@{Entity}}
+\subsubsection[{Entity}]{\setlength{\rightskip}{0pt plus 5cm}Entity\-::\-Entity (
+\begin{DoxyParamCaption}
+\item[{const {\bf int}}]{type, }
+\item[{{\bf Context} $\ast$}]{ctx}
+\end{DoxyParamCaption}
+)}}\label{class_entity_a4f15b363a898d971ff97856f05b042c2}
+\hypertarget{class_entity_adf6d3f7cb1b2ba029b6b048a395cc8ae}{\index{Entity@{Entity}!$\sim$\-Entity@{$\sim$\-Entity}}
+\index{$\sim$\-Entity@{$\sim$\-Entity}!Entity@{Entity}}
+\subsubsection[{$\sim$\-Entity}]{\setlength{\rightskip}{0pt plus 5cm}Entity\-::$\sim$\-Entity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_entity_adf6d3f7cb1b2ba029b6b048a395cc8ae}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_entity_af87d92f23623d0a7e0d663222ae801c0}{\index{Entity@{Entity}!Update@{Update}}
+\index{Update@{Update}!Entity@{Entity}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Entity\-::\-Update (
+\begin{DoxyParamCaption}
+\item[{{\bf Uint32}}]{game\-Time}
+\end{DoxyParamCaption}
+)}}\label{class_entity_af87d92f23623d0a7e0d663222ae801c0}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_entity_aba343b718e9fdd8d27041bebc7bc5885}{\index{Entity@{Entity}!box@{box}}
+\index{box@{box}!Entity@{Entity}}
+\subsubsection[{box}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bounding\-Box}$\ast$ Entity\-::box}}\label{class_entity_aba343b718e9fdd8d27041bebc7bc5885}
+\hypertarget{class_entity_abfdb0e47275191119d445f868fda66dd}{\index{Entity@{Entity}!ctxt@{ctxt}}
+\index{ctxt@{ctxt}!Entity@{Entity}}
+\subsubsection[{ctxt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Context}$\ast$ Entity\-::ctxt}}\label{class_entity_abfdb0e47275191119d445f868fda66dd}
+\hypertarget{class_entity_ac8f79ba45e199ebfead685eb61787c00}{\index{Entity@{Entity}!entity\-Type@{entity\-Type}}
+\index{entity\-Type@{entity\-Type}!Entity@{Entity}}
+\subsubsection[{entity\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} Entity\-::entity\-Type}}\label{class_entity_ac8f79ba45e199ebfead685eb61787c00}
+\hypertarget{class_entity_a59fc8989c8317562a370c6d681f186ed}{\index{Entity@{Entity}!mesh@{mesh}}
+\index{mesh@{mesh}!Entity@{Entity}}
+\subsubsection[{mesh}]{\setlength{\rightskip}{0pt plus 5cm}{\bf assimp\-Mesh}$\ast$ Entity\-::mesh}}\label{class_entity_a59fc8989c8317562a370c6d681f186ed}
+\hypertarget{class_entity_aa7c25fb47375d3d50235f11a53666981}{\index{Entity@{Entity}!move@{move}}
+\index{move@{move}!Entity@{Entity}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}bool Entity\-::move}}\label{class_entity_aa7c25fb47375d3d50235f11a53666981}
+\hypertarget{class_entity_a1de3d8d9ab8088f61e6726069b26fa60}{\index{Entity@{Entity}!speed@{speed}}
+\index{speed@{speed}!Entity@{Entity}}
+\subsubsection[{speed}]{\setlength{\rightskip}{0pt plus 5cm}float Entity\-::speed}}\label{class_entity_a1de3d8d9ab8088f61e6726069b26fa60}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{_entity_8h}{Entity.\-h}\item 
+src/\hyperlink{_entity_8cpp}{Entity.\-cpp}\end{DoxyCompactItemize}

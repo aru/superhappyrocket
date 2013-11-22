@@ -1,0 +1,56 @@
+\hypertarget{structai_export_data_blob}{\section{ai\-Export\-Data\-Blob Struct Reference}
+\label{structai_export_data_blob}\index{ai\-Export\-Data\-Blob@{ai\-Export\-Data\-Blob}}
+}
+
+
+{\ttfamily \#include $<$cexport.\-h$>$}
+
+
+
+Collaboration diagram for ai\-Export\-Data\-Blob\-:
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_s_d_l__config_8h_a7c94ea6f8948649f8d181ae55911eeaf}{size\-\_\-t} \hyperlink{structai_export_data_blob_a339bfaacc70396b2f99f94c1bc3b808f}{size}
+\begin{DoxyCompactList}\small\item\em Size of the data in bytes. \end{DoxyCompactList}\item 
+\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} $\ast$ \hyperlink{structai_export_data_blob_ac080c780dad92077b42447d77a1a9ed1}{data}
+\begin{DoxyCompactList}\small\item\em The data. \end{DoxyCompactList}\item 
+\hyperlink{structai_string}{ai\-String} \hyperlink{structai_export_data_blob_a22fbdb28a7ebc30b4d3c3339be18b5f2}{name}
+\item 
+\hyperlink{structai_export_data_blob}{ai\-Export\-Data\-Blob} $\ast$ \hyperlink{structai_export_data_blob_a73baa3d77f95f360540b0b1922075ba5}{next}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Describes a blob of exported scene data. Use \hyperlink{cexport_8h_a33b02f2dbfd79980bf29e62f3a64139f}{ai\-Export\-Scene\-To\-Blob()} to create a blob containing an exported scene. The memory referred by this structure is owned by \hyperlink{namespace_assimp}{Assimp}. Use \#ai\-Release\-Exported\-File() to free its resources. Don't try to free the memory on your side -\/ it will crash for most build configurations due to conflicting heaps.
+
+Blobs can be nested -\/ each blob may reference another blob, which may in turn reference another blob and so on. This is used when exporters write more than one output file for a given \#ai\-Scene. See the remarks for \hyperlink{structai_export_data_blob_a22fbdb28a7ebc30b4d3c3339be18b5f2}{ai\-Export\-Data\-Blob\-::name} for more information. 
+
+\subsection{Member Data Documentation}
+\hypertarget{structai_export_data_blob_ac080c780dad92077b42447d77a1a9ed1}{\index{ai\-Export\-Data\-Blob@{ai\-Export\-Data\-Blob}!data@{data}}
+\index{data@{data}!aiExportDataBlob@{ai\-Export\-Data\-Blob}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void}$\ast$ ai\-Export\-Data\-Blob\-::data}}\label{structai_export_data_blob_ac080c780dad92077b42447d77a1a9ed1}
+
+
+The data. 
+
+\hypertarget{structai_export_data_blob_a22fbdb28a7ebc30b4d3c3339be18b5f2}{\index{ai\-Export\-Data\-Blob@{ai\-Export\-Data\-Blob}!name@{name}}
+\index{name@{name}!aiExportDataBlob@{ai\-Export\-Data\-Blob}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ai\-String} ai\-Export\-Data\-Blob\-::name}}\label{structai_export_data_blob_a22fbdb28a7ebc30b4d3c3339be18b5f2}
+Name of the blob. An empty string always indicates the first (and primary) blob, which contains the actual file data. Any other blobs are auxiliary files produced by exporters (i.\-e. material files). Existence of such files depends on the file format. Most formats don't split assets across multiple files.
+
+If used, blob names usually contain the file extension that should be used when writing the data to disc. \hypertarget{structai_export_data_blob_a73baa3d77f95f360540b0b1922075ba5}{\index{ai\-Export\-Data\-Blob@{ai\-Export\-Data\-Blob}!next@{next}}
+\index{next@{next}!aiExportDataBlob@{ai\-Export\-Data\-Blob}}
+\subsubsection[{next}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ai\-Export\-Data\-Blob}$\ast$ ai\-Export\-Data\-Blob\-::next}}\label{structai_export_data_blob_a73baa3d77f95f360540b0b1922075ba5}
+Pointer to the next blob in the chain or N\-U\-L\-L if there is none. \hypertarget{structai_export_data_blob_a339bfaacc70396b2f99f94c1bc3b808f}{\index{ai\-Export\-Data\-Blob@{ai\-Export\-Data\-Blob}!size@{size}}
+\index{size@{size}!aiExportDataBlob@{ai\-Export\-Data\-Blob}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf size\-\_\-t} ai\-Export\-Data\-Blob\-::size}}\label{structai_export_data_blob_a339bfaacc70396b2f99f94c1bc3b808f}
+
+
+Size of the data in bytes. 
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+include/assimp/include/\hyperlink{cexport_8h}{cexport.\-h}\end{DoxyCompactItemize}

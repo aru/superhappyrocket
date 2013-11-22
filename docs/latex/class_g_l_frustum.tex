@@ -1,0 +1,243 @@
+\hypertarget{class_g_l_frustum}{\section{G\-L\-Frustum Class Reference}
+\label{class_g_l_frustum}\index{G\-L\-Frustum@{G\-L\-Frustum}}
+}
+
+
+{\ttfamily \#include $<$G\-L\-Frustum.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_g_l_frustum_aac6414de93a47461155ace36f4e09f5c}{G\-L\-Frustum} (\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void})
+\item 
+\hyperlink{class_g_l_frustum_a6ad3d9d0b6389d2021c54cd8d132292c}{G\-L\-Frustum} (\hyperlink{_g_l_e_w_2glew_8h_a4a966015c733cb5fe2733de64a62a3a5}{G\-Lfloat} f\-Fov, \hyperlink{_g_l_e_w_2glew_8h_a4a966015c733cb5fe2733de64a62a3a5}{G\-Lfloat} f\-Aspect, \hyperlink{_g_l_e_w_2glew_8h_a4a966015c733cb5fe2733de64a62a3a5}{G\-Lfloat} f\-Near, \hyperlink{_g_l_e_w_2glew_8h_a4a966015c733cb5fe2733de64a62a3a5}{G\-Lfloat} f\-Far)
+\item 
+\hyperlink{class_g_l_frustum_ab3b57b1a40c0bed32d8767b95dde4964}{G\-L\-Frustum} (\hyperlink{_g_l_e_w_2glew_8h_a4a966015c733cb5fe2733de64a62a3a5}{G\-Lfloat} x\-Min, \hyperlink{_g_l_e_w_2glew_8h_a4a966015c733cb5fe2733de64a62a3a5}{G\-Lfloat} x\-Max, \hyperlink{_g_l_e_w_2glew_8h_a4a966015c733cb5fe2733de64a62a3a5}{G\-Lfloat} y\-Min, \hyperlink{_g_l_e_w_2glew_8h_a4a966015c733cb5fe2733de64a62a3a5}{G\-Lfloat} y\-Max, \hyperlink{_g_l_e_w_2glew_8h_a4a966015c733cb5fe2733de64a62a3a5}{G\-Lfloat} z\-Min, \hyperlink{_g_l_e_w_2glew_8h_a4a966015c733cb5fe2733de64a62a3a5}{G\-Lfloat} z\-Max)
+\item 
+const \hyperlink{math3d_8h_a1e8690467d81d5ed97c5ecc3a144a4ac}{M3\-D\-Matrix44f} \& \hyperlink{class_g_l_frustum_aec9e810a180aabe90c1fb270081e9bc6}{Get\-Projection\-Matrix} (\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void})
+\item 
+\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} \hyperlink{class_g_l_frustum_a0451625ea68e3207c505abfb9e9877b5}{Set\-Orthographic} (\hyperlink{_g_l_e_w_2glew_8h_a4a966015c733cb5fe2733de64a62a3a5}{G\-Lfloat} x\-Min, \hyperlink{_g_l_e_w_2glew_8h_a4a966015c733cb5fe2733de64a62a3a5}{G\-Lfloat} x\-Max, \hyperlink{_g_l_e_w_2glew_8h_a4a966015c733cb5fe2733de64a62a3a5}{G\-Lfloat} y\-Min, \hyperlink{_g_l_e_w_2glew_8h_a4a966015c733cb5fe2733de64a62a3a5}{G\-Lfloat} y\-Max, \hyperlink{_g_l_e_w_2glew_8h_a4a966015c733cb5fe2733de64a62a3a5}{G\-Lfloat} z\-Min, \hyperlink{_g_l_e_w_2glew_8h_a4a966015c733cb5fe2733de64a62a3a5}{G\-Lfloat} z\-Max)
+\item 
+\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} \hyperlink{class_g_l_frustum_aac9ef555d4e1bce74bb8ee534418eaec}{Set\-Perspective} (float f\-Fov, float f\-Aspect, float f\-Near, float f\-Far)
+\item 
+\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} \hyperlink{class_g_l_frustum_aec742ccf2bc2d1986d3ccacec2fe51c6}{Transform} (\hyperlink{class_g_l_frame}{G\-L\-Frame} \&\hyperlink{class_camera}{Camera})
+\item 
+bool \hyperlink{class_g_l_frustum_ae25c4a6296b5ad2308914d65cee8020c}{Test\-Sphere} (float \hyperlink{_g_l_e_w_2glew_8h_a0cdec8e97a75ee9458b23d152bf962d4}{x}, float \hyperlink{_g_l_e_w_2glew_8h_a74d80fd479c0f6d0153c709949a089ef}{y}, float \hyperlink{_g_l_e_w_2glew_8h_aee38b51639b577753f6a92029fb92000}{z}, float f\-Radius)
+\item 
+bool \hyperlink{class_g_l_frustum_ad4587d26fc972a7d405d38cbeddb60ae}{Test\-Sphere} (\hyperlink{math3d_8h_a2163fe22bd4208b846d22ec7e74cf858}{M3\-D\-Vector3f} v\-Point, float f\-Radius)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{math3d_8h_a1e8690467d81d5ed97c5ecc3a144a4ac}{M3\-D\-Matrix44f} \hyperlink{class_g_l_frustum_a318a8b78ec8c4bb39b44d1068e3d858e}{proj\-Matrix}
+\item 
+\hyperlink{math3d_8h_a7da2e6b342ba064a875bf5bfc5dadb6f}{M3\-D\-Vector4f} \hyperlink{class_g_l_frustum_a1b577bcf56bc6251bbec0c88d2f552e4}{near\-U\-L}
+\item 
+\hyperlink{math3d_8h_a7da2e6b342ba064a875bf5bfc5dadb6f}{M3\-D\-Vector4f} \hyperlink{class_g_l_frustum_a3fb95dabc5be223d79248cff485caa72}{near\-L\-L}
+\item 
+\hyperlink{math3d_8h_a7da2e6b342ba064a875bf5bfc5dadb6f}{M3\-D\-Vector4f} \hyperlink{class_g_l_frustum_ac160cfff393ad6691577b10984ad7bee}{near\-U\-R}
+\item 
+\hyperlink{math3d_8h_a7da2e6b342ba064a875bf5bfc5dadb6f}{M3\-D\-Vector4f} \hyperlink{class_g_l_frustum_a7c1ec477fc6c3c830e7282a5930a74f1}{near\-L\-R}
+\item 
+\hyperlink{math3d_8h_a7da2e6b342ba064a875bf5bfc5dadb6f}{M3\-D\-Vector4f} \hyperlink{class_g_l_frustum_adef779d9dba59c6a6f901166defff67c}{far\-U\-L}
+\item 
+\hyperlink{math3d_8h_a7da2e6b342ba064a875bf5bfc5dadb6f}{M3\-D\-Vector4f} \hyperlink{class_g_l_frustum_ac2322ee21830b8d7aac70e05dc24660b}{far\-L\-L}
+\item 
+\hyperlink{math3d_8h_a7da2e6b342ba064a875bf5bfc5dadb6f}{M3\-D\-Vector4f} \hyperlink{class_g_l_frustum_a4f7e751b70f2df44c45339aab4a23fee}{far\-U\-R}
+\item 
+\hyperlink{math3d_8h_a7da2e6b342ba064a875bf5bfc5dadb6f}{M3\-D\-Vector4f} \hyperlink{class_g_l_frustum_a7484d94df8694846ce1491e2d2388acc}{far\-L\-R}
+\item 
+\hyperlink{math3d_8h_a7da2e6b342ba064a875bf5bfc5dadb6f}{M3\-D\-Vector4f} \hyperlink{class_g_l_frustum_aee355a8ff715b43dafb158d08680e52d}{near\-U\-L\-T}
+\item 
+\hyperlink{math3d_8h_a7da2e6b342ba064a875bf5bfc5dadb6f}{M3\-D\-Vector4f} \hyperlink{class_g_l_frustum_a5f228145759f233b2dcea16b2c52e693}{near\-L\-L\-T}
+\item 
+\hyperlink{math3d_8h_a7da2e6b342ba064a875bf5bfc5dadb6f}{M3\-D\-Vector4f} \hyperlink{class_g_l_frustum_a6f67e8ff610896911187d9cc62dadc72}{near\-U\-R\-T}
+\item 
+\hyperlink{math3d_8h_a7da2e6b342ba064a875bf5bfc5dadb6f}{M3\-D\-Vector4f} \hyperlink{class_g_l_frustum_a70d8d4adab36a77473211472ea7df24c}{near\-L\-R\-T}
+\item 
+\hyperlink{math3d_8h_a7da2e6b342ba064a875bf5bfc5dadb6f}{M3\-D\-Vector4f} \hyperlink{class_g_l_frustum_a9b8564e91e4df4cf13f151965f8b0a62}{far\-U\-L\-T}
+\item 
+\hyperlink{math3d_8h_a7da2e6b342ba064a875bf5bfc5dadb6f}{M3\-D\-Vector4f} \hyperlink{class_g_l_frustum_ae533d94efe71285959db7e5152492b64}{far\-L\-L\-T}
+\item 
+\hyperlink{math3d_8h_a7da2e6b342ba064a875bf5bfc5dadb6f}{M3\-D\-Vector4f} \hyperlink{class_g_l_frustum_a0d268db99031475b0ea84cc1f2b16a09}{far\-U\-R\-T}
+\item 
+\hyperlink{math3d_8h_a7da2e6b342ba064a875bf5bfc5dadb6f}{M3\-D\-Vector4f} \hyperlink{class_g_l_frustum_afcaf370f9c360e46ff23ca49b68ceb24}{far\-L\-R\-T}
+\item 
+\hyperlink{math3d_8h_a7da2e6b342ba064a875bf5bfc5dadb6f}{M3\-D\-Vector4f} \hyperlink{class_g_l_frustum_ad547972a20ea7cffe2fef76b14f5fb9c}{near\-Plane}
+\item 
+\hyperlink{math3d_8h_a7da2e6b342ba064a875bf5bfc5dadb6f}{M3\-D\-Vector4f} \hyperlink{class_g_l_frustum_a6a0a126b01342221d9537a0514d6d30a}{far\-Plane}
+\item 
+\hyperlink{math3d_8h_a7da2e6b342ba064a875bf5bfc5dadb6f}{M3\-D\-Vector4f} \hyperlink{class_g_l_frustum_a49a3768604e9bdc10db2553fb17704e6}{left\-Plane}
+\item 
+\hyperlink{math3d_8h_a7da2e6b342ba064a875bf5bfc5dadb6f}{M3\-D\-Vector4f} \hyperlink{class_g_l_frustum_aefc5ed5e9d4a2914fa0a792a0ccf7aa5}{right\-Plane}
+\item 
+\hyperlink{math3d_8h_a7da2e6b342ba064a875bf5bfc5dadb6f}{M3\-D\-Vector4f} \hyperlink{class_g_l_frustum_ad032ad1f7d82e1b66fa4149506b21b78}{top\-Plane}
+\item 
+\hyperlink{math3d_8h_a7da2e6b342ba064a875bf5bfc5dadb6f}{M3\-D\-Vector4f} \hyperlink{class_g_l_frustum_a84e904240e3eb380e05eed216cc07860}{bottom\-Plane}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_g_l_frustum_aac6414de93a47461155ace36f4e09f5c}{\index{G\-L\-Frustum@{G\-L\-Frustum}!G\-L\-Frustum@{G\-L\-Frustum}}
+\index{G\-L\-Frustum@{G\-L\-Frustum}!GLFrustum@{G\-L\-Frustum}}
+\subsubsection[{G\-L\-Frustum}]{\setlength{\rightskip}{0pt plus 5cm}G\-L\-Frustum\-::\-G\-L\-Frustum (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_g_l_frustum_aac6414de93a47461155ace36f4e09f5c}
+\hypertarget{class_g_l_frustum_a6ad3d9d0b6389d2021c54cd8d132292c}{\index{G\-L\-Frustum@{G\-L\-Frustum}!G\-L\-Frustum@{G\-L\-Frustum}}
+\index{G\-L\-Frustum@{G\-L\-Frustum}!GLFrustum@{G\-L\-Frustum}}
+\subsubsection[{G\-L\-Frustum}]{\setlength{\rightskip}{0pt plus 5cm}G\-L\-Frustum\-::\-G\-L\-Frustum (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-Lfloat}}]{f\-Fov, }
+\item[{{\bf G\-Lfloat}}]{f\-Aspect, }
+\item[{{\bf G\-Lfloat}}]{f\-Near, }
+\item[{{\bf G\-Lfloat}}]{f\-Far}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_g_l_frustum_a6ad3d9d0b6389d2021c54cd8d132292c}
+\hypertarget{class_g_l_frustum_ab3b57b1a40c0bed32d8767b95dde4964}{\index{G\-L\-Frustum@{G\-L\-Frustum}!G\-L\-Frustum@{G\-L\-Frustum}}
+\index{G\-L\-Frustum@{G\-L\-Frustum}!GLFrustum@{G\-L\-Frustum}}
+\subsubsection[{G\-L\-Frustum}]{\setlength{\rightskip}{0pt plus 5cm}G\-L\-Frustum\-::\-G\-L\-Frustum (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-Lfloat}}]{x\-Min, }
+\item[{{\bf G\-Lfloat}}]{x\-Max, }
+\item[{{\bf G\-Lfloat}}]{y\-Min, }
+\item[{{\bf G\-Lfloat}}]{y\-Max, }
+\item[{{\bf G\-Lfloat}}]{z\-Min, }
+\item[{{\bf G\-Lfloat}}]{z\-Max}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_g_l_frustum_ab3b57b1a40c0bed32d8767b95dde4964}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_g_l_frustum_aec9e810a180aabe90c1fb270081e9bc6}{\index{G\-L\-Frustum@{G\-L\-Frustum}!Get\-Projection\-Matrix@{Get\-Projection\-Matrix}}
+\index{Get\-Projection\-Matrix@{Get\-Projection\-Matrix}!GLFrustum@{G\-L\-Frustum}}
+\subsubsection[{Get\-Projection\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf M3\-D\-Matrix44f}\& G\-L\-Frustum\-::\-Get\-Projection\-Matrix (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_g_l_frustum_aec9e810a180aabe90c1fb270081e9bc6}
+\hypertarget{class_g_l_frustum_a0451625ea68e3207c505abfb9e9877b5}{\index{G\-L\-Frustum@{G\-L\-Frustum}!Set\-Orthographic@{Set\-Orthographic}}
+\index{Set\-Orthographic@{Set\-Orthographic}!GLFrustum@{G\-L\-Frustum}}
+\subsubsection[{Set\-Orthographic}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} G\-L\-Frustum\-::\-Set\-Orthographic (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-Lfloat}}]{x\-Min, }
+\item[{{\bf G\-Lfloat}}]{x\-Max, }
+\item[{{\bf G\-Lfloat}}]{y\-Min, }
+\item[{{\bf G\-Lfloat}}]{y\-Max, }
+\item[{{\bf G\-Lfloat}}]{z\-Min, }
+\item[{{\bf G\-Lfloat}}]{z\-Max}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_g_l_frustum_a0451625ea68e3207c505abfb9e9877b5}
+\hypertarget{class_g_l_frustum_aac9ef555d4e1bce74bb8ee534418eaec}{\index{G\-L\-Frustum@{G\-L\-Frustum}!Set\-Perspective@{Set\-Perspective}}
+\index{Set\-Perspective@{Set\-Perspective}!GLFrustum@{G\-L\-Frustum}}
+\subsubsection[{Set\-Perspective}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} G\-L\-Frustum\-::\-Set\-Perspective (
+\begin{DoxyParamCaption}
+\item[{float}]{f\-Fov, }
+\item[{float}]{f\-Aspect, }
+\item[{float}]{f\-Near, }
+\item[{float}]{f\-Far}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_g_l_frustum_aac9ef555d4e1bce74bb8ee534418eaec}
+\hypertarget{class_g_l_frustum_ae25c4a6296b5ad2308914d65cee8020c}{\index{G\-L\-Frustum@{G\-L\-Frustum}!Test\-Sphere@{Test\-Sphere}}
+\index{Test\-Sphere@{Test\-Sphere}!GLFrustum@{G\-L\-Frustum}}
+\subsubsection[{Test\-Sphere}]{\setlength{\rightskip}{0pt plus 5cm}bool G\-L\-Frustum\-::\-Test\-Sphere (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{z, }
+\item[{float}]{f\-Radius}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_g_l_frustum_ae25c4a6296b5ad2308914d65cee8020c}
+\hypertarget{class_g_l_frustum_ad4587d26fc972a7d405d38cbeddb60ae}{\index{G\-L\-Frustum@{G\-L\-Frustum}!Test\-Sphere@{Test\-Sphere}}
+\index{Test\-Sphere@{Test\-Sphere}!GLFrustum@{G\-L\-Frustum}}
+\subsubsection[{Test\-Sphere}]{\setlength{\rightskip}{0pt plus 5cm}bool G\-L\-Frustum\-::\-Test\-Sphere (
+\begin{DoxyParamCaption}
+\item[{{\bf M3\-D\-Vector3f}}]{v\-Point, }
+\item[{float}]{f\-Radius}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_g_l_frustum_ad4587d26fc972a7d405d38cbeddb60ae}
+\hypertarget{class_g_l_frustum_aec742ccf2bc2d1986d3ccacec2fe51c6}{\index{G\-L\-Frustum@{G\-L\-Frustum}!Transform@{Transform}}
+\index{Transform@{Transform}!GLFrustum@{G\-L\-Frustum}}
+\subsubsection[{Transform}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} G\-L\-Frustum\-::\-Transform (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-L\-Frame} \&}]{Camera}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_g_l_frustum_aec742ccf2bc2d1986d3ccacec2fe51c6}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_g_l_frustum_a84e904240e3eb380e05eed216cc07860}{\index{G\-L\-Frustum@{G\-L\-Frustum}!bottom\-Plane@{bottom\-Plane}}
+\index{bottom\-Plane@{bottom\-Plane}!GLFrustum@{G\-L\-Frustum}}
+\subsubsection[{bottom\-Plane}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M3\-D\-Vector4f} G\-L\-Frustum\-::bottom\-Plane\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_g_l_frustum_a84e904240e3eb380e05eed216cc07860}
+\hypertarget{class_g_l_frustum_ac2322ee21830b8d7aac70e05dc24660b}{\index{G\-L\-Frustum@{G\-L\-Frustum}!far\-L\-L@{far\-L\-L}}
+\index{far\-L\-L@{far\-L\-L}!GLFrustum@{G\-L\-Frustum}}
+\subsubsection[{far\-L\-L}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M3\-D\-Vector4f} G\-L\-Frustum\-::far\-L\-L\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_g_l_frustum_ac2322ee21830b8d7aac70e05dc24660b}
+\hypertarget{class_g_l_frustum_ae533d94efe71285959db7e5152492b64}{\index{G\-L\-Frustum@{G\-L\-Frustum}!far\-L\-L\-T@{far\-L\-L\-T}}
+\index{far\-L\-L\-T@{far\-L\-L\-T}!GLFrustum@{G\-L\-Frustum}}
+\subsubsection[{far\-L\-L\-T}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M3\-D\-Vector4f} G\-L\-Frustum\-::far\-L\-L\-T\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_g_l_frustum_ae533d94efe71285959db7e5152492b64}
+\hypertarget{class_g_l_frustum_a7484d94df8694846ce1491e2d2388acc}{\index{G\-L\-Frustum@{G\-L\-Frustum}!far\-L\-R@{far\-L\-R}}
+\index{far\-L\-R@{far\-L\-R}!GLFrustum@{G\-L\-Frustum}}
+\subsubsection[{far\-L\-R}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M3\-D\-Vector4f} G\-L\-Frustum\-::far\-L\-R\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_g_l_frustum_a7484d94df8694846ce1491e2d2388acc}
+\hypertarget{class_g_l_frustum_afcaf370f9c360e46ff23ca49b68ceb24}{\index{G\-L\-Frustum@{G\-L\-Frustum}!far\-L\-R\-T@{far\-L\-R\-T}}
+\index{far\-L\-R\-T@{far\-L\-R\-T}!GLFrustum@{G\-L\-Frustum}}
+\subsubsection[{far\-L\-R\-T}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M3\-D\-Vector4f} G\-L\-Frustum\-::far\-L\-R\-T\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_g_l_frustum_afcaf370f9c360e46ff23ca49b68ceb24}
+\hypertarget{class_g_l_frustum_a6a0a126b01342221d9537a0514d6d30a}{\index{G\-L\-Frustum@{G\-L\-Frustum}!far\-Plane@{far\-Plane}}
+\index{far\-Plane@{far\-Plane}!GLFrustum@{G\-L\-Frustum}}
+\subsubsection[{far\-Plane}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M3\-D\-Vector4f} G\-L\-Frustum\-::far\-Plane\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_g_l_frustum_a6a0a126b01342221d9537a0514d6d30a}
+\hypertarget{class_g_l_frustum_adef779d9dba59c6a6f901166defff67c}{\index{G\-L\-Frustum@{G\-L\-Frustum}!far\-U\-L@{far\-U\-L}}
+\index{far\-U\-L@{far\-U\-L}!GLFrustum@{G\-L\-Frustum}}
+\subsubsection[{far\-U\-L}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M3\-D\-Vector4f} G\-L\-Frustum\-::far\-U\-L\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_g_l_frustum_adef779d9dba59c6a6f901166defff67c}
+\hypertarget{class_g_l_frustum_a9b8564e91e4df4cf13f151965f8b0a62}{\index{G\-L\-Frustum@{G\-L\-Frustum}!far\-U\-L\-T@{far\-U\-L\-T}}
+\index{far\-U\-L\-T@{far\-U\-L\-T}!GLFrustum@{G\-L\-Frustum}}
+\subsubsection[{far\-U\-L\-T}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M3\-D\-Vector4f} G\-L\-Frustum\-::far\-U\-L\-T\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_g_l_frustum_a9b8564e91e4df4cf13f151965f8b0a62}
+\hypertarget{class_g_l_frustum_a4f7e751b70f2df44c45339aab4a23fee}{\index{G\-L\-Frustum@{G\-L\-Frustum}!far\-U\-R@{far\-U\-R}}
+\index{far\-U\-R@{far\-U\-R}!GLFrustum@{G\-L\-Frustum}}
+\subsubsection[{far\-U\-R}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M3\-D\-Vector4f} G\-L\-Frustum\-::far\-U\-R\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_g_l_frustum_a4f7e751b70f2df44c45339aab4a23fee}
+\hypertarget{class_g_l_frustum_a0d268db99031475b0ea84cc1f2b16a09}{\index{G\-L\-Frustum@{G\-L\-Frustum}!far\-U\-R\-T@{far\-U\-R\-T}}
+\index{far\-U\-R\-T@{far\-U\-R\-T}!GLFrustum@{G\-L\-Frustum}}
+\subsubsection[{far\-U\-R\-T}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M3\-D\-Vector4f} G\-L\-Frustum\-::far\-U\-R\-T\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_g_l_frustum_a0d268db99031475b0ea84cc1f2b16a09}
+\hypertarget{class_g_l_frustum_a49a3768604e9bdc10db2553fb17704e6}{\index{G\-L\-Frustum@{G\-L\-Frustum}!left\-Plane@{left\-Plane}}
+\index{left\-Plane@{left\-Plane}!GLFrustum@{G\-L\-Frustum}}
+\subsubsection[{left\-Plane}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M3\-D\-Vector4f} G\-L\-Frustum\-::left\-Plane\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_g_l_frustum_a49a3768604e9bdc10db2553fb17704e6}
+\hypertarget{class_g_l_frustum_a3fb95dabc5be223d79248cff485caa72}{\index{G\-L\-Frustum@{G\-L\-Frustum}!near\-L\-L@{near\-L\-L}}
+\index{near\-L\-L@{near\-L\-L}!GLFrustum@{G\-L\-Frustum}}
+\subsubsection[{near\-L\-L}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M3\-D\-Vector4f} G\-L\-Frustum\-::near\-L\-L\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_g_l_frustum_a3fb95dabc5be223d79248cff485caa72}
+\hypertarget{class_g_l_frustum_a5f228145759f233b2dcea16b2c52e693}{\index{G\-L\-Frustum@{G\-L\-Frustum}!near\-L\-L\-T@{near\-L\-L\-T}}
+\index{near\-L\-L\-T@{near\-L\-L\-T}!GLFrustum@{G\-L\-Frustum}}
+\subsubsection[{near\-L\-L\-T}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M3\-D\-Vector4f} G\-L\-Frustum\-::near\-L\-L\-T\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_g_l_frustum_a5f228145759f233b2dcea16b2c52e693}
+\hypertarget{class_g_l_frustum_a7c1ec477fc6c3c830e7282a5930a74f1}{\index{G\-L\-Frustum@{G\-L\-Frustum}!near\-L\-R@{near\-L\-R}}
+\index{near\-L\-R@{near\-L\-R}!GLFrustum@{G\-L\-Frustum}}
+\subsubsection[{near\-L\-R}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M3\-D\-Vector4f} G\-L\-Frustum\-::near\-L\-R\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_g_l_frustum_a7c1ec477fc6c3c830e7282a5930a74f1}
+\hypertarget{class_g_l_frustum_a70d8d4adab36a77473211472ea7df24c}{\index{G\-L\-Frustum@{G\-L\-Frustum}!near\-L\-R\-T@{near\-L\-R\-T}}
+\index{near\-L\-R\-T@{near\-L\-R\-T}!GLFrustum@{G\-L\-Frustum}}
+\subsubsection[{near\-L\-R\-T}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M3\-D\-Vector4f} G\-L\-Frustum\-::near\-L\-R\-T\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_g_l_frustum_a70d8d4adab36a77473211472ea7df24c}
+\hypertarget{class_g_l_frustum_ad547972a20ea7cffe2fef76b14f5fb9c}{\index{G\-L\-Frustum@{G\-L\-Frustum}!near\-Plane@{near\-Plane}}
+\index{near\-Plane@{near\-Plane}!GLFrustum@{G\-L\-Frustum}}
+\subsubsection[{near\-Plane}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M3\-D\-Vector4f} G\-L\-Frustum\-::near\-Plane\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_g_l_frustum_ad547972a20ea7cffe2fef76b14f5fb9c}
+\hypertarget{class_g_l_frustum_a1b577bcf56bc6251bbec0c88d2f552e4}{\index{G\-L\-Frustum@{G\-L\-Frustum}!near\-U\-L@{near\-U\-L}}
+\index{near\-U\-L@{near\-U\-L}!GLFrustum@{G\-L\-Frustum}}
+\subsubsection[{near\-U\-L}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M3\-D\-Vector4f} G\-L\-Frustum\-::near\-U\-L\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_g_l_frustum_a1b577bcf56bc6251bbec0c88d2f552e4}
+\hypertarget{class_g_l_frustum_aee355a8ff715b43dafb158d08680e52d}{\index{G\-L\-Frustum@{G\-L\-Frustum}!near\-U\-L\-T@{near\-U\-L\-T}}
+\index{near\-U\-L\-T@{near\-U\-L\-T}!GLFrustum@{G\-L\-Frustum}}
+\subsubsection[{near\-U\-L\-T}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M3\-D\-Vector4f} G\-L\-Frustum\-::near\-U\-L\-T\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_g_l_frustum_aee355a8ff715b43dafb158d08680e52d}
+\hypertarget{class_g_l_frustum_ac160cfff393ad6691577b10984ad7bee}{\index{G\-L\-Frustum@{G\-L\-Frustum}!near\-U\-R@{near\-U\-R}}
+\index{near\-U\-R@{near\-U\-R}!GLFrustum@{G\-L\-Frustum}}
+\subsubsection[{near\-U\-R}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M3\-D\-Vector4f} G\-L\-Frustum\-::near\-U\-R\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_g_l_frustum_ac160cfff393ad6691577b10984ad7bee}
+\hypertarget{class_g_l_frustum_a6f67e8ff610896911187d9cc62dadc72}{\index{G\-L\-Frustum@{G\-L\-Frustum}!near\-U\-R\-T@{near\-U\-R\-T}}
+\index{near\-U\-R\-T@{near\-U\-R\-T}!GLFrustum@{G\-L\-Frustum}}
+\subsubsection[{near\-U\-R\-T}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M3\-D\-Vector4f} G\-L\-Frustum\-::near\-U\-R\-T\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_g_l_frustum_a6f67e8ff610896911187d9cc62dadc72}
+\hypertarget{class_g_l_frustum_a318a8b78ec8c4bb39b44d1068e3d858e}{\index{G\-L\-Frustum@{G\-L\-Frustum}!proj\-Matrix@{proj\-Matrix}}
+\index{proj\-Matrix@{proj\-Matrix}!GLFrustum@{G\-L\-Frustum}}
+\subsubsection[{proj\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M3\-D\-Matrix44f} G\-L\-Frustum\-::proj\-Matrix\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_g_l_frustum_a318a8b78ec8c4bb39b44d1068e3d858e}
+\hypertarget{class_g_l_frustum_aefc5ed5e9d4a2914fa0a792a0ccf7aa5}{\index{G\-L\-Frustum@{G\-L\-Frustum}!right\-Plane@{right\-Plane}}
+\index{right\-Plane@{right\-Plane}!GLFrustum@{G\-L\-Frustum}}
+\subsubsection[{right\-Plane}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M3\-D\-Vector4f} G\-L\-Frustum\-::right\-Plane\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_g_l_frustum_aefc5ed5e9d4a2914fa0a792a0ccf7aa5}
+\hypertarget{class_g_l_frustum_ad032ad1f7d82e1b66fa4149506b21b78}{\index{G\-L\-Frustum@{G\-L\-Frustum}!top\-Plane@{top\-Plane}}
+\index{top\-Plane@{top\-Plane}!GLFrustum@{G\-L\-Frustum}}
+\subsubsection[{top\-Plane}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M3\-D\-Vector4f} G\-L\-Frustum\-::top\-Plane\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_g_l_frustum_ad032ad1f7d82e1b66fa4149506b21b78}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+include/\-G\-L\-Tools/include/\hyperlink{_g_l_frustum_8h}{G\-L\-Frustum.\-h}\end{DoxyCompactItemize}

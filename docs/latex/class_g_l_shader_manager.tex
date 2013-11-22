@@ -1,0 +1,133 @@
+\hypertarget{class_g_l_shader_manager}{\section{G\-L\-Shader\-Manager Class Reference}
+\label{class_g_l_shader_manager}\index{G\-L\-Shader\-Manager@{G\-L\-Shader\-Manager}}
+}
+
+
+{\ttfamily \#include $<$G\-L\-Shader\-Manager.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_g_l_shader_manager_ae47af736ea2f0a91be7585f28374decc}{G\-L\-Shader\-Manager} (\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void})
+\item 
+\hyperlink{class_g_l_shader_manager_ad6225117648188fb7d12c00bac0de4bf}{$\sim$\-G\-L\-Shader\-Manager} (\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void})
+\item 
+bool \hyperlink{class_g_l_shader_manager_adf4b9d6ae1e8d7ff13a296ef0ffb37d8}{Initialize\-Stock\-Shaders} (\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void})
+\item 
+\hyperlink{_g_l_e_w_2glew_8h_a68c4714e43d8e827d80759f9cb864f3c}{G\-Luint} \hyperlink{class_g_l_shader_manager_a063584fcf8c65f036388c924799fa68a}{Get\-Stock\-Shader} (\hyperlink{_g_l_shader_manager_8h_a3cd026d1a745e792d85349d0093c6266}{G\-L\-T\-\_\-\-S\-T\-O\-C\-K\-\_\-\-S\-H\-A\-D\-E\-R} n\-Shader\-I\-D)
+\item 
+\hyperlink{_g_l_e_w_2glew_8h_acebcc1c5663f14ebde1d16831e5fed94}{G\-Lint} \hyperlink{class_g_l_shader_manager_aa390e9fee2e98d116843c13fd89dbe0c}{Use\-Stock\-Shader} (\hyperlink{_g_l_shader_manager_8h_a3cd026d1a745e792d85349d0093c6266}{G\-L\-T\-\_\-\-S\-T\-O\-C\-K\-\_\-\-S\-H\-A\-D\-E\-R} n\-Shader\-I\-D,...)
+\item 
+\hyperlink{_g_l_e_w_2glew_8h_a68c4714e43d8e827d80759f9cb864f3c}{G\-Luint} \hyperlink{class_g_l_shader_manager_a84796be60cd914823c4df02dc6271c1f}{Load\-Shader\-Pair} (const char $\ast$sz\-Vertex\-Prog\-File\-Name, const char $\ast$sz\-Frag\-Prog\-File\-Name)
+\item 
+\hyperlink{_g_l_e_w_2glew_8h_a68c4714e43d8e827d80759f9cb864f3c}{G\-Luint} \hyperlink{class_g_l_shader_manager_a794bac0f2734e15c303e0c46f07c380c}{Load\-Shader\-Pair\-Src} (const char $\ast$sz\-Name, const char $\ast$sz\-Vertex\-Src, const char $\ast$sz\-Frag\-Src)
+\item 
+\hyperlink{_g_l_e_w_2glew_8h_a68c4714e43d8e827d80759f9cb864f3c}{G\-Luint} \hyperlink{class_g_l_shader_manager_a202c398bbcdb2df78d0116531f4782ba}{Load\-Shader\-Pair\-With\-Attributes} (const char $\ast$sz\-Vertex\-Prog\-File\-Name, const char $\ast$sz\-Fragment\-Prog\-File\-Name,...)
+\item 
+\hyperlink{_g_l_e_w_2glew_8h_a68c4714e43d8e827d80759f9cb864f3c}{G\-Luint} \hyperlink{class_g_l_shader_manager_af011b62599dbf202a9ebb5e3a78a412e}{Load\-Shader\-Pair\-Src\-With\-Attributes} (const char $\ast$sz\-Name, const char $\ast$sz\-Vertex\-Prog, const char $\ast$sz\-Fragment\-Prog,...)
+\item 
+\hyperlink{_g_l_e_w_2glew_8h_a68c4714e43d8e827d80759f9cb864f3c}{G\-Luint} \hyperlink{class_g_l_shader_manager_adaabd638da94fae88a0c7318256ec59d}{Lookup\-Shader} (const char $\ast$sz\-Vertex\-Prog, const char $\ast$sz\-Frag\-Prog=0)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_g_l_e_w_2glew_8h_a68c4714e43d8e827d80759f9cb864f3c}{G\-Luint} \hyperlink{class_g_l_shader_manager_ab290f453e5c0b040dee812b1791b900e}{ui\-Stock\-Shaders} \mbox{[}\hyperlink{_g_l_shader_manager_8h_a3cd026d1a745e792d85349d0093c6266a3dbd0cb0ce70f60087b91ee1d0869a63}{G\-L\-T\-\_\-\-S\-H\-A\-D\-E\-R\-\_\-\-L\-A\-S\-T}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_g_l_shader_manager_ae47af736ea2f0a91be7585f28374decc}{\index{G\-L\-Shader\-Manager@{G\-L\-Shader\-Manager}!G\-L\-Shader\-Manager@{G\-L\-Shader\-Manager}}
+\index{G\-L\-Shader\-Manager@{G\-L\-Shader\-Manager}!GLShaderManager@{G\-L\-Shader\-Manager}}
+\subsubsection[{G\-L\-Shader\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}G\-L\-Shader\-Manager\-::\-G\-L\-Shader\-Manager (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_shader_manager_ae47af736ea2f0a91be7585f28374decc}
+\hypertarget{class_g_l_shader_manager_ad6225117648188fb7d12c00bac0de4bf}{\index{G\-L\-Shader\-Manager@{G\-L\-Shader\-Manager}!$\sim$\-G\-L\-Shader\-Manager@{$\sim$\-G\-L\-Shader\-Manager}}
+\index{$\sim$\-G\-L\-Shader\-Manager@{$\sim$\-G\-L\-Shader\-Manager}!GLShaderManager@{G\-L\-Shader\-Manager}}
+\subsubsection[{$\sim$\-G\-L\-Shader\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}G\-L\-Shader\-Manager\-::$\sim$\-G\-L\-Shader\-Manager (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_shader_manager_ad6225117648188fb7d12c00bac0de4bf}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_g_l_shader_manager_a063584fcf8c65f036388c924799fa68a}{\index{G\-L\-Shader\-Manager@{G\-L\-Shader\-Manager}!Get\-Stock\-Shader@{Get\-Stock\-Shader}}
+\index{Get\-Stock\-Shader@{Get\-Stock\-Shader}!GLShaderManager@{G\-L\-Shader\-Manager}}
+\subsubsection[{Get\-Stock\-Shader}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-Luint} G\-L\-Shader\-Manager\-::\-Get\-Stock\-Shader (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-L\-T\-\_\-\-S\-T\-O\-C\-K\-\_\-\-S\-H\-A\-D\-E\-R}}]{n\-Shader\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_shader_manager_a063584fcf8c65f036388c924799fa68a}
+\hypertarget{class_g_l_shader_manager_adf4b9d6ae1e8d7ff13a296ef0ffb37d8}{\index{G\-L\-Shader\-Manager@{G\-L\-Shader\-Manager}!Initialize\-Stock\-Shaders@{Initialize\-Stock\-Shaders}}
+\index{Initialize\-Stock\-Shaders@{Initialize\-Stock\-Shaders}!GLShaderManager@{G\-L\-Shader\-Manager}}
+\subsubsection[{Initialize\-Stock\-Shaders}]{\setlength{\rightskip}{0pt plus 5cm}bool G\-L\-Shader\-Manager\-::\-Initialize\-Stock\-Shaders (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_shader_manager_adf4b9d6ae1e8d7ff13a296ef0ffb37d8}
+\hypertarget{class_g_l_shader_manager_a84796be60cd914823c4df02dc6271c1f}{\index{G\-L\-Shader\-Manager@{G\-L\-Shader\-Manager}!Load\-Shader\-Pair@{Load\-Shader\-Pair}}
+\index{Load\-Shader\-Pair@{Load\-Shader\-Pair}!GLShaderManager@{G\-L\-Shader\-Manager}}
+\subsubsection[{Load\-Shader\-Pair}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-Luint} G\-L\-Shader\-Manager\-::\-Load\-Shader\-Pair (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\-Vertex\-Prog\-File\-Name, }
+\item[{const char $\ast$}]{sz\-Frag\-Prog\-File\-Name}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_shader_manager_a84796be60cd914823c4df02dc6271c1f}
+\hypertarget{class_g_l_shader_manager_a794bac0f2734e15c303e0c46f07c380c}{\index{G\-L\-Shader\-Manager@{G\-L\-Shader\-Manager}!Load\-Shader\-Pair\-Src@{Load\-Shader\-Pair\-Src}}
+\index{Load\-Shader\-Pair\-Src@{Load\-Shader\-Pair\-Src}!GLShaderManager@{G\-L\-Shader\-Manager}}
+\subsubsection[{Load\-Shader\-Pair\-Src}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-Luint} G\-L\-Shader\-Manager\-::\-Load\-Shader\-Pair\-Src (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\-Name, }
+\item[{const char $\ast$}]{sz\-Vertex\-Src, }
+\item[{const char $\ast$}]{sz\-Frag\-Src}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_shader_manager_a794bac0f2734e15c303e0c46f07c380c}
+\hypertarget{class_g_l_shader_manager_af011b62599dbf202a9ebb5e3a78a412e}{\index{G\-L\-Shader\-Manager@{G\-L\-Shader\-Manager}!Load\-Shader\-Pair\-Src\-With\-Attributes@{Load\-Shader\-Pair\-Src\-With\-Attributes}}
+\index{Load\-Shader\-Pair\-Src\-With\-Attributes@{Load\-Shader\-Pair\-Src\-With\-Attributes}!GLShaderManager@{G\-L\-Shader\-Manager}}
+\subsubsection[{Load\-Shader\-Pair\-Src\-With\-Attributes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-Luint} G\-L\-Shader\-Manager\-::\-Load\-Shader\-Pair\-Src\-With\-Attributes (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\-Name, }
+\item[{const char $\ast$}]{sz\-Vertex\-Prog, }
+\item[{const char $\ast$}]{sz\-Fragment\-Prog, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_shader_manager_af011b62599dbf202a9ebb5e3a78a412e}
+\hypertarget{class_g_l_shader_manager_a202c398bbcdb2df78d0116531f4782ba}{\index{G\-L\-Shader\-Manager@{G\-L\-Shader\-Manager}!Load\-Shader\-Pair\-With\-Attributes@{Load\-Shader\-Pair\-With\-Attributes}}
+\index{Load\-Shader\-Pair\-With\-Attributes@{Load\-Shader\-Pair\-With\-Attributes}!GLShaderManager@{G\-L\-Shader\-Manager}}
+\subsubsection[{Load\-Shader\-Pair\-With\-Attributes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-Luint} G\-L\-Shader\-Manager\-::\-Load\-Shader\-Pair\-With\-Attributes (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\-Vertex\-Prog\-File\-Name, }
+\item[{const char $\ast$}]{sz\-Fragment\-Prog\-File\-Name, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_shader_manager_a202c398bbcdb2df78d0116531f4782ba}
+\hypertarget{class_g_l_shader_manager_adaabd638da94fae88a0c7318256ec59d}{\index{G\-L\-Shader\-Manager@{G\-L\-Shader\-Manager}!Lookup\-Shader@{Lookup\-Shader}}
+\index{Lookup\-Shader@{Lookup\-Shader}!GLShaderManager@{G\-L\-Shader\-Manager}}
+\subsubsection[{Lookup\-Shader}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-Luint} G\-L\-Shader\-Manager\-::\-Lookup\-Shader (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\-Vertex\-Prog, }
+\item[{const char $\ast$}]{sz\-Frag\-Prog = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_shader_manager_adaabd638da94fae88a0c7318256ec59d}
+\hypertarget{class_g_l_shader_manager_aa390e9fee2e98d116843c13fd89dbe0c}{\index{G\-L\-Shader\-Manager@{G\-L\-Shader\-Manager}!Use\-Stock\-Shader@{Use\-Stock\-Shader}}
+\index{Use\-Stock\-Shader@{Use\-Stock\-Shader}!GLShaderManager@{G\-L\-Shader\-Manager}}
+\subsubsection[{Use\-Stock\-Shader}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-Lint} G\-L\-Shader\-Manager\-::\-Use\-Stock\-Shader (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-L\-T\-\_\-\-S\-T\-O\-C\-K\-\_\-\-S\-H\-A\-D\-E\-R}}]{n\-Shader\-I\-D, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_shader_manager_aa390e9fee2e98d116843c13fd89dbe0c}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_g_l_shader_manager_ab290f453e5c0b040dee812b1791b900e}{\index{G\-L\-Shader\-Manager@{G\-L\-Shader\-Manager}!ui\-Stock\-Shaders@{ui\-Stock\-Shaders}}
+\index{ui\-Stock\-Shaders@{ui\-Stock\-Shaders}!GLShaderManager@{G\-L\-Shader\-Manager}}
+\subsubsection[{ui\-Stock\-Shaders}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-Luint} G\-L\-Shader\-Manager\-::ui\-Stock\-Shaders\mbox{[}{\bf G\-L\-T\-\_\-\-S\-H\-A\-D\-E\-R\-\_\-\-L\-A\-S\-T}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_g_l_shader_manager_ab290f453e5c0b040dee812b1791b900e}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/\-G\-L\-Tools/include/\hyperlink{_g_l_shader_manager_8h}{G\-L\-Shader\-Manager.\-h}\item 
+include/\-G\-L\-Tools/src/\hyperlink{_g_l_shader_manager_8cpp}{G\-L\-Shader\-Manager.\-cpp}\end{DoxyCompactItemize}

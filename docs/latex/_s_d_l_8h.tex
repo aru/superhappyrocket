@@ -1,0 +1,152 @@
+\hypertarget{_s_d_l_8h}{\section{include/\-S\-D\-L/include/\-S\-D\-L.h File Reference}
+\label{_s_d_l_8h}\index{include/\-S\-D\-L/include/\-S\-D\-L.\-h@{include/\-S\-D\-L/include/\-S\-D\-L.\-h}}
+}
+{\ttfamily \#include \char`\"{}S\-D\-L\-\_\-main.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}S\-D\-L\-\_\-stdinc.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}S\-D\-L\-\_\-assert.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}S\-D\-L\-\_\-atomic.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}S\-D\-L\-\_\-audio.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}S\-D\-L\-\_\-clipboard.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}S\-D\-L\-\_\-cpuinfo.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}S\-D\-L\-\_\-endian.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}S\-D\-L\-\_\-error.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}S\-D\-L\-\_\-events.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}S\-D\-L\-\_\-joystick.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}S\-D\-L\-\_\-gamecontroller.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}S\-D\-L\-\_\-haptic.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}S\-D\-L\-\_\-hints.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}S\-D\-L\-\_\-loadso.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}S\-D\-L\-\_\-log.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}S\-D\-L\-\_\-messagebox.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}S\-D\-L\-\_\-mutex.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}S\-D\-L\-\_\-power.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}S\-D\-L\-\_\-render.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}S\-D\-L\-\_\-rwops.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}S\-D\-L\-\_\-system.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}S\-D\-L\-\_\-thread.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}S\-D\-L\-\_\-timer.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}S\-D\-L\-\_\-version.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}S\-D\-L\-\_\-video.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}begin\-\_\-code.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}close\-\_\-code.\-h\char`\"{}}\\*
+Include dependency graph for S\-D\-L.\-h\-:
+This graph shows which files directly or indirectly include this file\-:
+\subsection*{Macros}
+\begin{Indent}{\bf S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-$\ast$}\par
+{\em These are the flags which may be passed to \hyperlink{_s_d_l_8h_a8fc8d35348d7c74bad8392d776c937b8}{S\-D\-L\-\_\-\-Init()}. You should specify the subsystems which you will be using in your application. }\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_s_d_l_8h_aadfaf3382d6e136b5944d1d5e7e50290}{S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-T\-I\-M\-E\-R}~0x00000001
+\item 
+\#define \hyperlink{_s_d_l_8h_abeceb02c19508655cb05cc8e64206333}{S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-A\-U\-D\-I\-O}~0x00000010
+\item 
+\#define \hyperlink{_s_d_l_8h_afc988e510ed522628ffeb7c76f80c233}{S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-V\-I\-D\-E\-O}~0x00000020
+\item 
+\#define \hyperlink{_s_d_l_8h_ad6b47d785eaa00d9c48e6c1cff4aef4b}{S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-J\-O\-Y\-S\-T\-I\-C\-K}~0x00000200
+\item 
+\#define \hyperlink{_s_d_l_8h_adfd88189fec07574cae461b9dea75a85}{S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-H\-A\-P\-T\-I\-C}~0x00001000
+\item 
+\#define \hyperlink{_s_d_l_8h_ac224a9aa4208de0e9b03948ff9b5fe0a}{S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-G\-A\-M\-E\-C\-O\-N\-T\-R\-O\-L\-L\-E\-R}~0x00002000
+\item 
+\#define \hyperlink{_s_d_l_8h_addad89db9e13b46ebcd46a0db8ba0382}{S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-E\-V\-E\-N\-T\-S}~0x00004000
+\item 
+\#define \hyperlink{_s_d_l_8h_ab848174dfbc69cb2cc7bbf06a6e5c584}{S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-N\-O\-P\-A\-R\-A\-C\-H\-U\-T\-E}~0x00100000
+\item 
+\#define \hyperlink{_s_d_l_8h_a574afd93f30161d6e87449f675081fb5}{S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-E\-V\-E\-R\-Y\-T\-H\-I\-N\-G}
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{begin__code_8h_aa4c7a931f4a968f818b2a1b10a432185}{D\-E\-C\-L\-S\-P\-E\-C} \hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{begin__code_8h_a81faf4ba0455dc75f2e0507eddb79401}{S\-D\-L\-C\-A\-L\-L} \hyperlink{_s_d_l_8h_a8fc8d35348d7c74bad8392d776c937b8}{S\-D\-L\-\_\-\-Init} (\hyperlink{_s_d_l__stdinc_8h_add440eff171ea5f55cb00c4a9ab8672d}{Uint32} \hyperlink{_g_l_e_w_2glew_8h_a0f11defcf8fd03368fc70485bffe71e9}{flags})
+\item 
+\hyperlink{begin__code_8h_aa4c7a931f4a968f818b2a1b10a432185}{D\-E\-C\-L\-S\-P\-E\-C} \hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{begin__code_8h_a81faf4ba0455dc75f2e0507eddb79401}{S\-D\-L\-C\-A\-L\-L} \hyperlink{_s_d_l_8h_adfbfddc0ec609b5e5e5cb1c89298e4db}{S\-D\-L\-\_\-\-Init\-Sub\-System} (\hyperlink{_s_d_l__stdinc_8h_add440eff171ea5f55cb00c4a9ab8672d}{Uint32} \hyperlink{_g_l_e_w_2glew_8h_a0f11defcf8fd03368fc70485bffe71e9}{flags})
+\item 
+\hyperlink{begin__code_8h_aa4c7a931f4a968f818b2a1b10a432185}{D\-E\-C\-L\-S\-P\-E\-C} \hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} \hyperlink{begin__code_8h_a81faf4ba0455dc75f2e0507eddb79401}{S\-D\-L\-C\-A\-L\-L} \hyperlink{_s_d_l_8h_a14e9091982e09097985e10e3ca65debb}{S\-D\-L\-\_\-\-Quit\-Sub\-System} (\hyperlink{_s_d_l__stdinc_8h_add440eff171ea5f55cb00c4a9ab8672d}{Uint32} \hyperlink{_g_l_e_w_2glew_8h_a0f11defcf8fd03368fc70485bffe71e9}{flags})
+\item 
+\hyperlink{begin__code_8h_aa4c7a931f4a968f818b2a1b10a432185}{D\-E\-C\-L\-S\-P\-E\-C} \hyperlink{_s_d_l__stdinc_8h_add440eff171ea5f55cb00c4a9ab8672d}{Uint32} \hyperlink{begin__code_8h_a81faf4ba0455dc75f2e0507eddb79401}{S\-D\-L\-C\-A\-L\-L} \hyperlink{_s_d_l_8h_a04dc570990c697eed95681216801710d}{S\-D\-L\-\_\-\-Was\-Init} (\hyperlink{_s_d_l__stdinc_8h_add440eff171ea5f55cb00c4a9ab8672d}{Uint32} \hyperlink{_g_l_e_w_2glew_8h_a0f11defcf8fd03368fc70485bffe71e9}{flags})
+\item 
+\hyperlink{begin__code_8h_aa4c7a931f4a968f818b2a1b10a432185}{D\-E\-C\-L\-S\-P\-E\-C} \hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} \hyperlink{begin__code_8h_a81faf4ba0455dc75f2e0507eddb79401}{S\-D\-L\-C\-A\-L\-L} \hyperlink{_s_d_l_8h_afdabaf714781099083592051f2d9ac11}{S\-D\-L\-\_\-\-Quit} (\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Main include header for the S\-D\-L library 
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_s_d_l_8h_abeceb02c19508655cb05cc8e64206333}{\index{S\-D\-L.\-h@{S\-D\-L.\-h}!S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-A\-U\-D\-I\-O@{S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-A\-U\-D\-I\-O}}
+\index{S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-A\-U\-D\-I\-O@{S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-A\-U\-D\-I\-O}!SDL.h@{S\-D\-L.\-h}}
+\subsubsection[{S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-A\-U\-D\-I\-O}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-A\-U\-D\-I\-O~0x00000010}}\label{_s_d_l_8h_abeceb02c19508655cb05cc8e64206333}
+\hypertarget{_s_d_l_8h_addad89db9e13b46ebcd46a0db8ba0382}{\index{S\-D\-L.\-h@{S\-D\-L.\-h}!S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-E\-V\-E\-N\-T\-S@{S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-E\-V\-E\-N\-T\-S}}
+\index{S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-E\-V\-E\-N\-T\-S@{S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-E\-V\-E\-N\-T\-S}!SDL.h@{S\-D\-L.\-h}}
+\subsubsection[{S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-E\-V\-E\-N\-T\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-E\-V\-E\-N\-T\-S~0x00004000}}\label{_s_d_l_8h_addad89db9e13b46ebcd46a0db8ba0382}
+\hypertarget{_s_d_l_8h_a574afd93f30161d6e87449f675081fb5}{\index{S\-D\-L.\-h@{S\-D\-L.\-h}!S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-E\-V\-E\-R\-Y\-T\-H\-I\-N\-G@{S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-E\-V\-E\-R\-Y\-T\-H\-I\-N\-G}}
+\index{S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-E\-V\-E\-R\-Y\-T\-H\-I\-N\-G@{S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-E\-V\-E\-R\-Y\-T\-H\-I\-N\-G}!SDL.h@{S\-D\-L.\-h}}
+\subsubsection[{S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-E\-V\-E\-R\-Y\-T\-H\-I\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-E\-V\-E\-R\-Y\-T\-H\-I\-N\-G}}\label{_s_d_l_8h_a574afd93f30161d6e87449f675081fb5}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+( \hyperlink{_s_d_l_8h_aadfaf3382d6e136b5944d1d5e7e50290}{\(\backslash\)}
+\hyperlink{_s_d_l_8h_aadfaf3382d6e136b5944d1d5e7e50290}{                SDL\_INIT\_TIMER} | \hyperlink{_s_d_l_8h_abeceb02c19508655cb05cc8e64206333}{SDL\_INIT\_AUDIO} | 
+      \hyperlink{_s_d_l_8h_afc988e510ed522628ffeb7c76f80c233}{SDL\_INIT\_VIDEO} | \hyperlink{_s_d_l_8h_addad89db9e13b46ebcd46a0db8ba0382}{SDL\_INIT\_EVENTS} | \hyperlink{_s_d_l_8h_ad6b47d785eaa00d9c48e6c1cff4aef4b}{\(\backslash\)}
+\hyperlink{_s_d_l_8h_ad6b47d785eaa00d9c48e6c1cff4aef4b}{                SDL\_INIT\_JOYSTICK} | 
+      \hyperlink{_s_d_l_8h_adfd88189fec07574cae461b9dea75a85}{SDL\_INIT\_HAPTIC} | \hyperlink{_s_d_l_8h_ac224a9aa4208de0e9b03948ff9b5fe0a}{SDL\_INIT\_GAMECONTROLLER} \(\backslash\)
+            )
+\end{DoxyCode}
+\hypertarget{_s_d_l_8h_ac224a9aa4208de0e9b03948ff9b5fe0a}{\index{S\-D\-L.\-h@{S\-D\-L.\-h}!S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-G\-A\-M\-E\-C\-O\-N\-T\-R\-O\-L\-L\-E\-R@{S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-G\-A\-M\-E\-C\-O\-N\-T\-R\-O\-L\-L\-E\-R}}
+\index{S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-G\-A\-M\-E\-C\-O\-N\-T\-R\-O\-L\-L\-E\-R@{S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-G\-A\-M\-E\-C\-O\-N\-T\-R\-O\-L\-L\-E\-R}!SDL.h@{S\-D\-L.\-h}}
+\subsubsection[{S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-G\-A\-M\-E\-C\-O\-N\-T\-R\-O\-L\-L\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-G\-A\-M\-E\-C\-O\-N\-T\-R\-O\-L\-L\-E\-R~0x00002000}}\label{_s_d_l_8h_ac224a9aa4208de0e9b03948ff9b5fe0a}
+S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-G\-A\-M\-E\-C\-O\-N\-T\-R\-O\-L\-L\-E\-R implies S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-J\-O\-Y\-S\-T\-I\-C\-K \hypertarget{_s_d_l_8h_adfd88189fec07574cae461b9dea75a85}{\index{S\-D\-L.\-h@{S\-D\-L.\-h}!S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-H\-A\-P\-T\-I\-C@{S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-H\-A\-P\-T\-I\-C}}
+\index{S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-H\-A\-P\-T\-I\-C@{S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-H\-A\-P\-T\-I\-C}!SDL.h@{S\-D\-L.\-h}}
+\subsubsection[{S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-H\-A\-P\-T\-I\-C}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-H\-A\-P\-T\-I\-C~0x00001000}}\label{_s_d_l_8h_adfd88189fec07574cae461b9dea75a85}
+\hypertarget{_s_d_l_8h_ad6b47d785eaa00d9c48e6c1cff4aef4b}{\index{S\-D\-L.\-h@{S\-D\-L.\-h}!S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-J\-O\-Y\-S\-T\-I\-C\-K@{S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-J\-O\-Y\-S\-T\-I\-C\-K}}
+\index{S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-J\-O\-Y\-S\-T\-I\-C\-K@{S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-J\-O\-Y\-S\-T\-I\-C\-K}!SDL.h@{S\-D\-L.\-h}}
+\subsubsection[{S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-J\-O\-Y\-S\-T\-I\-C\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-J\-O\-Y\-S\-T\-I\-C\-K~0x00000200}}\label{_s_d_l_8h_ad6b47d785eaa00d9c48e6c1cff4aef4b}
+S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-J\-O\-Y\-S\-T\-I\-C\-K implies S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-E\-V\-E\-N\-T\-S \hypertarget{_s_d_l_8h_ab848174dfbc69cb2cc7bbf06a6e5c584}{\index{S\-D\-L.\-h@{S\-D\-L.\-h}!S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-N\-O\-P\-A\-R\-A\-C\-H\-U\-T\-E@{S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-N\-O\-P\-A\-R\-A\-C\-H\-U\-T\-E}}
+\index{S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-N\-O\-P\-A\-R\-A\-C\-H\-U\-T\-E@{S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-N\-O\-P\-A\-R\-A\-C\-H\-U\-T\-E}!SDL.h@{S\-D\-L.\-h}}
+\subsubsection[{S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-N\-O\-P\-A\-R\-A\-C\-H\-U\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-N\-O\-P\-A\-R\-A\-C\-H\-U\-T\-E~0x00100000}}\label{_s_d_l_8h_ab848174dfbc69cb2cc7bbf06a6e5c584}
+Don't catch fatal signals \hypertarget{_s_d_l_8h_aadfaf3382d6e136b5944d1d5e7e50290}{\index{S\-D\-L.\-h@{S\-D\-L.\-h}!S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-T\-I\-M\-E\-R@{S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-T\-I\-M\-E\-R}}
+\index{S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-T\-I\-M\-E\-R@{S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-T\-I\-M\-E\-R}!SDL.h@{S\-D\-L.\-h}}
+\subsubsection[{S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-T\-I\-M\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-T\-I\-M\-E\-R~0x00000001}}\label{_s_d_l_8h_aadfaf3382d6e136b5944d1d5e7e50290}
+\hypertarget{_s_d_l_8h_afc988e510ed522628ffeb7c76f80c233}{\index{S\-D\-L.\-h@{S\-D\-L.\-h}!S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-V\-I\-D\-E\-O@{S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-V\-I\-D\-E\-O}}
+\index{S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-V\-I\-D\-E\-O@{S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-V\-I\-D\-E\-O}!SDL.h@{S\-D\-L.\-h}}
+\subsubsection[{S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-V\-I\-D\-E\-O}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-V\-I\-D\-E\-O~0x00000020}}\label{_s_d_l_8h_afc988e510ed522628ffeb7c76f80c233}
+S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-V\-I\-D\-E\-O implies S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-E\-V\-E\-N\-T\-S 
+
+\subsection{Function Documentation}
+\hypertarget{_s_d_l_8h_a8fc8d35348d7c74bad8392d776c937b8}{\index{S\-D\-L.\-h@{S\-D\-L.\-h}!S\-D\-L\-\_\-\-Init@{S\-D\-L\-\_\-\-Init}}
+\index{S\-D\-L\-\_\-\-Init@{S\-D\-L\-\_\-\-Init}!SDL.h@{S\-D\-L.\-h}}
+\subsubsection[{S\-D\-L\-\_\-\-Init}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-E\-C\-L\-S\-P\-E\-C} {\bf int} {\bf S\-D\-L\-C\-A\-L\-L} S\-D\-L\-\_\-\-Init (
+\begin{DoxyParamCaption}
+\item[{{\bf Uint32}}]{flags}
+\end{DoxyParamCaption}
+)}}\label{_s_d_l_8h_a8fc8d35348d7c74bad8392d776c937b8}
+This function initializes the subsystems specified by {\ttfamily flags} Unless the \hyperlink{_s_d_l_8h_ab848174dfbc69cb2cc7bbf06a6e5c584}{S\-D\-L\-\_\-\-I\-N\-I\-T\-\_\-\-N\-O\-P\-A\-R\-A\-C\-H\-U\-T\-E} flag is set, it will install cleanup signal handlers for some commonly ignored fatal signals (like S\-I\-G\-S\-E\-G\-V). \hypertarget{_s_d_l_8h_adfbfddc0ec609b5e5e5cb1c89298e4db}{\index{S\-D\-L.\-h@{S\-D\-L.\-h}!S\-D\-L\-\_\-\-Init\-Sub\-System@{S\-D\-L\-\_\-\-Init\-Sub\-System}}
+\index{S\-D\-L\-\_\-\-Init\-Sub\-System@{S\-D\-L\-\_\-\-Init\-Sub\-System}!SDL.h@{S\-D\-L.\-h}}
+\subsubsection[{S\-D\-L\-\_\-\-Init\-Sub\-System}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-E\-C\-L\-S\-P\-E\-C} {\bf int} {\bf S\-D\-L\-C\-A\-L\-L} S\-D\-L\-\_\-\-Init\-Sub\-System (
+\begin{DoxyParamCaption}
+\item[{{\bf Uint32}}]{flags}
+\end{DoxyParamCaption}
+)}}\label{_s_d_l_8h_adfbfddc0ec609b5e5e5cb1c89298e4db}
+This function initializes specific S\-D\-L subsystems \hypertarget{_s_d_l_8h_afdabaf714781099083592051f2d9ac11}{\index{S\-D\-L.\-h@{S\-D\-L.\-h}!S\-D\-L\-\_\-\-Quit@{S\-D\-L\-\_\-\-Quit}}
+\index{S\-D\-L\-\_\-\-Quit@{S\-D\-L\-\_\-\-Quit}!SDL.h@{S\-D\-L.\-h}}
+\subsubsection[{S\-D\-L\-\_\-\-Quit}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-E\-C\-L\-S\-P\-E\-C} {\bf void} {\bf S\-D\-L\-C\-A\-L\-L} S\-D\-L\-\_\-\-Quit (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{_s_d_l_8h_afdabaf714781099083592051f2d9ac11}
+This function cleans up all initialized subsystems. You should call it upon all exit conditions. \hypertarget{_s_d_l_8h_a14e9091982e09097985e10e3ca65debb}{\index{S\-D\-L.\-h@{S\-D\-L.\-h}!S\-D\-L\-\_\-\-Quit\-Sub\-System@{S\-D\-L\-\_\-\-Quit\-Sub\-System}}
+\index{S\-D\-L\-\_\-\-Quit\-Sub\-System@{S\-D\-L\-\_\-\-Quit\-Sub\-System}!SDL.h@{S\-D\-L.\-h}}
+\subsubsection[{S\-D\-L\-\_\-\-Quit\-Sub\-System}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-E\-C\-L\-S\-P\-E\-C} {\bf void} {\bf S\-D\-L\-C\-A\-L\-L} S\-D\-L\-\_\-\-Quit\-Sub\-System (
+\begin{DoxyParamCaption}
+\item[{{\bf Uint32}}]{flags}
+\end{DoxyParamCaption}
+)}}\label{_s_d_l_8h_a14e9091982e09097985e10e3ca65debb}
+This function cleans up specific S\-D\-L subsystems \hypertarget{_s_d_l_8h_a04dc570990c697eed95681216801710d}{\index{S\-D\-L.\-h@{S\-D\-L.\-h}!S\-D\-L\-\_\-\-Was\-Init@{S\-D\-L\-\_\-\-Was\-Init}}
+\index{S\-D\-L\-\_\-\-Was\-Init@{S\-D\-L\-\_\-\-Was\-Init}!SDL.h@{S\-D\-L.\-h}}
+\subsubsection[{S\-D\-L\-\_\-\-Was\-Init}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-E\-C\-L\-S\-P\-E\-C} {\bf Uint32} {\bf S\-D\-L\-C\-A\-L\-L} S\-D\-L\-\_\-\-Was\-Init (
+\begin{DoxyParamCaption}
+\item[{{\bf Uint32}}]{flags}
+\end{DoxyParamCaption}
+)}}\label{_s_d_l_8h_a04dc570990c697eed95681216801710d}
+This function returns a mask of the specified subsystems which have previously been initialized.
+
+If {\ttfamily flags} is 0, it returns a mask of all initialized subsystems. 

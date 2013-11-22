@@ -1,0 +1,223 @@
+\hypertarget{class_simple_object}{\section{Simple\-Object Class Reference}
+\label{class_simple_object}\index{Simple\-Object@{Simple\-Object}}
+}
+
+
+{\ttfamily \#include $<$Simple\-Object.\-h$>$}
+
+
+
+Inheritance diagram for Simple\-Object\-:
+
+
+Collaboration diagram for Simple\-Object\-:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_simple_object_ac896d1529367b4a17367018a172b5867}{Simple\-Object} ()
+\item 
+\hyperlink{class_simple_object_a05d8f5dc9883812fe3779f3639e7cdac}{Simple\-Object} (const \hyperlink{class_simple_object}{Simple\-Object} \&\hyperlink{_g_l_e_w_2glew_8h_a0c0d4701a6c89f4f7f0640715d27ab26}{obj})
+\item 
+virtual \hyperlink{class_simple_object_aa4223f47628fe1849cb2bc3d0afa289c}{$\sim$\-Simple\-Object} ()
+\item 
+virtual const \hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{class_simple_object_ad8cab013f221a2b7132dc243a304b20f}{Initialize} (\hyperlink{class_context}{Context} $\ast$ctx)
+\item 
+virtual const \hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{class_simple_object_ae06adca212a0d4bf4607b324908b2b8e}{Load\-Content} ()
+\item 
+virtual const \hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{class_simple_object_a153209a7b59e36afec7d555708700a25}{Draw} ()
+\item 
+virtual const \hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{class_simple_object_ac4a7b3ff3c2215ff68b3967b57c77fa9}{Draw} (\hyperlink{class_camera}{Camera} $\ast$camera, \hyperlink{class_g_l_shader_manager}{G\-L\-Shader\-Manager} $\ast$shader\-Manager, \hyperlink{class_texture_manager}{Texture\-Manager} $\ast$texture\-Manager, \hyperlink{class_light}{Light} $\ast$light)
+\item 
+virtual const \hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{class_simple_object_a7523273ddea5901d2049575229c8b5ca}{Update} ()
+\item 
+virtual const \hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{class_simple_object_a5fe4d692b6633f2c68b6eae1d3f6b059}{Unload\-Content} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_simple_object_a57b19debeebd6cc7544229593ac6f384}{t\-Batch}
+\item 
+\hyperlink{class_g_l_batch}{G\-L\-Batch} \hyperlink{class_simple_object_a7b91addc8702d48b2f7fc55ef477865d}{batch}
+\item 
+\hyperlink{class_g_l_triangle_batch}{G\-L\-Triangle\-Batch} \hyperlink{class_simple_object_a036fe05c95aabf2733dc0dab0470c385}{tri\-Batch}
+\item 
+\hyperlink{class_g_l_frame}{G\-L\-Frame} \hyperlink{class_simple_object_a981496140aef8731d72bec626a8151f5}{frame}
+\item 
+\hyperlink{class_g_l_matrix_stack}{G\-L\-Matrix\-Stack} \hyperlink{class_simple_object_ae10c997b5d538a0d2773e26473f8acd4}{model\-View\-Matrix}
+\item 
+vector$<$ float $>$ \hyperlink{class_simple_object_a6c506a2b642e61f7209ee9d3e455eb6a}{vertex}
+\item 
+vector$<$ float $>$ \hyperlink{class_simple_object_a0fce8b7b9f26a11982447cc4b8bc1907}{index}
+\item 
+vector$<$ float $>$ \hyperlink{class_simple_object_a87b06e177a337bb9f7655dbd5067cf7b}{normal}
+\item 
+vector$<$ float $>$ \hyperlink{class_simple_object_a4f989f1e7ef76020fe605947759157e1}{texture}
+\item 
+vector$<$ float $>$ \hyperlink{class_simple_object_a1fb6c6bd5c79d711f962d9c5e39d43ce}{color}
+\item 
+\hyperlink{_g_l_e_w_2glew_8h_a68c4714e43d8e827d80759f9cb864f3c}{G\-Luint} \hyperlink{class_simple_object_a5ef5676def2f0a847bd0672241f32d1c}{texture\-File}
+\item 
+\hyperlink{_g_l_e_w_2glew_8h_a06b88fc81ad0b30d1512e9609e3d7c82}{string} \hyperlink{class_simple_object_aab41156b3c92ca7ba616659dd174cf04}{t\-File}
+\item 
+\hyperlink{_g_l_e_w_2glew_8h_a68c4714e43d8e827d80759f9cb864f3c}{G\-Luint} \hyperlink{class_simple_object_aefcac4844710fb10f8cdfc537b1a7dba}{shader\-File}
+\item 
+\hyperlink{_g_l_e_w_2glew_8h_a06b88fc81ad0b30d1512e9609e3d7c82}{string} \hyperlink{class_simple_object_aeb8f9ac2ea5c7342f14eb8d7e6afa9bc}{v\-Shader}
+\item 
+\hyperlink{_g_l_e_w_2glew_8h_a06b88fc81ad0b30d1512e9609e3d7c82}{string} \hyperlink{class_simple_object_a66b038ae0b5d0801a613b39f020f8993}{f\-Shader}
+\item 
+\hyperlink{math3d_8h_a1e8690467d81d5ed97c5ecc3a144a4ac}{M3\-D\-Matrix44f} \hyperlink{class_simple_object_af1ab3dd3b36a2d36d8b82fffc409ff92}{m\-Scale\-Matrix}
+\item 
+\hyperlink{math3d_8h_a2163fe22bd4208b846d22ec7e74cf858}{M3\-D\-Vector3f} \hyperlink{class_simple_object_a776a2ba2bde4e83e206346f8a22d454f}{scale\-Vector}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_simple_object_ac896d1529367b4a17367018a172b5867}{\index{Simple\-Object@{Simple\-Object}!Simple\-Object@{Simple\-Object}}
+\index{Simple\-Object@{Simple\-Object}!SimpleObject@{Simple\-Object}}
+\subsubsection[{Simple\-Object}]{\setlength{\rightskip}{0pt plus 5cm}Simple\-Object\-::\-Simple\-Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_simple_object_ac896d1529367b4a17367018a172b5867}
+\hypertarget{class_simple_object_a05d8f5dc9883812fe3779f3639e7cdac}{\index{Simple\-Object@{Simple\-Object}!Simple\-Object@{Simple\-Object}}
+\index{Simple\-Object@{Simple\-Object}!SimpleObject@{Simple\-Object}}
+\subsubsection[{Simple\-Object}]{\setlength{\rightskip}{0pt plus 5cm}Simple\-Object\-::\-Simple\-Object (
+\begin{DoxyParamCaption}
+\item[{const {\bf Simple\-Object} \&}]{obj}
+\end{DoxyParamCaption}
+)}}\label{class_simple_object_a05d8f5dc9883812fe3779f3639e7cdac}
+\hypertarget{class_simple_object_aa4223f47628fe1849cb2bc3d0afa289c}{\index{Simple\-Object@{Simple\-Object}!$\sim$\-Simple\-Object@{$\sim$\-Simple\-Object}}
+\index{$\sim$\-Simple\-Object@{$\sim$\-Simple\-Object}!SimpleObject@{Simple\-Object}}
+\subsubsection[{$\sim$\-Simple\-Object}]{\setlength{\rightskip}{0pt plus 5cm}Simple\-Object\-::$\sim$\-Simple\-Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_simple_object_aa4223f47628fe1849cb2bc3d0afa289c}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_simple_object_a153209a7b59e36afec7d555708700a25}{\index{Simple\-Object@{Simple\-Object}!Draw@{Draw}}
+\index{Draw@{Draw}!SimpleObject@{Simple\-Object}}
+\subsubsection[{Draw}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf int} Simple\-Object\-::\-Draw (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_simple_object_a153209a7b59e36afec7d555708700a25}
+\hypertarget{class_simple_object_ac4a7b3ff3c2215ff68b3967b57c77fa9}{\index{Simple\-Object@{Simple\-Object}!Draw@{Draw}}
+\index{Draw@{Draw}!SimpleObject@{Simple\-Object}}
+\subsubsection[{Draw}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf int} Simple\-Object\-::\-Draw (
+\begin{DoxyParamCaption}
+\item[{{\bf Camera} $\ast$}]{camera, }
+\item[{{\bf G\-L\-Shader\-Manager} $\ast$}]{shader\-Manager, }
+\item[{{\bf Texture\-Manager} $\ast$}]{texture\-Manager, }
+\item[{{\bf Light} $\ast$}]{light}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_simple_object_ac4a7b3ff3c2215ff68b3967b57c77fa9}
+
+
+Reimplemented in \hyperlink{classassimp_mesh_a27c59be8d8f40e4363c8d2338b8a1fd1}{assimp\-Mesh}, \hyperlink{class_cube_map_a9ff635417dbd47065b242f68c4685d0d}{Cube\-Map}, and \hyperlink{class_reflected_object_a4c8c2856d74cb357d7698ede5114bed3}{Reflected\-Object}.
+
+\hypertarget{class_simple_object_ad8cab013f221a2b7132dc243a304b20f}{\index{Simple\-Object@{Simple\-Object}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!SimpleObject@{Simple\-Object}}
+\subsubsection[{Initialize}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf int} Simple\-Object\-::\-Initialize (
+\begin{DoxyParamCaption}
+\item[{{\bf Context} $\ast$}]{ctx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_simple_object_ad8cab013f221a2b7132dc243a304b20f}
+
+
+Reimplemented in \hyperlink{classassimp_mesh_a4e8fdf121ad27687430cb46fb3d4adee}{assimp\-Mesh}, \hyperlink{class_cube_map_a92749bd350f8ef7cc1756ae594fb13cb}{Cube\-Map}, and \hyperlink{class_reflected_object_a23a203d873af1f447c0f401ff43c9ed3}{Reflected\-Object}.
+
+\hypertarget{class_simple_object_ae06adca212a0d4bf4607b324908b2b8e}{\index{Simple\-Object@{Simple\-Object}!Load\-Content@{Load\-Content}}
+\index{Load\-Content@{Load\-Content}!SimpleObject@{Simple\-Object}}
+\subsubsection[{Load\-Content}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf int} Simple\-Object\-::\-Load\-Content (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_simple_object_ae06adca212a0d4bf4607b324908b2b8e}
+
+
+Reimplemented in \hyperlink{classassimp_mesh_a24631cc83038c0b1b68959f76f367d49}{assimp\-Mesh}, \hyperlink{class_cube_map_abe52d03d57c5f06af7d2dcc1ea71d8c8}{Cube\-Map}, and \hyperlink{class_reflected_object_a88763d37ca6b0dccbe0ade77510c3103}{Reflected\-Object}.
+
+\hypertarget{class_simple_object_a5fe4d692b6633f2c68b6eae1d3f6b059}{\index{Simple\-Object@{Simple\-Object}!Unload\-Content@{Unload\-Content}}
+\index{Unload\-Content@{Unload\-Content}!SimpleObject@{Simple\-Object}}
+\subsubsection[{Unload\-Content}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf int} Simple\-Object\-::\-Unload\-Content (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_simple_object_a5fe4d692b6633f2c68b6eae1d3f6b059}
+
+
+Reimplemented in \hyperlink{classassimp_mesh_a84833758a86565f8a70802074e4c86b7}{assimp\-Mesh}, \hyperlink{class_cube_map_a4e9bdd98cbbda69dca5f9a3e0dc2d96b}{Cube\-Map}, and \hyperlink{class_reflected_object_a332b863a984c7e6bdc83a5465ea6710f}{Reflected\-Object}.
+
+\hypertarget{class_simple_object_a7523273ddea5901d2049575229c8b5ca}{\index{Simple\-Object@{Simple\-Object}!Update@{Update}}
+\index{Update@{Update}!SimpleObject@{Simple\-Object}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf int} Simple\-Object\-::\-Update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_simple_object_a7523273ddea5901d2049575229c8b5ca}
+
+
+Reimplemented in \hyperlink{classassimp_mesh_a59eac83134c165e131b4a2f8d6b67410}{assimp\-Mesh}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_simple_object_a7b91addc8702d48b2f7fc55ef477865d}{\index{Simple\-Object@{Simple\-Object}!batch@{batch}}
+\index{batch@{batch}!SimpleObject@{Simple\-Object}}
+\subsubsection[{batch}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-L\-Batch} Simple\-Object\-::batch}}\label{class_simple_object_a7b91addc8702d48b2f7fc55ef477865d}
+\hypertarget{class_simple_object_a1fb6c6bd5c79d711f962d9c5e39d43ce}{\index{Simple\-Object@{Simple\-Object}!color@{color}}
+\index{color@{color}!SimpleObject@{Simple\-Object}}
+\subsubsection[{color}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$float$>$ Simple\-Object\-::color}}\label{class_simple_object_a1fb6c6bd5c79d711f962d9c5e39d43ce}
+\hypertarget{class_simple_object_a981496140aef8731d72bec626a8151f5}{\index{Simple\-Object@{Simple\-Object}!frame@{frame}}
+\index{frame@{frame}!SimpleObject@{Simple\-Object}}
+\subsubsection[{frame}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-L\-Frame} Simple\-Object\-::frame}}\label{class_simple_object_a981496140aef8731d72bec626a8151f5}
+\hypertarget{class_simple_object_a66b038ae0b5d0801a613b39f020f8993}{\index{Simple\-Object@{Simple\-Object}!f\-Shader@{f\-Shader}}
+\index{f\-Shader@{f\-Shader}!SimpleObject@{Simple\-Object}}
+\subsubsection[{f\-Shader}]{\setlength{\rightskip}{0pt plus 5cm}{\bf string} Simple\-Object\-::f\-Shader}}\label{class_simple_object_a66b038ae0b5d0801a613b39f020f8993}
+\hypertarget{class_simple_object_a0fce8b7b9f26a11982447cc4b8bc1907}{\index{Simple\-Object@{Simple\-Object}!index@{index}}
+\index{index@{index}!SimpleObject@{Simple\-Object}}
+\subsubsection[{index}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$float$>$ Simple\-Object\-::index}}\label{class_simple_object_a0fce8b7b9f26a11982447cc4b8bc1907}
+\hypertarget{class_simple_object_ae10c997b5d538a0d2773e26473f8acd4}{\index{Simple\-Object@{Simple\-Object}!model\-View\-Matrix@{model\-View\-Matrix}}
+\index{model\-View\-Matrix@{model\-View\-Matrix}!SimpleObject@{Simple\-Object}}
+\subsubsection[{model\-View\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-L\-Matrix\-Stack} Simple\-Object\-::model\-View\-Matrix}}\label{class_simple_object_ae10c997b5d538a0d2773e26473f8acd4}
+\hypertarget{class_simple_object_af1ab3dd3b36a2d36d8b82fffc409ff92}{\index{Simple\-Object@{Simple\-Object}!m\-Scale\-Matrix@{m\-Scale\-Matrix}}
+\index{m\-Scale\-Matrix@{m\-Scale\-Matrix}!SimpleObject@{Simple\-Object}}
+\subsubsection[{m\-Scale\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M3\-D\-Matrix44f} Simple\-Object\-::m\-Scale\-Matrix}}\label{class_simple_object_af1ab3dd3b36a2d36d8b82fffc409ff92}
+\hypertarget{class_simple_object_a87b06e177a337bb9f7655dbd5067cf7b}{\index{Simple\-Object@{Simple\-Object}!normal@{normal}}
+\index{normal@{normal}!SimpleObject@{Simple\-Object}}
+\subsubsection[{normal}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$float$>$ Simple\-Object\-::normal}}\label{class_simple_object_a87b06e177a337bb9f7655dbd5067cf7b}
+\hypertarget{class_simple_object_a776a2ba2bde4e83e206346f8a22d454f}{\index{Simple\-Object@{Simple\-Object}!scale\-Vector@{scale\-Vector}}
+\index{scale\-Vector@{scale\-Vector}!SimpleObject@{Simple\-Object}}
+\subsubsection[{scale\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M3\-D\-Vector3f} Simple\-Object\-::scale\-Vector}}\label{class_simple_object_a776a2ba2bde4e83e206346f8a22d454f}
+\hypertarget{class_simple_object_aefcac4844710fb10f8cdfc537b1a7dba}{\index{Simple\-Object@{Simple\-Object}!shader\-File@{shader\-File}}
+\index{shader\-File@{shader\-File}!SimpleObject@{Simple\-Object}}
+\subsubsection[{shader\-File}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-Luint} Simple\-Object\-::shader\-File}}\label{class_simple_object_aefcac4844710fb10f8cdfc537b1a7dba}
+\hypertarget{class_simple_object_a57b19debeebd6cc7544229593ac6f384}{\index{Simple\-Object@{Simple\-Object}!t\-Batch@{t\-Batch}}
+\index{t\-Batch@{t\-Batch}!SimpleObject@{Simple\-Object}}
+\subsubsection[{t\-Batch}]{\setlength{\rightskip}{0pt plus 5cm}bool Simple\-Object\-::t\-Batch}}\label{class_simple_object_a57b19debeebd6cc7544229593ac6f384}
+\hypertarget{class_simple_object_a4f989f1e7ef76020fe605947759157e1}{\index{Simple\-Object@{Simple\-Object}!texture@{texture}}
+\index{texture@{texture}!SimpleObject@{Simple\-Object}}
+\subsubsection[{texture}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$float$>$ Simple\-Object\-::texture}}\label{class_simple_object_a4f989f1e7ef76020fe605947759157e1}
+\hypertarget{class_simple_object_a5ef5676def2f0a847bd0672241f32d1c}{\index{Simple\-Object@{Simple\-Object}!texture\-File@{texture\-File}}
+\index{texture\-File@{texture\-File}!SimpleObject@{Simple\-Object}}
+\subsubsection[{texture\-File}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-Luint} Simple\-Object\-::texture\-File}}\label{class_simple_object_a5ef5676def2f0a847bd0672241f32d1c}
+\hypertarget{class_simple_object_aab41156b3c92ca7ba616659dd174cf04}{\index{Simple\-Object@{Simple\-Object}!t\-File@{t\-File}}
+\index{t\-File@{t\-File}!SimpleObject@{Simple\-Object}}
+\subsubsection[{t\-File}]{\setlength{\rightskip}{0pt plus 5cm}{\bf string} Simple\-Object\-::t\-File}}\label{class_simple_object_aab41156b3c92ca7ba616659dd174cf04}
+\hypertarget{class_simple_object_a036fe05c95aabf2733dc0dab0470c385}{\index{Simple\-Object@{Simple\-Object}!tri\-Batch@{tri\-Batch}}
+\index{tri\-Batch@{tri\-Batch}!SimpleObject@{Simple\-Object}}
+\subsubsection[{tri\-Batch}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-L\-Triangle\-Batch} Simple\-Object\-::tri\-Batch}}\label{class_simple_object_a036fe05c95aabf2733dc0dab0470c385}
+\hypertarget{class_simple_object_a6c506a2b642e61f7209ee9d3e455eb6a}{\index{Simple\-Object@{Simple\-Object}!vertex@{vertex}}
+\index{vertex@{vertex}!SimpleObject@{Simple\-Object}}
+\subsubsection[{vertex}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$float$>$ Simple\-Object\-::vertex}}\label{class_simple_object_a6c506a2b642e61f7209ee9d3e455eb6a}
+\hypertarget{class_simple_object_aeb8f9ac2ea5c7342f14eb8d7e6afa9bc}{\index{Simple\-Object@{Simple\-Object}!v\-Shader@{v\-Shader}}
+\index{v\-Shader@{v\-Shader}!SimpleObject@{Simple\-Object}}
+\subsubsection[{v\-Shader}]{\setlength{\rightskip}{0pt plus 5cm}{\bf string} Simple\-Object\-::v\-Shader}}\label{class_simple_object_aeb8f9ac2ea5c7342f14eb8d7e6afa9bc}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{_simple_object_8h}{Simple\-Object.\-h}\item 
+src/\hyperlink{_simple_object_8cpp}{Simple\-Object.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,235 @@
+\hypertarget{_g_l_tools_8cpp}{\section{include/\-G\-L\-Tools/src/\-G\-L\-Tools.cpp File Reference}
+\label{_g_l_tools_8cpp}\index{include/\-G\-L\-Tools/src/\-G\-L\-Tools.\-cpp@{include/\-G\-L\-Tools/src/\-G\-L\-Tools.\-cpp}}
+}
+{\ttfamily \#include $<$G\-L\-Tools.\-h$>$}\\*
+{\ttfamily \#include $<$math3d.\-h$>$}\\*
+{\ttfamily \#include $<$G\-L\-Triangle\-Batch.\-h$>$}\\*
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$assert.\-h$>$}\\*
+{\ttfamily \#include $<$stdarg.\-h$>$}\\*
+Include dependency graph for G\-L\-Tools.\-cpp\-:
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_t_g_a_h_e_a_d_e_r}{T\-G\-A\-H\-E\-A\-D\-E\-R}
+\item 
+struct \hyperlink{struct_r_g_b}{R\-G\-B}
+\item 
+struct \hyperlink{struct_b_m_p_info_header}{B\-M\-P\-Info\-Header}
+\item 
+struct \hyperlink{struct_b_m_p_header}{B\-M\-P\-Header}
+\item 
+struct \hyperlink{struct_b_m_p_info}{B\-M\-P\-Info}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} \hyperlink{_g_l_tools_8cpp_a3bbffdd67f8bee7899d5dc0825b8bf2f}{glt\-Get\-Open\-G\-L\-Version} (\hyperlink{_g_l_e_w_2glew_8h_acebcc1c5663f14ebde1d16831e5fed94}{G\-Lint} \&n\-Major, \hyperlink{_g_l_e_w_2glew_8h_acebcc1c5663f14ebde1d16831e5fed94}{G\-Lint} \&n\-Minor)
+\item 
+\hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{_g_l_tools_8cpp_a1d1799c58f4d585f7696fcab26cfd9cd}{glt\-Is\-Ext\-Supported} (const char $\ast$extension)
+\item 
+\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} \hyperlink{_g_l_tools_8cpp_ad1cd5829323498432cc035d488b095da}{glt\-Set\-Working\-Directory} (const char $\ast$sz\-Argv)
+\item 
+\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} \hyperlink{_g_l_tools_8cpp_a6b25c52ab58557dab7156c3af831a8cb}{glt\-Make\-Torus} (\hyperlink{class_g_l_triangle_batch}{G\-L\-Triangle\-Batch} \&torus\-Batch, \hyperlink{_g_l_e_w_2glew_8h_a4a966015c733cb5fe2733de64a62a3a5}{G\-Lfloat} major\-Radius, \hyperlink{_g_l_e_w_2glew_8h_a4a966015c733cb5fe2733de64a62a3a5}{G\-Lfloat} minor\-Radius, \hyperlink{_g_l_e_w_2glew_8h_acebcc1c5663f14ebde1d16831e5fed94}{G\-Lint} num\-Major, \hyperlink{_g_l_e_w_2glew_8h_acebcc1c5663f14ebde1d16831e5fed94}{G\-Lint} num\-Minor)
+\item 
+\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} \hyperlink{_g_l_tools_8cpp_a365309115a133cb5a4e51ee0a94ebdb1}{glt\-Make\-Sphere} (\hyperlink{class_g_l_triangle_batch}{G\-L\-Triangle\-Batch} \&sphere\-Batch, \hyperlink{_g_l_e_w_2glew_8h_a4a966015c733cb5fe2733de64a62a3a5}{G\-Lfloat} f\-Radius, \hyperlink{_g_l_e_w_2glew_8h_acebcc1c5663f14ebde1d16831e5fed94}{G\-Lint} i\-Slices, \hyperlink{_g_l_e_w_2glew_8h_acebcc1c5663f14ebde1d16831e5fed94}{G\-Lint} i\-Stacks)
+\item 
+\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} \hyperlink{_g_l_tools_8cpp_a11beec4878a483fb80f3f05aae0a3081}{glt\-Make\-Disk} (\hyperlink{class_g_l_triangle_batch}{G\-L\-Triangle\-Batch} \&disk\-Batch, \hyperlink{_g_l_e_w_2glew_8h_a4a966015c733cb5fe2733de64a62a3a5}{G\-Lfloat} inner\-Radius, \hyperlink{_g_l_e_w_2glew_8h_a4a966015c733cb5fe2733de64a62a3a5}{G\-Lfloat} outer\-Radius, \hyperlink{_g_l_e_w_2glew_8h_acebcc1c5663f14ebde1d16831e5fed94}{G\-Lint} n\-Slices, \hyperlink{_g_l_e_w_2glew_8h_acebcc1c5663f14ebde1d16831e5fed94}{G\-Lint} n\-Stacks)
+\item 
+\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} \hyperlink{_g_l_tools_8cpp_a5557d3598ad97d6a69189b8f566285b9}{glt\-Make\-Cylinder} (\hyperlink{class_g_l_triangle_batch}{G\-L\-Triangle\-Batch} \&cylinder\-Batch, \hyperlink{_g_l_e_w_2glew_8h_a4a966015c733cb5fe2733de64a62a3a5}{G\-Lfloat} base\-Radius, \hyperlink{_g_l_e_w_2glew_8h_a4a966015c733cb5fe2733de64a62a3a5}{G\-Lfloat} top\-Radius, \hyperlink{_g_l_e_w_2glew_8h_a4a966015c733cb5fe2733de64a62a3a5}{G\-Lfloat} f\-Length, \hyperlink{_g_l_e_w_2glew_8h_acebcc1c5663f14ebde1d16831e5fed94}{G\-Lint} num\-Slices, \hyperlink{_g_l_e_w_2glew_8h_acebcc1c5663f14ebde1d16831e5fed94}{G\-Lint} num\-Stacks)
+\item 
+\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} \hyperlink{_g_l_tools_8cpp_abfb0ea387e464355ef08740a9bfe5557}{glt\-Make\-Cube} (\hyperlink{class_g_l_batch}{G\-L\-Batch} \&cube\-Batch, \hyperlink{_g_l_e_w_2glew_8h_a4a966015c733cb5fe2733de64a62a3a5}{G\-Lfloat} f\-Radius)
+\item 
+\hyperlink{_g_l_e_w_2glew_8h_acebcc1c5663f14ebde1d16831e5fed94}{G\-Lint} \hyperlink{_g_l_tools_8cpp_affd41b245cf6e95e58ebb006eec8c921}{glt\-Grab\-Screen\-T\-G\-A} (const char $\ast$sz\-File\-Name)
+\item 
+\hyperlink{_g_l_e_w_2glew_8h_a0a9e8b1f1d9c4bcf1c0bc5d5d4e3608a}{G\-Lbyte} $\ast$ \hyperlink{_g_l_tools_8cpp_a47a0ca72b4210508090f86c776ad8d41}{glt\-Read\-T\-G\-A\-Bits} (const char $\ast$sz\-File\-Name, \hyperlink{_g_l_e_w_2glew_8h_acebcc1c5663f14ebde1d16831e5fed94}{G\-Lint} $\ast$\hyperlink{_g_l_e_w_2wglew_8h_a30fafed225cae9e58d3fe93fe778565b}{i\-Width}, \hyperlink{_g_l_e_w_2glew_8h_acebcc1c5663f14ebde1d16831e5fed94}{G\-Lint} $\ast$\hyperlink{_g_l_e_w_2wglew_8h_a39ec6c6cbc64ff726f20a1398f026fd9}{i\-Height}, \hyperlink{_g_l_e_w_2glew_8h_acebcc1c5663f14ebde1d16831e5fed94}{G\-Lint} $\ast$i\-Components, \hyperlink{_g_l_e_w_2glew_8h_a5d5233918a454ad3975c620a69ac5f0b}{G\-Lenum} $\ast$e\-Format)
+\item 
+\hyperlink{_g_l_e_w_2glew_8h_a0a9e8b1f1d9c4bcf1c0bc5d5d4e3608a}{G\-Lbyte} $\ast$ \hyperlink{_g_l_tools_8cpp_aab878c2dffa85ef90b6e9cbb1af11b4b}{glt\-Read\-B\-M\-P\-Bits} (const char $\ast$sz\-File\-Name, \hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} $\ast$n\-Width, \hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} $\ast$n\-Height)
+\item 
+\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} \hyperlink{_g_l_tools_8cpp_af8025b14b9649102f284955353a7c894}{glt\-Load\-Shader\-Src} (const char $\ast$sz\-Shader\-Src, \hyperlink{_g_l_e_w_2glew_8h_a68c4714e43d8e827d80759f9cb864f3c}{G\-Luint} \hyperlink{_g_l_e_w_2glew_8h_a57b2a96adb1d51204909a82d861e395e}{shader})
+\item 
+bool \hyperlink{_g_l_tools_8cpp_a41c0cb8940c4658309913134483fa190}{glt\-Load\-Shader\-File} (const char $\ast$sz\-File, \hyperlink{_g_l_e_w_2glew_8h_a68c4714e43d8e827d80759f9cb864f3c}{G\-Luint} \hyperlink{_g_l_e_w_2glew_8h_a57b2a96adb1d51204909a82d861e395e}{shader})
+\item 
+\hyperlink{_g_l_e_w_2glew_8h_a68c4714e43d8e827d80759f9cb864f3c}{G\-Luint} \hyperlink{_g_l_tools_8cpp_aa43689f6b22911e8467de1c02d446148}{glt\-Load\-Shader\-Pair\-With\-Attributes} (const char $\ast$sz\-Vertex\-Prog, const char $\ast$sz\-Fragment\-Prog,...)
+\item 
+\hyperlink{_g_l_e_w_2glew_8h_a68c4714e43d8e827d80759f9cb864f3c}{G\-Luint} \hyperlink{_g_l_tools_8cpp_a39ed0c7a6d0b8f79450ef1facfe397b6}{glt\-Load\-Shader\-Pair} (const char $\ast$sz\-Vertex\-Prog, const char $\ast$sz\-Fragment\-Prog)
+\item 
+\hyperlink{_g_l_e_w_2glew_8h_a68c4714e43d8e827d80759f9cb864f3c}{G\-Luint} \hyperlink{_g_l_tools_8cpp_a203d56dbec7610adab58c86001648129}{glt\-Load\-Shader\-Pair\-Src} (const char $\ast$sz\-Vertex\-Src, const char $\ast$sz\-Fragment\-Src)
+\item 
+\hyperlink{_g_l_e_w_2glew_8h_a68c4714e43d8e827d80759f9cb864f3c}{G\-Luint} \hyperlink{_g_l_tools_8cpp_abf0d2622c3e4b79ff3444245eaa94edc}{glt\-Load\-Shader\-Pair\-Src\-With\-Attributes} (const char $\ast$sz\-Vertex\-Src, const char $\ast$sz\-Fragment\-Src,...)
+\item 
+bool \hyperlink{_g_l_tools_8cpp_a7963e5e02b8833af810bc7ed2c8eff64}{glt\-Check\-Errors} (\hyperlink{_g_l_e_w_2glew_8h_a68c4714e43d8e827d80759f9cb864f3c}{G\-Luint} prog\-Name)
+\item 
+\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} \hyperlink{_g_l_tools_8cpp_af48bd8b8f28ad0aa589fa4f7639a0924}{glt\-Generate\-Ortho2\-D\-Mat} (\hyperlink{_g_l_e_w_2glew_8h_a68c4714e43d8e827d80759f9cb864f3c}{G\-Luint} screen\-Width, \hyperlink{_g_l_e_w_2glew_8h_a68c4714e43d8e827d80759f9cb864f3c}{G\-Luint} screen\-Height, \hyperlink{math3d_8h_a1e8690467d81d5ed97c5ecc3a144a4ac}{M3\-D\-Matrix44f} \&ortho\-Matrix, \hyperlink{class_g_l_batch}{G\-L\-Batch} \&screen\-Quad)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{_g_l_tools_8cpp_a7963e5e02b8833af810bc7ed2c8eff64}{\index{G\-L\-Tools.\-cpp@{G\-L\-Tools.\-cpp}!glt\-Check\-Errors@{glt\-Check\-Errors}}
+\index{glt\-Check\-Errors@{glt\-Check\-Errors}!GLTools.cpp@{G\-L\-Tools.\-cpp}}
+\subsubsection[{glt\-Check\-Errors}]{\setlength{\rightskip}{0pt plus 5cm}bool glt\-Check\-Errors (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-Luint}}]{prog\-Name}
+\end{DoxyParamCaption}
+)}}\label{_g_l_tools_8cpp_a7963e5e02b8833af810bc7ed2c8eff64}
+\hypertarget{_g_l_tools_8cpp_af48bd8b8f28ad0aa589fa4f7639a0924}{\index{G\-L\-Tools.\-cpp@{G\-L\-Tools.\-cpp}!glt\-Generate\-Ortho2\-D\-Mat@{glt\-Generate\-Ortho2\-D\-Mat}}
+\index{glt\-Generate\-Ortho2\-D\-Mat@{glt\-Generate\-Ortho2\-D\-Mat}!GLTools.cpp@{G\-L\-Tools.\-cpp}}
+\subsubsection[{glt\-Generate\-Ortho2\-D\-Mat}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} glt\-Generate\-Ortho2\-D\-Mat (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-Luint}}]{screen\-Width, }
+\item[{{\bf G\-Luint}}]{screen\-Height, }
+\item[{{\bf M3\-D\-Matrix44f} \&}]{ortho\-Matrix, }
+\item[{{\bf G\-L\-Batch} \&}]{screen\-Quad}
+\end{DoxyParamCaption}
+)}}\label{_g_l_tools_8cpp_af48bd8b8f28ad0aa589fa4f7639a0924}
+\hypertarget{_g_l_tools_8cpp_a3bbffdd67f8bee7899d5dc0825b8bf2f}{\index{G\-L\-Tools.\-cpp@{G\-L\-Tools.\-cpp}!glt\-Get\-Open\-G\-L\-Version@{glt\-Get\-Open\-G\-L\-Version}}
+\index{glt\-Get\-Open\-G\-L\-Version@{glt\-Get\-Open\-G\-L\-Version}!GLTools.cpp@{G\-L\-Tools.\-cpp}}
+\subsubsection[{glt\-Get\-Open\-G\-L\-Version}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} glt\-Get\-Open\-G\-L\-Version (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-Lint} \&}]{n\-Major, }
+\item[{{\bf G\-Lint} \&}]{n\-Minor}
+\end{DoxyParamCaption}
+)}}\label{_g_l_tools_8cpp_a3bbffdd67f8bee7899d5dc0825b8bf2f}
+\hypertarget{_g_l_tools_8cpp_affd41b245cf6e95e58ebb006eec8c921}{\index{G\-L\-Tools.\-cpp@{G\-L\-Tools.\-cpp}!glt\-Grab\-Screen\-T\-G\-A@{glt\-Grab\-Screen\-T\-G\-A}}
+\index{glt\-Grab\-Screen\-T\-G\-A@{glt\-Grab\-Screen\-T\-G\-A}!GLTools.cpp@{G\-L\-Tools.\-cpp}}
+\subsubsection[{glt\-Grab\-Screen\-T\-G\-A}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-Lint} glt\-Grab\-Screen\-T\-G\-A (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\-File\-Name}
+\end{DoxyParamCaption}
+)}}\label{_g_l_tools_8cpp_affd41b245cf6e95e58ebb006eec8c921}
+\hypertarget{_g_l_tools_8cpp_a1d1799c58f4d585f7696fcab26cfd9cd}{\index{G\-L\-Tools.\-cpp@{G\-L\-Tools.\-cpp}!glt\-Is\-Ext\-Supported@{glt\-Is\-Ext\-Supported}}
+\index{glt\-Is\-Ext\-Supported@{glt\-Is\-Ext\-Supported}!GLTools.cpp@{G\-L\-Tools.\-cpp}}
+\subsubsection[{glt\-Is\-Ext\-Supported}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} glt\-Is\-Ext\-Supported (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{extension}
+\end{DoxyParamCaption}
+)}}\label{_g_l_tools_8cpp_a1d1799c58f4d585f7696fcab26cfd9cd}
+\hypertarget{_g_l_tools_8cpp_a41c0cb8940c4658309913134483fa190}{\index{G\-L\-Tools.\-cpp@{G\-L\-Tools.\-cpp}!glt\-Load\-Shader\-File@{glt\-Load\-Shader\-File}}
+\index{glt\-Load\-Shader\-File@{glt\-Load\-Shader\-File}!GLTools.cpp@{G\-L\-Tools.\-cpp}}
+\subsubsection[{glt\-Load\-Shader\-File}]{\setlength{\rightskip}{0pt plus 5cm}bool glt\-Load\-Shader\-File (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\-File, }
+\item[{{\bf G\-Luint}}]{shader}
+\end{DoxyParamCaption}
+)}}\label{_g_l_tools_8cpp_a41c0cb8940c4658309913134483fa190}
+\hypertarget{_g_l_tools_8cpp_a39ed0c7a6d0b8f79450ef1facfe397b6}{\index{G\-L\-Tools.\-cpp@{G\-L\-Tools.\-cpp}!glt\-Load\-Shader\-Pair@{glt\-Load\-Shader\-Pair}}
+\index{glt\-Load\-Shader\-Pair@{glt\-Load\-Shader\-Pair}!GLTools.cpp@{G\-L\-Tools.\-cpp}}
+\subsubsection[{glt\-Load\-Shader\-Pair}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-Luint} glt\-Load\-Shader\-Pair (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\-Vertex\-Prog, }
+\item[{const char $\ast$}]{sz\-Fragment\-Prog}
+\end{DoxyParamCaption}
+)}}\label{_g_l_tools_8cpp_a39ed0c7a6d0b8f79450ef1facfe397b6}
+\hypertarget{_g_l_tools_8cpp_a203d56dbec7610adab58c86001648129}{\index{G\-L\-Tools.\-cpp@{G\-L\-Tools.\-cpp}!glt\-Load\-Shader\-Pair\-Src@{glt\-Load\-Shader\-Pair\-Src}}
+\index{glt\-Load\-Shader\-Pair\-Src@{glt\-Load\-Shader\-Pair\-Src}!GLTools.cpp@{G\-L\-Tools.\-cpp}}
+\subsubsection[{glt\-Load\-Shader\-Pair\-Src}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-Luint} glt\-Load\-Shader\-Pair\-Src (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\-Vertex\-Src, }
+\item[{const char $\ast$}]{sz\-Fragment\-Src}
+\end{DoxyParamCaption}
+)}}\label{_g_l_tools_8cpp_a203d56dbec7610adab58c86001648129}
+\hypertarget{_g_l_tools_8cpp_abf0d2622c3e4b79ff3444245eaa94edc}{\index{G\-L\-Tools.\-cpp@{G\-L\-Tools.\-cpp}!glt\-Load\-Shader\-Pair\-Src\-With\-Attributes@{glt\-Load\-Shader\-Pair\-Src\-With\-Attributes}}
+\index{glt\-Load\-Shader\-Pair\-Src\-With\-Attributes@{glt\-Load\-Shader\-Pair\-Src\-With\-Attributes}!GLTools.cpp@{G\-L\-Tools.\-cpp}}
+\subsubsection[{glt\-Load\-Shader\-Pair\-Src\-With\-Attributes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-Luint} glt\-Load\-Shader\-Pair\-Src\-With\-Attributes (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\-Vertex\-Src, }
+\item[{const char $\ast$}]{sz\-Fragment\-Src, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}}\label{_g_l_tools_8cpp_abf0d2622c3e4b79ff3444245eaa94edc}
+\hypertarget{_g_l_tools_8cpp_aa43689f6b22911e8467de1c02d446148}{\index{G\-L\-Tools.\-cpp@{G\-L\-Tools.\-cpp}!glt\-Load\-Shader\-Pair\-With\-Attributes@{glt\-Load\-Shader\-Pair\-With\-Attributes}}
+\index{glt\-Load\-Shader\-Pair\-With\-Attributes@{glt\-Load\-Shader\-Pair\-With\-Attributes}!GLTools.cpp@{G\-L\-Tools.\-cpp}}
+\subsubsection[{glt\-Load\-Shader\-Pair\-With\-Attributes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-Luint} glt\-Load\-Shader\-Pair\-With\-Attributes (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\-Vertex\-Prog, }
+\item[{const char $\ast$}]{sz\-Fragment\-Prog, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}}\label{_g_l_tools_8cpp_aa43689f6b22911e8467de1c02d446148}
+\hypertarget{_g_l_tools_8cpp_af8025b14b9649102f284955353a7c894}{\index{G\-L\-Tools.\-cpp@{G\-L\-Tools.\-cpp}!glt\-Load\-Shader\-Src@{glt\-Load\-Shader\-Src}}
+\index{glt\-Load\-Shader\-Src@{glt\-Load\-Shader\-Src}!GLTools.cpp@{G\-L\-Tools.\-cpp}}
+\subsubsection[{glt\-Load\-Shader\-Src}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} glt\-Load\-Shader\-Src (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\-Shader\-Src, }
+\item[{{\bf G\-Luint}}]{shader}
+\end{DoxyParamCaption}
+)}}\label{_g_l_tools_8cpp_af8025b14b9649102f284955353a7c894}
+\hypertarget{_g_l_tools_8cpp_abfb0ea387e464355ef08740a9bfe5557}{\index{G\-L\-Tools.\-cpp@{G\-L\-Tools.\-cpp}!glt\-Make\-Cube@{glt\-Make\-Cube}}
+\index{glt\-Make\-Cube@{glt\-Make\-Cube}!GLTools.cpp@{G\-L\-Tools.\-cpp}}
+\subsubsection[{glt\-Make\-Cube}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} glt\-Make\-Cube (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-L\-Batch} \&}]{cube\-Batch, }
+\item[{{\bf G\-Lfloat}}]{f\-Radius}
+\end{DoxyParamCaption}
+)}}\label{_g_l_tools_8cpp_abfb0ea387e464355ef08740a9bfe5557}
+\hypertarget{_g_l_tools_8cpp_a5557d3598ad97d6a69189b8f566285b9}{\index{G\-L\-Tools.\-cpp@{G\-L\-Tools.\-cpp}!glt\-Make\-Cylinder@{glt\-Make\-Cylinder}}
+\index{glt\-Make\-Cylinder@{glt\-Make\-Cylinder}!GLTools.cpp@{G\-L\-Tools.\-cpp}}
+\subsubsection[{glt\-Make\-Cylinder}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} glt\-Make\-Cylinder (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-L\-Triangle\-Batch} \&}]{cylinder\-Batch, }
+\item[{{\bf G\-Lfloat}}]{base\-Radius, }
+\item[{{\bf G\-Lfloat}}]{top\-Radius, }
+\item[{{\bf G\-Lfloat}}]{f\-Length, }
+\item[{{\bf G\-Lint}}]{num\-Slices, }
+\item[{{\bf G\-Lint}}]{num\-Stacks}
+\end{DoxyParamCaption}
+)}}\label{_g_l_tools_8cpp_a5557d3598ad97d6a69189b8f566285b9}
+\hypertarget{_g_l_tools_8cpp_a11beec4878a483fb80f3f05aae0a3081}{\index{G\-L\-Tools.\-cpp@{G\-L\-Tools.\-cpp}!glt\-Make\-Disk@{glt\-Make\-Disk}}
+\index{glt\-Make\-Disk@{glt\-Make\-Disk}!GLTools.cpp@{G\-L\-Tools.\-cpp}}
+\subsubsection[{glt\-Make\-Disk}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} glt\-Make\-Disk (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-L\-Triangle\-Batch} \&}]{disk\-Batch, }
+\item[{{\bf G\-Lfloat}}]{inner\-Radius, }
+\item[{{\bf G\-Lfloat}}]{outer\-Radius, }
+\item[{{\bf G\-Lint}}]{n\-Slices, }
+\item[{{\bf G\-Lint}}]{n\-Stacks}
+\end{DoxyParamCaption}
+)}}\label{_g_l_tools_8cpp_a11beec4878a483fb80f3f05aae0a3081}
+\hypertarget{_g_l_tools_8cpp_a365309115a133cb5a4e51ee0a94ebdb1}{\index{G\-L\-Tools.\-cpp@{G\-L\-Tools.\-cpp}!glt\-Make\-Sphere@{glt\-Make\-Sphere}}
+\index{glt\-Make\-Sphere@{glt\-Make\-Sphere}!GLTools.cpp@{G\-L\-Tools.\-cpp}}
+\subsubsection[{glt\-Make\-Sphere}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} glt\-Make\-Sphere (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-L\-Triangle\-Batch} \&}]{sphere\-Batch, }
+\item[{{\bf G\-Lfloat}}]{f\-Radius, }
+\item[{{\bf G\-Lint}}]{i\-Slices, }
+\item[{{\bf G\-Lint}}]{i\-Stacks}
+\end{DoxyParamCaption}
+)}}\label{_g_l_tools_8cpp_a365309115a133cb5a4e51ee0a94ebdb1}
+\hypertarget{_g_l_tools_8cpp_a6b25c52ab58557dab7156c3af831a8cb}{\index{G\-L\-Tools.\-cpp@{G\-L\-Tools.\-cpp}!glt\-Make\-Torus@{glt\-Make\-Torus}}
+\index{glt\-Make\-Torus@{glt\-Make\-Torus}!GLTools.cpp@{G\-L\-Tools.\-cpp}}
+\subsubsection[{glt\-Make\-Torus}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} glt\-Make\-Torus (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-L\-Triangle\-Batch} \&}]{torus\-Batch, }
+\item[{{\bf G\-Lfloat}}]{major\-Radius, }
+\item[{{\bf G\-Lfloat}}]{minor\-Radius, }
+\item[{{\bf G\-Lint}}]{num\-Major, }
+\item[{{\bf G\-Lint}}]{num\-Minor}
+\end{DoxyParamCaption}
+)}}\label{_g_l_tools_8cpp_a6b25c52ab58557dab7156c3af831a8cb}
+\hypertarget{_g_l_tools_8cpp_aab878c2dffa85ef90b6e9cbb1af11b4b}{\index{G\-L\-Tools.\-cpp@{G\-L\-Tools.\-cpp}!glt\-Read\-B\-M\-P\-Bits@{glt\-Read\-B\-M\-P\-Bits}}
+\index{glt\-Read\-B\-M\-P\-Bits@{glt\-Read\-B\-M\-P\-Bits}!GLTools.cpp@{G\-L\-Tools.\-cpp}}
+\subsubsection[{glt\-Read\-B\-M\-P\-Bits}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-Lbyte}$\ast$ glt\-Read\-B\-M\-P\-Bits (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\-File\-Name, }
+\item[{{\bf int} $\ast$}]{n\-Width, }
+\item[{{\bf int} $\ast$}]{n\-Height}
+\end{DoxyParamCaption}
+)}}\label{_g_l_tools_8cpp_aab878c2dffa85ef90b6e9cbb1af11b4b}
+\hypertarget{_g_l_tools_8cpp_a47a0ca72b4210508090f86c776ad8d41}{\index{G\-L\-Tools.\-cpp@{G\-L\-Tools.\-cpp}!glt\-Read\-T\-G\-A\-Bits@{glt\-Read\-T\-G\-A\-Bits}}
+\index{glt\-Read\-T\-G\-A\-Bits@{glt\-Read\-T\-G\-A\-Bits}!GLTools.cpp@{G\-L\-Tools.\-cpp}}
+\subsubsection[{glt\-Read\-T\-G\-A\-Bits}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-Lbyte}$\ast$ glt\-Read\-T\-G\-A\-Bits (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\-File\-Name, }
+\item[{{\bf G\-Lint} $\ast$}]{i\-Width, }
+\item[{{\bf G\-Lint} $\ast$}]{i\-Height, }
+\item[{{\bf G\-Lint} $\ast$}]{i\-Components, }
+\item[{{\bf G\-Lenum} $\ast$}]{e\-Format}
+\end{DoxyParamCaption}
+)}}\label{_g_l_tools_8cpp_a47a0ca72b4210508090f86c776ad8d41}
+\hypertarget{_g_l_tools_8cpp_ad1cd5829323498432cc035d488b095da}{\index{G\-L\-Tools.\-cpp@{G\-L\-Tools.\-cpp}!glt\-Set\-Working\-Directory@{glt\-Set\-Working\-Directory}}
+\index{glt\-Set\-Working\-Directory@{glt\-Set\-Working\-Directory}!GLTools.cpp@{G\-L\-Tools.\-cpp}}
+\subsubsection[{glt\-Set\-Working\-Directory}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} glt\-Set\-Working\-Directory (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\-Argv}
+\end{DoxyParamCaption}
+)}}\label{_g_l_tools_8cpp_ad1cd5829323498432cc035d488b095da}

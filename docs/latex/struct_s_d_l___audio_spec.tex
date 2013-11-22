@@ -1,0 +1,66 @@
+\hypertarget{struct_s_d_l___audio_spec}{\section{S\-D\-L\-\_\-\-Audio\-Spec Struct Reference}
+\label{struct_s_d_l___audio_spec}\index{S\-D\-L\-\_\-\-Audio\-Spec@{S\-D\-L\-\_\-\-Audio\-Spec}}
+}
+
+
+{\ttfamily \#include $<$S\-D\-L\-\_\-audio.\-h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{struct_s_d_l___audio_spec_a8b823ce46fc2e448cf7e6fc141aff6b2}{freq}
+\item 
+\hyperlink{_s_d_l__audio_8h_a491ed103fd25d920c4e6b7495217ce66}{S\-D\-L\-\_\-\-Audio\-Format} \hyperlink{struct_s_d_l___audio_spec_ae37c634cac5807762f184c8d5d49fc2d}{format}
+\item 
+\hyperlink{_s_d_l__stdinc_8h_a2944638813a090aa23e62f4da842c3e2}{Uint8} \hyperlink{struct_s_d_l___audio_spec_a31fe8b3710cf23bbef24be8a1749fe46}{channels}
+\item 
+\hyperlink{_s_d_l__stdinc_8h_a2944638813a090aa23e62f4da842c3e2}{Uint8} \hyperlink{struct_s_d_l___audio_spec_addc462c8a806e6c122eccf63482048f6}{silence}
+\item 
+\hyperlink{_s_d_l__stdinc_8h_a31fcc0a076c9068668173ee26d33e42b}{Uint16} \hyperlink{struct_s_d_l___audio_spec_a2cdf5e885808c10bfa2810b706e69f95}{samples}
+\item 
+\hyperlink{_s_d_l__stdinc_8h_a31fcc0a076c9068668173ee26d33e42b}{Uint16} \hyperlink{struct_s_d_l___audio_spec_a738371fc13b54cefef4db16994abeeb6}{padding}
+\item 
+\hyperlink{_s_d_l__stdinc_8h_add440eff171ea5f55cb00c4a9ab8672d}{Uint32} \hyperlink{struct_s_d_l___audio_spec_a154cf44743ecec78c36dc6c827dd2fdb}{size}
+\item 
+S\-D\-L\-\_\-\-Audio\-Callback \hyperlink{struct_s_d_l___audio_spec_a1f8d05139f1679dcf359f49251233eac}{callback}
+\item 
+\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} $\ast$ \hyperlink{struct_s_d_l___audio_spec_aeec9481666f5f0982c98d3878f175d9b}{userdata}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The calculated values in this structure are calculated by \hyperlink{_s_d_l__audio_8h_a2edf30e7747584e28041b4986f89f440}{S\-D\-L\-\_\-\-Open\-Audio()}. 
+
+\subsection{Member Data Documentation}
+\hypertarget{struct_s_d_l___audio_spec_a1f8d05139f1679dcf359f49251233eac}{\index{S\-D\-L\-\_\-\-Audio\-Spec@{S\-D\-L\-\_\-\-Audio\-Spec}!callback@{callback}}
+\index{callback@{callback}!SDL_AudioSpec@{S\-D\-L\-\_\-\-Audio\-Spec}}
+\subsubsection[{callback}]{\setlength{\rightskip}{0pt plus 5cm}S\-D\-L\-\_\-\-Audio\-Callback S\-D\-L\-\_\-\-Audio\-Spec\-::callback}}\label{struct_s_d_l___audio_spec_a1f8d05139f1679dcf359f49251233eac}
+\hypertarget{struct_s_d_l___audio_spec_a31fe8b3710cf23bbef24be8a1749fe46}{\index{S\-D\-L\-\_\-\-Audio\-Spec@{S\-D\-L\-\_\-\-Audio\-Spec}!channels@{channels}}
+\index{channels@{channels}!SDL_AudioSpec@{S\-D\-L\-\_\-\-Audio\-Spec}}
+\subsubsection[{channels}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Uint8} S\-D\-L\-\_\-\-Audio\-Spec\-::channels}}\label{struct_s_d_l___audio_spec_a31fe8b3710cf23bbef24be8a1749fe46}
+Number of channels\-: 1 mono, 2 stereo \hypertarget{struct_s_d_l___audio_spec_ae37c634cac5807762f184c8d5d49fc2d}{\index{S\-D\-L\-\_\-\-Audio\-Spec@{S\-D\-L\-\_\-\-Audio\-Spec}!format@{format}}
+\index{format@{format}!SDL_AudioSpec@{S\-D\-L\-\_\-\-Audio\-Spec}}
+\subsubsection[{format}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-D\-L\-\_\-\-Audio\-Format} S\-D\-L\-\_\-\-Audio\-Spec\-::format}}\label{struct_s_d_l___audio_spec_ae37c634cac5807762f184c8d5d49fc2d}
+Audio data format \hypertarget{struct_s_d_l___audio_spec_a8b823ce46fc2e448cf7e6fc141aff6b2}{\index{S\-D\-L\-\_\-\-Audio\-Spec@{S\-D\-L\-\_\-\-Audio\-Spec}!freq@{freq}}
+\index{freq@{freq}!SDL_AudioSpec@{S\-D\-L\-\_\-\-Audio\-Spec}}
+\subsubsection[{freq}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} S\-D\-L\-\_\-\-Audio\-Spec\-::freq}}\label{struct_s_d_l___audio_spec_a8b823ce46fc2e448cf7e6fc141aff6b2}
+D\-S\-P frequency -- samples per second \hypertarget{struct_s_d_l___audio_spec_a738371fc13b54cefef4db16994abeeb6}{\index{S\-D\-L\-\_\-\-Audio\-Spec@{S\-D\-L\-\_\-\-Audio\-Spec}!padding@{padding}}
+\index{padding@{padding}!SDL_AudioSpec@{S\-D\-L\-\_\-\-Audio\-Spec}}
+\subsubsection[{padding}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Uint16} S\-D\-L\-\_\-\-Audio\-Spec\-::padding}}\label{struct_s_d_l___audio_spec_a738371fc13b54cefef4db16994abeeb6}
+Necessary for some compile environments \hypertarget{struct_s_d_l___audio_spec_a2cdf5e885808c10bfa2810b706e69f95}{\index{S\-D\-L\-\_\-\-Audio\-Spec@{S\-D\-L\-\_\-\-Audio\-Spec}!samples@{samples}}
+\index{samples@{samples}!SDL_AudioSpec@{S\-D\-L\-\_\-\-Audio\-Spec}}
+\subsubsection[{samples}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Uint16} S\-D\-L\-\_\-\-Audio\-Spec\-::samples}}\label{struct_s_d_l___audio_spec_a2cdf5e885808c10bfa2810b706e69f95}
+Audio buffer size in samples (power of 2) \hypertarget{struct_s_d_l___audio_spec_addc462c8a806e6c122eccf63482048f6}{\index{S\-D\-L\-\_\-\-Audio\-Spec@{S\-D\-L\-\_\-\-Audio\-Spec}!silence@{silence}}
+\index{silence@{silence}!SDL_AudioSpec@{S\-D\-L\-\_\-\-Audio\-Spec}}
+\subsubsection[{silence}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Uint8} S\-D\-L\-\_\-\-Audio\-Spec\-::silence}}\label{struct_s_d_l___audio_spec_addc462c8a806e6c122eccf63482048f6}
+Audio buffer silence value (calculated) \hypertarget{struct_s_d_l___audio_spec_a154cf44743ecec78c36dc6c827dd2fdb}{\index{S\-D\-L\-\_\-\-Audio\-Spec@{S\-D\-L\-\_\-\-Audio\-Spec}!size@{size}}
+\index{size@{size}!SDL_AudioSpec@{S\-D\-L\-\_\-\-Audio\-Spec}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Uint32} S\-D\-L\-\_\-\-Audio\-Spec\-::size}}\label{struct_s_d_l___audio_spec_a154cf44743ecec78c36dc6c827dd2fdb}
+Audio buffer size in bytes (calculated) \hypertarget{struct_s_d_l___audio_spec_aeec9481666f5f0982c98d3878f175d9b}{\index{S\-D\-L\-\_\-\-Audio\-Spec@{S\-D\-L\-\_\-\-Audio\-Spec}!userdata@{userdata}}
+\index{userdata@{userdata}!SDL_AudioSpec@{S\-D\-L\-\_\-\-Audio\-Spec}}
+\subsubsection[{userdata}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void}$\ast$ S\-D\-L\-\_\-\-Audio\-Spec\-::userdata}}\label{struct_s_d_l___audio_spec_aeec9481666f5f0982c98d3878f175d9b}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+include/\-S\-D\-L/include/\hyperlink{_s_d_l__audio_8h}{S\-D\-L\-\_\-audio.\-h}\end{DoxyCompactItemize}

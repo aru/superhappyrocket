@@ -1,0 +1,193 @@
+\hypertarget{class_audio_manager}{\section{Audio\-Manager Class Reference}
+\label{class_audio_manager}\index{Audio\-Manager@{Audio\-Manager}}
+}
+
+
+{\ttfamily \#include $<$Audio\-Manager.\-h$>$}
+
+
+
+Collaboration diagram for Audio\-Manager\-:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_audio_manager_ae59d8605c1d706e7bab47d4e8f900d09}{Audio\-Manager} ()
+\item 
+\hyperlink{class_audio_manager_aadf31314ba383af86f1afcaa44d9b7e7}{Audio\-Manager} (\hyperlink{class_context}{Context} $\ast$ctx)
+\item 
+\hyperlink{class_audio_manager_ad94dc46723c6d7cf8c81fc3772a842aa}{$\sim$\-Audio\-Manager} ()
+\item 
+\hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{class_audio_manager_a8a12488d1fe834184d27dbd4b042593a}{Initialize} ()
+\item 
+\hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{class_audio_manager_a8272facf35d9fa66857f7364a1f487ae}{Load\-Content} ()
+\item 
+\hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{class_audio_manager_a924f832983f956a72599806ec4286ab5}{Update} ()
+\item 
+\hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{class_audio_manager_a755335689f2574e0c283128acbdd44e8}{Unload\-Content} ()
+\item 
+\hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{class_audio_manager_a16ff10a66586f4f93c635d465f1833f2}{Load\-Music} (const char $\ast$file)
+\item 
+\hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{class_audio_manager_ac7306cf16ab74b3834fd364f02587141}{Play\-Music} ()
+\item 
+\hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{class_audio_manager_aed5aa44ab8b15588a7790fe3edf40eca}{Load\-Sound} (const char $\ast$file)
+\item 
+\hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{class_audio_manager_a414c9ed8428eeefaf718e9471a2a0d2c}{Play\-Sound} (\hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} sound\-File, \hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} loop\-Times)
+\item 
+\hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{class_audio_manager_a7b13ea31e6278900ac81d977e69a44e5}{Pause\-Sound} (\hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} sound\-File)
+\item 
+\hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{class_audio_manager_a21d6f2c07306a824f8404c1cad595fb4}{Stop\-Sound} (\hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} sound\-File)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_context}{Context} $\ast$ \hyperlink{class_audio_manager_a732e4905a8a05a0ae09e6250172daad1}{ctxt}
+\item 
+\hyperlink{_s_d_l__mixer_8h_a1d58ae8fa29e1c03df23baeffb32b14c}{Mix\-\_\-\-Music} $\ast$ \hyperlink{class_audio_manager_ac2db72d9907112162225826056ee7f11}{music}
+\item 
+std\-::vector$<$ \hyperlink{struct_mix___chunk}{Mix\-\_\-\-Chunk} $\ast$ $>$ \hyperlink{class_audio_manager_a2052962e50b4372aa9c0621f48e65e59}{sounds}
+\item 
+\hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{class_audio_manager_a6307e9ae3cd57d6d85adab5a9a4511c7}{audio\-\_\-rate}
+\item 
+\hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{class_audio_manager_a9fa300ed4663c81466bd3e21faf0ceb9}{audio\-\_\-format}
+\item 
+\hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{class_audio_manager_a616eba72f37260dc197a6171577bcd3d}{audio\-\_\-channels}
+\item 
+\hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{class_audio_manager_aa88d9c11671aaff4df98dfc3c0b64002}{audio\-\_\-buffers}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Audio\-Manager.\-h
+
+Manages the audio on the current context responsible for loading, playing, pausing, stoppingand shutting down the audio.
+
+This program is free software\-: you can redistribute it and/or modify it under the terms of the G\-N\-U General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but W\-I\-T\-H\-O\-U\-T A\-N\-Y W\-A\-R\-R\-A\-N\-T\-Y; without even the implied warranty of M\-E\-R\-C\-H\-A\-N\-T\-A\-B\-I\-L\-I\-T\-Y or F\-I\-T\-N\-E\-S\-S F\-O\-R A P\-A\-R\-T\-I\-C\-U\-L\-A\-R P\-U\-R\-P\-O\-S\-E. See the G\-N\-U General Public License for more details \href{http://www.gnu.org/licenses/}{\tt http\-://www.\-gnu.\-org/licenses/}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_audio_manager_ae59d8605c1d706e7bab47d4e8f900d09}{\index{Audio\-Manager@{Audio\-Manager}!Audio\-Manager@{Audio\-Manager}}
+\index{Audio\-Manager@{Audio\-Manager}!AudioManager@{Audio\-Manager}}
+\subsubsection[{Audio\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}Audio\-Manager\-::\-Audio\-Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_audio_manager_ae59d8605c1d706e7bab47d4e8f900d09}
+\hypertarget{class_audio_manager_aadf31314ba383af86f1afcaa44d9b7e7}{\index{Audio\-Manager@{Audio\-Manager}!Audio\-Manager@{Audio\-Manager}}
+\index{Audio\-Manager@{Audio\-Manager}!AudioManager@{Audio\-Manager}}
+\subsubsection[{Audio\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}Audio\-Manager\-::\-Audio\-Manager (
+\begin{DoxyParamCaption}
+\item[{{\bf Context} $\ast$}]{ctx}
+\end{DoxyParamCaption}
+)}}\label{class_audio_manager_aadf31314ba383af86f1afcaa44d9b7e7}
+\hypertarget{class_audio_manager_ad94dc46723c6d7cf8c81fc3772a842aa}{\index{Audio\-Manager@{Audio\-Manager}!$\sim$\-Audio\-Manager@{$\sim$\-Audio\-Manager}}
+\index{$\sim$\-Audio\-Manager@{$\sim$\-Audio\-Manager}!AudioManager@{Audio\-Manager}}
+\subsubsection[{$\sim$\-Audio\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}Audio\-Manager\-::$\sim$\-Audio\-Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_audio_manager_ad94dc46723c6d7cf8c81fc3772a842aa}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_audio_manager_a8a12488d1fe834184d27dbd4b042593a}{\index{Audio\-Manager@{Audio\-Manager}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!AudioManager@{Audio\-Manager}}
+\subsubsection[{Initialize}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} Audio\-Manager\-::\-Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_audio_manager_a8a12488d1fe834184d27dbd4b042593a}
+\hypertarget{class_audio_manager_a8272facf35d9fa66857f7364a1f487ae}{\index{Audio\-Manager@{Audio\-Manager}!Load\-Content@{Load\-Content}}
+\index{Load\-Content@{Load\-Content}!AudioManager@{Audio\-Manager}}
+\subsubsection[{Load\-Content}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} Audio\-Manager\-::\-Load\-Content (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_audio_manager_a8272facf35d9fa66857f7364a1f487ae}
+\hypertarget{class_audio_manager_a16ff10a66586f4f93c635d465f1833f2}{\index{Audio\-Manager@{Audio\-Manager}!Load\-Music@{Load\-Music}}
+\index{Load\-Music@{Load\-Music}!AudioManager@{Audio\-Manager}}
+\subsubsection[{Load\-Music}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} Audio\-Manager\-::\-Load\-Music (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{file}
+\end{DoxyParamCaption}
+)}}\label{class_audio_manager_a16ff10a66586f4f93c635d465f1833f2}
+\hypertarget{class_audio_manager_aed5aa44ab8b15588a7790fe3edf40eca}{\index{Audio\-Manager@{Audio\-Manager}!Load\-Sound@{Load\-Sound}}
+\index{Load\-Sound@{Load\-Sound}!AudioManager@{Audio\-Manager}}
+\subsubsection[{Load\-Sound}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} Audio\-Manager\-::\-Load\-Sound (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{file}
+\end{DoxyParamCaption}
+)}}\label{class_audio_manager_aed5aa44ab8b15588a7790fe3edf40eca}
+\hypertarget{class_audio_manager_a7b13ea31e6278900ac81d977e69a44e5}{\index{Audio\-Manager@{Audio\-Manager}!Pause\-Sound@{Pause\-Sound}}
+\index{Pause\-Sound@{Pause\-Sound}!AudioManager@{Audio\-Manager}}
+\subsubsection[{Pause\-Sound}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} Audio\-Manager\-::\-Pause\-Sound (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{sound\-File}
+\end{DoxyParamCaption}
+)}}\label{class_audio_manager_a7b13ea31e6278900ac81d977e69a44e5}
+\hypertarget{class_audio_manager_ac7306cf16ab74b3834fd364f02587141}{\index{Audio\-Manager@{Audio\-Manager}!Play\-Music@{Play\-Music}}
+\index{Play\-Music@{Play\-Music}!AudioManager@{Audio\-Manager}}
+\subsubsection[{Play\-Music}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} Audio\-Manager\-::\-Play\-Music (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_audio_manager_ac7306cf16ab74b3834fd364f02587141}
+\hypertarget{class_audio_manager_a414c9ed8428eeefaf718e9471a2a0d2c}{\index{Audio\-Manager@{Audio\-Manager}!Play\-Sound@{Play\-Sound}}
+\index{Play\-Sound@{Play\-Sound}!AudioManager@{Audio\-Manager}}
+\subsubsection[{Play\-Sound}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} Audio\-Manager\-::\-Play\-Sound (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{sound\-File, }
+\item[{{\bf int}}]{loop\-Times}
+\end{DoxyParamCaption}
+)}}\label{class_audio_manager_a414c9ed8428eeefaf718e9471a2a0d2c}
+\hypertarget{class_audio_manager_a21d6f2c07306a824f8404c1cad595fb4}{\index{Audio\-Manager@{Audio\-Manager}!Stop\-Sound@{Stop\-Sound}}
+\index{Stop\-Sound@{Stop\-Sound}!AudioManager@{Audio\-Manager}}
+\subsubsection[{Stop\-Sound}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} Audio\-Manager\-::\-Stop\-Sound (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{sound\-File}
+\end{DoxyParamCaption}
+)}}\label{class_audio_manager_a21d6f2c07306a824f8404c1cad595fb4}
+\hypertarget{class_audio_manager_a755335689f2574e0c283128acbdd44e8}{\index{Audio\-Manager@{Audio\-Manager}!Unload\-Content@{Unload\-Content}}
+\index{Unload\-Content@{Unload\-Content}!AudioManager@{Audio\-Manager}}
+\subsubsection[{Unload\-Content}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} Audio\-Manager\-::\-Unload\-Content (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_audio_manager_a755335689f2574e0c283128acbdd44e8}
+\hypertarget{class_audio_manager_a924f832983f956a72599806ec4286ab5}{\index{Audio\-Manager@{Audio\-Manager}!Update@{Update}}
+\index{Update@{Update}!AudioManager@{Audio\-Manager}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} Audio\-Manager\-::\-Update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_audio_manager_a924f832983f956a72599806ec4286ab5}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_audio_manager_aa88d9c11671aaff4df98dfc3c0b64002}{\index{Audio\-Manager@{Audio\-Manager}!audio\-\_\-buffers@{audio\-\_\-buffers}}
+\index{audio\-\_\-buffers@{audio\-\_\-buffers}!AudioManager@{Audio\-Manager}}
+\subsubsection[{audio\-\_\-buffers}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} Audio\-Manager\-::audio\-\_\-buffers}}\label{class_audio_manager_aa88d9c11671aaff4df98dfc3c0b64002}
+\hypertarget{class_audio_manager_a616eba72f37260dc197a6171577bcd3d}{\index{Audio\-Manager@{Audio\-Manager}!audio\-\_\-channels@{audio\-\_\-channels}}
+\index{audio\-\_\-channels@{audio\-\_\-channels}!AudioManager@{Audio\-Manager}}
+\subsubsection[{audio\-\_\-channels}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} Audio\-Manager\-::audio\-\_\-channels}}\label{class_audio_manager_a616eba72f37260dc197a6171577bcd3d}
+\hypertarget{class_audio_manager_a9fa300ed4663c81466bd3e21faf0ceb9}{\index{Audio\-Manager@{Audio\-Manager}!audio\-\_\-format@{audio\-\_\-format}}
+\index{audio\-\_\-format@{audio\-\_\-format}!AudioManager@{Audio\-Manager}}
+\subsubsection[{audio\-\_\-format}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} Audio\-Manager\-::audio\-\_\-format}}\label{class_audio_manager_a9fa300ed4663c81466bd3e21faf0ceb9}
+\hypertarget{class_audio_manager_a6307e9ae3cd57d6d85adab5a9a4511c7}{\index{Audio\-Manager@{Audio\-Manager}!audio\-\_\-rate@{audio\-\_\-rate}}
+\index{audio\-\_\-rate@{audio\-\_\-rate}!AudioManager@{Audio\-Manager}}
+\subsubsection[{audio\-\_\-rate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} Audio\-Manager\-::audio\-\_\-rate}}\label{class_audio_manager_a6307e9ae3cd57d6d85adab5a9a4511c7}
+\hypertarget{class_audio_manager_a732e4905a8a05a0ae09e6250172daad1}{\index{Audio\-Manager@{Audio\-Manager}!ctxt@{ctxt}}
+\index{ctxt@{ctxt}!AudioManager@{Audio\-Manager}}
+\subsubsection[{ctxt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Context}$\ast$ Audio\-Manager\-::ctxt}}\label{class_audio_manager_a732e4905a8a05a0ae09e6250172daad1}
+\hypertarget{class_audio_manager_ac2db72d9907112162225826056ee7f11}{\index{Audio\-Manager@{Audio\-Manager}!music@{music}}
+\index{music@{music}!AudioManager@{Audio\-Manager}}
+\subsubsection[{music}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mix\-\_\-\-Music}$\ast$ Audio\-Manager\-::music}}\label{class_audio_manager_ac2db72d9907112162225826056ee7f11}
+\hypertarget{class_audio_manager_a2052962e50b4372aa9c0621f48e65e59}{\index{Audio\-Manager@{Audio\-Manager}!sounds@{sounds}}
+\index{sounds@{sounds}!AudioManager@{Audio\-Manager}}
+\subsubsection[{sounds}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Mix\-\_\-\-Chunk}$\ast$$>$ Audio\-Manager\-::sounds}}\label{class_audio_manager_a2052962e50b4372aa9c0621f48e65e59}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{_audio_manager_8h}{Audio\-Manager.\-h}\item 
+src/\hyperlink{_audio_manager_8cpp}{Audio\-Manager.\-cpp}\end{DoxyCompactItemize}

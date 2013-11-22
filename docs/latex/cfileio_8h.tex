@@ -1,0 +1,58 @@
+\hypertarget{cfileio_8h}{\section{include/assimp/include/cfileio.h File Reference}
+\label{cfileio_8h}\index{include/assimp/include/cfileio.\-h@{include/assimp/include/cfileio.\-h}}
+}
+{\ttfamily \#include \char`\"{}types.\-h\char`\"{}}\\*
+Include dependency graph for cfileio.\-h\-:
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structai_file_i_o}{ai\-File\-I\-O}
+\begin{DoxyCompactList}\small\item\em C-\/\-A\-P\-I\-: File system callbacks. \end{DoxyCompactList}\item 
+struct \hyperlink{structai_file}{ai\-File}
+\begin{DoxyCompactList}\small\item\em C-\/\-A\-P\-I\-: File callbacks. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{_s_d_l__config_8h_a7c94ea6f8948649f8d181ae55911eeaf}{size\-\_\-t}($\ast$ \hyperlink{cfileio_8h_ab25827ce1f6f1fcb37232f1e945947da}{ai\-File\-Write\-Proc} )(\hyperlink{defs_8h_ab51df4230ceb602bbc1bc109c432a6a0}{C\-\_\-\-S\-T\-R\-U\-C\-T} \hyperlink{structai_file}{ai\-File} $\ast$, const char $\ast$, \hyperlink{_s_d_l__config_8h_a7c94ea6f8948649f8d181ae55911eeaf}{size\-\_\-t}, \hyperlink{_s_d_l__config_8h_a7c94ea6f8948649f8d181ae55911eeaf}{size\-\_\-t})
+\item 
+typedef \hyperlink{_s_d_l__config_8h_a7c94ea6f8948649f8d181ae55911eeaf}{size\-\_\-t}($\ast$ \hyperlink{cfileio_8h_ac75a77859a761dafe8c0a149316c9025}{ai\-File\-Read\-Proc} )(\hyperlink{defs_8h_ab51df4230ceb602bbc1bc109c432a6a0}{C\-\_\-\-S\-T\-R\-U\-C\-T} \hyperlink{structai_file}{ai\-File} $\ast$, char $\ast$, \hyperlink{_s_d_l__config_8h_a7c94ea6f8948649f8d181ae55911eeaf}{size\-\_\-t}, \hyperlink{_s_d_l__config_8h_a7c94ea6f8948649f8d181ae55911eeaf}{size\-\_\-t})
+\item 
+typedef \hyperlink{_s_d_l__config_8h_a7c94ea6f8948649f8d181ae55911eeaf}{size\-\_\-t}($\ast$ \hyperlink{cfileio_8h_a91bcb34135f0fc52b84d0a71b1ac9416}{ai\-File\-Tell\-Proc} )(\hyperlink{defs_8h_ab51df4230ceb602bbc1bc109c432a6a0}{C\-\_\-\-S\-T\-R\-U\-C\-T} \hyperlink{structai_file}{ai\-File} $\ast$)
+\item 
+typedef \hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void}($\ast$ \hyperlink{cfileio_8h_ab7018edd452f13ade57309865cb3bcdb}{ai\-File\-Flush\-Proc} )(\hyperlink{defs_8h_ab51df4230ceb602bbc1bc109c432a6a0}{C\-\_\-\-S\-T\-R\-U\-C\-T} \hyperlink{structai_file}{ai\-File} $\ast$)
+\item 
+typedef ai\-Return($\ast$ \hyperlink{cfileio_8h_a21b9c66913c05cd79fad0eece086efb3}{ai\-File\-Seek} )(\hyperlink{defs_8h_ab51df4230ceb602bbc1bc109c432a6a0}{C\-\_\-\-S\-T\-R\-U\-C\-T} \hyperlink{structai_file}{ai\-File} $\ast$, \hyperlink{_s_d_l__config_8h_a7c94ea6f8948649f8d181ae55911eeaf}{size\-\_\-t}, ai\-Origin)
+\item 
+typedef \hyperlink{structai_file}{ai\-File} $\ast$($\ast$ \hyperlink{cfileio_8h_aa2746201910ae213e98ef82d4f313d66}{ai\-File\-Open\-Proc} )(\hyperlink{defs_8h_ab51df4230ceb602bbc1bc109c432a6a0}{C\-\_\-\-S\-T\-R\-U\-C\-T} \hyperlink{structai_file_i_o}{ai\-File\-I\-O} $\ast$, const char $\ast$, const char $\ast$)
+\item 
+typedef \hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void}($\ast$ \hyperlink{cfileio_8h_a32e3d4bf95dfb921a263a4aa77105c0f}{ai\-File\-Close\-Proc} )(\hyperlink{defs_8h_ab51df4230ceb602bbc1bc109c432a6a0}{C\-\_\-\-S\-T\-R\-U\-C\-T} \hyperlink{structai_file_i_o}{ai\-File\-I\-O} $\ast$, \hyperlink{defs_8h_ab51df4230ceb602bbc1bc109c432a6a0}{C\-\_\-\-S\-T\-R\-U\-C\-T} \hyperlink{structai_file}{ai\-File} $\ast$)
+\item 
+typedef char $\ast$ \hyperlink{cfileio_8h_a176132d0cd51c96302089ff3f8a8ee1c}{ai\-User\-Data}
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{cfileio_8h_a32e3d4bf95dfb921a263a4aa77105c0f}{\index{cfileio.\-h@{cfileio.\-h}!ai\-File\-Close\-Proc@{ai\-File\-Close\-Proc}}
+\index{ai\-File\-Close\-Proc@{ai\-File\-Close\-Proc}!cfileio.h@{cfileio.\-h}}
+\subsubsection[{ai\-File\-Close\-Proc}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}($\ast$ ai\-File\-Close\-Proc)({\bf C\-\_\-\-S\-T\-R\-U\-C\-T} {\bf ai\-File\-I\-O} $\ast$, {\bf C\-\_\-\-S\-T\-R\-U\-C\-T} {\bf ai\-File} $\ast$)}}\label{cfileio_8h_a32e3d4bf95dfb921a263a4aa77105c0f}
+\hypertarget{cfileio_8h_ab7018edd452f13ade57309865cb3bcdb}{\index{cfileio.\-h@{cfileio.\-h}!ai\-File\-Flush\-Proc@{ai\-File\-Flush\-Proc}}
+\index{ai\-File\-Flush\-Proc@{ai\-File\-Flush\-Proc}!cfileio.h@{cfileio.\-h}}
+\subsubsection[{ai\-File\-Flush\-Proc}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}($\ast$ ai\-File\-Flush\-Proc)({\bf C\-\_\-\-S\-T\-R\-U\-C\-T} {\bf ai\-File} $\ast$)}}\label{cfileio_8h_ab7018edd452f13ade57309865cb3bcdb}
+\hypertarget{cfileio_8h_aa2746201910ae213e98ef82d4f313d66}{\index{cfileio.\-h@{cfileio.\-h}!ai\-File\-Open\-Proc@{ai\-File\-Open\-Proc}}
+\index{ai\-File\-Open\-Proc@{ai\-File\-Open\-Proc}!cfileio.h@{cfileio.\-h}}
+\subsubsection[{ai\-File\-Open\-Proc}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf ai\-File}$\ast$($\ast$ ai\-File\-Open\-Proc)({\bf C\-\_\-\-S\-T\-R\-U\-C\-T} {\bf ai\-File\-I\-O} $\ast$, const char $\ast$, const char $\ast$)}}\label{cfileio_8h_aa2746201910ae213e98ef82d4f313d66}
+\hypertarget{cfileio_8h_ac75a77859a761dafe8c0a149316c9025}{\index{cfileio.\-h@{cfileio.\-h}!ai\-File\-Read\-Proc@{ai\-File\-Read\-Proc}}
+\index{ai\-File\-Read\-Proc@{ai\-File\-Read\-Proc}!cfileio.h@{cfileio.\-h}}
+\subsubsection[{ai\-File\-Read\-Proc}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf size\-\_\-t}($\ast$ ai\-File\-Read\-Proc)({\bf C\-\_\-\-S\-T\-R\-U\-C\-T} {\bf ai\-File} $\ast$, char $\ast$, {\bf size\-\_\-t}, {\bf size\-\_\-t})}}\label{cfileio_8h_ac75a77859a761dafe8c0a149316c9025}
+\hypertarget{cfileio_8h_a21b9c66913c05cd79fad0eece086efb3}{\index{cfileio.\-h@{cfileio.\-h}!ai\-File\-Seek@{ai\-File\-Seek}}
+\index{ai\-File\-Seek@{ai\-File\-Seek}!cfileio.h@{cfileio.\-h}}
+\subsubsection[{ai\-File\-Seek}]{\setlength{\rightskip}{0pt plus 5cm}typedef ai\-Return($\ast$ ai\-File\-Seek)({\bf C\-\_\-\-S\-T\-R\-U\-C\-T} {\bf ai\-File} $\ast$, {\bf size\-\_\-t}, ai\-Origin)}}\label{cfileio_8h_a21b9c66913c05cd79fad0eece086efb3}
+\hypertarget{cfileio_8h_a91bcb34135f0fc52b84d0a71b1ac9416}{\index{cfileio.\-h@{cfileio.\-h}!ai\-File\-Tell\-Proc@{ai\-File\-Tell\-Proc}}
+\index{ai\-File\-Tell\-Proc@{ai\-File\-Tell\-Proc}!cfileio.h@{cfileio.\-h}}
+\subsubsection[{ai\-File\-Tell\-Proc}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf size\-\_\-t}($\ast$ ai\-File\-Tell\-Proc)({\bf C\-\_\-\-S\-T\-R\-U\-C\-T} {\bf ai\-File} $\ast$)}}\label{cfileio_8h_a91bcb34135f0fc52b84d0a71b1ac9416}
+\hypertarget{cfileio_8h_ab25827ce1f6f1fcb37232f1e945947da}{\index{cfileio.\-h@{cfileio.\-h}!ai\-File\-Write\-Proc@{ai\-File\-Write\-Proc}}
+\index{ai\-File\-Write\-Proc@{ai\-File\-Write\-Proc}!cfileio.h@{cfileio.\-h}}
+\subsubsection[{ai\-File\-Write\-Proc}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf size\-\_\-t}($\ast$ ai\-File\-Write\-Proc)({\bf C\-\_\-\-S\-T\-R\-U\-C\-T} {\bf ai\-File} $\ast$, const char $\ast$, {\bf size\-\_\-t}, {\bf size\-\_\-t})}}\label{cfileio_8h_ab25827ce1f6f1fcb37232f1e945947da}
+\hypertarget{cfileio_8h_a176132d0cd51c96302089ff3f8a8ee1c}{\index{cfileio.\-h@{cfileio.\-h}!ai\-User\-Data@{ai\-User\-Data}}
+\index{ai\-User\-Data@{ai\-User\-Data}!cfileio.h@{cfileio.\-h}}
+\subsubsection[{ai\-User\-Data}]{\setlength{\rightskip}{0pt plus 5cm}typedef char$\ast$ {\bf ai\-User\-Data}}}\label{cfileio_8h_a176132d0cd51c96302089ff3f8a8ee1c}

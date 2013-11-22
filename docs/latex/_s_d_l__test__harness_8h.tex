@@ -1,0 +1,176 @@
+\hypertarget{_s_d_l__test__harness_8h}{\section{include/\-S\-D\-L/include/\-S\-D\-L\-\_\-test\-\_\-harness.h File Reference}
+\label{_s_d_l__test__harness_8h}\index{include/\-S\-D\-L/include/\-S\-D\-L\-\_\-test\-\_\-harness.\-h@{include/\-S\-D\-L/include/\-S\-D\-L\-\_\-test\-\_\-harness.\-h}}
+}
+{\ttfamily \#include \char`\"{}begin\-\_\-code.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}close\-\_\-code.\-h\char`\"{}}\\*
+Include dependency graph for S\-D\-L\-\_\-test\-\_\-harness.\-h\-:
+This graph shows which files directly or indirectly include this file\-:
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_s_d_l_test___test_case_reference}{S\-D\-L\-Test\-\_\-\-Test\-Case\-Reference}
+\item 
+struct \hyperlink{struct_s_d_l_test___test_suite_reference}{S\-D\-L\-Test\-\_\-\-Test\-Suite\-Reference}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_s_d_l__test__harness_8h_a4404f2feb87e68e20e31bd86ec1728b1}{T\-E\-S\-T\-\_\-\-E\-N\-A\-B\-L\-E\-D}~1
+\begin{DoxyCompactList}\small\item\em Definitions for test case structures. \end{DoxyCompactList}\item 
+\#define \hyperlink{_s_d_l__test__harness_8h_ac7b13b8aefdada941436332f7559e5f0}{T\-E\-S\-T\-\_\-\-D\-I\-S\-A\-B\-L\-E\-D}~0
+\item 
+\#define \hyperlink{_s_d_l__test__harness_8h_ad1b0d362df8510a4a917442ae7173aa1}{T\-E\-S\-T\-\_\-\-A\-B\-O\-R\-T\-E\-D}~-\/1
+\begin{DoxyCompactList}\small\item\em Definition of all the possible test return values of the test case method. \end{DoxyCompactList}\item 
+\#define \hyperlink{_s_d_l__test__harness_8h_a24c50cc9207eee59e73f95faff5ef07a}{T\-E\-S\-T\-\_\-\-S\-T\-A\-R\-T\-E\-D}~0
+\item 
+\#define \hyperlink{_s_d_l__test__harness_8h_aa1fcd18bba2a887390bb7e032f177716}{T\-E\-S\-T\-\_\-\-C\-O\-M\-P\-L\-E\-T\-E\-D}~1
+\item 
+\#define \hyperlink{_s_d_l__test__harness_8h_adc53d81b0aba42f8a5773a4bd1c3da88}{T\-E\-S\-T\-\_\-\-S\-K\-I\-P\-P\-E\-D}~2
+\item 
+\#define \hyperlink{_s_d_l__test__harness_8h_accbb9396b61c19b746505b685275ce82}{T\-E\-S\-T\-\_\-\-R\-E\-S\-U\-L\-T\-\_\-\-P\-A\-S\-S\-E\-D}~0
+\begin{DoxyCompactList}\small\item\em Definition of all the possible test results for the harness. \end{DoxyCompactList}\item 
+\#define \hyperlink{_s_d_l__test__harness_8h_a25cadd1b04d9f8f342919a53e2b984b7}{T\-E\-S\-T\-\_\-\-R\-E\-S\-U\-L\-T\-\_\-\-F\-A\-I\-L\-E\-D}~1
+\item 
+\#define \hyperlink{_s_d_l__test__harness_8h_ab560e79979c20b68710cc24585a2f78f}{T\-E\-S\-T\-\_\-\-R\-E\-S\-U\-L\-T\-\_\-\-N\-O\-\_\-\-A\-S\-S\-E\-R\-T}~2
+\item 
+\#define \hyperlink{_s_d_l__test__harness_8h_aadce13b4d24fe4ac2b58578167e53846}{T\-E\-S\-T\-\_\-\-R\-E\-S\-U\-L\-T\-\_\-\-S\-K\-I\-P\-P\-E\-D}~3
+\item 
+\#define \hyperlink{_s_d_l__test__harness_8h_aff94de0de0428e277e9c660d755adb1a}{T\-E\-S\-T\-\_\-\-R\-E\-S\-U\-L\-T\-\_\-\-S\-E\-T\-U\-P\-\_\-\-F\-A\-I\-L\-U\-R\-E}~4
+\begin{DoxyCompactList}\small\item\em Function pointer to a test case setup function (run before every test) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void}($\ast$ \hyperlink{_s_d_l__test__harness_8h_ac995a74bcb5eedd4aa06e888ae522862}{S\-D\-L\-Test\-\_\-\-Test\-Case\-Set\-Up\-Fp} )(\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} $\ast$arg)
+\begin{DoxyCompactList}\small\item\em Function pointer to a test case function. \end{DoxyCompactList}\item 
+typedef \hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int}($\ast$ \hyperlink{_s_d_l__test__harness_8h_a999ef3d353a817ab1c127f3c607d8c7d}{S\-D\-L\-Test\-\_\-\-Test\-Case\-Fp} )(\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} $\ast$arg)
+\begin{DoxyCompactList}\small\item\em Function pointer to a test case teardown function (run after every test) \end{DoxyCompactList}\item 
+typedef \hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void}($\ast$ \hyperlink{_s_d_l__test__harness_8h_ab5047d0e13a626b93d696e06cfa748fd}{S\-D\-L\-Test\-\_\-\-Test\-Case\-Tear\-Down\-Fp} )(\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} $\ast$arg)
+\item 
+typedef struct \\*
+\hyperlink{struct_s_d_l_test___test_case_reference}{S\-D\-L\-Test\-\_\-\-Test\-Case\-Reference} \hyperlink{_s_d_l__test__harness_8h_a80ea4f56022704ad5ca88f045ca90647}{S\-D\-L\-Test\-\_\-\-Test\-Case\-Reference}
+\item 
+typedef struct \\*
+\hyperlink{struct_s_d_l_test___test_suite_reference}{S\-D\-L\-Test\-\_\-\-Test\-Suite\-Reference} \hyperlink{_s_d_l__test__harness_8h_ac9f9cb01c6801359e407bd49723f8e7c}{S\-D\-L\-Test\-\_\-\-Test\-Suite\-Reference}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{_s_d_l__test__harness_8h_a4999be460499b1cb45e2b2b3bbb582b2}{S\-D\-L\-Test\-\_\-\-Run\-Suites} (\hyperlink{struct_s_d_l_test___test_suite_reference}{S\-D\-L\-Test\-\_\-\-Test\-Suite\-Reference} $\ast$test\-Suites\mbox{[}$\,$\mbox{]}, const char $\ast$user\-Run\-Seed, \hyperlink{_s_d_l__stdinc_8h_ac006cf2bd55a42a9cc8ae9f123aa7e13}{Uint64} user\-Exec\-Key, const char $\ast$\hyperlink{_g_l_e_w_2glew_8h_a8bed50656d87c3eeed9d8f5e539c6b3e}{filter}, \hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} test\-Iterations)
+\begin{DoxyCompactList}\small\item\em Execute a test suite using the given run seed and execution key. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Include file for S\-D\-L test framework.
+
+This code is a part of the S\-D\-L2\-\_\-test library, not the main S\-D\-L library. 
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_s_d_l__test__harness_8h_ad1b0d362df8510a4a917442ae7173aa1}{\index{S\-D\-L\-\_\-test\-\_\-harness.\-h@{S\-D\-L\-\_\-test\-\_\-harness.\-h}!T\-E\-S\-T\-\_\-\-A\-B\-O\-R\-T\-E\-D@{T\-E\-S\-T\-\_\-\-A\-B\-O\-R\-T\-E\-D}}
+\index{T\-E\-S\-T\-\_\-\-A\-B\-O\-R\-T\-E\-D@{T\-E\-S\-T\-\_\-\-A\-B\-O\-R\-T\-E\-D}!SDL_test_harness.h@{S\-D\-L\-\_\-test\-\_\-harness.\-h}}
+\subsubsection[{T\-E\-S\-T\-\_\-\-A\-B\-O\-R\-T\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-E\-S\-T\-\_\-\-A\-B\-O\-R\-T\-E\-D~-\/1}}\label{_s_d_l__test__harness_8h_ad1b0d362df8510a4a917442ae7173aa1}
+
+
+Definition of all the possible test return values of the test case method. 
+
+\hypertarget{_s_d_l__test__harness_8h_aa1fcd18bba2a887390bb7e032f177716}{\index{S\-D\-L\-\_\-test\-\_\-harness.\-h@{S\-D\-L\-\_\-test\-\_\-harness.\-h}!T\-E\-S\-T\-\_\-\-C\-O\-M\-P\-L\-E\-T\-E\-D@{T\-E\-S\-T\-\_\-\-C\-O\-M\-P\-L\-E\-T\-E\-D}}
+\index{T\-E\-S\-T\-\_\-\-C\-O\-M\-P\-L\-E\-T\-E\-D@{T\-E\-S\-T\-\_\-\-C\-O\-M\-P\-L\-E\-T\-E\-D}!SDL_test_harness.h@{S\-D\-L\-\_\-test\-\_\-harness.\-h}}
+\subsubsection[{T\-E\-S\-T\-\_\-\-C\-O\-M\-P\-L\-E\-T\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-E\-S\-T\-\_\-\-C\-O\-M\-P\-L\-E\-T\-E\-D~1}}\label{_s_d_l__test__harness_8h_aa1fcd18bba2a887390bb7e032f177716}
+\hypertarget{_s_d_l__test__harness_8h_ac7b13b8aefdada941436332f7559e5f0}{\index{S\-D\-L\-\_\-test\-\_\-harness.\-h@{S\-D\-L\-\_\-test\-\_\-harness.\-h}!T\-E\-S\-T\-\_\-\-D\-I\-S\-A\-B\-L\-E\-D@{T\-E\-S\-T\-\_\-\-D\-I\-S\-A\-B\-L\-E\-D}}
+\index{T\-E\-S\-T\-\_\-\-D\-I\-S\-A\-B\-L\-E\-D@{T\-E\-S\-T\-\_\-\-D\-I\-S\-A\-B\-L\-E\-D}!SDL_test_harness.h@{S\-D\-L\-\_\-test\-\_\-harness.\-h}}
+\subsubsection[{T\-E\-S\-T\-\_\-\-D\-I\-S\-A\-B\-L\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-E\-S\-T\-\_\-\-D\-I\-S\-A\-B\-L\-E\-D~0}}\label{_s_d_l__test__harness_8h_ac7b13b8aefdada941436332f7559e5f0}
+\hypertarget{_s_d_l__test__harness_8h_a4404f2feb87e68e20e31bd86ec1728b1}{\index{S\-D\-L\-\_\-test\-\_\-harness.\-h@{S\-D\-L\-\_\-test\-\_\-harness.\-h}!T\-E\-S\-T\-\_\-\-E\-N\-A\-B\-L\-E\-D@{T\-E\-S\-T\-\_\-\-E\-N\-A\-B\-L\-E\-D}}
+\index{T\-E\-S\-T\-\_\-\-E\-N\-A\-B\-L\-E\-D@{T\-E\-S\-T\-\_\-\-E\-N\-A\-B\-L\-E\-D}!SDL_test_harness.h@{S\-D\-L\-\_\-test\-\_\-harness.\-h}}
+\subsubsection[{T\-E\-S\-T\-\_\-\-E\-N\-A\-B\-L\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-E\-S\-T\-\_\-\-E\-N\-A\-B\-L\-E\-D~1}}\label{_s_d_l__test__harness_8h_a4404f2feb87e68e20e31bd86ec1728b1}
+
+
+Definitions for test case structures. 
+
+\hypertarget{_s_d_l__test__harness_8h_a25cadd1b04d9f8f342919a53e2b984b7}{\index{S\-D\-L\-\_\-test\-\_\-harness.\-h@{S\-D\-L\-\_\-test\-\_\-harness.\-h}!T\-E\-S\-T\-\_\-\-R\-E\-S\-U\-L\-T\-\_\-\-F\-A\-I\-L\-E\-D@{T\-E\-S\-T\-\_\-\-R\-E\-S\-U\-L\-T\-\_\-\-F\-A\-I\-L\-E\-D}}
+\index{T\-E\-S\-T\-\_\-\-R\-E\-S\-U\-L\-T\-\_\-\-F\-A\-I\-L\-E\-D@{T\-E\-S\-T\-\_\-\-R\-E\-S\-U\-L\-T\-\_\-\-F\-A\-I\-L\-E\-D}!SDL_test_harness.h@{S\-D\-L\-\_\-test\-\_\-harness.\-h}}
+\subsubsection[{T\-E\-S\-T\-\_\-\-R\-E\-S\-U\-L\-T\-\_\-\-F\-A\-I\-L\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-E\-S\-T\-\_\-\-R\-E\-S\-U\-L\-T\-\_\-\-F\-A\-I\-L\-E\-D~1}}\label{_s_d_l__test__harness_8h_a25cadd1b04d9f8f342919a53e2b984b7}
+\hypertarget{_s_d_l__test__harness_8h_ab560e79979c20b68710cc24585a2f78f}{\index{S\-D\-L\-\_\-test\-\_\-harness.\-h@{S\-D\-L\-\_\-test\-\_\-harness.\-h}!T\-E\-S\-T\-\_\-\-R\-E\-S\-U\-L\-T\-\_\-\-N\-O\-\_\-\-A\-S\-S\-E\-R\-T@{T\-E\-S\-T\-\_\-\-R\-E\-S\-U\-L\-T\-\_\-\-N\-O\-\_\-\-A\-S\-S\-E\-R\-T}}
+\index{T\-E\-S\-T\-\_\-\-R\-E\-S\-U\-L\-T\-\_\-\-N\-O\-\_\-\-A\-S\-S\-E\-R\-T@{T\-E\-S\-T\-\_\-\-R\-E\-S\-U\-L\-T\-\_\-\-N\-O\-\_\-\-A\-S\-S\-E\-R\-T}!SDL_test_harness.h@{S\-D\-L\-\_\-test\-\_\-harness.\-h}}
+\subsubsection[{T\-E\-S\-T\-\_\-\-R\-E\-S\-U\-L\-T\-\_\-\-N\-O\-\_\-\-A\-S\-S\-E\-R\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-E\-S\-T\-\_\-\-R\-E\-S\-U\-L\-T\-\_\-\-N\-O\-\_\-\-A\-S\-S\-E\-R\-T~2}}\label{_s_d_l__test__harness_8h_ab560e79979c20b68710cc24585a2f78f}
+\hypertarget{_s_d_l__test__harness_8h_accbb9396b61c19b746505b685275ce82}{\index{S\-D\-L\-\_\-test\-\_\-harness.\-h@{S\-D\-L\-\_\-test\-\_\-harness.\-h}!T\-E\-S\-T\-\_\-\-R\-E\-S\-U\-L\-T\-\_\-\-P\-A\-S\-S\-E\-D@{T\-E\-S\-T\-\_\-\-R\-E\-S\-U\-L\-T\-\_\-\-P\-A\-S\-S\-E\-D}}
+\index{T\-E\-S\-T\-\_\-\-R\-E\-S\-U\-L\-T\-\_\-\-P\-A\-S\-S\-E\-D@{T\-E\-S\-T\-\_\-\-R\-E\-S\-U\-L\-T\-\_\-\-P\-A\-S\-S\-E\-D}!SDL_test_harness.h@{S\-D\-L\-\_\-test\-\_\-harness.\-h}}
+\subsubsection[{T\-E\-S\-T\-\_\-\-R\-E\-S\-U\-L\-T\-\_\-\-P\-A\-S\-S\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-E\-S\-T\-\_\-\-R\-E\-S\-U\-L\-T\-\_\-\-P\-A\-S\-S\-E\-D~0}}\label{_s_d_l__test__harness_8h_accbb9396b61c19b746505b685275ce82}
+
+
+Definition of all the possible test results for the harness. 
+
+\hypertarget{_s_d_l__test__harness_8h_aff94de0de0428e277e9c660d755adb1a}{\index{S\-D\-L\-\_\-test\-\_\-harness.\-h@{S\-D\-L\-\_\-test\-\_\-harness.\-h}!T\-E\-S\-T\-\_\-\-R\-E\-S\-U\-L\-T\-\_\-\-S\-E\-T\-U\-P\-\_\-\-F\-A\-I\-L\-U\-R\-E@{T\-E\-S\-T\-\_\-\-R\-E\-S\-U\-L\-T\-\_\-\-S\-E\-T\-U\-P\-\_\-\-F\-A\-I\-L\-U\-R\-E}}
+\index{T\-E\-S\-T\-\_\-\-R\-E\-S\-U\-L\-T\-\_\-\-S\-E\-T\-U\-P\-\_\-\-F\-A\-I\-L\-U\-R\-E@{T\-E\-S\-T\-\_\-\-R\-E\-S\-U\-L\-T\-\_\-\-S\-E\-T\-U\-P\-\_\-\-F\-A\-I\-L\-U\-R\-E}!SDL_test_harness.h@{S\-D\-L\-\_\-test\-\_\-harness.\-h}}
+\subsubsection[{T\-E\-S\-T\-\_\-\-R\-E\-S\-U\-L\-T\-\_\-\-S\-E\-T\-U\-P\-\_\-\-F\-A\-I\-L\-U\-R\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-E\-S\-T\-\_\-\-R\-E\-S\-U\-L\-T\-\_\-\-S\-E\-T\-U\-P\-\_\-\-F\-A\-I\-L\-U\-R\-E~4}}\label{_s_d_l__test__harness_8h_aff94de0de0428e277e9c660d755adb1a}
+
+
+Function pointer to a test case setup function (run before every test) 
+
+\hypertarget{_s_d_l__test__harness_8h_aadce13b4d24fe4ac2b58578167e53846}{\index{S\-D\-L\-\_\-test\-\_\-harness.\-h@{S\-D\-L\-\_\-test\-\_\-harness.\-h}!T\-E\-S\-T\-\_\-\-R\-E\-S\-U\-L\-T\-\_\-\-S\-K\-I\-P\-P\-E\-D@{T\-E\-S\-T\-\_\-\-R\-E\-S\-U\-L\-T\-\_\-\-S\-K\-I\-P\-P\-E\-D}}
+\index{T\-E\-S\-T\-\_\-\-R\-E\-S\-U\-L\-T\-\_\-\-S\-K\-I\-P\-P\-E\-D@{T\-E\-S\-T\-\_\-\-R\-E\-S\-U\-L\-T\-\_\-\-S\-K\-I\-P\-P\-E\-D}!SDL_test_harness.h@{S\-D\-L\-\_\-test\-\_\-harness.\-h}}
+\subsubsection[{T\-E\-S\-T\-\_\-\-R\-E\-S\-U\-L\-T\-\_\-\-S\-K\-I\-P\-P\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-E\-S\-T\-\_\-\-R\-E\-S\-U\-L\-T\-\_\-\-S\-K\-I\-P\-P\-E\-D~3}}\label{_s_d_l__test__harness_8h_aadce13b4d24fe4ac2b58578167e53846}
+\hypertarget{_s_d_l__test__harness_8h_adc53d81b0aba42f8a5773a4bd1c3da88}{\index{S\-D\-L\-\_\-test\-\_\-harness.\-h@{S\-D\-L\-\_\-test\-\_\-harness.\-h}!T\-E\-S\-T\-\_\-\-S\-K\-I\-P\-P\-E\-D@{T\-E\-S\-T\-\_\-\-S\-K\-I\-P\-P\-E\-D}}
+\index{T\-E\-S\-T\-\_\-\-S\-K\-I\-P\-P\-E\-D@{T\-E\-S\-T\-\_\-\-S\-K\-I\-P\-P\-E\-D}!SDL_test_harness.h@{S\-D\-L\-\_\-test\-\_\-harness.\-h}}
+\subsubsection[{T\-E\-S\-T\-\_\-\-S\-K\-I\-P\-P\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-E\-S\-T\-\_\-\-S\-K\-I\-P\-P\-E\-D~2}}\label{_s_d_l__test__harness_8h_adc53d81b0aba42f8a5773a4bd1c3da88}
+\hypertarget{_s_d_l__test__harness_8h_a24c50cc9207eee59e73f95faff5ef07a}{\index{S\-D\-L\-\_\-test\-\_\-harness.\-h@{S\-D\-L\-\_\-test\-\_\-harness.\-h}!T\-E\-S\-T\-\_\-\-S\-T\-A\-R\-T\-E\-D@{T\-E\-S\-T\-\_\-\-S\-T\-A\-R\-T\-E\-D}}
+\index{T\-E\-S\-T\-\_\-\-S\-T\-A\-R\-T\-E\-D@{T\-E\-S\-T\-\_\-\-S\-T\-A\-R\-T\-E\-D}!SDL_test_harness.h@{S\-D\-L\-\_\-test\-\_\-harness.\-h}}
+\subsubsection[{T\-E\-S\-T\-\_\-\-S\-T\-A\-R\-T\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-E\-S\-T\-\_\-\-S\-T\-A\-R\-T\-E\-D~0}}\label{_s_d_l__test__harness_8h_a24c50cc9207eee59e73f95faff5ef07a}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{_s_d_l__test__harness_8h_a999ef3d353a817ab1c127f3c607d8c7d}{\index{S\-D\-L\-\_\-test\-\_\-harness.\-h@{S\-D\-L\-\_\-test\-\_\-harness.\-h}!S\-D\-L\-Test\-\_\-\-Test\-Case\-Fp@{S\-D\-L\-Test\-\_\-\-Test\-Case\-Fp}}
+\index{S\-D\-L\-Test\-\_\-\-Test\-Case\-Fp@{S\-D\-L\-Test\-\_\-\-Test\-Case\-Fp}!SDL_test_harness.h@{S\-D\-L\-\_\-test\-\_\-harness.\-h}}
+\subsubsection[{S\-D\-L\-Test\-\_\-\-Test\-Case\-Fp}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf int}($\ast$ S\-D\-L\-Test\-\_\-\-Test\-Case\-Fp)({\bf void} $\ast$arg)}}\label{_s_d_l__test__harness_8h_a999ef3d353a817ab1c127f3c607d8c7d}
+
+
+Function pointer to a test case teardown function (run after every test) 
+
+\hypertarget{_s_d_l__test__harness_8h_a80ea4f56022704ad5ca88f045ca90647}{\index{S\-D\-L\-\_\-test\-\_\-harness.\-h@{S\-D\-L\-\_\-test\-\_\-harness.\-h}!S\-D\-L\-Test\-\_\-\-Test\-Case\-Reference@{S\-D\-L\-Test\-\_\-\-Test\-Case\-Reference}}
+\index{S\-D\-L\-Test\-\_\-\-Test\-Case\-Reference@{S\-D\-L\-Test\-\_\-\-Test\-Case\-Reference}!SDL_test_harness.h@{S\-D\-L\-\_\-test\-\_\-harness.\-h}}
+\subsubsection[{S\-D\-L\-Test\-\_\-\-Test\-Case\-Reference}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf S\-D\-L\-Test\-\_\-\-Test\-Case\-Reference}  {\bf S\-D\-L\-Test\-\_\-\-Test\-Case\-Reference}}}\label{_s_d_l__test__harness_8h_a80ea4f56022704ad5ca88f045ca90647}
+Holds information about a single test case. \hypertarget{_s_d_l__test__harness_8h_ac995a74bcb5eedd4aa06e888ae522862}{\index{S\-D\-L\-\_\-test\-\_\-harness.\-h@{S\-D\-L\-\_\-test\-\_\-harness.\-h}!S\-D\-L\-Test\-\_\-\-Test\-Case\-Set\-Up\-Fp@{S\-D\-L\-Test\-\_\-\-Test\-Case\-Set\-Up\-Fp}}
+\index{S\-D\-L\-Test\-\_\-\-Test\-Case\-Set\-Up\-Fp@{S\-D\-L\-Test\-\_\-\-Test\-Case\-Set\-Up\-Fp}!SDL_test_harness.h@{S\-D\-L\-\_\-test\-\_\-harness.\-h}}
+\subsubsection[{S\-D\-L\-Test\-\_\-\-Test\-Case\-Set\-Up\-Fp}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}($\ast$ S\-D\-L\-Test\-\_\-\-Test\-Case\-Set\-Up\-Fp)({\bf void} $\ast$arg)}}\label{_s_d_l__test__harness_8h_ac995a74bcb5eedd4aa06e888ae522862}
+
+
+Function pointer to a test case function. 
+
+\hypertarget{_s_d_l__test__harness_8h_ab5047d0e13a626b93d696e06cfa748fd}{\index{S\-D\-L\-\_\-test\-\_\-harness.\-h@{S\-D\-L\-\_\-test\-\_\-harness.\-h}!S\-D\-L\-Test\-\_\-\-Test\-Case\-Tear\-Down\-Fp@{S\-D\-L\-Test\-\_\-\-Test\-Case\-Tear\-Down\-Fp}}
+\index{S\-D\-L\-Test\-\_\-\-Test\-Case\-Tear\-Down\-Fp@{S\-D\-L\-Test\-\_\-\-Test\-Case\-Tear\-Down\-Fp}!SDL_test_harness.h@{S\-D\-L\-\_\-test\-\_\-harness.\-h}}
+\subsubsection[{S\-D\-L\-Test\-\_\-\-Test\-Case\-Tear\-Down\-Fp}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}($\ast$ S\-D\-L\-Test\-\_\-\-Test\-Case\-Tear\-Down\-Fp)({\bf void} $\ast$arg)}}\label{_s_d_l__test__harness_8h_ab5047d0e13a626b93d696e06cfa748fd}
+\hypertarget{_s_d_l__test__harness_8h_ac9f9cb01c6801359e407bd49723f8e7c}{\index{S\-D\-L\-\_\-test\-\_\-harness.\-h@{S\-D\-L\-\_\-test\-\_\-harness.\-h}!S\-D\-L\-Test\-\_\-\-Test\-Suite\-Reference@{S\-D\-L\-Test\-\_\-\-Test\-Suite\-Reference}}
+\index{S\-D\-L\-Test\-\_\-\-Test\-Suite\-Reference@{S\-D\-L\-Test\-\_\-\-Test\-Suite\-Reference}!SDL_test_harness.h@{S\-D\-L\-\_\-test\-\_\-harness.\-h}}
+\subsubsection[{S\-D\-L\-Test\-\_\-\-Test\-Suite\-Reference}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf S\-D\-L\-Test\-\_\-\-Test\-Suite\-Reference}  {\bf S\-D\-L\-Test\-\_\-\-Test\-Suite\-Reference}}}\label{_s_d_l__test__harness_8h_ac9f9cb01c6801359e407bd49723f8e7c}
+Holds information about a test suite (multiple test cases). 
+
+\subsection{Function Documentation}
+\hypertarget{_s_d_l__test__harness_8h_a4999be460499b1cb45e2b2b3bbb582b2}{\index{S\-D\-L\-\_\-test\-\_\-harness.\-h@{S\-D\-L\-\_\-test\-\_\-harness.\-h}!S\-D\-L\-Test\-\_\-\-Run\-Suites@{S\-D\-L\-Test\-\_\-\-Run\-Suites}}
+\index{S\-D\-L\-Test\-\_\-\-Run\-Suites@{S\-D\-L\-Test\-\_\-\-Run\-Suites}!SDL_test_harness.h@{S\-D\-L\-\_\-test\-\_\-harness.\-h}}
+\subsubsection[{S\-D\-L\-Test\-\_\-\-Run\-Suites}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} S\-D\-L\-Test\-\_\-\-Run\-Suites (
+\begin{DoxyParamCaption}
+\item[{{\bf S\-D\-L\-Test\-\_\-\-Test\-Suite\-Reference} $\ast$}]{test\-Suites\mbox{[}$\,$\mbox{]}, }
+\item[{const char $\ast$}]{user\-Run\-Seed, }
+\item[{{\bf Uint64}}]{user\-Exec\-Key, }
+\item[{const char $\ast$}]{filter, }
+\item[{{\bf int}}]{test\-Iterations}
+\end{DoxyParamCaption}
+)}}\label{_s_d_l__test__harness_8h_a4999be460499b1cb45e2b2b3bbb582b2}
+
+
+Execute a test suite using the given run seed and execution key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test\-Suites} & Suites containing the test case. \\
+\hline
+{\em user\-Run\-Seed} & Custom run seed provided by user, or N\-U\-L\-L to autogenerate one. \\
+\hline
+{\em user\-Exec\-Key} & Custom execution key provided by user, or 0 to autogenerate one. \\
+\hline
+{\em filter} & Filter specification. N\-U\-L\-L disables. Case sensitive. \\
+\hline
+{\em test\-Iterations} & Number of iterations to run each test case.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Test run result; 0 when all tests passed, 1 if any tests failed. 
+\end{DoxyReturn}

@@ -1,0 +1,173 @@
+\hypertarget{class_reflected_object}{\section{Reflected\-Object Class Reference}
+\label{class_reflected_object}\index{Reflected\-Object@{Reflected\-Object}}
+}
+
+
+{\ttfamily \#include $<$Reflected\-Object.\-h$>$}
+
+
+
+Inheritance diagram for Reflected\-Object\-:
+
+
+Collaboration diagram for Reflected\-Object\-:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_reflected_object_a8711e4d9032dadb5d5b81f552cc2562a}{Reflected\-Object} (const char $\ast$upper\-Texture, \hyperlink{_g_l_e_w_2glew_8h_acebcc1c5663f14ebde1d16831e5fed94}{G\-Lint} reflected\-Text)
+\item 
+\hyperlink{class_reflected_object_acf8abc601d8b7b3bf572285b640f4151}{$\sim$\-Reflected\-Object} ()
+\item 
+const \hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{class_reflected_object_a23a203d873af1f447c0f401ff43c9ed3}{Initialize} (\hyperlink{class_context}{Context} $\ast$ctx)
+\item 
+const \hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{class_reflected_object_a88763d37ca6b0dccbe0ade77510c3103}{Load\-Content} ()
+\item 
+const \hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{class_reflected_object_a4c8c2856d74cb357d7698ede5114bed3}{Draw} (\hyperlink{class_camera}{Camera} $\ast$camera, \hyperlink{class_g_l_shader_manager}{G\-L\-Shader\-Manager} $\ast$shader\-Manager, \hyperlink{class_texture_manager}{Texture\-Manager} $\ast$texture\-Manager, \hyperlink{class_light}{Light} $\ast$light)
+\item 
+const \hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{class_reflected_object_a332b863a984c7e6bdc83a5465ea6710f}{Unload\-Content} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_context}{Context} $\ast$ \hyperlink{class_reflected_object_a738e99a76838e45c4b953b25eab0d36a}{ctxt}
+\item 
+\hyperlink{_g_l_e_w_2glew_8h_a0a9e8b1f1d9c4bcf1c0bc5d5d4e3608a}{G\-Lbyte} $\ast$ \hyperlink{class_reflected_object_a89e421d06632f614f568b45220f2f53b}{p\-Bytes}
+\item 
+\hyperlink{_g_l_e_w_2glew_8h_acebcc1c5663f14ebde1d16831e5fed94}{G\-Lint} \hyperlink{class_reflected_object_a583a67a5b6dbda1287e2b37de5ea71ed}{i\-Width}
+\item 
+\hyperlink{_g_l_e_w_2glew_8h_acebcc1c5663f14ebde1d16831e5fed94}{G\-Lint} \hyperlink{class_reflected_object_ad9b1acb9aec983faba0ada8c26bf8f63}{i\-Height}
+\item 
+\hyperlink{_g_l_e_w_2glew_8h_acebcc1c5663f14ebde1d16831e5fed94}{G\-Lint} \hyperlink{class_reflected_object_a0e73769d17244d41cbc7be2e9ba28cb6}{i\-Components}
+\item 
+\hyperlink{_g_l_e_w_2glew_8h_a5d5233918a454ad3975c620a69ac5f0b}{G\-Lenum} \hyperlink{class_reflected_object_abbcd1c6196c972ac7656eda5b96b6b7b}{e\-Format}
+\item 
+\hyperlink{_g_l_e_w_2glew_8h_acebcc1c5663f14ebde1d16831e5fed94}{G\-Lint} \hyperlink{class_reflected_object_a462b9a120ad3f187ab3c278e80d70898}{loc\-M\-V\-P\-Reflect}
+\item 
+\hyperlink{_g_l_e_w_2glew_8h_acebcc1c5663f14ebde1d16831e5fed94}{G\-Lint} \hyperlink{class_reflected_object_a2894aad160b5633fdeb926e9b87f5d4c}{loc\-M\-V\-Reflect}
+\item 
+\hyperlink{_g_l_e_w_2glew_8h_acebcc1c5663f14ebde1d16831e5fed94}{G\-Lint} \hyperlink{class_reflected_object_a314b6d1a893ba805ab2c9f820a6b1488}{loc\-Normal\-Reflect}
+\item 
+\hyperlink{_g_l_e_w_2glew_8h_acebcc1c5663f14ebde1d16831e5fed94}{G\-Lint} \hyperlink{class_reflected_object_a2df82f3aabf7ca72574a2bfab025c105}{loc\-Inverted\-Camera}
+\item 
+\hyperlink{_g_l_e_w_2glew_8h_acebcc1c5663f14ebde1d16831e5fed94}{G\-Lint} \hyperlink{class_reflected_object_a7bd8030e15ac3f526d8b8eedd4a45b4e}{loc\-Tarnish\-Map}
+\item 
+\hyperlink{_g_l_e_w_2glew_8h_acebcc1c5663f14ebde1d16831e5fed94}{G\-Lint} \hyperlink{class_reflected_object_ada830f957ecd16328c3f14efd32ad3d5}{loc\-Cube\-Map}
+\item 
+\hyperlink{_g_l_e_w_2glew_8h_a68c4714e43d8e827d80759f9cb864f3c}{G\-Luint} \hyperlink{class_reflected_object_a688cbd6ac7c044ec419f62401b3caaf5}{reflected\-Texture}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_reflected_object_a8711e4d9032dadb5d5b81f552cc2562a}{\index{Reflected\-Object@{Reflected\-Object}!Reflected\-Object@{Reflected\-Object}}
+\index{Reflected\-Object@{Reflected\-Object}!ReflectedObject@{Reflected\-Object}}
+\subsubsection[{Reflected\-Object}]{\setlength{\rightskip}{0pt plus 5cm}Reflected\-Object\-::\-Reflected\-Object (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{upper\-Texture, }
+\item[{{\bf G\-Lint}}]{reflected\-Text}
+\end{DoxyParamCaption}
+)}}\label{class_reflected_object_a8711e4d9032dadb5d5b81f552cc2562a}
+\hypertarget{class_reflected_object_acf8abc601d8b7b3bf572285b640f4151}{\index{Reflected\-Object@{Reflected\-Object}!$\sim$\-Reflected\-Object@{$\sim$\-Reflected\-Object}}
+\index{$\sim$\-Reflected\-Object@{$\sim$\-Reflected\-Object}!ReflectedObject@{Reflected\-Object}}
+\subsubsection[{$\sim$\-Reflected\-Object}]{\setlength{\rightskip}{0pt plus 5cm}Reflected\-Object\-::$\sim$\-Reflected\-Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_reflected_object_acf8abc601d8b7b3bf572285b640f4151}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_reflected_object_a4c8c2856d74cb357d7698ede5114bed3}{\index{Reflected\-Object@{Reflected\-Object}!Draw@{Draw}}
+\index{Draw@{Draw}!ReflectedObject@{Reflected\-Object}}
+\subsubsection[{Draw}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf int} Reflected\-Object\-::\-Draw (
+\begin{DoxyParamCaption}
+\item[{{\bf Camera} $\ast$}]{camera, }
+\item[{{\bf G\-L\-Shader\-Manager} $\ast$}]{shader\-Manager, }
+\item[{{\bf Texture\-Manager} $\ast$}]{texture\-Manager, }
+\item[{{\bf Light} $\ast$}]{light}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_reflected_object_a4c8c2856d74cb357d7698ede5114bed3}
+
+
+Reimplemented from \hyperlink{class_simple_object_ac4a7b3ff3c2215ff68b3967b57c77fa9}{Simple\-Object}.
+
+\hypertarget{class_reflected_object_a23a203d873af1f447c0f401ff43c9ed3}{\index{Reflected\-Object@{Reflected\-Object}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!ReflectedObject@{Reflected\-Object}}
+\subsubsection[{Initialize}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf int} Reflected\-Object\-::\-Initialize (
+\begin{DoxyParamCaption}
+\item[{{\bf Context} $\ast$}]{ctx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_reflected_object_a23a203d873af1f447c0f401ff43c9ed3}
+
+
+Reimplemented from \hyperlink{class_simple_object_ad8cab013f221a2b7132dc243a304b20f}{Simple\-Object}.
+
+\hypertarget{class_reflected_object_a88763d37ca6b0dccbe0ade77510c3103}{\index{Reflected\-Object@{Reflected\-Object}!Load\-Content@{Load\-Content}}
+\index{Load\-Content@{Load\-Content}!ReflectedObject@{Reflected\-Object}}
+\subsubsection[{Load\-Content}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf int} Reflected\-Object\-::\-Load\-Content (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_reflected_object_a88763d37ca6b0dccbe0ade77510c3103}
+
+
+Reimplemented from \hyperlink{class_simple_object_ae06adca212a0d4bf4607b324908b2b8e}{Simple\-Object}.
+
+\hypertarget{class_reflected_object_a332b863a984c7e6bdc83a5465ea6710f}{\index{Reflected\-Object@{Reflected\-Object}!Unload\-Content@{Unload\-Content}}
+\index{Unload\-Content@{Unload\-Content}!ReflectedObject@{Reflected\-Object}}
+\subsubsection[{Unload\-Content}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf int} Reflected\-Object\-::\-Unload\-Content (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_reflected_object_a332b863a984c7e6bdc83a5465ea6710f}
+
+
+Reimplemented from \hyperlink{class_simple_object_a5fe4d692b6633f2c68b6eae1d3f6b059}{Simple\-Object}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_reflected_object_a738e99a76838e45c4b953b25eab0d36a}{\index{Reflected\-Object@{Reflected\-Object}!ctxt@{ctxt}}
+\index{ctxt@{ctxt}!ReflectedObject@{Reflected\-Object}}
+\subsubsection[{ctxt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Context}$\ast$ Reflected\-Object\-::ctxt}}\label{class_reflected_object_a738e99a76838e45c4b953b25eab0d36a}
+\hypertarget{class_reflected_object_abbcd1c6196c972ac7656eda5b96b6b7b}{\index{Reflected\-Object@{Reflected\-Object}!e\-Format@{e\-Format}}
+\index{e\-Format@{e\-Format}!ReflectedObject@{Reflected\-Object}}
+\subsubsection[{e\-Format}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-Lenum} Reflected\-Object\-::e\-Format}}\label{class_reflected_object_abbcd1c6196c972ac7656eda5b96b6b7b}
+\hypertarget{class_reflected_object_a0e73769d17244d41cbc7be2e9ba28cb6}{\index{Reflected\-Object@{Reflected\-Object}!i\-Components@{i\-Components}}
+\index{i\-Components@{i\-Components}!ReflectedObject@{Reflected\-Object}}
+\subsubsection[{i\-Components}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-Lint} Reflected\-Object\-::i\-Components}}\label{class_reflected_object_a0e73769d17244d41cbc7be2e9ba28cb6}
+\hypertarget{class_reflected_object_ad9b1acb9aec983faba0ada8c26bf8f63}{\index{Reflected\-Object@{Reflected\-Object}!i\-Height@{i\-Height}}
+\index{i\-Height@{i\-Height}!ReflectedObject@{Reflected\-Object}}
+\subsubsection[{i\-Height}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-Lint} Reflected\-Object\-::i\-Height}}\label{class_reflected_object_ad9b1acb9aec983faba0ada8c26bf8f63}
+\hypertarget{class_reflected_object_a583a67a5b6dbda1287e2b37de5ea71ed}{\index{Reflected\-Object@{Reflected\-Object}!i\-Width@{i\-Width}}
+\index{i\-Width@{i\-Width}!ReflectedObject@{Reflected\-Object}}
+\subsubsection[{i\-Width}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-Lint} Reflected\-Object\-::i\-Width}}\label{class_reflected_object_a583a67a5b6dbda1287e2b37de5ea71ed}
+\hypertarget{class_reflected_object_ada830f957ecd16328c3f14efd32ad3d5}{\index{Reflected\-Object@{Reflected\-Object}!loc\-Cube\-Map@{loc\-Cube\-Map}}
+\index{loc\-Cube\-Map@{loc\-Cube\-Map}!ReflectedObject@{Reflected\-Object}}
+\subsubsection[{loc\-Cube\-Map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-Lint} Reflected\-Object\-::loc\-Cube\-Map}}\label{class_reflected_object_ada830f957ecd16328c3f14efd32ad3d5}
+\hypertarget{class_reflected_object_a2df82f3aabf7ca72574a2bfab025c105}{\index{Reflected\-Object@{Reflected\-Object}!loc\-Inverted\-Camera@{loc\-Inverted\-Camera}}
+\index{loc\-Inverted\-Camera@{loc\-Inverted\-Camera}!ReflectedObject@{Reflected\-Object}}
+\subsubsection[{loc\-Inverted\-Camera}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-Lint} Reflected\-Object\-::loc\-Inverted\-Camera}}\label{class_reflected_object_a2df82f3aabf7ca72574a2bfab025c105}
+\hypertarget{class_reflected_object_a462b9a120ad3f187ab3c278e80d70898}{\index{Reflected\-Object@{Reflected\-Object}!loc\-M\-V\-P\-Reflect@{loc\-M\-V\-P\-Reflect}}
+\index{loc\-M\-V\-P\-Reflect@{loc\-M\-V\-P\-Reflect}!ReflectedObject@{Reflected\-Object}}
+\subsubsection[{loc\-M\-V\-P\-Reflect}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-Lint} Reflected\-Object\-::loc\-M\-V\-P\-Reflect}}\label{class_reflected_object_a462b9a120ad3f187ab3c278e80d70898}
+\hypertarget{class_reflected_object_a2894aad160b5633fdeb926e9b87f5d4c}{\index{Reflected\-Object@{Reflected\-Object}!loc\-M\-V\-Reflect@{loc\-M\-V\-Reflect}}
+\index{loc\-M\-V\-Reflect@{loc\-M\-V\-Reflect}!ReflectedObject@{Reflected\-Object}}
+\subsubsection[{loc\-M\-V\-Reflect}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-Lint} Reflected\-Object\-::loc\-M\-V\-Reflect}}\label{class_reflected_object_a2894aad160b5633fdeb926e9b87f5d4c}
+\hypertarget{class_reflected_object_a314b6d1a893ba805ab2c9f820a6b1488}{\index{Reflected\-Object@{Reflected\-Object}!loc\-Normal\-Reflect@{loc\-Normal\-Reflect}}
+\index{loc\-Normal\-Reflect@{loc\-Normal\-Reflect}!ReflectedObject@{Reflected\-Object}}
+\subsubsection[{loc\-Normal\-Reflect}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-Lint} Reflected\-Object\-::loc\-Normal\-Reflect}}\label{class_reflected_object_a314b6d1a893ba805ab2c9f820a6b1488}
+\hypertarget{class_reflected_object_a7bd8030e15ac3f526d8b8eedd4a45b4e}{\index{Reflected\-Object@{Reflected\-Object}!loc\-Tarnish\-Map@{loc\-Tarnish\-Map}}
+\index{loc\-Tarnish\-Map@{loc\-Tarnish\-Map}!ReflectedObject@{Reflected\-Object}}
+\subsubsection[{loc\-Tarnish\-Map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-Lint} Reflected\-Object\-::loc\-Tarnish\-Map}}\label{class_reflected_object_a7bd8030e15ac3f526d8b8eedd4a45b4e}
+\hypertarget{class_reflected_object_a89e421d06632f614f568b45220f2f53b}{\index{Reflected\-Object@{Reflected\-Object}!p\-Bytes@{p\-Bytes}}
+\index{p\-Bytes@{p\-Bytes}!ReflectedObject@{Reflected\-Object}}
+\subsubsection[{p\-Bytes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-Lbyte}$\ast$ Reflected\-Object\-::p\-Bytes}}\label{class_reflected_object_a89e421d06632f614f568b45220f2f53b}
+\hypertarget{class_reflected_object_a688cbd6ac7c044ec419f62401b3caaf5}{\index{Reflected\-Object@{Reflected\-Object}!reflected\-Texture@{reflected\-Texture}}
+\index{reflected\-Texture@{reflected\-Texture}!ReflectedObject@{Reflected\-Object}}
+\subsubsection[{reflected\-Texture}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-Luint} Reflected\-Object\-::reflected\-Texture}}\label{class_reflected_object_a688cbd6ac7c044ec419f62401b3caaf5}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{_reflected_object_8h}{Reflected\-Object.\-h}\item 
+src/\hyperlink{_reflected_object_8cpp}{Reflected\-Object.\-cpp}\end{DoxyCompactItemize}

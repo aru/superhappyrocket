@@ -1,0 +1,247 @@
+\hypertarget{_s_d_l__thread_8h}{\section{include/\-S\-D\-L/include/\-S\-D\-L\-\_\-thread.h File Reference}
+\label{_s_d_l__thread_8h}\index{include/\-S\-D\-L/include/\-S\-D\-L\-\_\-thread.\-h@{include/\-S\-D\-L/include/\-S\-D\-L\-\_\-thread.\-h}}
+}
+{\ttfamily \#include \char`\"{}S\-D\-L\-\_\-stdinc.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}S\-D\-L\-\_\-error.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}S\-D\-L\-\_\-atomic.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}S\-D\-L\-\_\-mutex.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}begin\-\_\-code.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}close\-\_\-code.\-h\char`\"{}}\\*
+Include dependency graph for S\-D\-L\-\_\-thread.\-h\-:
+This graph shows which files directly or indirectly include this file\-:
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{_s_d_l__thread_8h_a97cd1dc60cea74b74273affb1a974db5}{S\-D\-L\-\_\-\-Thread} \hyperlink{_s_d_l__thread_8h_a97cd1dc60cea74b74273affb1a974db5}{S\-D\-L\-\_\-\-Thread}
+\item 
+typedef unsigned long \hyperlink{_s_d_l__thread_8h_ac4db699531ce9f18f5a8547aa988b88e}{S\-D\-L\-\_\-thread\-I\-D}
+\item 
+typedef unsigned \hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{_s_d_l__thread_8h_a07ce005c35ad6ac377d6124db7296026}{S\-D\-L\-\_\-\-T\-L\-S\-I\-D}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{_s_d_l__thread_8h_acce8dea56f6b307fadd2949b64e3ebda}{S\-D\-L\-\_\-\-Thread\-Priority} \{ \hyperlink{_s_d_l__thread_8h_acce8dea56f6b307fadd2949b64e3ebdaa48d887edbfc7842abdabcec6900d3878}{S\-D\-L\-\_\-\-T\-H\-R\-E\-A\-D\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-L\-O\-W}, 
+\hyperlink{_s_d_l__thread_8h_acce8dea56f6b307fadd2949b64e3ebdaac3a2f7a29f4c8fe11dca0ea258b07dae}{S\-D\-L\-\_\-\-T\-H\-R\-E\-A\-D\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-N\-O\-R\-M\-A\-L}, 
+\hyperlink{_s_d_l__thread_8h_acce8dea56f6b307fadd2949b64e3ebdaaac5ff8423acdebf3b43c279b8ec2ae0d}{S\-D\-L\-\_\-\-T\-H\-R\-E\-A\-D\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-H\-I\-G\-H}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} (\hyperlink{begin__code_8h_a81faf4ba0455dc75f2e0507eddb79401}{S\-D\-L\-C\-A\-L\-L} $\ast$S\-D\-L\-\_\-\-Thread\-Function)(\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} $\ast$\hyperlink{_g_l_e_w_2glew_8h_ae71d2e007af6a1d1ed622d3e8be266e2}{data})
+\item 
+\hyperlink{begin__code_8h_aa4c7a931f4a968f818b2a1b10a432185}{D\-E\-C\-L\-S\-P\-E\-C} \hyperlink{_s_d_l__thread_8h_a97cd1dc60cea74b74273affb1a974db5}{S\-D\-L\-\_\-\-Thread} $\ast$\hyperlink{begin__code_8h_a81faf4ba0455dc75f2e0507eddb79401}{S\-D\-L\-C\-A\-L\-L} \hyperlink{_s_d_l__thread_8h_aca3013d4f50e918b17d2721b37e59082}{S\-D\-L\-\_\-\-Create\-Thread} (S\-D\-L\-\_\-\-Thread\-Function fn, const char $\ast$\hyperlink{_g_l_e_w_2glew_8h_aaced7cfc21e7d37775d6921bb8177239}{name}, \hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} $\ast$\hyperlink{_g_l_e_w_2glew_8h_ae71d2e007af6a1d1ed622d3e8be266e2}{data})
+\item 
+\hyperlink{begin__code_8h_aa4c7a931f4a968f818b2a1b10a432185}{D\-E\-C\-L\-S\-P\-E\-C} const char $\ast$\hyperlink{begin__code_8h_a81faf4ba0455dc75f2e0507eddb79401}{S\-D\-L\-C\-A\-L\-L} \hyperlink{_s_d_l__thread_8h_abe2ffa508d85379b355673d557e74d9f}{S\-D\-L\-\_\-\-Get\-Thread\-Name} (\hyperlink{_s_d_l__thread_8h_a97cd1dc60cea74b74273affb1a974db5}{S\-D\-L\-\_\-\-Thread} $\ast$thread)
+\item 
+\hyperlink{begin__code_8h_aa4c7a931f4a968f818b2a1b10a432185}{D\-E\-C\-L\-S\-P\-E\-C} \hyperlink{_s_d_l__thread_8h_ac4db699531ce9f18f5a8547aa988b88e}{S\-D\-L\-\_\-thread\-I\-D} \hyperlink{begin__code_8h_a81faf4ba0455dc75f2e0507eddb79401}{S\-D\-L\-C\-A\-L\-L} \hyperlink{_s_d_l__thread_8h_a341933eef1470789de20b05c1392b9ae}{S\-D\-L\-\_\-\-Thread\-I\-D} (\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void})
+\item 
+\hyperlink{begin__code_8h_aa4c7a931f4a968f818b2a1b10a432185}{D\-E\-C\-L\-S\-P\-E\-C} \hyperlink{_s_d_l__thread_8h_ac4db699531ce9f18f5a8547aa988b88e}{S\-D\-L\-\_\-thread\-I\-D} \hyperlink{begin__code_8h_a81faf4ba0455dc75f2e0507eddb79401}{S\-D\-L\-C\-A\-L\-L} \hyperlink{_s_d_l__thread_8h_a0bf5d93ed5cb25ea59307472c62c66db}{S\-D\-L\-\_\-\-Get\-Thread\-I\-D} (\hyperlink{_s_d_l__thread_8h_a97cd1dc60cea74b74273affb1a974db5}{S\-D\-L\-\_\-\-Thread} $\ast$thread)
+\item 
+\hyperlink{begin__code_8h_aa4c7a931f4a968f818b2a1b10a432185}{D\-E\-C\-L\-S\-P\-E\-C} \hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{begin__code_8h_a81faf4ba0455dc75f2e0507eddb79401}{S\-D\-L\-C\-A\-L\-L} \hyperlink{_s_d_l__thread_8h_adf4da9c0e6a6833bef9741344b09699d}{S\-D\-L\-\_\-\-Set\-Thread\-Priority} (\hyperlink{_s_d_l__thread_8h_acce8dea56f6b307fadd2949b64e3ebda}{S\-D\-L\-\_\-\-Thread\-Priority} priority)
+\item 
+\hyperlink{begin__code_8h_aa4c7a931f4a968f818b2a1b10a432185}{D\-E\-C\-L\-S\-P\-E\-C} \hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} \hyperlink{begin__code_8h_a81faf4ba0455dc75f2e0507eddb79401}{S\-D\-L\-C\-A\-L\-L} \hyperlink{_s_d_l__thread_8h_ac96743626ed21d2cdb0868a23cca9705}{S\-D\-L\-\_\-\-Wait\-Thread} (\hyperlink{_s_d_l__thread_8h_a97cd1dc60cea74b74273affb1a974db5}{S\-D\-L\-\_\-\-Thread} $\ast$thread, \hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} $\ast$status)
+\item 
+\hyperlink{begin__code_8h_aa4c7a931f4a968f818b2a1b10a432185}{D\-E\-C\-L\-S\-P\-E\-C} \hyperlink{_s_d_l__thread_8h_a07ce005c35ad6ac377d6124db7296026}{S\-D\-L\-\_\-\-T\-L\-S\-I\-D} \hyperlink{begin__code_8h_a81faf4ba0455dc75f2e0507eddb79401}{S\-D\-L\-C\-A\-L\-L} \hyperlink{_s_d_l__thread_8h_ac7ed1ec8dec5b902da25b60da2b728fa}{S\-D\-L\-\_\-\-T\-L\-S\-Create} (\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void})
+\begin{DoxyCompactList}\small\item\em Create an identifier that is globally visible to all threads but refers to data that is thread-\/specific. \end{DoxyCompactList}\item 
+\hyperlink{begin__code_8h_aa4c7a931f4a968f818b2a1b10a432185}{D\-E\-C\-L\-S\-P\-E\-C} \hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} $\ast$\hyperlink{begin__code_8h_a81faf4ba0455dc75f2e0507eddb79401}{S\-D\-L\-C\-A\-L\-L} \hyperlink{_s_d_l__thread_8h_ab519f8d89ea808f32fc139071e6207bb}{S\-D\-L\-\_\-\-T\-L\-S\-Get} (\hyperlink{_s_d_l__thread_8h_a07ce005c35ad6ac377d6124db7296026}{S\-D\-L\-\_\-\-T\-L\-S\-I\-D} \hyperlink{_g_l_e_w_2glew_8h_ae52362b10d585638f5b96140e90f1b7a}{id})
+\begin{DoxyCompactList}\small\item\em Get the value associated with a thread local storage I\-D for the current thread. \end{DoxyCompactList}\item 
+\hyperlink{begin__code_8h_aa4c7a931f4a968f818b2a1b10a432185}{D\-E\-C\-L\-S\-P\-E\-C} \hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{begin__code_8h_a81faf4ba0455dc75f2e0507eddb79401}{S\-D\-L\-C\-A\-L\-L} \hyperlink{_s_d_l__thread_8h_a73a9414493c106d9cb05d1a53d3412fc}{S\-D\-L\-\_\-\-T\-L\-S\-Set} (\hyperlink{_s_d_l__thread_8h_a07ce005c35ad6ac377d6124db7296026}{S\-D\-L\-\_\-\-T\-L\-S\-I\-D} \hyperlink{_g_l_e_w_2glew_8h_ae52362b10d585638f5b96140e90f1b7a}{id}, const \hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} $\ast$\hyperlink{_g_l_e_w_2glew_8h_a79169be77d7e02a24f68a5bfe627dc29}{value}, \hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void}($\ast$destructor)(\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} $\ast$))
+\begin{DoxyCompactList}\small\item\em Set the value associated with a thread local storage I\-D for the current thread. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Header for the S\-D\-L thread management routines. 
+
+\subsection{Typedef Documentation}
+\hypertarget{_s_d_l__thread_8h_a97cd1dc60cea74b74273affb1a974db5}{\index{S\-D\-L\-\_\-thread.\-h@{S\-D\-L\-\_\-thread.\-h}!S\-D\-L\-\_\-\-Thread@{S\-D\-L\-\_\-\-Thread}}
+\index{S\-D\-L\-\_\-\-Thread@{S\-D\-L\-\_\-\-Thread}!SDL_thread.h@{S\-D\-L\-\_\-thread.\-h}}
+\subsubsection[{S\-D\-L\-\_\-\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf S\-D\-L\-\_\-\-Thread} {\bf S\-D\-L\-\_\-\-Thread}}}\label{_s_d_l__thread_8h_a97cd1dc60cea74b74273affb1a974db5}
+\hypertarget{_s_d_l__thread_8h_ac4db699531ce9f18f5a8547aa988b88e}{\index{S\-D\-L\-\_\-thread.\-h@{S\-D\-L\-\_\-thread.\-h}!S\-D\-L\-\_\-thread\-I\-D@{S\-D\-L\-\_\-thread\-I\-D}}
+\index{S\-D\-L\-\_\-thread\-I\-D@{S\-D\-L\-\_\-thread\-I\-D}!SDL_thread.h@{S\-D\-L\-\_\-thread.\-h}}
+\subsubsection[{S\-D\-L\-\_\-thread\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned long {\bf S\-D\-L\-\_\-thread\-I\-D}}}\label{_s_d_l__thread_8h_ac4db699531ce9f18f5a8547aa988b88e}
+\hypertarget{_s_d_l__thread_8h_a07ce005c35ad6ac377d6124db7296026}{\index{S\-D\-L\-\_\-thread.\-h@{S\-D\-L\-\_\-thread.\-h}!S\-D\-L\-\_\-\-T\-L\-S\-I\-D@{S\-D\-L\-\_\-\-T\-L\-S\-I\-D}}
+\index{S\-D\-L\-\_\-\-T\-L\-S\-I\-D@{S\-D\-L\-\_\-\-T\-L\-S\-I\-D}!SDL_thread.h@{S\-D\-L\-\_\-thread.\-h}}
+\subsubsection[{S\-D\-L\-\_\-\-T\-L\-S\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned {\bf int} {\bf S\-D\-L\-\_\-\-T\-L\-S\-I\-D}}}\label{_s_d_l__thread_8h_a07ce005c35ad6ac377d6124db7296026}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{_s_d_l__thread_8h_acce8dea56f6b307fadd2949b64e3ebda}{\index{S\-D\-L\-\_\-thread.\-h@{S\-D\-L\-\_\-thread.\-h}!S\-D\-L\-\_\-\-Thread\-Priority@{S\-D\-L\-\_\-\-Thread\-Priority}}
+\index{S\-D\-L\-\_\-\-Thread\-Priority@{S\-D\-L\-\_\-\-Thread\-Priority}!SDL_thread.h@{S\-D\-L\-\_\-thread.\-h}}
+\subsubsection[{S\-D\-L\-\_\-\-Thread\-Priority}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf S\-D\-L\-\_\-\-Thread\-Priority}}}\label{_s_d_l__thread_8h_acce8dea56f6b307fadd2949b64e3ebda}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{S\-D\-L\-\_\-\-T\-H\-R\-E\-A\-D\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-L\-O\-W@{S\-D\-L\-\_\-\-T\-H\-R\-E\-A\-D\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-L\-O\-W}!S\-D\-L\-\_\-thread.\-h@{S\-D\-L\-\_\-thread.\-h}}\index{S\-D\-L\-\_\-thread.\-h@{S\-D\-L\-\_\-thread.\-h}!S\-D\-L\-\_\-\-T\-H\-R\-E\-A\-D\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-L\-O\-W@{S\-D\-L\-\_\-\-T\-H\-R\-E\-A\-D\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-L\-O\-W}}\item[{\em 
+\hypertarget{_s_d_l__thread_8h_acce8dea56f6b307fadd2949b64e3ebdaa48d887edbfc7842abdabcec6900d3878}{S\-D\-L\-\_\-\-T\-H\-R\-E\-A\-D\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-L\-O\-W}\label{_s_d_l__thread_8h_acce8dea56f6b307fadd2949b64e3ebdaa48d887edbfc7842abdabcec6900d3878}
+}]\index{S\-D\-L\-\_\-\-T\-H\-R\-E\-A\-D\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-N\-O\-R\-M\-A\-L@{S\-D\-L\-\_\-\-T\-H\-R\-E\-A\-D\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-N\-O\-R\-M\-A\-L}!S\-D\-L\-\_\-thread.\-h@{S\-D\-L\-\_\-thread.\-h}}\index{S\-D\-L\-\_\-thread.\-h@{S\-D\-L\-\_\-thread.\-h}!S\-D\-L\-\_\-\-T\-H\-R\-E\-A\-D\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-N\-O\-R\-M\-A\-L@{S\-D\-L\-\_\-\-T\-H\-R\-E\-A\-D\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-N\-O\-R\-M\-A\-L}}\item[{\em 
+\hypertarget{_s_d_l__thread_8h_acce8dea56f6b307fadd2949b64e3ebdaac3a2f7a29f4c8fe11dca0ea258b07dae}{S\-D\-L\-\_\-\-T\-H\-R\-E\-A\-D\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-N\-O\-R\-M\-A\-L}\label{_s_d_l__thread_8h_acce8dea56f6b307fadd2949b64e3ebdaac3a2f7a29f4c8fe11dca0ea258b07dae}
+}]\index{S\-D\-L\-\_\-\-T\-H\-R\-E\-A\-D\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-H\-I\-G\-H@{S\-D\-L\-\_\-\-T\-H\-R\-E\-A\-D\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-H\-I\-G\-H}!S\-D\-L\-\_\-thread.\-h@{S\-D\-L\-\_\-thread.\-h}}\index{S\-D\-L\-\_\-thread.\-h@{S\-D\-L\-\_\-thread.\-h}!S\-D\-L\-\_\-\-T\-H\-R\-E\-A\-D\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-H\-I\-G\-H@{S\-D\-L\-\_\-\-T\-H\-R\-E\-A\-D\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-H\-I\-G\-H}}\item[{\em 
+\hypertarget{_s_d_l__thread_8h_acce8dea56f6b307fadd2949b64e3ebdaaac5ff8423acdebf3b43c279b8ec2ae0d}{S\-D\-L\-\_\-\-T\-H\-R\-E\-A\-D\-\_\-\-P\-R\-I\-O\-R\-I\-T\-Y\-\_\-\-H\-I\-G\-H}\label{_s_d_l__thread_8h_acce8dea56f6b307fadd2949b64e3ebdaaac5ff8423acdebf3b43c279b8ec2ae0d}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{\index{S\-D\-L\-\_\-thread.\-h@{S\-D\-L\-\_\-thread.\-h}!int@{int}}
+\index{int@{int}!SDL_thread.h@{S\-D\-L\-\_\-thread.\-h}}
+\subsubsection[{int}]{\setlength{\rightskip}{0pt plus 5cm}typedef int (
+\begin{DoxyParamCaption}
+\item[{{\bf S\-D\-L\-C\-A\-L\-L} $\ast$}]{S\-D\-L\-\_\-\-Thread\-Function}
+\end{DoxyParamCaption}
+)}}\label{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}
+\hypertarget{_s_d_l__thread_8h_aca3013d4f50e918b17d2721b37e59082}{\index{S\-D\-L\-\_\-thread.\-h@{S\-D\-L\-\_\-thread.\-h}!S\-D\-L\-\_\-\-Create\-Thread@{S\-D\-L\-\_\-\-Create\-Thread}}
+\index{S\-D\-L\-\_\-\-Create\-Thread@{S\-D\-L\-\_\-\-Create\-Thread}!SDL_thread.h@{S\-D\-L\-\_\-thread.\-h}}
+\subsubsection[{S\-D\-L\-\_\-\-Create\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-E\-C\-L\-S\-P\-E\-C} {\bf S\-D\-L\-\_\-\-Thread}$\ast$ {\bf S\-D\-L\-C\-A\-L\-L} S\-D\-L\-\_\-\-Create\-Thread (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Thread\-Function}]{fn, }
+\item[{const char $\ast$}]{name, }
+\item[{{\bf void} $\ast$}]{data}
+\end{DoxyParamCaption}
+)}}\label{_s_d_l__thread_8h_aca3013d4f50e918b17d2721b37e59082}
+Create a thread.
+
+Thread naming is a little complicated\-: Most systems have very small limits for the string length (Be\-O\-S has 32 bytes, Linux currently has 16, Visual C++ 6.\-0 has nine!), and possibly other arbitrary rules. You'll have to see what happens with your system's debugger. The name should be U\-T\-F-\/8 (but using the naming limits of C identifiers is a better bet). There are no requirements for thread naming conventions, so long as the string is null-\/terminated U\-T\-F-\/8, but these guidelines are helpful in choosing a name\-:
+
+\href{http://stackoverflow.com/questions/149932/naming-conventions-for-threads}{\tt http\-://stackoverflow.\-com/questions/149932/naming-\/conventions-\/for-\/threads}
+
+If a system imposes requirements, S\-D\-L will try to munge the string for it (truncate, etc), but the original string contents will be available from \hyperlink{_s_d_l__thread_8h_abe2ffa508d85379b355673d557e74d9f}{S\-D\-L\-\_\-\-Get\-Thread\-Name()}. \hypertarget{_s_d_l__thread_8h_a0bf5d93ed5cb25ea59307472c62c66db}{\index{S\-D\-L\-\_\-thread.\-h@{S\-D\-L\-\_\-thread.\-h}!S\-D\-L\-\_\-\-Get\-Thread\-I\-D@{S\-D\-L\-\_\-\-Get\-Thread\-I\-D}}
+\index{S\-D\-L\-\_\-\-Get\-Thread\-I\-D@{S\-D\-L\-\_\-\-Get\-Thread\-I\-D}!SDL_thread.h@{S\-D\-L\-\_\-thread.\-h}}
+\subsubsection[{S\-D\-L\-\_\-\-Get\-Thread\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-E\-C\-L\-S\-P\-E\-C} {\bf S\-D\-L\-\_\-thread\-I\-D} {\bf S\-D\-L\-C\-A\-L\-L} S\-D\-L\-\_\-\-Get\-Thread\-I\-D (
+\begin{DoxyParamCaption}
+\item[{{\bf S\-D\-L\-\_\-\-Thread} $\ast$}]{thread}
+\end{DoxyParamCaption}
+)}}\label{_s_d_l__thread_8h_a0bf5d93ed5cb25ea59307472c62c66db}
+Get the thread identifier for the specified thread.
+
+Equivalent to \hyperlink{_s_d_l__thread_8h_a341933eef1470789de20b05c1392b9ae}{S\-D\-L\-\_\-\-Thread\-I\-D()} if the specified thread is N\-U\-L\-L. \hypertarget{_s_d_l__thread_8h_abe2ffa508d85379b355673d557e74d9f}{\index{S\-D\-L\-\_\-thread.\-h@{S\-D\-L\-\_\-thread.\-h}!S\-D\-L\-\_\-\-Get\-Thread\-Name@{S\-D\-L\-\_\-\-Get\-Thread\-Name}}
+\index{S\-D\-L\-\_\-\-Get\-Thread\-Name@{S\-D\-L\-\_\-\-Get\-Thread\-Name}!SDL_thread.h@{S\-D\-L\-\_\-thread.\-h}}
+\subsubsection[{S\-D\-L\-\_\-\-Get\-Thread\-Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-E\-C\-L\-S\-P\-E\-C} const char$\ast$ {\bf S\-D\-L\-C\-A\-L\-L} S\-D\-L\-\_\-\-Get\-Thread\-Name (
+\begin{DoxyParamCaption}
+\item[{{\bf S\-D\-L\-\_\-\-Thread} $\ast$}]{thread}
+\end{DoxyParamCaption}
+)}}\label{_s_d_l__thread_8h_abe2ffa508d85379b355673d557e74d9f}
+Get the thread name, as it was specified in \hyperlink{_s_d_l__thread_8h_aca3013d4f50e918b17d2721b37e59082}{S\-D\-L\-\_\-\-Create\-Thread()}. This function returns a pointer to a U\-T\-F-\/8 string that names the specified thread, or N\-U\-L\-L if it doesn't have a name. This is internal memory, not to be free()'d by the caller, and remains valid until the specified thread is cleaned up by \hyperlink{_s_d_l__thread_8h_ac96743626ed21d2cdb0868a23cca9705}{S\-D\-L\-\_\-\-Wait\-Thread()}. \hypertarget{_s_d_l__thread_8h_adf4da9c0e6a6833bef9741344b09699d}{\index{S\-D\-L\-\_\-thread.\-h@{S\-D\-L\-\_\-thread.\-h}!S\-D\-L\-\_\-\-Set\-Thread\-Priority@{S\-D\-L\-\_\-\-Set\-Thread\-Priority}}
+\index{S\-D\-L\-\_\-\-Set\-Thread\-Priority@{S\-D\-L\-\_\-\-Set\-Thread\-Priority}!SDL_thread.h@{S\-D\-L\-\_\-thread.\-h}}
+\subsubsection[{S\-D\-L\-\_\-\-Set\-Thread\-Priority}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-E\-C\-L\-S\-P\-E\-C} {\bf int} {\bf S\-D\-L\-C\-A\-L\-L} S\-D\-L\-\_\-\-Set\-Thread\-Priority (
+\begin{DoxyParamCaption}
+\item[{{\bf S\-D\-L\-\_\-\-Thread\-Priority}}]{priority}
+\end{DoxyParamCaption}
+)}}\label{_s_d_l__thread_8h_adf4da9c0e6a6833bef9741344b09699d}
+Set the priority for the current thread \hypertarget{_s_d_l__thread_8h_a341933eef1470789de20b05c1392b9ae}{\index{S\-D\-L\-\_\-thread.\-h@{S\-D\-L\-\_\-thread.\-h}!S\-D\-L\-\_\-\-Thread\-I\-D@{S\-D\-L\-\_\-\-Thread\-I\-D}}
+\index{S\-D\-L\-\_\-\-Thread\-I\-D@{S\-D\-L\-\_\-\-Thread\-I\-D}!SDL_thread.h@{S\-D\-L\-\_\-thread.\-h}}
+\subsubsection[{S\-D\-L\-\_\-\-Thread\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-E\-C\-L\-S\-P\-E\-C} {\bf S\-D\-L\-\_\-thread\-I\-D} {\bf S\-D\-L\-C\-A\-L\-L} S\-D\-L\-\_\-\-Thread\-I\-D (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{_s_d_l__thread_8h_a341933eef1470789de20b05c1392b9ae}
+Get the thread identifier for the current thread. \hypertarget{_s_d_l__thread_8h_ac7ed1ec8dec5b902da25b60da2b728fa}{\index{S\-D\-L\-\_\-thread.\-h@{S\-D\-L\-\_\-thread.\-h}!S\-D\-L\-\_\-\-T\-L\-S\-Create@{S\-D\-L\-\_\-\-T\-L\-S\-Create}}
+\index{S\-D\-L\-\_\-\-T\-L\-S\-Create@{S\-D\-L\-\_\-\-T\-L\-S\-Create}!SDL_thread.h@{S\-D\-L\-\_\-thread.\-h}}
+\subsubsection[{S\-D\-L\-\_\-\-T\-L\-S\-Create}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-E\-C\-L\-S\-P\-E\-C} {\bf S\-D\-L\-\_\-\-T\-L\-S\-I\-D} {\bf S\-D\-L\-C\-A\-L\-L} S\-D\-L\-\_\-\-T\-L\-S\-Create (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{_s_d_l__thread_8h_ac7ed1ec8dec5b902da25b60da2b728fa}
+
+
+Create an identifier that is globally visible to all threads but refers to data that is thread-\/specific. 
+
+\begin{DoxyReturn}{Returns}
+The newly created thread local storage identifier, or 0 on error
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+*  \textcolor{keyword}{static} \hyperlink{_s_d_l__atomic_8h_a59179ff8d21c65b9d9a544f3c2088e81}{SDL\_SpinLock} tls\_lock;
+*  \textcolor{keyword}{static} \hyperlink{_s_d_l__thread_8h_a07ce005c35ad6ac377d6124db7296026}{SDL\_TLSID} thread\_local\_storage;
+* 
+*  \textcolor{keywordtype}{void} SetMyThreadData(\textcolor{keywordtype}{void} *\hyperlink{_g_l_e_w_2glew_8h_a79169be77d7e02a24f68a5bfe627dc29}{value})
+*  \{
+*      \textcolor{keywordflow}{if} (!thread\_local\_storage) \{
+*          \hyperlink{_s_d_l__atomic_8h_a95ecd72190ba8e5ed6ed78d5d1b36509}{SDL\_AtomicLock}(&tls\_lock);
+*          \textcolor{keywordflow}{if} (!thread\_local\_storage) \{
+*              thread\_local\_storage = \hyperlink{_s_d_l__thread_8h_ac7ed1ec8dec5b902da25b60da2b728fa}{SDL\_TLSCreate}();
+*          \}
+*          SDL\_AtomicUnLock(&tls\_lock);
+*      \}
+*      \hyperlink{_s_d_l__thread_8h_a73a9414493c106d9cb05d1a53d3412fc}{SDL\_TLSSet}(thread\_local\_storage, \hyperlink{_g_l_e_w_2glew_8h_a79169be77d7e02a24f68a5bfe627dc29}{value});
+*  \}
+*  
+*  \textcolor{keywordtype}{void} *GetMyThreadData(\textcolor{keywordtype}{void})
+*  \{
+*      \textcolor{keywordflow}{return} \hyperlink{_s_d_l__thread_8h_ab519f8d89ea808f32fc139071e6207bb}{SDL\_TLSGet}(thread\_local\_storage);
+*  \}
+*  
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_s_d_l__thread_8h_ab519f8d89ea808f32fc139071e6207bb}{S\-D\-L\-\_\-\-T\-L\-S\-Get()} 
+
+\hyperlink{_s_d_l__thread_8h_a73a9414493c106d9cb05d1a53d3412fc}{S\-D\-L\-\_\-\-T\-L\-S\-Set()} 
+\end{DoxySeeAlso}
+\hypertarget{_s_d_l__thread_8h_ab519f8d89ea808f32fc139071e6207bb}{\index{S\-D\-L\-\_\-thread.\-h@{S\-D\-L\-\_\-thread.\-h}!S\-D\-L\-\_\-\-T\-L\-S\-Get@{S\-D\-L\-\_\-\-T\-L\-S\-Get}}
+\index{S\-D\-L\-\_\-\-T\-L\-S\-Get@{S\-D\-L\-\_\-\-T\-L\-S\-Get}!SDL_thread.h@{S\-D\-L\-\_\-thread.\-h}}
+\subsubsection[{S\-D\-L\-\_\-\-T\-L\-S\-Get}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-E\-C\-L\-S\-P\-E\-C} {\bf void}$\ast$ {\bf S\-D\-L\-C\-A\-L\-L} S\-D\-L\-\_\-\-T\-L\-S\-Get (
+\begin{DoxyParamCaption}
+\item[{{\bf S\-D\-L\-\_\-\-T\-L\-S\-I\-D}}]{id}
+\end{DoxyParamCaption}
+)}}\label{_s_d_l__thread_8h_ab519f8d89ea808f32fc139071e6207bb}
+
+
+Get the value associated with a thread local storage I\-D for the current thread. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The thread local storage I\-D\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value associated with the I\-D for the current thread, or N\-U\-L\-L if no value has been set.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_s_d_l__thread_8h_ac7ed1ec8dec5b902da25b60da2b728fa}{S\-D\-L\-\_\-\-T\-L\-S\-Create()} 
+
+\hyperlink{_s_d_l__thread_8h_a73a9414493c106d9cb05d1a53d3412fc}{S\-D\-L\-\_\-\-T\-L\-S\-Set()} 
+\end{DoxySeeAlso}
+\hypertarget{_s_d_l__thread_8h_a73a9414493c106d9cb05d1a53d3412fc}{\index{S\-D\-L\-\_\-thread.\-h@{S\-D\-L\-\_\-thread.\-h}!S\-D\-L\-\_\-\-T\-L\-S\-Set@{S\-D\-L\-\_\-\-T\-L\-S\-Set}}
+\index{S\-D\-L\-\_\-\-T\-L\-S\-Set@{S\-D\-L\-\_\-\-T\-L\-S\-Set}!SDL_thread.h@{S\-D\-L\-\_\-thread.\-h}}
+\subsubsection[{S\-D\-L\-\_\-\-T\-L\-S\-Set}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-E\-C\-L\-S\-P\-E\-C} {\bf int} {\bf S\-D\-L\-C\-A\-L\-L} S\-D\-L\-\_\-\-T\-L\-S\-Set (
+\begin{DoxyParamCaption}
+\item[{{\bf S\-D\-L\-\_\-\-T\-L\-S\-I\-D}}]{id, }
+\item[{const {\bf void} $\ast$}]{value, }
+\item[{{\bf void}($\ast$)({\bf void} $\ast$)}]{destructor}
+\end{DoxyParamCaption}
+)}}\label{_s_d_l__thread_8h_a73a9414493c106d9cb05d1a53d3412fc}
+
+
+Set the value associated with a thread local storage I\-D for the current thread. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The thread local storage I\-D \\
+\hline
+{\em value} & The value to associate with the I\-D for the current thread \\
+\hline
+{\em destructor} & A function called when the thread exits, to free the value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, -\/1 on error
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_s_d_l__thread_8h_ac7ed1ec8dec5b902da25b60da2b728fa}{S\-D\-L\-\_\-\-T\-L\-S\-Create()} 
+
+\hyperlink{_s_d_l__thread_8h_ab519f8d89ea808f32fc139071e6207bb}{S\-D\-L\-\_\-\-T\-L\-S\-Get()} 
+\end{DoxySeeAlso}
+\hypertarget{_s_d_l__thread_8h_ac96743626ed21d2cdb0868a23cca9705}{\index{S\-D\-L\-\_\-thread.\-h@{S\-D\-L\-\_\-thread.\-h}!S\-D\-L\-\_\-\-Wait\-Thread@{S\-D\-L\-\_\-\-Wait\-Thread}}
+\index{S\-D\-L\-\_\-\-Wait\-Thread@{S\-D\-L\-\_\-\-Wait\-Thread}!SDL_thread.h@{S\-D\-L\-\_\-thread.\-h}}
+\subsubsection[{S\-D\-L\-\_\-\-Wait\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-E\-C\-L\-S\-P\-E\-C} {\bf void} {\bf S\-D\-L\-C\-A\-L\-L} S\-D\-L\-\_\-\-Wait\-Thread (
+\begin{DoxyParamCaption}
+\item[{{\bf S\-D\-L\-\_\-\-Thread} $\ast$}]{thread, }
+\item[{{\bf int} $\ast$}]{status}
+\end{DoxyParamCaption}
+)}}\label{_s_d_l__thread_8h_ac96743626ed21d2cdb0868a23cca9705}
+Wait for a thread to finish.
+
+The return code for the thread function is placed in the area pointed to by {\ttfamily status}, if {\ttfamily status} is not N\-U\-L\-L. 

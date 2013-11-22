@@ -1,0 +1,157 @@
+\hypertarget{class_g_l_triangle_batch}{\section{G\-L\-Triangle\-Batch Class Reference}
+\label{class_g_l_triangle_batch}\index{G\-L\-Triangle\-Batch@{G\-L\-Triangle\-Batch}}
+}
+
+
+{\ttfamily \#include $<$G\-L\-Triangle\-Batch.\-h$>$}
+
+
+
+Inheritance diagram for G\-L\-Triangle\-Batch\-:
+
+
+Collaboration diagram for G\-L\-Triangle\-Batch\-:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_g_l_triangle_batch_acb5f89624964d5bc88cc1824a5ab42ec}{G\-L\-Triangle\-Batch} (\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void})
+\item 
+virtual \hyperlink{class_g_l_triangle_batch_aff5a65394a607da11b0521b72df1eb07}{$\sim$\-G\-L\-Triangle\-Batch} (\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void})
+\item 
+\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} \hyperlink{class_g_l_triangle_batch_a990801751f6192f37214c9de4b8178d8}{Begin\-Mesh} (\hyperlink{_g_l_e_w_2glew_8h_a68c4714e43d8e827d80759f9cb864f3c}{G\-Luint} n\-Max\-Verts)
+\item 
+\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} \hyperlink{class_g_l_triangle_batch_a2c01c152092a320a4fcfe1ecb7ed4197}{Add\-Triangle} (\hyperlink{math3d_8h_a2163fe22bd4208b846d22ec7e74cf858}{M3\-D\-Vector3f} verts\mbox{[}3\mbox{]}, \hyperlink{math3d_8h_a2163fe22bd4208b846d22ec7e74cf858}{M3\-D\-Vector3f} v\-Norms\mbox{[}3\mbox{]}, \hyperlink{math3d_8h_a53c353d9bb3250cff53ebefe75cc8013}{M3\-D\-Vector2f} v\-Tex\-Coords\mbox{[}3\mbox{]})
+\item 
+\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} \hyperlink{class_g_l_triangle_batch_a11a43b24c53a5fd089d1b06f0847f15a}{End} (\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void})
+\item 
+\hyperlink{_g_l_e_w_2glew_8h_a68c4714e43d8e827d80759f9cb864f3c}{G\-Luint} \hyperlink{class_g_l_triangle_batch_a93b01b75f18d52cc13c9e752a45d356c}{Get\-Index\-Count} (\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void})
+\item 
+\hyperlink{_g_l_e_w_2glew_8h_a68c4714e43d8e827d80759f9cb864f3c}{G\-Luint} \hyperlink{class_g_l_triangle_batch_a77287aa52c1f30b0ce734bb773d72c6b}{Get\-Vertex\-Count} (\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void})
+\item 
+virtual \hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} \hyperlink{class_g_l_triangle_batch_a35becc895b7c347c4acc7c7176f1efa8}{Draw} (\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void})
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_g_l_e_w_2glew_8h_ac995a558f6571eb5f98b7a6d2b2a4468}{G\-Lushort} $\ast$ \hyperlink{class_g_l_triangle_batch_a1eb176aae90befb77ae323f110631d50}{p\-Indexes}
+\item 
+\hyperlink{math3d_8h_a2163fe22bd4208b846d22ec7e74cf858}{M3\-D\-Vector3f} $\ast$ \hyperlink{class_g_l_triangle_batch_a040c2d279e77f6eaa449cb0ec0c2329f}{p\-Verts}
+\item 
+\hyperlink{math3d_8h_a2163fe22bd4208b846d22ec7e74cf858}{M3\-D\-Vector3f} $\ast$ \hyperlink{class_g_l_triangle_batch_ae818927c49404e704745551a6efe4168}{p\-Norms}
+\item 
+\hyperlink{math3d_8h_a53c353d9bb3250cff53ebefe75cc8013}{M3\-D\-Vector2f} $\ast$ \hyperlink{class_g_l_triangle_batch_ae80850292b9b9e2e3c93142e22412bc6}{p\-Tex\-Coords}
+\item 
+\hyperlink{_g_l_e_w_2glew_8h_a68c4714e43d8e827d80759f9cb864f3c}{G\-Luint} \hyperlink{class_g_l_triangle_batch_ad71adff46009cbdbea504bc8df3e6483}{n\-Max\-Indexes}
+\item 
+\hyperlink{_g_l_e_w_2glew_8h_a68c4714e43d8e827d80759f9cb864f3c}{G\-Luint} \hyperlink{class_g_l_triangle_batch_aa898172f3199fe04a570162affe65742}{n\-Num\-Indexes}
+\item 
+\hyperlink{_g_l_e_w_2glew_8h_a68c4714e43d8e827d80759f9cb864f3c}{G\-Luint} \hyperlink{class_g_l_triangle_batch_abdf5887a9f634e0a649590c0de136c59}{n\-Num\-Verts}
+\item 
+\hyperlink{_g_l_e_w_2glew_8h_a68c4714e43d8e827d80759f9cb864f3c}{G\-Luint} \hyperlink{class_g_l_triangle_batch_a16b051587157194229a7e0f9c0eacebb}{buffer\-Objects} \mbox{[}4\mbox{]}
+\item 
+\hyperlink{_g_l_e_w_2glew_8h_a68c4714e43d8e827d80759f9cb864f3c}{G\-Luint} \hyperlink{class_g_l_triangle_batch_a72f1061415939f50c49b3cf35a1dccd4}{vertex\-Array\-Buffer\-Object}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_g_l_triangle_batch_acb5f89624964d5bc88cc1824a5ab42ec}{\index{G\-L\-Triangle\-Batch@{G\-L\-Triangle\-Batch}!G\-L\-Triangle\-Batch@{G\-L\-Triangle\-Batch}}
+\index{G\-L\-Triangle\-Batch@{G\-L\-Triangle\-Batch}!GLTriangleBatch@{G\-L\-Triangle\-Batch}}
+\subsubsection[{G\-L\-Triangle\-Batch}]{\setlength{\rightskip}{0pt plus 5cm}G\-L\-Triangle\-Batch\-::\-G\-L\-Triangle\-Batch (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_triangle_batch_acb5f89624964d5bc88cc1824a5ab42ec}
+\hypertarget{class_g_l_triangle_batch_aff5a65394a607da11b0521b72df1eb07}{\index{G\-L\-Triangle\-Batch@{G\-L\-Triangle\-Batch}!$\sim$\-G\-L\-Triangle\-Batch@{$\sim$\-G\-L\-Triangle\-Batch}}
+\index{$\sim$\-G\-L\-Triangle\-Batch@{$\sim$\-G\-L\-Triangle\-Batch}!GLTriangleBatch@{G\-L\-Triangle\-Batch}}
+\subsubsection[{$\sim$\-G\-L\-Triangle\-Batch}]{\setlength{\rightskip}{0pt plus 5cm}G\-L\-Triangle\-Batch\-::$\sim$\-G\-L\-Triangle\-Batch (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_g_l_triangle_batch_aff5a65394a607da11b0521b72df1eb07}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_g_l_triangle_batch_a2c01c152092a320a4fcfe1ecb7ed4197}{\index{G\-L\-Triangle\-Batch@{G\-L\-Triangle\-Batch}!Add\-Triangle@{Add\-Triangle}}
+\index{Add\-Triangle@{Add\-Triangle}!GLTriangleBatch@{G\-L\-Triangle\-Batch}}
+\subsubsection[{Add\-Triangle}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} G\-L\-Triangle\-Batch\-::\-Add\-Triangle (
+\begin{DoxyParamCaption}
+\item[{{\bf M3\-D\-Vector3f}}]{verts\mbox{[}3\mbox{]}, }
+\item[{{\bf M3\-D\-Vector3f}}]{v\-Norms\mbox{[}3\mbox{]}, }
+\item[{{\bf M3\-D\-Vector2f}}]{v\-Tex\-Coords\mbox{[}3\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_triangle_batch_a2c01c152092a320a4fcfe1ecb7ed4197}
+\hypertarget{class_g_l_triangle_batch_a990801751f6192f37214c9de4b8178d8}{\index{G\-L\-Triangle\-Batch@{G\-L\-Triangle\-Batch}!Begin\-Mesh@{Begin\-Mesh}}
+\index{Begin\-Mesh@{Begin\-Mesh}!GLTriangleBatch@{G\-L\-Triangle\-Batch}}
+\subsubsection[{Begin\-Mesh}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} G\-L\-Triangle\-Batch\-::\-Begin\-Mesh (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-Luint}}]{n\-Max\-Verts}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_triangle_batch_a990801751f6192f37214c9de4b8178d8}
+\hypertarget{class_g_l_triangle_batch_a35becc895b7c347c4acc7c7176f1efa8}{\index{G\-L\-Triangle\-Batch@{G\-L\-Triangle\-Batch}!Draw@{Draw}}
+\index{Draw@{Draw}!GLTriangleBatch@{G\-L\-Triangle\-Batch}}
+\subsubsection[{Draw}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} G\-L\-Triangle\-Batch\-::\-Draw (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_g_l_triangle_batch_a35becc895b7c347c4acc7c7176f1efa8}
+
+
+Implements \hyperlink{class_g_l_batch_base_ac7c7c0ee9d7e5a15d4e0464a77177cc4}{G\-L\-Batch\-Base}.
+
+\hypertarget{class_g_l_triangle_batch_a11a43b24c53a5fd089d1b06f0847f15a}{\index{G\-L\-Triangle\-Batch@{G\-L\-Triangle\-Batch}!End@{End}}
+\index{End@{End}!GLTriangleBatch@{G\-L\-Triangle\-Batch}}
+\subsubsection[{End}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} G\-L\-Triangle\-Batch\-::\-End (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_triangle_batch_a11a43b24c53a5fd089d1b06f0847f15a}
+\hypertarget{class_g_l_triangle_batch_a93b01b75f18d52cc13c9e752a45d356c}{\index{G\-L\-Triangle\-Batch@{G\-L\-Triangle\-Batch}!Get\-Index\-Count@{Get\-Index\-Count}}
+\index{Get\-Index\-Count@{Get\-Index\-Count}!GLTriangleBatch@{G\-L\-Triangle\-Batch}}
+\subsubsection[{Get\-Index\-Count}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-Luint} G\-L\-Triangle\-Batch\-::\-Get\-Index\-Count (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_g_l_triangle_batch_a93b01b75f18d52cc13c9e752a45d356c}
+\hypertarget{class_g_l_triangle_batch_a77287aa52c1f30b0ce734bb773d72c6b}{\index{G\-L\-Triangle\-Batch@{G\-L\-Triangle\-Batch}!Get\-Vertex\-Count@{Get\-Vertex\-Count}}
+\index{Get\-Vertex\-Count@{Get\-Vertex\-Count}!GLTriangleBatch@{G\-L\-Triangle\-Batch}}
+\subsubsection[{Get\-Vertex\-Count}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-Luint} G\-L\-Triangle\-Batch\-::\-Get\-Vertex\-Count (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_g_l_triangle_batch_a77287aa52c1f30b0ce734bb773d72c6b}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_g_l_triangle_batch_a16b051587157194229a7e0f9c0eacebb}{\index{G\-L\-Triangle\-Batch@{G\-L\-Triangle\-Batch}!buffer\-Objects@{buffer\-Objects}}
+\index{buffer\-Objects@{buffer\-Objects}!GLTriangleBatch@{G\-L\-Triangle\-Batch}}
+\subsubsection[{buffer\-Objects}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-Luint} G\-L\-Triangle\-Batch\-::buffer\-Objects\mbox{[}4\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_g_l_triangle_batch_a16b051587157194229a7e0f9c0eacebb}
+\hypertarget{class_g_l_triangle_batch_ad71adff46009cbdbea504bc8df3e6483}{\index{G\-L\-Triangle\-Batch@{G\-L\-Triangle\-Batch}!n\-Max\-Indexes@{n\-Max\-Indexes}}
+\index{n\-Max\-Indexes@{n\-Max\-Indexes}!GLTriangleBatch@{G\-L\-Triangle\-Batch}}
+\subsubsection[{n\-Max\-Indexes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-Luint} G\-L\-Triangle\-Batch\-::n\-Max\-Indexes\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_g_l_triangle_batch_ad71adff46009cbdbea504bc8df3e6483}
+\hypertarget{class_g_l_triangle_batch_aa898172f3199fe04a570162affe65742}{\index{G\-L\-Triangle\-Batch@{G\-L\-Triangle\-Batch}!n\-Num\-Indexes@{n\-Num\-Indexes}}
+\index{n\-Num\-Indexes@{n\-Num\-Indexes}!GLTriangleBatch@{G\-L\-Triangle\-Batch}}
+\subsubsection[{n\-Num\-Indexes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-Luint} G\-L\-Triangle\-Batch\-::n\-Num\-Indexes\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_g_l_triangle_batch_aa898172f3199fe04a570162affe65742}
+\hypertarget{class_g_l_triangle_batch_abdf5887a9f634e0a649590c0de136c59}{\index{G\-L\-Triangle\-Batch@{G\-L\-Triangle\-Batch}!n\-Num\-Verts@{n\-Num\-Verts}}
+\index{n\-Num\-Verts@{n\-Num\-Verts}!GLTriangleBatch@{G\-L\-Triangle\-Batch}}
+\subsubsection[{n\-Num\-Verts}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-Luint} G\-L\-Triangle\-Batch\-::n\-Num\-Verts\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_g_l_triangle_batch_abdf5887a9f634e0a649590c0de136c59}
+\hypertarget{class_g_l_triangle_batch_a1eb176aae90befb77ae323f110631d50}{\index{G\-L\-Triangle\-Batch@{G\-L\-Triangle\-Batch}!p\-Indexes@{p\-Indexes}}
+\index{p\-Indexes@{p\-Indexes}!GLTriangleBatch@{G\-L\-Triangle\-Batch}}
+\subsubsection[{p\-Indexes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-Lushort}$\ast$ G\-L\-Triangle\-Batch\-::p\-Indexes\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_g_l_triangle_batch_a1eb176aae90befb77ae323f110631d50}
+\hypertarget{class_g_l_triangle_batch_ae818927c49404e704745551a6efe4168}{\index{G\-L\-Triangle\-Batch@{G\-L\-Triangle\-Batch}!p\-Norms@{p\-Norms}}
+\index{p\-Norms@{p\-Norms}!GLTriangleBatch@{G\-L\-Triangle\-Batch}}
+\subsubsection[{p\-Norms}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M3\-D\-Vector3f}$\ast$ G\-L\-Triangle\-Batch\-::p\-Norms\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_g_l_triangle_batch_ae818927c49404e704745551a6efe4168}
+\hypertarget{class_g_l_triangle_batch_ae80850292b9b9e2e3c93142e22412bc6}{\index{G\-L\-Triangle\-Batch@{G\-L\-Triangle\-Batch}!p\-Tex\-Coords@{p\-Tex\-Coords}}
+\index{p\-Tex\-Coords@{p\-Tex\-Coords}!GLTriangleBatch@{G\-L\-Triangle\-Batch}}
+\subsubsection[{p\-Tex\-Coords}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M3\-D\-Vector2f}$\ast$ G\-L\-Triangle\-Batch\-::p\-Tex\-Coords\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_g_l_triangle_batch_ae80850292b9b9e2e3c93142e22412bc6}
+\hypertarget{class_g_l_triangle_batch_a040c2d279e77f6eaa449cb0ec0c2329f}{\index{G\-L\-Triangle\-Batch@{G\-L\-Triangle\-Batch}!p\-Verts@{p\-Verts}}
+\index{p\-Verts@{p\-Verts}!GLTriangleBatch@{G\-L\-Triangle\-Batch}}
+\subsubsection[{p\-Verts}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M3\-D\-Vector3f}$\ast$ G\-L\-Triangle\-Batch\-::p\-Verts\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_g_l_triangle_batch_a040c2d279e77f6eaa449cb0ec0c2329f}
+\hypertarget{class_g_l_triangle_batch_a72f1061415939f50c49b3cf35a1dccd4}{\index{G\-L\-Triangle\-Batch@{G\-L\-Triangle\-Batch}!vertex\-Array\-Buffer\-Object@{vertex\-Array\-Buffer\-Object}}
+\index{vertex\-Array\-Buffer\-Object@{vertex\-Array\-Buffer\-Object}!GLTriangleBatch@{G\-L\-Triangle\-Batch}}
+\subsubsection[{vertex\-Array\-Buffer\-Object}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-Luint} G\-L\-Triangle\-Batch\-::vertex\-Array\-Buffer\-Object\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_g_l_triangle_batch_a72f1061415939f50c49b3cf35a1dccd4}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/\-G\-L\-Tools/include/\hyperlink{_g_l_triangle_batch_8h}{G\-L\-Triangle\-Batch.\-h}\item 
+include/\-G\-L\-Tools/src/\hyperlink{_g_l_triangle_batch_8cpp}{G\-L\-Triangle\-Batch.\-cpp}\end{DoxyCompactItemize}

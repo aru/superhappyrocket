@@ -1,0 +1,184 @@
+\hypertarget{class_level1}{\section{Level1 Class Reference}
+\label{class_level1}\index{Level1@{Level1}}
+}
+
+
+{\ttfamily \#include $<$Level1.\-h$>$}
+
+
+
+Inheritance diagram for Level1\-:
+
+
+Collaboration diagram for Level1\-:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_level1_a312ea5984a944497f7a6fcfda0d1c0e2}{Level1} (\hyperlink{class_context}{Context} $\ast$ctx)
+\item 
+\hyperlink{class_level1_adfbd315a62b31d3ca07da24fc9c69d82}{$\sim$\-Level1} ()
+\item 
+const \hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{class_level1_ad4203f97fa3741633939bb583d6dafc3}{Initialize} ()
+\item 
+const \hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{class_level1_a440f9b749647f81cacf51075378ad93d}{Load\-Content} ()
+\item 
+const \hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{class_level1_a091d8b77a6f1057521b6d9695692cdc9}{Update} (\hyperlink{_s_d_l__stdinc_8h_add440eff171ea5f55cb00c4a9ab8672d}{Uint32} game\-Time)
+\item 
+\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} \hyperlink{class_level1_a20d6bceb8946a9257c84b2bea8df4f04}{Handle\-Input} (\hyperlink{class_input_manager}{Input\-Manager} $\ast$\hyperlink{_g_l_e_w_2glew_8h_ad3c78daa7d8673f71649d4840c641779}{input}, \hyperlink{_s_d_l__stdinc_8h_add440eff171ea5f55cb00c4a9ab8672d}{Uint32} game\-Time)
+\item 
+\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} \hyperlink{class_level1_aedce6d1bc1d8abb4b1f60c9e469a0956}{push\-Entity\-Manager\-Objects} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classassimp_mesh}{assimp\-Mesh} $\ast$ \hyperlink{class_level1_a27e8e0e393395dbcb01b4317d05a922e}{rocket}
+\item 
+\hyperlink{math3d_8h_a2163fe22bd4208b846d22ec7e74cf858}{M3\-D\-Vector3f} \hyperlink{class_level1_a052318511122312a63806a8f7e999417}{rocket\-Forward\-Vector}
+\item 
+\hyperlink{math3d_8h_a2163fe22bd4208b846d22ec7e74cf858}{M3\-D\-Vector3f} \hyperlink{class_level1_af64a6427f0f7ac73ee16d1d6d4bc3162}{rocket\-Up\-Vector}
+\item 
+\hyperlink{math3d_8h_a2163fe22bd4208b846d22ec7e74cf858}{M3\-D\-Vector3f} \hyperlink{class_level1_abc8a371bf1f22d4abae3fcd7f52a4188}{rocket\-Origin}
+\item 
+\hyperlink{math3d_8h_a2163fe22bd4208b846d22ec7e74cf858}{M3\-D\-Vector3f} \hyperlink{class_level1_ac10903be550984ca56c7511a5a15a025}{camera\-Forward\-Vector}
+\item 
+\hyperlink{math3d_8h_a2163fe22bd4208b846d22ec7e74cf858}{M3\-D\-Vector3f} \hyperlink{class_level1_a274b6360e2d328afa0a9e6965821fcdc}{camera\-Up\-Vector}
+\item 
+\hyperlink{math3d_8h_a2163fe22bd4208b846d22ec7e74cf858}{M3\-D\-Vector3f} \hyperlink{class_level1_a92a12d05696e7cca7cf8ad9593d14d69}{camera\-Origin}
+\item 
+\hyperlink{math3d_8h_a1e8690467d81d5ed97c5ecc3a144a4ac}{M3\-D\-Matrix44f} \hyperlink{class_level1_a6001495527da0e497c56f0136c92eb88}{camera\-Matrix}
+\item 
+\hyperlink{classassimp_mesh}{assimp\-Mesh} $\ast$ \hyperlink{class_level1_aef332d331ec58d349e53cf6fb7dd951e}{cat}
+\item 
+\hyperlink{class_entity_manager}{Entity\-Manager} $\ast$ \hyperlink{class_level1_aa9917581ef00ebe786fa2f89bdb5a765}{entity\-Manager}
+\item 
+bool \hyperlink{class_level1_a7ccfe53965cd6952089cad249f0e593f}{start}
+\item 
+float \hyperlink{class_level1_acc67ce4d008a8f081378139ed81ea9da}{linear}
+\item 
+float \hyperlink{class_level1_ad0e4b54788124f6471852123dea5a073}{angular}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_level1_a312ea5984a944497f7a6fcfda0d1c0e2}{\index{Level1@{Level1}!Level1@{Level1}}
+\index{Level1@{Level1}!Level1@{Level1}}
+\subsubsection[{Level1}]{\setlength{\rightskip}{0pt plus 5cm}Level1\-::\-Level1 (
+\begin{DoxyParamCaption}
+\item[{{\bf Context} $\ast$}]{ctx}
+\end{DoxyParamCaption}
+)}}\label{class_level1_a312ea5984a944497f7a6fcfda0d1c0e2}
+\hypertarget{class_level1_adfbd315a62b31d3ca07da24fc9c69d82}{\index{Level1@{Level1}!$\sim$\-Level1@{$\sim$\-Level1}}
+\index{$\sim$\-Level1@{$\sim$\-Level1}!Level1@{Level1}}
+\subsubsection[{$\sim$\-Level1}]{\setlength{\rightskip}{0pt plus 5cm}Level1\-::$\sim$\-Level1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_level1_adfbd315a62b31d3ca07da24fc9c69d82}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_level1_a20d6bceb8946a9257c84b2bea8df4f04}{\index{Level1@{Level1}!Handle\-Input@{Handle\-Input}}
+\index{Handle\-Input@{Handle\-Input}!Level1@{Level1}}
+\subsubsection[{Handle\-Input}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Level1\-::\-Handle\-Input (
+\begin{DoxyParamCaption}
+\item[{{\bf Input\-Manager} $\ast$}]{input, }
+\item[{{\bf Uint32}}]{game\-Time}
+\end{DoxyParamCaption}
+)}}\label{class_level1_a20d6bceb8946a9257c84b2bea8df4f04}
+\hypertarget{class_level1_ad4203f97fa3741633939bb583d6dafc3}{\index{Level1@{Level1}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Level1@{Level1}}
+\subsubsection[{Initialize}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf int} Level1\-::\-Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_level1_ad4203f97fa3741633939bb583d6dafc3}
+
+
+Reimplemented from \hyperlink{class_base_level_a016cc29ef95724ef03ce1cee8abf7248}{Base\-Level}.
+
+\hypertarget{class_level1_a440f9b749647f81cacf51075378ad93d}{\index{Level1@{Level1}!Load\-Content@{Load\-Content}}
+\index{Load\-Content@{Load\-Content}!Level1@{Level1}}
+\subsubsection[{Load\-Content}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf int} Level1\-::\-Load\-Content (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_level1_a440f9b749647f81cacf51075378ad93d}
+
+\begin{DoxyItemize}
+\item Add an assimp model $\ast$/
+\item Add an assimp model $\ast$/
+\item Add an assimp model $\ast$/
+\item Add an assimp model $\ast$/
+\item Add an assimp model $\ast$/
+\item Add an assimp model $\ast$/
+\item Add an assimp model $\ast$/ 
+\end{DoxyItemize}
+
+Implements \hyperlink{class_base_level_a772f50dac61e9f5907ef5b0cc0c13f50}{Base\-Level}.
+
+\hypertarget{class_level1_aedce6d1bc1d8abb4b1f60c9e469a0956}{\index{Level1@{Level1}!push\-Entity\-Manager\-Objects@{push\-Entity\-Manager\-Objects}}
+\index{push\-Entity\-Manager\-Objects@{push\-Entity\-Manager\-Objects}!Level1@{Level1}}
+\subsubsection[{push\-Entity\-Manager\-Objects}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Level1\-::push\-Entity\-Manager\-Objects (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_level1_aedce6d1bc1d8abb4b1f60c9e469a0956}
+\hypertarget{class_level1_a091d8b77a6f1057521b6d9695692cdc9}{\index{Level1@{Level1}!Update@{Update}}
+\index{Update@{Update}!Level1@{Level1}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf int} Level1\-::\-Update (
+\begin{DoxyParamCaption}
+\item[{{\bf Uint32}}]{game\-Time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_level1_a091d8b77a6f1057521b6d9695692cdc9}
+
+
+Reimplemented from \hyperlink{class_base_level_adb9988c217366173515d27cb500da5d7}{Base\-Level}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_level1_ad0e4b54788124f6471852123dea5a073}{\index{Level1@{Level1}!angular@{angular}}
+\index{angular@{angular}!Level1@{Level1}}
+\subsubsection[{angular}]{\setlength{\rightskip}{0pt plus 5cm}float Level1\-::angular}}\label{class_level1_ad0e4b54788124f6471852123dea5a073}
+\hypertarget{class_level1_ac10903be550984ca56c7511a5a15a025}{\index{Level1@{Level1}!camera\-Forward\-Vector@{camera\-Forward\-Vector}}
+\index{camera\-Forward\-Vector@{camera\-Forward\-Vector}!Level1@{Level1}}
+\subsubsection[{camera\-Forward\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M3\-D\-Vector3f} Level1\-::camera\-Forward\-Vector}}\label{class_level1_ac10903be550984ca56c7511a5a15a025}
+\hypertarget{class_level1_a6001495527da0e497c56f0136c92eb88}{\index{Level1@{Level1}!camera\-Matrix@{camera\-Matrix}}
+\index{camera\-Matrix@{camera\-Matrix}!Level1@{Level1}}
+\subsubsection[{camera\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M3\-D\-Matrix44f} Level1\-::camera\-Matrix}}\label{class_level1_a6001495527da0e497c56f0136c92eb88}
+\hypertarget{class_level1_a92a12d05696e7cca7cf8ad9593d14d69}{\index{Level1@{Level1}!camera\-Origin@{camera\-Origin}}
+\index{camera\-Origin@{camera\-Origin}!Level1@{Level1}}
+\subsubsection[{camera\-Origin}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M3\-D\-Vector3f} Level1\-::camera\-Origin}}\label{class_level1_a92a12d05696e7cca7cf8ad9593d14d69}
+\hypertarget{class_level1_a274b6360e2d328afa0a9e6965821fcdc}{\index{Level1@{Level1}!camera\-Up\-Vector@{camera\-Up\-Vector}}
+\index{camera\-Up\-Vector@{camera\-Up\-Vector}!Level1@{Level1}}
+\subsubsection[{camera\-Up\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M3\-D\-Vector3f} Level1\-::camera\-Up\-Vector}}\label{class_level1_a274b6360e2d328afa0a9e6965821fcdc}
+\hypertarget{class_level1_aef332d331ec58d349e53cf6fb7dd951e}{\index{Level1@{Level1}!cat@{cat}}
+\index{cat@{cat}!Level1@{Level1}}
+\subsubsection[{cat}]{\setlength{\rightskip}{0pt plus 5cm}{\bf assimp\-Mesh}$\ast$ Level1\-::cat}}\label{class_level1_aef332d331ec58d349e53cf6fb7dd951e}
+\hypertarget{class_level1_aa9917581ef00ebe786fa2f89bdb5a765}{\index{Level1@{Level1}!entity\-Manager@{entity\-Manager}}
+\index{entity\-Manager@{entity\-Manager}!Level1@{Level1}}
+\subsubsection[{entity\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Entity\-Manager}$\ast$ Level1\-::entity\-Manager}}\label{class_level1_aa9917581ef00ebe786fa2f89bdb5a765}
+\hypertarget{class_level1_acc67ce4d008a8f081378139ed81ea9da}{\index{Level1@{Level1}!linear@{linear}}
+\index{linear@{linear}!Level1@{Level1}}
+\subsubsection[{linear}]{\setlength{\rightskip}{0pt plus 5cm}float Level1\-::linear}}\label{class_level1_acc67ce4d008a8f081378139ed81ea9da}
+\hypertarget{class_level1_a27e8e0e393395dbcb01b4317d05a922e}{\index{Level1@{Level1}!rocket@{rocket}}
+\index{rocket@{rocket}!Level1@{Level1}}
+\subsubsection[{rocket}]{\setlength{\rightskip}{0pt plus 5cm}{\bf assimp\-Mesh}$\ast$ Level1\-::rocket}}\label{class_level1_a27e8e0e393395dbcb01b4317d05a922e}
+\hypertarget{class_level1_a052318511122312a63806a8f7e999417}{\index{Level1@{Level1}!rocket\-Forward\-Vector@{rocket\-Forward\-Vector}}
+\index{rocket\-Forward\-Vector@{rocket\-Forward\-Vector}!Level1@{Level1}}
+\subsubsection[{rocket\-Forward\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M3\-D\-Vector3f} Level1\-::rocket\-Forward\-Vector}}\label{class_level1_a052318511122312a63806a8f7e999417}
+\hypertarget{class_level1_abc8a371bf1f22d4abae3fcd7f52a4188}{\index{Level1@{Level1}!rocket\-Origin@{rocket\-Origin}}
+\index{rocket\-Origin@{rocket\-Origin}!Level1@{Level1}}
+\subsubsection[{rocket\-Origin}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M3\-D\-Vector3f} Level1\-::rocket\-Origin}}\label{class_level1_abc8a371bf1f22d4abae3fcd7f52a4188}
+\hypertarget{class_level1_af64a6427f0f7ac73ee16d1d6d4bc3162}{\index{Level1@{Level1}!rocket\-Up\-Vector@{rocket\-Up\-Vector}}
+\index{rocket\-Up\-Vector@{rocket\-Up\-Vector}!Level1@{Level1}}
+\subsubsection[{rocket\-Up\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M3\-D\-Vector3f} Level1\-::rocket\-Up\-Vector}}\label{class_level1_af64a6427f0f7ac73ee16d1d6d4bc3162}
+\hypertarget{class_level1_a7ccfe53965cd6952089cad249f0e593f}{\index{Level1@{Level1}!start@{start}}
+\index{start@{start}!Level1@{Level1}}
+\subsubsection[{start}]{\setlength{\rightskip}{0pt plus 5cm}bool Level1\-::start}}\label{class_level1_a7ccfe53965cd6952089cad249f0e593f}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{_level1_8h}{Level1.\-h}\item 
+src/\hyperlink{_level1_8cpp}{Level1.\-cpp}\end{DoxyCompactItemize}

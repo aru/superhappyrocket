@@ -1,0 +1,164 @@
+\hypertarget{class_renderer}{\section{Renderer Class Reference}
+\label{class_renderer}\index{Renderer@{Renderer}}
+}
+
+
+{\ttfamily \#include $<$Open\-G\-L\-Renderer.\-h$>$}
+
+
+
+Collaboration diagram for Renderer\-:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_renderer_a93739e2106db9a71a989624e2aba351b}{Renderer} (\hyperlink{class_context}{Context} $\ast$ctx)
+\item 
+\hyperlink{class_renderer_a7ebf46f54dab9905f79b80f7fddb76a6}{Renderer} ()
+\item 
+\hyperlink{class_renderer_afeee408862d5bd6255a6882d47e6d5cd}{$\sim$\-Renderer} ()
+\item 
+const \hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{class_renderer_aeecf8faabad34ae777fe78072b1cf3dc}{Initialize} ()
+\item 
+const \hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{class_renderer_aaecd57c557b19b663dde3f9b68c7225b}{Load\-Content} ()
+\item 
+const \hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{class_renderer_a64742dbde9e2395eda3331f30285e952}{Update} (float delta)
+\item 
+const \hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{class_renderer_adeff95953a3591a3fd64102d4c96c248}{Draw} ()
+\item 
+const \hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{class_renderer_a565a7473e51799603e441cec72247254}{Unload\-Content} ()
+\item 
+const \hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{class_renderer_a7acf9ae659b0dcb9b552056789bd14b0}{Change\-Size} (\hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} n\-Width, \hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} n\-Height)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} \hyperlink{_s_d_l__opengl_8h_a428a91acf2c2439dc1a257708ee1f805}{A\-P\-I\-E\-N\-T\-R\-Y} \hyperlink{class_renderer_a038fbeec8dbb94117caa42668df7e5a6}{my\-Error\-Callback} (\hyperlink{_g_l_e_w_2glew_8h_a5d5233918a454ad3975c620a69ac5f0b}{G\-Lenum} \-\_\-source, \hyperlink{_g_l_e_w_2glew_8h_a5d5233918a454ad3975c620a69ac5f0b}{G\-Lenum} \-\_\-type, \hyperlink{_g_l_e_w_2glew_8h_a68c4714e43d8e827d80759f9cb864f3c}{G\-Luint} \-\_\-id, \hyperlink{_g_l_e_w_2glew_8h_a5d5233918a454ad3975c620a69ac5f0b}{G\-Lenum} \-\_\-severity, \hyperlink{_g_l_e_w_2glew_8h_a554225105c98042437ff21db4732908f}{G\-Lsizei} \-\_\-length, const char $\ast$\-\_\-message, \hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void} $\ast$\-\_\-user\-Param)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_context}{Context} $\ast$ \hyperlink{class_renderer_aea515600e7513ae80843e009e5148f53}{ctxt}
+\item 
+\hyperlink{class_camera}{Camera} $\ast$ \hyperlink{class_renderer_af7ed774ad36cde6ec727ccc0bd5d0b6f}{camera}
+\item 
+\hyperlink{class_g_l_shader_manager}{G\-L\-Shader\-Manager} \hyperlink{class_renderer_a8cde2a34816fc71455871bc0e3b18853}{shader\-Manager}
+\item 
+vector$<$ \hyperlink{class_simple_object}{Simple\-Object} $\ast$ $>$ \hyperlink{class_renderer_a0720c526eb9be11876d4849af801eb91}{actors}
+\item 
+\hyperlink{class_light}{Light} $\ast$ \hyperlink{class_renderer_adade11a742565582736c8058041803e5}{light}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{_g_l_e_w_2glew_8h_a68c4714e43d8e827d80759f9cb864f3c}{G\-Luint} \hyperlink{class_renderer_a4182a30e4246da1112f631b3d850ac14}{unused\-Ids} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_renderer_a93739e2106db9a71a989624e2aba351b}{\index{Renderer@{Renderer}!Renderer@{Renderer}}
+\index{Renderer@{Renderer}!Renderer@{Renderer}}
+\subsubsection[{Renderer}]{\setlength{\rightskip}{0pt plus 5cm}Renderer\-::\-Renderer (
+\begin{DoxyParamCaption}
+\item[{{\bf Context} $\ast$}]{ctx}
+\end{DoxyParamCaption}
+)}}\label{class_renderer_a93739e2106db9a71a989624e2aba351b}
+\hypertarget{class_renderer_a7ebf46f54dab9905f79b80f7fddb76a6}{\index{Renderer@{Renderer}!Renderer@{Renderer}}
+\index{Renderer@{Renderer}!Renderer@{Renderer}}
+\subsubsection[{Renderer}]{\setlength{\rightskip}{0pt plus 5cm}Renderer\-::\-Renderer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_renderer_a7ebf46f54dab9905f79b80f7fddb76a6}
+\hypertarget{class_renderer_afeee408862d5bd6255a6882d47e6d5cd}{\index{Renderer@{Renderer}!$\sim$\-Renderer@{$\sim$\-Renderer}}
+\index{$\sim$\-Renderer@{$\sim$\-Renderer}!Renderer@{Renderer}}
+\subsubsection[{$\sim$\-Renderer}]{\setlength{\rightskip}{0pt plus 5cm}Renderer\-::$\sim$\-Renderer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_renderer_afeee408862d5bd6255a6882d47e6d5cd}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_renderer_a7acf9ae659b0dcb9b552056789bd14b0}{\index{Renderer@{Renderer}!Change\-Size@{Change\-Size}}
+\index{Change\-Size@{Change\-Size}!Renderer@{Renderer}}
+\subsubsection[{Change\-Size}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf int} Renderer\-::\-Change\-Size (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{n\-Width, }
+\item[{{\bf int}}]{n\-Height}
+\end{DoxyParamCaption}
+)}}\label{class_renderer_a7acf9ae659b0dcb9b552056789bd14b0}
+\hypertarget{class_renderer_adeff95953a3591a3fd64102d4c96c248}{\index{Renderer@{Renderer}!Draw@{Draw}}
+\index{Draw@{Draw}!Renderer@{Renderer}}
+\subsubsection[{Draw}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf int} Renderer\-::\-Draw (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{class_renderer_adeff95953a3591a3fd64102d4c96c248}
+\hypertarget{class_renderer_aeecf8faabad34ae777fe78072b1cf3dc}{\index{Renderer@{Renderer}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Renderer@{Renderer}}
+\subsubsection[{Initialize}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf int} Renderer\-::\-Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_renderer_aeecf8faabad34ae777fe78072b1cf3dc}
+\hypertarget{class_renderer_aaecd57c557b19b663dde3f9b68c7225b}{\index{Renderer@{Renderer}!Load\-Content@{Load\-Content}}
+\index{Load\-Content@{Load\-Content}!Renderer@{Renderer}}
+\subsubsection[{Load\-Content}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf int} Renderer\-::\-Load\-Content (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_renderer_aaecd57c557b19b663dde3f9b68c7225b}
+\hypertarget{class_renderer_a038fbeec8dbb94117caa42668df7e5a6}{\index{Renderer@{Renderer}!my\-Error\-Callback@{my\-Error\-Callback}}
+\index{my\-Error\-Callback@{my\-Error\-Callback}!Renderer@{Renderer}}
+\subsubsection[{my\-Error\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf A\-P\-I\-E\-N\-T\-R\-Y} Renderer\-::my\-Error\-Callback (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-Lenum}}]{\-\_\-source, }
+\item[{{\bf G\-Lenum}}]{\-\_\-type, }
+\item[{{\bf G\-Luint}}]{\-\_\-id, }
+\item[{{\bf G\-Lenum}}]{\-\_\-severity, }
+\item[{{\bf G\-Lsizei}}]{\-\_\-length, }
+\item[{const char $\ast$}]{\-\_\-message, }
+\item[{{\bf void} $\ast$}]{\-\_\-user\-Param}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_renderer_a038fbeec8dbb94117caa42668df7e5a6}
+\hypertarget{class_renderer_a565a7473e51799603e441cec72247254}{\index{Renderer@{Renderer}!Unload\-Content@{Unload\-Content}}
+\index{Unload\-Content@{Unload\-Content}!Renderer@{Renderer}}
+\subsubsection[{Unload\-Content}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf int} Renderer\-::\-Unload\-Content (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_renderer_a565a7473e51799603e441cec72247254}
+\hypertarget{class_renderer_a64742dbde9e2395eda3331f30285e952}{\index{Renderer@{Renderer}!Update@{Update}}
+\index{Update@{Update}!Renderer@{Renderer}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf int} Renderer\-::\-Update (
+\begin{DoxyParamCaption}
+\item[{float}]{delta}
+\end{DoxyParamCaption}
+)}}\label{class_renderer_a64742dbde9e2395eda3331f30285e952}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_renderer_a0720c526eb9be11876d4849af801eb91}{\index{Renderer@{Renderer}!actors@{actors}}
+\index{actors@{actors}!Renderer@{Renderer}}
+\subsubsection[{actors}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Simple\-Object}$\ast$$>$ Renderer\-::actors}}\label{class_renderer_a0720c526eb9be11876d4849af801eb91}
+\hypertarget{class_renderer_af7ed774ad36cde6ec727ccc0bd5d0b6f}{\index{Renderer@{Renderer}!camera@{camera}}
+\index{camera@{camera}!Renderer@{Renderer}}
+\subsubsection[{camera}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camera}$\ast$ Renderer\-::camera}}\label{class_renderer_af7ed774ad36cde6ec727ccc0bd5d0b6f}
+\hypertarget{class_renderer_aea515600e7513ae80843e009e5148f53}{\index{Renderer@{Renderer}!ctxt@{ctxt}}
+\index{ctxt@{ctxt}!Renderer@{Renderer}}
+\subsubsection[{ctxt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Context}$\ast$ Renderer\-::ctxt}}\label{class_renderer_aea515600e7513ae80843e009e5148f53}
+\hypertarget{class_renderer_adade11a742565582736c8058041803e5}{\index{Renderer@{Renderer}!light@{light}}
+\index{light@{light}!Renderer@{Renderer}}
+\subsubsection[{light}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Light}$\ast$ Renderer\-::light}}\label{class_renderer_adade11a742565582736c8058041803e5}
+\hypertarget{class_renderer_a8cde2a34816fc71455871bc0e3b18853}{\index{Renderer@{Renderer}!shader\-Manager@{shader\-Manager}}
+\index{shader\-Manager@{shader\-Manager}!Renderer@{Renderer}}
+\subsubsection[{shader\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-L\-Shader\-Manager} Renderer\-::shader\-Manager}}\label{class_renderer_a8cde2a34816fc71455871bc0e3b18853}
+\hypertarget{class_renderer_a4182a30e4246da1112f631b3d850ac14}{\index{Renderer@{Renderer}!unused\-Ids@{unused\-Ids}}
+\index{unused\-Ids@{unused\-Ids}!Renderer@{Renderer}}
+\subsubsection[{unused\-Ids}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-Luint} Renderer\-::unused\-Ids = 0\hspace{0.3cm}{\ttfamily [static]}}}\label{class_renderer_a4182a30e4246da1112f631b3d850ac14}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{_open_g_l_renderer_8h}{Open\-G\-L\-Renderer.\-h}\item 
+src/\hyperlink{_open_g_l_renderer_8cpp}{Open\-G\-L\-Renderer.\-cpp}\end{DoxyCompactItemize}

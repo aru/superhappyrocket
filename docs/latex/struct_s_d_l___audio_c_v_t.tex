@@ -1,0 +1,73 @@
+\hypertarget{struct_s_d_l___audio_c_v_t}{\section{S\-D\-L\-\_\-\-Audio\-C\-V\-T Struct Reference}
+\label{struct_s_d_l___audio_c_v_t}\index{S\-D\-L\-\_\-\-Audio\-C\-V\-T@{S\-D\-L\-\_\-\-Audio\-C\-V\-T}}
+}
+
+
+{\ttfamily \#include $<$S\-D\-L\-\_\-audio.\-h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{struct_s_d_l___audio_c_v_t_ac600a035a48df05e14d3712fd6953ad4}{needed}
+\item 
+\hyperlink{_s_d_l__audio_8h_a491ed103fd25d920c4e6b7495217ce66}{S\-D\-L\-\_\-\-Audio\-Format} \hyperlink{struct_s_d_l___audio_c_v_t_a6ae81231e017105e6d5e745a51732e16}{src\-\_\-format}
+\item 
+\hyperlink{_s_d_l__audio_8h_a491ed103fd25d920c4e6b7495217ce66}{S\-D\-L\-\_\-\-Audio\-Format} \hyperlink{struct_s_d_l___audio_c_v_t_a8f890d017be857a3b048bf00525736c6}{dst\-\_\-format}
+\item 
+double \hyperlink{struct_s_d_l___audio_c_v_t_ad886122c23a6673073baace31bff3b6c}{rate\-\_\-incr}
+\item 
+\hyperlink{_s_d_l__stdinc_8h_a2944638813a090aa23e62f4da842c3e2}{Uint8} $\ast$ \hyperlink{struct_s_d_l___audio_c_v_t_a080db27b929efa983c5161360ffce310}{buf}
+\item 
+\hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{struct_s_d_l___audio_c_v_t_aeaeb8c5a63c3ab96471fbfdf412c78ff}{len}
+\item 
+\hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{struct_s_d_l___audio_c_v_t_a5c60163f34d1947e5b166c23aba9879d}{len\-\_\-cvt}
+\item 
+\hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{struct_s_d_l___audio_c_v_t_ac9662d47cf2348b82b27b151150116b0}{len\-\_\-mult}
+\item 
+double \hyperlink{struct_s_d_l___audio_c_v_t_a5628ff5ccf711de9d77c0a4a9f57d2f0}{len\-\_\-ratio}
+\item 
+S\-D\-L\-\_\-\-Audio\-Filter \hyperlink{struct_s_d_l___audio_c_v_t_aeec0ebddc5e142bbafcc94a6014ad23e}{filters} \mbox{[}10\mbox{]}
+\item 
+\hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{struct_s_d_l___audio_c_v_t_a35093b3ad3331c17416c593a76012b63}{filter\-\_\-index}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{struct_s_d_l___audio_c_v_t_a080db27b929efa983c5161360ffce310}{\index{S\-D\-L\-\_\-\-Audio\-C\-V\-T@{S\-D\-L\-\_\-\-Audio\-C\-V\-T}!buf@{buf}}
+\index{buf@{buf}!SDL_AudioCVT@{S\-D\-L\-\_\-\-Audio\-C\-V\-T}}
+\subsubsection[{buf}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Uint8}$\ast$ S\-D\-L\-\_\-\-Audio\-C\-V\-T\-::buf}}\label{struct_s_d_l___audio_c_v_t_a080db27b929efa983c5161360ffce310}
+Buffer to hold entire audio data \hypertarget{struct_s_d_l___audio_c_v_t_a8f890d017be857a3b048bf00525736c6}{\index{S\-D\-L\-\_\-\-Audio\-C\-V\-T@{S\-D\-L\-\_\-\-Audio\-C\-V\-T}!dst\-\_\-format@{dst\-\_\-format}}
+\index{dst\-\_\-format@{dst\-\_\-format}!SDL_AudioCVT@{S\-D\-L\-\_\-\-Audio\-C\-V\-T}}
+\subsubsection[{dst\-\_\-format}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-D\-L\-\_\-\-Audio\-Format} S\-D\-L\-\_\-\-Audio\-C\-V\-T\-::dst\-\_\-format}}\label{struct_s_d_l___audio_c_v_t_a8f890d017be857a3b048bf00525736c6}
+Target audio format \hypertarget{struct_s_d_l___audio_c_v_t_a35093b3ad3331c17416c593a76012b63}{\index{S\-D\-L\-\_\-\-Audio\-C\-V\-T@{S\-D\-L\-\_\-\-Audio\-C\-V\-T}!filter\-\_\-index@{filter\-\_\-index}}
+\index{filter\-\_\-index@{filter\-\_\-index}!SDL_AudioCVT@{S\-D\-L\-\_\-\-Audio\-C\-V\-T}}
+\subsubsection[{filter\-\_\-index}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} S\-D\-L\-\_\-\-Audio\-C\-V\-T\-::filter\-\_\-index}}\label{struct_s_d_l___audio_c_v_t_a35093b3ad3331c17416c593a76012b63}
+Current audio conversion function \hypertarget{struct_s_d_l___audio_c_v_t_aeec0ebddc5e142bbafcc94a6014ad23e}{\index{S\-D\-L\-\_\-\-Audio\-C\-V\-T@{S\-D\-L\-\_\-\-Audio\-C\-V\-T}!filters@{filters}}
+\index{filters@{filters}!SDL_AudioCVT@{S\-D\-L\-\_\-\-Audio\-C\-V\-T}}
+\subsubsection[{filters}]{\setlength{\rightskip}{0pt plus 5cm}S\-D\-L\-\_\-\-Audio\-Filter S\-D\-L\-\_\-\-Audio\-C\-V\-T\-::filters\mbox{[}10\mbox{]}}}\label{struct_s_d_l___audio_c_v_t_aeec0ebddc5e142bbafcc94a6014ad23e}
+Filter list \hypertarget{struct_s_d_l___audio_c_v_t_aeaeb8c5a63c3ab96471fbfdf412c78ff}{\index{S\-D\-L\-\_\-\-Audio\-C\-V\-T@{S\-D\-L\-\_\-\-Audio\-C\-V\-T}!len@{len}}
+\index{len@{len}!SDL_AudioCVT@{S\-D\-L\-\_\-\-Audio\-C\-V\-T}}
+\subsubsection[{len}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} S\-D\-L\-\_\-\-Audio\-C\-V\-T\-::len}}\label{struct_s_d_l___audio_c_v_t_aeaeb8c5a63c3ab96471fbfdf412c78ff}
+Length of original audio buffer \hypertarget{struct_s_d_l___audio_c_v_t_a5c60163f34d1947e5b166c23aba9879d}{\index{S\-D\-L\-\_\-\-Audio\-C\-V\-T@{S\-D\-L\-\_\-\-Audio\-C\-V\-T}!len\-\_\-cvt@{len\-\_\-cvt}}
+\index{len\-\_\-cvt@{len\-\_\-cvt}!SDL_AudioCVT@{S\-D\-L\-\_\-\-Audio\-C\-V\-T}}
+\subsubsection[{len\-\_\-cvt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} S\-D\-L\-\_\-\-Audio\-C\-V\-T\-::len\-\_\-cvt}}\label{struct_s_d_l___audio_c_v_t_a5c60163f34d1947e5b166c23aba9879d}
+Length of converted audio buffer \hypertarget{struct_s_d_l___audio_c_v_t_ac9662d47cf2348b82b27b151150116b0}{\index{S\-D\-L\-\_\-\-Audio\-C\-V\-T@{S\-D\-L\-\_\-\-Audio\-C\-V\-T}!len\-\_\-mult@{len\-\_\-mult}}
+\index{len\-\_\-mult@{len\-\_\-mult}!SDL_AudioCVT@{S\-D\-L\-\_\-\-Audio\-C\-V\-T}}
+\subsubsection[{len\-\_\-mult}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} S\-D\-L\-\_\-\-Audio\-C\-V\-T\-::len\-\_\-mult}}\label{struct_s_d_l___audio_c_v_t_ac9662d47cf2348b82b27b151150116b0}
+buffer must be len$\ast$len\-\_\-mult big \hypertarget{struct_s_d_l___audio_c_v_t_a5628ff5ccf711de9d77c0a4a9f57d2f0}{\index{S\-D\-L\-\_\-\-Audio\-C\-V\-T@{S\-D\-L\-\_\-\-Audio\-C\-V\-T}!len\-\_\-ratio@{len\-\_\-ratio}}
+\index{len\-\_\-ratio@{len\-\_\-ratio}!SDL_AudioCVT@{S\-D\-L\-\_\-\-Audio\-C\-V\-T}}
+\subsubsection[{len\-\_\-ratio}]{\setlength{\rightskip}{0pt plus 5cm}double S\-D\-L\-\_\-\-Audio\-C\-V\-T\-::len\-\_\-ratio}}\label{struct_s_d_l___audio_c_v_t_a5628ff5ccf711de9d77c0a4a9f57d2f0}
+Given len, final size is len$\ast$len\-\_\-ratio \hypertarget{struct_s_d_l___audio_c_v_t_ac600a035a48df05e14d3712fd6953ad4}{\index{S\-D\-L\-\_\-\-Audio\-C\-V\-T@{S\-D\-L\-\_\-\-Audio\-C\-V\-T}!needed@{needed}}
+\index{needed@{needed}!SDL_AudioCVT@{S\-D\-L\-\_\-\-Audio\-C\-V\-T}}
+\subsubsection[{needed}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} S\-D\-L\-\_\-\-Audio\-C\-V\-T\-::needed}}\label{struct_s_d_l___audio_c_v_t_ac600a035a48df05e14d3712fd6953ad4}
+Set to 1 if conversion possible \hypertarget{struct_s_d_l___audio_c_v_t_ad886122c23a6673073baace31bff3b6c}{\index{S\-D\-L\-\_\-\-Audio\-C\-V\-T@{S\-D\-L\-\_\-\-Audio\-C\-V\-T}!rate\-\_\-incr@{rate\-\_\-incr}}
+\index{rate\-\_\-incr@{rate\-\_\-incr}!SDL_AudioCVT@{S\-D\-L\-\_\-\-Audio\-C\-V\-T}}
+\subsubsection[{rate\-\_\-incr}]{\setlength{\rightskip}{0pt plus 5cm}double S\-D\-L\-\_\-\-Audio\-C\-V\-T\-::rate\-\_\-incr}}\label{struct_s_d_l___audio_c_v_t_ad886122c23a6673073baace31bff3b6c}
+Rate conversion increment \hypertarget{struct_s_d_l___audio_c_v_t_a6ae81231e017105e6d5e745a51732e16}{\index{S\-D\-L\-\_\-\-Audio\-C\-V\-T@{S\-D\-L\-\_\-\-Audio\-C\-V\-T}!src\-\_\-format@{src\-\_\-format}}
+\index{src\-\_\-format@{src\-\_\-format}!SDL_AudioCVT@{S\-D\-L\-\_\-\-Audio\-C\-V\-T}}
+\subsubsection[{src\-\_\-format}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-D\-L\-\_\-\-Audio\-Format} S\-D\-L\-\_\-\-Audio\-C\-V\-T\-::src\-\_\-format}}\label{struct_s_d_l___audio_c_v_t_a6ae81231e017105e6d5e745a51732e16}
+Source audio format 
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+include/\-S\-D\-L/include/\hyperlink{_s_d_l__audio_8h}{S\-D\-L\-\_\-audio.\-h}\end{DoxyCompactItemize}

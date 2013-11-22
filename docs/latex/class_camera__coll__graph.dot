@@ -1,0 +1,15 @@
+digraph "Camera"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="Camera",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" cameraFrame" ];
+  Node2 [label="GLFrame",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_l_frame.html"];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" transformPipeline" ];
+  Node3 [label="GLGeometryTransform",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_l_geometry_transform.html"];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" _mProjection\n_mModelView" ];
+  Node4 [label="GLMatrixStack",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_l_matrix_stack.html"];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" projectionMatrix\nmodelViewMatrix" ];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" viewFrustum" ];
+  Node5 [label="GLFrustum",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_l_frustum.html"];
+}

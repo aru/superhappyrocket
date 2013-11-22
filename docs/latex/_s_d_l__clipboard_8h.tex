@@ -1,0 +1,65 @@
+\hypertarget{_s_d_l__clipboard_8h}{\section{include/\-S\-D\-L/include/\-S\-D\-L\-\_\-clipboard.h File Reference}
+\label{_s_d_l__clipboard_8h}\index{include/\-S\-D\-L/include/\-S\-D\-L\-\_\-clipboard.\-h@{include/\-S\-D\-L/include/\-S\-D\-L\-\_\-clipboard.\-h}}
+}
+{\ttfamily \#include \char`\"{}S\-D\-L\-\_\-stdinc.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}begin\-\_\-code.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}close\-\_\-code.\-h\char`\"{}}\\*
+Include dependency graph for S\-D\-L\-\_\-clipboard.\-h\-:
+This graph shows which files directly or indirectly include this file\-:
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{begin__code_8h_aa4c7a931f4a968f818b2a1b10a432185}{D\-E\-C\-L\-S\-P\-E\-C} \hyperlink{_s_d_l__thread_8h_a6a64f9be4433e4de6e2f2f548cf3c08e}{int} \hyperlink{begin__code_8h_a81faf4ba0455dc75f2e0507eddb79401}{S\-D\-L\-C\-A\-L\-L} \hyperlink{_s_d_l__clipboard_8h_a36d97ed867cc1a6a4f015aaa5972ed46}{S\-D\-L\-\_\-\-Set\-Clipboard\-Text} (const char $\ast$text)
+\begin{DoxyCompactList}\small\item\em Put U\-T\-F-\/8 text into the clipboard. \end{DoxyCompactList}\item 
+\hyperlink{begin__code_8h_aa4c7a931f4a968f818b2a1b10a432185}{D\-E\-C\-L\-S\-P\-E\-C} char $\ast$\hyperlink{begin__code_8h_a81faf4ba0455dc75f2e0507eddb79401}{S\-D\-L\-C\-A\-L\-L} \hyperlink{_s_d_l__clipboard_8h_abbe260fcf16ab844d6626e0bd83587d1}{S\-D\-L\-\_\-\-Get\-Clipboard\-Text} (\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void})
+\begin{DoxyCompactList}\small\item\em Get U\-T\-F-\/8 text from the clipboard, which must be freed with \hyperlink{_s_d_l__stdinc_8h_a0e4ade894d550ada1fa19dc2d46e88b8}{S\-D\-L\-\_\-free()} \end{DoxyCompactList}\item 
+\hyperlink{begin__code_8h_aa4c7a931f4a968f818b2a1b10a432185}{D\-E\-C\-L\-S\-P\-E\-C} \hyperlink{_s_d_l__stdinc_8h_a8fca68df0f976765230fe589a7c7733b}{S\-D\-L\-\_\-bool} \hyperlink{begin__code_8h_a81faf4ba0455dc75f2e0507eddb79401}{S\-D\-L\-C\-A\-L\-L} \hyperlink{_s_d_l__clipboard_8h_a415fa85de093cf6117626a9415394509}{S\-D\-L\-\_\-\-Has\-Clipboard\-Text} (\hyperlink{_s_d_l__opengl_8h_a3db05964a3cc4410f35b7ea2b7eb850d}{void})
+\begin{DoxyCompactList}\small\item\em Returns a flag indicating whether the clipboard exists and contains a text string that is non-\/empty. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Include file for S\-D\-L clipboard handling 
+
+\subsection{Function Documentation}
+\hypertarget{_s_d_l__clipboard_8h_abbe260fcf16ab844d6626e0bd83587d1}{\index{S\-D\-L\-\_\-clipboard.\-h@{S\-D\-L\-\_\-clipboard.\-h}!S\-D\-L\-\_\-\-Get\-Clipboard\-Text@{S\-D\-L\-\_\-\-Get\-Clipboard\-Text}}
+\index{S\-D\-L\-\_\-\-Get\-Clipboard\-Text@{S\-D\-L\-\_\-\-Get\-Clipboard\-Text}!SDL_clipboard.h@{S\-D\-L\-\_\-clipboard.\-h}}
+\subsubsection[{S\-D\-L\-\_\-\-Get\-Clipboard\-Text}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-E\-C\-L\-S\-P\-E\-C} char$\ast$ {\bf S\-D\-L\-C\-A\-L\-L} S\-D\-L\-\_\-\-Get\-Clipboard\-Text (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{_s_d_l__clipboard_8h_abbe260fcf16ab844d6626e0bd83587d1}
+
+
+Get U\-T\-F-\/8 text from the clipboard, which must be freed with \hyperlink{_s_d_l__stdinc_8h_a0e4ade894d550ada1fa19dc2d46e88b8}{S\-D\-L\-\_\-free()} 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_s_d_l__clipboard_8h_a36d97ed867cc1a6a4f015aaa5972ed46}{S\-D\-L\-\_\-\-Set\-Clipboard\-Text()} 
+\end{DoxySeeAlso}
+\hypertarget{_s_d_l__clipboard_8h_a415fa85de093cf6117626a9415394509}{\index{S\-D\-L\-\_\-clipboard.\-h@{S\-D\-L\-\_\-clipboard.\-h}!S\-D\-L\-\_\-\-Has\-Clipboard\-Text@{S\-D\-L\-\_\-\-Has\-Clipboard\-Text}}
+\index{S\-D\-L\-\_\-\-Has\-Clipboard\-Text@{S\-D\-L\-\_\-\-Has\-Clipboard\-Text}!SDL_clipboard.h@{S\-D\-L\-\_\-clipboard.\-h}}
+\subsubsection[{S\-D\-L\-\_\-\-Has\-Clipboard\-Text}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-E\-C\-L\-S\-P\-E\-C} {\bf S\-D\-L\-\_\-bool} {\bf S\-D\-L\-C\-A\-L\-L} S\-D\-L\-\_\-\-Has\-Clipboard\-Text (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{_s_d_l__clipboard_8h_a415fa85de093cf6117626a9415394509}
+
+
+Returns a flag indicating whether the clipboard exists and contains a text string that is non-\/empty. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_s_d_l__clipboard_8h_abbe260fcf16ab844d6626e0bd83587d1}{S\-D\-L\-\_\-\-Get\-Clipboard\-Text()} 
+\end{DoxySeeAlso}
+\hypertarget{_s_d_l__clipboard_8h_a36d97ed867cc1a6a4f015aaa5972ed46}{\index{S\-D\-L\-\_\-clipboard.\-h@{S\-D\-L\-\_\-clipboard.\-h}!S\-D\-L\-\_\-\-Set\-Clipboard\-Text@{S\-D\-L\-\_\-\-Set\-Clipboard\-Text}}
+\index{S\-D\-L\-\_\-\-Set\-Clipboard\-Text@{S\-D\-L\-\_\-\-Set\-Clipboard\-Text}!SDL_clipboard.h@{S\-D\-L\-\_\-clipboard.\-h}}
+\subsubsection[{S\-D\-L\-\_\-\-Set\-Clipboard\-Text}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-E\-C\-L\-S\-P\-E\-C} {\bf int} {\bf S\-D\-L\-C\-A\-L\-L} S\-D\-L\-\_\-\-Set\-Clipboard\-Text (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{text}
+\end{DoxyParamCaption}
+)}}\label{_s_d_l__clipboard_8h_a36d97ed867cc1a6a4f015aaa5972ed46}
+
+
+Put U\-T\-F-\/8 text into the clipboard. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_s_d_l__clipboard_8h_abbe260fcf16ab844d6626e0bd83587d1}{S\-D\-L\-\_\-\-Get\-Clipboard\-Text()} 
+\end{DoxySeeAlso}

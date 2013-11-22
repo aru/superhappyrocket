@@ -1,0 +1,34 @@
+\hypertarget{_s_d_l__quit_8h}{\section{include/\-S\-D\-L/include/\-S\-D\-L\-\_\-quit.h File Reference}
+\label{_s_d_l__quit_8h}\index{include/\-S\-D\-L/include/\-S\-D\-L\-\_\-quit.\-h@{include/\-S\-D\-L/include/\-S\-D\-L\-\_\-quit.\-h}}
+}
+{\ttfamily \#include \char`\"{}S\-D\-L\-\_\-stdinc.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}S\-D\-L\-\_\-error.\-h\char`\"{}}\\*
+Include dependency graph for S\-D\-L\-\_\-quit.\-h\-:
+This graph shows which files directly or indirectly include this file\-:
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_s_d_l__quit_8h_a28f0e45d1be91312001526ec45d9dc83}{S\-D\-L\-\_\-\-Quit\-Requested}()~(\hyperlink{_s_d_l__events_8h_aa15403d1c8fc341cd9cf750e27a66d19}{S\-D\-L\-\_\-\-Pump\-Events}(), (\hyperlink{_s_d_l__events_8h_a83618a672f963892ddd0eef74a402e75}{S\-D\-L\-\_\-\-Peep\-Events}(\hyperlink{begin__code_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\-U\-L\-L},0,\hyperlink{_s_d_l__events_8h_a8fdf1485b0419bb77b89e745267dc179a75469beff07bfd6aa7fa4f54674ce34d}{S\-D\-L\-\_\-\-P\-E\-E\-K\-E\-V\-E\-N\-T},\hyperlink{_s_d_l__events_8h_a3b589e89be6b35c02e0dd34a55f3fccaa31acc5fdafc86ebe2c1f5c3cae48d603}{S\-D\-L\-\_\-\-Q\-U\-I\-T},\hyperlink{_s_d_l__events_8h_a3b589e89be6b35c02e0dd34a55f3fccaa31acc5fdafc86ebe2c1f5c3cae48d603}{S\-D\-L\-\_\-\-Q\-U\-I\-T}) $>$ 0))
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Include file for S\-D\-L quit event handling.
+
+An \hyperlink{_s_d_l__events_8h_a3b589e89be6b35c02e0dd34a55f3fccaa31acc5fdafc86ebe2c1f5c3cae48d603}{S\-D\-L\-\_\-\-Q\-U\-I\-T} event is generated when the user tries to close the application window. If it is ignored or filtered out, the window will remain open. If it is not ignored or filtered, it is queued normally and the window is allowed to close. When the window is closed, screen updates will complete, but have no effect.
+
+\hyperlink{_s_d_l_8h_a8fc8d35348d7c74bad8392d776c937b8}{S\-D\-L\-\_\-\-Init()} installs signal handlers for S\-I\-G\-I\-N\-T (keyboard interrupt) and S\-I\-G\-T\-E\-R\-M (system termination request), if handlers do not already exist, that generate \hyperlink{_s_d_l__events_8h_a3b589e89be6b35c02e0dd34a55f3fccaa31acc5fdafc86ebe2c1f5c3cae48d603}{S\-D\-L\-\_\-\-Q\-U\-I\-T} events as well. There is no way to determine the cause of an \hyperlink{_s_d_l__events_8h_a3b589e89be6b35c02e0dd34a55f3fccaa31acc5fdafc86ebe2c1f5c3cae48d603}{S\-D\-L\-\_\-\-Q\-U\-I\-T} event, but setting a signal handler in your application will override the default generation of quit events for that signal.
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_s_d_l_8h_afdabaf714781099083592051f2d9ac11}{S\-D\-L\-\_\-\-Quit()} 
+\end{DoxySeeAlso}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_s_d_l__quit_8h_a28f0e45d1be91312001526ec45d9dc83}{\index{S\-D\-L\-\_\-quit.\-h@{S\-D\-L\-\_\-quit.\-h}!S\-D\-L\-\_\-\-Quit\-Requested@{S\-D\-L\-\_\-\-Quit\-Requested}}
+\index{S\-D\-L\-\_\-\-Quit\-Requested@{S\-D\-L\-\_\-\-Quit\-Requested}!SDL_quit.h@{S\-D\-L\-\_\-quit.\-h}}
+\subsubsection[{S\-D\-L\-\_\-\-Quit\-Requested}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-D\-L\-\_\-\-Quit\-Requested(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~({\bf S\-D\-L\-\_\-\-Pump\-Events}(), ({\bf S\-D\-L\-\_\-\-Peep\-Events}({\bf N\-U\-L\-L},0,{\bf S\-D\-L\-\_\-\-P\-E\-E\-K\-E\-V\-E\-N\-T},{\bf S\-D\-L\-\_\-\-Q\-U\-I\-T},{\bf S\-D\-L\-\_\-\-Q\-U\-I\-T}) $>$ 0))}}\label{_s_d_l__quit_8h_a28f0e45d1be91312001526ec45d9dc83}
