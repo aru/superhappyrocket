@@ -2,7 +2,7 @@
  * InputManager.h
  *
  * This class is responsible for processing the user input such as keys
- * pressed or changes in the context.
+ * pressed or changes done to the current context.
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by

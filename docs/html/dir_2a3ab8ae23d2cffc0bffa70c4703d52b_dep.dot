@@ -1,0 +1,13 @@
+digraph "include/assimp" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_d44c64559bbebec7f509842c48db8b23 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="include" fontname="Helvetica", fontsize="10", URL="dir_d44c64559bbebec7f509842c48db8b23.html"]
+  subgraph clusterdir_2a3ab8ae23d2cffc0bffa70c4703d52b {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_2a3ab8ae23d2cffc0bffa70c4703d52b.html"];
+    dir_2a3ab8ae23d2cffc0bffa70c4703d52b [shape=plaintext label="assimp"];
+    dir_775f47f696c8e1c7e288eb84d9156930 [shape=box label="include" color="red" fillcolor="white" style="filled" URL="dir_775f47f696c8e1c7e288eb84d9156930.html"];
+  }
+  }
+}
