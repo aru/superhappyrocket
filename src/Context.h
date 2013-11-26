@@ -4,8 +4,8 @@
  * The Game Context class, where we store things that are relevant 
  * to every object in the game, where the different managers are,
  * how to access all of the stuff. Can be saved to a file and loaded
- * for future support of many things, game saves, reloading, tab switching...
- * Window configuration, video mode is also stored in here
+ * for future support of many things, game saves, reloading, tab switching, etc
+ * Window configuration and video mode is also stored in here.
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by

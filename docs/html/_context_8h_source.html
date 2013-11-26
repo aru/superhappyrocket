@@ -31,7 +31,7 @@
   <td style="padding-left: 0.5em;">
    <div id="projectname">Super Happy Rocket
    </div>
-   <div id="projectbrief">Tesis</div>
+   <div id="projectbrief">Proyecto de Tesis</div>
   </td>
  </tr>
  </tbody>
@@ -68,7 +68,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -91,7 +90,7 @@ $(document).ready(function(){initNavTree('_context_8h_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -105,7 +104,7 @@ $(document).ready(function(){initNavTree('_context_8h_source.html','');});
 <div class="title">Context.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_context_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef SHR_CONTEXT</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SHR_CONTEXT</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor"></span></div>
@@ -129,15 +128,15 @@ $(document).ready(function(){initNavTree('_context_8h_source.html','');});
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">class </span><a class="code" href="classassimp_mesh.html">assimpMesh</a>;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">/* SHR Engine Includes */</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_audio_manager_8h.html">AudioManager.h</a>&quot;</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_input_manager_8h.html">InputManager.h</a>&quot;</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_open_g_l_renderer_8h.html">OpenGLRenderer.h</a>&quot;</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_camera_8h.html">Camera.h</a>&quot;</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_scene_manager_8h.html">SceneManager.h</a>&quot;</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_base_level_8h.html">BaseLevel.h</a>&quot;</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_timer_8h.html">Timer.h</a>&quot;</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_texture2_d_8h.html">Texture2D.h</a>&quot;</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_texture_manager_8h.html">TextureManager.h</a>&quot;</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &quot;AudioManager.h&quot;</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#include &quot;InputManager.h&quot;</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#include &quot;OpenGLRenderer.h&quot;</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#include &quot;Camera.h&quot;</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#include &quot;SceneManager.h&quot;</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#include &quot;BaseLevel.h&quot;</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#include &quot;Timer.h&quot;</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#include &quot;Texture2D.h&quot;</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#include &quot;TextureManager.h&quot;</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">/* GLTools Includes */</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#include &lt;GLShaderManager.h&gt;</span></div>
@@ -163,42 +162,39 @@ $(document).ready(function(){initNavTree('_context_8h_source.html','');});
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">int</span> SaveContext(<span class="keywordtype">char</span>* file);</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">/* Basepath of the game */</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="class_context.html#a46fc0cafaea89f78f5838b8bc9ff253d">   78</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">string</span> <a class="code" href="class_context.html#a46fc0cafaea89f78f5838b8bc9ff253d">basepath</a>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">string</span> basepath;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="comment">/* Global variables for an application */</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="class_context.html#a18396436d360bb916d9ff6f9affa09fd">   81</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_context.html#a18396436d360bb916d9ff6f9affa09fd">quit</a>;</div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="class_context.html#a6d0fc950bf72cf1e1360d83c744199fb">   82</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_context.html#a6d0fc950bf72cf1e1360d83c744199fb">width</a>, height, bpp, vMode;</div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="class_context.html#a048473846a616dccfb505c3d16b53e1a">   83</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_context.html#a048473846a616dccfb505c3d16b53e1a">level</a>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">bool</span> quit;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">int</span> width, height, bpp, vMode;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">int</span> level;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="comment">/* Pointers to classes */</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="class_context.html#a3302ca284ccc8094ce2a497dcb06a4a0">   86</a></span>&#160;    <a class="code" href="class_audio_manager.html">AudioManager</a>* <a class="code" href="class_context.html#a3302ca284ccc8094ce2a497dcb06a4a0">audio</a>;</div>
-<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="class_context.html#ae8838a6789805b90ba8c159d6efe471d">   87</a></span>&#160;    <a class="code" href="class_input_manager.html">InputManager</a>* <a class="code" href="class_context.html#ae8838a6789805b90ba8c159d6efe471d">input</a>;</div>
-<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="class_context.html#af9a7bf785053580e1f0593b8ffbec6b2">   88</a></span>&#160;    <a class="code" href="class_renderer.html">Renderer</a>* <a class="code" href="class_context.html#af9a7bf785053580e1f0593b8ffbec6b2">renderer</a>;</div>
-<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="class_context.html#a178048052fa4964079e3330ac5598559">   89</a></span>&#160;    <a class="code" href="class_camera.html">Camera</a>*   <a class="code" href="class_context.html#a178048052fa4964079e3330ac5598559">camera</a>;</div>
-<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="class_context.html#afb9c9684564aed2d556e2a11ade22d22">   90</a></span>&#160;    GLShaderManager* <a class="code" href="class_context.html#afb9c9684564aed2d556e2a11ade22d22">shaderManager</a>;</div>
-<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="class_context.html#a50debe673def575a9eeb00d8102ebbe8">   91</a></span>&#160;    <a class="code" href="class_timer.html">Timer</a>* <a class="code" href="class_context.html#a50debe673def575a9eeb00d8102ebbe8">timer</a>;</div>
-<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="class_context.html#a2d2b097b9e9a50f791ceec2fe2eaf6db">   92</a></span>&#160;    <a class="code" href="class_scene_manager.html">SceneManager</a>* <a class="code" href="class_context.html#a2d2b097b9e9a50f791ceec2fe2eaf6db">sceneManager</a>;</div>
-<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="class_context.html#ac50427687358ac8d9eb170dfcadab069">   93</a></span>&#160;    <a class="code" href="class_texture_manager.html">TextureManager</a>* <a class="code" href="class_context.html#ac50427687358ac8d9eb170dfcadab069">textureManager</a>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="class_audio_manager.html">AudioManager</a>* audio;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="class_input_manager.html">InputManager</a>* input;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="class_renderer.html">Renderer</a>* renderer;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="class_camera.html">Camera</a>*   camera;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    GLShaderManager* shaderManager;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="class_timer.html">Timer</a>* timer;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="class_scene_manager.html">SceneManager</a>* sceneManager;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="class_texture_manager.html">TextureManager</a>* textureManager;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;};</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">/* All-purpose macros */</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="_context_8h.html#a685fa5b084a27f8579c94f9a88f3b2ee">   97</a></span>&#160;<span class="preprocessor">#define SHR_SUCCESS 0</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="_context_8h.html#a7bb6aab028d28122596456c37417e571">   98</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SHR_FAIL    1</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#define SHR_SUCCESS 0</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SHR_FAIL    1</span></div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">/* Enum for all of our levels */</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="_context_8h.html#a0343d1dca47dc65e3c5d50d4c23e1879">  101</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="_context_8h.html#a0343d1dca47dc65e3c5d50d4c23e1879">GameLevels</a> </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keyword">enum</span> GameLevels </div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;{</div>
-<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="_context_8h.html#a0343d1dca47dc65e3c5d50d4c23e1879ac22743f1fc74de09544ecc9bab74a17b">  103</a></span>&#160;    <a class="code" href="_context_8h.html#a0343d1dca47dc65e3c5d50d4c23e1879ac22743f1fc74de09544ecc9bab74a17b">MAIN_MENU</a>,</div>
-<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="_context_8h.html#a0343d1dca47dc65e3c5d50d4c23e1879a5f6aff2efe946ec43f8bad546893b0af">  104</a></span>&#160;    <a class="code" href="_context_8h.html#a0343d1dca47dc65e3c5d50d4c23e1879a5f6aff2efe946ec43f8bad546893b0af">LEVEL1</a>,</div>
-<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="_context_8h.html#a0343d1dca47dc65e3c5d50d4c23e1879a00955312c6043316fe7dee6c67bbdc9a">  105</a></span>&#160;    <a class="code" href="_context_8h.html#a0343d1dca47dc65e3c5d50d4c23e1879a00955312c6043316fe7dee6c67bbdc9a">LEVEL2</a>,</div>
-<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="_context_8h.html#a0343d1dca47dc65e3c5d50d4c23e1879a32187f6279619afdb13e71151dd5ed0b">  106</a></span>&#160;    <a class="code" href="_context_8h.html#a0343d1dca47dc65e3c5d50d4c23e1879a32187f6279619afdb13e71151dd5ed0b">LEVEL3</a></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    MAIN_MENU,</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    LEVEL1,</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    LEVEL2,</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    LEVEL3</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;};</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="class_audio_manager_html"><div class="ttname"><a href="class_audio_manager.html">AudioManager</a></div><div class="ttdef"><b>Definition:</b> AudioManager.h:27</div></div>
-<div class="ttc" id="_open_g_l_renderer_8h_html"><div class="ttname"><a href="_open_g_l_renderer_8h.html">OpenGLRenderer.h</a></div></div>
-<div class="ttc" id="class_context_html_af9a7bf785053580e1f0593b8ffbec6b2"><div class="ttname"><a href="class_context.html#af9a7bf785053580e1f0593b8ffbec6b2">Context::renderer</a></div><div class="ttdeci">Renderer * renderer</div><div class="ttdef"><b>Definition:</b> Context.h:88</div></div>
-<div class="ttc" id="_input_manager_8h_html"><div class="ttname"><a href="_input_manager_8h.html">InputManager.h</a></div></div>
 <div class="ttc" id="class_base_level_html"><div class="ttname"><a href="class_base_level.html">BaseLevel</a></div><div class="ttdef"><b>Definition:</b> BaseLevel.h:26</div></div>
 <div class="ttc" id="class_timer_html"><div class="ttname"><a href="class_timer.html">Timer</a></div><div class="ttdef"><b>Definition:</b> Timer.h:21</div></div>
 <div class="ttc" id="class_texture2_d_html"><div class="ttname"><a href="class_texture2_d.html">Texture2D</a></div><div class="ttdef"><b>Definition:</b> Texture2D.h:23</div></div>
@@ -206,43 +202,20 @@ $(document).ready(function(){initNavTree('_context_8h_source.html','');});
 <div class="ttc" id="class_entity_manager_html"><div class="ttname"><a href="class_entity_manager.html">EntityManager</a></div><div class="ttdef"><b>Definition:</b> EntityManager.h:36</div></div>
 <div class="ttc" id="class_light_html"><div class="ttname"><a href="class_light.html">Light</a></div><div class="ttdef"><b>Definition:</b> Light.h:22</div></div>
 <div class="ttc" id="class_renderer_html"><div class="ttname"><a href="class_renderer.html">Renderer</a></div><div class="ttdef"><b>Definition:</b> OpenGLRenderer.h:44</div></div>
-<div class="ttc" id="class_context_html_a6d0fc950bf72cf1e1360d83c744199fb"><div class="ttname"><a href="class_context.html#a6d0fc950bf72cf1e1360d83c744199fb">Context::width</a></div><div class="ttdeci">int width</div><div class="ttdef"><b>Definition:</b> Context.h:82</div></div>
-<div class="ttc" id="_context_8h_html_a0343d1dca47dc65e3c5d50d4c23e1879ac22743f1fc74de09544ecc9bab74a17b"><div class="ttname"><a href="_context_8h.html#a0343d1dca47dc65e3c5d50d4c23e1879ac22743f1fc74de09544ecc9bab74a17b">MAIN_MENU</a></div><div class="ttdef"><b>Definition:</b> Context.h:103</div></div>
-<div class="ttc" id="class_context_html_a3302ca284ccc8094ce2a497dcb06a4a0"><div class="ttname"><a href="class_context.html#a3302ca284ccc8094ce2a497dcb06a4a0">Context::audio</a></div><div class="ttdeci">AudioManager * audio</div><div class="ttdef"><b>Definition:</b> Context.h:86</div></div>
-<div class="ttc" id="_audio_manager_8h_html"><div class="ttname"><a href="_audio_manager_8h.html">AudioManager.h</a></div></div>
-<div class="ttc" id="class_context_html_a2d2b097b9e9a50f791ceec2fe2eaf6db"><div class="ttname"><a href="class_context.html#a2d2b097b9e9a50f791ceec2fe2eaf6db">Context::sceneManager</a></div><div class="ttdeci">SceneManager * sceneManager</div><div class="ttdef"><b>Definition:</b> Context.h:92</div></div>
 <div class="ttc" id="class_camera_html"><div class="ttname"><a href="class_camera.html">Camera</a></div><div class="ttdef"><b>Definition:</b> Camera.h:32</div></div>
-<div class="ttc" id="_base_level_8h_html"><div class="ttname"><a href="_base_level_8h.html">BaseLevel.h</a></div></div>
 <div class="ttc" id="class_simple_object_html"><div class="ttname"><a href="class_simple_object.html">SimpleObject</a></div><div class="ttdef"><b>Definition:</b> SimpleObject.h:32</div></div>
-<div class="ttc" id="class_context_html_a46fc0cafaea89f78f5838b8bc9ff253d"><div class="ttname"><a href="class_context.html#a46fc0cafaea89f78f5838b8bc9ff253d">Context::basepath</a></div><div class="ttdeci">static const string basepath</div><div class="ttdef"><b>Definition:</b> Context.h:78</div></div>
-<div class="ttc" id="class_context_html_a048473846a616dccfb505c3d16b53e1a"><div class="ttname"><a href="class_context.html#a048473846a616dccfb505c3d16b53e1a">Context::level</a></div><div class="ttdeci">int level</div><div class="ttdef"><b>Definition:</b> Context.h:83</div></div>
-<div class="ttc" id="_context_8h_html_a0343d1dca47dc65e3c5d50d4c23e1879a5f6aff2efe946ec43f8bad546893b0af"><div class="ttname"><a href="_context_8h.html#a0343d1dca47dc65e3c5d50d4c23e1879a5f6aff2efe946ec43f8bad546893b0af">LEVEL1</a></div><div class="ttdef"><b>Definition:</b> Context.h:104</div></div>
-<div class="ttc" id="class_context_html_ae8838a6789805b90ba8c159d6efe471d"><div class="ttname"><a href="class_context.html#ae8838a6789805b90ba8c159d6efe471d">Context::input</a></div><div class="ttdeci">InputManager * input</div><div class="ttdef"><b>Definition:</b> Context.h:87</div></div>
 <div class="ttc" id="class_scene_manager_html"><div class="ttname"><a href="class_scene_manager.html">SceneManager</a></div><div class="ttdef"><b>Definition:</b> SceneManager.h:26</div></div>
 <div class="ttc" id="class_entity_html"><div class="ttname"><a href="class_entity.html">Entity</a></div><div class="ttdef"><b>Definition:</b> Entity.h:27</div></div>
-<div class="ttc" id="_timer_8h_html"><div class="ttname"><a href="_timer_8h.html">Timer.h</a></div></div>
 <div class="ttc" id="class_input_manager_html"><div class="ttname"><a href="class_input_manager.html">InputManager</a></div><div class="ttdef"><b>Definition:</b> InputManager.h:26</div></div>
-<div class="ttc" id="class_context_html_a178048052fa4964079e3330ac5598559"><div class="ttname"><a href="class_context.html#a178048052fa4964079e3330ac5598559">Context::camera</a></div><div class="ttdeci">Camera * camera</div><div class="ttdef"><b>Definition:</b> Context.h:89</div></div>
 <div class="ttc" id="classassimp_mesh_html"><div class="ttname"><a href="classassimp_mesh.html">assimpMesh</a></div><div class="ttdef"><b>Definition:</b> assimpMesh.h:36</div></div>
-<div class="ttc" id="_context_8h_html_a0343d1dca47dc65e3c5d50d4c23e1879a00955312c6043316fe7dee6c67bbdc9a"><div class="ttname"><a href="_context_8h.html#a0343d1dca47dc65e3c5d50d4c23e1879a00955312c6043316fe7dee6c67bbdc9a">LEVEL2</a></div><div class="ttdef"><b>Definition:</b> Context.h:105</div></div>
-<div class="ttc" id="class_context_html_afb9c9684564aed2d556e2a11ade22d22"><div class="ttname"><a href="class_context.html#afb9c9684564aed2d556e2a11ade22d22">Context::shaderManager</a></div><div class="ttdeci">GLShaderManager * shaderManager</div><div class="ttdef"><b>Definition:</b> Context.h:90</div></div>
-<div class="ttc" id="_texture_manager_8h_html"><div class="ttname"><a href="_texture_manager_8h.html">TextureManager.h</a></div></div>
-<div class="ttc" id="class_context_html_a50debe673def575a9eeb00d8102ebbe8"><div class="ttname"><a href="class_context.html#a50debe673def575a9eeb00d8102ebbe8">Context::timer</a></div><div class="ttdeci">Timer * timer</div><div class="ttdef"><b>Definition:</b> Context.h:91</div></div>
-<div class="ttc" id="_context_8h_html_a0343d1dca47dc65e3c5d50d4c23e1879a32187f6279619afdb13e71151dd5ed0b"><div class="ttname"><a href="_context_8h.html#a0343d1dca47dc65e3c5d50d4c23e1879a32187f6279619afdb13e71151dd5ed0b">LEVEL3</a></div><div class="ttdef"><b>Definition:</b> Context.h:106</div></div>
-<div class="ttc" id="_camera_8h_html"><div class="ttname"><a href="_camera_8h.html">Camera.h</a></div></div>
-<div class="ttc" id="class_context_html_ac50427687358ac8d9eb170dfcadab069"><div class="ttname"><a href="class_context.html#ac50427687358ac8d9eb170dfcadab069">Context::textureManager</a></div><div class="ttdeci">TextureManager * textureManager</div><div class="ttdef"><b>Definition:</b> Context.h:93</div></div>
 <div class="ttc" id="class_context_html"><div class="ttname"><a href="class_context.html">Context</a></div><div class="ttdef"><b>Definition:</b> Context.h:64</div></div>
-<div class="ttc" id="_texture2_d_8h_html"><div class="ttname"><a href="_texture2_d_8h.html">Texture2D.h</a></div></div>
-<div class="ttc" id="class_context_html_a18396436d360bb916d9ff6f9affa09fd"><div class="ttname"><a href="class_context.html#a18396436d360bb916d9ff6f9affa09fd">Context::quit</a></div><div class="ttdeci">bool quit</div><div class="ttdef"><b>Definition:</b> Context.h:81</div></div>
-<div class="ttc" id="_scene_manager_8h_html"><div class="ttname"><a href="_scene_manager_8h.html">SceneManager.h</a></div></div>
-<div class="ttc" id="_context_8h_html_a0343d1dca47dc65e3c5d50d4c23e1879"><div class="ttname"><a href="_context_8h.html#a0343d1dca47dc65e3c5d50d4c23e1879">GameLevels</a></div><div class="ttdeci">GameLevels</div><div class="ttdef"><b>Definition:</b> Context.h:101</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="_context_8h.html">Context.h</a></li>
-    <li class="footer">Generated on Fri Nov 22 2013 01:11:42 for Super Happy Rocket by
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><b>Context.h</b></li>
+    <li class="footer">Generated on Tue Nov 26 2013 12:36:58 for Super Happy Rocket by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

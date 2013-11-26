@@ -31,7 +31,7 @@
   <td style="padding-left: 0.5em;">
    <div id="projectname">Super Happy Rocket
    </div>
-   <div id="projectbrief">Tesis</div>
+   <div id="projectbrief">Proyecto de Tesis</div>
   </td>
  </tr>
  </tbody>
@@ -69,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('class_reflected_object.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -116,440 +116,143 @@ $(document).ready(function(){initNavTree('class_reflected_object.html','');});
 <div class="dynheader">
 Inheritance diagram for ReflectedObject:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_reflected_object__inherit__graph.png" border="0" usemap="#_reflected_object_inherit__map" alt="Inheritance graph"/></div>
-<map name="_reflected_object_inherit__map" id="_reflected_object_inherit__map">
+ <div class="center">
+  <img src="class_reflected_object.png" usemap="#ReflectedObject_map" alt=""/>
+  <map id="ReflectedObject_map" name="ReflectedObject_map">
+<area href="class_simple_object.html" alt="SimpleObject" shape="rect" coords="0,0,102,24"/>
 </map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for ReflectedObject:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_reflected_object__coll__graph.png" border="0" usemap="#_reflected_object_coll__map" alt="Collaboration graph"/></div>
-<map name="_reflected_object_coll__map" id="_reflected_object_coll__map">
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8711e4d9032dadb5d5b81f552cc2562a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_reflected_object.html#a8711e4d9032dadb5d5b81f552cc2562a">ReflectedObject</a> (const char *upperTexture, GLint reflectedText)</td></tr>
+<tr class="memitem:a8711e4d9032dadb5d5b81f552cc2562a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8711e4d9032dadb5d5b81f552cc2562a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ReflectedObject</b> (const char *upperTexture, GLint reflectedText)</td></tr>
 <tr class="separator:a8711e4d9032dadb5d5b81f552cc2562a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf8abc601d8b7b3bf572285b640f4151"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_reflected_object.html#acf8abc601d8b7b3bf572285b640f4151">~ReflectedObject</a> ()</td></tr>
-<tr class="separator:acf8abc601d8b7b3bf572285b640f4151"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23a203d873af1f447c0f401ff43c9ed3"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_reflected_object.html#a23a203d873af1f447c0f401ff43c9ed3">Initialize</a> (<a class="el" href="class_context.html">Context</a> *ctx)</td></tr>
+<tr class="memitem:a23a203d873af1f447c0f401ff43c9ed3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a23a203d873af1f447c0f401ff43c9ed3"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>Initialize</b> (<a class="el" href="class_context.html">Context</a> *ctx)</td></tr>
 <tr class="separator:a23a203d873af1f447c0f401ff43c9ed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88763d37ca6b0dccbe0ade77510c3103"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_reflected_object.html#a88763d37ca6b0dccbe0ade77510c3103">LoadContent</a> ()</td></tr>
+<tr class="memitem:a88763d37ca6b0dccbe0ade77510c3103"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a88763d37ca6b0dccbe0ade77510c3103"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>LoadContent</b> ()</td></tr>
 <tr class="separator:a88763d37ca6b0dccbe0ade77510c3103"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c8c2856d74cb357d7698ede5114bed3"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_reflected_object.html#a4c8c2856d74cb357d7698ede5114bed3">Draw</a> (<a class="el" href="class_camera.html">Camera</a> *camera, GLShaderManager *shaderManager, <a class="el" href="class_texture_manager.html">TextureManager</a> *textureManager, <a class="el" href="class_light.html">Light</a> *light)</td></tr>
+<tr class="memitem:a4c8c2856d74cb357d7698ede5114bed3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c8c2856d74cb357d7698ede5114bed3"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>Draw</b> (<a class="el" href="class_camera.html">Camera</a> *camera, GLShaderManager *shaderManager, <a class="el" href="class_texture_manager.html">TextureManager</a> *textureManager, <a class="el" href="class_light.html">Light</a> *light)</td></tr>
 <tr class="separator:a4c8c2856d74cb357d7698ede5114bed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a332b863a984c7e6bdc83a5465ea6710f"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_reflected_object.html#a332b863a984c7e6bdc83a5465ea6710f">UnloadContent</a> ()</td></tr>
+<tr class="memitem:a332b863a984c7e6bdc83a5465ea6710f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a332b863a984c7e6bdc83a5465ea6710f"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>UnloadContent</b> ()</td></tr>
 <tr class="separator:a332b863a984c7e6bdc83a5465ea6710f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_simple_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_simple_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_simple_object.html">SimpleObject</a></td></tr>
-<tr class="memitem:ac896d1529367b4a17367018a172b5867 inherit pub_methods_class_simple_object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_object.html#ac896d1529367b4a17367018a172b5867">SimpleObject</a> ()</td></tr>
-<tr class="separator:ac896d1529367b4a17367018a172b5867 inherit pub_methods_class_simple_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05d8f5dc9883812fe3779f3639e7cdac inherit pub_methods_class_simple_object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_object.html#a05d8f5dc9883812fe3779f3639e7cdac">SimpleObject</a> (const <a class="el" href="class_simple_object.html">SimpleObject</a> &amp;obj)</td></tr>
+<tr class="memitem:a05d8f5dc9883812fe3779f3639e7cdac inherit pub_methods_class_simple_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a05d8f5dc9883812fe3779f3639e7cdac"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SimpleObject</b> (const <a class="el" href="class_simple_object.html">SimpleObject</a> &amp;obj)</td></tr>
 <tr class="separator:a05d8f5dc9883812fe3779f3639e7cdac inherit pub_methods_class_simple_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4223f47628fe1849cb2bc3d0afa289c inherit pub_methods_class_simple_object"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_object.html#aa4223f47628fe1849cb2bc3d0afa289c">~SimpleObject</a> ()</td></tr>
-<tr class="separator:aa4223f47628fe1849cb2bc3d0afa289c inherit pub_methods_class_simple_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a153209a7b59e36afec7d555708700a25 inherit pub_methods_class_simple_object"><td class="memItemLeft" align="right" valign="top">virtual const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_object.html#a153209a7b59e36afec7d555708700a25">Draw</a> ()</td></tr>
+<tr class="memitem:a153209a7b59e36afec7d555708700a25 inherit pub_methods_class_simple_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a153209a7b59e36afec7d555708700a25"></a>
+virtual const int&#160;</td><td class="memItemRight" valign="bottom"><b>Draw</b> ()</td></tr>
 <tr class="separator:a153209a7b59e36afec7d555708700a25 inherit pub_methods_class_simple_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7523273ddea5901d2049575229c8b5ca inherit pub_methods_class_simple_object"><td class="memItemLeft" align="right" valign="top">virtual const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_object.html#a7523273ddea5901d2049575229c8b5ca">Update</a> ()</td></tr>
+<tr class="memitem:a7523273ddea5901d2049575229c8b5ca inherit pub_methods_class_simple_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7523273ddea5901d2049575229c8b5ca"></a>
+virtual const int&#160;</td><td class="memItemRight" valign="bottom"><b>Update</b> ()</td></tr>
 <tr class="separator:a7523273ddea5901d2049575229c8b5ca inherit pub_methods_class_simple_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a738e99a76838e45c4b953b25eab0d36a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_context.html">Context</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_reflected_object.html#a738e99a76838e45c4b953b25eab0d36a">ctxt</a></td></tr>
+<tr class="memitem:a738e99a76838e45c4b953b25eab0d36a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a738e99a76838e45c4b953b25eab0d36a"></a>
+<a class="el" href="class_context.html">Context</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>ctxt</b></td></tr>
 <tr class="separator:a738e99a76838e45c4b953b25eab0d36a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89e421d06632f614f568b45220f2f53b"><td class="memItemLeft" align="right" valign="top">GLbyte *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_reflected_object.html#a89e421d06632f614f568b45220f2f53b">pBytes</a></td></tr>
+<tr class="memitem:a89e421d06632f614f568b45220f2f53b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a89e421d06632f614f568b45220f2f53b"></a>
+GLbyte *&#160;</td><td class="memItemRight" valign="bottom"><b>pBytes</b></td></tr>
 <tr class="separator:a89e421d06632f614f568b45220f2f53b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a583a67a5b6dbda1287e2b37de5ea71ed"><td class="memItemLeft" align="right" valign="top">GLint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_reflected_object.html#a583a67a5b6dbda1287e2b37de5ea71ed">iWidth</a></td></tr>
+<tr class="memitem:a583a67a5b6dbda1287e2b37de5ea71ed"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a583a67a5b6dbda1287e2b37de5ea71ed"></a>
+GLint&#160;</td><td class="memItemRight" valign="bottom"><b>iWidth</b></td></tr>
 <tr class="separator:a583a67a5b6dbda1287e2b37de5ea71ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9b1acb9aec983faba0ada8c26bf8f63"><td class="memItemLeft" align="right" valign="top">GLint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_reflected_object.html#ad9b1acb9aec983faba0ada8c26bf8f63">iHeight</a></td></tr>
+<tr class="memitem:ad9b1acb9aec983faba0ada8c26bf8f63"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad9b1acb9aec983faba0ada8c26bf8f63"></a>
+GLint&#160;</td><td class="memItemRight" valign="bottom"><b>iHeight</b></td></tr>
 <tr class="separator:ad9b1acb9aec983faba0ada8c26bf8f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e73769d17244d41cbc7be2e9ba28cb6"><td class="memItemLeft" align="right" valign="top">GLint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_reflected_object.html#a0e73769d17244d41cbc7be2e9ba28cb6">iComponents</a></td></tr>
+<tr class="memitem:a0e73769d17244d41cbc7be2e9ba28cb6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0e73769d17244d41cbc7be2e9ba28cb6"></a>
+GLint&#160;</td><td class="memItemRight" valign="bottom"><b>iComponents</b></td></tr>
 <tr class="separator:a0e73769d17244d41cbc7be2e9ba28cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbcd1c6196c972ac7656eda5b96b6b7b"><td class="memItemLeft" align="right" valign="top">GLenum&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_reflected_object.html#abbcd1c6196c972ac7656eda5b96b6b7b">eFormat</a></td></tr>
+<tr class="memitem:abbcd1c6196c972ac7656eda5b96b6b7b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abbcd1c6196c972ac7656eda5b96b6b7b"></a>
+GLenum&#160;</td><td class="memItemRight" valign="bottom"><b>eFormat</b></td></tr>
 <tr class="separator:abbcd1c6196c972ac7656eda5b96b6b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a462b9a120ad3f187ab3c278e80d70898"><td class="memItemLeft" align="right" valign="top">GLint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_reflected_object.html#a462b9a120ad3f187ab3c278e80d70898">locMVPReflect</a></td></tr>
+<tr class="memitem:a462b9a120ad3f187ab3c278e80d70898"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a462b9a120ad3f187ab3c278e80d70898"></a>
+GLint&#160;</td><td class="memItemRight" valign="bottom"><b>locMVPReflect</b></td></tr>
 <tr class="separator:a462b9a120ad3f187ab3c278e80d70898"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2894aad160b5633fdeb926e9b87f5d4c"><td class="memItemLeft" align="right" valign="top">GLint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_reflected_object.html#a2894aad160b5633fdeb926e9b87f5d4c">locMVReflect</a></td></tr>
+<tr class="memitem:a2894aad160b5633fdeb926e9b87f5d4c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2894aad160b5633fdeb926e9b87f5d4c"></a>
+GLint&#160;</td><td class="memItemRight" valign="bottom"><b>locMVReflect</b></td></tr>
 <tr class="separator:a2894aad160b5633fdeb926e9b87f5d4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a314b6d1a893ba805ab2c9f820a6b1488"><td class="memItemLeft" align="right" valign="top">GLint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_reflected_object.html#a314b6d1a893ba805ab2c9f820a6b1488">locNormalReflect</a></td></tr>
+<tr class="memitem:a314b6d1a893ba805ab2c9f820a6b1488"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a314b6d1a893ba805ab2c9f820a6b1488"></a>
+GLint&#160;</td><td class="memItemRight" valign="bottom"><b>locNormalReflect</b></td></tr>
 <tr class="separator:a314b6d1a893ba805ab2c9f820a6b1488"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2df82f3aabf7ca72574a2bfab025c105"><td class="memItemLeft" align="right" valign="top">GLint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_reflected_object.html#a2df82f3aabf7ca72574a2bfab025c105">locInvertedCamera</a></td></tr>
+<tr class="memitem:a2df82f3aabf7ca72574a2bfab025c105"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2df82f3aabf7ca72574a2bfab025c105"></a>
+GLint&#160;</td><td class="memItemRight" valign="bottom"><b>locInvertedCamera</b></td></tr>
 <tr class="separator:a2df82f3aabf7ca72574a2bfab025c105"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bd8030e15ac3f526d8b8eedd4a45b4e"><td class="memItemLeft" align="right" valign="top">GLint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_reflected_object.html#a7bd8030e15ac3f526d8b8eedd4a45b4e">locTarnishMap</a></td></tr>
+<tr class="memitem:a7bd8030e15ac3f526d8b8eedd4a45b4e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7bd8030e15ac3f526d8b8eedd4a45b4e"></a>
+GLint&#160;</td><td class="memItemRight" valign="bottom"><b>locTarnishMap</b></td></tr>
 <tr class="separator:a7bd8030e15ac3f526d8b8eedd4a45b4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada830f957ecd16328c3f14efd32ad3d5"><td class="memItemLeft" align="right" valign="top">GLint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_reflected_object.html#ada830f957ecd16328c3f14efd32ad3d5">locCubeMap</a></td></tr>
+<tr class="memitem:ada830f957ecd16328c3f14efd32ad3d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ada830f957ecd16328c3f14efd32ad3d5"></a>
+GLint&#160;</td><td class="memItemRight" valign="bottom"><b>locCubeMap</b></td></tr>
 <tr class="separator:ada830f957ecd16328c3f14efd32ad3d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a688cbd6ac7c044ec419f62401b3caaf5"><td class="memItemLeft" align="right" valign="top">GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_reflected_object.html#a688cbd6ac7c044ec419f62401b3caaf5">reflectedTexture</a></td></tr>
+<tr class="memitem:a688cbd6ac7c044ec419f62401b3caaf5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a688cbd6ac7c044ec419f62401b3caaf5"></a>
+GLuint&#160;</td><td class="memItemRight" valign="bottom"><b>reflectedTexture</b></td></tr>
 <tr class="separator:a688cbd6ac7c044ec419f62401b3caaf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_class_simple_object"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_simple_object')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_simple_object.html">SimpleObject</a></td></tr>
-<tr class="memitem:a57b19debeebd6cc7544229593ac6f384 inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_object.html#a57b19debeebd6cc7544229593ac6f384">tBatch</a></td></tr>
+<tr class="memitem:a57b19debeebd6cc7544229593ac6f384 inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a57b19debeebd6cc7544229593ac6f384"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>tBatch</b></td></tr>
 <tr class="separator:a57b19debeebd6cc7544229593ac6f384 inherit pub_attribs_class_simple_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b91addc8702d48b2f7fc55ef477865d inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top">GLBatch&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_object.html#a7b91addc8702d48b2f7fc55ef477865d">batch</a></td></tr>
+<tr class="memitem:a7b91addc8702d48b2f7fc55ef477865d inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7b91addc8702d48b2f7fc55ef477865d"></a>
+GLBatch&#160;</td><td class="memItemRight" valign="bottom"><b>batch</b></td></tr>
 <tr class="separator:a7b91addc8702d48b2f7fc55ef477865d inherit pub_attribs_class_simple_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a036fe05c95aabf2733dc0dab0470c385 inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top">GLTriangleBatch&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_object.html#a036fe05c95aabf2733dc0dab0470c385">triBatch</a></td></tr>
+<tr class="memitem:a036fe05c95aabf2733dc0dab0470c385 inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a036fe05c95aabf2733dc0dab0470c385"></a>
+GLTriangleBatch&#160;</td><td class="memItemRight" valign="bottom"><b>triBatch</b></td></tr>
 <tr class="separator:a036fe05c95aabf2733dc0dab0470c385 inherit pub_attribs_class_simple_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a981496140aef8731d72bec626a8151f5 inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top">GLFrame&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_object.html#a981496140aef8731d72bec626a8151f5">frame</a></td></tr>
+<tr class="memitem:a981496140aef8731d72bec626a8151f5 inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a981496140aef8731d72bec626a8151f5"></a>
+GLFrame&#160;</td><td class="memItemRight" valign="bottom"><b>frame</b></td></tr>
 <tr class="separator:a981496140aef8731d72bec626a8151f5 inherit pub_attribs_class_simple_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae10c997b5d538a0d2773e26473f8acd4 inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top">GLMatrixStack&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_object.html#ae10c997b5d538a0d2773e26473f8acd4">modelViewMatrix</a></td></tr>
+<tr class="memitem:ae10c997b5d538a0d2773e26473f8acd4 inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae10c997b5d538a0d2773e26473f8acd4"></a>
+GLMatrixStack&#160;</td><td class="memItemRight" valign="bottom"><b>modelViewMatrix</b></td></tr>
 <tr class="separator:ae10c997b5d538a0d2773e26473f8acd4 inherit pub_attribs_class_simple_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c506a2b642e61f7209ee9d3e455eb6a inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top">vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_object.html#a6c506a2b642e61f7209ee9d3e455eb6a">vertex</a></td></tr>
+<tr class="memitem:a6c506a2b642e61f7209ee9d3e455eb6a inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c506a2b642e61f7209ee9d3e455eb6a"></a>
+vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>vertex</b></td></tr>
 <tr class="separator:a6c506a2b642e61f7209ee9d3e455eb6a inherit pub_attribs_class_simple_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fce8b7b9f26a11982447cc4b8bc1907 inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top">vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_object.html#a0fce8b7b9f26a11982447cc4b8bc1907">index</a></td></tr>
+<tr class="memitem:a0fce8b7b9f26a11982447cc4b8bc1907 inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0fce8b7b9f26a11982447cc4b8bc1907"></a>
+vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>index</b></td></tr>
 <tr class="separator:a0fce8b7b9f26a11982447cc4b8bc1907 inherit pub_attribs_class_simple_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87b06e177a337bb9f7655dbd5067cf7b inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top">vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_object.html#a87b06e177a337bb9f7655dbd5067cf7b">normal</a></td></tr>
+<tr class="memitem:a87b06e177a337bb9f7655dbd5067cf7b inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a87b06e177a337bb9f7655dbd5067cf7b"></a>
+vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>normal</b></td></tr>
 <tr class="separator:a87b06e177a337bb9f7655dbd5067cf7b inherit pub_attribs_class_simple_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f989f1e7ef76020fe605947759157e1 inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top">vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_object.html#a4f989f1e7ef76020fe605947759157e1">texture</a></td></tr>
+<tr class="memitem:a4f989f1e7ef76020fe605947759157e1 inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f989f1e7ef76020fe605947759157e1"></a>
+vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>texture</b></td></tr>
 <tr class="separator:a4f989f1e7ef76020fe605947759157e1 inherit pub_attribs_class_simple_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fb6c6bd5c79d711f962d9c5e39d43ce inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top">vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_object.html#a1fb6c6bd5c79d711f962d9c5e39d43ce">color</a></td></tr>
+<tr class="memitem:a1fb6c6bd5c79d711f962d9c5e39d43ce inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1fb6c6bd5c79d711f962d9c5e39d43ce"></a>
+vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>color</b></td></tr>
 <tr class="separator:a1fb6c6bd5c79d711f962d9c5e39d43ce inherit pub_attribs_class_simple_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ef5676def2f0a847bd0672241f32d1c inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top">GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_object.html#a5ef5676def2f0a847bd0672241f32d1c">textureFile</a></td></tr>
+<tr class="memitem:a5ef5676def2f0a847bd0672241f32d1c inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ef5676def2f0a847bd0672241f32d1c"></a>
+GLuint&#160;</td><td class="memItemRight" valign="bottom"><b>textureFile</b></td></tr>
 <tr class="separator:a5ef5676def2f0a847bd0672241f32d1c inherit pub_attribs_class_simple_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab41156b3c92ca7ba616659dd174cf04 inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_object.html#aab41156b3c92ca7ba616659dd174cf04">tFile</a></td></tr>
+<tr class="memitem:aab41156b3c92ca7ba616659dd174cf04 inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aab41156b3c92ca7ba616659dd174cf04"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>tFile</b></td></tr>
 <tr class="separator:aab41156b3c92ca7ba616659dd174cf04 inherit pub_attribs_class_simple_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefcac4844710fb10f8cdfc537b1a7dba inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top">GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_object.html#aefcac4844710fb10f8cdfc537b1a7dba">shaderFile</a></td></tr>
+<tr class="memitem:aefcac4844710fb10f8cdfc537b1a7dba inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aefcac4844710fb10f8cdfc537b1a7dba"></a>
+GLuint&#160;</td><td class="memItemRight" valign="bottom"><b>shaderFile</b></td></tr>
 <tr class="separator:aefcac4844710fb10f8cdfc537b1a7dba inherit pub_attribs_class_simple_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb8f9ac2ea5c7342f14eb8d7e6afa9bc inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_object.html#aeb8f9ac2ea5c7342f14eb8d7e6afa9bc">vShader</a></td></tr>
+<tr class="memitem:aeb8f9ac2ea5c7342f14eb8d7e6afa9bc inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeb8f9ac2ea5c7342f14eb8d7e6afa9bc"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>vShader</b></td></tr>
 <tr class="separator:aeb8f9ac2ea5c7342f14eb8d7e6afa9bc inherit pub_attribs_class_simple_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66b038ae0b5d0801a613b39f020f8993 inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_object.html#a66b038ae0b5d0801a613b39f020f8993">fShader</a></td></tr>
+<tr class="memitem:a66b038ae0b5d0801a613b39f020f8993 inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a66b038ae0b5d0801a613b39f020f8993"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>fShader</b></td></tr>
 <tr class="separator:a66b038ae0b5d0801a613b39f020f8993 inherit pub_attribs_class_simple_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1ab3dd3b36a2d36d8b82fffc409ff92 inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top">M3DMatrix44f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_object.html#af1ab3dd3b36a2d36d8b82fffc409ff92">mScaleMatrix</a></td></tr>
+<tr class="memitem:af1ab3dd3b36a2d36d8b82fffc409ff92 inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af1ab3dd3b36a2d36d8b82fffc409ff92"></a>
+M3DMatrix44f&#160;</td><td class="memItemRight" valign="bottom"><b>mScaleMatrix</b></td></tr>
 <tr class="separator:af1ab3dd3b36a2d36d8b82fffc409ff92 inherit pub_attribs_class_simple_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a776a2ba2bde4e83e206346f8a22d454f inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top">M3DVector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_object.html#a776a2ba2bde4e83e206346f8a22d454f">scaleVector</a></td></tr>
+<tr class="memitem:a776a2ba2bde4e83e206346f8a22d454f inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a776a2ba2bde4e83e206346f8a22d454f"></a>
+M3DVector3f&#160;</td><td class="memItemRight" valign="bottom"><b>scaleVector</b></td></tr>
 <tr class="separator:a776a2ba2bde4e83e206346f8a22d454f inherit pub_attribs_class_simple_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="_reflected_object_8h.html">ReflectedObject.h</a></p>
+<div class="textblock"><p><a class="el" href="_reflected_object_8h_source.html">ReflectedObject.h</a></p>
 <p>The <a class="el" href="class_reflected_object.html">ReflectedObject</a> class is used to generate a reflected image of the object we load, in this case we create a reflection of the world to use in objects that have a reflection property.</p>
 <p>This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</p>
 <p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details <a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a8711e4d9032dadb5d5b81f552cc2562a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ReflectedObject::ReflectedObject </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>upperTexture</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">GLint&#160;</td>
-          <td class="paramname"><em>reflectedText</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="acf8abc601d8b7b3bf572285b640f4151"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ReflectedObject::~ReflectedObject </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a4c8c2856d74cb357d7698ede5114bed3"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int ReflectedObject::Draw </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_camera.html">Camera</a> *&#160;</td>
-          <td class="paramname"><em>camera</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">GLShaderManager *&#160;</td>
-          <td class="paramname"><em>shaderManager</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_texture_manager.html">TextureManager</a> *&#160;</td>
-          <td class="paramname"><em>textureManager</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_light.html">Light</a> *&#160;</td>
-          <td class="paramname"><em>light</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="class_simple_object.html#ac4a7b3ff3c2215ff68b3967b57c77fa9">SimpleObject</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a23a203d873af1f447c0f401ff43c9ed3"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int ReflectedObject::Initialize </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_context.html">Context</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="class_simple_object.html#ad8cab013f221a2b7132dc243a304b20f">SimpleObject</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a88763d37ca6b0dccbe0ade77510c3103"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int ReflectedObject::LoadContent </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="class_simple_object.html#ae06adca212a0d4bf4607b324908b2b8e">SimpleObject</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a332b863a984c7e6bdc83a5465ea6710f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int ReflectedObject::UnloadContent </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="class_simple_object.html#a5fe4d692b6633f2c68b6eae1d3f6b059">SimpleObject</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a738e99a76838e45c4b953b25eab0d36a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_context.html">Context</a>* ReflectedObject::ctxt</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="abbcd1c6196c972ac7656eda5b96b6b7b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">GLenum ReflectedObject::eFormat</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a0e73769d17244d41cbc7be2e9ba28cb6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">GLint ReflectedObject::iComponents</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ad9b1acb9aec983faba0ada8c26bf8f63"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">GLint ReflectedObject::iHeight</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a583a67a5b6dbda1287e2b37de5ea71ed"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">GLint ReflectedObject::iWidth</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ada830f957ecd16328c3f14efd32ad3d5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">GLint ReflectedObject::locCubeMap</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a2df82f3aabf7ca72574a2bfab025c105"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">GLint ReflectedObject::locInvertedCamera</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a462b9a120ad3f187ab3c278e80d70898"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">GLint ReflectedObject::locMVPReflect</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a2894aad160b5633fdeb926e9b87f5d4c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">GLint ReflectedObject::locMVReflect</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a314b6d1a893ba805ab2c9f820a6b1488"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">GLint ReflectedObject::locNormalReflect</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a7bd8030e15ac3f526d8b8eedd4a45b4e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">GLint ReflectedObject::locTarnishMap</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a89e421d06632f614f568b45220f2f53b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">GLbyte* ReflectedObject::pBytes</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a688cbd6ac7c044ec419f62401b3caaf5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">GLuint ReflectedObject::reflectedTexture</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/<a class="el" href="_reflected_object_8h_source.html">ReflectedObject.h</a></li>
-<li>src/<a class="el" href="_reflected_object_8cpp.html">ReflectedObject.cpp</a></li>
+<li>src/ReflectedObject.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -557,7 +260,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_reflected_object.html">ReflectedObject</a></li>
-    <li class="footer">Generated on Fri Nov 22 2013 01:11:43 for Super Happy Rocket by
+    <li class="footer">Generated on Tue Nov 26 2013 12:36:58 for Super Happy Rocket by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

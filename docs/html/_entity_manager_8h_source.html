@@ -31,7 +31,7 @@
   <td style="padding-left: 0.5em;">
    <div id="projectname">Super Happy Rocket
    </div>
-   <div id="projectbrief">Tesis</div>
+   <div id="projectbrief">Proyecto de Tesis</div>
   </td>
  </tr>
  </tbody>
@@ -68,7 +68,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -91,7 +90,7 @@ $(document).ready(function(){initNavTree('_entity_manager_8h_source.html','');})
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -105,11 +104,11 @@ $(document).ready(function(){initNavTree('_entity_manager_8h_source.html','');})
 <div class="title">EntityManager.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_entity_manager_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifndef SHR_ENTITYMANAGER</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SHR_ENTITYMANAGER</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="_entity_manager_8h.html#a4ed06b38fd40fe32b60c51165e4d6c96">   22</a></span>&#160;<span class="preprocessor">#define MAX_ENTITY_NUMBER 7</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define MAX_ENTITY_NUMBER 7</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">/* C++ STD includes */</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
@@ -118,8 +117,8 @@ $(document).ready(function(){initNavTree('_entity_manager_8h_source.html','');})
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">/* SHR includes */</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_context_8h.html">Context.h</a>&quot;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_entity_8h.html">Entity.h</a>&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;Context.h&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;Entity.h&quot;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">using namespace </span>std;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
@@ -148,48 +147,39 @@ $(document).ready(function(){initNavTree('_entity_manager_8h_source.html','');})
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">/**** Member objects ****/</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">/* we need a pointer to the player/rocket */</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_entity_manager.html#a1ef834cba3655b31adffb5ab16589205">   61</a></span>&#160;    <a class="code" href="classassimp_mesh.html">assimpMesh</a>* <a class="code" href="class_entity_manager.html#a1ef834cba3655b31adffb5ab16589205">player</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="classassimp_mesh.html">assimpMesh</a>* player;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">/* we need to declare a cutoff distance in z, after x distance after the player we reset the stars position */</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_entity_manager.html#abbb3c9bdca9545d9cce7b78074dc6be1">   64</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_entity_manager.html#abbb3c9bdca9545d9cce7b78074dc6be1">cutoffDistance</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">float</span> cutoffDistance;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">/* Our usual pointer to the context */</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="class_entity_manager.html#aa02de3470b7a14a2dec0f1e81d267222">   67</a></span>&#160;    <a class="code" href="class_context.html">Context</a>* <a class="code" href="class_entity_manager.html#aa02de3470b7a14a2dec0f1e81d267222">ctxt</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="class_context.html">Context</a>* ctxt;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">/* Our usual pointer to the audio manager */</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_entity_manager.html#a4cd55bb8a3aadd05cc78bd301cbd8648">   70</a></span>&#160;    <a class="code" href="class_audio_manager.html">AudioManager</a>* <a class="code" href="class_entity_manager.html#a4cd55bb8a3aadd05cc78bd301cbd8648">audio</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="class_audio_manager.html">AudioManager</a>* audio;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">/* An array to a list of spawn points */</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_entity_manager.html#a082583e28a3548b6a1660f8ad12e57c2">   73</a></span>&#160;    vector&lt;int&gt; <a class="code" href="class_entity_manager.html#a082583e28a3548b6a1660f8ad12e57c2">spawnTimes</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    vector&lt;int&gt; spawnTimes;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">/* An array for all of the objects that we will manage */</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_entity_manager.html#a13ba63d140c846361a6367139d5b44ce">   76</a></span>&#160;    vector&lt;Entity*&gt; <a class="code" href="class_entity_manager.html#a13ba63d140c846361a6367139d5b44ce">entities</a>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    vector&lt;Entity*&gt; entities;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">/* We need to know the time when the user pressed enter */</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="class_entity_manager.html#a5925567da54e6bfc6718cbcdd4bb058e">   79</a></span>&#160;    Uint32 <a class="code" href="class_entity_manager.html#a5925567da54e6bfc6718cbcdd4bb058e">startTime</a>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    Uint32 startTime;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="class_audio_manager_html"><div class="ttname"><a href="class_audio_manager.html">AudioManager</a></div><div class="ttdef"><b>Definition:</b> AudioManager.h:27</div></div>
-<div class="ttc" id="class_entity_manager_html_a4cd55bb8a3aadd05cc78bd301cbd8648"><div class="ttname"><a href="class_entity_manager.html#a4cd55bb8a3aadd05cc78bd301cbd8648">EntityManager::audio</a></div><div class="ttdeci">AudioManager * audio</div><div class="ttdef"><b>Definition:</b> EntityManager.h:70</div></div>
-<div class="ttc" id="class_entity_manager_html_abbb3c9bdca9545d9cce7b78074dc6be1"><div class="ttname"><a href="class_entity_manager.html#abbb3c9bdca9545d9cce7b78074dc6be1">EntityManager::cutoffDistance</a></div><div class="ttdeci">float cutoffDistance</div><div class="ttdef"><b>Definition:</b> EntityManager.h:64</div></div>
-<div class="ttc" id="class_entity_manager_html_a13ba63d140c846361a6367139d5b44ce"><div class="ttname"><a href="class_entity_manager.html#a13ba63d140c846361a6367139d5b44ce">EntityManager::entities</a></div><div class="ttdeci">vector&lt; Entity * &gt; entities</div><div class="ttdef"><b>Definition:</b> EntityManager.h:76</div></div>
 <div class="ttc" id="class_entity_manager_html"><div class="ttname"><a href="class_entity_manager.html">EntityManager</a></div><div class="ttdef"><b>Definition:</b> EntityManager.h:36</div></div>
-<div class="ttc" id="class_entity_manager_html_a5925567da54e6bfc6718cbcdd4bb058e"><div class="ttname"><a href="class_entity_manager.html#a5925567da54e6bfc6718cbcdd4bb058e">EntityManager::startTime</a></div><div class="ttdeci">Uint32 startTime</div><div class="ttdef"><b>Definition:</b> EntityManager.h:79</div></div>
-<div class="ttc" id="_entity_8h_html"><div class="ttname"><a href="_entity_8h.html">Entity.h</a></div></div>
 <div class="ttc" id="classassimp_mesh_html"><div class="ttname"><a href="classassimp_mesh.html">assimpMesh</a></div><div class="ttdef"><b>Definition:</b> assimpMesh.h:36</div></div>
-<div class="ttc" id="class_entity_manager_html_aa02de3470b7a14a2dec0f1e81d267222"><div class="ttname"><a href="class_entity_manager.html#aa02de3470b7a14a2dec0f1e81d267222">EntityManager::ctxt</a></div><div class="ttdeci">Context * ctxt</div><div class="ttdef"><b>Definition:</b> EntityManager.h:67</div></div>
-<div class="ttc" id="class_entity_manager_html_a082583e28a3548b6a1660f8ad12e57c2"><div class="ttname"><a href="class_entity_manager.html#a082583e28a3548b6a1660f8ad12e57c2">EntityManager::spawnTimes</a></div><div class="ttdeci">vector&lt; int &gt; spawnTimes</div><div class="ttdef"><b>Definition:</b> EntityManager.h:73</div></div>
 <div class="ttc" id="class_context_html"><div class="ttname"><a href="class_context.html">Context</a></div><div class="ttdef"><b>Definition:</b> Context.h:64</div></div>
-<div class="ttc" id="class_entity_manager_html_a1ef834cba3655b31adffb5ab16589205"><div class="ttname"><a href="class_entity_manager.html#a1ef834cba3655b31adffb5ab16589205">EntityManager::player</a></div><div class="ttdeci">assimpMesh * player</div><div class="ttdef"><b>Definition:</b> EntityManager.h:61</div></div>
-<div class="ttc" id="_context_8h_html"><div class="ttname"><a href="_context_8h.html">Context.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="_entity_manager_8h.html">EntityManager.h</a></li>
-    <li class="footer">Generated on Fri Nov 22 2013 01:11:42 for Super Happy Rocket by
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><b>EntityManager.h</b></li>
+    <li class="footer">Generated on Tue Nov 26 2013 12:36:58 for Super Happy Rocket by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

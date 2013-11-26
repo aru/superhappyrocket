@@ -31,7 +31,7 @@
   <td style="padding-left: 0.5em;">
    <div id="projectname">Super Happy Rocket
    </div>
-   <div id="projectbrief">Tesis</div>
+   <div id="projectbrief">Proyecto de Tesis</div>
   </td>
  </tr>
  </tbody>
@@ -68,7 +68,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -91,7 +90,7 @@ $(document).ready(function(){initNavTree('_s_d_l_app_8h_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -105,7 +104,7 @@ $(document).ready(function(){initNavTree('_s_d_l_app_8h_source.html','');});
 <div class="title">SDLApp.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_s_d_l_app_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#ifndef SHR_SDLAPP</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SHR_SDLAPP</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor"></span></div>
@@ -113,12 +112,12 @@ $(document).ready(function(){initNavTree('_s_d_l_app_8h_source.html','');});
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;SDL_thread.h&gt;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_context_8h.html">Context.h</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;Context.h&quot;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">using namespace </span>std;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">/* Debugging macro */</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="_s_d_l_app_8h.html#ad72dbcf6d0153db1b8d8a58001feed83">   32</a></span>&#160;<span class="preprocessor">#define DEBUG</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#define DEBUG</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_s_d_l_app.html">   34</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_s_d_l_app.html">SDLApp</a></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
@@ -134,43 +133,33 @@ $(document).ready(function(){initNavTree('_s_d_l_app_8h_source.html','');});
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">int</span> UnloadContent();</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">//int Shutdown();</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_s_d_l_app.html#aa618d890856ef32dd9eb5aaafef71082">   48</a></span>&#160;    <a class="code" href="class_context.html">Context</a>* <a class="code" href="class_s_d_l_app.html#aa618d890856ef32dd9eb5aaafef71082">ctxt</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="class_context.html">Context</a>* ctxt;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">//The window we&#39;ll be rendering to</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_s_d_l_app.html#a3e580384a6e338d91c5f6b474324ac72">   51</a></span>&#160;    SDL_Window* <a class="code" href="class_s_d_l_app.html#a3e580384a6e338d91c5f6b474324ac72">window</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    SDL_Window* window;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">//OpenGL context</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_s_d_l_app.html#a81b19177c28e37315c8a6e6b6283fc00">   54</a></span>&#160;    SDL_GLContext <a class="code" href="class_s_d_l_app.html#a81b19177c28e37315c8a6e6b6283fc00">gContext</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    SDL_GLContext gContext;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">/* Window parameters */</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_s_d_l_app.html#a7312e946df07c8cc67d60f3b526eb7e3">   57</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_s_d_l_app.html#a7312e946df07c8cc67d60f3b526eb7e3">width</a>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_s_d_l_app.html#a075d4e09e70ba64c8ec206580e26402c">   58</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_s_d_l_app.html#a075d4e09e70ba64c8ec206580e26402c">height</a>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_s_d_l_app.html#afcefe0414e22f19e20de7df6f4b75d93">   59</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_s_d_l_app.html#afcefe0414e22f19e20de7df6f4b75d93">bpp</a>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_s_d_l_app.html#a66b859368f2d1c4fb00e630b02a588e9">   60</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_s_d_l_app.html#a66b859368f2d1c4fb00e630b02a588e9">vMode</a>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_s_d_l_app.html#af08c1e44220e049fd418d83fcefcb65a">   61</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_s_d_l_app.html#af08c1e44220e049fd418d83fcefcb65a">wantRedisplay</a>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_s_d_l_app.html#a0a8e090434266f004871fc851459bf48">   62</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_s_d_l_app.html#a0a8e090434266f004871fc851459bf48">postRedisplay</a>() { wantRedisplay = 0; };</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">int</span> width;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">int</span> height;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">int</span> bpp;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">int</span> vMode;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">int</span> wantRedisplay;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> postRedisplay() { wantRedisplay = 0; };</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="class_s_d_l_app_html"><div class="ttname"><a href="class_s_d_l_app.html">SDLApp</a></div><div class="ttdef"><b>Definition:</b> SDLApp.h:34</div></div>
-<div class="ttc" id="class_s_d_l_app_html_a81b19177c28e37315c8a6e6b6283fc00"><div class="ttname"><a href="class_s_d_l_app.html#a81b19177c28e37315c8a6e6b6283fc00">SDLApp::gContext</a></div><div class="ttdeci">SDL_GLContext gContext</div><div class="ttdef"><b>Definition:</b> SDLApp.h:54</div></div>
-<div class="ttc" id="class_s_d_l_app_html_a0a8e090434266f004871fc851459bf48"><div class="ttname"><a href="class_s_d_l_app.html#a0a8e090434266f004871fc851459bf48">SDLApp::postRedisplay</a></div><div class="ttdeci">void postRedisplay()</div><div class="ttdef"><b>Definition:</b> SDLApp.h:62</div></div>
-<div class="ttc" id="class_s_d_l_app_html_a075d4e09e70ba64c8ec206580e26402c"><div class="ttname"><a href="class_s_d_l_app.html#a075d4e09e70ba64c8ec206580e26402c">SDLApp::height</a></div><div class="ttdeci">int height</div><div class="ttdef"><b>Definition:</b> SDLApp.h:58</div></div>
-<div class="ttc" id="class_s_d_l_app_html_a7312e946df07c8cc67d60f3b526eb7e3"><div class="ttname"><a href="class_s_d_l_app.html#a7312e946df07c8cc67d60f3b526eb7e3">SDLApp::width</a></div><div class="ttdeci">int width</div><div class="ttdef"><b>Definition:</b> SDLApp.h:57</div></div>
-<div class="ttc" id="class_s_d_l_app_html_af08c1e44220e049fd418d83fcefcb65a"><div class="ttname"><a href="class_s_d_l_app.html#af08c1e44220e049fd418d83fcefcb65a">SDLApp::wantRedisplay</a></div><div class="ttdeci">int wantRedisplay</div><div class="ttdef"><b>Definition:</b> SDLApp.h:61</div></div>
-<div class="ttc" id="class_s_d_l_app_html_a3e580384a6e338d91c5f6b474324ac72"><div class="ttname"><a href="class_s_d_l_app.html#a3e580384a6e338d91c5f6b474324ac72">SDLApp::window</a></div><div class="ttdeci">SDL_Window * window</div><div class="ttdef"><b>Definition:</b> SDLApp.h:51</div></div>
-<div class="ttc" id="class_s_d_l_app_html_aa618d890856ef32dd9eb5aaafef71082"><div class="ttname"><a href="class_s_d_l_app.html#aa618d890856ef32dd9eb5aaafef71082">SDLApp::ctxt</a></div><div class="ttdeci">Context * ctxt</div><div class="ttdef"><b>Definition:</b> SDLApp.h:48</div></div>
 <div class="ttc" id="class_context_html"><div class="ttname"><a href="class_context.html">Context</a></div><div class="ttdef"><b>Definition:</b> Context.h:64</div></div>
-<div class="ttc" id="class_s_d_l_app_html_a66b859368f2d1c4fb00e630b02a588e9"><div class="ttname"><a href="class_s_d_l_app.html#a66b859368f2d1c4fb00e630b02a588e9">SDLApp::vMode</a></div><div class="ttdeci">int vMode</div><div class="ttdef"><b>Definition:</b> SDLApp.h:60</div></div>
-<div class="ttc" id="class_s_d_l_app_html_afcefe0414e22f19e20de7df6f4b75d93"><div class="ttname"><a href="class_s_d_l_app.html#afcefe0414e22f19e20de7df6f4b75d93">SDLApp::bpp</a></div><div class="ttdeci">int bpp</div><div class="ttdef"><b>Definition:</b> SDLApp.h:59</div></div>
-<div class="ttc" id="_context_8h_html"><div class="ttname"><a href="_context_8h.html">Context.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="_s_d_l_app_8h.html">SDLApp.h</a></li>
-    <li class="footer">Generated on Fri Nov 22 2013 01:11:42 for Super Happy Rocket by
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><b>SDLApp.h</b></li>
+    <li class="footer">Generated on Tue Nov 26 2013 12:36:58 for Super Happy Rocket by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

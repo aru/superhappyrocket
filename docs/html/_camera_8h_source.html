@@ -31,7 +31,7 @@
   <td style="padding-left: 0.5em;">
    <div id="projectname">Super Happy Rocket
    </div>
-   <div id="projectbrief">Tesis</div>
+   <div id="projectbrief">Proyecto de Tesis</div>
   </td>
  </tr>
  </tbody>
@@ -68,7 +68,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -91,7 +90,7 @@ $(document).ready(function(){initNavTree('_camera_8h_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -105,7 +104,7 @@ $(document).ready(function(){initNavTree('_camera_8h_source.html','');});
 <div class="title">Camera.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_camera_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifndef SHR_CAMERA</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SHR_CAMERA</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor"></span></div>
@@ -123,50 +122,36 @@ $(document).ready(function(){initNavTree('_camera_8h_source.html','');});
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">/* Constructors */</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="class_camera.html#a01f94c3543f56ede7af49dc778f19331">Camera</a>();</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="class_camera.html#ad1897942d0ccf91052386388a497349f">~Camera</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="class_camera.html">Camera</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    ~<a class="code" href="class_camera.html">Camera</a>();</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">/* Member Specific Fucntions */</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_camera.html#afec9df7d6f9b20c4d0f80a4b7f1e7b45">MoveForward</a>( <span class="keywordtype">float</span> delta );</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_camera.html#a10ec2d162d88a981ea49f4c337c6f7b9">MoveLeft</a>( <span class="keywordtype">float</span> delta );</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_camera.html#ac2d7fe9d72ad9c5da32a07f1c68aa80f">MoveUp</a>( <span class="keywordtype">float</span> delta );</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_camera.html#ad245606a9d04c00aeb256be40591cdcd">RotateX</a>( <span class="keywordtype">float</span> delta );</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_camera.html#a63e68a46eb7144d38bf19573d2bd2705">RotateY</a>( <span class="keywordtype">float</span> delta );</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_camera.html#a24eacb152b9d517b8f7205017eb4d149">RotateZ</a>( <span class="keywordtype">float</span> delta );</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> MoveForward( <span class="keywordtype">float</span> delta );</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> MoveLeft( <span class="keywordtype">float</span> delta );</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> MoveUp( <span class="keywordtype">float</span> delta );</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> RotateX( <span class="keywordtype">float</span> delta );</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> RotateY( <span class="keywordtype">float</span> delta );</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> RotateZ( <span class="keywordtype">float</span> delta );</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">/* Member variables */</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_camera.html#a13d3701406fb54feeb9d1a7c9055d23d">   48</a></span>&#160;    M3DMatrix44f        <a class="code" href="class_camera.html#a13d3701406fb54feeb9d1a7c9055d23d">camera</a>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_camera.html#a4f30974092fec6f63a1aa5902d213f1a">   49</a></span>&#160;    GLFrame             <a class="code" href="class_camera.html#a4f30974092fec6f63a1aa5902d213f1a">cameraFrame</a>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_camera.html#aa9ebe4548ff6926ca2b23808f03f1c2f">   50</a></span>&#160;    GLMatrixStack       <a class="code" href="class_camera.html#aa9ebe4548ff6926ca2b23808f03f1c2f">modelViewMatrix</a>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_camera.html#ac673d4053983e72dec3b48187441a3c6">   51</a></span>&#160;    GLMatrixStack       <a class="code" href="class_camera.html#ac673d4053983e72dec3b48187441a3c6">projectionMatrix</a>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_camera.html#a0fc284a14ea8c5553dd5d88b34c18c36">   52</a></span>&#160;    GLFrustum           <a class="code" href="class_camera.html#a0fc284a14ea8c5553dd5d88b34c18c36">viewFrustum</a>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_camera.html#a262ad4e818859be2f115aac8320140d3">   53</a></span>&#160;    GLGeometryTransform <a class="code" href="class_camera.html#a262ad4e818859be2f115aac8320140d3">transformPipeline</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    M3DMatrix44f        camera;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    GLFrame             cameraFrame;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    GLMatrixStack       modelViewMatrix;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    GLMatrixStack       projectionMatrix;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    GLFrustum           viewFrustum;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    GLGeometryTransform transformPipeline;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="class_camera_html_a24eacb152b9d517b8f7205017eb4d149"><div class="ttname"><a href="class_camera.html#a24eacb152b9d517b8f7205017eb4d149">Camera::RotateZ</a></div><div class="ttdeci">void RotateZ(float delta)</div></div>
-<div class="ttc" id="class_camera_html_a4f30974092fec6f63a1aa5902d213f1a"><div class="ttname"><a href="class_camera.html#a4f30974092fec6f63a1aa5902d213f1a">Camera::cameraFrame</a></div><div class="ttdeci">GLFrame cameraFrame</div><div class="ttdef"><b>Definition:</b> Camera.h:49</div></div>
-<div class="ttc" id="class_camera_html_a63e68a46eb7144d38bf19573d2bd2705"><div class="ttname"><a href="class_camera.html#a63e68a46eb7144d38bf19573d2bd2705">Camera::RotateY</a></div><div class="ttdeci">void RotateY(float delta)</div></div>
-<div class="ttc" id="class_camera_html_ac2d7fe9d72ad9c5da32a07f1c68aa80f"><div class="ttname"><a href="class_camera.html#ac2d7fe9d72ad9c5da32a07f1c68aa80f">Camera::MoveUp</a></div><div class="ttdeci">void MoveUp(float delta)</div></div>
 <div class="ttc" id="class_camera_html"><div class="ttname"><a href="class_camera.html">Camera</a></div><div class="ttdef"><b>Definition:</b> Camera.h:32</div></div>
-<div class="ttc" id="class_camera_html_a262ad4e818859be2f115aac8320140d3"><div class="ttname"><a href="class_camera.html#a262ad4e818859be2f115aac8320140d3">Camera::transformPipeline</a></div><div class="ttdeci">GLGeometryTransform transformPipeline</div><div class="ttdef"><b>Definition:</b> Camera.h:53</div></div>
-<div class="ttc" id="class_camera_html_afec9df7d6f9b20c4d0f80a4b7f1e7b45"><div class="ttname"><a href="class_camera.html#afec9df7d6f9b20c4d0f80a4b7f1e7b45">Camera::MoveForward</a></div><div class="ttdeci">void MoveForward(float delta)</div></div>
-<div class="ttc" id="class_camera_html_a01f94c3543f56ede7af49dc778f19331"><div class="ttname"><a href="class_camera.html#a01f94c3543f56ede7af49dc778f19331">Camera::Camera</a></div><div class="ttdeci">Camera()</div><div class="ttdef"><b>Definition:</b> Camera.cpp:3</div></div>
-<div class="ttc" id="class_camera_html_ac673d4053983e72dec3b48187441a3c6"><div class="ttname"><a href="class_camera.html#ac673d4053983e72dec3b48187441a3c6">Camera::projectionMatrix</a></div><div class="ttdeci">GLMatrixStack projectionMatrix</div><div class="ttdef"><b>Definition:</b> Camera.h:51</div></div>
-<div class="ttc" id="class_camera_html_a10ec2d162d88a981ea49f4c337c6f7b9"><div class="ttname"><a href="class_camera.html#a10ec2d162d88a981ea49f4c337c6f7b9">Camera::MoveLeft</a></div><div class="ttdeci">void MoveLeft(float delta)</div></div>
-<div class="ttc" id="class_camera_html_ad1897942d0ccf91052386388a497349f"><div class="ttname"><a href="class_camera.html#ad1897942d0ccf91052386388a497349f">Camera::~Camera</a></div><div class="ttdeci">~Camera()</div><div class="ttdef"><b>Definition:</b> Camera.cpp:7</div></div>
-<div class="ttc" id="class_camera_html_ad245606a9d04c00aeb256be40591cdcd"><div class="ttname"><a href="class_camera.html#ad245606a9d04c00aeb256be40591cdcd">Camera::RotateX</a></div><div class="ttdeci">void RotateX(float delta)</div></div>
-<div class="ttc" id="class_camera_html_a13d3701406fb54feeb9d1a7c9055d23d"><div class="ttname"><a href="class_camera.html#a13d3701406fb54feeb9d1a7c9055d23d">Camera::camera</a></div><div class="ttdeci">M3DMatrix44f camera</div><div class="ttdef"><b>Definition:</b> Camera.h:48</div></div>
-<div class="ttc" id="class_camera_html_a0fc284a14ea8c5553dd5d88b34c18c36"><div class="ttname"><a href="class_camera.html#a0fc284a14ea8c5553dd5d88b34c18c36">Camera::viewFrustum</a></div><div class="ttdeci">GLFrustum viewFrustum</div><div class="ttdef"><b>Definition:</b> Camera.h:52</div></div>
-<div class="ttc" id="class_camera_html_aa9ebe4548ff6926ca2b23808f03f1c2f"><div class="ttname"><a href="class_camera.html#aa9ebe4548ff6926ca2b23808f03f1c2f">Camera::modelViewMatrix</a></div><div class="ttdeci">GLMatrixStack modelViewMatrix</div><div class="ttdef"><b>Definition:</b> Camera.h:50</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="_camera_8h.html">Camera.h</a></li>
-    <li class="footer">Generated on Fri Nov 22 2013 01:11:42 for Super Happy Rocket by
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><b>Camera.h</b></li>
+    <li class="footer">Generated on Tue Nov 26 2013 12:36:58 for Super Happy Rocket by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

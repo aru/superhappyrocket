@@ -31,7 +31,7 @@
   <td style="padding-left: 0.5em;">
    <div id="projectname">Super Happy Rocket
    </div>
-   <div id="projectbrief">Tesis</div>
+   <div id="projectbrief">Proyecto de Tesis</div>
   </td>
  </tr>
  </tbody>
@@ -68,7 +68,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -91,7 +90,7 @@ $(document).ready(function(){initNavTree('_texture_manager_8h_source.html','');}
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -105,73 +104,57 @@ $(document).ready(function(){initNavTree('_texture_manager_8h_source.html','');}
 <div class="title">TextureManager.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_texture_manager_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#ifndef SHR_TEXTUREMANAGER</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SHR_TEXTUREMANAGER</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_context_8h.html">Context.h</a>&quot;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_texture2_d_8h.html">Texture2D.h</a>&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;Context.h&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;Texture2D.h&quot;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_texture_manager.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_texture_manager.html">TextureManager</a></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="class_texture_manager.html#a3fdfac75701c2fae1cd7de289467c836">TextureManager</a>( <a class="code" href="class_context.html">Context</a>* ctx );</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="class_texture_manager.html#a001d6d74674961db79987e3222682576">~TextureManager</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="class_texture_manager.html">TextureManager</a>( <a class="code" href="class_context.html">Context</a>* ctx );</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    ~<a class="code" href="class_texture_manager.html">TextureManager</a>();</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">/* Standard engine methods */</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_texture_manager.html#ad7cb06e0fbae6bd29d2b84b935522879">Initialize</a>();</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_texture_manager.html#a40102729eb09354100deac642a413e60">LoadContent</a>();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_texture_manager.html#a2de373eb9fcf4ff670809a224a546f2d">UnloadContent</a>();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> Initialize();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> LoadContent();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> UnloadContent();</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">/* Helper Methods */</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_texture_manager.html#a8180ec2c0512a3b18dc5b419e14f98c2">bindTexture</a>( <span class="keywordtype">int</span> text );</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="class_texture_manager.html#a9a8dd1ab24d8d7942ef4dda31d4be5c0">LoadTGATexture</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *szFileName, GLenum minFilter, GLenum magFilter, GLenum wrapMode);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="class_texture_manager.html#a9a8dd1ab24d8d7942ef4dda31d4be5c0">LoadTGATexture</a>(<a class="code" href="class_texture2_d.html">Texture2D</a>* text);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> bindTexture( <span class="keywordtype">int</span> text );</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">bool</span> LoadTGATexture(<span class="keyword">const</span> <span class="keywordtype">char</span> *szFileName, GLenum minFilter, GLenum magFilter, GLenum wrapMode);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">bool</span> LoadTGATexture(<a class="code" href="class_texture2_d.html">Texture2D</a>* text);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">/* Member specific methods */</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_texture_manager.html#aed31054d5583505dacdd3211fe4298ce">addTexture</a>( <span class="keywordtype">string</span> file );</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_texture_manager.html#aed31054d5583505dacdd3211fe4298ce">addTexture</a>( <span class="keywordtype">char</span>* file );</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_texture_manager.html#aed31054d5583505dacdd3211fe4298ce">addTexture</a>( <a class="code" href="class_texture2_d.html">Texture2D</a>* text );</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> addTexture( <span class="keywordtype">string</span> file );</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> addTexture( <span class="keywordtype">char</span>* file );</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> addTexture( <a class="code" href="class_texture2_d.html">Texture2D</a>* text );</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">/* Member variables */</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_texture_manager.html#a772982cc59daac34255975d0c5dbcea6">   47</a></span>&#160;    <a class="code" href="class_context.html">Context</a>* <a class="code" href="class_texture_manager.html#a772982cc59daac34255975d0c5dbcea6">ctxt</a>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_texture_manager.html#addeef5e84ca3c522d910fe37618a20b7">   48</a></span>&#160;    GLuint *<a class="code" href="class_texture_manager.html#addeef5e84ca3c522d910fe37618a20b7">textures</a>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_texture_manager.html#a3a82a693ed6a11d179c5014ba70c1dc1">   49</a></span>&#160;    vector&lt;char*&gt; <a class="code" href="class_texture_manager.html#a3a82a693ed6a11d179c5014ba70c1dc1">textureFiles</a>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_texture_manager.html#a11e36cd38c0ede4b05d26f3701ad879c">   50</a></span>&#160;    vector&lt;Texture2D*&gt; <a class="code" href="class_texture_manager.html#a11e36cd38c0ede4b05d26f3701ad879c">texts</a>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_texture_manager.html#a683f7d58d8b19498b4d68a0f481c3290">   51</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_texture_manager.html#a683f7d58d8b19498b4d68a0f481c3290">numTextures</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="class_context.html">Context</a>* ctxt;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    GLuint *textures;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    vector&lt;char*&gt; textureFiles;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    vector&lt;Texture2D*&gt; texts;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">int</span> numTextures;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_texture_manager.html#a8cc5e3a2bfeecb26c2b921c2ddbfd1cf">   53</a></span>&#160;    GLbyte *<a class="code" href="class_texture_manager.html#a8cc5e3a2bfeecb26c2b921c2ddbfd1cf">pBytes</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    GLbyte *pBytes;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="class_texture_manager_html_a40102729eb09354100deac642a413e60"><div class="ttname"><a href="class_texture_manager.html#a40102729eb09354100deac642a413e60">TextureManager::LoadContent</a></div><div class="ttdeci">const int LoadContent()</div><div class="ttdef"><b>Definition:</b> TextureManager.cpp:18</div></div>
 <div class="ttc" id="class_texture2_d_html"><div class="ttname"><a href="class_texture2_d.html">Texture2D</a></div><div class="ttdef"><b>Definition:</b> Texture2D.h:23</div></div>
 <div class="ttc" id="class_texture_manager_html"><div class="ttname"><a href="class_texture_manager.html">TextureManager</a></div><div class="ttdef"><b>Definition:</b> TextureManager.h:25</div></div>
-<div class="ttc" id="class_texture_manager_html_a3fdfac75701c2fae1cd7de289467c836"><div class="ttname"><a href="class_texture_manager.html#a3fdfac75701c2fae1cd7de289467c836">TextureManager::TextureManager</a></div><div class="ttdeci">TextureManager(Context *ctx)</div><div class="ttdef"><b>Definition:</b> TextureManager.cpp:3</div></div>
-<div class="ttc" id="class_texture_manager_html_a001d6d74674961db79987e3222682576"><div class="ttname"><a href="class_texture_manager.html#a001d6d74674961db79987e3222682576">TextureManager::~TextureManager</a></div><div class="ttdeci">~TextureManager()</div><div class="ttdef"><b>Definition:</b> TextureManager.cpp:8</div></div>
-<div class="ttc" id="class_texture_manager_html_a11e36cd38c0ede4b05d26f3701ad879c"><div class="ttname"><a href="class_texture_manager.html#a11e36cd38c0ede4b05d26f3701ad879c">TextureManager::texts</a></div><div class="ttdeci">vector&lt; Texture2D * &gt; texts</div><div class="ttdef"><b>Definition:</b> TextureManager.h:50</div></div>
-<div class="ttc" id="class_texture_manager_html_a8cc5e3a2bfeecb26c2b921c2ddbfd1cf"><div class="ttname"><a href="class_texture_manager.html#a8cc5e3a2bfeecb26c2b921c2ddbfd1cf">TextureManager::pBytes</a></div><div class="ttdeci">GLbyte * pBytes</div><div class="ttdef"><b>Definition:</b> TextureManager.h:53</div></div>
-<div class="ttc" id="class_texture_manager_html_a683f7d58d8b19498b4d68a0f481c3290"><div class="ttname"><a href="class_texture_manager.html#a683f7d58d8b19498b4d68a0f481c3290">TextureManager::numTextures</a></div><div class="ttdeci">int numTextures</div><div class="ttdef"><b>Definition:</b> TextureManager.h:51</div></div>
-<div class="ttc" id="class_texture_manager_html_a2de373eb9fcf4ff670809a224a546f2d"><div class="ttname"><a href="class_texture_manager.html#a2de373eb9fcf4ff670809a224a546f2d">TextureManager::UnloadContent</a></div><div class="ttdeci">const int UnloadContent()</div></div>
-<div class="ttc" id="class_texture_manager_html_a3a82a693ed6a11d179c5014ba70c1dc1"><div class="ttname"><a href="class_texture_manager.html#a3a82a693ed6a11d179c5014ba70c1dc1">TextureManager::textureFiles</a></div><div class="ttdeci">vector&lt; char * &gt; textureFiles</div><div class="ttdef"><b>Definition:</b> TextureManager.h:49</div></div>
-<div class="ttc" id="class_texture_manager_html_ad7cb06e0fbae6bd29d2b84b935522879"><div class="ttname"><a href="class_texture_manager.html#ad7cb06e0fbae6bd29d2b84b935522879">TextureManager::Initialize</a></div><div class="ttdeci">const int Initialize()</div><div class="ttdef"><b>Definition:</b> TextureManager.cpp:13</div></div>
-<div class="ttc" id="class_texture_manager_html_addeef5e84ca3c522d910fe37618a20b7"><div class="ttname"><a href="class_texture_manager.html#addeef5e84ca3c522d910fe37618a20b7">TextureManager::textures</a></div><div class="ttdeci">GLuint * textures</div><div class="ttdef"><b>Definition:</b> TextureManager.h:48</div></div>
-<div class="ttc" id="class_texture_manager_html_a772982cc59daac34255975d0c5dbcea6"><div class="ttname"><a href="class_texture_manager.html#a772982cc59daac34255975d0c5dbcea6">TextureManager::ctxt</a></div><div class="ttdeci">Context * ctxt</div><div class="ttdef"><b>Definition:</b> TextureManager.h:47</div></div>
 <div class="ttc" id="class_context_html"><div class="ttname"><a href="class_context.html">Context</a></div><div class="ttdef"><b>Definition:</b> Context.h:64</div></div>
-<div class="ttc" id="_texture2_d_8h_html"><div class="ttname"><a href="_texture2_d_8h.html">Texture2D.h</a></div></div>
-<div class="ttc" id="class_texture_manager_html_a8180ec2c0512a3b18dc5b419e14f98c2"><div class="ttname"><a href="class_texture_manager.html#a8180ec2c0512a3b18dc5b419e14f98c2">TextureManager::bindTexture</a></div><div class="ttdeci">const int bindTexture(int text)</div><div class="ttdef"><b>Definition:</b> TextureManager.cpp:69</div></div>
-<div class="ttc" id="class_texture_manager_html_a9a8dd1ab24d8d7942ef4dda31d4be5c0"><div class="ttname"><a href="class_texture_manager.html#a9a8dd1ab24d8d7942ef4dda31d4be5c0">TextureManager::LoadTGATexture</a></div><div class="ttdeci">const bool LoadTGATexture(const char *szFileName, GLenum minFilter, GLenum magFilter, GLenum wrapMode)</div><div class="ttdef"><b>Definition:</b> TextureManager.cpp:77</div></div>
-<div class="ttc" id="_context_8h_html"><div class="ttname"><a href="_context_8h.html">Context.h</a></div></div>
-<div class="ttc" id="class_texture_manager_html_aed31054d5583505dacdd3211fe4298ce"><div class="ttname"><a href="class_texture_manager.html#aed31054d5583505dacdd3211fe4298ce">TextureManager::addTexture</a></div><div class="ttdeci">const int addTexture(string file)</div><div class="ttdef"><b>Definition:</b> TextureManager.cpp:47</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="_texture_manager_8h.html">TextureManager.h</a></li>
-    <li class="footer">Generated on Fri Nov 22 2013 01:11:42 for Super Happy Rocket by
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><b>TextureManager.h</b></li>
+    <li class="footer">Generated on Tue Nov 26 2013 12:36:58 for Super Happy Rocket by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

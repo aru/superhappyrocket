@@ -31,7 +31,7 @@
   <td style="padding-left: 0.5em;">
    <div id="projectname">Super Happy Rocket
    </div>
-   <div id="projectbrief">Tesis</div>
+   <div id="projectbrief">Proyecto de Tesis</div>
   </td>
  </tr>
  </tbody>
@@ -69,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('classassimp_mesh.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -111,542 +111,150 @@ $(document).ready(function(){initNavTree('classassimp_mesh.html','');});
 <div class="title">assimpMesh Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="assimp_mesh_8h_source.html">assimpMesh.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for assimpMesh:</div>
 <div class="dyncontent">
-<div class="center"><img src="classassimp_mesh__inherit__graph.png" border="0" usemap="#assimp_mesh_inherit__map" alt="Inheritance graph"/></div>
-<map name="assimp_mesh_inherit__map" id="assimp_mesh_inherit__map">
+ <div class="center">
+  <img src="classassimp_mesh.png" usemap="#assimpMesh_map" alt=""/>
+  <map id="assimpMesh_map" name="assimpMesh_map">
+<area href="class_simple_object.html" alt="SimpleObject" shape="rect" coords="0,0,86,24"/>
 </map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for assimpMesh:</div>
-<div class="dyncontent">
-<div class="center"><img src="classassimp_mesh__coll__graph.png" border="0" usemap="#assimp_mesh_coll__map" alt="Collaboration graph"/></div>
-<map name="assimp_mesh_coll__map" id="assimp_mesh_coll__map">
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a85f493d33637bd9801bd8a0945ac1ea7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classassimp_mesh.html#a85f493d33637bd9801bd8a0945ac1ea7">assimpMesh</a> (const char *filename, <a class="el" href="class_context.html">Context</a> *ctx)</td></tr>
+<tr class="memitem:a85f493d33637bd9801bd8a0945ac1ea7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a85f493d33637bd9801bd8a0945ac1ea7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>assimpMesh</b> (const char *filename, <a class="el" href="class_context.html">Context</a> *ctx)</td></tr>
 <tr class="separator:a85f493d33637bd9801bd8a0945ac1ea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a857338e51304936c3cc9cd51562ce22e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classassimp_mesh.html#a857338e51304936c3cc9cd51562ce22e">assimpMesh</a> (const <a class="el" href="classassimp_mesh.html">assimpMesh</a> &amp;mesh)</td></tr>
+<tr class="memitem:a857338e51304936c3cc9cd51562ce22e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a857338e51304936c3cc9cd51562ce22e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>assimpMesh</b> (const <a class="el" href="classassimp_mesh.html">assimpMesh</a> &amp;mesh)</td></tr>
 <tr class="separator:a857338e51304936c3cc9cd51562ce22e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a572b0209390f0afa8a8441b9b267ac9d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classassimp_mesh.html#a572b0209390f0afa8a8441b9b267ac9d">~assimpMesh</a> ()</td></tr>
-<tr class="separator:a572b0209390f0afa8a8441b9b267ac9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e8fdf121ad27687430cb46fb3d4adee"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classassimp_mesh.html#a4e8fdf121ad27687430cb46fb3d4adee">Initialize</a> (<a class="el" href="class_context.html">Context</a> *ctx)</td></tr>
+<tr class="memitem:a4e8fdf121ad27687430cb46fb3d4adee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e8fdf121ad27687430cb46fb3d4adee"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>Initialize</b> (<a class="el" href="class_context.html">Context</a> *ctx)</td></tr>
 <tr class="separator:a4e8fdf121ad27687430cb46fb3d4adee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24631cc83038c0b1b68959f76f367d49"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classassimp_mesh.html#a24631cc83038c0b1b68959f76f367d49">LoadContent</a> ()</td></tr>
+<tr class="memitem:a24631cc83038c0b1b68959f76f367d49"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a24631cc83038c0b1b68959f76f367d49"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>LoadContent</b> ()</td></tr>
 <tr class="separator:a24631cc83038c0b1b68959f76f367d49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27c59be8d8f40e4363c8d2338b8a1fd1"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classassimp_mesh.html#a27c59be8d8f40e4363c8d2338b8a1fd1">Draw</a> (<a class="el" href="class_camera.html">Camera</a> *camera, GLShaderManager *shaderManager, <a class="el" href="class_texture_manager.html">TextureManager</a> *textureManager, <a class="el" href="class_light.html">Light</a> *light)</td></tr>
+<tr class="memitem:a27c59be8d8f40e4363c8d2338b8a1fd1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a27c59be8d8f40e4363c8d2338b8a1fd1"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>Draw</b> (<a class="el" href="class_camera.html">Camera</a> *camera, GLShaderManager *shaderManager, <a class="el" href="class_texture_manager.html">TextureManager</a> *textureManager, <a class="el" href="class_light.html">Light</a> *light)</td></tr>
 <tr class="separator:a27c59be8d8f40e4363c8d2338b8a1fd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59eac83134c165e131b4a2f8d6b67410"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classassimp_mesh.html#a59eac83134c165e131b4a2f8d6b67410">Update</a> ()</td></tr>
+<tr class="memitem:a59eac83134c165e131b4a2f8d6b67410"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a59eac83134c165e131b4a2f8d6b67410"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>Update</b> ()</td></tr>
 <tr class="separator:a59eac83134c165e131b4a2f8d6b67410"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84833758a86565f8a70802074e4c86b7"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classassimp_mesh.html#a84833758a86565f8a70802074e4c86b7">UnloadContent</a> ()</td></tr>
+<tr class="memitem:a84833758a86565f8a70802074e4c86b7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a84833758a86565f8a70802074e4c86b7"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>UnloadContent</b> ()</td></tr>
 <tr class="separator:a84833758a86565f8a70802074e4c86b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36b884bb029d5a2b8fdb71462cbcfb78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classassimp_mesh.html#a36b884bb029d5a2b8fdb71462cbcfb78">recursiveProcess</a> (aiNode *node, const aiScene *scene)</td></tr>
+<tr class="memitem:a36b884bb029d5a2b8fdb71462cbcfb78"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a36b884bb029d5a2b8fdb71462cbcfb78"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>recursiveProcess</b> (aiNode *node, const aiScene *scene)</td></tr>
 <tr class="separator:a36b884bb029d5a2b8fdb71462cbcfb78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a031d2bee1d447a845afca213b4172f8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classassimp_mesh.html#a031d2bee1d447a845afca213b4172f8c">processMesh</a> (aiMesh *mesh, const aiScene *scene)</td></tr>
+<tr class="memitem:a031d2bee1d447a845afca213b4172f8c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a031d2bee1d447a845afca213b4172f8c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>processMesh</b> (aiMesh *mesh, const aiScene *scene)</td></tr>
 <tr class="separator:a031d2bee1d447a845afca213b4172f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb0cdc86e349421e12d3e5efff466725"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classassimp_mesh.html#afb0cdc86e349421e12d3e5efff466725">createBatches</a> ()</td></tr>
+<tr class="memitem:afb0cdc86e349421e12d3e5efff466725"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb0cdc86e349421e12d3e5efff466725"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>createBatches</b> ()</td></tr>
 <tr class="separator:afb0cdc86e349421e12d3e5efff466725"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_simple_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_simple_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_simple_object.html">SimpleObject</a></td></tr>
-<tr class="memitem:ac896d1529367b4a17367018a172b5867 inherit pub_methods_class_simple_object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_object.html#ac896d1529367b4a17367018a172b5867">SimpleObject</a> ()</td></tr>
-<tr class="separator:ac896d1529367b4a17367018a172b5867 inherit pub_methods_class_simple_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05d8f5dc9883812fe3779f3639e7cdac inherit pub_methods_class_simple_object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_object.html#a05d8f5dc9883812fe3779f3639e7cdac">SimpleObject</a> (const <a class="el" href="class_simple_object.html">SimpleObject</a> &amp;obj)</td></tr>
+<tr class="memitem:a05d8f5dc9883812fe3779f3639e7cdac inherit pub_methods_class_simple_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a05d8f5dc9883812fe3779f3639e7cdac"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SimpleObject</b> (const <a class="el" href="class_simple_object.html">SimpleObject</a> &amp;obj)</td></tr>
 <tr class="separator:a05d8f5dc9883812fe3779f3639e7cdac inherit pub_methods_class_simple_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4223f47628fe1849cb2bc3d0afa289c inherit pub_methods_class_simple_object"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_object.html#aa4223f47628fe1849cb2bc3d0afa289c">~SimpleObject</a> ()</td></tr>
-<tr class="separator:aa4223f47628fe1849cb2bc3d0afa289c inherit pub_methods_class_simple_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a153209a7b59e36afec7d555708700a25 inherit pub_methods_class_simple_object"><td class="memItemLeft" align="right" valign="top">virtual const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_object.html#a153209a7b59e36afec7d555708700a25">Draw</a> ()</td></tr>
+<tr class="memitem:a153209a7b59e36afec7d555708700a25 inherit pub_methods_class_simple_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a153209a7b59e36afec7d555708700a25"></a>
+virtual const int&#160;</td><td class="memItemRight" valign="bottom"><b>Draw</b> ()</td></tr>
 <tr class="separator:a153209a7b59e36afec7d555708700a25 inherit pub_methods_class_simple_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a02d771465184fd290ac9cc4b38b32828"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_context.html">Context</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classassimp_mesh.html#a02d771465184fd290ac9cc4b38b32828">ctxt</a></td></tr>
+<tr class="memitem:a02d771465184fd290ac9cc4b38b32828"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a02d771465184fd290ac9cc4b38b32828"></a>
+<a class="el" href="class_context.html">Context</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>ctxt</b></td></tr>
 <tr class="separator:a02d771465184fd290ac9cc4b38b32828"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3e634962612b237a956fd8128f70c84"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classassimp_mesh.html#ab3e634962612b237a956fd8128f70c84">fileName</a></td></tr>
+<tr class="memitem:ab3e634962612b237a956fd8128f70c84"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab3e634962612b237a956fd8128f70c84"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>fileName</b></td></tr>
 <tr class="separator:ab3e634962612b237a956fd8128f70c84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a130a8db8b84bdb7b83599034a5543763"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="class_simple_object.html">SimpleObject</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classassimp_mesh.html#a130a8db8b84bdb7b83599034a5543763">objects</a></td></tr>
+<tr class="memitem:a130a8db8b84bdb7b83599034a5543763"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a130a8db8b84bdb7b83599034a5543763"></a>
+vector&lt; <a class="el" href="class_simple_object.html">SimpleObject</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>objects</b></td></tr>
 <tr class="separator:a130a8db8b84bdb7b83599034a5543763"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafe85632fb36e3b7a55f5e49023feaa1"><td class="memItemLeft" align="right" valign="top">vector&lt; vector&lt; GLfloat &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classassimp_mesh.html#aafe85632fb36e3b7a55f5e49023feaa1">verts</a></td></tr>
+<tr class="memitem:aafe85632fb36e3b7a55f5e49023feaa1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aafe85632fb36e3b7a55f5e49023feaa1"></a>
+vector&lt; vector&lt; GLfloat &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>verts</b></td></tr>
 <tr class="separator:aafe85632fb36e3b7a55f5e49023feaa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71635c933787e2acfce8bfdfe60fb958"><td class="memItemLeft" align="right" valign="top">vector&lt; vector&lt; GLfloat &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classassimp_mesh.html#a71635c933787e2acfce8bfdfe60fb958">norms</a></td></tr>
+<tr class="memitem:a71635c933787e2acfce8bfdfe60fb958"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a71635c933787e2acfce8bfdfe60fb958"></a>
+vector&lt; vector&lt; GLfloat &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>norms</b></td></tr>
 <tr class="separator:a71635c933787e2acfce8bfdfe60fb958"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af73735a4a7b8b692b658af1e4f292e6d"><td class="memItemLeft" align="right" valign="top">vector&lt; vector&lt; GLfloat &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classassimp_mesh.html#af73735a4a7b8b692b658af1e4f292e6d">texts</a></td></tr>
+<tr class="memitem:af73735a4a7b8b692b658af1e4f292e6d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af73735a4a7b8b692b658af1e4f292e6d"></a>
+vector&lt; vector&lt; GLfloat &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>texts</b></td></tr>
 <tr class="separator:af73735a4a7b8b692b658af1e4f292e6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a488c709de58bc05a6c1748a379d29109"><td class="memItemLeft" align="right" valign="top">vector&lt; vector&lt; GLushort &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classassimp_mesh.html#a488c709de58bc05a6c1748a379d29109">indexes</a></td></tr>
+<tr class="memitem:a488c709de58bc05a6c1748a379d29109"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a488c709de58bc05a6c1748a379d29109"></a>
+vector&lt; vector&lt; GLushort &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>indexes</b></td></tr>
 <tr class="separator:a488c709de58bc05a6c1748a379d29109"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a103119ca657355e47e36a88802fa485a"><td class="memItemLeft" align="right" valign="top">vector&lt; GLushort &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classassimp_mesh.html#a103119ca657355e47e36a88802fa485a">maxIndex</a></td></tr>
+<tr class="memitem:a103119ca657355e47e36a88802fa485a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a103119ca657355e47e36a88802fa485a"></a>
+vector&lt; GLushort &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>maxIndex</b></td></tr>
 <tr class="separator:a103119ca657355e47e36a88802fa485a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b64a6b1ffa93791b51bc0205d7f8dfa"><td class="memItemLeft" align="right" valign="top">vector&lt; GLuint &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classassimp_mesh.html#a5b64a6b1ffa93791b51bc0205d7f8dfa">textures</a></td></tr>
+<tr class="memitem:a5b64a6b1ffa93791b51bc0205d7f8dfa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5b64a6b1ffa93791b51bc0205d7f8dfa"></a>
+vector&lt; GLuint &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>textures</b></td></tr>
 <tr class="separator:a5b64a6b1ffa93791b51bc0205d7f8dfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7c6c414b638d448d4f4ee5ce1e47fae"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="class_texture2_d.html">Texture2D</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classassimp_mesh.html#ad7c6c414b638d448d4f4ee5ce1e47fae">textureStruct</a></td></tr>
+<tr class="memitem:ad7c6c414b638d448d4f4ee5ce1e47fae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad7c6c414b638d448d4f4ee5ce1e47fae"></a>
+vector&lt; <a class="el" href="class_texture2_d.html">Texture2D</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>textureStruct</b></td></tr>
 <tr class="separator:ad7c6c414b638d448d4f4ee5ce1e47fae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bca3d425fef3b8cef719bb9e0384d8a"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classassimp_mesh.html#a5bca3d425fef3b8cef719bb9e0384d8a">numTextures</a></td></tr>
+<tr class="memitem:a5bca3d425fef3b8cef719bb9e0384d8a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5bca3d425fef3b8cef719bb9e0384d8a"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>numTextures</b></td></tr>
 <tr class="separator:a5bca3d425fef3b8cef719bb9e0384d8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17eccca561b80ff903e4845aaa29b6cf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classassimp_mesh.html#a17eccca561b80ff903e4845aaa29b6cf">untexturedVerts</a></td></tr>
+<tr class="memitem:a17eccca561b80ff903e4845aaa29b6cf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a17eccca561b80ff903e4845aaa29b6cf"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>untexturedVerts</b></td></tr>
 <tr class="separator:a17eccca561b80ff903e4845aaa29b6cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_class_simple_object"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_simple_object')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_simple_object.html">SimpleObject</a></td></tr>
-<tr class="memitem:a57b19debeebd6cc7544229593ac6f384 inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_object.html#a57b19debeebd6cc7544229593ac6f384">tBatch</a></td></tr>
+<tr class="memitem:a57b19debeebd6cc7544229593ac6f384 inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a57b19debeebd6cc7544229593ac6f384"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>tBatch</b></td></tr>
 <tr class="separator:a57b19debeebd6cc7544229593ac6f384 inherit pub_attribs_class_simple_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b91addc8702d48b2f7fc55ef477865d inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top">GLBatch&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_object.html#a7b91addc8702d48b2f7fc55ef477865d">batch</a></td></tr>
+<tr class="memitem:a7b91addc8702d48b2f7fc55ef477865d inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7b91addc8702d48b2f7fc55ef477865d"></a>
+GLBatch&#160;</td><td class="memItemRight" valign="bottom"><b>batch</b></td></tr>
 <tr class="separator:a7b91addc8702d48b2f7fc55ef477865d inherit pub_attribs_class_simple_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a036fe05c95aabf2733dc0dab0470c385 inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top">GLTriangleBatch&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_object.html#a036fe05c95aabf2733dc0dab0470c385">triBatch</a></td></tr>
+<tr class="memitem:a036fe05c95aabf2733dc0dab0470c385 inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a036fe05c95aabf2733dc0dab0470c385"></a>
+GLTriangleBatch&#160;</td><td class="memItemRight" valign="bottom"><b>triBatch</b></td></tr>
 <tr class="separator:a036fe05c95aabf2733dc0dab0470c385 inherit pub_attribs_class_simple_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a981496140aef8731d72bec626a8151f5 inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top">GLFrame&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_object.html#a981496140aef8731d72bec626a8151f5">frame</a></td></tr>
+<tr class="memitem:a981496140aef8731d72bec626a8151f5 inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a981496140aef8731d72bec626a8151f5"></a>
+GLFrame&#160;</td><td class="memItemRight" valign="bottom"><b>frame</b></td></tr>
 <tr class="separator:a981496140aef8731d72bec626a8151f5 inherit pub_attribs_class_simple_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae10c997b5d538a0d2773e26473f8acd4 inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top">GLMatrixStack&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_object.html#ae10c997b5d538a0d2773e26473f8acd4">modelViewMatrix</a></td></tr>
+<tr class="memitem:ae10c997b5d538a0d2773e26473f8acd4 inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae10c997b5d538a0d2773e26473f8acd4"></a>
+GLMatrixStack&#160;</td><td class="memItemRight" valign="bottom"><b>modelViewMatrix</b></td></tr>
 <tr class="separator:ae10c997b5d538a0d2773e26473f8acd4 inherit pub_attribs_class_simple_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c506a2b642e61f7209ee9d3e455eb6a inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top">vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_object.html#a6c506a2b642e61f7209ee9d3e455eb6a">vertex</a></td></tr>
+<tr class="memitem:a6c506a2b642e61f7209ee9d3e455eb6a inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c506a2b642e61f7209ee9d3e455eb6a"></a>
+vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>vertex</b></td></tr>
 <tr class="separator:a6c506a2b642e61f7209ee9d3e455eb6a inherit pub_attribs_class_simple_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fce8b7b9f26a11982447cc4b8bc1907 inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top">vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_object.html#a0fce8b7b9f26a11982447cc4b8bc1907">index</a></td></tr>
+<tr class="memitem:a0fce8b7b9f26a11982447cc4b8bc1907 inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0fce8b7b9f26a11982447cc4b8bc1907"></a>
+vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>index</b></td></tr>
 <tr class="separator:a0fce8b7b9f26a11982447cc4b8bc1907 inherit pub_attribs_class_simple_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87b06e177a337bb9f7655dbd5067cf7b inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top">vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_object.html#a87b06e177a337bb9f7655dbd5067cf7b">normal</a></td></tr>
+<tr class="memitem:a87b06e177a337bb9f7655dbd5067cf7b inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a87b06e177a337bb9f7655dbd5067cf7b"></a>
+vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>normal</b></td></tr>
 <tr class="separator:a87b06e177a337bb9f7655dbd5067cf7b inherit pub_attribs_class_simple_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f989f1e7ef76020fe605947759157e1 inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top">vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_object.html#a4f989f1e7ef76020fe605947759157e1">texture</a></td></tr>
+<tr class="memitem:a4f989f1e7ef76020fe605947759157e1 inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f989f1e7ef76020fe605947759157e1"></a>
+vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>texture</b></td></tr>
 <tr class="separator:a4f989f1e7ef76020fe605947759157e1 inherit pub_attribs_class_simple_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fb6c6bd5c79d711f962d9c5e39d43ce inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top">vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_object.html#a1fb6c6bd5c79d711f962d9c5e39d43ce">color</a></td></tr>
+<tr class="memitem:a1fb6c6bd5c79d711f962d9c5e39d43ce inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1fb6c6bd5c79d711f962d9c5e39d43ce"></a>
+vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>color</b></td></tr>
 <tr class="separator:a1fb6c6bd5c79d711f962d9c5e39d43ce inherit pub_attribs_class_simple_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ef5676def2f0a847bd0672241f32d1c inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top">GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_object.html#a5ef5676def2f0a847bd0672241f32d1c">textureFile</a></td></tr>
+<tr class="memitem:a5ef5676def2f0a847bd0672241f32d1c inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ef5676def2f0a847bd0672241f32d1c"></a>
+GLuint&#160;</td><td class="memItemRight" valign="bottom"><b>textureFile</b></td></tr>
 <tr class="separator:a5ef5676def2f0a847bd0672241f32d1c inherit pub_attribs_class_simple_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab41156b3c92ca7ba616659dd174cf04 inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_object.html#aab41156b3c92ca7ba616659dd174cf04">tFile</a></td></tr>
+<tr class="memitem:aab41156b3c92ca7ba616659dd174cf04 inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aab41156b3c92ca7ba616659dd174cf04"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>tFile</b></td></tr>
 <tr class="separator:aab41156b3c92ca7ba616659dd174cf04 inherit pub_attribs_class_simple_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefcac4844710fb10f8cdfc537b1a7dba inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top">GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_object.html#aefcac4844710fb10f8cdfc537b1a7dba">shaderFile</a></td></tr>
+<tr class="memitem:aefcac4844710fb10f8cdfc537b1a7dba inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aefcac4844710fb10f8cdfc537b1a7dba"></a>
+GLuint&#160;</td><td class="memItemRight" valign="bottom"><b>shaderFile</b></td></tr>
 <tr class="separator:aefcac4844710fb10f8cdfc537b1a7dba inherit pub_attribs_class_simple_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb8f9ac2ea5c7342f14eb8d7e6afa9bc inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_object.html#aeb8f9ac2ea5c7342f14eb8d7e6afa9bc">vShader</a></td></tr>
+<tr class="memitem:aeb8f9ac2ea5c7342f14eb8d7e6afa9bc inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeb8f9ac2ea5c7342f14eb8d7e6afa9bc"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>vShader</b></td></tr>
 <tr class="separator:aeb8f9ac2ea5c7342f14eb8d7e6afa9bc inherit pub_attribs_class_simple_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66b038ae0b5d0801a613b39f020f8993 inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_object.html#a66b038ae0b5d0801a613b39f020f8993">fShader</a></td></tr>
+<tr class="memitem:a66b038ae0b5d0801a613b39f020f8993 inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a66b038ae0b5d0801a613b39f020f8993"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>fShader</b></td></tr>
 <tr class="separator:a66b038ae0b5d0801a613b39f020f8993 inherit pub_attribs_class_simple_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1ab3dd3b36a2d36d8b82fffc409ff92 inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top">M3DMatrix44f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_object.html#af1ab3dd3b36a2d36d8b82fffc409ff92">mScaleMatrix</a></td></tr>
+<tr class="memitem:af1ab3dd3b36a2d36d8b82fffc409ff92 inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af1ab3dd3b36a2d36d8b82fffc409ff92"></a>
+M3DMatrix44f&#160;</td><td class="memItemRight" valign="bottom"><b>mScaleMatrix</b></td></tr>
 <tr class="separator:af1ab3dd3b36a2d36d8b82fffc409ff92 inherit pub_attribs_class_simple_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a776a2ba2bde4e83e206346f8a22d454f inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top">M3DVector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_object.html#a776a2ba2bde4e83e206346f8a22d454f">scaleVector</a></td></tr>
+<tr class="memitem:a776a2ba2bde4e83e206346f8a22d454f inherit pub_attribs_class_simple_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a776a2ba2bde4e83e206346f8a22d454f"></a>
+M3DVector3f&#160;</td><td class="memItemRight" valign="bottom"><b>scaleVector</b></td></tr>
 <tr class="separator:a776a2ba2bde4e83e206346f8a22d454f inherit pub_attribs_class_simple_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a85f493d33637bd9801bd8a0945ac1ea7"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">assimpMesh::assimpMesh </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>filename</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_context.html">Context</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a857338e51304936c3cc9cd51562ce22e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">assimpMesh::assimpMesh </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classassimp_mesh.html">assimpMesh</a> &amp;&#160;</td>
-          <td class="paramname"><em>mesh</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a572b0209390f0afa8a8441b9b267ac9d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">assimpMesh::~assimpMesh </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="afb0cdc86e349421e12d3e5efff466725"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void assimpMesh::createBatches </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a27c59be8d8f40e4363c8d2338b8a1fd1"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int assimpMesh::Draw </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_camera.html">Camera</a> *&#160;</td>
-          <td class="paramname"><em>camera</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">GLShaderManager *&#160;</td>
-          <td class="paramname"><em>shaderManager</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_texture_manager.html">TextureManager</a> *&#160;</td>
-          <td class="paramname"><em>textureManager</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_light.html">Light</a> *&#160;</td>
-          <td class="paramname"><em>light</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="class_simple_object.html#ac4a7b3ff3c2215ff68b3967b57c77fa9">SimpleObject</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a4e8fdf121ad27687430cb46fb3d4adee"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int assimpMesh::Initialize </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_context.html">Context</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="class_simple_object.html#ad8cab013f221a2b7132dc243a304b20f">SimpleObject</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a24631cc83038c0b1b68959f76f367d49"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int assimpMesh::LoadContent </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="class_simple_object.html#ae06adca212a0d4bf4607b324908b2b8e">SimpleObject</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a031d2bee1d447a845afca213b4172f8c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void assimpMesh::processMesh </td>
-          <td>(</td>
-          <td class="paramtype">aiMesh *&#160;</td>
-          <td class="paramname"><em>mesh</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const aiScene *&#160;</td>
-          <td class="paramname"><em>scene</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a36b884bb029d5a2b8fdb71462cbcfb78"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void assimpMesh::recursiveProcess </td>
-          <td>(</td>
-          <td class="paramtype">aiNode *&#160;</td>
-          <td class="paramname"><em>node</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const aiScene *&#160;</td>
-          <td class="paramname"><em>scene</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a84833758a86565f8a70802074e4c86b7"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int assimpMesh::UnloadContent </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="class_simple_object.html#a5fe4d692b6633f2c68b6eae1d3f6b059">SimpleObject</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a59eac83134c165e131b4a2f8d6b67410"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int assimpMesh::Update </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="class_simple_object.html#a7523273ddea5901d2049575229c8b5ca">SimpleObject</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a02d771465184fd290ac9cc4b38b32828"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_context.html">Context</a>* assimpMesh::ctxt</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ab3e634962612b237a956fd8128f70c84"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">string assimpMesh::fileName</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a488c709de58bc05a6c1748a379d29109"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">vector&lt; vector&lt;GLushort&gt; &gt; assimpMesh::indexes</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a103119ca657355e47e36a88802fa485a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">vector&lt;GLushort&gt; assimpMesh::maxIndex</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a71635c933787e2acfce8bfdfe60fb958"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">vector&lt; vector&lt;GLfloat&gt; &gt; assimpMesh::norms</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a5bca3d425fef3b8cef719bb9e0384d8a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int assimpMesh::numTextures</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a130a8db8b84bdb7b83599034a5543763"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">vector&lt;<a class="el" href="class_simple_object.html">SimpleObject</a>*&gt; assimpMesh::objects</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="af73735a4a7b8b692b658af1e4f292e6d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">vector&lt; vector&lt;GLfloat&gt; &gt; assimpMesh::texts</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a5b64a6b1ffa93791b51bc0205d7f8dfa"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">vector&lt;GLuint&gt; assimpMesh::textures</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ad7c6c414b638d448d4f4ee5ce1e47fae"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">vector&lt;<a class="el" href="class_texture2_d.html">Texture2D</a>*&gt; assimpMesh::textureStruct</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a17eccca561b80ff903e4845aaa29b6cf"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool assimpMesh::untexturedVerts</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aafe85632fb36e3b7a55f5e49023feaa1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">vector&lt; vector&lt;GLfloat&gt; &gt; assimpMesh::verts</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/<a class="el" href="assimp_mesh_8h_source.html">assimpMesh.h</a></li>
-<li>src/<a class="el" href="assimp_mesh_8cpp.html">assimpMesh.cpp</a></li>
+<li>src/assimpMesh.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -654,7 +262,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classassimp_mesh.html">assimpMesh</a></li>
-    <li class="footer">Generated on Fri Nov 22 2013 01:11:43 for Super Happy Rocket by
+    <li class="footer">Generated on Tue Nov 26 2013 12:36:58 for Super Happy Rocket by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

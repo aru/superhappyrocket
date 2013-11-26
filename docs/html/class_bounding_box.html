@@ -31,7 +31,7 @@
   <td style="padding-left: 0.5em;">
    <div id="projectname">Super Happy Rocket
    </div>
-   <div id="projectbrief">Tesis</div>
+   <div id="projectbrief">Proyecto de Tesis</div>
   </td>
  </tr>
  </tbody>
@@ -69,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('class_bounding_box.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -116,154 +116,33 @@ $(document).ready(function(){initNavTree('class_bounding_box.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a563ca028fe20bee8fcbc4aefc53aa38a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bounding_box.html#a563ca028fe20bee8fcbc4aefc53aa38a">BoundingBox</a> (float c0, float c1, float c2, float r1, float r2, float r3)</td></tr>
+<tr class="memitem:a563ca028fe20bee8fcbc4aefc53aa38a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a563ca028fe20bee8fcbc4aefc53aa38a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>BoundingBox</b> (float c0, float c1, float c2, float r1, float r2, float r3)</td></tr>
 <tr class="separator:a563ca028fe20bee8fcbc4aefc53aa38a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8eda3e1d297f150d0a5cf7edcb6b530"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bounding_box.html#af8eda3e1d297f150d0a5cf7edcb6b530">BoundingBox</a> (const <a class="el" href="class_bounding_box.html">BoundingBox</a> &amp;box)</td></tr>
+<tr class="memitem:af8eda3e1d297f150d0a5cf7edcb6b530"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af8eda3e1d297f150d0a5cf7edcb6b530"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>BoundingBox</b> (const <a class="el" href="class_bounding_box.html">BoundingBox</a> &amp;box)</td></tr>
 <tr class="separator:af8eda3e1d297f150d0a5cf7edcb6b530"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a587de78331711c6eb6d15de867b73991"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bounding_box.html#a587de78331711c6eb6d15de867b73991">~BoundingBox</a> ()</td></tr>
-<tr class="separator:a587de78331711c6eb6d15de867b73991"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f132561bb10a3729b459f94e55ff109"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bounding_box.html#a8f132561bb10a3729b459f94e55ff109">intersectsWith</a> (const <a class="el" href="class_bounding_box.html">BoundingBox</a> &amp;box)</td></tr>
+<tr class="memitem:a8f132561bb10a3729b459f94e55ff109"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8f132561bb10a3729b459f94e55ff109"></a>
+const bool&#160;</td><td class="memItemRight" valign="bottom"><b>intersectsWith</b> (const <a class="el" href="class_bounding_box.html">BoundingBox</a> &amp;box)</td></tr>
 <tr class="separator:a8f132561bb10a3729b459f94e55ff109"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a146959bade684dc49e1c2918d9a7d737"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bounding_box.html#a146959bade684dc49e1c2918d9a7d737">c</a> [3]</td></tr>
+<tr class="memitem:a146959bade684dc49e1c2918d9a7d737"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a146959bade684dc49e1c2918d9a7d737"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>c</b> [3]</td></tr>
 <tr class="separator:a146959bade684dc49e1c2918d9a7d737"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a390c79206630c8f29329d416fcbe2b31"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bounding_box.html#a390c79206630c8f29329d416fcbe2b31">r</a> [3]</td></tr>
+<tr class="memitem:a390c79206630c8f29329d416fcbe2b31"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a390c79206630c8f29329d416fcbe2b31"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>r</b> [3]</td></tr>
 <tr class="separator:a390c79206630c8f29329d416fcbe2b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="_bounding_box_8h.html">BoundingBox.h</a></p>
+<div class="textblock"><p><a class="el" href="_bounding_box_8h_source.html">BoundingBox.h</a></p>
 <p>This class is used to create a bounding box that determines if an object intersects with any other object with a collision detection method.</p>
 <p>This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</p>
 <p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details <a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a563ca028fe20bee8fcbc4aefc53aa38a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">BoundingBox::BoundingBox </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>c0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>c1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>c2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>r1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>r2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>r3</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="af8eda3e1d297f150d0a5cf7edcb6b530"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">BoundingBox::BoundingBox </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_bounding_box.html">BoundingBox</a> &amp;&#160;</td>
-          <td class="paramname"><em>box</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a587de78331711c6eb6d15de867b73991"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">BoundingBox::~BoundingBox </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a8f132561bb10a3729b459f94e55ff109"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const bool BoundingBox::intersectsWith </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_bounding_box.html">BoundingBox</a> &amp;&#160;</td>
-          <td class="paramname"><em>box</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a146959bade684dc49e1c2918d9a7d737"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float BoundingBox::c[3]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a390c79206630c8f29329d416fcbe2b31"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float BoundingBox::r[3]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/<a class="el" href="_bounding_box_8h_source.html">BoundingBox.h</a></li>
-<li>src/<a class="el" href="_bounding_box_8cpp.html">BoundingBox.cpp</a></li>
+<li>src/BoundingBox.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -271,7 +150,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_bounding_box.html">BoundingBox</a></li>
-    <li class="footer">Generated on Fri Nov 22 2013 01:11:43 for Super Happy Rocket by
+    <li class="footer">Generated on Tue Nov 26 2013 12:36:58 for Super Happy Rocket by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

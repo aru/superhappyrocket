@@ -2,7 +2,7 @@
  * BaseLevel.h
  *
  * Content is loaded depending of each level, after being loaded the
- * content is drawed, updated, and unloaded after being used.
+ * content is drawn, updated, and unloaded after being used.
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by

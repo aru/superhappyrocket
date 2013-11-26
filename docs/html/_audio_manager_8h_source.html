@@ -31,7 +31,7 @@
   <td style="padding-left: 0.5em;">
    <div id="projectname">Super Happy Rocket
    </div>
-   <div id="projectbrief">Tesis</div>
+   <div id="projectbrief">Proyecto de Tesis</div>
   </td>
  </tr>
  </tbody>
@@ -68,7 +68,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -91,7 +90,7 @@ $(document).ready(function(){initNavTree('_audio_manager_8h_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -105,82 +104,62 @@ $(document).ready(function(){initNavTree('_audio_manager_8h_source.html','');});
 <div class="title">AudioManager.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_audio_manager_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifndef SHR_AUDIOMANAGER</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SHR_AUDIOMANAGER</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;SDL_mixer.h&gt;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_context_8h.html">Context.h</a>&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;Context.h&quot;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
 <div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_audio_manager.html">   27</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_audio_manager.html">AudioManager</a>{</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="class_audio_manager.html#ae59d8605c1d706e7bab47d4e8f900d09">AudioManager</a>();</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="class_audio_manager.html#ae59d8605c1d706e7bab47d4e8f900d09">AudioManager</a>( <a class="code" href="class_context.html">Context</a>* ctx );</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="class_audio_manager.html#ad94dc46723c6d7cf8c81fc3772a842aa">~AudioManager</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="class_audio_manager.html">AudioManager</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="class_audio_manager.html">AudioManager</a>( <a class="code" href="class_context.html">Context</a>* ctx );</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    ~<a class="code" href="class_audio_manager.html">AudioManager</a>();</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">/* Standard Engine Methods */</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_audio_manager.html#a8a12488d1fe834184d27dbd4b042593a">Initialize</a>();</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_audio_manager.html#a8272facf35d9fa66857f7364a1f487ae">LoadContent</a>();</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_audio_manager.html#a924f832983f956a72599806ec4286ab5">Update</a>();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_audio_manager.html#a755335689f2574e0c283128acbdd44e8">UnloadContent</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">int</span> Initialize();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">int</span> LoadContent();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">int</span> Update();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">int</span> UnloadContent();</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">/* Public Methods for the BG Music */</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_audio_manager.html#a16ff10a66586f4f93c635d465f1833f2">LoadMusic</a>( <span class="keyword">const</span> <span class="keywordtype">char</span>* file );</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_audio_manager.html#ac7306cf16ab74b3834fd364f02587141">PlayMusic</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">int</span> LoadMusic( <span class="keyword">const</span> <span class="keywordtype">char</span>* file );</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">int</span> PlayMusic();</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">/* Public Methods for sounds */</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_audio_manager.html#aed5aa44ab8b15588a7790fe3edf40eca">LoadSound</a>( <span class="keyword">const</span> <span class="keywordtype">char</span>* file );</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_audio_manager.html#a414c9ed8428eeefaf718e9471a2a0d2c">PlaySound</a>( <span class="keywordtype">int</span> soundFile, <span class="keywordtype">int</span> loopTimes );</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_audio_manager.html#a7b13ea31e6278900ac81d977e69a44e5">PauseSound</a>( <span class="keywordtype">int</span> soundFile );</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_audio_manager.html#a21d6f2c07306a824f8404c1cad595fb4">StopSound</a>( <span class="keywordtype">int</span> soundFile );</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">int</span> LoadSound( <span class="keyword">const</span> <span class="keywordtype">char</span>* file );</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">int</span> PlaySound( <span class="keywordtype">int</span> soundFile, <span class="keywordtype">int</span> loopTimes );</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">int</span> PauseSound( <span class="keywordtype">int</span> soundFile );</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">int</span> StopSound( <span class="keywordtype">int</span> soundFile );</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">/* Context Pointer */</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_audio_manager.html#a732e4905a8a05a0ae09e6250172daad1">   51</a></span>&#160;    <a class="code" href="class_context.html">Context</a>* <a class="code" href="class_audio_manager.html#a732e4905a8a05a0ae09e6250172daad1">ctxt</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="class_context.html">Context</a>* ctxt;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">/* Background Music */</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_audio_manager.html#ac2db72d9907112162225826056ee7f11">   53</a></span>&#160;    Mix_Music* <a class="code" href="class_audio_manager.html#ac2db72d9907112162225826056ee7f11">music</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    Mix_Music* music;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">/* vector array that points to current sound files */</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_audio_manager.html#a2052962e50b4372aa9c0621f48e65e59">   55</a></span>&#160;    std::vector&lt;Mix_Chunk*&gt; <a class="code" href="class_audio_manager.html#a2052962e50b4372aa9c0621f48e65e59">sounds</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    std::vector&lt;Mix_Chunk*&gt; sounds;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">/* Setup variables */</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_audio_manager.html#a6307e9ae3cd57d6d85adab5a9a4511c7">   58</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_audio_manager.html#a6307e9ae3cd57d6d85adab5a9a4511c7">audio_rate</a>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_audio_manager.html#a9fa300ed4663c81466bd3e21faf0ceb9">   59</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_audio_manager.html#a9fa300ed4663c81466bd3e21faf0ceb9">audio_format</a>; </div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_audio_manager.html#a616eba72f37260dc197a6171577bcd3d">   60</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_audio_manager.html#a616eba72f37260dc197a6171577bcd3d">audio_channels</a>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_audio_manager.html#aa88d9c11671aaff4df98dfc3c0b64002">   61</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_audio_manager.html#aa88d9c11671aaff4df98dfc3c0b64002">audio_buffers</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">int</span> audio_rate;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">int</span> audio_format; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">int</span> audio_channels;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">int</span> audio_buffers;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="class_audio_manager_html"><div class="ttname"><a href="class_audio_manager.html">AudioManager</a></div><div class="ttdef"><b>Definition:</b> AudioManager.h:27</div></div>
-<div class="ttc" id="class_audio_manager_html_a732e4905a8a05a0ae09e6250172daad1"><div class="ttname"><a href="class_audio_manager.html#a732e4905a8a05a0ae09e6250172daad1">AudioManager::ctxt</a></div><div class="ttdeci">Context * ctxt</div><div class="ttdef"><b>Definition:</b> AudioManager.h:51</div></div>
-<div class="ttc" id="class_audio_manager_html_ad94dc46723c6d7cf8c81fc3772a842aa"><div class="ttname"><a href="class_audio_manager.html#ad94dc46723c6d7cf8c81fc3772a842aa">AudioManager::~AudioManager</a></div><div class="ttdeci">~AudioManager()</div><div class="ttdef"><b>Definition:</b> AudioManager.cpp:15</div></div>
-<div class="ttc" id="class_audio_manager_html_a8272facf35d9fa66857f7364a1f487ae"><div class="ttname"><a href="class_audio_manager.html#a8272facf35d9fa66857f7364a1f487ae">AudioManager::LoadContent</a></div><div class="ttdeci">int LoadContent()</div><div class="ttdef"><b>Definition:</b> AudioManager.cpp:118</div></div>
-<div class="ttc" id="class_audio_manager_html_ae59d8605c1d706e7bab47d4e8f900d09"><div class="ttname"><a href="class_audio_manager.html#ae59d8605c1d706e7bab47d4e8f900d09">AudioManager::AudioManager</a></div><div class="ttdeci">AudioManager()</div><div class="ttdef"><b>Definition:</b> AudioManager.cpp:3</div></div>
-<div class="ttc" id="class_audio_manager_html_aed5aa44ab8b15588a7790fe3edf40eca"><div class="ttname"><a href="class_audio_manager.html#aed5aa44ab8b15588a7790fe3edf40eca">AudioManager::LoadSound</a></div><div class="ttdeci">int LoadSound(const char *file)</div><div class="ttdef"><b>Definition:</b> AudioManager.cpp:83</div></div>
-<div class="ttc" id="class_audio_manager_html_a21d6f2c07306a824f8404c1cad595fb4"><div class="ttname"><a href="class_audio_manager.html#a21d6f2c07306a824f8404c1cad595fb4">AudioManager::StopSound</a></div><div class="ttdeci">int StopSound(int soundFile)</div></div>
-<div class="ttc" id="class_audio_manager_html_a7b13ea31e6278900ac81d977e69a44e5"><div class="ttname"><a href="class_audio_manager.html#a7b13ea31e6278900ac81d977e69a44e5">AudioManager::PauseSound</a></div><div class="ttdeci">int PauseSound(int soundFile)</div></div>
-<div class="ttc" id="class_audio_manager_html_a2052962e50b4372aa9c0621f48e65e59"><div class="ttname"><a href="class_audio_manager.html#a2052962e50b4372aa9c0621f48e65e59">AudioManager::sounds</a></div><div class="ttdeci">std::vector&lt; Mix_Chunk * &gt; sounds</div><div class="ttdef"><b>Definition:</b> AudioManager.h:55</div></div>
-<div class="ttc" id="class_audio_manager_html_aa88d9c11671aaff4df98dfc3c0b64002"><div class="ttname"><a href="class_audio_manager.html#aa88d9c11671aaff4df98dfc3c0b64002">AudioManager::audio_buffers</a></div><div class="ttdeci">int audio_buffers</div><div class="ttdef"><b>Definition:</b> AudioManager.h:61</div></div>
-<div class="ttc" id="class_audio_manager_html_a414c9ed8428eeefaf718e9471a2a0d2c"><div class="ttname"><a href="class_audio_manager.html#a414c9ed8428eeefaf718e9471a2a0d2c">AudioManager::PlaySound</a></div><div class="ttdeci">int PlaySound(int soundFile, int loopTimes)</div><div class="ttdef"><b>Definition:</b> AudioManager.cpp:99</div></div>
-<div class="ttc" id="class_audio_manager_html_a616eba72f37260dc197a6171577bcd3d"><div class="ttname"><a href="class_audio_manager.html#a616eba72f37260dc197a6171577bcd3d">AudioManager::audio_channels</a></div><div class="ttdeci">int audio_channels</div><div class="ttdef"><b>Definition:</b> AudioManager.h:60</div></div>
-<div class="ttc" id="class_audio_manager_html_a16ff10a66586f4f93c635d465f1833f2"><div class="ttname"><a href="class_audio_manager.html#a16ff10a66586f4f93c635d465f1833f2">AudioManager::LoadMusic</a></div><div class="ttdeci">int LoadMusic(const char *file)</div><div class="ttdef"><b>Definition:</b> AudioManager.cpp:55</div></div>
-<div class="ttc" id="class_audio_manager_html_a8a12488d1fe834184d27dbd4b042593a"><div class="ttname"><a href="class_audio_manager.html#a8a12488d1fe834184d27dbd4b042593a">AudioManager::Initialize</a></div><div class="ttdeci">int Initialize()</div><div class="ttdef"><b>Definition:</b> AudioManager.cpp:25</div></div>
-<div class="ttc" id="class_audio_manager_html_a9fa300ed4663c81466bd3e21faf0ceb9"><div class="ttname"><a href="class_audio_manager.html#a9fa300ed4663c81466bd3e21faf0ceb9">AudioManager::audio_format</a></div><div class="ttdeci">int audio_format</div><div class="ttdef"><b>Definition:</b> AudioManager.h:59</div></div>
 <div class="ttc" id="class_context_html"><div class="ttname"><a href="class_context.html">Context</a></div><div class="ttdef"><b>Definition:</b> Context.h:64</div></div>
-<div class="ttc" id="class_audio_manager_html_ac2db72d9907112162225826056ee7f11"><div class="ttname"><a href="class_audio_manager.html#ac2db72d9907112162225826056ee7f11">AudioManager::music</a></div><div class="ttdeci">Mix_Music * music</div><div class="ttdef"><b>Definition:</b> AudioManager.h:53</div></div>
-<div class="ttc" id="class_audio_manager_html_a755335689f2574e0c283128acbdd44e8"><div class="ttname"><a href="class_audio_manager.html#a755335689f2574e0c283128acbdd44e8">AudioManager::UnloadContent</a></div><div class="ttdeci">int UnloadContent()</div><div class="ttdef"><b>Definition:</b> AudioManager.cpp:123</div></div>
-<div class="ttc" id="class_audio_manager_html_a924f832983f956a72599806ec4286ab5"><div class="ttname"><a href="class_audio_manager.html#a924f832983f956a72599806ec4286ab5">AudioManager::Update</a></div><div class="ttdeci">int Update()</div></div>
-<div class="ttc" id="class_audio_manager_html_ac7306cf16ab74b3834fd364f02587141"><div class="ttname"><a href="class_audio_manager.html#ac7306cf16ab74b3834fd364f02587141">AudioManager::PlayMusic</a></div><div class="ttdeci">int PlayMusic()</div><div class="ttdef"><b>Definition:</b> AudioManager.cpp:69</div></div>
-<div class="ttc" id="class_audio_manager_html_a6307e9ae3cd57d6d85adab5a9a4511c7"><div class="ttname"><a href="class_audio_manager.html#a6307e9ae3cd57d6d85adab5a9a4511c7">AudioManager::audio_rate</a></div><div class="ttdeci">int audio_rate</div><div class="ttdef"><b>Definition:</b> AudioManager.h:58</div></div>
-<div class="ttc" id="_context_8h_html"><div class="ttname"><a href="_context_8h.html">Context.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="_audio_manager_8h.html">AudioManager.h</a></li>
-    <li class="footer">Generated on Fri Nov 22 2013 01:11:42 for Super Happy Rocket by
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><b>AudioManager.h</b></li>
+    <li class="footer">Generated on Tue Nov 26 2013 12:36:58 for Super Happy Rocket by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

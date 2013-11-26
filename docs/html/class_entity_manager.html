@@ -31,7 +31,7 @@
   <td style="padding-left: 0.5em;">
    <div id="projectname">Super Happy Rocket
    </div>
-   <div id="projectbrief">Tesis</div>
+   <div id="projectbrief">Proyecto de Tesis</div>
   </td>
  </tr>
  </tbody>
@@ -69,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('class_entity_manager.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -111,279 +111,58 @@ $(document).ready(function(){initNavTree('class_entity_manager.html','');});
 <div class="title">EntityManager Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="_entity_manager_8h_source.html">EntityManager.h</a>&gt;</code></p>
-<div class="dynheader">
-Collaboration diagram for EntityManager:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_entity_manager__coll__graph.png" border="0" usemap="#_entity_manager_coll__map" alt="Collaboration graph"/></div>
-<map name="_entity_manager_coll__map" id="_entity_manager_coll__map">
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a726e5ed5295b0b1579c112169acc8e88"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity_manager.html#a726e5ed5295b0b1579c112169acc8e88">EntityManager</a> (<a class="el" href="class_context.html">Context</a> *ctx)</td></tr>
+<tr class="memitem:a726e5ed5295b0b1579c112169acc8e88"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a726e5ed5295b0b1579c112169acc8e88"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>EntityManager</b> (<a class="el" href="class_context.html">Context</a> *ctx)</td></tr>
 <tr class="separator:a726e5ed5295b0b1579c112169acc8e88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71a36c9fb8d579a1a1ec108e0fccf175"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity_manager.html#a71a36c9fb8d579a1a1ec108e0fccf175">~EntityManager</a> ()</td></tr>
-<tr class="separator:a71a36c9fb8d579a1a1ec108e0fccf175"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae34d5cb8444503fbc4a5bc2db4878c41"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity_manager.html#ae34d5cb8444503fbc4a5bc2db4878c41">Update</a> (Uint32 gameTime, Uint32 deltaTicks)</td></tr>
+<tr class="memitem:ae34d5cb8444503fbc4a5bc2db4878c41"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae34d5cb8444503fbc4a5bc2db4878c41"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>Update</b> (Uint32 gameTime, Uint32 deltaTicks)</td></tr>
 <tr class="separator:ae34d5cb8444503fbc4a5bc2db4878c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af35b8ae019b5ff399a03452e93a5e72a"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity_manager.html#af35b8ae019b5ff399a03452e93a5e72a">createObjects</a> (const unsigned int numObjects)</td></tr>
+<tr class="memitem:af35b8ae019b5ff399a03452e93a5e72a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af35b8ae019b5ff399a03452e93a5e72a"></a>
+const bool&#160;</td><td class="memItemRight" valign="bottom"><b>createObjects</b> (const unsigned int numObjects)</td></tr>
 <tr class="separator:af35b8ae019b5ff399a03452e93a5e72a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeeb13aad2ebe4e316cae99cffd61427e"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity_manager.html#aeeb13aad2ebe4e316cae99cffd61427e">parseFile</a> (const char *file)</td></tr>
+<tr class="memitem:aeeb13aad2ebe4e316cae99cffd61427e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeeb13aad2ebe4e316cae99cffd61427e"></a>
+const bool&#160;</td><td class="memItemRight" valign="bottom"><b>parseFile</b> (const char *file)</td></tr>
 <tr class="separator:aeeb13aad2ebe4e316cae99cffd61427e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f83a6ca14e1a7076fd6a34f7750969b"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity_manager.html#a7f83a6ca14e1a7076fd6a34f7750969b">calculateWhenToSpawn</a> (int numEntity)</td></tr>
+<tr class="memitem:a7f83a6ca14e1a7076fd6a34f7750969b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7f83a6ca14e1a7076fd6a34f7750969b"></a>
+const bool&#160;</td><td class="memItemRight" valign="bottom"><b>calculateWhenToSpawn</b> (int numEntity)</td></tr>
 <tr class="separator:a7f83a6ca14e1a7076fd6a34f7750969b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8aa9b1106b19aef236dd35a5122a1a12"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity_manager.html#a8aa9b1106b19aef236dd35a5122a1a12">spawnEntity</a> (int numEntity)</td></tr>
+<tr class="memitem:a8aa9b1106b19aef236dd35a5122a1a12"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8aa9b1106b19aef236dd35a5122a1a12"></a>
+const bool&#160;</td><td class="memItemRight" valign="bottom"><b>spawnEntity</b> (int numEntity)</td></tr>
 <tr class="separator:a8aa9b1106b19aef236dd35a5122a1a12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1dbaa7017a4073a5ca1ab4704f1f0f38"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity_manager.html#a1dbaa7017a4073a5ca1ab4704f1f0f38">entityCollides</a> (int numEntity)</td></tr>
+<tr class="memitem:a1dbaa7017a4073a5ca1ab4704f1f0f38"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1dbaa7017a4073a5ca1ab4704f1f0f38"></a>
+const bool&#160;</td><td class="memItemRight" valign="bottom"><b>entityCollides</b> (int numEntity)</td></tr>
 <tr class="separator:a1dbaa7017a4073a5ca1ab4704f1f0f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a1ef834cba3655b31adffb5ab16589205"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classassimp_mesh.html">assimpMesh</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity_manager.html#a1ef834cba3655b31adffb5ab16589205">player</a></td></tr>
+<tr class="memitem:a1ef834cba3655b31adffb5ab16589205"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1ef834cba3655b31adffb5ab16589205"></a>
+<a class="el" href="classassimp_mesh.html">assimpMesh</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>player</b></td></tr>
 <tr class="separator:a1ef834cba3655b31adffb5ab16589205"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbb3c9bdca9545d9cce7b78074dc6be1"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity_manager.html#abbb3c9bdca9545d9cce7b78074dc6be1">cutoffDistance</a></td></tr>
+<tr class="memitem:abbb3c9bdca9545d9cce7b78074dc6be1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abbb3c9bdca9545d9cce7b78074dc6be1"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>cutoffDistance</b></td></tr>
 <tr class="separator:abbb3c9bdca9545d9cce7b78074dc6be1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa02de3470b7a14a2dec0f1e81d267222"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_context.html">Context</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity_manager.html#aa02de3470b7a14a2dec0f1e81d267222">ctxt</a></td></tr>
+<tr class="memitem:aa02de3470b7a14a2dec0f1e81d267222"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa02de3470b7a14a2dec0f1e81d267222"></a>
+<a class="el" href="class_context.html">Context</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>ctxt</b></td></tr>
 <tr class="separator:aa02de3470b7a14a2dec0f1e81d267222"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cd55bb8a3aadd05cc78bd301cbd8648"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_audio_manager.html">AudioManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity_manager.html#a4cd55bb8a3aadd05cc78bd301cbd8648">audio</a></td></tr>
+<tr class="memitem:a4cd55bb8a3aadd05cc78bd301cbd8648"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4cd55bb8a3aadd05cc78bd301cbd8648"></a>
+<a class="el" href="class_audio_manager.html">AudioManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>audio</b></td></tr>
 <tr class="separator:a4cd55bb8a3aadd05cc78bd301cbd8648"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a082583e28a3548b6a1660f8ad12e57c2"><td class="memItemLeft" align="right" valign="top">vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity_manager.html#a082583e28a3548b6a1660f8ad12e57c2">spawnTimes</a></td></tr>
+<tr class="memitem:a082583e28a3548b6a1660f8ad12e57c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a082583e28a3548b6a1660f8ad12e57c2"></a>
+vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>spawnTimes</b></td></tr>
 <tr class="separator:a082583e28a3548b6a1660f8ad12e57c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13ba63d140c846361a6367139d5b44ce"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="class_entity.html">Entity</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity_manager.html#a13ba63d140c846361a6367139d5b44ce">entities</a></td></tr>
+<tr class="memitem:a13ba63d140c846361a6367139d5b44ce"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a13ba63d140c846361a6367139d5b44ce"></a>
+vector&lt; <a class="el" href="class_entity.html">Entity</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>entities</b></td></tr>
 <tr class="separator:a13ba63d140c846361a6367139d5b44ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5925567da54e6bfc6718cbcdd4bb058e"><td class="memItemLeft" align="right" valign="top">Uint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity_manager.html#a5925567da54e6bfc6718cbcdd4bb058e">startTime</a></td></tr>
+<tr class="memitem:a5925567da54e6bfc6718cbcdd4bb058e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5925567da54e6bfc6718cbcdd4bb058e"></a>
+Uint32&#160;</td><td class="memItemRight" valign="bottom"><b>startTime</b></td></tr>
 <tr class="separator:a5925567da54e6bfc6718cbcdd4bb058e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a726e5ed5295b0b1579c112169acc8e88"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EntityManager::EntityManager </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_context.html">Context</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a71a36c9fb8d579a1a1ec108e0fccf175"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EntityManager::~EntityManager </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a7f83a6ca14e1a7076fd6a34f7750969b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const bool EntityManager::calculateWhenToSpawn </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>numEntity</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="af35b8ae019b5ff399a03452e93a5e72a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const bool EntityManager::createObjects </td>
-          <td>(</td>
-          <td class="paramtype">const unsigned int&#160;</td>
-          <td class="paramname"><em>numObjects</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a1dbaa7017a4073a5ca1ab4704f1f0f38"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const bool EntityManager::entityCollides </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>numEntity</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aeeb13aad2ebe4e316cae99cffd61427e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const bool EntityManager::parseFile </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>file</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a8aa9b1106b19aef236dd35a5122a1a12"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const bool EntityManager::spawnEntity </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>numEntity</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ae34d5cb8444503fbc4a5bc2db4878c41"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int EntityManager::Update </td>
-          <td>(</td>
-          <td class="paramtype">Uint32&#160;</td>
-          <td class="paramname"><em>gameTime</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Uint32&#160;</td>
-          <td class="paramname"><em>deltaTicks</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a4cd55bb8a3aadd05cc78bd301cbd8648"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_audio_manager.html">AudioManager</a>* EntityManager::audio</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aa02de3470b7a14a2dec0f1e81d267222"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_context.html">Context</a>* EntityManager::ctxt</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="abbb3c9bdca9545d9cce7b78074dc6be1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float EntityManager::cutoffDistance</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a13ba63d140c846361a6367139d5b44ce"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">vector&lt;<a class="el" href="class_entity.html">Entity</a>*&gt; EntityManager::entities</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a1ef834cba3655b31adffb5ab16589205"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classassimp_mesh.html">assimpMesh</a>* EntityManager::player</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a082583e28a3548b6a1660f8ad12e57c2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">vector&lt;int&gt; EntityManager::spawnTimes</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a5925567da54e6bfc6718cbcdd4bb058e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Uint32 EntityManager::startTime</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/<a class="el" href="_entity_manager_8h_source.html">EntityManager.h</a></li>
-<li>src/<a class="el" href="_entity_manager_8cpp.html">EntityManager.cpp</a></li>
+<li>src/EntityManager.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -391,7 +170,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_entity_manager.html">EntityManager</a></li>
-    <li class="footer">Generated on Fri Nov 22 2013 01:11:43 for Super Happy Rocket by
+    <li class="footer">Generated on Tue Nov 26 2013 12:36:58 for Super Happy Rocket by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>
