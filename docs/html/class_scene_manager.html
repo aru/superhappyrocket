@@ -31,7 +31,7 @@
   <td style="padding-left: 0.5em;">
    <div id="projectname">Super Happy Rocket
    </div>
-   <div id="projectbrief">Tesis</div>
+   <div id="projectbrief">Proyecto de Tesis</div>
   </td>
  </tr>
  </tbody>
@@ -69,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('class_scene_manager.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -113,195 +113,48 @@ $(document).ready(function(){initNavTree('class_scene_manager.html','');});
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="_scene_manager_8h_source.html">SceneManager.h</a>&gt;</code></p>
-<div class="dynheader">
-Collaboration diagram for SceneManager:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_scene_manager__coll__graph.png" border="0" usemap="#_scene_manager_coll__map" alt="Collaboration graph"/></div>
-<map name="_scene_manager_coll__map" id="_scene_manager_coll__map">
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac154819aef6b4ac0cf874da92e8c6240"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_manager.html#ac154819aef6b4ac0cf874da92e8c6240">SceneManager</a> (<a class="el" href="class_context.html">Context</a> *ctx)</td></tr>
+<tr class="memitem:ac154819aef6b4ac0cf874da92e8c6240"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac154819aef6b4ac0cf874da92e8c6240"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SceneManager</b> (<a class="el" href="class_context.html">Context</a> *ctx)</td></tr>
 <tr class="separator:ac154819aef6b4ac0cf874da92e8c6240"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bb376a85d29e85f47753e26c7539229"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_manager.html#a2bb376a85d29e85f47753e26c7539229">~SceneManager</a> ()</td></tr>
-<tr class="separator:a2bb376a85d29e85f47753e26c7539229"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9dad0dc208908a5fd8fec0b93650a3ca"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_manager.html#a9dad0dc208908a5fd8fec0b93650a3ca">Initialize</a> ()</td></tr>
+<tr class="memitem:a9dad0dc208908a5fd8fec0b93650a3ca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9dad0dc208908a5fd8fec0b93650a3ca"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>Initialize</b> ()</td></tr>
 <tr class="separator:a9dad0dc208908a5fd8fec0b93650a3ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59b73b33e2cca96390df34f8383f015f"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_manager.html#a59b73b33e2cca96390df34f8383f015f">LoadContent</a> (const unsigned int level)</td></tr>
+<tr class="memitem:a59b73b33e2cca96390df34f8383f015f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a59b73b33e2cca96390df34f8383f015f"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>LoadContent</b> (const unsigned int level)</td></tr>
 <tr class="separator:a59b73b33e2cca96390df34f8383f015f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeaa026868167165b57d6e7f30f3b245e"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_manager.html#aeaa026868167165b57d6e7f30f3b245e">Draw</a> ()</td></tr>
+<tr class="memitem:aeaa026868167165b57d6e7f30f3b245e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeaa026868167165b57d6e7f30f3b245e"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>Draw</b> ()</td></tr>
 <tr class="separator:aeaa026868167165b57d6e7f30f3b245e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa624b9af24ca279362c6927bfa55fda0"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_manager.html#aa624b9af24ca279362c6927bfa55fda0">Update</a> (Uint32 gameTime)</td></tr>
+<tr class="memitem:aa624b9af24ca279362c6927bfa55fda0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa624b9af24ca279362c6927bfa55fda0"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>Update</b> (Uint32 gameTime)</td></tr>
 <tr class="separator:aa624b9af24ca279362c6927bfa55fda0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2be31c96e1d383ad3b0169fc09b2494a"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_manager.html#a2be31c96e1d383ad3b0169fc09b2494a">UnloadContent</a> ()</td></tr>
+<tr class="memitem:a2be31c96e1d383ad3b0169fc09b2494a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2be31c96e1d383ad3b0169fc09b2494a"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>UnloadContent</b> ()</td></tr>
 <tr class="separator:a2be31c96e1d383ad3b0169fc09b2494a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a611a4d783fd9d9a6decc2ba181bdd1cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_context.html">Context</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_manager.html#a611a4d783fd9d9a6decc2ba181bdd1cb">ctxt</a></td></tr>
+<tr class="memitem:a611a4d783fd9d9a6decc2ba181bdd1cb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a611a4d783fd9d9a6decc2ba181bdd1cb"></a>
+<a class="el" href="class_context.html">Context</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>ctxt</b></td></tr>
 <tr class="separator:a611a4d783fd9d9a6decc2ba181bdd1cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba5eaf1361847ce13d513bca98209ce7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_manager.html#aba5eaf1361847ce13d513bca98209ce7">currentLevel</a></td></tr>
+<tr class="memitem:aba5eaf1361847ce13d513bca98209ce7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba5eaf1361847ce13d513bca98209ce7"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>currentLevel</b></td></tr>
 <tr class="separator:aba5eaf1361847ce13d513bca98209ce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85055be131b6d2502a57981bf61e1603"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="class_base_level.html">BaseLevel</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_manager.html#a85055be131b6d2502a57981bf61e1603">levels</a></td></tr>
+<tr class="memitem:a85055be131b6d2502a57981bf61e1603"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a85055be131b6d2502a57981bf61e1603"></a>
+vector&lt; <a class="el" href="class_base_level.html">BaseLevel</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>levels</b></td></tr>
 <tr class="separator:a85055be131b6d2502a57981bf61e1603"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="_scene_manager_8h.html">SceneManager.h</a></p>
+<div class="textblock"><p><a class="el" href="_scene_manager_8h_source.html">SceneManager.h</a></p>
 <p>The scene manager is responsible of loading, updating and unloading the content of the currently selected level.</p>
 <p>This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</p>
 <p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details <a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ac154819aef6b4ac0cf874da92e8c6240"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">SceneManager::SceneManager </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_context.html">Context</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a2bb376a85d29e85f47753e26c7539229"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">SceneManager::~SceneManager </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aeaa026868167165b57d6e7f30f3b245e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int SceneManager::Draw </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a9dad0dc208908a5fd8fec0b93650a3ca"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int SceneManager::Initialize </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a59b73b33e2cca96390df34f8383f015f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int SceneManager::LoadContent </td>
-          <td>(</td>
-          <td class="paramtype">const unsigned int&#160;</td>
-          <td class="paramname"><em>level</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a2be31c96e1d383ad3b0169fc09b2494a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int SceneManager::UnloadContent </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aa624b9af24ca279362c6927bfa55fda0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int SceneManager::Update </td>
-          <td>(</td>
-          <td class="paramtype">Uint32&#160;</td>
-          <td class="paramname"><em>gameTime</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a611a4d783fd9d9a6decc2ba181bdd1cb"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_context.html">Context</a>* SceneManager::ctxt</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aba5eaf1361847ce13d513bca98209ce7"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int SceneManager::currentLevel</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a85055be131b6d2502a57981bf61e1603"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">vector&lt;<a class="el" href="class_base_level.html">BaseLevel</a>*&gt; SceneManager::levels</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/<a class="el" href="_scene_manager_8h_source.html">SceneManager.h</a></li>
-<li>src/<a class="el" href="_scene_manager_8cpp.html">SceneManager.cpp</a></li>
+<li>src/SceneManager.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -309,7 +162,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_scene_manager.html">SceneManager</a></li>
-    <li class="footer">Generated on Fri Nov 22 2013 01:11:43 for Super Happy Rocket by
+    <li class="footer">Generated on Tue Nov 26 2013 12:36:58 for Super Happy Rocket by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>
