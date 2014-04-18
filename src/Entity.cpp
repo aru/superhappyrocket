@@ -7,10 +7,11 @@ Entity::Entity( const int type, Context* ctx )
 	{
 	case 0:
 		mesh = new assimpMesh( "../../content/models/estrella249.3ds", ctxt );
-		mesh->frame.SetOrigin( 0.0f, 0.0f, -50.0f );
+		mesh->frame.SetOrigin( 8.0f, 5.0f, -5.0f );
 		box = new BoundingBox( mesh->frame.GetOriginX(), mesh->frame.GetOriginY(), mesh->frame.GetOriginZ(), 
 							   1.0f, 1.0f, 1.0f );
 		mesh->frame.RotateLocalZ( float( m3dDegToRad( 90.0f )) );
+		mesh->frame.RotateLocalX( float( m3dDegToRad( 90.0f ) ));
 		//mesh->frame.MoveForward( 50.0f );
 		break;
 	case 1:
@@ -41,8 +42,8 @@ Entity::Entity( const int type, Context* ctx )
 		//mesh->frame.MoveForward( 50.0f );
 		break;
 	case 4:
-		mesh = new assimpMesh( "../../content/models/edi3.3ds", ctxt );
-		mesh->frame.SetOrigin( -10.0f, -10.0f, -50.0f );
+		mesh = new assimpMesh( "../../content/models/edi4.3ds", ctxt );
+		mesh->frame.SetOrigin( 20.0f, -10.0f, -50.0f );
 		box = new BoundingBox( mesh->frame.GetOriginX(), mesh->frame.GetOriginY(), mesh->frame.GetOriginZ(), 
 							   1.0f, 1.0f, 1.0f );
 		mesh->scaleVector[0] = mesh->scaleVector[1] = mesh->scaleVector[2] =6.0f;
