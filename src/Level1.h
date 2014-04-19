@@ -44,6 +44,8 @@ public:
 	M3DMatrix44f cameraMatrix;
 
 	assimpMesh* cat;
+	assimpMesh* star;
+	assimpMesh* star2;
 
 	/* This level's EntityManager */
 	EntityManager* entityManager;

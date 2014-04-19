@@ -43,6 +43,7 @@ const int Level1::LoadContent()
 	reflectedObject->frame.MoveUp( 5.0f );
 	actors.push_back( (SimpleObject*)reflectedObject );
 
+		
 	/* Add an assimp model */
 	rocket = new assimpMesh( "../../content/models/rocket249.3ds", ctxt );
 	rocket->frame.SetOrigin( 0.0f, 0.0f, 12.0f );
@@ -60,17 +61,26 @@ const int Level1::LoadContent()
 	cat->frame.TranslateWorld( -5.0f, 0.0f, 0.0f );
 	actors.push_back( (SimpleObject*)cat );
 
+	/* Add an assimp model */
+	star = new assimpMesh( "../../content/models/estrella249.3ds", ctxt );
+	star->frame.RotateLocalX( float( m3dDegToRad( 90.0f ) ));
+	star->frame.TranslateWorld( 3.0f, 4.0f, 0.0f );
+	actors.push_back( (SimpleObject*)star );
+
+	/* Add an assimp model */
+	star2 = new assimpMesh( "../../content/models/estrella249.3ds", ctxt );
+	star2->frame.RotateLocalX( float( m3dDegToRad( 90.0f ) ));
+	star2->frame.TranslateWorld( -3.0f, 4.0f, 0.0f );
+	actors.push_back( (SimpleObject*)star2 );
+
+
+
+
 	/* Add our entity Manager */
 	entityManager = new EntityManager( ctxt );
 	entityManager->parseFile( "../../content/files/Level1.txt" );
 	pushEntityManagerObjects();
 
-	/* Add an assimp model */
-	//star = new assimpMesh( "../../content/models/estrella249.3ds", ctxt );
-	//star->frame.RotateLocalZ( float( m3dDegToRad( 90.0f ) ));
-	//star->frame.MoveForward( 50.0f );
-	//star->frame.MoveRight( 0.0f );
-	//actors.push_back( (SimpleObject*)star );
 
 	///* Add an assimp model */
 	//star2 = new assimpMesh( "../../content/models/estrella249.3ds", ctxt );
@@ -181,8 +191,8 @@ const int Level1::Update( Uint32 gameTime )
 		rocket->frame.RotateLocal( angular, 0.0f, 1.0f, 0.0f );
 		rocket->frame.Normalize();
 
-		//star->frame.RotateLocal( -angular, 1.0f, 1.0f, 0.0f );
-		//star2->frame.RotateLocal( angular, 1.0f, 1.0f, 0.0f );
+		star->frame.RotateLocal( -angular, 0.0f, 1.0f, 0.0f );
+		star2->frame.RotateLocal( -angular, 0.0f, 0.0f, 1.0f );
 		//star3->frame.RotateLocal( -angular, 1.0f, 1.0f, 0.0f );
 		//star4->frame.RotateLocal( angular, 1.0f, 1.0f, 0.0f );
 		//star5->frame.RotateLocal( -angular, 1.0f, 1.0f, 0.0f );
@@ -208,7 +218,7 @@ const int Level1::Update( Uint32 gameTime )
 		if( currentTicks >= 1000 )
 		{
 			rocket->frame.RotateLocal( angular, 0.0f, 1.0f, 0.0f );
-			//star->frame.RotateLocal( -angular, 1.0f, 1.0f, 0.0f );
+			//star->frame.RotateLocal( -angular, 0.0f, 1.0f, 0.0f );
 			//star->frame.TranslateWorld( 0.0f, 0.0f, linear );
 			//build->frame.TranslateWorld( 0.0f, 0.0f, 0.25f*linear );
 		}
