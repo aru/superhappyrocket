@@ -46,6 +46,8 @@ public:
 	assimpMesh* cat;
 	assimpMesh* star;
 	assimpMesh* star2;
+	assimpMesh* star3;
+	assimpMesh* star4;
 
 	/* This level's EntityManager */
 	EntityManager* entityManager;

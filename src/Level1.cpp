@@ -73,35 +73,23 @@ const int Level1::LoadContent()
 	star2->frame.TranslateWorld( -3.0f, 4.0f, 0.0f );
 	actors.push_back( (SimpleObject*)star2 );
 
+	/* Add an assimp model */
+	star3 = new assimpMesh( "../../content/models/estrella249.3ds", ctxt );
+	star3->frame.RotateLocalX( float( m3dDegToRad( 90.0f ) ));
+	star3->frame.TranslateWorld( 3.0f, -4.0f, 0.0f );
+	actors.push_back( (SimpleObject*)star3 );
 
-
+	/* Add an assimp model */
+	star4 = new assimpMesh( "../../content/models/estrella249.3ds", ctxt );
+	star4->frame.RotateLocalX( float( m3dDegToRad( 90.0f ) ));
+	star4->frame.TranslateWorld( -3.0f, -4.0f, 0.0f );
+	actors.push_back( (SimpleObject*)star4 );
 
 	/* Add our entity Manager */
 	entityManager = new EntityManager( ctxt );
 	entityManager->parseFile( "../../content/files/Level1.txt" );
 	pushEntityManagerObjects();
 
-
-	///* Add an assimp model */
-	//star2 = new assimpMesh( "../../content/models/estrella249.3ds", ctxt );
-	//star2->frame.RotateLocalZ( float( m3dDegToRad( 90.0f ) ));
-	//star2->frame.MoveForward( 50.0f );
-	//star2->frame.MoveRight( 0.0f );
-	//actors.push_back( (SimpleObject*)star2 );
-
-	///* Add an assimp model */
-	//star3 = new assimpMesh( "../../content/models/estrella249.3ds", ctxt );
-	//star3->frame.RotateLocalZ( float( m3dDegToRad( 90.0f ) ));
-	//star3->frame.MoveForward( 50.0f );
-	//star3->frame.MoveRight( 0.0f );
-	//actors.push_back( (SimpleObject*)star3 );
-
-	///* Add an assimp model */
-	//star4 = new assimpMesh( "../../content/models/estrella249.3ds", ctxt );
-	//star4->frame.RotateLocalZ( float( m3dDegToRad( 90.0f ) ));
-	//star4->frame.MoveForward( 50.0f );
-	//star4->frame.MoveRight( 0.0f );
-	//actors.push_back( (SimpleObject*)star4 );
 
 	///* Add an assimp model */
 	//star5 = new assimpMesh( "../../content/models/estrella249.3ds", ctxt );
@@ -193,8 +181,8 @@ const int Level1::Update( Uint32 gameTime )
 
 		star->frame.RotateLocal( -angular, 0.0f, 1.0f, 0.0f );
 		star2->frame.RotateLocal( -angular, 0.0f, 0.0f, 1.0f );
-		//star3->frame.RotateLocal( -angular, 1.0f, 1.0f, 0.0f );
-		//star4->frame.RotateLocal( angular, 1.0f, 1.0f, 0.0f );
+		star3->frame.RotateLocal( angular, 0.0f, 0.0f, 1.0f );
+		star4->frame.RotateLocal( angular, 0.0f, 1.0f, 0.0f );
 		//star5->frame.RotateLocal( -angular, 1.0f, 1.0f, 0.0f );
 	}
 	else
