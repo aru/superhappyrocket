@@ -25,18 +25,18 @@
 
 class SceneManager {
 public:
-	SceneManager( Context* ctx );
-	~SceneManager();
+    SceneManager( Context* ctx );
+    ~SceneManager();
 
-	const int Initialize();
-	const int LoadContent( const unsigned int level );
-	const int Draw();
-	const int Update( Uint32 gameTime );
-	const int UnloadContent();
+    const int Initialize();
+    const int LoadContent( const unsigned int level );
+    const int Draw();
+    const int Update( Uint32 gameTime );
+    const int UnloadContent();
 
-	Context* ctxt;
-	int currentLevel;
-	vector<BaseLevel*> levels;
+    Context* ctxt;
+    int currentLevel;
+    vector<BaseLevel*> levels;
 };
 
 #endif

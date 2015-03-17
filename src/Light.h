@@ -24,13 +24,13 @@ class Light : public SimpleObject
 
 public:
 
-	Light();
-	Light( GLfloat* pos, GLfloat* col );
-	~Light();
+    Light();
+    Light( GLfloat* pos, GLfloat* col );
+    ~Light();
 
-	/* Member specific variables */
-	M3DVector3f		position;
-	M3DVector4f		color;
+    /* Member specific variables */
+    M3DVector3f		position;
+    M3DVector4f		color;
 
 };
 

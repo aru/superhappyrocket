@@ -2,7 +2,7 @@
  * Camera.h
  *
  * Manages the camera on the current context
- * This class is in charge of getting the current camera frame, model view matrix, 
+ * This class is in charge of getting the current camera frame, model view matrix,
  * projection matrix and view frustum.
  *
  * This program is free software: you can redistribute it and/or modify
@@ -32,25 +32,25 @@
 class Camera{
 public:
 
-	/* Constructors */
-	Camera();
-	~Camera();
+    /* Constructors */
+    Camera();
+    ~Camera();
 
-	/* Member Specific Fucntions */
-	void MoveForward( float delta );
-	void MoveLeft( float delta );
-	void MoveUp( float delta );
-	void RotateX( float delta );
-	void RotateY( float delta );
-	void RotateZ( float delta );
+    /* Member Specific Fucntions */
+    void MoveForward( float delta );
+    void MoveLeft( float delta );
+    void MoveUp( float delta );
+    void RotateX( float delta );
+    void RotateY( float delta );
+    void RotateZ( float delta );
 
-	/* Member variables */
-	M3DMatrix44f		camera;
-	GLFrame				cameraFrame;
-	GLMatrixStack		modelViewMatrix;
-	GLMatrixStack		projectionMatrix;
-	GLFrustum			viewFrustum;
-	GLGeometryTransform	transformPipeline;
+    /* Member variables */
+    M3DMatrix44f           camera;
+    GLFrame	           cameraFrame;
+    GLMatrixStack	   modelViewMatrix;
+    GLMatrixStack	   projectionMatrix;
+    GLFrustum              viewFrustum;
+    GLGeometryTransform    transformPipeline;
 
 };
 

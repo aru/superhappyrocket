@@ -1,7 +1,7 @@
 /**
  * Context.h
  *
- * The Game Context class, where we store things that are relevant 
+ * The Game Context class, where we store things that are relevant
  * to every object in the game, where the different managers are,
  * how to access all of the stuff. Can be saved to a file and loaded
  * for future support of many things, game saves, reloading, tab switching, etc
@@ -64,33 +64,33 @@ using namespace std;
 class Context
 {
 public:
-	Context();
-	~Context();
+     Context();
+     ~Context();
 
-	/* Build a Context out of a text file */
-	Context( char* file );
+     /* Build a Context out of a text file */
+     Context( char* file );
 
-	/* Methods to load and save the context */
-	int LoadContext(char* file);
-	int SaveContext(char* file);
+     /* Methods to load and save the context */
+     int LoadContext(char* file);
+     int SaveContext(char* file);
 
-	/* Basepath of the game */
-	static const string basepath;
+     /* Basepath of the game */
+     static const string basepath;
 
-	/* Global variables for an application */
-	bool quit;
-	int width, height, bpp, vMode;
-	int level;
+     /* Global variables for an application */
+     bool quit;
+     int width, height, bpp, vMode;
+     int level;
 
-	/* Pointers to classes */
-	AudioManager* audio;
-	InputManager* input;
-	Renderer* renderer;
-	Camera*   camera;
-	GLShaderManager* shaderManager;
-	Timer* timer;
-	SceneManager* sceneManager;
-	TextureManager* textureManager;
+     /* Pointers to classes */
+     AudioManager* audio;
+     InputManager* input;
+     Renderer* renderer;
+     Camera*   camera;
+     GLShaderManager* shaderManager;
+     Timer* timer;
+     SceneManager* sceneManager;
+     TextureManager* textureManager;
 };
 
 /* All-purpose macros */
@@ -98,12 +98,12 @@ public:
 #define SHR_FAIL    1
 
 /* Enum for all of our levels */
-enum GameLevels 
+enum GameLevels
 {
-	MAIN_MENU,
-	LEVEL1,
-	LEVEL2,
-	LEVEL3
+     MAIN_MENU,
+     LEVEL1,
+     LEVEL2,
+     LEVEL3
 };
 
 #endif

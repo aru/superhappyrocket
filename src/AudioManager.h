@@ -27,38 +27,38 @@
 class AudioManager{
 public:
 
-	AudioManager();
-	AudioManager( Context* ctx );
-	~AudioManager();
+    AudioManager();
+    AudioManager( Context* ctx );
+    ~AudioManager();
 
-	/* Standard Engine Methods */
-	int Initialize();
-	int LoadContent();
-	int Update();
-	int UnloadContent();
+    /* Standard Engine Methods */
+    int Initialize();
+    int LoadContent();
+    int Update();
+    int UnloadContent();
 
-	/* Public Methods for the BG Music */
-	int LoadMusic( const char* file );
-	int PlayMusic();
+    /* Public Methods for the BG Music */
+    int LoadMusic( const char* file );
+    int PlayMusic();
 
-	/* Public Methods for sounds */
-	int LoadSound( const char* file );
-	int PlaySound( int soundFile, int loopTimes );
-	int PauseSound( int soundFile );
-	int StopSound( int soundFile );
+    /* Public Methods for sounds */
+    int LoadSound( const char* file );
+    int PlaySound( int soundFile, int loopTimes );
+    int PauseSound( int soundFile );
+    int StopSound( int soundFile );
 
-	/* Context Pointer */
-	Context* ctxt;
-	/* Background Music */
-	Mix_Music* music;
-	/* vector array that points to current sound files */
-	std::vector<Mix_Chunk*> sounds;
+    /* Context Pointer */
+    Context* ctxt;
+    /* Background Music */
+    Mix_Music* music;
+    /* vector array that points to current sound files */
+    std::vector<Mix_Chunk*> sounds;
 
-	/* Setup variables */
-	int audio_rate;
-	int audio_format; 
-	int audio_channels;
-	int audio_buffers;
+    /* Setup variables */
+    int audio_rate;
+    int audio_format;
+    int audio_channels;
+    int audio_buffers;
 };
 
 #endif

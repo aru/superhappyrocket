@@ -2,7 +2,7 @@
  * SDL_app.h
  *
  * This class is responsible of giving support to the SDL library,
- * initializes, updates and shuts down the application window depending 
+ * initializes, updates and shuts down the application window depending
  * on the selected context.
  * Manages events related to the window.
  *
@@ -34,32 +34,32 @@ using namespace std;
 class SDLApp
 {
 public:
-	SDLApp();
-	~SDLApp();
-	SDLApp( Context* context );
+    SDLApp();
+    ~SDLApp();
+    SDLApp( Context* context );
 
-	int Initialize();
-	int LoadContent();
-	int Update();
-	int Draw();
-	int UnloadContent();
-	//int Shutdown();
+    int Initialize();
+    int LoadContent();
+    int Update();
+    int Draw();
+    int UnloadContent();
+    //int Shutdown();
 
-	Context* ctxt;
+    Context* ctxt;
 
-	//The window we'll be rendering to
-	SDL_Window* window;
+    //The window we'll be rendering to
+    SDL_Window* window;
 
-	//OpenGL context
-	SDL_GLContext gContext;
+    //OpenGL context
+    SDL_GLContext gContext;
 
-	/* Window parameters */
-	int width;
-	int height;
-	int bpp;
-	int vMode;
-	int wantRedisplay;
-	void postRedisplay() { wantRedisplay = 0; };
+    /* Window parameters */
+    int width;
+    int height;
+    int bpp;
+    int vMode;
+    int wantRedisplay;
+    void postRedisplay() { wantRedisplay = 0; };
 };
 
 #endif

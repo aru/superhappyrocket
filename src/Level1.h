@@ -24,37 +24,37 @@
 class Level1 : public BaseLevel
 {
 public:
-	Level1( Context* ctx );
-	~Level1();
-	const int Initialize();
-	const int LoadContent();
-	const int Update( Uint32 gameTime );
-	void HandleInput( InputManager* input, Uint32 gameTime );
-	void pushEntityManagerObjects();
+    Level1( Context* ctx );
+    ~Level1();
+    const int Initialize();
+    const int LoadContent();
+    const int Update( Uint32 gameTime );
+    void HandleInput( InputManager* input, Uint32 gameTime );
+    void pushEntityManagerObjects();
 
-	/* Level content */
-	assimpMesh* rocket;
-	M3DVector3f rocketForwardVector;
-	M3DVector3f rocketUpVector;
-	M3DVector3f rocketOrigin;
+    /* Level content */
+    assimpMesh* rocket;
+    M3DVector3f rocketForwardVector;
+    M3DVector3f rocketUpVector;
+    M3DVector3f rocketOrigin;
 
-	M3DVector3f  cameraForwardVector;
-	M3DVector3f  cameraUpVector;
-	M3DVector3f  cameraOrigin;
-	M3DMatrix44f cameraMatrix;
+    M3DVector3f  cameraForwardVector;
+    M3DVector3f  cameraUpVector;
+    M3DVector3f  cameraOrigin;
+    M3DMatrix44f cameraMatrix;
 
-	assimpMesh* cat;
-	assimpMesh* star;
-	assimpMesh* star2;
-	assimpMesh* star3;
-	assimpMesh* star4;
+    assimpMesh* cat;
+    assimpMesh* star;
+    assimpMesh* star2;
+    assimpMesh* star3;
+    assimpMesh* star4;
 
-	/* This level's EntityManager */
-	EntityManager* entityManager;
+    /* This level's EntityManager */
+    EntityManager* entityManager;
 
-	bool start;
-	float linear;
-	float angular;
+    bool start;
+    float linear;
+    float angular;
 };
 
 #endif

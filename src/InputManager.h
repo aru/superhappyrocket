@@ -26,23 +26,23 @@
 class InputManager {
 public:
 
-	InputManager();
-	InputManager( Context* context );
-	~InputManager();
+    InputManager();
+    InputManager( Context* context );
+    ~InputManager();
 
-	/* SDLK_LAST is dead in SDL2 because of Unicode support, good news and bad news
-	 * we now get to look for a specific KEY(CODE) in every possible keyboard layout, but
-	 * 'layout' keys have become SCANCODES, for now SCANCODES are the option since 
-	 * we use keys depending on their position, not their actual value */
-	bool keysHeld[ SDL_NUM_SCANCODES ];
+    /* SDLK_LAST is dead in SDL2 because of Unicode support, good news and bad news
+     * we now get to look for a specific KEY(CODE) in every possible keyboard layout, but
+     * 'layout' keys have become SCANCODES, for now SCANCODES are the option since
+     * we use keys depending on their position, not their actual value */
+    bool keysHeld[ SDL_NUM_SCANCODES ];
 
-	/* KEYCODES and SCANCODES are now 32-bits */
-	bool isKeyPressed( Uint32 key );
-	Uint32 handleKeys();
+    /* KEYCODES and SCANCODES are now 32-bits */
+    bool isKeyPressed( Uint32 key );
+    Uint32 handleKeys();
 
-	/* Member variables */
-	Context* ctxt;
-	SDL_Event event;
+    /* Member variables */
+    Context* ctxt;
+    SDL_Event event;
 
 };
 

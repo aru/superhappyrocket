@@ -26,27 +26,27 @@ using namespace std;
 class BaseLevel
 {
 public:
-	BaseLevel( Context* ctx );
-	virtual ~BaseLevel();
-	virtual const int Initialize();
-	virtual const int LoadContent() = 0;
-	virtual const int Draw();
-	virtual const int Update( Uint32 gameTime );
-	virtual const int UnloadContent();
+    BaseLevel( Context* ctx );
+    virtual ~BaseLevel();
+    virtual const int Initialize();
+    virtual const int LoadContent() = 0;
+    virtual const int Draw();
+    virtual const int Update( Uint32 gameTime );
+    virtual const int UnloadContent();
 
-	Context* ctxt;
-	/* An array for all of our sounds */
-	char* song; // A level should only have one song, for now
-	vector<char*> sounds; // Different sounds across the level
-	vector<SimpleObject*> actors; // Objects in the level
-	vector<Texture2D*> textures; // Textures in the level
-	Light* lightSource; // Light Source in the level
+    Context* ctxt;
+    /* An array for all of our sounds */
+    char* song; // A level should only have one song, for now
+    vector<char*> sounds; // Different sounds across the level
+    vector<SimpleObject*> actors; // Objects in the level
+    vector<Texture2D*> textures; // Textures in the level
+    Light* lightSource; // Light Source in the level
 
-	/* Timing support */
-	Timer* clock;
-	Uint32 startTicks;   /* Time when level was started */
-	Uint32 currentTicks; /* Difference between start and sdl_getticks */
-	Uint32 deltaTicks;   /* place to save ticks passed since last time */
+    /* Timing support */
+    Timer* clock;
+    Uint32 startTicks;   /* Time when level was started */
+    Uint32 currentTicks; /* Difference between start and sdl_getticks */
+    Uint32 deltaTicks;   /* place to save ticks passed since last time */
 };
 
 /* Include additional levels */

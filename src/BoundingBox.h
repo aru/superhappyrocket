@@ -2,7 +2,7 @@
  * BoundingBox.h
  *
  * This class is used to create a bounding box that determines if an
- * object intersects with any other object with a collision detection 
+ * object intersects with any other object with a collision detection
  * method.
  *
  * This program is free software: you can redistribute it and/or modify
@@ -22,16 +22,16 @@
 class BoundingBox
 {
 public:
-	BoundingBox( float c0, float c1, float c2, 
-				 float r1, float r2, float r3 );
-	BoundingBox( const BoundingBox& box );
-	~BoundingBox();
+    BoundingBox( float c0, float c1, float c2,
+                 float r1, float r2, float r3 );
+    BoundingBox( const BoundingBox& box );
+    ~BoundingBox();
 
-	const bool intersectsWith( const BoundingBox& box );
+    const bool intersectsWith( const BoundingBox& box );
 
-	/* Actual member variables for AABB testing */
-	float c[3];
-	float r[3];
+    /* Actual member variables for AABB testing */
+    float c[3];
+    float r[3];
 };
 
 #endif

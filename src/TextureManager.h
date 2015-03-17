@@ -25,32 +25,32 @@
 class TextureManager
 {
 public:
-	TextureManager( Context* ctx );
-	~TextureManager();
+    TextureManager( Context* ctx );
+    ~TextureManager();
 
-	/* Standard engine methods */
-	const int Initialize();
-	const int LoadContent();
-	const int UnloadContent();
+    /* Standard engine methods */
+    const int Initialize();
+    const int LoadContent();
+    const int UnloadContent();
 
-	/* Helper Methods */
-	const int bindTexture( int text );
-	const bool LoadTGATexture(const char *szFileName, GLenum minFilter, GLenum magFilter, GLenum wrapMode);
-	const bool LoadTGATexture(Texture2D* text);
+    /* Helper Methods */
+    const int bindTexture( int text );
+    const bool LoadTGATexture(const char *szFileName, GLenum minFilter, GLenum magFilter, GLenum wrapMode);
+    const bool LoadTGATexture(Texture2D* text);
 
-	/* Member specific methods */
-	const int addTexture( string file );
-	const int addTexture( char* file );
-	const int addTexture( Texture2D* text );
-	
-	/* Member variables */
-	Context* ctxt;
-	GLuint *textures;
-	vector<char*> textureFiles;
-	vector<Texture2D*> texts;
-	int numTextures;
+    /* Member specific methods */
+    const int addTexture( string file );
+    const int addTexture( char* file );
+    const int addTexture( Texture2D* text );
 
-	GLbyte *pBytes;
+    /* Member variables */
+    Context* ctxt;
+    GLuint *textures;
+    vector<char*> textureFiles;
+    vector<Texture2D*> texts;
+    int numTextures;
+
+    GLbyte *pBytes;
 };
 
 #endif

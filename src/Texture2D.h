@@ -23,19 +23,19 @@
 class Texture2D
 {
 public:
-	Texture2D();
-	Texture2D( const Texture2D &txt );
-	Texture2D(const char* f, GLenum min, GLenum mag, GLenum wrap);
-	Texture2D(string* str, GLenum min, GLenum mag, GLenum wrap);
-	Texture2D(string str, GLenum min, GLenum mag, GLenum wrap);
-	~Texture2D();
+    Texture2D();
+    Texture2D(const Texture2D &txt);
+    Texture2D(const char* f, GLenum min, GLenum mag, GLenum wrap);
+    Texture2D(string* str, GLenum min, GLenum mag, GLenum wrap);
+    Texture2D(string str, GLenum min, GLenum mag, GLenum wrap);
+    ~Texture2D();
 
-	const char* file;
-	string      textureString;
-	unsigned int	textureFile;
-	GLenum		minFilter; 
-	GLenum		magFilter; 
-	GLenum		wrapMode;
+    const char*         file;
+    string              textureString;
+    unsigned int	textureFile;
+    GLenum		minFilter;
+    GLenum		magFilter;
+    GLenum		wrapMode;
 };
 
 #endif

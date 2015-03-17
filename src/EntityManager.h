@@ -2,7 +2,7 @@
  * EntityManager.h
  *
  * The EntityManager class is the responsible of creating and managing
- * events related to our entity objects, such as collisions and 
+ * events related to our entity objects, such as collisions and
  * spawning times.
  *
  * This program is free software: you can redistribute it and/or modify
@@ -36,47 +36,47 @@ using namespace std;
 class EntityManager
 {
 public:
-	EntityManager( Context* ctx );
-	~EntityManager();
+    EntityManager( Context* ctx );
+    ~EntityManager();
 
-	const int Update( Uint32 gameTime, Uint32 deltaTicks );
+    const int Update( Uint32 gameTime, Uint32 deltaTicks );
 
-	/* We need to first create the objects to be managed */
-	const bool createObjects( const unsigned int numObjects );
+    /* We need to first create the objects to be managed */
+    const bool createObjects( const unsigned int numObjects );
 
-	/* We then need to subscribe them to the level in question */ /* ---> let the level do this */
+    /* We then need to subscribe them to the level in question */ /* ---> let the level do this */
 
-	/* get the timings from a text file */
-	const bool parseFile( const char* file );
-	/* calculate when to spawn a particular entity */
-	const bool calculateWhenToSpawn( int numEntity );
-	/* spawn a particular entity */
-	const bool spawnEntity( int numEntity );
-	/* check if this entity is colliding with the player */
-	const bool entityCollides( int numEntity );
+    /* get the timings from a text file */
+    const bool parseFile( const char* file );
+    /* calculate when to spawn a particular entity */
+    const bool calculateWhenToSpawn( int numEntity );
+    /* spawn a particular entity */
+    const bool spawnEntity( int numEntity );
+    /* check if this entity is colliding with the player */
+    const bool entityCollides( int numEntity );
 
-	/**** Member objects ****/
+    /**** Member objects ****/
 
-	/* we need a pointer to the player/rocket */
-	assimpMesh* player;
+    /* we need a pointer to the player/rocket */
+    assimpMesh* player;
 
-	/* we need to declare a cutoff distance in z, after x distance after the player we reset the stars position */
-	float cutoffDistance;
+    /* we need to declare a cutoff distance in z, after x distance after the player we reset the stars position */
+    float cutoffDistance;
 
-	/* Our usual pointer to the context */
-	Context* ctxt;
+    /* Our usual pointer to the context */
+    Context* ctxt;
 
-	/* Our usual pointer to the audio manager */
-	AudioManager* audio;
+    /* Our usual pointer to the audio manager */
+    AudioManager* audio;
 
-	/* An array to a list of spawn points */
-	vector<int> spawnTimes;
+    /* An array to a list of spawn points */
+    vector<int> spawnTimes;
 
-	/* An array for all of the objects that we will manage */
-	vector<Entity*> entities;
+    /* An array for all of the objects that we will manage */
+    vector<Entity*> entities;
 
-	/* We need to know the time when the user pressed enter */
-	Uint32 startTime;
+    /* We need to know the time when the user pressed enter */
+    Uint32 startTime;
 };
 
 #endif

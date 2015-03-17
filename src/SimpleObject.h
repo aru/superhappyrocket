@@ -1,7 +1,7 @@
 /**
  * SimpleObject.h
  *
- * A SimpleObject is a structure created to represent actors in our scene.  
+ * A SimpleObject is a structure created to represent actors in our scene.
  * A SimpleObject is drawn via the stockShaders
  *
  * This program is free software: you can redistribute it and/or modify
@@ -31,42 +31,42 @@ using namespace std;
 
 class SimpleObject{
 public:
-	SimpleObject();
-	SimpleObject( const SimpleObject& obj );
-	virtual ~SimpleObject();
+    SimpleObject();
+    SimpleObject( const SimpleObject& obj );
+    virtual ~SimpleObject();
 
-	virtual const int Initialize( Context* ctx );
-	virtual const int LoadContent();
-	virtual const int Draw();
-	virtual const int Draw( Camera* camera, GLShaderManager* shaderManager, TextureManager* textureManager, Light* light );
-	virtual const int Update();
-	virtual const int UnloadContent();
+    virtual const int Initialize( Context* ctx );
+    virtual const int LoadContent();
+    virtual const int Draw();
+    virtual const int Draw( Camera* camera, GLShaderManager* shaderManager, TextureManager* textureManager, Light* light );
+    virtual const int Update();
+    virtual const int UnloadContent();
 
-	/* Member variables */
-	bool tBatch; // Used to distinguish between kinds of batches
-	GLBatch batch;
-	GLTriangleBatch triBatch;
-	GLFrame frame;
-	GLMatrixStack modelViewMatrix;
+    /* Member variables */
+    bool tBatch; // Used to distinguish between kinds of batches
+    GLBatch batch;
+    GLTriangleBatch triBatch;
+    GLFrame frame;
+    GLMatrixStack modelViewMatrix;
 
-	/* float arrays for our data */
-	vector<float> vertex;
-	vector<float> index;
-	vector<float> normal;
-	vector<float> texture;
-	vector<float> color;
+    /* float arrays for our data */
+    vector<float> vertex;
+    vector<float> index;
+    vector<float> normal;
+    vector<float> texture;
+    vector<float> color;
 
-	/* Texture used to draw this object */
-	GLuint textureFile;
-	string tFile;
+    /* Texture used to draw this object */
+    GLuint textureFile;
+    string tFile;
 
-	/* Shader File associated to this particular object */
-	GLuint shaderFile;
-	string vShader, fShader;
+    /* Shader File associated to this particular object */
+    GLuint shaderFile;
+    string vShader, fShader;
 
-	/* Matrix transforms for everything */
-	M3DMatrix44f mScaleMatrix;
-	M3DVector3f scaleVector;
+    /* Matrix transforms for everything */
+    M3DMatrix44f mScaleMatrix;
+    M3DVector3f scaleVector;
 };
 
 #include "Light.h"
