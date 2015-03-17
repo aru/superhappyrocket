@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Renderer">
+      <UniqueIdentifier>{93705b4f-e28e-4938-9538-4c4ab8a44767}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio">
+      <UniqueIdentifier>{5f18cd34-a341-46c0-b52e-95f05b433a93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{11895cbc-e131-4be2-aac8-e579c82843d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils&amp;Importers">
+      <UniqueIdentifier>{12e3e586-7f46-4f5d-93e9-94b686fc7bf7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{61c0c2d4-41d6-4ffa-8155-ee50f51e5bdb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDL App">
+      <UniqueIdentifier>{135b7394-2dbe-4503-8e80-0b29bc9e417d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Context">
+      <UniqueIdentifier>{6dcffdcc-4d54-4e19-a51d-e0f9541bd9bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Camera">
+      <UniqueIdentifier>{225336b1-284c-43e3-9788-fbf45ae9e480}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\DataTypes">
+      <UniqueIdentifier>{b438141e-60f5-4328-a3a0-a07361323bd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scene Management">
+      <UniqueIdentifier>{109356b4-9ff1-4432-89b1-cee3b52004b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Levels">
+      <UniqueIdentifier>{7222b73a-9c5e-49eb-82fd-74a515edb73c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Textures">
+      <UniqueIdentifier>{01c70cdf-027c-42f4-a2b1-1aaf9e4863c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Physics">
+      <UniqueIdentifier>{5eb3900e-b25b-4f22-8910-5da7e2805b51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects">
+      <UniqueIdentifier>{e9459d91-5350-4182-94ab-0d4ec6bc4236}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\main.cpp" />
+    <ClCompile Include="..\..\src\Context.cpp">
+      <Filter>Context</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\SDLApp.cpp">
+      <Filter>SDL App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\AudioManager.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\InputManager.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\OpenGLRenderer.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Camera.cpp">
+      <Filter>Renderer\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\SimpleObject.cpp">
+      <Filter>Game\DataTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\SceneManager.cpp">
+      <Filter>Game\Scene Management</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Timer.cpp">
+      <Filter>Utils&amp;Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\BaseLevel.cpp">
+      <Filter>Game\Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Level1.cpp">
+      <Filter>Game\Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Texture2D.cpp">
+      <Filter>Renderer\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\TextureManager.cpp">
+      <Filter>Renderer\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Light.cpp">
+      <Filter>Game\DataTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CubeMap.cpp">
+      <Filter>Game\DataTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ReflectedObject.cpp">
+      <Filter>Game\DataTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\assimpMesh.cpp">
+      <Filter>Utils&amp;Importers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\BoundingBox.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\EntityManager.cpp">
+      <Filter>Game\Scene Management</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Entity.cpp">
+      <Filter>Game\GameObjects</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\Context.h">
+      <Filter>Context</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\SDLApp.h">
+      <Filter>SDL App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\AudioManager.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\InputManager.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\OpenGLRenderer.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Camera.h">
+      <Filter>Renderer\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\SimpleObject.h">
+      <Filter>Game\DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\SceneManager.h">
+      <Filter>Game\Scene Management</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\BaseLevel.h">
+      <Filter>Game\Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Timer.h">
+      <Filter>Utils&amp;Importers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Level1.h">
+      <Filter>Game\Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Texture2D.h">
+      <Filter>Renderer\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\TextureManager.h">
+      <Filter>Renderer\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Light.h">
+      <Filter>Game\DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\CubeMap.h">
+      <Filter>Game\DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ReflectedObject.h">
+      <Filter>Game\DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\assimpMesh.h">
+      <Filter>Utils&amp;Importers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\BoundingBox.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\EntityManager.h">
+      <Filter>Game\Scene Management</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Entity.h">
+      <Filter>Game\GameObjects</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
