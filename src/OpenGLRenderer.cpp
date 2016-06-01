@@ -24,21 +24,21 @@ const int Renderer::Initialize()
     GLenum error;
 
     /* Initialize glew */
-    error = glewInit();
+    /*error = glewInit();
     if( error != GLEW_OK )
     {
         glewGetString( error );
         printf( "GLEW Error: %d on Initialize()\n", error );
-    }
+    }*/
 
     /* Check that we support the 2.1 API */
-    if( !GLEW_VERSION_2_1 )
-        printf("GLEW Version 2.1 not supported\n");
+    /*if( !GLEW_VERSION_2_1 )
+        printf("GLEW Version 2.1 not supported\n");*/
 
 #ifdef DEBUG
     /* Now check if we can use ARB_debug_output */
-    if( GLEW_ARB_debug_output ) {
-        glDebugMessageCallbackARB( &Renderer::myErrorCallback, NULL );
+    if( GLAD_GL_ARB_debug_output ) {
+        glDebugMessageCallbackARB( GLDEBUGPROCARB(Renderer::myErrorCallback), NULL );
         glEnable( GL_DEBUG_OUTPUT_SYNCHRONOUS );
         glDebugMessageControlARB(GL_DONT_CARE,
                                  GL_DONT_CARE,

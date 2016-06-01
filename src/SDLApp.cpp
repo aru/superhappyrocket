@@ -39,7 +39,7 @@ int SDLApp::Initialize()
     ctxt->audio->Initialize();
 
     /* Set the OpenGL version we will be using, AT LEAST 2.1 */
-    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 2);
+    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 4);
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 1);
 #ifdef DEBUG
     /* Set it to debug mode */
@@ -53,6 +53,9 @@ int SDLApp::Initialize()
         printf( "OpenGL context could not be created! SDL Error: %s\n", SDL_GetError() );
         return 1;
     }
+
+	/* Initialize glad */
+	gladLoadGLLoader(SDL_GL_GetProcAddress);
 
     /* GLEW is initialized by the renderer, so initialize that */
     ctxt->renderer->Initialize();

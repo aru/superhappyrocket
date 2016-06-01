@@ -83,7 +83,7 @@ const int CubeMap::Initialize( Context* ctx )
 
     gltMakeCube( batch, cubeMapSize );
 
-    shaderFile = ctx->shaderManager->LoadShaderPairWithAttributes( "../../shaders/SkyBox.vp", "../../shaders/SkyBox.fp", 2,
+    shaderFile = ctx->shaderManager->LoadShaderPairWithAttributes( "./../shaders/SkyBox.vp", "./../shaders/SkyBox.fp", 2,
                                                                    GLT_ATTRIBUTE_VERTEX, "vVertex",
                                                                    GLT_ATTRIBUTE_NORMAL, "vNormal" );
 

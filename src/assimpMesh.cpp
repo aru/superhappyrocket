@@ -146,7 +146,7 @@ void assimpMesh::processMesh( aiMesh* mesh, const aiScene* scene )
 
     /* Get the textures now */
     aiString str;
-    string tmpStr( "../../content/models/" ); // Helper string to make some sense out of data thrown by assimp
+    string tmpStr( "./../content/models/" ); // Helper string to make some sense out of data thrown by assimp
     string tmpStr2;
     /* If this material has a texture */
     if( mat->GetTextureCount( aiTextureType_DIFFUSE ) > 0 )

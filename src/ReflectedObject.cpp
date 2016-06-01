@@ -28,7 +28,7 @@ const int ReflectedObject::Initialize( Context* ctx )
     free(pBytes);
     glGenerateMipmap(GL_TEXTURE_2D);
 
-	shaderFile = ctx->shaderManager->LoadShaderPairWithAttributes( "../../shaders/Reflection.vp", "../../shaders/Reflection.fp", 3,
+	shaderFile = ctx->shaderManager->LoadShaderPairWithAttributes( "./../shaders/Reflection.vp", "./../shaders/Reflection.fp", 3,
 																   GLT_ATTRIBUTE_VERTEX, "vVertex",
 																   GLT_ATTRIBUTE_NORMAL, "vNormal",
 																   GLT_ATTRIBUTE_TEXTURE0, "vTexCoords" );

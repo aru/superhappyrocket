@@ -23,9 +23,9 @@
 #include "Texture2D.h"
 
 /* Assimp imports */
-#include <cimport.h>
-#include <scene.h>
-#include <postprocess.h>
+#include <assimp/cimport.h>
+#include <assimp/scene.h>
+#include <assimp/postprocess.h>
 
 /* std imports */
 #include <vector>

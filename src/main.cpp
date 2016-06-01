@@ -4,7 +4,7 @@ int main( int argc, char* args[] )
 {
     /* Load the config file and create a context out of it */
     Context* context;
-    context = new Context("./../../content/files/context.txt");
+    context = new Context("./../content/files/context.txt");
 
     /* Create an SDL App out of this context */
     SDLApp* game;

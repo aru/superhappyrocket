@@ -8,10 +8,10 @@ Level1::Level1( Context* ctx )
 const int Level1::LoadContent()
 {
     /* Music used in this level */
-    song = "../../content/sounds/crystals.wav";
+    song = "./../content/sounds/crystals.wav";
 
     /* Additional sounds in this level */
-    char* sound1 = "../../content/sounds/shr_fx_0.wav";
+    char* sound1 = "./../content/sounds/shr_fx_0.wav";
     sounds.push_back( sound1 );
 
     /* Add our Lights */
@@ -29,8 +29,8 @@ const int Level1::LoadContent()
     CubeMap* cubeMap;
 
     cubeMap = new CubeMap( 50.0f,
-                           "../../content/textures/pos_x3.tga", "../../content/textures/neg_x3.tga", "../../content/textures/pos_y3.tga",
-                           "../../content/textures/neg_y3.tga", "../../content/textures/pos_z3.tga", "../../content/textures/neg_z3.tga");
+                           "./../content/textures/pos_x3.tga", "./../content/textures/neg_x3.tga", "./../content/textures/pos_y3.tga",
+                           "./../content/textures/neg_y3.tga", "./../content/textures/pos_z3.tga", "./../content/textures/neg_z3.tga");
 
     //cubeMap->frame.RotateLocalY( float( m3dDegToRad( 90.0f ) ));
 
@@ -38,14 +38,14 @@ const int Level1::LoadContent()
 
     /* Add an object to reflect the cube map */
     ReflectedObject* reflectedObject;
-    reflectedObject = new ReflectedObject( "../../content/textures/tarnish.tga", cubeMap->textureFile );
+    reflectedObject = new ReflectedObject( "./../content/textures/tarnish.tga", cubeMap->textureFile );
     gltMakeSphere( reflectedObject->triBatch, 2.0f, 22, 22 );
     reflectedObject->frame.MoveUp( 5.0f );
     actors.push_back( (SimpleObject*)reflectedObject );
 
 
     /* Add an assimp model */
-    rocket = new assimpMesh( "../../content/models/rocket249.3ds", ctxt );
+    rocket = new assimpMesh( "./../content/models/rocket249.3ds", ctxt );
     rocket->frame.SetOrigin( 0.0f, 0.0f, 12.0f );
     rocket->frame.RotateLocalZ( float( m3dDegToRad( 90.0f ) ));
     rocket->frame.RotateLocalX( float( m3dDegToRad( -90.0f ) ));
@@ -55,39 +55,39 @@ const int Level1::LoadContent()
     actors.push_back( (SimpleObject*)rocket );
 
     /* Add an assimp model */
-    cat = new assimpMesh( "../../content/models/catlow249.3ds", ctxt );
+    cat = new assimpMesh( "./../content/models/catlow249.3ds", ctxt );
     cat->frame.RotateLocalX( float( m3dDegToRad( 90.0f ) ));
     cat->frame.TranslateWorld( 0.0f, 4.0f, -10.0f );
     cat->frame.TranslateWorld( -5.0f, 0.0f, 0.0f );
     actors.push_back( (SimpleObject*)cat );
 
     /* Add an assimp model */
-    star = new assimpMesh( "../../content/models/estrella249.3ds", ctxt );
+    star = new assimpMesh( "./../content/models/estrella249.3ds", ctxt );
     star->frame.RotateLocalX( float( m3dDegToRad( 90.0f ) ));
     star->frame.TranslateWorld( 3.0f, 4.0f, 0.0f );
     actors.push_back( (SimpleObject*)star );
 
     /* Add an assimp model */
-    star2 = new assimpMesh( "../../content/models/estrella249.3ds", ctxt );
+    star2 = new assimpMesh( "./../content/models/estrella249.3ds", ctxt );
     star2->frame.RotateLocalX( float( m3dDegToRad( 90.0f ) ));
     star2->frame.TranslateWorld( -3.0f, 4.0f, 0.0f );
     actors.push_back( (SimpleObject*)star2 );
 
     /* Add an assimp model */
-    star3 = new assimpMesh( "../../content/models/estrella249.3ds", ctxt );
+    star3 = new assimpMesh( "./../content/models/estrella249.3ds", ctxt );
     star3->frame.RotateLocalX( float( m3dDegToRad( 90.0f ) ));
     star3->frame.TranslateWorld( 3.0f, -4.0f, 0.0f );
     actors.push_back( (SimpleObject*)star3 );
 
     /* Add an assimp model */
-    star4 = new assimpMesh( "../../content/models/estrella249.3ds", ctxt );
+    star4 = new assimpMesh( "./../content/models/estrella249.3ds", ctxt );
     star4->frame.RotateLocalX( float( m3dDegToRad( 90.0f ) ));
     star4->frame.TranslateWorld( -3.0f, -4.0f, 0.0f );
     actors.push_back( (SimpleObject*)star4 );
 
     /* Add our entity Manager */
     entityManager = new EntityManager( ctxt );
-    entityManager->parseFile( "../../content/files/Level1.txt" );
+    entityManager->parseFile( "./../content/files/Level1.txt" );
     pushEntityManagerObjects();
 
 
