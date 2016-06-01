@@ -1,6 +1,9 @@
+# Ignore folders done by our own build process
+dependencies/
 
 # Ignore thumbnails created by windows
 Thumbs.db
+
 # Ignore files build by Visual Studio
 *.obj
 *.exe
@@ -32,6 +35,7 @@ obj/
 [R]elease*/
 _ReSharper*/
 [Tt]est[Rr]esult*
+
 # Ignore files done by CMake
 CMakeCache.txt
 CMakeFiles
@@ -40,6 +44,7 @@ Makefile
 cmake_install.cmake
 install_manifest.txt
 CTestTestfile.cmake
+
 # Ignore files done by compiling C/C++
 
 # Compiled Object files
@@ -47,21 +52,26 @@ CTestTestfile.cmake
 *.lo
 *.o
 *.obj
+
 # Precompiled Headers
 *.gch
 *.pch
+
 # Compiled Dynamic libraries
 *.so
 *.dylib
 *.dll
+
 # Fortran module files
 *.mod
 *.smod
+
 # Compiled Static libraries
 *.lai
 *.la
 *.a
 *.lib
+
 # Executables
 *.exe
 *.out
