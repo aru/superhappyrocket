@@ -1,7 +1,7 @@
 
-#ignore thumbnails created by windows
+# Ignore thumbnails created by windows
 Thumbs.db
-#Ignore files build by Visual Studio
+# Ignore files build by Visual Studio
 *.obj
 *.exe
 *.pdb
@@ -32,3 +32,11 @@ obj/
 [R]elease*/
 _ReSharper*/
 [Tt]est[Rr]esult*
+# Ignore files done by CMake
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Makefile
+cmake_install.cmake
+install_manifest.txt
+CTestTestfile.cmake
