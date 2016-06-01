@@ -22,6 +22,7 @@ Everything works in:
 ## Installing
 
 SuperHappyRocket uses CMake as part of its build process:
+
 1. Download and install CMake (https://cmake.org/)
 2. Create a new folder where you cloned this repository (i.e. build/)
 3. Change into this new folder (i.e. cd build)
