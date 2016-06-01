@@ -19,5 +19,10 @@ Everything works in:
 - SDL2_image
 - SDL2_ttf
 
-These are automatically handled by bii. So you should be able to just clone
-and hack away. Provided you have [bii](https://www.biicode.com/downloads) installed.
+## Installing
+
+SuperHappyRocket uses CMake as part of its build process:
+Download and install CMake (https://cmake.org/)
+Create a new folder where you cloned this repository (i.e. build/)
+Change into this new folder (i.e. cd build)
+Run CMake and point to the root directory (i.e. cmake ..)
