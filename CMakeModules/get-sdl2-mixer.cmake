@@ -62,6 +62,7 @@ else()
     SVN_REPOSITORY http://svn.xiph.org/trunk/Tremor/
     CONFIGURE_COMMAND PKG_CONFIG_PATH=${EXTERNAL_ROOT}/lib/pkgconfig <SOURCE_DIR>/autogen.sh --prefix=${EXTERNAL_ROOT} --with-sysroot=${EXTERNAL_ROOT}
     UPDATE_COMMAND ""
+    # patch commands are experimental
     PATCH_COMMAND patch -d<SOURCE_DIR> -N < ${CMAKE_SOURCE_DIR}/patches/tremor-no-ogg-error-message.patch
     DEPENDS ogg vorbis
   )
@@ -73,6 +74,7 @@ else()
     URL http://downloads.xiph.org/releases/flac/flac-1.2.1.tar.gz
     CONFIGURE_COMMAND <SOURCE_DIR>/configure --prefix=${EXTERNAL_ROOT} --disable-xmms-plugin --disable-oggtest --disable-doxygen-docs --disable-rpath
     BUILD_IN_SOURCE 1 # FLAC wants its api/ folder :(
+    # patch commands are experimental
     PATCH_COMMAND patch -Np1 < ${CMAKE_SOURCE_DIR}/patches/flac-1.2.1.patch
     DEPENDS tremor
   )

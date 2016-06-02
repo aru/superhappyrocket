@@ -15,38 +15,40 @@ include(ExternalProject)
 
 if(WIN32)
 # Get SDL2 dev package
-ExternalProject_Add(
-  assimp
-  #GIT_REPOSITORY git@github.com:assimp/assimp.git
-  #TIMEOUT 10
-  PREFIX ${DEPENDENCIES_ROOT}
-  URL https://github.com/assimp/assimp/archive/master.zip
-  DOWNLOAD_DIR ${DOWNLOAD_DIR}
-  #CONFIGURE_COMMAND ""
-  #BUILD_COMMAND ""
-  #INSTALL_COMMAND ""
-  INSTALL_DIR ${DEPENDENCIES_ROOT}/src/assimp-install
-  CMAKE_ARGS -DCMAKE_INSTALL_PREFIX=<INSTALL_DIR>
-  )
-set(ASSIMP_INCLUDE_DIR ${DEPENDENCIES_ROOT}/src/assimp-install/include/)
-#if(CMAKE_SIZEOF_VOID_P EQUAL 8)
-#  link_directories(${DEPENDENCIES_ROOT}/lib/x64/)
-#else(CMAKE_SIZEOF_VOID_P EQUAL 8)
-set(ASSIMP_LIBRARIES ${ASSIMP_LIBRARIES} ${DEPENDENCIES_ROOT}/src/assimp-install/lib/assimp-vc140-mt.lib)
-set(ASSIMP_LIBRARY ${ASSIMP_LIBRARY})
-set(ASSIMP_FOUND TRUE)
-#set(ASSIMP_LIBRARIES ${ASSIMP_LIBRARIES} ${DEPENDENCIES_ROOT}/lib/x86/SDL2main.lib)
-#endif(CMAKE_SIZEOF_VOID_P EQUAL 8)
+  ExternalProject_Add(
+    assimp
+    #GIT_REPOSITORY git@github.com:assimp/assimp.git
+    #TIMEOUT 10
+    PREFIX ${DEPENDENCIES_ROOT}
+    URL https://github.com/assimp/assimp/archive/master.zip
+    DOWNLOAD_DIR ${DOWNLOAD_DIR}
+    #CONFIGURE_COMMAND ""
+    #BUILD_COMMAND ""
+    #INSTALL_COMMAND ""
+    INSTALL_DIR ${DEPENDENCIES_ROOT}/src/assimp-install
+    CMAKE_ARGS -DCMAKE_INSTALL_PREFIX=<INSTALL_DIR>
+    )
+  set(ASSIMP_INCLUDE_DIR ${DEPENDENCIES_ROOT}/src/assimp-install/include/)
+  #if(CMAKE_SIZEOF_VOID_P EQUAL 8)
+  #  link_directories(${DEPENDENCIES_ROOT}/lib/x64/)
+  #else(CMAKE_SIZEOF_VOID_P EQUAL 8)
+  set(ASSIMP_LIBRARIES ${ASSIMP_LIBRARIES} ${DEPENDENCIES_ROOT}/src/assimp-install/lib/assimp-vc140-mt.lib)
+  set(ASSIMP_LIBRARY ${ASSIMP_LIBRARY})
+  set(ASSIMP_FOUND TRUE)
+  #set(ASSIMP_LIBRARIES ${ASSIMP_LIBRARIES} ${DEPENDENCIES_ROOT}/lib/x86/SDL2main.lib)
+  #endif(CMAKE_SIZEOF_VOID_P EQUAL 8)
 else(WIN32)
   ExternalProject_Add(
-  assimp
-  #GIT_REPOSITORY git@github.com:assimp/assimp.git
-  #TIMEOUT 10
-  PREFIX ${DEPENDENCIES_ROOT}
-  URL https://github.com/assimp/assimp/archive/master.zip
-  DOWNLOAD_DIR ${DOWNLOAD_DIR}
-  CONFIGURE_COMMAND <SOURCE_DIR>/configure --prefix=${DEPENDENCIES_ROOT}
-  #BUILD_COMMAND ""
-  #INSTALL_COMMAND
-  )
+    assimp
+    #GIT_REPOSITORY git@github.com:assimp/assimp.git
+    #TIMEOUT 10
+    PREFIX ${DEPENDENCIES_ROOT}
+    URL https://github.com/assimp/assimp/archive/master.zip
+    DOWNLOAD_DIR ${DOWNLOAD_DIR}
+    CONFIGURE_COMMAND <SOURCE_DIR>/configure --prefix=${DEPENDENCIES_ROOT}
+    #BUILD_COMMAND ""
+    #INSTALL_COMMAND
+    )
+  # Experimental
+  set(ASSIMP_INCLUDE_DIR ${DEPENDENCIES_ROOT}/src/assimp-install/include/)
 endif(WIN32)

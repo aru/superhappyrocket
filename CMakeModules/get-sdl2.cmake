@@ -36,7 +36,9 @@ else() # Now, if using anything else, get the sources. (TODO Poor MacOSX guys ha
     DOWNLOAD_DIR ${DOWNLOAD_DIR}
     URL https://libsdl.org/release/SDL2-2.0.4.tar.gz
     CONFIGURE_COMMAND <SOURCE_DIR>/configure --prefix=${DEPENDENCIES_ROOT}
-  )
+    )
+  # experimental
+  set(SDL2_INCLUDE_DIR ${DEPENDENCIES_ROOT}/src/sdl2/include)
 endif()
 
 # find_path( SDL2_INCLUDE_DIR SDL.H
