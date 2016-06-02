@@ -29,7 +29,7 @@ SuperHappyRocket uses CMake as part of its build process:
 4. Run CMake and point to the root directory (i.e. cmake ..)
 
 
-## Installing windows
+## Installing on Windows
 
 1. Download and install CMake (https://cmake.org/)
 2. Create a new folder where you cloned this repository (i.e. windows-build/)
