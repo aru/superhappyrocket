@@ -45,10 +45,15 @@ else(WIN32)
     PREFIX ${DEPENDENCIES_ROOT}
     URL https://github.com/assimp/assimp/archive/master.zip
     DOWNLOAD_DIR ${DOWNLOAD_DIR}
-    CONFIGURE_COMMAND <SOURCE_DIR>/configure --prefix=${DEPENDENCIES_ROOT}
+    INSTALL_DIR ${DEPENDENCIES_ROOT}/src/assimp-install
+    CMAKE_ARGS -DCMAKE_INSTALL_PREFIX=<INSTALL_DIR> -DASSIMP_BUILD_ASSIMP_TOOLS=NO
+    #CONFIGURE_COMMAND <SOURCE_DIR>/configure --prefix=${DEPENDENCIES_ROOT}
     #BUILD_COMMAND ""
     #INSTALL_COMMAND
     )
   # Experimental
   set(ASSIMP_INCLUDE_DIR ${DEPENDENCIES_ROOT}/src/assimp-install/include/)
+  set(ASSIMP_LIBRARIES ${ASSIMP_LIBRARIES} ${DEPENDENCIES_ROOT}/src/assimp-install/lib/assimp-vc140-mt.lib)
+  set(ASSIMP_LIBRARY ${ASSIMP_LIBRARY})
+  set(ASSIMP_FOUND TRUE)
 endif(WIN32)
