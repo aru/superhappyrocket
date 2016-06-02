@@ -38,7 +38,7 @@ ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF S
 #include <windows.h>		// Must have for Windows platform builds
 //#ifndef GLEW_STATIC
 //#define GLEW_STATIC
-#endif
+//#endif
 
 #include "glad.h"
 //#include <gl\glew.h>			// OpenGL Extension "autoloader"

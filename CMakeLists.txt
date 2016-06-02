@@ -197,6 +197,7 @@ endif(NOT SDL2_MIXER_FOUND)
 find_package(ASSIMP)
 # If we can't find it, build the one we include in the dependencies folder
 if(NOT ASSIMP_FOUND)
+  message(STATUS "ASSIMP not found, downloading and building it.")
   include(get-assimp)
   #ExternalProject_Get_Property(assimp INSTALL_DIR)
   add_dependencies(SuperHappyRocket assimp)
