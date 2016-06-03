@@ -37,6 +37,7 @@ SuperHappyRocket uses CMake as part of its build process:
 4. Select the folder you just created in step 2 as the path where the binaries will be built 
 ![cmake-gui](https://github.com/popoca/markdown-images/blob/master/cmake1.png?raw=true "cmake-gui")
 5. Press the Configure button and select the generator to be used (your version of Visual Studio, i.e. Visual Studio 14 2015) then press finish
+6. 
 ![cmake-generator](https://github.com/popoca/markdown-images/blob/master/cmake3.png?raw=true "cmake-generator")
 6. After the configuring is done, press the Generate button
 ![cmake-gui](https://github.com/popoca/markdown-images/blob/master/cmake2.png?raw=true "cmake-gui")
