@@ -44,5 +44,6 @@ SuperHappyRocket uses CMake as part of its build process:
 8. Build the project
 9. Set SuperHappyRocket as the StartUp Project
 ![startup-project](https://github.com/popoca/markdown-images/blob/master/vs1.png?raw=true "startup-project")
+
 10. Run the program
 
