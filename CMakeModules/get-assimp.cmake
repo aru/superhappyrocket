@@ -13,6 +13,8 @@
 
 include(ExternalProject)
 
+set(ASSIMP_FOUND FALSE)
+
 if(WIN32)
 # Get SDL2 dev package
   ExternalProject_Add(
@@ -53,7 +55,7 @@ else(WIN32)
     )
   # Experimental
   set(ASSIMP_INCLUDE_DIR ${DEPENDENCIES_ROOT}/src/assimp-install/include/)
-  set(ASSIMP_LIBRARIES ${ASSIMP_LIBRARIES} ${DEPENDENCIES_ROOT}/src/assimp-install/lib/assimp-vc140-mt.lib)
+  set(ASSIMP_LIBRARIES ${ASSIMP_LIBRARIES} ${DEPENDENCIES_ROOT}/src/assimp-install/lib/libassimp.so)
   set(ASSIMP_LIBRARY ${ASSIMP_LIBRARY})
   set(ASSIMP_FOUND TRUE)
 endif(WIN32)

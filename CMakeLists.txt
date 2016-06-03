@@ -17,7 +17,7 @@ set(SHR_ENGINE_MINOR_VERSION 0)
 set(SHR_VERSION "${SHR_ENGINE_MAJOR_VERSION}.${SHR_ENGINE_MINOR_VERSION}")
 
 # Add all of our source files in here
-set( SOURCE_PATH ./src)
+set(SOURCE_PATH ./src)
 
 set(AUDIO_FILES
   ${SOURCE_PATH}/AudioManager.cpp

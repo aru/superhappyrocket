@@ -2,6 +2,8 @@
 # based on the gear2D engine, modified to work on Windows without minGW
 include(ExternalProject)
 
+set(SDL_MIXER_FOUND FALSE)
+
 if (WIN32)
   # Get SDL2 Mixer dev package
   ExternalProject_Add(
@@ -99,22 +101,21 @@ else()
     DOWNLOAD_DIR ${DOWNLOAD_DIR}
     URL https://www.libsdl.org/projects/SDL_mixer/release/SDL2_mixer-2.0.1.tar.gz
     #URL https://libsdl.org/projects/SDL_mixer/release/SDL2_mixer-2.0.0.tar.gz
-    CONFIGURE_COMMAND
-      PKG_CONFIG_PATH=${DEPENDENCIES_ROOT}/lib/pkgconfig
-      CFLAGS+=-I${DEPENDENCIES_ROOT}/include
-      CFLAGS+=-I${DEPENDENCIES_ROOT}/include/tremor
-      LDFLAGS=-L${DEPENDENCIES_ROOT}/lib
-      <SOURCE_DIR>/configure
-        --prefix=${DEPENDENCIES_ROOT}
-        --with-smpeg-prefix=${DEPENDENCIES_ROOT}
-        --enable-music-ogg-tremor
+    #CFLAGS+=-I${DEPENDENCIES_ROOT}/include/tremor
+    CONFIGURE_COMMAND PKG_CONFIG_PATH=${DEPENDENCIES_ROOT}/lib/pkgconfig CFLAGS=-I${DEPENDENCIES_ROOT}/include LDFLAGS=-L${DEPENDENCIES_ROOT}/lib <SOURCE_DIR>/configure --prefix=${DEPENDENCIES_ROOT} --with-smpeg-prefix=${DEPENDENCIES_ROOT} --enable-music-ogg-tremor
         )
 
     set(SDL_MIXER_FOUND TRUE)
     set(SDLMIXER_FOUND ${SDL_MIXER_FOUND})
 
-    set(SDL_MIXER_INCLUDE_DIRS ${DEPENDENCIES_ROOT}/src/sdl2-mixer/include/)
+    set(SDL_MIXER_INCLUDE_DIRS ${DEPENDENCIES_ROOT}/src/sdl2-mixer/)
     set(SDLMIXER_INCLUDE_DIR ${SDL_MIXER_INCLUDE_DIRS})
     set(SDL2_MIXER_INCLUDE_DIRS ${SDLMIXER_INCLUDE_DIR})
+
+    set(SDL2_MIXER_LIBRARY_DIR ${DEPENDENCIES_ROOT}/lib)
+    set(SDL_MIXER_LIBRARIES ${SDL_MIXER_LIBRARIES} ${SDL2_MIXER_LIBRARY_DIR}/libSDL2_mixer.a)
+    set(SDLMIXER_LIBRARY ${SDL_MIXER_LIBRARIES})
+    set(SDL2_MIXER_LIBRARY ${SDLMIXER_LIBRARY})
+    set(SDL2_MIXER_LIBRARIES ${SDL_MIXER_LIBRARY})
 
 endif()

@@ -1,5 +1,7 @@
 include(ExternalProject)
 
+set(SDL2_FOUND "NO")
+
 # For win32 is better to download just the binaries.
 if (WIN32)
   # Get SDL2 dev package
@@ -28,6 +30,7 @@ if (WIN32)
     #set(SDL2_LIBRARY ${SDL2_LIBRARY} ${DEPENDENCIES_ROOT}/lib/x86/SDL2.lib)
     #set(SDL2_LIBRARY ${SDL2_LIBRARY} ${DEPENDENCIES_ROOT}/lib/x86/SDL2main.lib)
     #endif(CMAKE_SIZEOF_VOID_P EQUAL 8)
+    set(SDL2_FOUND "YES")
 else() # Now, if using anything else, get the sources. (TODO Poor MacOSX guys have nothing yet. :)
   # Build SDL2
   ExternalProject_Add(
@@ -39,6 +42,11 @@ else() # Now, if using anything else, get the sources. (TODO Poor MacOSX guys ha
     )
   # experimental
   set(SDL2_INCLUDE_DIR ${DEPENDENCIES_ROOT}/src/sdl2/include)
+  set(SDL2_FOUND "YES")
+
+  set(SDL2_LIBRARY_DIR ${DEPENDENCIES_ROOT}/lib)
+  set(SDL2_LIBRARY ${SDL2_LIBRARY} ${SDL2_LIBRARY_DIR}/libSDL2.so)
+  set(SDL2_LIBRARY ${SDL2_LIBRARY} ${SDL2_LIBRARY_DIR}/libSDL2main.a)
 endif()
 
 # find_path( SDL2_INCLUDE_DIR SDL.H
