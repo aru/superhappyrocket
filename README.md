@@ -46,5 +46,6 @@ SuperHappyRocket uses CMake as part of its build process:
 7. Open the project on Visual Studio (it can be found on the folder where the binaries were created)
 8. Build the project
 9. Set SuperHappyRocket as the StartUp Project
+
 ![startup-project](https://github.com/popoca/markdown-images/blob/master/vs1.png?raw=true "startup-project")
 10. Run the program
