@@ -9,7 +9,7 @@ Everything works in:
 - Windows
 - Linux
 - OS X
-- Android
+
 
 ## Dependencies
 
