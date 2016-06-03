@@ -41,8 +41,8 @@ SuperHappyRocket uses CMake as part of its build process:
 6. After the configuring is done, press the Generate button![cmake-gui](https://github.com/popoca/markdown-images/blob/master/cmake2.png?raw=true "cmake-gui")
 7. Open the project on Visual Studio (it can be found on the folder where the binaries were created)
 8. Build the project
- ![build-project](https://github.com/popoca/markdown-images/blob/master/vs2.png?raw=true "build-project")
 
+ ![build-project](https://github.com/popoca/markdown-images/blob/master/vs2.png?raw=true "build-project")
 9. Set SuperHappyRocket as the StartUp Project 
 
  ![startup-project](https://github.com/popoca/markdown-images/blob/master/vs1.png?raw=true "startup-project")
