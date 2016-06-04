@@ -1,9 +1,9 @@
 function generate()
 {
   cmake -G "Unix Makefiles" ..
-
 }
 
-      mkdir travis-build \
-      && generate \
-      && make \
+  mkdir travis-build \
+  cd travis-build    \
+  && generate        \
+  && make            \
