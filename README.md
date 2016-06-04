@@ -1,5 +1,5 @@
 # Super Happy Rocket
-![travis-build-status](https://travis-ci.org/aru/superhappyrocket.svg "travis-build-status")
+![travis-build-status](https://travis-ci.org/aru/superhappyrocket.svg "travis-build-status") ![appveyor-build-status](https://ci.appveyor.com/api/projects/status/ca2a2qkvwaufp40y?svg=true "appveyor-build-status")
 
 A very simple 3D runner made in C++ with SDL and OpenGL, made for our learning
 purposes.
