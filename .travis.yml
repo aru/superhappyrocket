@@ -1,4 +1,6 @@
-install: make get-deps
+install:
+  - sudo apt-get update -qq
+  - sudo apt-get install cmake
 
 branches:
   only:
