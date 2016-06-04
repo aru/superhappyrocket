@@ -1,6 +1,13 @@
 sudo: required
 dist: trusty
 
+script:
+  - echo Creating dir...
+  - mkdir build
+  - cd build
+  - cmake ..
+  - make
+
 install:
   - sudo apt-get update -qq
   - sudo apt-get install cmake
@@ -13,7 +20,3 @@ language: cpp
 
 compiler:
   - gcc
-  - clang
-  
-script:
-  - . ./.travis.sh
