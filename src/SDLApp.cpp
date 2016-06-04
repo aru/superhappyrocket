@@ -39,8 +39,8 @@ int SDLApp::Initialize()
     ctxt->audio->Initialize();
 
     /* Set the OpenGL version we will be using, AT LEAST 2.1 */
-    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 4);
-    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 1);
+    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
+    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 3);
 #ifdef DEBUG
     /* Set it to debug mode */
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_FLAGS, SDL_GL_CONTEXT_DEBUG_FLAG);
@@ -54,8 +54,8 @@ int SDLApp::Initialize()
         return 1;
     }
 
-	/* Initialize glad */
-	gladLoadGLLoader(SDL_GL_GetProcAddress);
+    /* Initialize glad */
+    gladLoadGLLoader(SDL_GL_GetProcAddress);
 
     /* GLEW is initialized by the renderer, so initialize that */
     ctxt->renderer->Initialize();
@@ -64,7 +64,7 @@ int SDLApp::Initialize()
     if( SDL_GL_SetSwapInterval( 1 ) < 0 )
     {
         printf( "Warning: Unable to set VSync! SDL Error: %s\n", SDL_GetError() );
-        return 1;
+        //return 1; // Do not die if we can't unable VSync, just let the user know.
     }
 
     /* Start our timer */

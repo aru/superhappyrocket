@@ -29,13 +29,18 @@ int AudioManager::Initialize()
     int i, n;
 
     /* Prepares everything */
-    Mix_Init( MIX_INIT_MP3 | MIX_INIT_OGG );
+    int flags = MIX_INIT_MP3 | MIX_INIT_OGG | MIX_INIT_MOD | MIX_INIT_FLAC;
+    int init = Mix_Init( flags );
 
-    if( Mix_OpenAudio( audio_rate, MIX_DEFAULT_FORMAT,
+    if( (init & flags) != flags) {
+        printf("Unable to start all of the systems\n");
+    }
+
+    if( Mix_OpenAudio( MIX_DEFAULT_FREQUENCY, MIX_DEFAULT_FORMAT,
                        audio_channels, audio_buffers ) )
     {
         /* Some error happens */
-        printf("Unable to open audio");
+        printf("Mix_OpenAudio:%s\n", Mix_GetError());
         return 1;
     }
 
