@@ -1,5 +1,6 @@
 # Super Happy Rocket
 The current build status is:
+
 Linux: [![travis-build-status](https://travis-ci.org/aru/superhappyrocket.svg "travis-build-status")](https://travis-ci.org/aru/superhappyrocket)   Windows: [![appveyor-build-status](https://ci.appveyor.com/api/projects/status/ca2a2qkvwaufp40y?svg=true "appveyor-build-status")](https://ci.appveyor.com/project/aru/superhappyrocket)
 
 A very simple 3D runner made in C++ with SDL and OpenGL, made for our learning
