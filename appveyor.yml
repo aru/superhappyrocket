@@ -29,7 +29,9 @@ install:
 
 build_script:
  - cd c:\projects\superhappyrocket
- - cmake CMakeLists.txt -G "Visual Studio %Configuration%"
+ - mkdir build
+ - cd build
+ - cmake CMakeLists.txt -G "Visual Studio %Configuration%" ..
  - msbuild /m /p:Configuration=Release /p:Platform="Win32" Assimp.sln
 
 #after_build:

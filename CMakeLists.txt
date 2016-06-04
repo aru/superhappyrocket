@@ -1,5 +1,5 @@
-# Minimum required CMake version is 3.5
-cmake_minimum_required(VERSION 3.5)
+# Minimum required CMake version is 3.2
+cmake_minimum_required(VERSION 3.2)
 
 # Prevent in-tree build, you should always build outside of the source tree
 # it makes it easy to:
