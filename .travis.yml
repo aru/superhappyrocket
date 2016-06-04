@@ -1,0 +1,14 @@
+install: make get-deps
+
+branches:
+  only:
+    - master
+
+language: cpp
+
+compiler:
+  - gcc
+  - clang
+  
+script:
+  - . ./.travis.sh
