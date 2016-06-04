@@ -32,7 +32,7 @@ build_script:
  - mkdir build
  - cd build
  - cmake CMakeLists.txt -G "Visual Studio %Configuration%" ..
- - msbuild /m /p:Configuration=Release /p:Platform="Win32" Assimp.sln
+ - msbuild /m /p:Configuration=Debug /p:Platform="Win32" shr_engine.sln
 
 #after_build:
   #- 7z a assimp.7z c:\projects\assimp\bin\release\* c:\projects\assimp\lib\release\*
