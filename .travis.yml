@@ -8,10 +8,6 @@ script:
   - cmake ..
   - make
 
-install:
-  #- sudo apt-get update -qq
-  #- sudo apt-get install cmake
-
 branches:
   only:
     - master
