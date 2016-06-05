@@ -20,3 +20,7 @@ language: cpp
 
 compiler:
   - gcc
+
+os:
+  - linux
+  - osx

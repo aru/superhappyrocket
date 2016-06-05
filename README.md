@@ -9,7 +9,7 @@ Linux: [![travis-build-status](https://travis-ci.org/aru/superhappyrocket.svg "t
 
 ## Cross-platform
 
-Everything works in:
+Currently supported platforms:
 - Windows
 - Linux
 - OS X
