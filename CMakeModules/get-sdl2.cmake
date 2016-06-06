@@ -31,36 +31,37 @@ if (WIN32)
     #set(SDL2_LIBRARY ${SDL2_LIBRARY} ${DEPENDENCIES_ROOT}/lib/x86/SDL2main.lib)
     #endif(CMAKE_SIZEOF_VOID_P EQUAL 8)
     set(SDL2_FOUND "YES")
-endif(WIN32)
+#endif(WIN32)
 
 # Now, if using anything else, get the sources.
-if(APPLE)
-  # If we are using OS X
+#if(APPLE)
+else(WIN32)
+  # If we are using OS X #### EXPERIMENTAL
   # Get SDL2 dev package
-  ExternalProject_Add(
-    sdl2
-    PREFIX ${DEPENDENCIES_ROOT}
-    DOWNLOAD_DIR ${DOWNLOAD_DIR}
-    URL http://libsdl.org/release/SDL2-2.0.4.dmg
-    CONFIGURE_COMMAND ""
-    BUILD_COMMAND ""
-    INSTALL_COMMAND ""
-    )
-  set(SDL2_INCLUDE_DIR ${DEPENDENCIES_ROOT}/src/sdl2.framework/headers)
-  #set(SDL2_INCLUDE_DIR ${DEPENDENCIES_ROOT}/include/SDL2)
-  #if(CMAKE_SIZEOF_VOID_P EQUAL 8)
-  #  link_directories(${DEPENDENCIES_ROOT}/lib/x64/)
-  #else(CMAKE_SIZEOF_VOID_P EQUAL 8)
-  set(SDL2_LIBRARY_DIR ${DEPENDENCIES_ROOT}/src/sdl2/versions/current/)
-  set(SDL2_LIBRARY ${SDL2_LIBRARY} ${SDL2_LIBRARY_DIR}/SDL2)
-  #set(SDL2_LIBRARY ${SDL2_LIBRARY} ${DEPENDENCIES_ROOT}/src/sdl2/lib/x86/SDL2main.lib)
-  #set(SDL2_LIBRARY ${SDL2_LIBRARY} ${DEPENDENCIES_ROOT}/lib/x86/SDL2.lib)
-  #set(SDL2_LIBRARY ${SDL2_LIBRARY} ${DEPENDENCIES_ROOT}/lib/x86/SDL2main.lib)
-  #endif(CMAKE_SIZEOF_VOID_P EQUAL 8)
-  set(SDL2_FOUND "YES")
-endif(APPLE)
+  # ExternalProject_Add(
+  #   sdl2
+  #   PREFIX ${DEPENDENCIES_ROOT}
+  #   DOWNLOAD_DIR ${DOWNLOAD_DIR}
+  #   URL http://libsdl.org/release/SDL2-2.0.4.dmg
+  #   CONFIGURE_COMMAND ""
+  #   BUILD_COMMAND ""
+  #   INSTALL_COMMAND ""
+  #   )
+  # set(SDL2_INCLUDE_DIR ${DEPENDENCIES_ROOT}/src/sdl2.framework/headers)
+  # #set(SDL2_INCLUDE_DIR ${DEPENDENCIES_ROOT}/include/SDL2)
+  # #if(CMAKE_SIZEOF_VOID_P EQUAL 8)
+  # #  link_directories(${DEPENDENCIES_ROOT}/lib/x64/)
+  # #else(CMAKE_SIZEOF_VOID_P EQUAL 8)
+  # set(SDL2_LIBRARY_DIR ${DEPENDENCIES_ROOT}/src/sdl2/versions/current/)
+  # set(SDL2_LIBRARY ${SDL2_LIBRARY} ${SDL2_LIBRARY_DIR}/SDL2)
+  # #set(SDL2_LIBRARY ${SDL2_LIBRARY} ${DEPENDENCIES_ROOT}/src/sdl2/lib/x86/SDL2main.lib)
+  # #set(SDL2_LIBRARY ${SDL2_LIBRARY} ${DEPENDENCIES_ROOT}/lib/x86/SDL2.lib)
+  # #set(SDL2_LIBRARY ${SDL2_LIBRARY} ${DEPENDENCIES_ROOT}/lib/x86/SDL2main.lib)
+  # #endif(CMAKE_SIZEOF_VOID_P EQUAL 8)
+  # set(SDL2_FOUND "YES")
+#endif(APPLE)
 
-if(CMAKE_SYSTEM_NAME STREQUAL Linux)
+#if(CMAKE_SYSTEM_NAME STREQUAL Linux)
     # If we are using Linux
     ExternalProject_Add(
       sdl2
@@ -76,7 +77,8 @@ if(CMAKE_SYSTEM_NAME STREQUAL Linux)
     set(SDL2_LIBRARY_DIR ${DEPENDENCIES_ROOT}/lib)
     set(SDL2_LIBRARY ${SDL2_LIBRARY} ${SDL2_LIBRARY_DIR}/libSDL2.so)
     set(SDL2_LIBRARY ${SDL2_LIBRARY} ${SDL2_LIBRARY_DIR}/libSDL2main.a)
-endif(CMAKE_SYSTEM_NAME STREQUAL Linux)
+endif(WIN32)
+#endif(CMAKE_SYSTEM_NAME STREQUAL Linux)
 
 # find_path( SDL2_INCLUDE_DIR SDL.H
 #   PATH_SUFFIXES include/SDL2 include SDL2

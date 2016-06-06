@@ -74,7 +74,7 @@ else()
     PREFIX ${DEPENDENCIES_ROOT}
     DOWNLOAD_DIR ${DOWNLOAD_DIR}
     URL http://downloads.xiph.org/releases/flac/flac-1.2.1.tar.gz
-    CONFIGURE_COMMAND <SOURCE_DIR>/configure --prefix=${DEPENDENCIES_ROOT} --disable-xmms-plugin --disable-oggtest --disable-doxygen-docs --disable-rpath
+    CONFIGURE_COMMAND <SOURCE_DIR>/configure --prefix=${DEPENDENCIES_ROOT} --disable-xmms-plugin --disable-oggtest --disable-doxygen-docs --disable-rpath --disable-asm-optimizations
     BUILD_IN_SOURCE 1 # FLAC wants its api/ folder :(
     # patch commands are experimental
     PATCH_COMMAND patch -Np1 < ${CMAKE_SOURCE_DIR}/patches/flac-1.2.1.patch
