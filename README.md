@@ -20,8 +20,6 @@ Currently supported platforms:
 - Assimp
 - SDL2
 - SDL2_mixer
-- SDL2_image
-- SDL2_ttf
 
 ## Installing
 
