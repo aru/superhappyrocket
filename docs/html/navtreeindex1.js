@@ -1,5 +1,9 @@
 var NAVTREEINDEX1 =
 {
+"class_scene_manager.html#aeaa026868167165b57d6e7f30f3b245e":[0,0,14,2],
+"class_simple_object.html":[0,0,16],
+"class_simple_object.html#a036fe05c95aabf2733dc0dab0470c385":[0,0,16,23],
+"class_simple_object.html#a05d8f5dc9883812fe3779f3639e7cdac":[0,0,16,1],
 "class_simple_object.html#a0fce8b7b9f26a11982447cc4b8bc1907":[0,0,16,13],
 "class_simple_object.html#a153209a7b59e36afec7d555708700a25":[0,0,16,3],
 "class_simple_object.html#a1fb6c6bd5c79d711f962d9c5e39d43ce":[0,0,16,10],
@@ -89,7 +93,12 @@ var NAVTREEINDEX1 =
 "classassimp_mesh.html#af73735a4a7b8b692b658af1e4f292e6d":[0,0,0,18],
 "classassimp_mesh.html#afb0cdc86e349421e12d3e5efff466725":[0,0,0,3],
 "classes.html":[0,1],
-"dir_68267d1309a1af8e8297ef4c3efbcdba.html":[1,0,0],
+"dir_126d00bf6f12019cc1831a3d6abc6c53.html":[1,0,0,0,0,0],
+"dir_650ddc539215e15c8a7cf9792b42e872.html":[1,0,0,0,0],
+"dir_6b98411cdab421d7728cd6732e6e4603.html":[1,0,0,0,0,0,0],
+"dir_73ae98f854de4851150a356aedf6453f.html":[1,0,0,0,0,0,0,0],
+"dir_d522931ffa1371640980b621734a4381.html":[1,0,0],
+"dir_d6f0da1dcbfd066521c4ecfe8ebe132e.html":[1,0,0,0],
 "files.html":[1,0],
 "functions.html":[0,3,0],
 "functions_func.html":[0,3,1],

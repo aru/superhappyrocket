@@ -19,5 +19,9 @@ var class_level1 =
     [ "rocketForwardVector", "class_level1.html#a052318511122312a63806a8f7e999417", null ],
     [ "rocketOrigin", "class_level1.html#abc8a371bf1f22d4abae3fcd7f52a4188", null ],
     [ "rocketUpVector", "class_level1.html#af64a6427f0f7ac73ee16d1d6d4bc3162", null ],
+    [ "star", "class_level1.html#a89cec98e8f1ddcbfd4f7372e37bdd78f", null ],
+    [ "star2", "class_level1.html#ac6e63bda2072c6ab320b2d774f3f0d37", null ],
+    [ "star3", "class_level1.html#a67d038b3e4208a0bde6f9abbf6ff9163", null ],
+    [ "star4", "class_level1.html#a8dfe04160d96ec57eb650c81800324b3", null ],
     [ "start", "class_level1.html#a7ccfe53965cd6952089cad249f0e593f", null ]
 ];
