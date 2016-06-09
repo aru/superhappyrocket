@@ -91,21 +91,14 @@ const int Renderer::Draw()
     /* Clear buffers */
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
 
-    /* Save the current modelview matrix( the identity matrix ) */
+    /* Save the current model-view matrix( the identity matrix ) */
     camera->modelViewMatrix.PushMatrix();
 
-    /* Get the camera matrix and push it */
-    //camera->cameraFrame.GetCameraMatrix( camera->camera, true );
-    //camera->modelViewMatrix.PushMatrix( camera->camera );
-
-    /* Draw objects that don't move */
+    /* Draw objects */
     for( numActors = 0; numActors < actors.size(); numActors++ )
     {
         actors.at( numActors )->Draw( camera, &shaderManager, ctxt->textureManager, light );
     }
-
-    /* Pop the camera matrix */
-    //camera->modelViewMatrix.PopMatrix();
 
     /* Restore the identity matrix */
     camera->modelViewMatrix.PopMatrix();

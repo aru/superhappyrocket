@@ -19,10 +19,10 @@ if(WIN32)
 # Get SDL2 dev package
   ExternalProject_Add(
     assimp
-    #GIT_REPOSITORY git@github.com:assimp/assimp.git
+    GIT_REPOSITORY git@github.com:aru/assimp.git
     #TIMEOUT 10
     PREFIX ${DEPENDENCIES_ROOT}
-    URL https://github.com/assimp/assimp/archive/master.zip
+    #URL https://github.com/assimp/assimp/archive/master.zip
     DOWNLOAD_DIR ${DOWNLOAD_DIR}
     #CONFIGURE_COMMAND ""
     #BUILD_COMMAND ""
