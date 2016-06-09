@@ -4,7 +4,7 @@ purposes.
 
 The current build status is:
 
-Linux: [![travis-build-status](https://travis-ci.org/aru/superhappyrocket.svg "travis-build-status")](https://travis-ci.org/aru/superhappyrocket)   Windows: [![appveyor-build-status](https://ci.appveyor.com/api/projects/status/ca2a2qkvwaufp40y?svg=true "appveyor-build-status")](https://ci.appveyor.com/project/aru/superhappyrocket)
+Linux/OS X: [![travis-build-status](https://travis-ci.org/aru/superhappyrocket.svg "travis-build-status")](https://travis-ci.org/aru/superhappyrocket)   Windows: [![appveyor-build-status](https://ci.appveyor.com/api/projects/status/ca2a2qkvwaufp40y?svg=true "appveyor-build-status")](https://ci.appveyor.com/project/aru/superhappyrocket)
 
 
 ## Cross-platform
@@ -20,8 +20,6 @@ Currently supported platforms:
 - Assimp
 - SDL2
 - SDL2_mixer
-- SDL2_image
-- SDL2_ttf
 
 ## Installing
 
