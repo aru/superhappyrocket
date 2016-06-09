@@ -246,7 +246,7 @@ add_custom_command( TARGET SuperHappyRocket POST_BUILD
 
 add_custom_command( TARGET SuperHappyRocket POST_BUILD
   COMMAND ${CMAKE_COMMAND} -E copy_if_different
-  "${ASSIMP_INCLUDE_DIR}/../bin/assimp-vc140-mt.dll"
+  "${ASSIMP_INCLUDE_DIR}/../bin/assimp-vc130-mtd.dll"
   $<TARGET_FILE_DIR:SuperHappyRocket>)
 endif(MSVC)
 

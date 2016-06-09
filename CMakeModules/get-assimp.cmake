@@ -46,7 +46,8 @@ else(WIN32)
     #GIT_REPOSITORY git@github.com:assimp/assimp.git
     #TIMEOUT 10
     PREFIX ${DEPENDENCIES_ROOT}
-    URL https://github.com/assimp/assimp/archive/master.zip
+    GIT_REPOSITORY https://github.com/aru/assimp
+    #URL https://github.com/assimp/assimp/archive/master.zip
     DOWNLOAD_DIR ${DOWNLOAD_DIR}
     INSTALL_DIR ${DEPENDENCIES_ROOT}/src/assimp-install
     CMAKE_ARGS -DCMAKE_INSTALL_PREFIX=<INSTALL_DIR> -DASSIMP_BUILD_ASSIMP_TOOLS=NO
