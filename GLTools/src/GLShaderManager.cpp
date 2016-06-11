@@ -42,7 +42,8 @@ ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF S
 // This shader does no transformations at all, and uses the current
 // glColor value for fragments.
 // It will shade between verticies.
-static const char *szIdentityShaderVP = "attribute vec4 vVertex;"
+static const char *szIdentityShaderVP = "#version 130\n"
+										"in vec4 vVertex;"
 										"void main(void) "
 										"{ gl_Position = vVertex; "
 										"}";
@@ -51,6 +52,7 @@ static const char *szIdentityShaderFP =
 #ifdef OPENGL_ES
 										"precision mediump float;"
 #endif
+										"#version 130\n"
 										"uniform vec4 vColor;"
 										"void main(void) "
 										"{ gl_FragColor = vColor;"
@@ -61,8 +63,9 @@ static const char *szIdentityShaderFP =
 // Flat Shader (GLT_SHADER_FLAT)
 // This shader applies the given model view matrix to the verticies, 
 // and uses a uniform color value.
-static const char *szFlatShaderVP =	"uniform mat4 mvpMatrix;"
-									"attribute vec4 vVertex;"
+static const char *szFlatShaderVP =	"#version 130\n"
+									"uniform mat4 mvpMatrix;"
+									"in vec4 vVertex;"
 									"void main(void) "
 									"{ gl_Position = mvpMatrix * vVertex; "
 									"}";
@@ -71,6 +74,7 @@ static const char *szFlatShaderFP =
 #ifdef OPENGL_ES
 									"precision mediump float;"
 #endif
+									"#version 130\n"
 									"uniform vec4 vColor;"
 									"void main(void) "
 									"{ gl_FragColor = vColor; "
@@ -79,7 +83,8 @@ static const char *szFlatShaderFP =
 ///////////////////////////////////////////////////////////////////////////////
 // GLT_SHADER_SHADED
 // Point light, diffuse lighting only
-static const char *szShadedVP =		"uniform mat4 mvpMatrix;"
+static const char *szShadedVP =		"#version 130\n"
+									"uniform mat4 mvpMatrix;"
 									"attribute vec4 vColor;"
 									"attribute vec4 vVertex;"
 									"varying vec4 vFragColor;"
@@ -92,6 +97,7 @@ static const char *szShadedFP =
 #ifdef OPENGL_ES
 									"precision mediump float;"
 #endif
+									"#version 130\n"
 									"varying vec4 vFragColor; "
 									"void main(void) { "
 									" gl_FragColor = vFragColor; "
@@ -99,7 +105,8 @@ static const char *szShadedFP =
 									
 // GLT_SHADER_DEFAULT_LIGHT
 // Simple diffuse, directional, and vertex based light
-static const char *szDefaultLightVP = "uniform mat4 mvMatrix;"
+static const char *szDefaultLightVP = "#version 130\n"
+									  "uniform mat4 mvMatrix;"
 									  "uniform mat4 pMatrix;"
 									  "varying vec4 vFragColor;"
 									  "attribute vec4 vVertex;"
@@ -125,6 +132,7 @@ static const char *szDefaultLightFP =
 #ifdef OPENGL_ES
 										"precision mediump float;"
 #endif
+										"#version 130\n"
 										"varying vec4 vFragColor; "
 										"void main(void) { "
 										" gl_FragColor = vFragColor; "

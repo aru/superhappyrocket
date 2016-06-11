@@ -19,19 +19,25 @@
 #ifndef SHR_BOUNDINGBOX
 #define SHR_BOUNDINGBOX
 
+#include <math.h>
+#include "math3d.h"
+
 class BoundingBox
 {
 public:
+	BoundingBox();
     BoundingBox( float c0, float c1, float c2,
                  float r1, float r2, float r3 );
-    BoundingBox( const BoundingBox& box );
+	BoundingBox(M3DVector3f origin, M3DVector3f radii);
+    //BoundingBox( const BoundingBox& box );
     ~BoundingBox();
 
-    const bool intersectsWith( const BoundingBox& box );
+	void setOrigin(M3DVector3f origin);
+    const bool intersectsWith( const BoundingBox& b );
 
-    /* Actual member variables for AABB testing */
-    float c[3];
-    float r[3];
+	//regionR={(x,y, z) |min.x<=x<=max.x,min.y<=y<=max.y,min.z<=z<=max.z}
+    float c[3]; // center point of our AABB or sphere
+	float r[3]; // radius of our AABB or sphere
 };
 
 #endif

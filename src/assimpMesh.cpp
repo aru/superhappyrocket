@@ -205,8 +205,8 @@ void assimpMesh::processMesh( aiMesh* mesh, const aiScene* scene )
     vector<GLushort> tmpindices;
     bool exists = false;
     /*
-     * We want to save all of our indices in one big array for every texture, to figure
-     * out which array we push the new indices into we go by the texture number, if there
+     * We want to save all of our indexes in one big array for every texture, to figure
+     * out which array we push the new indexes into we go by the texture number, if there
      * is no texture, then we use array 0.
      * Thus, we can say that if our current texture is below the index size,
      * we already have this array stored, we should only add values to that.

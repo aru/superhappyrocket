@@ -11,7 +11,7 @@ const int Level1::LoadContent()
     song = "./../content/sounds/crystals.wav";
 
     /* Additional sounds in this level */
-    char* sound1 = "./../content/sounds/shr_fx_0.wav";
+    char* sound1 = "./../content/sounds/shr_menu_0.wav";
     sounds.push_back( sound1 );
 
     /* Add our Lights */
@@ -54,33 +54,43 @@ const int Level1::LoadContent()
     rocket->frame.GetOrigin( rocketOrigin );
     actors.push_back( (SimpleObject*)rocket );
 
+	// draw the rocket's collision mesh
+	vLightPos[0] = rocket->frame.GetOriginX();
+	vLightPos[1] = rocket->frame.GetOriginY();
+	vLightPos[2] = rocket->frame.GetOriginZ();
+	Light* rocketCollision = new Light(vLightPos, vWhite);
+	gltMakeCube(rocketCollision->batch, 0.5f);
+	light0->shaderFile = GLT_SHADER_IDENTITY;
+	actors.push_back((SimpleObject*)rocketCollision);
+
+
     /* Add an assimp model */
-    cat = new assimpMesh( "./../content/models/catlow249.3ds", ctxt );
+    cat = new assimpMesh( "./../content/models/catlow249new.3ds", ctxt );
     cat->frame.RotateLocalX( float( m3dDegToRad( 90.0f ) ));
     cat->frame.TranslateWorld( 0.0f, 4.0f, -10.0f );
     cat->frame.TranslateWorld( -5.0f, 0.0f, 0.0f );
     actors.push_back( (SimpleObject*)cat );
 
     /* Add an assimp model */
-    star = new assimpMesh( "./../content/models/estrella249.3ds", ctxt );
+    star = new assimpMesh( "./../content/models/estrella249new.3ds", ctxt );
     star->frame.RotateLocalX( float( m3dDegToRad( 90.0f ) ));
     star->frame.TranslateWorld( 3.0f, 4.0f, 0.0f );
     actors.push_back( (SimpleObject*)star );
 
     /* Add an assimp model */
-    star2 = new assimpMesh( "./../content/models/estrella249.3ds", ctxt );
+    star2 = new assimpMesh( "./../content/models/estrella249new.3ds", ctxt );
     star2->frame.RotateLocalX( float( m3dDegToRad( 90.0f ) ));
     star2->frame.TranslateWorld( -3.0f, 4.0f, 0.0f );
     actors.push_back( (SimpleObject*)star2 );
 
     /* Add an assimp model */
-    star3 = new assimpMesh( "./../content/models/estrella249.3ds", ctxt );
+    star3 = new assimpMesh( "./../content/models/estrella249new.3ds", ctxt );
     star3->frame.RotateLocalX( float( m3dDegToRad( 90.0f ) ));
     star3->frame.TranslateWorld( 3.0f, -4.0f, 0.0f );
     actors.push_back( (SimpleObject*)star3 );
 
     /* Add an assimp model */
-    star4 = new assimpMesh( "./../content/models/estrella249.3ds", ctxt );
+    star4 = new assimpMesh( "./../content/models/estrella249new.3ds", ctxt );
     star4->frame.RotateLocalX( float( m3dDegToRad( 90.0f ) ));
     star4->frame.TranslateWorld( -3.0f, -4.0f, 0.0f );
     actors.push_back( (SimpleObject*)star4 );
@@ -187,10 +197,16 @@ const int Level1::Update( Uint32 gameTime )
     }
     else
     {
-        entityManager->Update( currentTicks, deltaTicks );
+		// Update the rocket bounding box position
+		M3DVector3f rocketPos;
+		rocket->frame.GetOrigin(rocketPos);
+		rocket->collisionMesh.setOrigin(rocketPos);
+		// Update the entity manager with our new bounding box position
+        entityManager->Update( currentTicks, deltaTicks, &rocket->collisionMesh);
+
         ctxt->audio->PlayMusic();
 
-        if( currentTicks <= 1000 )
+        if( currentTicks <= 100 )
         {
             rocket->frame.SetOrigin( rocketOrigin );
             rocket->frame.SetUpVector( rocketUpVector );
@@ -203,7 +219,7 @@ const int Level1::Update( Uint32 gameTime )
             ctxt->camera->cameraFrame.RotateLocalX( float(m3dDegToRad(5.0f)) );
 
         }
-        if( currentTicks >= 1000 )
+		else
         {
             rocket->frame.RotateLocal( angular, 0.0f, 1.0f, 0.0f );
             //star->frame.RotateLocal( -angular, 0.0f, 1.0f, 0.0f );
@@ -296,6 +312,9 @@ void Level1::HandleInput( InputManager* input, Uint32 gameTime )
             }
         }
     }
+}
+void Level1::HandleCollisions() {
+	// Check against the current building position.
 }
 
 void Level1::pushEntityManagerObjects()

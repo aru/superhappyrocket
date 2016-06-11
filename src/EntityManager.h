@@ -39,7 +39,7 @@ public:
     EntityManager( Context* ctx );
     ~EntityManager();
 
-    const int Update( Uint32 gameTime, Uint32 deltaTicks );
+    const int Update( Uint32 gameTime, Uint32 deltaTicks, BoundingBox* playerMesh);
 
     /* We need to first create the objects to be managed */
     const bool createObjects( const unsigned int numObjects );

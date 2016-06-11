@@ -30,6 +30,7 @@ public:
     const int LoadContent();
     const int Update( Uint32 gameTime );
     void HandleInput( InputManager* input, Uint32 gameTime );
+	void HandleCollisions();
     void pushEntityManagerObjects();
 
     /* Level content */

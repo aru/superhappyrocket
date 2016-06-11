@@ -52,7 +52,7 @@ const bool EntityManager::parseFile( const char* file )
     return true;
 }
 
-const int EntityManager::Update( Uint32 gameTime, Uint32 deltaTicks )
+const int EntityManager::Update( Uint32 gameTime, Uint32 deltaTicks, BoundingBox* playerMesh )
 {
     /* We need to spawn each entity so that they reach the player when the textFile says
      * it should, for this to happen, we calculate:
@@ -93,6 +93,10 @@ const int EntityManager::Update( Uint32 gameTime, Uint32 deltaTicks )
     for( i = 0; i < entities.size(); i++ )
     {
         entities.at(i)->Update( deltaTicks );
+		// check for collision with the player
+		if (playerMesh->intersectsWith(entities[i]->mesh->collisionMesh)) {
+			ctxt->audio->PlaySoundEffect(0,1);
+		}
     }
 
     return SHR_SUCCESS;

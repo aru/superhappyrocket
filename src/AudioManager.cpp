@@ -29,11 +29,11 @@ int AudioManager::Initialize()
     int i, n;
 
     /* Prepares everything */
-    int flags = MIX_INIT_MP3 | MIX_INIT_OGG | MIX_INIT_MOD | MIX_INIT_FLAC;
+    int flags = MIX_INIT_MP3 | MIX_INIT_OGG | MIX_INIT_FLAC;
     int init = Mix_Init( flags );
 
     if( (init & flags) != flags) {
-        printf("Unable to start all of the systems\n");
+        printf("Unable to start all of the systems: %s\n", Mix_GetError());
     }
 
     if( Mix_OpenAudio( MIX_DEFAULT_FREQUENCY, MIX_DEFAULT_FORMAT,
@@ -102,7 +102,7 @@ int AudioManager::LoadSound( const char* file )
         return -1;
 }
 
-int AudioManager::PlaySound( int soundFile, int loopTimes )
+int AudioManager::PlaySoundEffect( int soundFile, int loopTimes )
 {
     /* If soundFile is -1 we are trying to query all channels
      * else, we are looking for a specific channel
@@ -116,13 +116,10 @@ int AudioManager::PlaySound( int soundFile, int loopTimes )
         return 0; /* A sound is already playing, bail out */
     }
 
-    if( soundFile == 0 )
-    {
-        return Mix_PlayChannel( -1, sounds.at( soundFile ), loopTimes );
-    }
+    return Mix_PlayChannel( -1, sounds.at( soundFile ), loopTimes );
 
     // Some error happened
-    return 0;
+    //return 0;
 }
 
 int AudioManager::LoadContent()

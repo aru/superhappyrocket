@@ -43,7 +43,7 @@ public:
 
     /* Public Methods for sounds */
     int LoadSound( const char* file );
-    int PlaySound( int soundFile, int loopTimes );
+    int PlaySoundEffect( int soundFile, int loopTimes );
     int PauseSound( int soundFile );
     int StopSound( int soundFile );
 

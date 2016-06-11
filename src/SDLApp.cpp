@@ -44,6 +44,8 @@ int SDLApp::Initialize()
 #ifdef DEBUG
     /* Set it to debug mode */
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_FLAGS, SDL_GL_CONTEXT_DEBUG_FLAG);
+	/* Set it to compatibility mode */
+	SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_COMPATIBILITY);
 #endif
 
     /* Create context */
@@ -53,6 +55,12 @@ int SDLApp::Initialize()
         printf( "OpenGL context could not be created! SDL Error: %s\n", SDL_GetError() );
         return 1;
     }
+
+	int major = 0, minor = 0;
+	SDL_GL_GetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, &major);
+	SDL_GL_GetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, &minor);
+
+	printf("OpenGL version: %d.%d\n", major, minor);
 
     /* Initialize glad */
     gladLoadGLLoader(SDL_GL_GetProcAddress);

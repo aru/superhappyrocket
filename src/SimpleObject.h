@@ -26,6 +26,7 @@
 #include <GLMatrixStack.h>
 
 #include "Context.h"
+#include "BoundingBox.h"
 
 using namespace std;
 
@@ -67,6 +68,9 @@ public:
     /* Matrix transforms for everything */
     M3DMatrix44f mScaleMatrix;
     M3DVector3f scaleVector;
+
+	/* Add a bounding box to all of our SimpleObjects */
+	BoundingBox collisionMesh;
 };
 
 #include "Light.h"
