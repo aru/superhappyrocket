@@ -26,7 +26,7 @@ const bool EntityManager::createObjects( const unsigned int numObjects )
          * Star - 0
          * Buildings - 1-9
          */
-        j = rand() % MAX_ENTITY_NUMBER;
+		j = i % MAX_ENTITY_NUMBER;
         /* Create an entity of that kind */
         Entity* tmpObj = new Entity( j, ctxt );
         /* Push it into our array */

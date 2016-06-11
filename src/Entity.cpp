@@ -19,27 +19,27 @@ Entity::Entity( const int type, Context* ctx )
         break;
     case 1:
         mesh = new assimpMesh( "./../content/models/edificio1.3ds", ctxt );
-		entityPos[0] = -30.0f; entityPos[1] = -10.0f; entityPos[2] = -50.0f;
+		entityPos[0] = -10.0f; entityPos[1] = -12.0f; entityPos[2] = -18.0f;
         mesh->frame.SetOrigin( entityPos );
 		mesh->collisionMesh.setOrigin(entityPos);
         
         mesh->frame.RotateLocalX( float( m3dDegToRad( 90.0f ) ));
-        mesh->scaleVector[0] = mesh->scaleVector[1] = mesh->scaleVector[2] =6.0f;
+		mesh->scaleVector[0] = mesh->scaleVector[1] = mesh->scaleVector[2] = 7.0f;
         //mesh->frame.MoveForward( 50.0f );
         break;
     case 2:
         mesh = new assimpMesh( "./../content/models/edificio2.3ds", ctxt );
-		entityPos[0] = -10.0f; entityPos[1] = -10.0f; entityPos[2] = -50.0f;
+		entityPos[0] = -22.0f; entityPos[1] = -12.0f; entityPos[2] = -24.0f;
         mesh->frame.SetOrigin( entityPos );
 		mesh->collisionMesh.setOrigin(entityPos);
         
-        mesh->scaleVector[0] = mesh->scaleVector[1] = mesh->scaleVector[2] =6.0f;
+        mesh->scaleVector[0] = mesh->scaleVector[1] = mesh->scaleVector[2] =8.0f;
         mesh->frame.RotateLocalX( float( m3dDegToRad( 90.0f ) ));
         //mesh->frame.MoveForward( 50.0f );
         break;
     case 3:
         mesh = new assimpMesh( "./../content/models/edificio3.3ds", ctxt );
-		entityPos[0] = -15.0f; entityPos[1] = -10.0f; entityPos[2] = -50.0f;
+		entityPos[0] = 18.0f; entityPos[1] = -12.0f; entityPos[2] = -15.0f;
         mesh->frame.SetOrigin( entityPos );
 		mesh->collisionMesh.setOrigin(entityPos);
         
@@ -49,7 +49,7 @@ Entity::Entity( const int type, Context* ctx )
         break;
     case 4:
         mesh = new assimpMesh( "./../content/models/edificio4.3ds", ctxt );
-		entityPos[0] = 20.0f; entityPos[1] = -10.0f; entityPos[2] = -50.0f;
+		entityPos[0] = -1.0f; entityPos[1] = -12.0f; entityPos[2] = -24.0f;
         mesh->frame.SetOrigin( entityPos );
 		mesh->collisionMesh.setOrigin(entityPos);
         
@@ -58,7 +58,7 @@ Entity::Entity( const int type, Context* ctx )
         break;
     case 5:
         mesh = new assimpMesh( "./../content/models/edificio5.3ds", ctxt );
-		entityPos[0] = 20.0f; entityPos[1] = -10.0f; entityPos[2] = -50.0f;
+		entityPos[0] = 6.0f; entityPos[1] = -12.0f; entityPos[2] = -18.0f;
         mesh->frame.SetOrigin( entityPos );
 		mesh->collisionMesh.setOrigin(entityPos);
        
@@ -67,7 +67,7 @@ Entity::Entity( const int type, Context* ctx )
         break;
     case 6:
         mesh = new assimpMesh( "./../content/models/edificio6.3ds", ctxt );
-		entityPos[0] = 20.0f; entityPos[1] = -10.0f; entityPos[2] = -50.0f;
+		entityPos[0] = 14.0f; entityPos[1] = -12.0f; entityPos[2] = -20.0f;
         mesh->frame.SetOrigin( entityPos );
 		mesh->collisionMesh.setOrigin(entityPos);
         

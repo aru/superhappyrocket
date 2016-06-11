@@ -55,13 +55,13 @@ const int Level1::LoadContent()
     actors.push_back( (SimpleObject*)rocket );
 
 	// draw the rocket's collision mesh
-	vLightPos[0] = rocket->frame.GetOriginX();
+	/*vLightPos[0] = rocket->frame.GetOriginX();
 	vLightPos[1] = rocket->frame.GetOriginY();
 	vLightPos[2] = rocket->frame.GetOriginZ();
 	Light* rocketCollision = new Light(vLightPos, vWhite);
 	gltMakeCube(rocketCollision->batch, 0.5f);
 	light0->shaderFile = GLT_SHADER_IDENTITY;
-	actors.push_back((SimpleObject*)rocketCollision);
+	actors.push_back((SimpleObject*)rocketCollision);*/
 
 
     /* Add an assimp model */
