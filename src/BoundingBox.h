@@ -33,6 +33,7 @@ public:
     ~BoundingBox();
 
 	void setOrigin(M3DVector3f origin);
+	void setRadii(M3DVector3f radii);
     const bool intersectsWith( const BoundingBox& b );
 
 	//regionR={(x,y, z) |min.x<=x<=max.x,min.y<=y<=max.y,min.z<=z<=max.z}

@@ -42,6 +42,12 @@ void BoundingBox::setOrigin(M3DVector3f origin) {
 	this->c[2] = origin[2];
 }
 
+void BoundingBox::setRadii(M3DVector3f radii) {
+	this->r[0] = radii[0];
+	this->r[1] = radii[1];
+	this->r[2] = radii[2];
+}
+
 const bool BoundingBox::intersectsWith( const BoundingBox& b )
 {
 	if (fabsf(this->c[0] - b.c[0])>(this->r[0] + b.r[0])) return false;

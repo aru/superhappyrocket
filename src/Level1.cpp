@@ -45,7 +45,7 @@ const int Level1::LoadContent()
 
 
     /* Add an assimp model */
-    rocket = new assimpMesh( "./../content/models/rocket249.3ds", ctxt );
+    rocket = new assimpMesh( "./../content/models/rocket249new.3ds", ctxt );
     rocket->frame.SetOrigin( 0.0f, 0.0f, 12.0f );
     rocket->frame.RotateLocalZ( float( m3dDegToRad( 90.0f ) ));
     rocket->frame.RotateLocalX( float( m3dDegToRad( -90.0f ) ));
@@ -55,13 +55,15 @@ const int Level1::LoadContent()
     actors.push_back( (SimpleObject*)rocket );
 
 	// draw the rocket's collision mesh
+#if 1
 	vLightPos[0] = rocket->frame.GetOriginX();
 	vLightPos[1] = rocket->frame.GetOriginY();
 	vLightPos[2] = rocket->frame.GetOriginZ();
 	Light* rocketCollision = new Light(vLightPos, vWhite);
-	gltMakeCube(rocketCollision->batch, 0.5f);
+	gltMakeCube(rocketCollision->batch, 0.24f);
 	light0->shaderFile = GLT_SHADER_IDENTITY;
 	actors.push_back((SimpleObject*)rocketCollision);
+#endif // 1
 
 
     /* Add an assimp model */
