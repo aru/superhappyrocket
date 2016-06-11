@@ -19,10 +19,11 @@ if(WIN32)
 # Get SDL2 dev package
   ExternalProject_Add(
     assimp
-    #GIT_REPOSITORY git@github.com:assimp/assimp.git
+    GIT_REPOSITORY https://github.com/aru/assimp
+    #git@github.com:aru/assimp.git
     #TIMEOUT 10
     PREFIX ${DEPENDENCIES_ROOT}
-    URL https://github.com/assimp/assimp/archive/master.zip
+    #URL https://github.com/assimp/assimp/archive/master.zip
     DOWNLOAD_DIR ${DOWNLOAD_DIR}
     #CONFIGURE_COMMAND ""
     #BUILD_COMMAND ""
@@ -34,7 +35,7 @@ if(WIN32)
   #if(CMAKE_SIZEOF_VOID_P EQUAL 8)
   #  link_directories(${DEPENDENCIES_ROOT}/lib/x64/)
   #else(CMAKE_SIZEOF_VOID_P EQUAL 8)
-  set(ASSIMP_LIBRARIES ${ASSIMP_LIBRARIES} ${DEPENDENCIES_ROOT}/src/assimp-install/lib/assimp-vc140-mt.lib)
+  set(ASSIMP_LIBRARIES ${ASSIMP_LIBRARIES} ${DEPENDENCIES_ROOT}/src/assimp-install/lib/assimp-vc130-mtd.lib)
   set(ASSIMP_LIBRARY ${ASSIMP_LIBRARY})
   set(ASSIMP_FOUND TRUE)
   #set(ASSIMP_LIBRARIES ${ASSIMP_LIBRARIES} ${DEPENDENCIES_ROOT}/lib/x86/SDL2main.lib)
@@ -45,7 +46,8 @@ else(WIN32)
     #GIT_REPOSITORY git@github.com:assimp/assimp.git
     #TIMEOUT 10
     PREFIX ${DEPENDENCIES_ROOT}
-    URL https://github.com/assimp/assimp/archive/master.zip
+    GIT_REPOSITORY https://github.com/aru/assimp
+    #URL https://github.com/assimp/assimp/archive/master.zip
     DOWNLOAD_DIR ${DOWNLOAD_DIR}
     INSTALL_DIR ${DEPENDENCIES_ROOT}/src/assimp-install
     CMAKE_ARGS -DCMAKE_INSTALL_PREFIX=<INSTALL_DIR> -DASSIMP_BUILD_ASSIMP_TOOLS=NO

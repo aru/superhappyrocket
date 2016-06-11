@@ -38,7 +38,7 @@ int SDLApp::Initialize()
     /* Start our audio manager */
     ctxt->audio->Initialize();
 
-    /* Set the OpenGL version we will be using, AT LEAST 2.1 */
+    /* Set the OpenGL version we will be using, AT LEAST 3.3 */
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 3);
 #ifdef DEBUG
@@ -108,7 +108,9 @@ int SDLApp::Update()
 
 int SDLApp::UnloadContent()
 {
-    ctxt->audio->UnloadContent();
-    ctxt->renderer->UnloadContent();
+	if(ctxt->audio)
+		ctxt->audio->UnloadContent();
+	if(ctxt->renderer)
+		ctxt->renderer->UnloadContent();
     return 0;
 }
