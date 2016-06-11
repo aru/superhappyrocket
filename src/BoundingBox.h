@@ -34,6 +34,9 @@ public:
 
 	void setOrigin(M3DVector3f origin);
 	void setRadii(M3DVector3f radii);
+	void rotateX(float radians);
+	void rotateY(float radians);
+	void rotateZ(float radians);
     const bool intersectsWith( const BoundingBox& b );
 
 	//regionR={(x,y, z) |min.x<=x<=max.x,min.y<=y<=max.y,min.z<=z<=max.z}

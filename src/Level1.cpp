@@ -55,7 +55,7 @@ const int Level1::LoadContent()
     actors.push_back( (SimpleObject*)rocket );
 
 	// draw the rocket's collision mesh
-#if 1
+#if 0
     vLightPos[0] = rocket->frame.GetOriginX();
     vLightPos[1] = rocket->frame.GetOriginY();
     vLightPos[2] = rocket->frame.GetOriginZ();

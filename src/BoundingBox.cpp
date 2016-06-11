@@ -48,6 +48,36 @@ void BoundingBox::setRadii(M3DVector3f radii) {
 	this->r[2] = radii[2];
 }
 
+void BoundingBox::rotateX(float radians) {
+	float tempX = this->r[0] * 1.0f;
+	float tempY = (this->r[1] * cos(radians)) - (this->r[2] * sin(radians));
+    float tempZ = this->r[1] * sin(radians) + this->r[2] * cos(radians);
+
+	this->r[0] = tempX;
+	this->r[1] = tempY;
+	this->r[2] = tempZ;
+}
+
+void BoundingBox::rotateY(float radians) {
+	float tempX = this->r[0] * cosf(radians) + this->r[2] * sinf(radians);
+	float tempY = this->r[1] * 1.0f;
+	float tempZ = this->r[2] * cosf(radians) - this->r[0] * sinf(radians);
+
+	this->r[0] = tempX;
+	this->r[1] = tempY;
+	this->r[2] = tempZ;
+}
+
+void BoundingBox::rotateZ(float radians) {
+	float tempX = this->r[0] * cosf(radians) - this->r[2] * sinf(radians);
+	float tempY = this->r[0] * sinf(radians) + this->r[2] * cosf(radians);
+	float tempZ = this->r[2] * 1.0f;
+
+	this->r[0] = tempX;
+	this->r[1] = tempY;
+	this->r[2] = tempZ;
+}
+
 const bool BoundingBox::intersectsWith( const BoundingBox& b )
 {
 	if (fabsf(this->c[0] - b.c[0])>(this->r[0] + b.r[0])) return false;
