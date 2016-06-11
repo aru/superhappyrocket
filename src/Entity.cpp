@@ -4,6 +4,7 @@ Entity::Entity( const int type, Context* ctx )
     :entityType( type ), ctxt( ctx ), speed( 5.0f ), move( false )
 {
 	M3DVector3f entityPos;
+	M3DVector3f boundingBox;
     switch( entityType )
     {
     case 0:
