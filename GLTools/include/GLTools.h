@@ -68,13 +68,14 @@ ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF S
 
 // Linux
 #ifdef linux
-#define GLEW_STATIC
+//#define GLEW_STATIC
 //#include <glew.h>
 #include "glad.h"
 #endif
 
 //////////////////////// TEMPORARY TEMPORARY TEMPORARY - On SnowLeopard this is suppored, but GLEW doens't hook up properly
 //////////////////////// Fixed probably in 10.6.3
+#if 0
 #ifdef __APPLE__
 #define glGenVertexArrays glGenVertexArraysAPPLE
 #define glDeleteVertexArrays  glDeleteVertexArraysAPPLE
@@ -82,7 +83,8 @@ ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF S
 #ifndef OPENGL_ES
 #define glGenerateMipmap    glGenerateMipmapEXT
 #endif
-#endif
+#endif  
+#endif // 0
 
 
 // Universal includes
