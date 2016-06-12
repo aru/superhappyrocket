@@ -39,7 +39,7 @@ int SDLApp::Initialize()
     ctxt->audio->Initialize();
 
     /* Set the OpenGL version we will be using, AT LEAST 3.3 */
-    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 2);
+    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 4);
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 1);
 #ifdef DEBUG
     /* Set it to debug mode */
