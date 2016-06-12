@@ -4,6 +4,7 @@ Entity::Entity( const int type, Context* ctx )
     :entityType( type ), ctxt( ctx ), speed( 5.0f ), move( false )
 {
 	M3DVector3f entityPos;
+	M3DVector3f collisionPos;
 	M3DVector3f entityRadii;
 	M3DVector3f scaleFactor = { 0.0f, 0.0f, 0.0f };
     switch( entityType )
@@ -65,17 +66,18 @@ Entity::Entity( const int type, Context* ctx )
         break;
     case 4:
         mesh = new assimpMesh( "./../content/models/edificio4.3ds", ctxt );
-		entityPos[0] = -1.0f; entityPos[1] = -12.0f; entityPos[2] = -24.0f;
+		entityPos[0] = 0.0f; entityPos[1] = 0.0f; entityPos[2] = -30.0f;
+		//entityPos[0] = -1.0f; entityPos[1] = -12.0f; entityPos[2] = -24.0f;
         mesh->frame.SetOrigin( entityPos );
 		mesh->collisionMesh.setOrigin(entityPos);
-		scaleFactor[0] = scaleFactor[1] = scaleFactor[2] = 6.0f;
+		scaleFactor[0] = scaleFactor[1] = scaleFactor[2] = 2.0f;
         mesh->scaleVector[0] = mesh->scaleVector[1] = mesh->scaleVector[2] = scaleFactor[0];
 
-        entityRadii[0] = 0.50f * scaleFactor[0]; entityRadii[1] = 0.50f * scaleFactor[1]; entityRadii[2] = 2.30f * scaleFactor[2];
+        entityRadii[0] = 0.5f * scaleFactor[0]; entityRadii[1] = 0.5f * scaleFactor[1]; entityRadii[2] = 2.30f * scaleFactor[2];
         mesh->collisionMesh.setRadii(entityRadii);
-		mesh->collisionMesh.rotateX( float( m3dDegToRad(90.0f)) );
 
         mesh->frame.RotateLocalX( float( m3dDegToRad( 90.0f ) ));
+		//mesh->collisionMesh.rotateX( float( m3dDegToRad(90.0f)) );
         break;
     case 5:
         mesh = new assimpMesh( "./../content/models/edificio5.3ds", ctxt );

@@ -47,8 +47,16 @@ const int Level1::LoadContent()
     /* Add an assimp model */
     rocket = new assimpMesh( "./../content/models/rocket249new.3ds", ctxt );
     rocket->frame.SetOrigin( 0.0f, 0.0f, 12.0f );
-    rocket->frame.RotateLocalZ( float( m3dDegToRad( 90.0f ) ));
+	// original model is pointing down
+    //rocket->frame.RotateLocalZ( float( m3dDegToRad( 90.0f ) ));
     rocket->frame.RotateLocalX( float( m3dDegToRad( -90.0f ) ));
+	M3DVector3f entityPos;
+	rocket->frame.GetOrigin(entityPos);
+	rocket->collisionMesh.setOrigin(entityPos);
+	M3DVector3f entityRadii = { 0.23f, 0.72f, 0.24f };
+	rocket->collisionMesh.setRadii( entityRadii );
+	//rocket->collisionMesh.rotateZ(float(m3dDegToRad(90.0f)));
+	//rocket->collisionMesh.rotateX(float(m3dDegToRad(-90.0f)));
     rocket->frame.GetForwardVector( rocketForwardVector );
     rocket->frame.GetUpVector( rocketUpVector );
     rocket->frame.GetOrigin( rocketOrigin );
@@ -199,12 +207,6 @@ const int Level1::Update( Uint32 gameTime )
     }
     else
     {
-		// Update the rocket bounding box position
-		M3DVector3f rocketPos;
-		rocket->frame.GetOrigin(rocketPos);
-		rocket->collisionMesh.setOrigin(rocketPos);
-		// Update the entity manager with our new bounding box position
-        entityManager->Update( currentTicks, deltaTicks, &rocket->collisionMesh);
 
         ctxt->audio->PlayMusic();
 
@@ -228,6 +230,14 @@ const int Level1::Update( Uint32 gameTime )
             //star->frame.TranslateWorld( 0.0f, 0.0f, linear );
             //build->frame.TranslateWorld( 0.0f, 0.0f, 0.25f*linear );
         }
+
+		// Update the rocket bounding box position
+		M3DVector3f rocketPos;
+		rocket->frame.GetOrigin(rocketPos);
+		rocket->collisionMesh.setOrigin(rocketPos);
+		// Update the entity manager with our new bounding box position
+		entityManager->Update(currentTicks, deltaTicks, &rocket->collisionMesh);
+
     }
     HandleInput( ctxt->input, gameTime );
 
