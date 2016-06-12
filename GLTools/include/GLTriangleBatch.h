@@ -103,7 +103,6 @@ class GLTriangleBatch : public GLBatchBase
         // Useful for statistics
         inline GLuint GetIndexCount(void) { return nNumIndexes; }
         inline GLuint GetVertexCount(void) { return nNumVerts; }
-
         
         // Draw - make sure you call glEnableClientState for these arrays
         virtual void Draw(void);
