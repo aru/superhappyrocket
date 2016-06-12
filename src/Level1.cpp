@@ -210,7 +210,7 @@ const int Level1::Update( Uint32 gameTime )
 
         ctxt->audio->PlayMusic();
 
-        if( currentTicks <= 100 )
+        if( currentTicks <= 500 )
         {
             rocket->frame.SetOrigin( rocketOrigin );
             rocket->frame.SetUpVector( rocketUpVector );
