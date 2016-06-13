@@ -42,7 +42,7 @@ ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF S
 // This shader does no transformations at all, and uses the current
 // glColor value for fragments.
 // It will shade between verticies.
-static const char *szIdentityShaderVP = "#version 130\n"
+static const char *szIdentityShaderVP = "#version 330\n"
 										"in vec4 vVertex;"
 										"void main(void) "
 										"{ gl_Position = vVertex; "
@@ -52,7 +52,7 @@ static const char *szIdentityShaderFP =
 #ifdef OPENGL_ES
 										"precision mediump float;"
 #endif
-										"#version 130\n"
+										"#version 330\n"
 										"uniform vec4 vColor;"
 										"out vec4 color;"
 										"void main(void) "
@@ -64,7 +64,7 @@ static const char *szIdentityShaderFP =
 // Flat Shader (GLT_SHADER_FLAT)
 // This shader applies the given model view matrix to the verticies, 
 // and uses a uniform color value.
-static const char *szFlatShaderVP =	"#version 130\n"
+static const char *szFlatShaderVP =	"#version 330\n"
 									"uniform mat4 mvpMatrix;"
 									"in vec4 vVertex;"
 									"void main(void) "
@@ -75,7 +75,7 @@ static const char *szFlatShaderFP =
 #ifdef OPENGL_ES
 									"precision mediump float;"
 #endif
-									"#version 130\n"
+									"#version 330\n"
 									"uniform vec4 vColor;"
 									"out vec4 color;"
 									"void main(void) "
@@ -85,7 +85,7 @@ static const char *szFlatShaderFP =
 ///////////////////////////////////////////////////////////////////////////////
 // GLT_SHADER_SHADED
 // Point light, diffuse lighting only
-static const char *szShadedVP =		"#version 130\n"
+static const char *szShadedVP =		"#version 330\n"
 									"uniform mat4 mvpMatrix;"
 									"in vec4 vColor;"
 									"in vec4 vVertex;"
@@ -99,7 +99,7 @@ static const char *szShadedFP =
 #ifdef OPENGL_ES
 									"precision mediump float;"
 #endif
-									"#version 130\n"
+									"#version 330\n"
 									"in vec4 vFragColor; "
 									"out vec4 color;"
 									"void main(void) { "
@@ -108,7 +108,7 @@ static const char *szShadedFP =
 									
 // GLT_SHADER_DEFAULT_LIGHT
 // Simple diffuse, directional, and vertex based light
-static const char *szDefaultLightVP = "#version 130\n"
+static const char *szDefaultLightVP = "#version 330\n"
 									  "uniform mat4 mvMatrix;"
 									  "uniform mat4 pMatrix;"
 									  "out vec4 vFragColor;"
@@ -135,7 +135,7 @@ static const char *szDefaultLightFP =
 #ifdef OPENGL_ES
 										"precision mediump float;"
 #endif
-										"#version 130\n"
+										"#version 330\n"
 										"in vec4 vFragColor; "
 	                                    "out vec4 color;"
 										"void main(void) { "
@@ -144,7 +144,7 @@ static const char *szDefaultLightFP =
 
 //GLT_SHADER_POINT_LIGHT_DIFF
 // Point light, diffuse lighting only
-static const char *szPointLightDiffVP =	  "#version 130\n"
+static const char *szPointLightDiffVP =	  "#version 330\n"
 										  "uniform mat4 mvMatrix;"
 										  "uniform mat4 pMatrix;"
 										  "uniform vec3 vLightPos;"
@@ -176,7 +176,7 @@ static const char *szPointLightDiffFP =
 #ifdef OPENGL_ES
 										"precision mediump float;"
 #endif
-										"#version 130\n"
+										"#version 330\n"
 										"in vec4 vFragColor; "
 										"out vec4 color;"
 										"void main(void) { "
@@ -185,7 +185,7 @@ static const char *szPointLightDiffFP =
 
 //GLT_SHADER_TEXTURE_REPLACE
 // Just put the texture on the polygons
-static const char *szTextureReplaceVP =	"#version 130\n"
+static const char *szTextureReplaceVP =	"#version 330\n"
 										"uniform mat4 mvpMatrix;"
 										"in vec4 vVertex;"
 										"in vec2 vTexCoord0;"
@@ -199,7 +199,7 @@ static const char *szTextureReplaceFP =
 #ifdef OPENGL_ES
 										"precision mediump float;"
 #endif
-										"#version 130\n"
+										"#version 330\n"
 										"in vec2 vTex;"
 										"uniform sampler2D textureUnit0;"
 										"out vec4 color;"
@@ -209,7 +209,7 @@ static const char *szTextureReplaceFP =
 
 
 // Just put the texture on the polygons
-static const char *szTextureRectReplaceVP =	"#version 130\n"
+static const char *szTextureRectReplaceVP =	"#version 330\n"
 										"uniform mat4 mvpMatrix;"
                                         "in vec4 vVertex;"
                                         "in vec2 vTexCoord0;"
@@ -223,7 +223,7 @@ static const char *szTextureRectReplaceFP =
 #ifdef OPENGL_ES
                                         "precision mediump float;"
 #endif
-										"#version 130\n"
+										"#version 330\n"
                                         "in vec2 vTex;"
                                         "uniform sampler2DRect textureUnit0;"
 										"out vec4 color;"
@@ -235,7 +235,7 @@ static const char *szTextureRectReplaceFP =
 
 //GLT_SHADER_TEXTURE_MODULATE
 // Just put the texture on the polygons, but multiply by the color (as a unifomr)
-static const char *szTextureModulateVP ="#version 130\n"
+static const char *szTextureModulateVP ="#version 330\n"
 										"uniform mat4 mvpMatrix;"
 										"in vec4 vVertex;"
 										"in vec2 vTexCoord0;"
@@ -249,7 +249,7 @@ static const char *szTextureModulateFP =
 #ifdef OPENGL_ES
 										"precision mediump float;"
 #endif
-										"#version 130\n"
+										"#version 330\n"
 										"in vec2 vTex;"
 										"uniform sampler2D textureUnit0;"
 										"uniform vec4 vColor;"
@@ -262,7 +262,7 @@ static const char *szTextureModulateFP =
 
 //GLT_SHADER_TEXTURE_POINT_LIGHT_DIFF
 // Point light (Diffuse only), with texture (modulated)
-static const char *szTexturePointLightDiffVP =    "#version 130\n"
+static const char *szTexturePointLightDiffVP =    "#version 330\n"
 												  "uniform mat4 mvMatrix;"
 												  "uniform mat4 pMatrix;"
 												  "uniform vec3 vLightPos;"
@@ -297,7 +297,7 @@ static const char *szTexturePointLightDiffFP =
 #ifdef OPENGL_ES
 												"precision mediump float;"
 #endif
-												"#version 130\n"
+												"#version 330\n"
 												"in vec4 vFragColor;"
 											    "in vec2 vTex;"
 												"uniform sampler2D textureUnit0;"

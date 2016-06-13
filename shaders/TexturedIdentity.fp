@@ -2,7 +2,7 @@
 // Fragment Shader
 // Richard S. Wright Jr.
 // OpenGL SuperBible
-#version 130
+#version 330
 
 
 uniform sampler2D colorMap;
