@@ -11,11 +11,11 @@ Entity::Entity( const int type, Context* ctx )
     {
     case 0:
         mesh = new assimpMesh( "./../content/models/estrella249.3ds", ctxt );
-		entityPos[0] = 8.0f; entityPos[1] = 5.0f; entityPos[2] = -5.0f;
+		entityPos[0] = 0.0f; entityPos[1] = 2.2f; entityPos[2] = -10.0f;
         mesh->frame.SetOrigin( entityPos );
 		mesh->collisionMesh.setOrigin(entityPos);
 
-		entityRadii[0] = 0.82f; entityRadii[1] = 0.39f; entityRadii[2] = 0.78f;
+		entityRadii[0] = 0.48f; entityRadii[1] = 0.28f; entityRadii[2] = 0.39f;
 		mesh->collisionMesh.setRadii( entityRadii );
 
         mesh->frame.RotateLocalZ( float( m3dDegToRad( 90.0f )) );
@@ -24,13 +24,13 @@ Entity::Entity( const int type, Context* ctx )
         break;
     case 1:
         mesh = new assimpMesh( "./../content/models/edificio1.3ds", ctxt );
-		entityPos[0] = -10.0f; entityPos[1] = -12.0f; entityPos[2] = -18.0f;
+		entityPos[0] = -4.0f; entityPos[1] = -12.0f; entityPos[2] = -18.0f;
         mesh->frame.SetOrigin( entityPos );
 		mesh->collisionMesh.setOrigin(entityPos);
 		scaleFactor[0] = 7.0f; scaleFactor[1] = 7.0f; scaleFactor[2] = 7.0f;
 		mesh->scaleVector[0] = scaleFactor[0]; mesh->scaleVector[1] = scaleFactor[1];  mesh->scaleVector[2] = scaleFactor[2];
 
-		entityRadii[0] = 0.50f * scaleFactor[0]; entityRadii[1] = 0.50f * scaleFactor[1]; entityRadii[2] = 1.43f * scaleFactor[2];
+		entityRadii[0] = 0.25f * scaleFactor[0]; entityRadii[1] = 1.83f * scaleFactor[1]; entityRadii[2] = 0.23f * scaleFactor[2];
 		mesh->collisionMesh.setRadii(entityRadii);
 
         mesh->frame.RotateLocalX( float( m3dDegToRad( 90.0f ) ));
@@ -38,13 +38,13 @@ Entity::Entity( const int type, Context* ctx )
         break;
     case 2:
         mesh = new assimpMesh( "./../content/models/edificio2.3ds", ctxt );
-		entityPos[0] = -22.0f; entityPos[1] = -12.0f; entityPos[2] = -24.0f;
+		entityPos[0] = 3.0f; entityPos[1] = -8.0f; entityPos[2] = -14.0f;
         mesh->frame.SetOrigin( entityPos );
 		mesh->collisionMesh.setOrigin(entityPos);
-		scaleFactor[0] = scaleFactor[1] = scaleFactor[2] = 8.0f;
+		scaleFactor[0] = scaleFactor[1] = scaleFactor[2] = 7.0f;
         mesh->scaleVector[0] = mesh->scaleVector[1] = mesh->scaleVector[2] = scaleFactor[0];
 
-		entityRadii[0] = 0.31f * scaleFactor[0]; entityRadii[1] = 0.33f * scaleFactor[1]; entityRadii[2] = 1.73f * scaleFactor[2];
+		entityRadii[0] = 0.333f * scaleFactor[0]; entityRadii[1] = 1.73f * scaleFactor[1]; entityRadii[2] = 0.3f * scaleFactor[2];
         mesh->collisionMesh.setRadii(entityRadii);
 
         mesh->frame.RotateLocalX( float( m3dDegToRad( 90.0f ) ));
@@ -52,13 +52,13 @@ Entity::Entity( const int type, Context* ctx )
         break;
     case 3:
         mesh = new assimpMesh( "./../content/models/edificio3.3ds", ctxt );
-		entityPos[0] = 18.0f; entityPos[1] = -12.0f; entityPos[2] = -15.0f;
+		entityPos[0] = 0.0f; entityPos[1] = -12.0f; entityPos[2] = -15.0f;
         mesh->frame.SetOrigin( entityPos );
 		mesh->collisionMesh.setOrigin(entityPos);
 		scaleFactor[0] = scaleFactor[1] = scaleFactor[2] = 6.0f;
 		mesh->scaleVector[0] = mesh->scaleVector[1] = mesh->scaleVector[2] = scaleFactor[0];
 
-		entityRadii[0] = 0.31f * scaleFactor[0]; entityRadii[1] = 0.33f * scaleFactor[1]; entityRadii[2] = 1.08f * scaleFactor[2];
+		entityRadii[0] = 0.35f * scaleFactor[0]; entityRadii[1] = 1.08f * scaleFactor[1]; entityRadii[2] = 0.35f * scaleFactor[2];
 		mesh->collisionMesh.setRadii(entityRadii);
 
         mesh->frame.RotateLocalX( float( m3dDegToRad( 90.0f ) ));
@@ -66,14 +66,14 @@ Entity::Entity( const int type, Context* ctx )
         break;
     case 4:
         mesh = new assimpMesh( "./../content/models/edificio4.3ds", ctxt );
-		entityPos[0] = -3.0f; entityPos[1] = -13.0f; entityPos[2] = -30.0f;
+		entityPos[0] = -2.0f; entityPos[1] = -13.0f; entityPos[2] = -30.0f;
 		//entityPos[0] = -1.0f; entityPos[1] = -12.0f; entityPos[2] = -24.0f;
         mesh->frame.SetOrigin( entityPos );
 		mesh->collisionMesh.setOrigin(entityPos);
 		scaleFactor[0] = scaleFactor[1] = scaleFactor[2] = 6.0f;
         mesh->scaleVector[0] = mesh->scaleVector[1] = mesh->scaleVector[2] = scaleFactor[0];
 
-        entityRadii[0] = 0.3f * scaleFactor[0]; entityRadii[1] = 2.30f * scaleFactor[1]; entityRadii[2] = 0.3f * scaleFactor[2];
+        entityRadii[0] = 0.185f * scaleFactor[0]; entityRadii[1] = 2.30f * scaleFactor[1]; entityRadii[2] = 0.185f * scaleFactor[2];
 		//entityRadii[0] = 0.5f * scaleFactor[0]; entityRadii[1] = 2.30f * scaleFactor[1]; entityRadii[2] = 0.5f * scaleFactor[2];
 		//entityRadii[0] = 0.5f * scaleFactor[0]; entityRadii[1] = 0.5f * scaleFactor[1]; entityRadii[2] = 2.30f * scaleFactor[2];
         mesh->collisionMesh.setRadii(entityRadii);
@@ -83,30 +83,45 @@ Entity::Entity( const int type, Context* ctx )
         break;
     case 5:
         mesh = new assimpMesh( "./../content/models/edificio5.3ds", ctxt );
-		entityPos[0] = 6.0f; entityPos[1] = -12.0f; entityPos[2] = -18.0f;
+		entityPos[0] = 2.0f; entityPos[1] = -12.0f; entityPos[2] = -18.0f;
         mesh->frame.SetOrigin( entityPos );
 		mesh->collisionMesh.setOrigin(entityPos);
 		scaleFactor[0] = scaleFactor[1] = scaleFactor[2] = 6.0f;
 		mesh->scaleVector[0] = mesh->scaleVector[1] = mesh->scaleVector[2] = scaleFactor[0];
 
-		entityRadii[0] = 0.50f * scaleFactor[0]; entityRadii[1] = 0.50f * scaleFactor[1]; entityRadii[2] = 1.43f * scaleFactor[2];
+		entityRadii[0] = 0.25f * scaleFactor[0]; entityRadii[1] = 1.63f * scaleFactor[1]; entityRadii[2] = 0.25f * scaleFactor[2];
 		mesh->collisionMesh.setRadii(entityRadii);
-		mesh->collisionMesh.rotateX( float(m3dDegToRad(90.0f)) );
+		//mesh->collisionMesh.rotateX( float(m3dDegToRad(90.0f)) );
         mesh->frame.RotateLocalX( float( m3dDegToRad( 90.0f ) ));
         break;
     case 6:
         mesh = new assimpMesh( "./../content/models/edificio6.3ds", ctxt );
-		entityPos[0] = 14.0f; entityPos[1] = -12.0f; entityPos[2] = -20.0f;
+		entityPos[0] = 4.0f; entityPos[1] = -8.0; entityPos[2] = -20.0f;
         mesh->frame.SetOrigin( entityPos );
 		mesh->collisionMesh.setOrigin(entityPos);
 		scaleFactor[0] = scaleFactor[1] = scaleFactor[2] = 6.0f;
 		mesh->scaleVector[0] = mesh->scaleVector[1] = mesh->scaleVector[2] = scaleFactor[0];
 
-		entityRadii[0] = 0.31f * scaleFactor[0]; entityRadii[1] = 0.33f * scaleFactor[1]; entityRadii[2] = 1.73f * scaleFactor[2];
+		entityRadii[0] = 0.33f * scaleFactor[0]; entityRadii[1] = 1.27f * scaleFactor[1]; entityRadii[2] = 0.33f * scaleFactor[2];
 		mesh->collisionMesh.setRadii(entityRadii);
 
         mesh->frame.RotateLocalX( float( m3dDegToRad( 90.0f ) ));
         break;
+	case 7:
+		mesh = new assimpMesh("./../content/models/catlow249new.3ds", ctxt);
+		entityPos[0] = 1.5f; entityPos[1] = 2.5f; entityPos[2] = 0.0f;
+		mesh->frame.SetOrigin(entityPos);
+		mesh->collisionMesh.setOrigin(entityPos);
+		scaleFactor[0] = scaleFactor[1] = scaleFactor[2] = 0.5f;
+		mesh->scaleVector[0] = mesh->scaleVector[1] = mesh->scaleVector[2] = scaleFactor[0];
+
+		entityRadii[0] = 1.5f* scaleFactor[0]; entityRadii[1] = 0.18f* scaleFactor[1]; entityRadii[2] = 1.29f* scaleFactor[2];
+		mesh->collisionMesh.setRadii(entityRadii);
+
+		mesh->frame.RotateLocalZ(float(m3dDegToRad(0.0f)));
+		mesh->frame.RotateLocalX(float(m3dDegToRad(80.0f)));
+		//mesh->frame.MoveForward( 50.0f );
+		break;
     default:
         printf("Invalid entity requested: %d", entityType );
         break;
@@ -124,7 +139,7 @@ Entity::~Entity()
 void Entity::Update( Uint32 gameTime )
 {
 
-    float linear = ( 50.f * ( gameTime / 1000.f));
+    float linear = ( 5.f * ( gameTime / 1000.f));
     float angular = float(m3dDegToRad( 50.f * (gameTime / 1000.f)));
 	M3DVector3f entityPos;
 
@@ -142,6 +157,7 @@ void Entity::Update( Uint32 gameTime )
         case 4:
         case 5:
         case 6:
+		case 7:
             mesh->frame.TranslateWorld( 0.0f, 0.0f, linear );
             break;
         default:

@@ -84,7 +84,7 @@ const int Level1::LoadContent()
     /* Add an assimp model */
     star = new assimpMesh( "./../content/models/estrella249new.3ds", ctxt );
     star->frame.RotateLocalX( float( m3dDegToRad( 90.0f ) ));
-    star->frame.TranslateWorld( 3.0f, 4.0f, 0.0f );
+    star->frame.TranslateWorld( 3.0f, 5.0f, 0.0f );
     actors.push_back( (SimpleObject*)star );
 
     /* Add an assimp model */
@@ -96,14 +96,64 @@ const int Level1::LoadContent()
     /* Add an assimp model */
     star3 = new assimpMesh( "./../content/models/estrella249new.3ds", ctxt );
     star3->frame.RotateLocalX( float( m3dDegToRad( 90.0f ) ));
-    star3->frame.TranslateWorld( 3.0f, -4.0f, 0.0f );
+    star3->frame.TranslateWorld( 7.0f, 3.5f, 0.0f );
     actors.push_back( (SimpleObject*)star3 );
 
     /* Add an assimp model */
     star4 = new assimpMesh( "./../content/models/estrella249new.3ds", ctxt );
     star4->frame.RotateLocalX( float( m3dDegToRad( 90.0f ) ));
-    star4->frame.TranslateWorld( -3.0f, -4.0f, 0.0f );
+    star4->frame.TranslateWorld( -7.0f, 6.0f, 0.0f );
     actors.push_back( (SimpleObject*)star4 );
+
+	/* Add an assimp model citybg1 negro simple*/
+	building = new assimpMesh("./../content/models/edificio6.3ds", ctxt);
+	building->scaleVector[0] = 7; building->scaleVector[1] = 7;  building->scaleVector[2] = 7;
+	building->frame.RotateLocalX(float(m3dDegToRad(90.0f)));
+	building->frame.TranslateWorld(-18.0f, -17.0f, -30.0f);
+	actors.push_back((SimpleObject*)building);
+
+	/* Add an assimp model citybg2 cafe comp*/
+	building2 = new assimpMesh("./../content/models/edificio5.3ds", ctxt);
+	building2->scaleVector[0] = 7; building2->scaleVector[1] = 7;  building2->scaleVector[2] = 7;
+	building2->frame.RotateLocalX(float(m3dDegToRad(90.0f)));
+	building2->frame.TranslateWorld(-20.0f, -15.0f, -20.0f);
+	actors.push_back((SimpleObject*)building2);
+
+	/* Add an assimp model citybg3 blanco comp*/
+	building3 = new assimpMesh("./../content/models/edificio4.3ds", ctxt);
+	building3->scaleVector[0] = 7; building3->scaleVector[1] = 7;  building3->scaleVector[2] = 7;
+	building3->frame.RotateLocalX(float(m3dDegToRad(90.0f)));
+	building3->frame.TranslateWorld(-8.0f, -15.0f, -24.0f);
+	actors.push_back((SimpleObject*)building3);
+
+	/* Add an assimp model citybg4 negro comp*/
+	building4 = new assimpMesh("./../content/models/edificio1.3ds", ctxt);
+	building4->scaleVector[0] = 7; building4->scaleVector[1] = 7;  building4->scaleVector[2] = 7;
+	building4->frame.RotateLocalX(float(m3dDegToRad(90.0f)));
+	building4->frame.TranslateWorld(11.5f, -15.0f, -20.0f);
+	actors.push_back((SimpleObject*)building4);
+
+	/* Add an assimp model citybg7 negro comp*/
+	building7 = new assimpMesh("./../content/models/edificio1.3ds", ctxt);
+	building7->scaleVector[0] = 8; building7->scaleVector[1] = 8;  building7->scaleVector[2] = 8;
+	building7->frame.RotateLocalX(float(m3dDegToRad(90.0f)));
+	building7->frame.TranslateWorld(-1.0f, -22.0f, -35.0f);
+	actors.push_back((SimpleObject*)building7);
+
+	/* Add an assimp model citybg5 blanco antena*/
+	building5 = new assimpMesh("./../content/models/edificio2.3ds", ctxt);
+	building5->scaleVector[0] = 7; building5->scaleVector[1] = 7;  building5->scaleVector[2] = 7;
+	building5->frame.RotateLocalX(float(m3dDegToRad(90.0f)));
+	building5->frame.TranslateWorld(6.0f, -15.0f, -24.0f);
+	actors.push_back((SimpleObject*)building5);
+
+	/* Add an assimp model citybg6 cafe simple*/
+	building6 = new assimpMesh("./../content/models/edificio3.3ds", ctxt);
+	building6->scaleVector[0] = 7; building6->scaleVector[1] = 7;  building6->scaleVector[2] = 7;
+	building6->frame.RotateLocalX(float(m3dDegToRad(90.0f)));
+	building6->frame.TranslateWorld(17.0f, -12.0f, -15.0f);
+	actors.push_back((SimpleObject*)building6);
+
 
     /* Add our entity Manager */
     entityManager = new EntityManager( ctxt );
