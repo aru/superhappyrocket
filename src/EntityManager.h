@@ -19,7 +19,7 @@
 #ifndef SHR_ENTITYMANAGER
 #define SHR_ENTITYMANAGER
 
-#define MAX_ENTITY_NUMBER 7
+#define MAX_ENTITY_NUMBER 8
 
 /* C++ STD includes */
 #include <vector>
