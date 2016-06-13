@@ -23,18 +23,6 @@ const int Renderer::Initialize()
 {
     GLenum error;
 
-    /* Initialize glew */
-    /*error = glewInit();
-    if( error != GLEW_OK )
-    {
-        glewGetString( error );
-        printf( "GLEW Error: %d on Initialize()\n", error );
-    }*/
-
-    /* Check that we support the 2.1 API */
-    /*if( !GLEW_VERSION_2_1 )
-        printf("GLEW Version 2.1 not supported\n");*/
-
 #ifdef DEBUG
     /* Now check if we can use ARB_debug_output */
     if( GLAD_GL_ARB_debug_output ) {

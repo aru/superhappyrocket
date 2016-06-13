@@ -73,23 +73,6 @@ ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF S
 #include "glad.h"
 #endif
 
-//////////////////////// TEMPORARY TEMPORARY TEMPORARY - On SnowLeopard this is suppored, but GLEW doens't hook up properly
-//////////////////////// Fixed probably in 10.6.3
-#if 1
-#ifdef __APPLE__
-#define glGenVertexArrays glad_glGenVertexArrays
-#define glDeleteVertexArrays  glad_glDeleteVertexArrays
-#define glBindVertexArray	glad_glBindVertexArray
-//#define glGenVertexArrays glGenVertexArraysAPPLE
-//#define glDeleteVertexArrays  glDeleteVertexArraysAPPLE
-//#define glBindVertexArray	glBindVertexArrayAPPLE
-#ifndef OPENGL_ES
-#define glGenerateMipmap    glGenerateMipmapEXT
-#endif
-#endif  
-#endif // 0
-
-
 // Universal includes
 #include <stdio.h>
 #include <math.h>
